@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="三项物性完整并逐条记录 3D 资产处置的仿真材料树">
+  <link rel="icon" href="data:,">
+  <title>材料证据树 · 物性与 3D 资产联合版</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="title-block">
+      <p class="edition" id="edition">严格终审发布版 · 2026-11-02 · 1,526 条记录</p>
+      <h1>材料证据树与 3D 资产</h1>
+      <p class="subtitle">E、ν、ρ 三项有值；物性结论与几何资产分别审核</p>
+    </div>
+    <dl class="dataset-stats" aria-label="数据集统计">
+      <div><dt>节点</dt><dd id="stat-nodes">-</dd></div>
+      <div><dt>物体</dt><dd id="stat-objects">-</dd></div>
+      <div><dt>三项完整</dt><dd id="stat-complete-objects">-</dd></div>
+      <div><dt>严格三项多源</dt><dd id="stat-strict-multisource">-</dd></div>
+      <div><dt>对象/试样直接有证据</dt><dd id="stat-evidence-complete-objects">-</dd></div>
+      <div><dt>物性证据</dt><dd id="stat-evidence">-</dd></div>
+      <div><dt>来源记录</dt><dd id="stat-sources">-</dd></div>
+      <div><dt>精确在线模型</dt><dd id="stat-exact-assets">-</dd></div>
+      <div><dt>类别模型代理</dt><dd id="stat-category-assets">-</dd></div>
+      <div><dt>程序化几何</dt><dd id="stat-procedural-assets">-</dd></div>
+      <div><dt>无可信模型</dt><dd id="stat-missing-assets">-</dd></div>
+    </dl>
+  </header>
+
+  <section class="scope-note collapsed" id="scope-note" aria-label="数据解释边界">
+    <div class="scope-note-bar">
+      <span class="scope-note-title"><i data-lucide="info" aria-hidden="true"></i><strong>阅读边界</strong></span>
+      <button class="scope-note-toggle" id="scope-note-toggle" type="button" aria-expanded="false" aria-controls="scope-note-content" title="展开阅读边界"><i data-lucide="chevron-down" aria-hidden="true"></i><span>展开</span></button>
+    </div>
+    <p id="scope-note-content" hidden>本页面展示 2,742 条候选中通过对象级门禁、并按共同规范撤回 46 条问题记录后的 1,526 条。每条记录都有 E、ν、ρ 数值，且三项分别至少有两个独立发布主体，同时材料映射通过；未通过的 1,170 条和正式撤出的 46 条没有混入本站。数值可能是材料级或条件化代理，不等于该商品实测。3D 资产单独标为精确商品模型或类别几何代理；类别代理只表示外形类别相符，不等于对应 SKU、CAD 或扫描，也不能证明材料牌号。</p>
+  </section>
+
+  <nav class="toolbar" aria-label="材料树工具栏">
+    <div class="search-wrap">
+      <i data-lucide="search" aria-hidden="true"></i>
+      <input id="tree-search" type="search" autocomplete="off" placeholder="搜索中文、英文、节点 ID 或别名" aria-label="搜索材料节点" aria-controls="search-results">
+      <button class="icon-button clear-search" id="clear-search" type="button" title="清除搜索" aria-label="清除搜索">
+        <i data-lucide="x" aria-hidden="true"></i>
+      </button>
+      <div class="search-results" id="search-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </div>
+    <div class="toolbar-actions">
+      <button type="button" id="expand-all" title="展开全部节点"><i data-lucide="unfold-vertical" aria-hidden="true"></i><span>展开全部</span></button>
+      <button type="button" id="global-view" title="返回根节点与一级分类的全局视图"><i data-lucide="house" aria-hidden="true"></i><span>全局视图</span></button>
+      <button type="button" id="fit-tree" title="使当前树适应画布"><i data-lucide="maximize" aria-hidden="true"></i><span>适应画布</span></button>
+      <button type="button" id="toggle-header" aria-pressed="false" title="收起标题、统计和阅读边界"><i data-lucide="panel-top-close" aria-hidden="true"></i><span>收起页头</span></button>
+      <button type="button" id="toggle-details" aria-pressed="false" title="隐藏或显示节点详情"><i data-lucide="panel-right-close" aria-hidden="true"></i><span>隐藏详情</span></button>
+      <span class="toolbar-separator" aria-hidden="true"></span>
+      <button class="icon-button" type="button" id="zoom-out" title="缩小；节点聚焦时返回适应画布" aria-label="缩小；节点聚焦时返回适应画布"><i data-lucide="minus" aria-hidden="true"></i></button>
+      <button class="icon-button" type="button" id="zoom-in" title="放大" aria-label="放大"><i data-lucide="plus" aria-hidden="true"></i></button>
+    </div>
+  </nav>
+
+  <main class="workspace">
+    <section class="tree-panel" aria-labelledby="tree-heading">
+      <div class="panel-heading">
+        <div>
+          <h2 id="tree-heading">材料分类结构</h2>
+          <p id="visible-summary">正在载入树结构...</p>
+        </div>
+        <div class="legend" aria-label="节点图例">
+          <span><b class="legend-dot category"></b>分类/族</span>
+          <span><b class="legend-dot leaf"></b>材料叶子</span>
+          <span><b class="legend-dot experimental"></b>实验材料</span>
+          <span><b class="legend-dot uncertain"></b>宽粒度材料集合</span>
+        </div>
+      </div>
+      <div class="tree-canvas" id="tree-canvas">
+        <svg id="tree-svg" role="img" aria-label="可展开的自上而下材料分类树">
+          <g class="zoom-layer"></g>
+        </svg>
+        <div class="canvas-help"><i data-lucide="move" aria-hidden="true"></i>点击聚焦 · 拖动节点微调 · 拖动空白处平移 · 滚轮缩放</div>
+      </div>
+    </section>
+
+    <aside class="detail-panel" id="detail-panel" aria-labelledby="detail-heading" aria-live="polite">
+      <div id="detail-content">
+        <div class="empty-detail">
+          <i data-lucide="mouse-pointer-click" aria-hidden="true"></i>
+          <h2 id="detail-heading">选择一个节点</h2>
+          <p>点击树中的任意节点，查看名称、层级、物性范围、证据、来源和所含物体。</p>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <noscript>此页面需要启用 JavaScript 才能显示交互式材料树。</noscript>
+  <script src="vendor/d3.min.js"></script>
+  <script src="vendor/lucide.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
