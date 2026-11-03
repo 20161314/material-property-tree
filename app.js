@@ -444,6 +444,8 @@
     }[item.auditDecision] || ["资产尚未审计", "audit-unknown"];
     const propertyStatus = {
       "保留": ["物性判定 · 保留", "audit-pass"],
+      "保留（材料级条件化代理）": ["物性判定 · 材料级条件化代理", "audit-proxy"],
+      "保留（节点证据）": ["物性判定 · 节点证据", "audit-pass"],
       "保留（需加条件/降级）": ["物性判定 · 需加条件/降级", "audit-proxy"],
       "保留（资产待解决）": ["物性判定 · 保留，资产待解决", "audit-proxy"],
       "修正 rho 后保留": ["物性判定 · 修正密度后保留", "audit-fail"],
@@ -456,8 +458,10 @@
       proxy_property_evidence_split: "三项来自同一材料节点的多条证据，未由单条资料同时给出",
     };
     const auditFlags = (item.auditFlags || []).map((flag) => auditFlagLabels[flag] || flag);
+    const propertyEvidence = item.propertyEvidence || [];
+    const propertyEvidenceHtml = propertyEvidence.length ? `<div class="object-property-evidence"><strong>文献/资料逐条物性：</strong>${propertyEvidence.map((ev) => `<details class="object-evidence-item"><summary>${escapeHtml(ev.sourceName || ev.sourceId)} · ${escapeHtml(ev.sourceType || "物性来源")}</summary><div class="object-evidence-values"><span>E = ${escapeHtml(formatRange(ev.E, "GPa", "E"))}</span><span>ν = ${escapeHtml(formatRange(ev.nu, "1", "nu"))}</span><span>ρ = ${escapeHtml(formatRange(ev.rho, "kg/m3", "rho"))}</span></div>${ev.locator ? `<small>${escapeHtml(ev.locator)}</small>` : ""}${ev.url ? `<a class="source-link" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener noreferrer">打开物性来源 <i data-lucide="external-link" aria-hidden="true"></i></a>` : ""}</details>`).join("")}</div>` : "";
     const assetLinks = (asset.sources || []).map((source) => `<div class="asset-source">
-      <a href="${escapeHtml(source.asset_page_url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.title)} <i data-lucide="external-link" aria-hidden="true"></i></a>
+      <a href="${escapeHtml(source.asset_page_url)}" download target="_blank" rel="noopener noreferrer">${escapeHtml(source.title)} · ${source.asset_page_url?.toLowerCase().endsWith(".glb") ? "下载 GLB" : "打开资产页面"} <i data-lucide="external-link" aria-hidden="true"></i></a>
       <span>${escapeHtml(source.author_or_publisher)} · ${escapeHtml(source.canonical_license)} · UID ${escapeHtml(source.asset_uid)}</span>
       <span>${source.vertex_count ? `${source.vertex_count.toLocaleString("zh-CN")} 顶点 · ${source.face_count.toLocaleString("zh-CN")} 面 · ` : ""}${source.is_downloadable ? "平台标记可下载" : "平台未标记可下载"} · ${escapeHtml(source.download_status)}</span>
     </div>`).join("");
@@ -480,7 +484,7 @@
         <span class="${item.multiIndependentSource ? "status-multisource" : "status-single-source"}">${item.multiIndependentSource ? "三项各有至少两个独立主体" : "至少一项只有单一主体"}</span>
         <span class="${assetStatus[1]}">${assetStatus[0]}</span>
       </div>
-      ${item.proxyPropertyComplete && item.proxyProperties.length ? `<p class="proxy-values"><strong>材料级三项：</strong>${item.proxyProperties.map(escapeHtml).join(" · ")}</p>` : ""}
+      ${propertyEvidenceHtml}
       <details><summary>查看映射依据</summary><div class="object-detail">
         ${item.scope ? `<strong>部件/材料范围：</strong>${escapeHtml(item.scope)}<br>` : ""}
         ${item.mappingEvidence ? `<strong>映射证据：</strong>${escapeHtml(item.mappingEvidence)}<br>` : ""}
@@ -491,7 +495,8 @@
         <strong>物性判定：</strong>${escapeHtml(item.propertyVerdict || "尚未独立复核")}<br>
         <strong>资产判定：</strong>${escapeHtml(auditStatus[0])}<br>
         <strong>三项证据覆盖：</strong>${item.propertyEvidenceCoverage ? "E、ν、ρ 均有来源覆盖" : "证据覆盖不完整"}<br>
-        <strong>各属性独立主体数：</strong>E=${item.publishersByProperty?.E ?? 0}；ν=${item.publishersByProperty?.nu ?? 0}；ρ=${item.publishersByProperty?.rho ?? 0}<br>
+        <strong>各属性证据来源主体数（不是物性数值）：</strong>E=${item.publishersByProperty?.E ?? 0}；ν=${item.publishersByProperty?.nu ?? 0}；ρ=${item.publishersByProperty?.rho ?? 0}<br>
+        <small class="object-detail-note">真实的 E、ν、ρ 数值请展开上方“文献/资料逐条物性”；这里的数字只表示该属性有几个独立发布主体。</small><br>
         ${item.evidenceGrade ? `<strong>证据等级：</strong>${escapeHtml(item.evidenceGrade)}<br>` : ""}
         ${item.compositeScope ? `<strong>复合件范围：</strong>${escapeHtml(item.compositeScope)}<br>` : ""}
         ${item.propertyIssues?.length ? `<strong>物性问题码：</strong>${item.propertyIssues.map(escapeHtml).join("；")}<br>` : ""}
