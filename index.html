@@ -69,12 +69,12 @@
     <div class="toolbar-actions">
       <button type="button" id="expand-all" title="展开或收起当前分支，保持可读缩放"><i data-lucide="unfold-vertical" aria-hidden="true"></i><span>展开分支</span></button>
       <button type="button" id="focus-branch" title="仅显示当前节点所在分支"><i data-lucide="focus" aria-hidden="true"></i><span>聚焦分支</span></button>
-      <button type="button" id="global-view" title="返回根节点与一级分类"><i data-lucide="house" aria-hidden="true"></i><span>全局视图</span></button>
-      <button type="button" id="fit-tree" title="在保持文字可读的前提下居中当前树"><i data-lucide="maximize" aria-hidden="true"></i><span>居中树</span></button>
+      <button type="button" id="global-view" title="展开全部材料节点并适应画布"><i data-lucide="network" aria-hidden="true"></i><span>全树总览</span></button>
+      <button type="button" id="fit-tree" title="将当前已展开的树完整装入画布"><i data-lucide="maximize" aria-hidden="true"></i><span>适应全树</span></button>
       <button type="button" id="toggle-header" aria-pressed="false" title="收起页头和说明"><i data-lucide="panel-top-close" aria-hidden="true"></i><span>收起页头</span></button>
       <button type="button" id="toggle-details" aria-pressed="false" title="隐藏节点详情"><i data-lucide="panel-right-close" aria-hidden="true"></i><span>隐藏详情</span></button>
       <span class="toolbar-separator" aria-hidden="true"></span>
-      <button class="icon-button" type="button" id="zoom-out" title="缩小；聚焦状态下继续缩小会回到适应画布" aria-label="缩小；聚焦状态下继续缩小会回到适应画布"><i data-lucide="minus" aria-hidden="true"></i></button>
+      <button class="icon-button" type="button" id="zoom-out" title="缩小，可继续缩小至全树总览" aria-label="缩小，可继续缩小至全树总览"><i data-lucide="minus" aria-hidden="true"></i></button>
       <button class="icon-button" type="button" id="zoom-in" title="放大" aria-label="放大"><i data-lucide="plus" aria-hidden="true"></i></button>
     </div>
   </nav>
@@ -96,7 +96,7 @@
           <span>全树定位</span>
           <svg id="tree-minimap" viewBox="0 0 160 104" role="img" aria-label="材料树小地图，点击可移动当前视口"></svg>
         </div>
-        <div class="canvas-help"><i data-lucide="move" aria-hidden="true"></i>点击居中 · 拖动平移 · 滚轮缩放 · 小地图定位</div>
+        <div class="canvas-help"><i data-lucide="move" aria-hidden="true"></i>点击聚焦 · 拖动平移 · 滚轮缩放 · 全树总览</div>
       </div>
     </section>
     <aside class="detail-panel" id="detail-panel" aria-labelledby="detail-heading" aria-live="polite">
@@ -107,6 +107,6 @@
   <script src="vendor/d3.min.js"></script>
   <script src="vendor/lucide.min.js"></script>
   <script src="data.js?v=ef5625b118ca"></script>
-  <script src="app.js?v=543c70354f95"></script>
+  <script src="app.js?v=db2b44b84066"></script>
 </body>
 </html>

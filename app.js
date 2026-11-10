@@ -44,8 +44,9 @@
   const svg = d3.select("#tree-svg");
   const zoomLayer = svg.select(".zoom-layer");
   const canvas = document.getElementById("tree-canvas");
-  const MIN_READABLE_SCALE = 0.84;
-  const zoom = d3.zoom().scaleExtent([MIN_READABLE_SCALE, 2.4]).on("zoom", (event) => {
+  const MIN_OVERVIEW_SCALE = 0.004;
+  const MIN_FOCUS_SCALE = 0.84;
+  const zoom = d3.zoom().scaleExtent([MIN_OVERVIEW_SCALE, 2.4]).on("zoom", (event) => {
     currentTransform = event.transform;
     zoomLayer.attr("transform", event.transform);
     updateMinimapViewport(event.transform);
@@ -278,9 +279,11 @@
     const padding = width < 520 ? 24 : 46;
     const topPadding = width < 520 ? 72 : 58;
     const bottomPadding = width < 520 ? 34 : 46;
-    const scale = Math.max(MIN_READABLE_SCALE, Math.min(1.2, (width - padding * 2) / lastTreeBounds.width, (height - topPadding - bottomPadding) / lastTreeBounds.height));
+    const availableHeight = Math.max(1, height - topPadding - bottomPadding);
+    const scale = Math.max(MIN_OVERVIEW_SCALE, Math.min(1.2, (width - padding * 2) / lastTreeBounds.width, availableHeight / lastTreeBounds.height));
     const centerX = lastTreeBounds.x + lastTreeBounds.width / 2;
-    const transform = d3.zoomIdentity.translate(width / 2 - centerX * scale, topPadding - lastTreeBounds.y * scale).scale(scale);
+    const centerY = lastTreeBounds.y + lastTreeBounds.height / 2;
+    const transform = d3.zoomIdentity.translate(width / 2 - centerX * scale, topPadding + availableHeight / 2 - centerY * scale).scale(scale);
     if (animate) svg.transition().duration(260).call(zoom.transform, transform); else svg.call(zoom.transform, transform);
   }
 
@@ -289,9 +292,9 @@
     if (!item) return;
     const width = canvas.clientWidth;
     const height = canvas.clientHeight;
-    const fitScale = Math.max(MIN_READABLE_SCALE, Math.min(1.2, (width - 92) / lastTreeBounds.width, (height - 92) / lastTreeBounds.height));
+    const fitScale = Math.max(MIN_OVERVIEW_SCALE, Math.min(1.2, (width - 92) / lastTreeBounds.width, (height - 92) / lastTreeBounds.height));
     const densityScale = 1.16 - Math.max(0, Math.log2(Math.max(1, visibleLayout.size) / 6)) * 0.13;
-    const scale = Math.max(MIN_READABLE_SCALE, Math.min(width < 620 ? 0.96 : 1.12, Math.max(fitScale * 1.25, densityScale)));
+    const scale = Math.max(MIN_FOCUS_SCALE, Math.min(width < 620 ? 0.96 : 1.12, Math.max(fitScale * 1.25, densityScale)));
     nodeFocusActive = true;
     focusedScale = scale;
     svg.transition().duration(340).call(zoom.transform, d3.zoomIdentity.translate(width / 2 - item.x * scale, height / 2 - item.y * scale).scale(scale));
@@ -396,9 +399,9 @@
     iconRefresh();
   }
 
-  function globalView() {
+  function fullTreeOverview() {
     expanded.clear();
-    expanded.add(rootId);
+    descendantsOf(rootId).filter((node) => node.childIds.length).forEach((node) => expanded.add(node.id));
     selectedId = rootId;
     viewRootId = rootId;
     objectFilter = "";
@@ -471,10 +474,10 @@
     renderTree({ focusId: visibleLayout.has(selectedId) ? selectedId : viewRootId });
   });
   document.getElementById("focus-branch").addEventListener("click", focusSelectedBranch);
-  document.getElementById("global-view").addEventListener("click", globalView);
+  document.getElementById("global-view").addEventListener("click", fullTreeOverview);
   document.getElementById("fit-tree").addEventListener("click", () => fitTree(true));
   document.getElementById("zoom-in").addEventListener("click", () => svg.transition().duration(180).call(zoom.scaleBy, 1.22));
-  document.getElementById("zoom-out").addEventListener("click", () => { if (nodeFocusActive) fitTree(true); else svg.transition().duration(180).call(zoom.scaleBy, 0.8); });
+  document.getElementById("zoom-out").addEventListener("click", () => { nodeFocusActive = false; focusedScale = null; svg.transition().duration(180).call(zoom.scaleBy, 0.72); });
   d3.select("#tree-minimap").on("click", (event) => {
     if (!minimapProjection) return;
     const [x, y] = d3.pointer(event);
