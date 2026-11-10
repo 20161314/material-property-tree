@@ -48,7 +48,7 @@ h1 { margin: 0; font-size: 1.72rem; line-height: 1.2; }
 .header-data { min-width: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
 .audit-pill { display: inline-flex; align-items: center; min-height: 28px; padding: 3px 9px; border: 1px solid #9bc8b4; border-radius: 4px; background: #edf8f2; color: #245b3d; font-size: .75rem; font-weight: 750; white-space: nowrap; }
 .audit-pill.fail { border-color: #d7a0a0; background: var(--red-soft); color: var(--red); }
-.dataset-stats { display: grid; grid-template-columns: repeat(6, minmax(86px, 1fr)); margin: 0; min-width: 660px; }
+.dataset-stats { display: grid; grid-template-columns: repeat(8, minmax(78px, 1fr)); margin: 0; min-width: 760px; }
 .dataset-stats div { padding: 0 13px; border-left: 1px solid var(--border); }
 .dataset-stats dt, .gap-stats dt { color: var(--muted); font-size: .72rem; white-space: nowrap; }
 .dataset-stats dd, .gap-stats dd { margin: 1px 0 0; font-size: 1.08rem; font-weight: 750; font-variant-numeric: tabular-nums; }

@@ -79,7 +79,7 @@
   }
 
   function nodeKind(node) {
-    if (node.propertyStatus === "AGGREGATE_ONLY_NO_PARENT_TRIPLET") return ["子树汇总", "aggregate"];
+    if (node.childIds.length && node.subtreeEvidenceCount) return ["子树汇总", "aggregate"];
     if ((data.evidenceByNode[node.id] || []).length) return ["存在完整证据", "evidenced"];
     if (node.childIds.length) return ["分类/材料族", "category"];
     return ["材料身份", "identity"];
@@ -91,11 +91,12 @@
     document.getElementById("stat-full-objects").textContent = fmt(meta.fullObjectCount);
     document.getElementById("stat-full-rows").textContent = fmt(meta.fullComponentRows);
     const coverage = meta.approximateCoverage || {};
-    const dualSource = meta.dualSourceCoverage || {};
-    document.getElementById("stat-label-coverage").textContent = `${fmt(coverage.covered_source_status_rows)} / ${fmt(coverage.input_source_status_rows)}`;
-    document.getElementById("stat-search-materials").textContent = fmt(coverage.unique_material_names_or_nodes);
-    document.getElementById("stat-evidence-nodes").textContent = `${fmt(dualSource.nodes_passing_two_source_gate)} / ${fmt(dualSource.mapped_material_identity_nodes)}`;
+    document.getElementById("stat-search-targets").textContent = fmt(meta.materialSearchTargetCount);
+    document.getElementById("stat-source-grounded").textContent = fmt(meta.sourceGroundedMaterialNameCount);
+    document.getElementById("stat-approx-labels").textContent = fmt(meta.approximateMaterialNameCount);
+    document.getElementById("stat-empty-space").textContent = fmt(meta.emptySpaceDomainCount);
     document.getElementById("stat-evidence").textContent = fmt(meta.evidenceCount);
+    document.getElementById("stat-evidence-nodes").textContent = fmt(meta.materialNodesWithEvidence);
     document.getElementById("stat-covered-rows").textContent = fmt(coverage.covered_source_status_rows);
     document.getElementById("stat-uncovered-rows").textContent = fmt(coverage.uncovered_source_status_rows);
     document.getElementById("stat-assignment-rows").textContent = fmt(coverage.assignment_rows_after_option_expansion);
@@ -251,7 +252,10 @@
     groups.append("rect").attr("class", (item) => `node-accent ${nodeKind(item.data)[1]}`).attr("x", -100).attr("y", -38).attr("width", 5).attr("height", 76).attr("rx", 2);
     groups.append("text").attr("class", "node-title").attr("x", -86).attr("y", -13).text((item) => compactText(item.data.nameCn, 12));
     groups.append("text").attr("class", "node-subtitle").attr("x", -86).attr("y", 7).text((item) => compactText(item.data.nameEn, 28));
-    groups.append("text").attr("class", "node-count").attr("x", -86).attr("y", 27).text((item) => `L${item.data.level} · ${fmt(item.data.subtreeObjectCount)} 对象 · ${fmt(item.data.evidenceCount)} 证据`);
+    groups.append("text").attr("class", "node-count").attr("x", -86).attr("y", 27).text((item) => {
+      const count = item.data.childIds.length ? item.data.subtreeEvidenceCount : item.data.directEvidenceCount;
+      return `L${item.data.level} · ${fmt(item.data.subtreeObjectCount)} 对象 · ${fmt(count)} ${item.data.childIds.length ? "子树" : "直接"}证据`;
+    });
     const toggles = groups.filter((item) => item.data.childIds.length > 0);
     toggles.append("circle").attr("class", "node-toggle").attr("cx", 0).attr("cy", 50).attr("r", 11);
     toggles.append("text").attr("class", "node-toggle-symbol").attr("x", 0).attr("y", 55).text((item) => expanded.has(item.data.id) ? "−" : "+");
@@ -341,10 +345,12 @@
   }
 
   function evidenceHtml(node) {
+    if (node.childIds.length) {
+      return `<p class="empty-inline">此父节点不承载或展示直接 E、ν、ρ 证据；其 ${fmt(node.subtreeEvidenceCount)} 条记录均属于后代叶节点，请进入相应叶节点查看逐来源数值。</p>`;
+    }
     const records = data.evidenceByNode[node.id] || [];
     if (!records.length) {
-      const message = node.propertyStatus === "AGGREGATE_ONLY_NO_PARENT_TRIPLET" ? "此处显示的是当前子树的证据数量；父节点本身没有可直接赋值的 E、ν、ρ。" : "该节点目前只有材料身份映射，没有已放行的完整 E、ν、ρ 记录。";
-      return `<p class="empty-inline">${message}</p>`;
+      return '<p class="empty-inline">直接证据记录为 0：该叶节点的 E、ν、ρ 仍待补；未填入任何占位数值。</p>';
     }
     return `<div class="evidence-list">${records.map((item, index) => {
       const url = safeUrl(item.url);
@@ -378,10 +384,11 @@
     if (!node) return;
     const kind = nodeKind(node);
     const path = ancestorsOf(node.id);
-    const aggregateOnly = node.propertyStatus === "AGGREGATE_ONLY_NO_PARENT_TRIPLET";
+    const aggregateOnly = node.childIds.length > 0;
     const directObjects = data.objectsByNode[node.id] || [];
     const content = document.getElementById("detail-content");
-    content.innerHTML = `<div class="detail-header"><div class="detail-path">${path.map((item) => `<button type="button" class="crumb-button" data-node-id="${escapeHtml(item.id)}">${escapeHtml(item.nameCn)}</button>`).join("")}</div><div class="detail-title-row"><div><h2 id="detail-heading">${escapeHtml(node.nameCn)}</h2><p class="detail-en">${escapeHtml(node.nameEn)} · ${escapeHtml(node.id)}</p></div><span class="type-label ${kind[1]}">${kind[0]}</span></div></div><div class="detail-body"><section class="detail-section"><h3>节点范围</h3><div class="metric-grid"><div class="metric"><span>直接映射对象</span><strong>${fmt(node.directObjectCount)}</strong></div><div class="metric"><span>直接组件映射</span><strong>${fmt(node.directComponentCount)}</strong></div><div class="metric"><span>当前子树对象</span><strong>${fmt(node.subtreeObjectCount)}</strong></div><div class="metric"><span>${aggregateOnly ? "子树证据记录" : "直接证据记录"}</span><strong>${fmt(node.evidenceCount)}</strong></div></div>${node.childIds.length ? '<p class="boundary-note">子树数字只用于了解覆盖规模。子节点的材料和物性不会自动上推给此父节点。</p>' : ""}${node.notes ? `<p class="node-note">${escapeHtml(node.notes)}</p>` : ""}</section><section class="detail-section"><div class="section-heading-row"><h3>逐来源完整三元组证据</h3><p>双源才达标，不平均</p></div>${evidenceHtml(node)}</section><section class="detail-section"><div class="section-heading-row"><h3>直接映射的对象与组件</h3><p id="object-count-note"></p></div><div class="object-tools"><input id="object-filter" type="search" placeholder="筛选当前节点的对象、组件或来源" aria-label="筛选当前节点对象"></div><div id="object-list" class="object-list"></div><button type="button" id="load-more" class="load-more">再显示 30 条</button>${directObjects.length > 200 ? '<p class="node-note">页面按需展示；完整记录保留在正式 CSV 中。</p>' : ""}</section></div>`;
+    const evidenceCount = aggregateOnly ? node.subtreeEvidenceCount : node.directEvidenceCount;
+    content.innerHTML = `<div class="detail-header"><div class="detail-path">${path.map((item) => `<button type="button" class="crumb-button" data-node-id="${escapeHtml(item.id)}">${escapeHtml(item.nameCn)}</button>`).join("")}</div><div class="detail-title-row"><div><h2 id="detail-heading">${escapeHtml(node.nameCn)}</h2><p class="detail-en">${escapeHtml(node.nameEn)} · ${escapeHtml(node.id)}</p></div><span class="type-label ${kind[1]}">${kind[0]}</span></div></div><div class="detail-body"><section class="detail-section"><h3>节点范围</h3><div class="metric-grid"><div class="metric"><span>直接映射对象</span><strong>${fmt(node.directObjectCount)}</strong></div><div class="metric"><span>直接组件映射</span><strong>${fmt(node.directComponentCount)}</strong></div><div class="metric"><span>当前子树对象</span><strong>${fmt(node.subtreeObjectCount)}</strong></div><div class="metric"><span>${aggregateOnly ? "子树证据记录" : "直接证据记录"}</span><strong>${fmt(evidenceCount)}</strong></div></div>${node.childIds.length ? '<p class="boundary-note">子树数字只用于了解覆盖规模。子节点的材料和物性不会自动上推给此父节点。</p>' : ""}${node.notes ? `<p class="node-note">${escapeHtml(node.notes)}</p>` : ""}</section><section class="detail-section"><div class="section-heading-row"><h3>${aggregateOnly ? "子树证据边界" : "逐来源完整三元组证据"}</h3><p>${aggregateOnly ? "仅汇总，不上推" : "双源才达标，不平均"}</p></div>${evidenceHtml(node)}</section><section class="detail-section"><div class="section-heading-row"><h3>直接映射的对象与组件</h3><p id="object-count-note"></p></div><div class="object-tools"><input id="object-filter" type="search" placeholder="筛选当前节点的对象、组件或来源" aria-label="筛选当前节点对象"></div><div id="object-list" class="object-list"></div><button type="button" id="load-more" class="load-more">再显示 30 条</button>${directObjects.length > 200 ? '<p class="node-note">页面按需展示；完整记录保留在正式 CSV 中。</p>' : ""}</section></div>`;
     content.querySelectorAll(".crumb-button").forEach((button) => button.addEventListener("click", () => revealNode(button.dataset.nodeId)));
     document.getElementById("object-filter").addEventListener("input", (event) => { objectFilter = event.target.value; objectPageSize = 30; renderObjectList(node); });
     document.getElementById("load-more").addEventListener("click", () => { objectPageSize += 30; renderObjectList(node); });
