@@ -27,7 +27,7 @@
         <div><dt>材料检索目标</dt><dd id="stat-search-targets">-</dd></div>
         <div><dt>来源明确</dt><dd id="stat-source-grounded">-</dd></div>
         <div><dt>近似标签</dt><dd id="stat-approx-labels">-</dd></div>
-        <div><dt>Empty Space</dt><dd id="stat-empty-space">-</dd></div>
+        <div><dt>双源可赋值</dt><dd id="stat-dual-assignable">-</dd></div>
         <div><dt>严格完整证据</dt><dd id="stat-evidence">-</dd></div>
         <div><dt>有证据叶节点</dt><dd id="stat-evidence-nodes">-</dd></div>
       </dl>
@@ -38,7 +38,7 @@
       <span class="scope-note-title"><i data-lucide="info" aria-hidden="true"></i><strong>阅读边界</strong></span>
       <button class="scope-note-toggle" id="scope-note-toggle" type="button" aria-expanded="false" aria-controls="scope-note-content" title="展开阅读边界"><i data-lucide="chevron-down" aria-hidden="true"></i><span>展开</span></button>
     </div>
-    <p id="scope-note-content" hidden>对象记录按来源稳定 ID 计数，不等于跨来源哈希去重后的独立几何文件。193 个材料检索目标由 165 个来源明确名称和 28 个近似标签组成；Empty Space 是非材料域，单列且不计入材料目标。近似标签不冒充实物成分证明；只有正式材料映射进入右侧树。不同来源数值逐条并列，不平均；叶节点只显示自身直接证据，父节点只显示子树汇总。</p>
+    <p id="scope-note-content" hidden>对象记录按来源稳定 ID 计数，不等于跨来源哈希去重后的独立几何文件。193 个材料检索目标由 165 个来源明确名称和 28 个近似标签组成；Empty Space 是非材料域，单列且不计入材料目标。14 个证据叶中，8 个已有两个独立发布主体；其中只有 3 个同时具备当前对象的同一细身份映射，另外 5 个仅为 evidence-only。近似标签不冒充实物成分证明；不同来源数值逐条并列，不平均；叶节点只显示自身直接证据，父节点只显示子树汇总。</p>
   </section>
   <details class="release-details" id="release-details">
     <summary><span><i data-lucide="clipboard-check" aria-hidden="true"></i><strong>材料标签覆盖、三元组排程与来源对账</strong></span><span class="summary-hint">展开查看</span></summary>
@@ -107,6 +107,6 @@
   <script src="vendor/d3.min.js"></script>
   <script src="vendor/lucide.min.js"></script>
   <script src="data.js?v=ef5625b118ca"></script>
-  <script src="app.js?v=db2b44b84066"></script>
+  <script src="app.js?v=275901b7f6aa"></script>
 </body>
 </html>

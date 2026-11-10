@@ -95,7 +95,7 @@
     document.getElementById("stat-search-targets").textContent = fmt(meta.materialSearchTargetCount);
     document.getElementById("stat-source-grounded").textContent = fmt(meta.sourceGroundedMaterialNameCount);
     document.getElementById("stat-approx-labels").textContent = fmt(meta.approximateMaterialNameCount);
-    document.getElementById("stat-empty-space").textContent = fmt(meta.emptySpaceDomainCount);
+    document.getElementById("stat-dual-assignable").textContent = fmt((meta.dualSourceCoverage || {}).nodes_passing_two_source_gate);
     document.getElementById("stat-evidence").textContent = fmt(meta.evidenceCount);
     document.getElementById("stat-evidence-nodes").textContent = fmt(meta.materialNodesWithEvidence);
     document.getElementById("stat-covered-rows").textContent = fmt(coverage.covered_source_status_rows);
