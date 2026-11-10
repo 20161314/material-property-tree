@@ -17,15 +17,15 @@
     <div class="title-block">
       <p class="edition" id="edition">v3 双表发布版</p>
       <h1>物体优先材料证据树</h1>
-      <p class="subtitle">从几何对象与组件追溯材料身份；E、ν、ρ 只展示已放行的完整证据记录。</p>
+      <p class="subtitle">每个组件均有至少一个可检索材料名；正式身份与 E、ν、ρ 证据依然独立审核。</p>
     </div>
     <div class="header-data">
       <span class="audit-pill" id="audit-pill">结构审计载入中</span>
       <dl class="dataset-stats" aria-label="核心数据统计">
         <div><dt>几何对象</dt><dd id="stat-full-objects">-</dd></div>
-        <div><dt>正式映射对象</dt><dd id="stat-formal-objects">-</dd></div>
-        <div><dt>正式组件映射</dt><dd id="stat-formal-rows">-</dd></div>
-        <div><dt>材料节点</dt><dd id="stat-nodes">-</dd></div>
+        <div><dt>组件状态行</dt><dd id="stat-full-rows">-</dd></div>
+        <div><dt>材料标签覆盖</dt><dd id="stat-label-coverage">-</dd></div>
+        <div><dt>检索材料名</dt><dd id="stat-search-materials">-</dd></div>
         <div><dt>有三元组节点</dt><dd id="stat-evidence-nodes">-</dd></div>
         <div><dt>完整证据记录</dt><dd id="stat-evidence">-</dd></div>
       </dl>
@@ -36,18 +36,24 @@
       <span class="scope-note-title"><i data-lucide="info" aria-hidden="true"></i><strong>阅读边界</strong></span>
       <button class="scope-note-toggle" id="scope-note-toggle" type="button" aria-expanded="false" aria-controls="scope-note-content" title="展开阅读边界"><i data-lucide="chevron-down" aria-hidden="true"></i><span>展开</span></button>
     </div>
-    <p id="scope-note-content" hidden>对象记录按来源稳定 ID 计数，不等于跨来源哈希去重后的独立几何文件。只有正式材料映射进入树；候选、终审 HOLD 和明确排除不会混入正式映射。节点有完整三元组证据，只表示该材料节点存在可追溯的 E、ν、ρ 记录，不表示每个商品经过实测。不同来源的数值并列展示，不平均；父节点只汇总当前子树，不继承子节点物性。</p>
+    <p id="scope-note-content" hidden>对象记录按来源稳定 ID 计数，不等于跨来源哈希去重后的独立几何文件。近似材料层为每个组件提供一个或多个合理检索名，但不冒充实物成分证明；只有正式材料映射进入右侧树。节点有完整三元组证据，只表示该材料节点存在可追溯的 E、ν、ρ 记录，不表示每个商品经过实测。不同来源的数值并列展示，不平均；父节点只汇总当前子树。</p>
   </section>
   <details class="release-details" id="release-details">
-    <summary><span><i data-lucide="clipboard-check" aria-hidden="true"></i><strong>审核状态与强制来源对账</strong></span><span class="summary-hint">展开查看</span></summary>
+    <summary><span><i data-lucide="clipboard-check" aria-hidden="true"></i><strong>材料标签覆盖、三元组排程与来源对账</strong></span><span class="summary-hint">展开查看</span></summary>
     <div class="release-content">
-      <dl class="gap-stats" aria-label="候选缺口处置">
-        <div><dt>组件状态行</dt><dd id="stat-full-rows">-</dd></div>
-        <div><dt>非正式映射行</dt><dd id="stat-gap-total">-</dd></div>
-        <div><dt>仍可主动补证</dt><dd id="stat-gap-actionable">-</dd></div>
-        <div><dt>已终审 HOLD</dt><dd id="stat-gap-terminal">-</dd></div>
-        <div><dt>明确排除</dt><dd id="stat-gap-excluded">-</dd></div>
+      <dl class="gap-stats" aria-label="材料标签覆盖">
+        <div><dt>已覆盖组件行</dt><dd id="stat-covered-rows">-</dd></div>
+        <div><dt>未覆盖</dt><dd id="stat-uncovered-rows">-</dd></div>
+        <div><dt>展开后材料选项</dt><dd id="stat-assignment-rows">-</dd></div>
+        <div><dt>近似规范名</dt><dd id="stat-approx-names">-</dd></div>
+        <div><dt>特殊非材料域</dt><dd id="stat-special-domains">-</dd></div>
       </dl>
+      <div class="coverage-callout"><span><i data-lucide="badge-check" aria-hidden="true"></i><strong>65,000 / 65,000 已有材料检索标签</strong></span><p>多种都合理时保留互斥候选；近似标签不计为正式成分证据。</p></div>
+      <section class="priority-section" aria-labelledby="priority-heading">
+        <div class="priority-heading-row"><div><h2 id="priority-heading">三元组搜集优先级</h2><p>按材料标签覆盖的组件数排序</p></div><span class="priority-rule">E + ν + ρ 同材料、同兼容条件</span></div>
+        <div id="triplet-priorities" class="priority-grid"></div>
+      </section>
+      <h2 class="coverage-heading">强制来源对账</h2>
       <div id="source-coverage" class="coverage-table-wrap"></div>
     </div>
   </details>
@@ -92,7 +98,7 @@
   <noscript>此页面需要启用 JavaScript 才能显示交互式材料树。</noscript>
   <script src="vendor/d3.min.js"></script>
   <script src="vendor/lucide.min.js"></script>
-  <script src="data.js?v=e0e1c9534f84"></script>
-  <script src="app.js?v=12f08bde7314"></script>
+  <script src="data.js?v=18e036f3c499"></script>
+  <script src="app.js?v=610cc881d0ed"></script>
 </body>
 </html>

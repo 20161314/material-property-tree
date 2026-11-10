@@ -84,20 +84,30 @@
     document.getElementById("edition").textContent = meta.edition || "v3 双表发布版";
     document.getElementById("stat-full-objects").textContent = fmt(meta.fullObjectCount);
     document.getElementById("stat-full-rows").textContent = fmt(meta.fullComponentRows);
-    document.getElementById("stat-formal-rows").textContent = fmt(meta.formalMappingRows);
-    document.getElementById("stat-formal-objects").textContent = fmt(meta.formalObjectCount);
-    document.getElementById("stat-nodes").textContent = fmt(meta.materialNodeCount);
+    const coverage = meta.approximateCoverage || {};
+    document.getElementById("stat-label-coverage").textContent = `${fmt(coverage.covered_source_status_rows)} / ${fmt(coverage.input_source_status_rows)}`;
+    document.getElementById("stat-search-materials").textContent = fmt(coverage.unique_material_names_or_nodes);
     document.getElementById("stat-evidence-nodes").textContent = fmt(meta.materialNodesWithEvidence);
     document.getElementById("stat-evidence").textContent = fmt(meta.evidenceCount);
-    const gaps = meta.gapDisposition || {};
-    document.getElementById("stat-gap-total").textContent = fmt(gaps.candidate_or_source_gap_rows);
-    document.getElementById("stat-gap-actionable").textContent = fmt(gaps.actionable_rows);
-    document.getElementById("stat-gap-terminal").textContent = fmt(gaps.terminal_reviewed_rows);
-    document.getElementById("stat-gap-excluded").textContent = fmt(gaps.explicit_exclusion_rows);
+    document.getElementById("stat-covered-rows").textContent = fmt(coverage.covered_source_status_rows);
+    document.getElementById("stat-uncovered-rows").textContent = fmt(coverage.uncovered_source_status_rows);
+    document.getElementById("stat-assignment-rows").textContent = fmt(coverage.assignment_rows_after_option_expansion);
+    document.getElementById("stat-approx-names").textContent = fmt(coverage.approximate_canonical_material_names);
+    document.getElementById("stat-special-domains").textContent = fmt(coverage.special_non_material_domains);
     const audit = document.getElementById("audit-pill");
     const passed = meta.auditGate === "PASS_TWO_TABLE_V3_STRUCTURAL_GATE";
     audit.textContent = passed ? "结构审计通过 · 0 错误" : (meta.auditGate || "结构审计状态缺失");
     audit.classList.toggle("fail", !passed);
+  }
+
+  function renderTripletPriorities() {
+    const target = document.getElementById("triplet-priorities");
+    const rows = data.meta.tripletPriorities || [];
+    if (!rows.length) {
+      target.innerHTML = '<p class="empty-inline">当前发布包没有三元组搜集排程。</p>';
+      return;
+    }
+    target.innerHTML = rows.slice(0, 12).map((row) => `<article class="priority-item"><span class="priority-rank">${fmt(row.rank)}</span><div><h3>${escapeHtml(row.nameCn)}</h3><p>${escapeHtml(row.nameEn)}</p></div><dl><div><dt>覆盖组件</dt><dd>${fmt(row.coveredRows)}</dd></div><div><dt>覆盖对象</dt><dd>${fmt(row.coveredObjects)}</dd></div></dl><span class="priority-kind ${row.identityLevel === "FORMAL_SOURCE_GROUNDED_NODE" ? "formal" : "approx"}">${row.identityLevel === "FORMAL_SOURCE_GROUNDED_NODE" ? "正式节点" : "近似检索名"}</span></article>`).join("");
   }
 
   function renderSourceCoverage() {
@@ -377,6 +387,7 @@
   let resizeTimer = null;
   window.addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => fitTree(false), 120); });
   setStats();
+  renderTripletPriorities();
   renderSourceCoverage();
   setScopeCollapsed(true);
   renderTree({ fit: true });

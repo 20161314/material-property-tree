@@ -73,6 +73,28 @@ h1 { margin: 0; font-size: 1.72rem; line-height: 1.2; }
 .gap-stats { display: grid; grid-template-columns: repeat(5, minmax(110px, 1fr)); margin: 0; padding: 12px 0; border-bottom: 1px solid var(--border); }
 .gap-stats div { padding: 0 16px; border-left: 1px solid var(--border); }
 .gap-stats div:first-child { padding-left: 0; border-left: 0; }
+.coverage-callout { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin: 14px 0; padding: 11px 13px; border: 1px solid #b9d8c9; border-left: 4px solid var(--green); border-radius: 5px; background: var(--green-soft); }
+.coverage-callout span { display: inline-flex; align-items: center; gap: 7px; color: #174d3b; }
+.coverage-callout svg { width: 17px; height: 17px; }
+.coverage-callout p { margin: 0; color: #315c4f; font-size: .75rem; line-height: 1.45; text-align: right; }
+.priority-section { margin: 18px 0 20px; }
+.priority-heading-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; margin-bottom: 9px; }
+.priority-heading-row h2, .coverage-heading { margin: 0; font-size: .9rem; }
+.priority-heading-row p { margin: 3px 0 0; color: var(--muted); font-size: .7rem; }
+.priority-rule { color: var(--green); font-size: .7rem; font-weight: 700; }
+.priority-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+.priority-item { min-width: 0; display: grid; grid-template-columns: 26px minmax(0,1fr) auto; align-items: center; gap: 8px; padding: 9px; border: 1px solid var(--border); border-radius: 5px; background: var(--surface-subtle); }
+.priority-rank { width: 24px; height: 24px; display: inline-grid; place-items: center; border-radius: 50%; background: #e4ece8; color: var(--category); font-size: .67rem; font-weight: 800; }
+.priority-item h3 { margin: 0; font-size: .76rem; line-height: 1.25; overflow-wrap: anywhere; }
+.priority-item p { margin: 2px 0 0; color: var(--muted); font-size: .62rem; line-height: 1.25; overflow-wrap: anywhere; }
+.priority-item dl { display: flex; gap: 7px; margin: 0; }
+.priority-item dl div { min-width: 48px; }
+.priority-item dt { color: var(--muted); font-size: .57rem; }
+.priority-item dd { margin: 1px 0 0; font-size: .7rem; font-weight: 750; font-variant-numeric: tabular-nums; }
+.priority-kind { grid-column: 2 / -1; justify-self: start; padding: 2px 5px; border-radius: 3px; font-size: .58rem; font-weight: 750; }
+.priority-kind.approx { background: var(--amber-soft); color: #6b4b1f; }
+.priority-kind.formal { background: var(--blue-soft); color: var(--blue); }
+.coverage-heading { margin-bottom: 9px; }
 .coverage-table-wrap { overflow-x: auto; padding-top: 12px; }
 .coverage-table-wrap table { width: 100%; min-width: 980px; border-collapse: collapse; font-size: .73rem; }
 .coverage-table-wrap th, .coverage-table-wrap td { padding: 8px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
@@ -212,6 +234,7 @@ details[open] .summary-chevron { transform: rotate(180deg); }
   .release-content { padding-left: 16px; padding-right: 16px; }
   .gap-stats { grid-template-columns: repeat(3,1fr); row-gap: 10px; }
   .gap-stats div:nth-child(3n+1) { padding-left: 0; border-left: 0; }
+  .priority-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .toolbar { align-items: stretch; flex-direction: column; padding: 9px 16px; }
   .search-wrap { flex-basis: auto; max-width: none; }
   .toolbar-actions { width: 100%; min-width: 0; flex-wrap: wrap; justify-content: flex-start; }
@@ -236,6 +259,9 @@ details[open] .summary-chevron { transform: rotate(180deg); }
   .gap-stats { grid-template-columns: repeat(2,1fr); }
   .gap-stats div:nth-child(3n+1) { padding-left: 16px; border-left: 1px solid var(--border); }
   .gap-stats div:nth-child(2n+1) { padding-left: 0; border-left: 0; }
+  .coverage-callout, .priority-heading-row { align-items: flex-start; flex-direction: column; }
+  .coverage-callout p { text-align: left; }
+  .priority-grid { grid-template-columns: 1fr; }
   .toolbar { padding: 8px 10px; }
   .toolbar-actions > button:not(.icon-button) span { display: none; }
   .toolbar-actions > button:not(.icon-button) { width: 44px; padding: 0; }
