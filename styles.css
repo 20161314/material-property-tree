@@ -32,6 +32,7 @@ button, input { font: inherit; letter-spacing: 0; }
 button { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 0 12px; border: 1px solid var(--border-strong); border-radius: 5px; background: var(--surface); color: var(--text); cursor: pointer; transition: border-color 140ms ease, color 140ms ease, background 140ms ease, transform 140ms ease; }
 button:hover { border-color: var(--green); color: var(--green); transform: translateY(-1px); }
 button:active { transform: translateY(0); }
+button:disabled { cursor: not-allowed; opacity: .42; transform: none; }
 button:focus-visible, input:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid rgba(36, 116, 95, 0.22); outline-offset: 2px; }
 button svg { width: 16px; height: 16px; flex: 0 0 auto; }
 a { color: var(--green); text-underline-offset: 2px; }
@@ -132,8 +133,19 @@ h1 { margin: 0; font-size: 1.72rem; line-height: 1.2; }
 .legend-dot.evidenced { background: var(--green); }
 .legend-dot.identity { background: var(--blue); }
 .legend-dot.aggregate { background: var(--amber); }
-.tree-canvas { position: relative; flex: 1; min-height: 440px; overflow: hidden; background-color: #fbfcfc; background-image: linear-gradient(#edf1ef 1px, transparent 1px), linear-gradient(90deg, #edf1ef 1px, transparent 1px); background-size: 24px 24px; }
+.tree-canvas { position: relative; flex: 1; min-height: 0; overflow: hidden; background-color: #fbfcfc; background-image: linear-gradient(#edf1ef 1px, transparent 1px), linear-gradient(90deg, #edf1ef 1px, transparent 1px); background-size: 24px 24px; }
 #tree-svg { display: block; width: 100%; height: 100%; touch-action: none; }
+.tree-context { position: absolute; z-index: 2; top: 10px; left: 10px; display: flex; align-items: center; max-width: calc(100% - 200px); overflow-x: auto; padding: 3px; border: 1px solid var(--border); border-radius: 4px; background: rgba(255,255,255,.96); box-shadow: 0 2px 8px rgba(30,41,38,.07); }
+.tree-context button { min-height: 30px; flex: 0 0 auto; padding: 0 7px; border: 0; background: transparent; color: var(--muted); font-size: .7rem; }
+.tree-context button + button::before { content: "/"; margin-right: 10px; color: var(--border-strong); }
+.tree-context button[aria-current="page"] { color: var(--text); font-weight: 700; }
+.tree-minimap-shell { position: absolute; z-index: 2; right: 10px; bottom: 10px; width: 176px; padding: 5px 7px 7px; border: 1px solid var(--border-strong); border-radius: 4px; background: rgba(255,255,255,.96); box-shadow: 0 3px 12px rgba(30,41,38,.1); }
+.tree-minimap-shell > span { display: block; margin: 0 0 3px; color: var(--muted); font-size: .64rem; font-weight: 700; }
+#tree-minimap { display: block; width: 160px; height: 104px; cursor: crosshair; background: var(--surface-subtle); }
+.minimap-link { stroke: #c1cbc7; stroke-width: .8; }
+.minimap-node { fill: var(--category); }
+.minimap-node.selected { fill: var(--green); stroke: white; stroke-width: 1.2; }
+.minimap-viewport { fill: rgba(36,116,95,.1); stroke: var(--green); stroke-width: 1.4; pointer-events: none; }
 .canvas-help { position: absolute; left: 12px; bottom: 10px; display: flex; align-items: center; gap: 6px; padding: 7px 9px; border: 1px solid var(--border); border-radius: 4px; background: rgba(255,255,255,.94); color: var(--muted); font-size: .72rem; pointer-events: none; }
 .canvas-help svg { width: 14px; height: 14px; }
 .tree-link { fill: none; stroke: #aebbb6; stroke-width: 1.4; }
@@ -268,7 +280,10 @@ details[open] .summary-chevron { transform: rotate(180deg); }
   .toolbar-separator { display: none; }
   .workspace { padding: 8px; }
   .tree-panel { height: 600px; }
-  .canvas-help { right: 8px; left: 8px; justify-content: center; font-size: .67rem; }
+  .tree-context { right: 8px; left: 8px; max-width: none; }
+  .tree-minimap-shell { right: 8px; bottom: 8px; width: 132px; }
+  #tree-minimap { width: 116px; height: 76px; }
+  .canvas-help { right: 148px; left: 8px; max-width: 190px; justify-content: center; font-size: .64rem; line-height: 1.35; }
   .detail-header, .detail-body { padding-left: 12px; padding-right: 12px; }
   .metric-grid, .evidence-values { grid-template-columns: 1fr; }
 }

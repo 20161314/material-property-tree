@@ -31,18 +31,24 @@
 
   const expanded = new Set([rootId]);
   let selectedId = rootId;
+  let viewRootId = rootId;
   let visibleLayout = new Map();
   let lastTreeBounds = null;
   let nodeFocusActive = false;
   let focusedScale = null;
+  let currentTransform = d3.zoomIdentity;
+  let minimapProjection = null;
   let objectPageSize = 30;
   let objectFilter = "";
 
   const svg = d3.select("#tree-svg");
   const zoomLayer = svg.select(".zoom-layer");
   const canvas = document.getElementById("tree-canvas");
-  const zoom = d3.zoom().scaleExtent([0.1, 2.4]).on("zoom", (event) => {
+  const MIN_READABLE_SCALE = 0.84;
+  const zoom = d3.zoom().scaleExtent([MIN_READABLE_SCALE, 2.4]).on("zoom", (event) => {
+    currentTransform = event.transform;
     zoomLayer.attr("transform", event.transform);
+    updateMinimapViewport(event.transform);
   }).on("end", handleZoomEnd);
   svg.call(zoom).on("dblclick.zoom", null);
 
@@ -74,7 +80,7 @@
 
   function nodeKind(node) {
     if (node.propertyStatus === "AGGREGATE_ONLY_NO_PARENT_TRIPLET") return ["子树汇总", "aggregate"];
-    if ((data.evidenceByNode[node.id] || []).length) return ["完整三元组", "evidenced"];
+    if ((data.evidenceByNode[node.id] || []).length) return ["存在完整证据", "evidenced"];
     if (node.childIds.length) return ["分类/材料族", "category"];
     return ["材料身份", "identity"];
   }
@@ -85,9 +91,10 @@
     document.getElementById("stat-full-objects").textContent = fmt(meta.fullObjectCount);
     document.getElementById("stat-full-rows").textContent = fmt(meta.fullComponentRows);
     const coverage = meta.approximateCoverage || {};
+    const dualSource = meta.dualSourceCoverage || {};
     document.getElementById("stat-label-coverage").textContent = `${fmt(coverage.covered_source_status_rows)} / ${fmt(coverage.input_source_status_rows)}`;
     document.getElementById("stat-search-materials").textContent = fmt(coverage.unique_material_names_or_nodes);
-    document.getElementById("stat-evidence-nodes").textContent = fmt(meta.materialNodesWithEvidence);
+    document.getElementById("stat-evidence-nodes").textContent = `${fmt(dualSource.nodes_passing_two_source_gate)} / ${fmt(dualSource.mapped_material_identity_nodes)}`;
     document.getElementById("stat-evidence").textContent = fmt(meta.evidenceCount);
     document.getElementById("stat-covered-rows").textContent = fmt(coverage.covered_source_status_rows);
     document.getElementById("stat-uncovered-rows").textContent = fmt(coverage.uncovered_source_status_rows);
@@ -139,6 +146,67 @@
     lastTreeBounds = { x: xExtent[0] - 110, y: yExtent[0] - 50, width: Math.max(220, xExtent[1] - xExtent[0] + 220), height: Math.max(150, yExtent[1] - yExtent[0] + 145) };
   }
 
+  function descendantsOf(id) {
+    const result = [];
+    const pending = [id];
+    const seen = new Set();
+    while (pending.length) {
+      const current = pending.pop();
+      if (seen.has(current)) continue;
+      seen.add(current);
+      const node = nodesById.get(current);
+      if (!node) continue;
+      result.push(node);
+      node.childIds.forEach((childId) => pending.push(childId));
+    }
+    return result;
+  }
+
+  function updateTreeContext() {
+    const target = document.getElementById("tree-context");
+    const path = ancestorsOf(viewRootId);
+    target.innerHTML = path.map((node, index) => `<button type="button" data-node-id="${escapeHtml(node.id)}" ${index === path.length - 1 ? 'aria-current="page"' : ""}>${escapeHtml(node.nameCn)}</button>`).join("");
+    target.querySelectorAll("button").forEach((button) => button.addEventListener("click", () => setViewRoot(button.dataset.nodeId)));
+    const focusButton = document.getElementById("focus-branch");
+    const selected = nodesById.get(selectedId);
+    focusButton.disabled = !selected || !selected.childIds.length || selectedId === viewRootId;
+  }
+
+  function renderMinimap(root) {
+    const minimap = d3.select("#tree-minimap");
+    minimap.selectAll("*").remove();
+    if (!lastTreeBounds) return;
+    const inset = 7;
+    const scale = Math.min((160 - inset * 2) / lastTreeBounds.width, (104 - inset * 2) / lastTreeBounds.height);
+    const offsetX = (160 - lastTreeBounds.width * scale) / 2 - lastTreeBounds.x * scale;
+    const offsetY = (104 - lastTreeBounds.height * scale) / 2 - lastTreeBounds.y * scale;
+    const projectX = (value) => value * scale + offsetX;
+    const projectY = (value) => value * scale + offsetY;
+    minimapProjection = { scale, offsetX, offsetY };
+    minimap.append("g").attr("aria-hidden", "true").selectAll("line")
+      .data(root.links()).join("line")
+      .attr("x1", (item) => projectX(item.source.x)).attr("y1", (item) => projectY(item.source.y))
+      .attr("x2", (item) => projectX(item.target.x)).attr("y2", (item) => projectY(item.target.y))
+      .attr("class", "minimap-link");
+    minimap.append("g").attr("aria-hidden", "true").selectAll("circle")
+      .data(root.descendants()).join("circle")
+      .attr("cx", (item) => projectX(item.x)).attr("cy", (item) => projectY(item.y))
+      .attr("r", (item) => item.data.id === selectedId ? 2.8 : 1.7)
+      .attr("class", (item) => item.data.id === selectedId ? "minimap-node selected" : "minimap-node");
+    minimap.append("rect").attr("class", "minimap-viewport");
+    updateMinimapViewport(currentTransform);
+  }
+
+  function updateMinimapViewport(transform) {
+    if (!minimapProjection || !canvas.clientWidth || !canvas.clientHeight) return;
+    const { scale, offsetX, offsetY } = minimapProjection;
+    const x = (-transform.x / transform.k) * scale + offsetX;
+    const y = (-transform.y / transform.k) * scale + offsetY;
+    const width = canvas.clientWidth / transform.k * scale;
+    const height = canvas.clientHeight / transform.k * scale;
+    d3.select("#tree-minimap .minimap-viewport").attr("x", x).attr("y", y).attr("width", width).attr("height", height);
+  }
+
   function enableNodeDragging(nodeGroups, linkPaths) {
     nodeGroups.call(d3.drag().clickDistance(4)
       .on("start", function (event) {
@@ -160,7 +228,7 @@
   }
 
   function renderTree(options = {}) {
-    const rootData = nestedVisible(rootId);
+    const rootData = nestedVisible(viewRootId);
     if (!rootData) return;
     const root = d3.hierarchy(rootData);
     d3.tree().nodeSize([218, 150])(root);
@@ -187,8 +255,11 @@
     const toggles = groups.filter((item) => item.data.childIds.length > 0);
     toggles.append("circle").attr("class", "node-toggle").attr("cx", 0).attr("cy", 50).attr("r", 11);
     toggles.append("text").attr("class", "node-toggle-symbol").attr("x", 0).attr("y", 55).text((item) => expanded.has(item.data.id) ? "−" : "+");
-    document.getElementById("visible-summary").textContent = `当前显示 ${items.length} / ${data.meta.materialNodeCount} 个节点 · ${fmt(data.meta.formalObjectCount)} 个对象已有正式材料映射`;
-    document.getElementById("expand-all").querySelector("span").textContent = [...nodesById.values()].filter((node) => node.childIds.length).every((node) => expanded.has(node.id)) ? "全部收起" : "展开全部";
+    const scopeParents = descendantsOf(viewRootId).filter((node) => node.childIds.length);
+    document.getElementById("visible-summary").textContent = `当前分支 ${items.length} / ${scopeParents.length + descendantsOf(viewRootId).filter((node) => !node.childIds.length).length} 个节点 · 全库 ${data.meta.materialNodeCount} 个节点`;
+    document.getElementById("expand-all").querySelector("span").textContent = scopeParents.every((node) => expanded.has(node.id)) ? "收起分支" : "展开分支";
+    updateTreeContext();
+    renderMinimap(root);
     if (options.fit) requestAnimationFrame(() => fitTree(false));
     if (options.focusId) requestAnimationFrame(() => centerNode(options.focusId));
   }
@@ -201,9 +272,11 @@
     nodeFocusActive = false;
     focusedScale = null;
     const padding = width < 520 ? 24 : 46;
-    const scale = Math.max(0.1, Math.min(1.2, (width - padding * 2) / lastTreeBounds.width, (height - padding * 2) / lastTreeBounds.height));
+    const topPadding = width < 520 ? 72 : 58;
+    const bottomPadding = width < 520 ? 34 : 46;
+    const scale = Math.max(MIN_READABLE_SCALE, Math.min(1.2, (width - padding * 2) / lastTreeBounds.width, (height - topPadding - bottomPadding) / lastTreeBounds.height));
     const centerX = lastTreeBounds.x + lastTreeBounds.width / 2;
-    const transform = d3.zoomIdentity.translate(width / 2 - centerX * scale, padding - lastTreeBounds.y * scale).scale(scale);
+    const transform = d3.zoomIdentity.translate(width / 2 - centerX * scale, topPadding - lastTreeBounds.y * scale).scale(scale);
     if (animate) svg.transition().duration(260).call(zoom.transform, transform); else svg.call(zoom.transform, transform);
   }
 
@@ -212,9 +285,9 @@
     if (!item) return;
     const width = canvas.clientWidth;
     const height = canvas.clientHeight;
-    const fitScale = Math.min(1.2, (width - 92) / lastTreeBounds.width, (height - 92) / lastTreeBounds.height);
+    const fitScale = Math.max(MIN_READABLE_SCALE, Math.min(1.2, (width - 92) / lastTreeBounds.width, (height - 92) / lastTreeBounds.height));
     const densityScale = 1.16 - Math.max(0, Math.log2(Math.max(1, visibleLayout.size) / 6)) * 0.13;
-    const scale = Math.max(width < 620 ? 0.5 : 0.58, Math.min(width < 620 ? 0.88 : 1.12, Math.max(fitScale * 1.45, densityScale)));
+    const scale = Math.max(MIN_READABLE_SCALE, Math.min(width < 620 ? 0.96 : 1.12, Math.max(fitScale * 1.25, densityScale)));
     nodeFocusActive = true;
     focusedScale = scale;
     svg.transition().duration(340).call(zoom.transform, d3.zoomIdentity.translate(width / 2 - item.x * scale, height / 2 - item.y * scale).scale(scale));
@@ -238,7 +311,9 @@
   }
 
   function revealNode(id) {
-    ancestorsOf(id).slice(0, -1).forEach((node) => expanded.add(node.id));
+    const path = ancestorsOf(id);
+    if (!path.some((node) => node.id === viewRootId)) viewRootId = rootId;
+    path.slice(0, -1).forEach((node) => expanded.add(node.id));
     selectedId = id;
     objectPageSize = 30;
     objectFilter = "";
@@ -306,7 +381,7 @@
     const aggregateOnly = node.propertyStatus === "AGGREGATE_ONLY_NO_PARENT_TRIPLET";
     const directObjects = data.objectsByNode[node.id] || [];
     const content = document.getElementById("detail-content");
-    content.innerHTML = `<div class="detail-header"><div class="detail-path">${path.map((item) => `<button type="button" class="crumb-button" data-node-id="${escapeHtml(item.id)}">${escapeHtml(item.nameCn)}</button>`).join("")}</div><div class="detail-title-row"><div><h2 id="detail-heading">${escapeHtml(node.nameCn)}</h2><p class="detail-en">${escapeHtml(node.nameEn)} · ${escapeHtml(node.id)}</p></div><span class="type-label ${kind[1]}">${kind[0]}</span></div></div><div class="detail-body"><section class="detail-section"><h3>节点范围</h3><div class="metric-grid"><div class="metric"><span>直接映射对象</span><strong>${fmt(node.directObjectCount)}</strong></div><div class="metric"><span>直接组件映射</span><strong>${fmt(node.directComponentCount)}</strong></div><div class="metric"><span>当前子树对象</span><strong>${fmt(node.subtreeObjectCount)}</strong></div><div class="metric"><span>${aggregateOnly ? "子树证据记录" : "直接证据记录"}</span><strong>${fmt(node.evidenceCount)}</strong></div></div>${node.childIds.length ? '<p class="boundary-note">子树数字只用于了解覆盖规模。子节点的材料和物性不会自动上推给此父节点。</p>' : ""}${node.notes ? `<p class="node-note">${escapeHtml(node.notes)}</p>` : ""}</section><section class="detail-section"><div class="section-heading-row"><h3>完整三元组证据</h3><p>逐来源并列，不平均</p></div>${evidenceHtml(node)}</section><section class="detail-section"><div class="section-heading-row"><h3>直接映射的对象与组件</h3><p id="object-count-note"></p></div><div class="object-tools"><input id="object-filter" type="search" placeholder="筛选当前节点的对象、组件或来源" aria-label="筛选当前节点对象"></div><div id="object-list" class="object-list"></div><button type="button" id="load-more" class="load-more">再显示 30 条</button>${directObjects.length > 200 ? '<p class="node-note">页面按需展示；完整记录保留在正式 CSV 中。</p>' : ""}</section></div>`;
+    content.innerHTML = `<div class="detail-header"><div class="detail-path">${path.map((item) => `<button type="button" class="crumb-button" data-node-id="${escapeHtml(item.id)}">${escapeHtml(item.nameCn)}</button>`).join("")}</div><div class="detail-title-row"><div><h2 id="detail-heading">${escapeHtml(node.nameCn)}</h2><p class="detail-en">${escapeHtml(node.nameEn)} · ${escapeHtml(node.id)}</p></div><span class="type-label ${kind[1]}">${kind[0]}</span></div></div><div class="detail-body"><section class="detail-section"><h3>节点范围</h3><div class="metric-grid"><div class="metric"><span>直接映射对象</span><strong>${fmt(node.directObjectCount)}</strong></div><div class="metric"><span>直接组件映射</span><strong>${fmt(node.directComponentCount)}</strong></div><div class="metric"><span>当前子树对象</span><strong>${fmt(node.subtreeObjectCount)}</strong></div><div class="metric"><span>${aggregateOnly ? "子树证据记录" : "直接证据记录"}</span><strong>${fmt(node.evidenceCount)}</strong></div></div>${node.childIds.length ? '<p class="boundary-note">子树数字只用于了解覆盖规模。子节点的材料和物性不会自动上推给此父节点。</p>' : ""}${node.notes ? `<p class="node-note">${escapeHtml(node.notes)}</p>` : ""}</section><section class="detail-section"><div class="section-heading-row"><h3>逐来源完整三元组证据</h3><p>双源才达标，不平均</p></div>${evidenceHtml(node)}</section><section class="detail-section"><div class="section-heading-row"><h3>直接映射的对象与组件</h3><p id="object-count-note"></p></div><div class="object-tools"><input id="object-filter" type="search" placeholder="筛选当前节点的对象、组件或来源" aria-label="筛选当前节点对象"></div><div id="object-list" class="object-list"></div><button type="button" id="load-more" class="load-more">再显示 30 条</button>${directObjects.length > 200 ? '<p class="node-note">页面按需展示；完整记录保留在正式 CSV 中。</p>' : ""}</section></div>`;
     content.querySelectorAll(".crumb-button").forEach((button) => button.addEventListener("click", () => revealNode(button.dataset.nodeId)));
     document.getElementById("object-filter").addEventListener("input", (event) => { objectFilter = event.target.value; objectPageSize = 30; renderObjectList(node); });
     document.getElementById("load-more").addEventListener("click", () => { objectPageSize += 30; renderObjectList(node); });
@@ -318,10 +393,27 @@
     expanded.clear();
     expanded.add(rootId);
     selectedId = rootId;
+    viewRootId = rootId;
     objectFilter = "";
     objectPageSize = 30;
     renderTree({ fit: true });
     renderDetail(nodesById.get(rootId));
+  }
+
+  function setViewRoot(id) {
+    const node = nodesById.get(id);
+    if (!node) return;
+    viewRootId = id;
+    selectedId = id;
+    expanded.add(id);
+    renderTree({ fit: true });
+    renderDetail(node);
+  }
+
+  function focusSelectedBranch() {
+    const node = nodesById.get(selectedId);
+    if (!node || !node.childIds.length) return;
+    setViewRoot(node.id);
   }
 
   function updateSearch() {
@@ -362,16 +454,28 @@
   document.getElementById("clear-search").addEventListener("click", () => { document.getElementById("tree-search").value = ""; updateSearch(); document.getElementById("tree-search").focus(); });
   document.addEventListener("click", (event) => { if (!event.target.closest(".search-wrap")) document.getElementById("search-results").hidden = true; });
   document.getElementById("expand-all").addEventListener("click", () => {
-    const parents = [...nodesById.values()].filter((node) => node.childIds.length);
+    const parents = descendantsOf(viewRootId).filter((node) => node.childIds.length);
     const open = !parents.every((node) => expanded.has(node.id));
-    expanded.clear();
-    if (open) parents.forEach((node) => expanded.add(node.id)); else expanded.add(rootId);
-    renderTree({ fit: true });
+    if (open) parents.forEach((node) => expanded.add(node.id));
+    else {
+      parents.forEach((node) => expanded.delete(node.id));
+      expanded.add(viewRootId);
+    }
+    renderTree({ focusId: visibleLayout.has(selectedId) ? selectedId : viewRootId });
   });
+  document.getElementById("focus-branch").addEventListener("click", focusSelectedBranch);
   document.getElementById("global-view").addEventListener("click", globalView);
   document.getElementById("fit-tree").addEventListener("click", () => fitTree(true));
   document.getElementById("zoom-in").addEventListener("click", () => svg.transition().duration(180).call(zoom.scaleBy, 1.22));
   document.getElementById("zoom-out").addEventListener("click", () => { if (nodeFocusActive) fitTree(true); else svg.transition().duration(180).call(zoom.scaleBy, 0.8); });
+  d3.select("#tree-minimap").on("click", (event) => {
+    if (!minimapProjection) return;
+    const [x, y] = d3.pointer(event);
+    const contentX = (x - minimapProjection.offsetX) / minimapProjection.scale;
+    const contentY = (y - minimapProjection.offsetY) / minimapProjection.scale;
+    const scale = currentTransform.k;
+    svg.transition().duration(220).call(zoom.transform, d3.zoomIdentity.translate(canvas.clientWidth / 2 - contentX * scale, canvas.clientHeight / 2 - contentY * scale).scale(scale));
+  });
   document.getElementById("toggle-header").addEventListener("click", () => setHeaderCollapsed(!document.body.classList.contains("header-collapsed")));
   document.getElementById("toggle-details").addEventListener("click", () => {
     const workspace = document.querySelector(".workspace");

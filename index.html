@@ -9,7 +9,7 @@
   <meta name="theme-color" content="#f3f5f6">
   <title>物体优先材料证据树</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=b37cf520293f">
 </head>
 <body>
   <a class="skip-link" href="#tree-canvas">跳到材料树</a>
@@ -17,7 +17,7 @@
     <div class="title-block">
       <p class="edition" id="edition">v3 双表发布版</p>
       <h1>物体优先材料证据树</h1>
-      <p class="subtitle">每个组件均有至少一个可检索材料名；正式身份与 E、ν、ρ 证据依然独立审核。</p>
+      <p class="subtitle">每个组件均有至少一个可检索材料名；每个可赋值材料须有至少两个独立主体的完整 E、ν、ρ 证据。</p>
     </div>
     <div class="header-data">
       <span class="audit-pill" id="audit-pill">结构审计载入中</span>
@@ -26,8 +26,8 @@
         <div><dt>组件状态行</dt><dd id="stat-full-rows">-</dd></div>
         <div><dt>材料标签覆盖</dt><dd id="stat-label-coverage">-</dd></div>
         <div><dt>检索材料名</dt><dd id="stat-search-materials">-</dd></div>
-        <div><dt>有三元组节点</dt><dd id="stat-evidence-nodes">-</dd></div>
-        <div><dt>完整证据记录</dt><dd id="stat-evidence">-</dd></div>
+        <div><dt>双源达标材料</dt><dd id="stat-evidence-nodes">-</dd></div>
+        <div><dt>严格完整证据</dt><dd id="stat-evidence">-</dd></div>
       </dl>
     </div>
   </header>
@@ -36,7 +36,7 @@
       <span class="scope-note-title"><i data-lucide="info" aria-hidden="true"></i><strong>阅读边界</strong></span>
       <button class="scope-note-toggle" id="scope-note-toggle" type="button" aria-expanded="false" aria-controls="scope-note-content" title="展开阅读边界"><i data-lucide="chevron-down" aria-hidden="true"></i><span>展开</span></button>
     </div>
-    <p id="scope-note-content" hidden>对象记录按来源稳定 ID 计数，不等于跨来源哈希去重后的独立几何文件。近似材料层为每个组件提供一个或多个合理检索名，但不冒充实物成分证明；只有正式材料映射进入右侧树。节点有完整三元组证据，只表示该材料节点存在可追溯的 E、ν、ρ 记录，不表示每个商品经过实测。不同来源的数值并列展示，不平均；父节点只汇总当前子树。</p>
+    <p id="scope-note-content" hidden>对象记录按来源稳定 ID 计数，不等于跨来源哈希去重后的独立几何文件。近似材料层为每个组件提供一个或多个合理检索名，但不冒充实物成分证明；只有正式材料映射进入右侧树。节点存在完整证据，只表示至少有一条可追溯的 E、ν、ρ 记录；只有达到两个独立发布主体的材料才通过正式双源门槛。不同来源数值逐条并列，不平均；父节点只汇总当前子树。</p>
   </section>
   <details class="release-details" id="release-details">
     <summary><span><i data-lucide="clipboard-check" aria-hidden="true"></i><strong>材料标签覆盖、三元组排程与来源对账</strong></span><span class="summary-hint">展开查看</span></summary>
@@ -65,9 +65,10 @@
       <div class="search-results" id="search-results" role="listbox" aria-label="搜索结果" hidden></div>
     </div>
     <div class="toolbar-actions">
-      <button type="button" id="expand-all" title="展开或收起全部节点"><i data-lucide="unfold-vertical" aria-hidden="true"></i><span>展开全部</span></button>
+      <button type="button" id="expand-all" title="展开或收起当前分支，保持可读缩放"><i data-lucide="unfold-vertical" aria-hidden="true"></i><span>展开分支</span></button>
+      <button type="button" id="focus-branch" title="仅显示当前节点所在分支"><i data-lucide="focus" aria-hidden="true"></i><span>聚焦分支</span></button>
       <button type="button" id="global-view" title="返回根节点与一级分类"><i data-lucide="house" aria-hidden="true"></i><span>全局视图</span></button>
-      <button type="button" id="fit-tree" title="使当前树适应画布"><i data-lucide="maximize" aria-hidden="true"></i><span>适应画布</span></button>
+      <button type="button" id="fit-tree" title="在保持文字可读的前提下居中当前树"><i data-lucide="maximize" aria-hidden="true"></i><span>居中树</span></button>
       <button type="button" id="toggle-header" aria-pressed="false" title="收起页头和说明"><i data-lucide="panel-top-close" aria-hidden="true"></i><span>收起页头</span></button>
       <button type="button" id="toggle-details" aria-pressed="false" title="隐藏节点详情"><i data-lucide="panel-right-close" aria-hidden="true"></i><span>隐藏详情</span></button>
       <span class="toolbar-separator" aria-hidden="true"></span>
@@ -81,14 +82,19 @@
         <div><h2 id="tree-heading">材料分类结构</h2><p id="visible-summary">正在载入树结构...</p></div>
         <div class="legend" aria-label="节点图例">
           <span><b class="legend-dot category"></b>分类/材料族</span>
-          <span><b class="legend-dot evidenced"></b>完整三元组</span>
+          <span><b class="legend-dot evidenced"></b>存在完整证据</span>
           <span><b class="legend-dot identity"></b>仅材料身份</span>
           <span><b class="legend-dot aggregate"></b>子树汇总</span>
         </div>
       </div>
       <div class="tree-canvas" id="tree-canvas">
         <svg id="tree-svg" role="img" aria-label="可展开、缩放和拖动的材料分类树"><g class="zoom-layer"></g></svg>
-        <div class="canvas-help"><i data-lucide="move" aria-hidden="true"></i>点击聚焦 · 拖动节点微调 · 拖动空白平移 · 滚轮缩放</div>
+        <nav class="tree-context" id="tree-context" aria-label="当前分支路径"></nav>
+        <div class="tree-minimap-shell">
+          <span>全树定位</span>
+          <svg id="tree-minimap" viewBox="0 0 160 104" role="img" aria-label="材料树小地图，点击可移动当前视口"></svg>
+        </div>
+        <div class="canvas-help"><i data-lucide="move" aria-hidden="true"></i>点击居中 · 拖动平移 · 滚轮缩放 · 小地图定位</div>
       </div>
     </section>
     <aside class="detail-panel" id="detail-panel" aria-labelledby="detail-heading" aria-live="polite">
@@ -98,7 +104,7 @@
   <noscript>此页面需要启用 JavaScript 才能显示交互式材料树。</noscript>
   <script src="vendor/d3.min.js"></script>
   <script src="vendor/lucide.min.js"></script>
-  <script src="data.js?v=18e036f3c499"></script>
-  <script src="app.js?v=610cc881d0ed"></script>
+  <script src="data.js?v=370e95de1ea0"></script>
+  <script src="app.js?v=e260da812ac0"></script>
 </body>
 </html>
