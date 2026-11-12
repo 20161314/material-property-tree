@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN" data-type="software">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <meta name="description" content="来源内完整与不完整材料物性记录及材料分类树">
+  <meta name="theme-color" content="#f3f5f6">
+  <title>材料物性来源树</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css?v=238c8dc7d668">
+</head>
+<body>
+  <a class="skip-link" href="#tree-canvas">跳到材料树</a>
+  <header class="app-header">
+    <div class="title-block">
+      <p class="edition" id="edition">v3 双表发布版</p>
+      <h1>材料物性来源树</h1>
+      <p class="subtitle">完整与不完整数据组分开统计；按原文材料定义保留 E、ν、ρ 和来源条件。</p>
+    </div>
+    <div class="header-data">
+      <span class="audit-pill" id="audit-pill">结构审计载入中</span>
+      <dl class="dataset-stats" aria-label="核心数据统计">
+        <div><dt>完整数据组</dt><dd id="stat-complete-records">-</dd></div>
+        <div><dt>不完整数据组</dt><dd id="stat-partial-records">-</dd></div>
+        <div><dt>规范材料节点总数</dt><dd id="stat-canonical-materials">-</dd></div>
+        <div><dt>主账来源材料身份</dt><dd id="stat-source-identities">-</dd></div>
+        <div><dt>有完整组材料</dt><dd id="stat-complete-materials">-</dd></div>
+        <div><dt>有缺项组材料</dt><dd id="stat-partial-materials">-</dd></div>
+        <div><dt>有 E 来源值</dt><dd id="stat-e-materials">-</dd></div>
+        <div><dt>有 ν 来源值</dt><dd id="stat-nu-materials">-</dd></div>
+        <div><dt>有 ρ 来源值</dt><dd id="stat-rho-materials">-</dd></div>
+        <div><dt>三项各有来源值</dt><dd id="stat-all-properties">-</dd></div>
+        <div><dt>尚无任何来源值</dt><dd id="stat-no-values">-</dd></div>
+        <div><dt>文档/数据库引文键</dt><dd id="stat-source-documents">-</dd></div>
+        <div><dt>隔离仿真预设</dt><dd id="stat-simulation-presets">-</dd></div>
+      </dl>
+    </div>
+  </header>
+  <p class="node-note" id="material-coverage-scope">全库覆盖统计载入中；外部数据库组成身份另列。</p>
+  <section class="scope-note collapsed" id="scope-note" aria-label="数据解释边界">
+    <div class="scope-note-bar">
+      <span class="scope-note-title"><i data-lucide="info" aria-hidden="true"></i><strong>阅读边界</strong></span>
+      <button class="scope-note-toggle" id="scope-note-toggle" type="button" aria-expanded="false" aria-controls="scope-note-content" title="展开阅读边界"><i data-lucide="chevron-down" aria-hidden="true"></i><span>展开</span></button>
+    </div>
+    <p id="scope-note-content" hidden>每条记录对应一个来源材料定义和一个样品/条件组。完整组同组含 E、ν、ρ；不完整组同组含 1 或 2 项，跨来源不拼接。材料属性覆盖数分别统计完整组与已审不完整组。文档键不等于独立来源数。仿真预设单独隔离，不计入研究记录。牌号、方向、方法及来源条件保留，不自动赋给对象。</p>
+  </section>
+  <details class="release-details" id="release-details" hidden>
+    <summary><span><i data-lucide="clipboard-check" aria-hidden="true"></i><strong>材料标签覆盖、三元组排程与来源对账</strong></span><span class="summary-hint">展开查看</span></summary>
+    <div class="release-content">
+      <dl class="gap-stats" aria-label="材料标签覆盖">
+        <div><dt>已覆盖组件行</dt><dd id="stat-covered-rows">-</dd></div>
+        <div><dt>未覆盖</dt><dd id="stat-uncovered-rows">-</dd></div>
+        <div><dt>展开后材料选项</dt><dd id="stat-assignment-rows">-</dd></div>
+        <div><dt>近似规范名</dt><dd id="stat-approx-names">-</dd></div>
+        <div><dt>特殊非材料域</dt><dd id="stat-special-domains">-</dd></div>
+      </dl>
+      <div class="coverage-callout"><span><i data-lucide="badge-check" aria-hidden="true"></i><strong>65,000 / 65,000 已有材料检索标签</strong></span><p>多种都合理时保留互斥候选；近似标签不计为正式成分证据。</p></div>
+      <section class="priority-section" aria-labelledby="priority-heading">
+        <div class="priority-heading-row"><div><h2 id="priority-heading">物性搜集优先级</h2><p>按材料标签覆盖的组件数排序</p></div><span class="priority-rule">完整与缺项同步收集；保留材料与条件</span></div>
+        <div id="triplet-priorities" class="priority-grid"></div>
+      </section>
+      <h2 class="coverage-heading">强制来源对账</h2>
+      <div id="source-coverage" class="coverage-table-wrap"></div>
+    </div>
+  </details>
+  <nav class="toolbar" aria-label="材料树工具栏">
+    <a class="research-view-link" href="scaling.html">扩充总览</a>
+    <a class="research-view-link" href="index.html">返回物体与材料映射树</a>
+    <a class="research-view-link" href="references.html">材料标签与来源对照</a>
+    <a class="research-view-link" href="phase1-ranges.html">全库材料范围与覆盖</a>
+    <a class="research-view-link" href="phase1-ranges.html?scope=historical">历史 193 项追踪</a>
+    <a class="research-view-link" href="evidence-catalog.html?collection=sciglass">外部玻璃组成身份（分页）</a>
+    <div class="search-wrap">
+      <i data-lucide="search" aria-hidden="true"></i>
+      <input id="tree-search" type="search" autocomplete="off" placeholder="搜索中文、英文或节点 ID" aria-label="搜索材料节点" aria-controls="search-results">
+      <button class="icon-button clear-search" id="clear-search" type="button" title="清除搜索" aria-label="清除搜索"><i data-lucide="x" aria-hidden="true"></i></button>
+      <div class="search-results" id="search-results" role="listbox" aria-label="搜索结果" hidden></div>
+    </div>
+    <div class="toolbar-actions">
+      <button type="button" id="expand-all" title="展开或收起当前分支，保持可读缩放"><i data-lucide="unfold-vertical" aria-hidden="true"></i><span>展开分支</span></button>
+      <button type="button" id="focus-branch" title="仅显示当前节点所在分支"><i data-lucide="focus" aria-hidden="true"></i><span>聚焦分支</span></button>
+      <button type="button" id="global-view" title="展开全部材料节点并适应画布"><i data-lucide="network" aria-hidden="true"></i><span>全树总览</span></button>
+      <button type="button" id="fit-tree" title="将当前已展开的树完整装入画布"><i data-lucide="maximize" aria-hidden="true"></i><span>适应全树</span></button>
+      <button type="button" id="toggle-header" aria-pressed="false" title="收起页头和说明"><i data-lucide="panel-top-close" aria-hidden="true"></i><span>收起页头</span></button>
+      <button type="button" id="toggle-details" aria-pressed="false" title="隐藏节点详情"><i data-lucide="panel-right-close" aria-hidden="true"></i><span>隐藏详情</span></button>
+      <span class="toolbar-separator" aria-hidden="true"></span>
+      <button class="icon-button" type="button" id="zoom-out" title="缩小，可继续缩小至全树总览" aria-label="缩小，可继续缩小至全树总览"><i data-lucide="minus" aria-hidden="true"></i></button>
+      <button class="icon-button" type="button" id="zoom-in" title="放大" aria-label="放大"><i data-lucide="plus" aria-hidden="true"></i></button>
+    </div>
+  </nav>
+  <main class="workspace">
+    <section class="tree-panel" aria-labelledby="tree-heading">
+      <div class="panel-heading">
+        <div><h2 id="tree-heading">材料分类结构</h2><p id="visible-summary">正在载入树结构...</p></div>
+        <div class="legend" aria-label="节点图例">
+          <span><b class="legend-dot category"></b>分类/材料族</span>
+          <span><b class="legend-dot evidenced"></b>存在来源记录</span>
+          <span><b class="legend-dot identity"></b>仅材料身份</span>
+          <span><b class="legend-dot aggregate"></b>含证据的子树汇总</span>
+        </div>
+      </div>
+      <div class="tree-canvas" id="tree-canvas">
+        <svg id="tree-svg" role="img" aria-label="可展开、缩放和拖动的材料分类树"><g class="zoom-layer"></g></svg>
+        <nav class="tree-context" id="tree-context" aria-label="当前分支路径"></nav>
+        <div class="tree-minimap-shell">
+          <span>全树定位</span>
+          <svg id="tree-minimap" viewBox="0 0 160 104" role="img" aria-label="材料树小地图，点击可移动当前视口"></svg>
+        </div>
+        <div class="canvas-help"><i data-lucide="move" aria-hidden="true"></i>点击聚焦 · 拖动平移 · 滚轮缩放 · 全树总览</div>
+      </div>
+    </section>
+    <aside class="detail-panel" id="detail-panel" aria-labelledby="detail-heading" aria-live="polite">
+      <div id="detail-content"><div class="empty-detail"><i data-lucide="mouse-pointer-click" aria-hidden="true"></i><h2 id="detail-heading">选择一个节点</h2><p>查看节点的直接映射、子树合计、逐条三元组证据和对象资产链接。</p></div></div>
+    </aside>
+  </main>
+  <noscript>此页面需要启用 JavaScript 才能显示交互式材料树。</noscript>
+  <script src="vendor/d3.min.js?v=f2094bbf6141"></script>
+  <script src="vendor/lucide.min.js?v=3411692820cb"></script>
+  <script src="research-data.js?v=02bfa4709069"></script>
+  <script src="app.js?v=89a45eccf15c"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@
   <meta name="theme-color" content="#f3f5f6">
   <title>物体优先材料证据树</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css?v=b37cf520293f">
+  <link rel="stylesheet" href="styles.css?v=238c8dc7d668">
 </head>
 <body>
   <a class="skip-link" href="#tree-canvas">跳到材料树</a>
@@ -17,16 +17,16 @@
     <div class="title-block">
       <p class="edition" id="edition">v3 双表发布版</p>
       <h1>物体优先材料证据树</h1>
-      <p class="subtitle">每个组件均有至少一个可检索材料名；每个可赋值材料须有至少两个独立主体的完整 E、ν、ρ 证据。</p>
+      <p class="subtitle">来源对象、组件材料标签与物性研究分层展示；新增对象的材料缺口保留明确状态。</p>
     </div>
     <div class="header-data">
       <span class="audit-pill" id="audit-pill">结构审计载入中</span>
       <dl class="dataset-stats" aria-label="核心数据统计">
-        <div><dt>几何对象</dt><dd id="stat-full-objects">-</dd></div>
+        <div><dt>对象身份记录</dt><dd id="stat-full-objects">-</dd></div>
         <div><dt>组件状态行</dt><dd id="stat-full-rows">-</dd></div>
-        <div><dt>材料检索目标</dt><dd id="stat-search-targets">-</dd></div>
-        <div><dt>来源明确</dt><dd id="stat-source-grounded">-</dd></div>
-        <div><dt>近似标签</dt><dd id="stat-approx-labels">-</dd></div>
+        <div><dt>全库材料标签节点</dt><dd id="stat-search-targets">-</dd></div>
+        <div><dt>基线来源明确标签</dt><dd id="stat-source-grounded">-</dd></div>
+        <div><dt>基线近似标签</dt><dd id="stat-approx-labels">-</dd></div>
         <div><dt>双源可赋值</dt><dd id="stat-dual-assignable">-</dd></div>
         <div><dt>严格完整证据</dt><dd id="stat-evidence">-</dd></div>
         <div><dt>有证据叶节点</dt><dd id="stat-evidence-nodes">-</dd></div>
@@ -38,7 +38,7 @@
       <span class="scope-note-title"><i data-lucide="info" aria-hidden="true"></i><strong>阅读边界</strong></span>
       <button class="scope-note-toggle" id="scope-note-toggle" type="button" aria-expanded="false" aria-controls="scope-note-content" title="展开阅读边界"><i data-lucide="chevron-down" aria-hidden="true"></i><span>展开</span></button>
     </div>
-    <p id="scope-note-content" hidden>对象记录按来源稳定 ID 计数，不等于跨来源哈希去重后的独立几何文件。193 个材料检索目标由 165 个来源明确名称和 28 个近似标签组成；Empty Space 是非材料域，单列且不计入材料目标。14 个证据叶中，8 个已有两个独立发布主体；其中只有 3 个同时具备当前对象的同一细身份映射，另外 5 个仅为 evidence-only。近似标签不冒充实物成分证明；不同来源数值逐条并列，不平均；叶节点只显示自身直接证据，父节点只显示子树汇总。</p>
+    <p id="scope-note-content" hidden>对象总量计入扩充库存，按来源稳定 ID 计数，跨来源内容去重尚未完成。当前树与标签覆盖统计保留基线映射范围；新增 GSO 来源身份及组件缺口见扩充总览，完整材料树见来源库。材料标签覆盖与完整物性证据分别统计；近似名称不代表商品实测。各来源数值和条件分别展示，不平均；父节点只汇总，不继承子材料常数。研究记录可通过“完整三元组来源库”查看；该入口显示文件键数，并非独立来源数。独立来源仍待母表去重，千源目标未完成。</p>
   </section>
   <details class="release-details" id="release-details">
     <summary><span><i data-lucide="clipboard-check" aria-hidden="true"></i><strong>材料标签覆盖、三元组排程与来源对账</strong></span><span class="summary-hint">展开查看</span></summary>
@@ -50,7 +50,7 @@
         <div><dt>近似规范名</dt><dd id="stat-approx-names">-</dd></div>
         <div><dt>特殊非材料域</dt><dd id="stat-special-domains">-</dd></div>
       </dl>
-      <div class="coverage-callout"><span><i data-lucide="badge-check" aria-hidden="true"></i><strong>65,000 / 65,000 已有材料检索标签</strong></span><p>多种都合理时保留互斥候选；近似标签不计为正式成分证据。</p></div>
+      <div class="coverage-callout"><span><i data-lucide="badge-check" aria-hidden="true"></i><strong>既有 65,000 状态行已有材料检索标签</strong></span><p>该项仅统计基线表；新增对象与真实组件仍有材料缺口，见扩充总览。合理互斥候选不计正式成分证据。</p></div>
       <section class="priority-section" aria-labelledby="priority-heading">
         <div class="priority-heading-row"><div><h2 id="priority-heading">三元组搜集优先级</h2><p>按材料标签覆盖的组件数排序</p></div><span class="priority-rule">E + ν + ρ 同材料、同兼容条件</span></div>
         <div id="triplet-priorities" class="priority-grid"></div>
@@ -60,6 +60,10 @@
     </div>
   </details>
   <nav class="toolbar" aria-label="材料树工具栏">
+    <a class="research-view-link" href="scaling.html">扩充总览</a>
+    <a class="research-view-link" href="research.html">完整三元组来源库 <span id="research-source-count">1112</span></a>
+    <a class="research-view-link" href="references.html">材料标签与来源对照</a>
+    <a class="research-view-link" href="phase1-ranges.html">全库材料范围与缺口</a>
     <div class="search-wrap">
       <i data-lucide="search" aria-hidden="true"></i>
       <input id="tree-search" type="search" autocomplete="off" placeholder="搜索中文、英文或节点 ID" aria-label="搜索材料节点" aria-controls="search-results">
@@ -81,7 +85,7 @@
   <main class="workspace">
     <section class="tree-panel" aria-labelledby="tree-heading">
       <div class="panel-heading">
-        <div><h2 id="tree-heading">材料分类结构</h2><p id="visible-summary">正在载入树结构...</p></div>
+        <div><h2 id="tree-heading">对象映射材料树（基线）</h2><p id="visible-summary">正在载入树结构...</p></div>
         <div class="legend" aria-label="节点图例">
           <span><b class="legend-dot category"></b>分类/材料族</span>
           <span><b class="legend-dot evidenced"></b>存在完整证据</span>
@@ -104,9 +108,9 @@
     </aside>
   </main>
   <noscript>此页面需要启用 JavaScript 才能显示交互式材料树。</noscript>
-  <script src="vendor/d3.min.js"></script>
-  <script src="vendor/lucide.min.js"></script>
-  <script src="data.js?v=ef5625b118ca"></script>
-  <script src="app.js?v=275901b7f6aa"></script>
+  <script src="vendor/d3.min.js?v=f2094bbf6141"></script>
+  <script src="vendor/lucide.min.js?v=3411692820cb"></script>
+  <script src="data.js?v=d0fb1d383b84"></script>
+  <script src="app.js?v=89a45eccf15c"></script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN" data-type="software">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SciGlass 来源数据组分页目录：完整组与不完整组、材料成分、文献引用和原始物性值。">
+  <meta name="theme-color" content="#f3f5f6">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <title>SciGlass · 材料物性证据目录</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css?v=238c8dc7d668">
+  <link rel="stylesheet" href="evidence-catalog.css?v=cc7e90fbf9b4">
+</head>
+<body class="catalog-page">
+  <a class="skip-link" href="#catalog-table">跳到来源数据组</a>
+  <header class="app-header catalog-header">
+    <div class="title-block"><p class="edition">材料物性来源库 · 外部数据目录</p><h1 id="catalog-title">SciGlass 来源数据组</h1><p class="subtitle">逐条保留材料成分、E / ν / ρ、文献引用与来源定位。</p></div>
+    <dl class="catalog-stats" aria-label="目录记录数"><div><dt>完整来源组</dt><dd id="stat-complete">—</dd></div><div><dt>不完整来源组</dt><dd id="stat-incomplete">—</dd></div><div><dt>合计来源组</dt><dd id="stat-total">—</dd></div></dl>
+  </header>
+  <nav class="catalog-nav" aria-label="数据视图"><a href="research.html">材料证据树</a><a href="phase1-ranges.html">193 项材料覆盖与范围</a><a href="index.html">物体与材料映射树</a></nav>
+  <main class="catalog-content">
+    <section class="catalog-boundary" aria-labelledby="boundary-title"><h2 id="boundary-title">数据库转录证据，原论文未逐篇人工回查</h2><p>本目录保留 SciGlass 转录的实验数据及其引文。完整组须在同一材料 / 来源组中同时有 E、ν、ρ；不完整组只有一项或两项。单一引文与多引文组分别标明，三项齐全但引用归属不明确的记录单独隔离，不计入这里的完整组。缺项显示“—”，不补零，不跨来源拼组。</p><ul id="collection-limitations" hidden></ul></section>
+    <section class="catalog-summary" aria-label="来源与材料身份统计"><p><span>原文引用键</span><strong id="stat-citations">—</strong><small>去重后的引文标识，不等于已核定独立来源数</small></p><p><span>来源定义材料身份</span><strong id="stat-identities">—</strong><small>不同成分 / 配方保留原定义，不等于对象数量</small></p></section>
+    <section class="catalog-records" aria-labelledby="records-title">
+      <div class="catalog-heading"><div><h2 id="records-title">逐条来源数据</h2><p id="page-description">目录载入中…</p></div><div class="catalog-type-switch" role="group" aria-label="记录类型"><button type="button" data-record-type="COMPLETE" aria-pressed="true">完整组 <span id="type-complete-count">—</span></button><button type="button" data-record-type="INCOMPLETE" aria-pressed="false">不完整组 <span id="type-incomplete-count">—</span></button></div></div>
+      <div class="catalog-toolbar"><label class="catalog-search"><span>搜索当前页</span><input id="page-search" type="search" placeholder="材料、成分、记录 ID 或引文" autocomplete="off"></label><form id="id-jump-form" class="catalog-id-jump"><label for="record-id">按记录 ID 定位分页</label><div><input id="record-id" type="text" placeholder="输入完整记录 ID" autocomplete="off"><button type="submit" id="id-jump-button">定位</button></div></form></div>
+      <p class="catalog-search-note">文本搜索只筛选当前已载入页；ID 定位根据分页清单的 ID 范围跳页，再精确匹配。切换类型或分页后保留搜索词，可清空以查看整页。</p>
+      <div class="catalog-pagination"><div class="catalog-page-buttons"><button type="button" id="previous-page" disabled>上一页</button><span id="page-position">—</span><button type="button" id="next-page" disabled>下一页</button></div><form id="page-jump-form"><label for="page-number">转到页</label><input id="page-number" type="number" min="1" step="1" inputmode="numeric" value="1"><button type="submit" id="page-jump-button">跳转</button></form></div>
+      <p id="catalog-status" class="catalog-status" role="status" aria-live="polite">正在载入目录…</p>
+      <div id="catalog-error" class="catalog-error" role="alert" hidden><p id="error-message"></p><button type="button" id="retry-load">重新载入</button></div>
+      <div class="catalog-table-wrap" tabindex="0" aria-label="来源数据组表，可横向滚动"><table id="catalog-table"><thead><tr><th scope="col">记录 / 材料身份</th><th scope="col">E <span>GPa</span></th><th scope="col">ν</th><th scope="col">ρ <span>kg/m³</span></th><th scope="col">引文归属</th><th scope="col">证据详情</th></tr></thead><tbody id="catalog-table-body"></tbody></table></div>
+      <p class="catalog-value-note">表内为转换后的单位值，显示最多 5 位有效数字，仅压缩显示精度。展开“原文值与完整记录”可查未改写的来源字段、成分、定位及 SHA-256。</p>
+    </section>
+    <footer class="catalog-footer"><p>本目录用于研究证据整理。数据库条目、论文引文和材料身份分别统计；它不改变对象的材料赋值，也不把来源值直接视为通用仿真参数。</p><p><a id="manifest-link" href="evidence-catalog/sciglass/manifest.json">查看分页清单 JSON</a></p></footer>
+  </main>
+  <script src="evidence-catalog.js?v=1a7cc17b54b5" defer></script>
+</body>
+</html>

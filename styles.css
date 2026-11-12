@@ -48,7 +48,7 @@ h1 { margin: 0; font-size: 1.72rem; line-height: 1.2; }
 .header-data { min-width: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
 .audit-pill { display: inline-flex; align-items: center; min-height: 28px; padding: 3px 9px; border: 1px solid #9bc8b4; border-radius: 4px; background: #edf8f2; color: #245b3d; font-size: .75rem; font-weight: 750; white-space: nowrap; }
 .audit-pill.fail { border-color: #d7a0a0; background: var(--red-soft); color: var(--red); }
-.dataset-stats { display: grid; grid-template-columns: repeat(8, minmax(78px, 1fr)); margin: 0; min-width: 760px; }
+.dataset-stats { display: grid; grid-template-columns: repeat(9, minmax(78px, 1fr)); margin: 0; min-width: 760px; }
 .dataset-stats div { padding: 0 13px; border-left: 1px solid var(--border); }
 .dataset-stats dt, .gap-stats dt { color: var(--muted); font-size: .72rem; white-space: nowrap; }
 .dataset-stats dd, .gap-stats dd { margin: 1px 0 0; font-size: 1.08rem; font-weight: 750; font-variant-numeric: tabular-nums; }
@@ -103,7 +103,7 @@ h1 { margin: 0; font-size: 1.72rem; line-height: 1.2; }
 .coverage-table-wrap tbody th { min-width: 170px; }
 .coverage-status { display: inline-block; padding: 2px 5px; border-radius: 3px; background: var(--green-soft); color: var(--green); font-weight: 700; }
 
-.toolbar { position: relative; z-index: 5; flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 9px 28px; border-bottom: 1px solid var(--border); background: var(--surface); }
+.toolbar { position: relative; z-index: 5; flex: 0 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; padding: 9px 28px; border-bottom: 1px solid var(--border); background: var(--surface); }
 .search-wrap { position: relative; flex: 1 1 420px; max-width: 660px; }
 .search-wrap > svg { position: absolute; z-index: 1; left: 11px; top: 13px; width: 17px; height: 17px; color: var(--muted); pointer-events: none; }
 .search-wrap input { width: 100%; height: 44px; padding: 0 42px 0 37px; border: 1px solid var(--border-strong); border-radius: 5px; background: var(--surface); color: var(--text); }
@@ -115,7 +115,13 @@ h1 { margin: 0; font-size: 1.72rem; line-height: 1.2; }
 .search-result strong, .search-result small { display: block; }
 .search-result small { margin-top: 2px; color: var(--muted); }
 .search-empty { padding: 12px; color: var(--muted); }
-.toolbar-actions { flex: 0 0 auto; display: flex; align-items: center; gap: 7px; }
+.toolbar-actions { flex: 0 1 auto; min-width: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+.research-view-link { display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; color: var(--green); font-size: .8rem; font-weight: 650; text-decoration: none; }
+.research-view-link:hover { text-decoration: underline; }
+.research-view-link span { font-variant-numeric: tabular-nums; }
+.research-branch-list { display: grid; gap: 6px; margin-top: 10px; }
+.research-branch { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; width: 100%; min-height: 48px; padding: 9px 12px; text-align: left; white-space: normal; }
+.research-branch small { color: var(--muted); font-size: .72rem; }
 .toolbar-separator { width: 1px; height: 24px; margin: 0 2px; background: var(--border); }
 
 .workspace { flex: 1 1 auto; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 14px; padding: 14px; }
@@ -233,6 +239,11 @@ details[open] .summary-chevron { transform: rotate(180deg); }
   .dataset-stats { width: 100%; min-width: 0; grid-template-columns: repeat(3,1fr); row-gap: 8px; }
   .workspace { grid-template-columns: minmax(0,1fr) 390px; }
   .legend { max-width: 260px; }
+}
+@media (min-width: 861px) and (max-width: 1200px) {
+  .toolbar { flex-wrap: wrap; }
+  .search-wrap { min-width: 0; flex-basis: 240px; }
+  .toolbar-actions { flex: 1 0 100%; flex-wrap: wrap; justify-content: flex-end; }
 }
 @media (max-width: 860px) {
   body { height: auto; min-height: 100vh; overflow: visible; }

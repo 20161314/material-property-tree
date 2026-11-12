@@ -1,3 +1,4 @@
+(async () => { if (window.MATERIAL_PAYLOAD_READY) await window.MATERIAL_PAYLOAD_READY;
 (function () {
   "use strict";
 
@@ -9,7 +10,7 @@
   }
 
   const d3 = window.d3;
-  const fmt = (value) => Number(value || 0).toLocaleString("zh-CN");
+  const fmt = (value) => value === null || value === undefined ? "待汇总" : Number(value).toLocaleString("zh-CN");
   const nodesById = new Map(data.nodes.map((node) => [node.id, { ...node, childIds: [], level: 0 }]));
   const parentless = [];
   nodesById.forEach((node) => {
@@ -44,7 +45,7 @@
   const svg = d3.select("#tree-svg");
   const zoomLayer = svg.select(".zoom-layer");
   const canvas = document.getElementById("tree-canvas");
-  const MIN_OVERVIEW_SCALE = 0.004;
+  const MIN_OVERVIEW_SCALE = 0.00025;
   const MIN_FOCUS_SCALE = 0.84;
   const zoom = d3.zoom().scaleExtent([MIN_OVERVIEW_SCALE, 2.4]).on("zoom", (event) => {
     currentTransform = event.transform;
@@ -75,13 +76,15 @@
     if (!Array.isArray(values) || !values.length) return "未提供";
     const normalized = values.map((value) => String(value).trim()).filter(Boolean);
     if (!normalized.length) return "未提供";
-    const result = normalized.length === 1 || normalized.every((value) => value === normalized[0]) ? normalized[0] : `${normalized[0]}–${normalized[normalized.length - 1]}`;
+    const sameValue = normalized.every((value) => value === normalized[0] || (Number.isFinite(Number(value)) && Number(value) === Number(normalized[0])));
+    const result = normalized.length === 1 || sameValue ? normalized[0] : `${normalized[0]}–${normalized[normalized.length - 1]}`;
     return `${escapeHtml(result)}${unit ? ` ${unit}` : ""}`;
   }
 
   function nodeKind(node) {
     if (node.childIds.length && node.subtreeEvidenceCount) return ["子树汇总", "aggregate"];
-    if ((data.evidenceByNode[node.id] || []).length) return ["存在完整证据", "evidenced"];
+    if (data.meta.researchMode && node.id.startsWith("RESEARCH-FAMILY-")) return ["分类/材料族", "category"];
+    if ((data.evidenceByNode[node.id] || []).length) return [data.meta.researchMode ? "存在来源记录" : "存在完整证据", "evidenced"];
     if (node.childIds.length) return ["分类/材料族", "category"];
     return ["材料身份", "identity"];
   }
@@ -89,6 +92,39 @@
   function setStats() {
     const meta = data.meta;
     document.getElementById("edition").textContent = meta.edition || "v3 双表发布版";
+    if (meta.researchMode) {
+      const canonical = meta.canonicalCoverage;
+      const coverage = canonical || meta.propertyCoverage || {};
+      const denominator = canonical ? (canonical.targetCount ?? canonical.material_nodes) : coverage.targetMaterialCount;
+      const count = (canonicalKey, legacyKey) => canonical ? (coverage[legacyKey] ?? coverage[canonicalKey]) : coverage[legacyKey];
+      const coveredText = (canonicalKey, legacyKey) => {
+        const value = count(canonicalKey, legacyKey);
+        return value === undefined || denominator === undefined ? "待汇总" : String(fmt(value)) + "/" + fmt(denominator) + (canonical ? " 规范材料" : " 历史目标");
+      };
+      const scopeLabel = document.getElementById("material-coverage-scope");
+      if (scopeLabel) scopeLabel.textContent = canonical ? `覆盖分母：最新材料标签与已审来源身份的规范并集；其中有直接来源记录 ${fmt(meta.directEvidenceMaterialCount ?? meta.canonicalMaterialNodeCount)} 个。外部数据库组成身份分页另列，不与树节点直接相加。` : "历史 193 项目标覆盖（全库覆盖汇总尚未载入）；规范节点总量单列。";
+      const values = {
+        "stat-complete-records": meta.completeRecordCount ?? meta.evidenceCount,
+        "stat-partial-records": meta.incompleteRecordCount,
+        "stat-canonical-materials": meta.allMaterialNodeCount ?? meta.canonicalMaterialNodeCount,
+        "stat-source-identities": meta.sourceDefinedIdentityCount,
+        "stat-complete-materials": coveredText("nodes_with_complete_group", "materialsWithCompleteRecord"),
+        "stat-e-materials": coveredText("nodes_with_E", "materialsWithE"),
+        "stat-nu-materials": coveredText("nodes_with_nu", "materialsWithNu"),
+        "stat-rho-materials": coveredText("nodes_with_rho", "materialsWithRho"),
+        "stat-all-properties": coveredText("nodes_with_all_properties_any_sources", canonical ? "materialsWithAllThreeFromAnyGroup" : "materialsWithAllThreeProperties"),
+        "stat-partial-materials": coveredText("nodes_with_incomplete_group", "materialsWithIncompleteRecord"),
+        "stat-no-values": canonical && canonical.materialsWithoutAnyValue === undefined && canonical.nodes_without_any_value === undefined ? "未提供全库汇总" : coveredText("nodes_without_any_value", "materialsWithoutAnyValue"),
+        "stat-source-documents": meta.combinedSourceDocumentKeys,
+        "stat-simulation-presets": meta.isolatedSimulationPresetCount,
+      };
+      Object.entries(values).forEach(([id, value]) => {
+        document.getElementById(id).textContent = typeof value === "string" ? value : fmt(value);
+      });
+      document.getElementById("scope-note-content").textContent = `每条记录对应一个来源材料定义和一个样品/条件组。完整组同组含 E、ν、ρ；不完整组同组含 1 或 2 项，跨来源不拼接。当前统计 ${fmt(meta.completeRecordCount)} 条完整组、${fmt(meta.incompleteRecordCount)} 条不完整组（含数据库转录），共 ${fmt(meta.reviewedRecordGroupCount)} / ${fmt(meta.allRecordCountTarget)} 组；主账与数据库转录批次分别保留来源核验层级，外部库可从玻璃分支进入分页目录。E、ν、ρ 的材料覆盖数计入完整组和已审不完整组，不要求三项出自同一组。当前有 ${fmt(meta.combinedSourceDocumentKeys)} 个主账文档/数据库引文键，未完成跨库谱系归并，不等于独立来源数；旧范围确认 ${fmt(meta.confirmedSourceLineagesInInheritedScope)} 个来源谱系，扩展范围的独立数仍待核，当前不报告扩展账独立来源上限。仿真预设 ${fmt(meta.isolatedSimulationPresetCount)} 组单独隔离，不计入研究记录。牌号、方向、方法及条件保留，不自动赋给对象。`;
+      document.getElementById("audit-pill").textContent = meta.incompleteAuditStatus === "COMPLETE" ? "记录分类与覆盖统计已构建" : `不完整组 ${fmt(meta.incompleteRecordCount)} 条；含数据库转录层，原论文未逐篇重读`;
+      return;
+    }
     document.getElementById("stat-full-objects").textContent = fmt(meta.fullObjectCount);
     document.getElementById("stat-full-rows").textContent = fmt(meta.fullComponentRows);
     const coverage = meta.approximateCoverage || {};
@@ -111,6 +147,7 @@
 
   function renderTripletPriorities() {
     const target = document.getElementById("triplet-priorities");
+    if (data.meta.researchMode) return;
     const rows = data.meta.tripletPriorities || [];
     if (!rows.length) {
       target.innerHTML = '<p class="empty-inline">当前发布包没有三元组搜集排程。</p>';
@@ -121,6 +158,7 @@
 
   function renderSourceCoverage() {
     const target = document.getElementById("source-coverage");
+    if (data.meta.researchMode) return;
     const rows = data.meta.sourceCoverage || [];
     if (!rows.length) {
       target.innerHTML = '<p class="empty-inline">当前发布包没有来源对账表。</p>';
@@ -245,7 +283,7 @@
       .attr("class", (item) => `node ${item.data.id === selectedId ? "selected" : ""}`)
       .attr("transform", (item) => `translate(${item.x},${item.y})`)
       .attr("role", "button").attr("tabindex", 0)
-      .attr("aria-label", (item) => `${item.data.nameCn}，${nodeKind(item.data)[0]}，子树 ${fmt(item.data.subtreeObjectCount)} 个对象`)
+      .attr("aria-label", (item) => `${item.data.nameCn}，${nodeKind(item.data)[0]}，${data.meta.researchMode ? `${fmt(item.data.sourceDocumentCount)} 个文档键` : `子树 ${fmt(item.data.subtreeObjectCount)} 个对象`}`)
       .on("click", (event, item) => { if (!event.defaultPrevented) activateNode(item.data.id, true); })
       .on("keydown", (event, item) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); activateNode(item.data.id, true); } });
     enableNodeDragging(groups, linkPaths);
@@ -254,8 +292,10 @@
     groups.append("text").attr("class", "node-title").attr("x", -86).attr("y", -13).text((item) => compactText(item.data.nameCn, 12));
     groups.append("text").attr("class", "node-subtitle").attr("x", -86).attr("y", 7).text((item) => compactText(item.data.nameEn, 28));
     groups.append("text").attr("class", "node-count").attr("x", -86).attr("y", 27).text((item) => {
-      const count = item.data.childIds.length ? item.data.subtreeEvidenceCount : item.data.directEvidenceCount;
-      return `L${item.data.level} · ${fmt(item.data.subtreeObjectCount)} 对象 · ${fmt(count)} ${item.data.childIds.length ? "子树" : "直接"}证据`;
+      const count = item.data.classifiedEvidenceCount ?? (item.data.childIds.length ? item.data.subtreeEvidenceCount : item.data.directEvidenceCount);
+      return data.meta.researchMode
+        ? `${fmt(item.data.sourceDocumentCount)} 个文档键 · ${fmt(count)} 条记录`
+        : `L${item.data.level} · ${fmt(item.data.subtreeObjectCount)} 对象 · ${fmt(count)} ${item.data.childIds.length ? "子树" : "直接"}证据`;
     });
     const toggles = groups.filter((item) => item.data.childIds.length > 0);
     toggles.append("circle").attr("class", "node-toggle").attr("cx", 0).attr("cy", 50).attr("r", 11);
@@ -348,17 +388,57 @@
   }
 
   function evidenceHtml(node) {
-    if (node.childIds.length) {
-      return `<p class="empty-inline">此父节点不承载或展示直接 E、ν、ρ 证据；其 ${fmt(node.subtreeEvidenceCount)} 条记录均属于后代叶节点，请进入相应叶节点查看逐来源数值。</p>`;
+    if (node.externalCollection) {
+      const url = String(node.externalCatalogUrl || "");
+      const href = /^evidence-catalog\.html(?:[?].*)?$/.test(url) ? url : "evidence-catalog.html";
+      return '<p class="boundary-note">数据库转录实验记录。已核结构、单位、引用连接与重复键；未逐篇人工回读原论文。完整组仅含唯一引文；多引文缺项组保留引用集合。</p><a class="source-link" href="' + escapeHtml(href) + '">打开完整与缺项物性分页目录</a>';
     }
+    if (data.meta.researchMode && node.id.startsWith("RESEARCH-FAMILY-") && !node.childIds.length) {
+      return '<p class="empty-inline">该材料家族目前尚无通过审核的完整来源。保留为检索缺口，未填入占位数值。</p>';
+    }
+    if (node.childIds.length && !(data.evidenceByNode[node.id] || []).length) {
+      return `<p class="empty-inline">此节点当前没有直接 E、ν、ρ 来源记录；其 ${fmt(node.subtreeEvidenceCount)} 条记录均属于后代叶节点，请进入相应叶节点查看逐来源数值。</p>`;
+    }
+    if ((node.secondaryChildIds || []).length && !(data.evidenceByNode[node.id] || []).length) return `<p class="empty-inline">此节点没有直接物性组；已核包含关系支持 ${fmt(node.classifiedEvidenceCount ?? 0)} 条去重来源组。进入下方“其他已核包含关系”查看原始材料及数值。</p>`;
     const records = data.evidenceByNode[node.id] || [];
     if (!records.length) {
       return '<p class="empty-inline">直接证据记录为 0：该叶节点的 E、ν、ρ 仍待补；未填入任何占位数值。</p>';
     }
-    return `<div class="evidence-list">${records.map((item, index) => {
+    const pageSize = data.meta.researchMode ? 30 : records.length;
+    const visible = records.slice(0, pageSize);
+    return `<div class="evidence-list">${visible.map((item, index) => {
       const url = safeUrl(item.url);
-      return `<details class="evidence-item" ${index === 0 ? "open" : ""}><summary><span class="evidence-summary"><span><strong>${escapeHtml(item.title || item.id)}</strong><small>${escapeHtml(item.sourceType)} · ${escapeHtml(item.sourceId)} · ${escapeHtml(item.id)}</small></span><i class="summary-chevron" data-lucide="chevron-down" aria-hidden="true"></i></span></summary><div class="evidence-content"><div class="evidence-values"><div><span>杨氏模量 E</span><strong>${formatRange(item.E, "GPa")}</strong></div><div><span>泊松比 ν</span><strong>${formatRange(item.nu, "")}</strong></div><div><span>密度 ρ</span><strong>${formatRange(item.rho, "kg/m³")}</strong></div></div><dl class="evidence-meta">${detailPair("原文定位", item.locator)}${detailPair("材料/牌号", item.grade)}${detailPair("温度与环境", item.environment)}${detailPair("方向", item.orientation)}${detailPair("方法", item.method)}${detailPair("局限", item.limitations)}</dl>${url ? `<a class="source-link" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">打开原始来源 <i data-lucide="external-link" aria-hidden="true"></i></a>` : ""}</div></details>`;
-    }).join("")}</div>`;
+      const isIncomplete = item.recordType === "INCOMPLETE";
+      const recordLabel = isIncomplete ? `不完整来源组 · ${[item.E, item.nu, item.rho].filter(values => values.length > 0).length} 项属性` : "完整来源组";
+      return `<details class="evidence-item" ${index === 0 ? "open" : ""}><summary><span class="evidence-summary"><span><strong>${escapeHtml(item.title || item.id)}</strong><small>${recordLabel} · ${escapeHtml(item.sourceType)} · ${escapeHtml(item.sourceId)} · ${escapeHtml(item.id)}</small></span><i class="summary-chevron" data-lucide="chevron-down" aria-hidden="true"></i></span></summary><div class="evidence-content"><div class="evidence-values"><div><span>杨氏模量 E${isIncomplete ? "（来源原值）" : ""}</span><strong>${formatRange(item.E, isIncomplete ? "" : "GPa")}</strong></div><div><span>泊松比 ν${isIncomplete ? "（来源原值）" : ""}</span><strong>${formatRange(item.nu, "")}</strong></div><div><span>密度 ρ${isIncomplete ? "（来源原值）" : ""}</span><strong>${formatRange(item.rho, isIncomplete ? "" : "kg/m³")}</strong></div></div><dl class="evidence-meta">${detailPair("发布主体", item.publisher)}${detailPair("来源核验层", item.sourceVerificationLayer)}${detailPair("数值来源形式", item.propertyModel)}${detailPair("数值来源性质", item.propertyValueOrigin)}${detailPair("同一试样", item.sameSpecimen)}${detailPair("赋值材料范围", item.materialScope)}${detailPair("原文定位", item.locator)}${detailPair("冻结文件 SHA-256", item.sha256)}${detailPair("文档去重键", item.documentKey)}${detailPair("材料/牌号", item.grade)}${detailPair("温度与环境", item.environment)}${detailPair("方向/原值分组", item.orientation)}${detailPair("来源原值摘录", item.sourceValueExcerpt)}${detailPair("来源不确定度说明", item.sourceUncertaintyNotes)}${detailPair("单位换算说明", item.unitConversionNotes)}${detailPair("来源谱系键", item.sourceLineageKey)}${detailPair("密度定义", item.densityType)}${detailPair("密度分项原值", item.densityTypeValues)}${detailPair("方法", item.method)}${detailPair("局限", item.limitations)}</dl>${propertyCitationsHtml(item.propertyCitations)}${url ? `<a class="source-link" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">打开原始来源 <i data-lucide="external-link" aria-hidden="true"></i></a>` : ""}</div></details>`;
+    }).join("")}</div>${records.length > pageSize ? `<p class="node-note">本页显示前 ${fmt(pageSize)} 条；全部记录保留在来源总表中。</p>` : ""}`;
+  }
+
+  function propertyCitationsHtml(citations) {
+    if (!citations) return "";
+    let values = citations;
+    if (typeof values === "string") {
+      try { values = JSON.parse(values); } catch { return '<details class="property-citations"><summary>各属性原引用</summary><pre>' + escapeHtml(values) + '</pre></details>'; }
+    }
+    if (!values || (typeof values === "object" && !Object.keys(values).length)) return "";
+    return '<details class="property-citations"><summary>各属性原引用</summary><pre>' + escapeHtml(JSON.stringify(values, null, 2)) + '</pre></details>';
+  }
+
+  function renderResearchDetail(node) {
+    const content = document.getElementById("detail-content");
+    const path = ancestorsOf(node.id);
+    const aggregate = node.childIds.length > 0 || (node.secondaryChildIds || []).length > 0;
+    const children = node.childIds.map((id) => nodesById.get(id));
+    const title = aggregate ? "分类来源覆盖" : "逐来源物性数据组";
+    content.innerHTML = `<div class="detail-header"><div class="detail-path">${path.map((item) => `<button type="button" class="crumb-button" data-node-id="${escapeHtml(item.id)}">${escapeHtml(item.nameCn)}</button>`).join("")}</div><h2 id="detail-heading">${escapeHtml(node.nameCn)}</h2><p class="detail-en">${escapeHtml(node.nameEn)}</p></div><div class="detail-body"><section class="detail-section"><h3>来源覆盖</h3><div class="metric-grid"><div class="metric"><span>文档文件键</span><strong>${fmt(node.classifiedSourceDocumentCount ?? node.sourceDocumentCount)}</strong></div><div class="metric"><span>发布主体</span><strong>${fmt(node.classifiedPublisherSubjectCount ?? node.publisherSubjectCount)}</strong></div><div class="metric"><span>${aggregate ? "分类去重" : "直接"}数据组</span><strong>${fmt(aggregate ? (node.classifiedEvidenceCount ?? node.subtreeEvidenceCount) : node.directEvidenceCount)}</strong></div><div class="metric"><span>本库新增对象赋值</span><strong>0</strong></div></div><p class="boundary-note">${escapeHtml(node.notes)}</p></section><section class="detail-section"><div class="section-heading-row"><h3>${title}</h3><p>${aggregate ? "仅汇总，不上推" : "原文条件，独立保留"}</p></div>${evidenceHtml(node)}</section>${children.length ? `<section class="detail-section"><h3>进入材料分支</h3><div class="research-branch-list">${children.slice(0, 40).map((child) => `<button type="button" class="research-branch" data-node-id="${escapeHtml(child.id)}"><span>${escapeHtml(child.nameCn)}</span><small>${fmt(child.sourceDocumentCount)} 个文档键 · ${fmt(child.subtreeEvidenceCount)} 条数据组</small></button>`).join("")}</div>${children.length > 40 ? '<p class="node-note">分支较多，可用顶部搜索框定位完整材料名或牌号。</p>' : ""}</section>` : ""}</div>`;
+    const relatedParents = (node.secondaryParentIds || []).map(id => nodesById.get(id)).filter(Boolean);
+    const relatedChildren = (node.secondaryChildIds || []).map(id => nodesById.get(id)).filter(Boolean);
+    if (relatedParents.length || relatedChildren.length) {
+      const buttons = [...relatedParents.map(item => ({ item, prefix: "也属于" })), ...relatedChildren.map(item => ({ item, prefix: "也包含" }))];
+      content.querySelector(".detail-body").insertAdjacentHTML("beforeend", `<section class="detail-section"><h3>其他已核包含关系</h3><p class="node-note">主树保留一个父类；这里记录化学与构造的交叉分类。同一证据全局只计一次。</p><div class="research-branch-list">${buttons.map(({ item, prefix }) => `<button type="button" class="research-branch" data-node-id="${escapeHtml(item.id)}"><span>${prefix}：${escapeHtml(item.nameCn)}</span><small>${escapeHtml(item.nameEn)}</small></button>`).join("")}</div></section>`);
+    }
+    content.querySelectorAll("[data-node-id]").forEach((button) => button.addEventListener("click", () => revealNode(button.dataset.nodeId)));
+    iconRefresh();
   }
 
   function filteredObjects(node) {
@@ -385,14 +465,17 @@
 
   function renderDetail(node) {
     if (!node) return;
+    if (data.meta.researchMode) { renderResearchDetail(node); return; }
     const kind = nodeKind(node);
     const path = ancestorsOf(node.id);
     const aggregateOnly = node.childIds.length > 0;
     const directObjects = data.objectsByNode[node.id] || [];
     const content = document.getElementById("detail-content");
     const evidenceCount = aggregateOnly ? node.subtreeEvidenceCount : node.directEvidenceCount;
+    const referenceLink = (data.meta.referenceTargetIds || []).includes(node.id) ? '<p class="node-note"><a href="references.html?material=' + encodeURIComponent(node.id) + '">查看此材料标签的研究来源与适用限制</a></p>' : "";
     content.innerHTML = `<div class="detail-header"><div class="detail-path">${path.map((item) => `<button type="button" class="crumb-button" data-node-id="${escapeHtml(item.id)}">${escapeHtml(item.nameCn)}</button>`).join("")}</div><div class="detail-title-row"><div><h2 id="detail-heading">${escapeHtml(node.nameCn)}</h2><p class="detail-en">${escapeHtml(node.nameEn)} · ${escapeHtml(node.id)}</p></div><span class="type-label ${kind[1]}">${kind[0]}</span></div></div><div class="detail-body"><section class="detail-section"><h3>节点范围</h3><div class="metric-grid"><div class="metric"><span>直接映射对象</span><strong>${fmt(node.directObjectCount)}</strong></div><div class="metric"><span>直接组件映射</span><strong>${fmt(node.directComponentCount)}</strong></div><div class="metric"><span>当前子树对象</span><strong>${fmt(node.subtreeObjectCount)}</strong></div><div class="metric"><span>${aggregateOnly ? "子树证据记录" : "直接证据记录"}</span><strong>${fmt(evidenceCount)}</strong></div></div>${node.childIds.length ? '<p class="boundary-note">子树数字只用于了解覆盖规模。子节点的材料和物性不会自动上推给此父节点。</p>' : ""}${node.notes ? `<p class="node-note">${escapeHtml(node.notes)}</p>` : ""}</section><section class="detail-section"><div class="section-heading-row"><h3>${aggregateOnly ? "子树证据边界" : "逐来源完整三元组证据"}</h3><p>${aggregateOnly ? "仅汇总，不上推" : "双源才达标，不平均"}</p></div>${evidenceHtml(node)}</section><section class="detail-section"><div class="section-heading-row"><h3>直接映射的对象与组件</h3><p id="object-count-note"></p></div><div class="object-tools"><input id="object-filter" type="search" placeholder="筛选当前节点的对象、组件或来源" aria-label="筛选当前节点对象"></div><div id="object-list" class="object-list"></div><button type="button" id="load-more" class="load-more">再显示 30 条</button>${directObjects.length > 200 ? '<p class="node-note">页面按需展示；完整记录保留在正式 CSV 中。</p>' : ""}</section></div>`;
     content.querySelectorAll(".crumb-button").forEach((button) => button.addEventListener("click", () => revealNode(button.dataset.nodeId)));
+    content.querySelector(".detail-body").insertAdjacentHTML("afterbegin", referenceLink);
     document.getElementById("object-filter").addEventListener("input", (event) => { objectFilter = event.target.value; objectPageSize = 30; renderObjectList(node); });
     document.getElementById("load-more").addEventListener("click", () => { objectPageSize += 30; renderObjectList(node); });
     renderObjectList(node);
@@ -506,5 +589,9 @@
   setScopeCollapsed(true);
   renderTree({ fit: true });
   renderDetail(nodesById.get(rootId));
+  const requestedNode = new URLSearchParams(location.search).get("node");
+  if (requestedNode && nodesById.has(requestedNode)) revealNode(requestedNode);
   iconRefresh();
+})();
+
 })();

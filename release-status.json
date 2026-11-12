@@ -1,0 +1,12 @@
+{
+  "release_id": "source-taxonomy-object-sync3-2026-11-13",
+  "validated_at": "2026-11-13T02:58:40.638556+08:00",
+  "local_validation": "PASS",
+  "complete": 6140,
+  "partial": 93507,
+  "object_identities": 42564,
+  "distinct_object_component_pairs": 65985,
+  "material_labels": 2592,
+  "geometry_content_deduplication_complete": false,
+  "original_database_papers_individually_rechecked": false
+}

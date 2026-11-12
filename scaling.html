@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN" data-type="software">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <meta name="description" content="物体来源身份、组件、材料标签与完整及缺项物性来源组的扩充总览。">
+  <meta name="theme-color" content="#f3f5f6">
+  <title>物体与材料扩充总览</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css?v=238c8dc7d668">
+  <link rel="stylesheet" href="scaling.css?v=80e55df78265">
+</head>
+<body class="scaling-page">
+  <a class="skip-link" href="#gso-heading">跳到新增物体</a>
+  <header class="app-header scaling-header">
+    <div class="title-block">
+      <p class="edition" id="release-date">扩充发布 · 载入中</p>
+      <h1>物体与材料扩充总览</h1>
+      <p class="subtitle">新增来源身份、真实组件与材料证据分开核验；柔性优先检索，硬类持续扩充。</p>
+    </div>
+    <a class="scaling-action" href="#gso-heading">查看新增物体 <span aria-hidden="true">↓</span></a>
+  </header>
+  <nav class="scaling-nav" aria-label="数据视图">
+    <a href="scaling.html" aria-current="page">扩充总览</a>
+    <a href="index.html">物体与材料树</a>
+    <a href="research.html">完整与缺项证据树</a>
+    <a href="phase1-ranges.html">材料范围与覆盖</a>
+    <a href="#counting-rules">计数与审核规则</a>
+  </nav>
+  <main class="scaling-main">
+    <p id="load-error" role="alert" hidden></p>
+    <section class="scaling-metrics" aria-label="当前全库规模">
+      <div><span>对象来源身份</span><strong id="count-objects">—</strong><small>按来源稳定 ID；跨来源几何内容去重未完成</small></div>
+      <div><span>不同对象—组件对</span><strong id="count-components">—</strong><small>包含整件占位；不等于完整拆解的物理部件数</small></div>
+      <div><span>组件状态行</span><strong id="count-status-rows">—</strong><small>同一组件可有多条状态或材料映射</small></div>
+      <div><span>全库材料标签</span><strong id="count-materials">—</strong><small>粗细粒度并存；可暂未关联物体</small></div>
+      <div><span>完整物性来源组</span><strong id="count-complete">—</strong><small>同一来源组同时报告 E、ν、ρ</small></div>
+      <div><span>缺项物性来源组</span><strong id="count-partial">—</strong><small>同组有 1 或 2 项；不跨组拼成完整组</small></div>
+    </section>
+    <section class="scaling-delta" aria-labelledby="delta-heading">
+      <div class="delta-title"><p class="scaling-kicker">本轮已落地</p><h2 id="delta-heading">新增对象与组件</h2></div>
+      <div><strong id="delta-gso">—</strong><span>GSO 来源对象</span><small>与 Kubric 同源 ID 合并一次</small></div>
+      <div><strong id="delta-components">—</strong><span>净新增真实组件</span><small id="delta-components-note">独立部件替换整件占位</small></div>
+      <p id="delta-source-note">新增资产保留材料未核状态。</p>
+    </section>
+    <div class="scaling-two-columns">
+      <section class="scaling-panel" aria-labelledby="source-heading">
+        <div class="scaling-section-heading"><div><p class="scaling-kicker">来源对账</p><h2 id="source-heading">对象身份按来源计数</h2></div><strong id="source-total"></strong></div>
+        <div class="scaling-source-table"><table><thead><tr><th scope="col">主来源</th><th scope="col">唯一对象身份</th><th scope="col">状态行</th></tr></thead><tbody id="source-rows"></tbody></table></div>
+        <p class="scaling-note">每个对象只归入一个主来源；复用关系另留别名，不重复增加对象。状态行不能当作对象数。</p>
+      </section>
+      <section class="scaling-panel" aria-labelledby="queue-heading">
+        <div class="scaling-section-heading"><div><p class="scaling-kicker">下一轮待办</p><h2 id="queue-heading">柔性优先，硬类持续</h2></div><strong id="queue-count"></strong></div>
+        <ul class="scaling-queue" id="queue-types"></ul>
+        <p class="scaling-priority" id="priority-note"></p>
+        <p class="scaling-note">这是已保存的待办队列，不会在后台自动执行。类别只决定检索顺序，不证明软硬或组件材质。</p>
+      </section>
+    </div>
+    <section class="scaling-panel scaling-assets" aria-labelledby="gso-heading">
+      <div class="scaling-section-heading"><div><p class="scaling-kicker">新增官方资产</p><h2 id="gso-heading">Google Scanned Objects</h2><p class="scaling-note" id="gso-count-note"></p></div><a href="https://fuel.gazebosim.org/1.0/GoogleResearch/models" target="_blank" rel="noopener noreferrer">打开官方清单 ↗</a></div>
+      <div class="scaling-asset-controls"><label for="gso-search">筛选当前页<input id="gso-search" type="search" placeholder="名称、类别或对象 ID" autocomplete="off"></label><label for="gso-page">资产页<select id="gso-page"></select></label><div class="scaling-pagination"><button id="gso-prev" type="button">上一页</button><button id="gso-next" type="button">下一页</button></div></div>
+      <p class="scaling-note" id="gso-page-status" aria-live="polite">载入资产页…</p>
+      <div class="scaling-asset-table"><table><thead><tr><th scope="col">物体与来源身份</th><th scope="col">组件 / 材料状态</th><th scope="col">来源与 3D 资产</th></tr></thead><tbody id="gso-rows"></tbody></table></div>
+    </section>
+    <section class="scaling-panel" aria-labelledby="parts-heading">
+      <div class="scaling-section-heading"><div><p class="scaling-kicker">官方结构证据</p><h2 id="parts-heading">新增真实组件</h2></div><span class="scaling-badge pending">组件通过 · 材料绑定待核</span></div>
+      <div id="component-cards" class="scaling-component-grid"></div>
+      <p class="scaling-note">来源部件名或资产包材料池不能单独证明组件使用该材料；资产默认物理参数不计入文献物性组。</p>
+    </section>
+    <section class="scaling-panel scaling-rules" id="counting-rules" aria-labelledby="rules-heading">
+      <p class="scaling-kicker">发布规则</p><h2 id="rules-heading">身份、材料与数值分别记录</h2>
+      <ol><li><strong>对象与部件：</strong>对象按官方稳定 ID 入账；部件需独立结构标识，整件占位保留明示。几何重复需文件哈希或引用谱系确认。</li><li><strong>材料与范围：</strong>来源材料标签和部件范围保留原文。合理候选、来源说明与正式赋值分层，不从名称或材料池自动分配。</li><li><strong>完整与缺项：</strong>一份可辨认材料/样品/条件组计一条；三项齐全计完整组，一项或两项计缺项组。重复、范围端点不拆条。</li><li><strong>来源与树：</strong>细材料可以先于物体建叶；仅经审核的包含关系向上汇总。文档键不等于独立来源，数据库转录层单独标识。</li></ol>
+      <div class="scaling-rule-links"><a href="scaling-assets/OBJECT_MATERIAL_SCALING_RULES.md">打开扩充审核规则</a><a href="phase1-ranges.html">查看逐材料来源范围</a><a href="research.html">查看证据树及原引用</a><a href="evidence-catalog.html?collection=sciglass">查看外部数据库转录层</a></div>
+    </section>
+    <footer class="scaling-footer"><p id="release-boundary"></p><details><summary>发布快照与校验</summary><dl id="release-hashes"></dl></details></footer>
+  </main>
+  <noscript>此页面需要启用 JavaScript，以载入发布统计和分页资产。</noscript>
+  <script src="scaling-data.js?v=1e166ed00f32"></script>
+  <script src="scaling.js?v=bc38d0eb58b0"></script>
+</body>
+</html>
