@@ -1,0 +1,74 @@
+{
+  "status": "PASS_CURRENT_TWO_TABLE_DELIVERY",
+  "object_identities": 42564,
+  "distinct_component_pairs": 66036,
+  "state_rows": 66085,
+  "object_shards": [
+    {
+      "file": "物体表_01.md",
+      "object_identities": 10000,
+      "state_rows": 16173,
+      "sha256": "c4e346a663fe523a1ff7843e3efad9e0d622d61fe973a07620525ba41b6353cf"
+    },
+    {
+      "file": "物体表_02.md",
+      "object_identities": 10000,
+      "state_rows": 11759,
+      "sha256": "3438d470df7d8f67946d6373dc6f08ce90dc39c9dd200b7dc5ba1fd5dcac85ed"
+    },
+    {
+      "file": "物体表_03.md",
+      "object_identities": 10000,
+      "state_rows": 10000,
+      "sha256": "5f1cec042a3f23fd954671de9422ca264446b1c7eaf4302f43c6cf27bb979b10"
+    },
+    {
+      "file": "物体表_04.md",
+      "object_identities": 10000,
+      "state_rows": 23535,
+      "sha256": "5eaae7058a251019c952a78e0158f7f6b125f45fb3264a375ba37c69800c1265"
+    },
+    {
+      "file": "物体表_05.md",
+      "object_identities": 2564,
+      "state_rows": 4618,
+      "sha256": "6cb26c894459354ed2cbd7336a1b8e90ce86adde410c996f504aa96b996bfe87"
+    }
+  ],
+  "material_nodes": 2597,
+  "object_derived_material_nodes": 193,
+  "exact_object_link_absent_material_nodes": 2404,
+  "current_material_option_rows": 162135,
+  "quarantined_legacy_option_rows": 7,
+  "main_source_groups": 4049,
+  "main_complete_groups": 2383,
+  "main_partial_groups": 1666,
+  "source_reported_material_relation_rows": 196,
+  "source_reported_gso_distinct_labels": 46,
+  "source_semantic_component_pairs": 81,
+  "source_semantic_material_rows": 84,
+  "source_semantic_authored_component_increment": 0,
+  "official_bound_material_region_rows": 7,
+  "official_bound_existing_component_pairs": 2,
+  "approximate_component_relation_rows": 12,
+  "source_label_index_entries": 48,
+  "source_label_canonical_mappings_applied": 0,
+  "new_relation_numerical_assignments": 0,
+  "new_relation_legacy_option_increments": 0,
+  "geometry_content_deduplication_complete": false,
+  "all_physical_components_enumerated": false,
+  "all_approximate_options_individually_verified": false,
+  "numerical_values_modified": false,
+  "original_tables_modified": false,
+  "input_sha256": {
+    "data/scaling_release_v1/object_component_inventory.csv": "7776098e351e214e7d5e0b7cab31aa1695057999b79b9ece502d0341385c1944",
+    "data/two_table_release_v3/object_component_material_assignments_complete_v1.csv": "81bf85e22735ee148244be05659f759de68f82f9039473c1b732b37f6d91cfaf",
+    "audit/material_range_phase1_v1/phase1_complete_triplet_record_ledger.csv": "1f28fceb67a6591aad4c42a7f6f2e83dafe96c595f8af1897abfc6dd15ebe793",
+    "audit/material_range_phase1_v1/phase1_incomplete_triplet_record_ledger.csv": "3f5f569a2340f1c4805bf3cd3e36b273f2cf96c3701f364b317b3dfe161a2e22",
+    "audit/gso_official_material_mapping_cycle2_2026-11-13/accepted_material_mapping_delta.csv": "84decbb784bb4b630d480bf690bed75377f95e4775747b508d4b83b001d306bb",
+    "audit/gso_official_material_mapping_cycle2_2026-11-13/semantic_component_proposals.csv": "9353887f7ca666ef82f58d210154bb98cb6db48ef6e18e06a73430572425014f",
+    "audit/simready_component_binding_cycle2_2026-11-13/mapping_patch.csv": "baffbd0c1cb17a723be4ed33286f72db29c9454ebb02a0557b0c0ed52564f951",
+    "audit/simready_component_binding_cycle2_2026-11-13/headlamp_bound_material_regions.csv": "1a91b3c1c4f9c7fcdf2bf36aaec194890038d66a5d99195cb98c1cdfb67bed2c",
+    "audit/simready_component_binding_cycle2_2026-11-13/approximate_material_patch.csv": "3c6fbe3cb76caff5f0f9ad0ccb1ea09b9f4350cfd85b205417b4ae332baf362b"
+  }
+}

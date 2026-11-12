@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "file": "物体表_01.md.gz",
+      "sha256": "6f7e0bc3cebd6ec1bde3d4fd24d0ed1e8fa1d6d10fba4b0f761557589aba8bb1",
+      "original_sha256": "c4e346a663fe523a1ff7843e3efad9e0d622d61fe973a07620525ba41b6353cf",
+      "bytes": 1170596
+    },
+    {
+      "file": "物体表_02.md.gz",
+      "sha256": "6342ea222c1559b7d80195c735e1a22f71723a28eba4e121b7236643f48ec6bd",
+      "original_sha256": "3438d470df7d8f67946d6373dc6f08ce90dc39c9dd200b7dc5ba1fd5dcac85ed",
+      "bytes": 538611
+    },
+    {
+      "file": "物体表_03.md.gz",
+      "sha256": "73f13b00d4a7be4ba026317dc8776527e1715ca586182254366ac3d43db192eb",
+      "original_sha256": "5f1cec042a3f23fd954671de9422ca264446b1c7eaf4302f43c6cf27bb979b10",
+      "bytes": 360637
+    },
+    {
+      "file": "物体表_04.md.gz",
+      "sha256": "c5a9e3d10c9b0cedb0788ef0c99c5d585bd8f75d1be3bba0e9f0a961e05f53a0",
+      "original_sha256": "5eaae7058a251019c952a78e0158f7f6b125f45fb3264a375ba37c69800c1265",
+      "bytes": 900476
+    },
+    {
+      "file": "物体表_05.md.gz",
+      "sha256": "ddfb883f7b1c03c4cfeb7806a927fa6c7e8e28bbd48ed53e7a3935361abda46a",
+      "original_sha256": "6cb26c894459354ed2cbd7336a1b8e90ce86adde410c996f504aa96b996bfe87",
+      "bytes": 165897
+    },
+    {
+      "file": "object_derived_material_table.csv.gz",
+      "sha256": "9c0730c8ff4c91001393b0bf14da83978d9cf8b5b684631dc1484595065ffbf6",
+      "original_sha256": "e6356f237fd9aba1997c50f2ee3452229c8b6c973230f99dea2b4ab93ad31cb1",
+      "bytes": 63217
+    },
+    {
+      "file": "material_reverse_index_and_property_ranges.csv.gz",
+      "sha256": "27d9639e21591a179bc6e7a24d9254f747f0c680056171fc7e867013e2d15934",
+      "original_sha256": "d1518660fe5a805b194d00669ccd7fc3159aa2aaffc6e8c815dd793289b4b930",
+      "bytes": 259211
+    },
+    {
+      "file": "main_property_source_groups.csv.gz",
+      "sha256": "f96881421679ad68988a4d044c32e7c605b4dfb266f6f14601ef9bccb8dade73",
+      "original_sha256": "64195253841d93e2a549f83d042216a290c11c4aab27dfa731125b0011cc4584",
+      "bytes": 320779
+    },
+    {
+      "file": "source_reported_material_label_index.csv.gz",
+      "sha256": "acf72d829d6e74852ee7b938b92db7c1b99703c9dec903f71a73bf8a0af9f780",
+      "original_sha256": "9d65809dee99743c71b0107b4bfd4098521011cc2babe04b1f4f8097de3c6d4f",
+      "bytes": 5314
+    },
+    {
+      "file": "source_semantic_components.csv.gz",
+      "sha256": "ef8327fab74fdfb1207f7a337e0e1421366ad4dc4d6bcf0688fcb5e50fded390",
+      "original_sha256": "9d1d31acb90dc022368456951823d44b3c4c65f822ee296e85d4ca83abbef80e",
+      "bytes": 13037
+    },
+    {
+      "file": "source_reported_material_relations.csv.gz",
+      "sha256": "e696605aa44a23f03a15cfb779bc3e1304acee1e73c930597f11362502c5b313",
+      "original_sha256": "ad86718e8eb0a90c4c5b42e727995d191bac0826195407f5f06f4018c359beec",
+      "bytes": 22042
+    },
+    {
+      "file": "official_bound_material_relations.csv.gz",
+      "sha256": "82c842c89e6fbcdc54c10570d74d3229b7b93003d02ef613271d98ada47aa3ac",
+      "original_sha256": "96f3e8dc715d1ffb1ffbb29ee5f6c3439cf6df3a6ed6661145f648ac8cf7c9d2",
+      "bytes": 1725
+    },
+    {
+      "file": "approximate_component_material_relations.csv.gz",
+      "sha256": "56d684a9aa73ee22977f7a7a896c689628d27300f9d2619b07dfa61b8db83626",
+      "original_sha256": "11cd31edbf78207dffab035fd3c6739fa8f395adc131f3cd8870cc20b829ba7c",
+      "bytes": 1725
+    },
+    {
+      "file": "property_ranges_by_reported_definition.csv.gz",
+      "sha256": "bbc9e412bc50bee1738515b9b6e7c3ba508288e343165828141a8308c70c193d",
+      "original_sha256": "def9e9decf7806f2212e1778870ce7cca968dbca63fd98040a95f4d538a1187c",
+      "bytes": 197271
+    }
+  ],
+  "values_modified": false
+}

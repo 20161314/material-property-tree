@@ -9,10 +9,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Canvas_Bahama_in_Black_vnJULsDVyq5/tip/Womens_Canvas_Bahama_in_Black_vnJULsDVyq5.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-1D953B9F2E8EC9F5",
+        "source_asset_id": "Womens_Canvas_Bahama_in_Black_vnJULsDVyq5",
+        "material_label_raw": "canvas",
+        "material_name_cn": "帆布",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Canvas",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Canvas_Bahama_in_Black_vnJULsDVyq5/tip/files/metadata.pbtxt",
+        "source_sha256": "d006050a0b3f428896f7f4cbe19f88f0af6071cea5b7f48bdf48c5c2dc06a784",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-0376C2D815A0107D47AD",
+        "source_label_normalized": "canvas",
+        "semantic_part_key": "",
+        "quoted_scope": "Canvas",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-6562D544B78046F9",
@@ -24,10 +50,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Canvas_Bahama_in_White_4UyOhP6rYGO/tip/Womens_Canvas_Bahama_in_White_4UyOhP6rYGO.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-6562D544B78046F9",
+        "source_asset_id": "Womens_Canvas_Bahama_in_White_4UyOhP6rYGO",
+        "material_label_raw": "canvas",
+        "material_name_cn": "帆布",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Canvas",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Canvas_Bahama_in_White_4UyOhP6rYGO/tip/files/metadata.pbtxt",
+        "source_sha256": "3d0bf77f7fe1c083d62c4b1e7c3f1a886e0c3ecc0094eb8a23d9efd9f3429d42",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-BC2C4FDFA0A727CDDA04",
+        "source_label_normalized": "canvas",
+        "semantic_part_key": "",
+        "quoted_scope": "Canvas",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-0B7C54345B5A8DD3",
@@ -39,10 +91,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Canvas_Bahama_in_White_UfZPHGQpvz0/tip/Womens_Canvas_Bahama_in_White_UfZPHGQpvz0.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-0B7C54345B5A8DD3",
+        "source_asset_id": "Womens_Canvas_Bahama_in_White_UfZPHGQpvz0",
+        "material_label_raw": "canvas",
+        "material_name_cn": "帆布",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Canvas",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Canvas_Bahama_in_White_UfZPHGQpvz0/tip/files/metadata.pbtxt",
+        "source_sha256": "06b5e157b43c38b564eb07bab374b8b02e913376a6b2c28fcaebd6dcf346578a",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-6AC406FF9E6B167E889B",
+        "source_label_normalized": "canvas",
+        "semantic_part_key": "",
+        "quoted_scope": "Canvas",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-0CC5354EE95242A9",
@@ -54,10 +132,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Cloud_Logo_Authentic_Original_Boat_Shoe_in_Black_Supersoft_8LigQYwf4gr/tip/Womens_Cloud_Logo_Authentic_Original_Boat_Shoe_in_Black_Supersoft_8LigQYwf4gr.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-BDED1E82AC3938C2",
@@ -69,10 +149,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Cloud_Logo_Authentic_Original_Boat_Shoe_in_Black_Supersoft_cZR022qFI4k/tip/Womens_Cloud_Logo_Authentic_Original_Boat_Shoe_in_Black_Supersoft_cZR022qFI4k.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-6EE259A046724F9E",
@@ -84,10 +166,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Hikerfish_Boot_in_Black_Leopard_bVSNY1Le1sm/tip/Womens_Hikerfish_Boot_in_Black_Leopard_bVSNY1Le1sm.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-97E1C716EDA579AC",
@@ -99,10 +183,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Hikerfish_Boot_in_Black_Leopard_ridcCWsv8rW/tip/Womens_Hikerfish_Boot_in_Black_Leopard_ridcCWsv8rW.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-D1F496D4C4B1F718",
@@ -114,10 +200,59 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Hikerfish_Boot_in_Linen_Leather_Sparkle_Suede_QktIyAkonrU/tip/Womens_Hikerfish_Boot_in_Linen_Leather_Sparkle_Suede_QktIyAkonrU.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-D1F496D4C4B1F718",
+        "source_asset_id": "Womens_Hikerfish_Boot_in_Linen_Leather_Sparkle_Suede_QktIyAkonrU",
+        "material_label_raw": "leather",
+        "material_name_cn": "皮革",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Leather",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Hikerfish_Boot_in_Linen_Leather_Sparkle_Suede_QktIyAkonrU/tip/files/metadata.pbtxt",
+        "source_sha256": "100ff9c4442f1538335d59e89703c115d40774cd4dab92dee1a192f21180fa13",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-EC60433A62F6948A473E",
+        "source_label_normalized": "leather",
+        "semantic_part_key": "",
+        "quoted_scope": "Leather",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      },
+      {
+        "object_id": "OBJ-GSO-D1F496D4C4B1F718",
+        "source_asset_id": "Womens_Hikerfish_Boot_in_Linen_Leather_Sparkle_Suede_QktIyAkonrU",
+        "material_label_raw": "suede",
+        "material_name_cn": "绒面材料（源标签）",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Suede",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Hikerfish_Boot_in_Linen_Leather_Sparkle_Suede_QktIyAkonrU/tip/files/metadata.pbtxt",
+        "source_sha256": "100ff9c4442f1538335d59e89703c115d40774cd4dab92dee1a192f21180fa13",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-9527B7CD0B828E19892F",
+        "source_label_normalized": "suede",
+        "semantic_part_key": "",
+        "quoted_scope": "Suede",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 2,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-3581F9FF13B58BB6",
@@ -129,10 +264,59 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Hikerfish_Boot_in_Linen_Leather_Sparkle_Suede_imlP8VkwqIH/tip/Womens_Hikerfish_Boot_in_Linen_Leather_Sparkle_Suede_imlP8VkwqIH.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-3581F9FF13B58BB6",
+        "source_asset_id": "Womens_Hikerfish_Boot_in_Linen_Leather_Sparkle_Suede_imlP8VkwqIH",
+        "material_label_raw": "leather",
+        "material_name_cn": "皮革",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Leather",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Hikerfish_Boot_in_Linen_Leather_Sparkle_Suede_imlP8VkwqIH/tip/files/metadata.pbtxt",
+        "source_sha256": "803008e515d81b11e20b6d49f825f426831f139c35bdef7a432f9412b663ae6c",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-094DB1BBCAC7A7966244",
+        "source_label_normalized": "leather",
+        "semantic_part_key": "",
+        "quoted_scope": "Leather",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      },
+      {
+        "object_id": "OBJ-GSO-3581F9FF13B58BB6",
+        "source_asset_id": "Womens_Hikerfish_Boot_in_Linen_Leather_Sparkle_Suede_imlP8VkwqIH",
+        "material_label_raw": "suede",
+        "material_name_cn": "绒面材料（源标签）",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Suede",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Hikerfish_Boot_in_Linen_Leather_Sparkle_Suede_imlP8VkwqIH/tip/files/metadata.pbtxt",
+        "source_sha256": "803008e515d81b11e20b6d49f825f426831f139c35bdef7a432f9412b663ae6c",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-1AFD2158D663B1AEC2E9",
+        "source_label_normalized": "suede",
+        "semantic_part_key": "",
+        "quoted_scope": "Suede",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 2,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-2B72263251F11425",
@@ -144,10 +328,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Multi_13/tip/Womens_Multi_13.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-5FFADF2F763B58C0",
@@ -159,10 +345,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Sequin_Bahama_in_White_Sequin_V9K1hf24Oxe/tip/Womens_Sequin_Bahama_in_White_Sequin_V9K1hf24Oxe.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-D317E856FECB68A5",
@@ -174,10 +362,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Sequin_Bahama_in_White_Sequin_XoR8xTlxj1g/tip/Womens_Sequin_Bahama_in_White_Sequin_XoR8xTlxj1g.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-708966F230B8EB24",
@@ -189,10 +379,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Sequin_Bahama_in_White_Sequin_yGVsSA4tOwJ/tip/Womens_Sequin_Bahama_in_White_Sequin_yGVsSA4tOwJ.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-5B6176FB2224949E",
@@ -204,10 +396,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Sparkle_Suede_Angelfish_in_Grey_Sparkle_Suede_Silver/tip/Womens_Sparkle_Suede_Angelfish_in_Grey_Sparkle_Suede_Silver.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-5B6176FB2224949E",
+        "source_asset_id": "Womens_Sparkle_Suede_Angelfish_in_Grey_Sparkle_Suede_Silver",
+        "material_label_raw": "suede",
+        "material_name_cn": "绒面材料（源标签）",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Suede",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Sparkle_Suede_Angelfish_in_Grey_Sparkle_Suede_Silver/tip/files/metadata.pbtxt",
+        "source_sha256": "64607966e56c076d952a19dcd1c5121da1e67cb5a412981adad7b940bf3c5777",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-3D8F859C5FDD1E47D6D4",
+        "source_label_normalized": "suede",
+        "semantic_part_key": "",
+        "quoted_scope": "Suede",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-91D209D1CBAF03DD",
@@ -219,10 +437,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Sparkle_Suede_Bahama_in_Silver_Sparkle_Suede_Grey_Patent_tYrIBLMhSTN/tip/Womens_Sparkle_Suede_Bahama_in_Silver_Sparkle_Suede_Grey_Patent_tYrIBLMhSTN.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-91D209D1CBAF03DD",
+        "source_asset_id": "Womens_Sparkle_Suede_Bahama_in_Silver_Sparkle_Suede_Grey_Patent_tYrIBLMhSTN",
+        "material_label_raw": "suede",
+        "material_name_cn": "绒面材料（源标签）",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Suede",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Sparkle_Suede_Bahama_in_Silver_Sparkle_Suede_Grey_Patent_tYrIBLMhSTN/tip/files/metadata.pbtxt",
+        "source_sha256": "0caf9922bece7c1ce43360aed22e8413c5b2f9892d9f687882489cdc28b5250a",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-6E47431AD14CB63EA8F7",
+        "source_label_normalized": "suede",
+        "semantic_part_key": "",
+        "quoted_scope": "Suede",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-DBD0B8172567F419",
@@ -234,10 +478,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Sparkle_Suede_Bahama_in_Silver_Sparkle_Suede_Grey_Patent_x9rclU7EJXx/tip/Womens_Sparkle_Suede_Bahama_in_Silver_Sparkle_Suede_Grey_Patent_x9rclU7EJXx.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-DBD0B8172567F419",
+        "source_asset_id": "Womens_Sparkle_Suede_Bahama_in_Silver_Sparkle_Suede_Grey_Patent_x9rclU7EJXx",
+        "material_label_raw": "suede",
+        "material_name_cn": "绒面材料（源标签）",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Suede",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Sparkle_Suede_Bahama_in_Silver_Sparkle_Suede_Grey_Patent_x9rclU7EJXx/tip/files/metadata.pbtxt",
+        "source_sha256": "31f283bc167aa759bbd9c8115a583fd1c8ddbc357201a344850c53c2c55b7419",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-EB51B647B6541BBD20EF",
+        "source_label_normalized": "suede",
+        "semantic_part_key": "",
+        "quoted_scope": "Suede",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-0C9A31370EB3E9E1",
@@ -249,10 +519,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Suede_Bahama_in_Graphite_Suede_cUAjIMhWSO9/tip/Womens_Suede_Bahama_in_Graphite_Suede_cUAjIMhWSO9.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-0C9A31370EB3E9E1",
+        "source_asset_id": "Womens_Suede_Bahama_in_Graphite_Suede_cUAjIMhWSO9",
+        "material_label_raw": "suede",
+        "material_name_cn": "绒面材料（源标签）",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Suede",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Suede_Bahama_in_Graphite_Suede_cUAjIMhWSO9/tip/files/metadata.pbtxt",
+        "source_sha256": "5a984b515b4f238f3674f489f9b56d93b5548bfd21e11b2be617d437440c1712",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-634B160DF0435FACCD78",
+        "source_label_normalized": "suede",
+        "semantic_part_key": "",
+        "quoted_scope": "Suede",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-881371F76711A2E9",
@@ -264,10 +560,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Suede_Bahama_in_Graphite_Suede_p1KUwoWbw7R/tip/Womens_Suede_Bahama_in_Graphite_Suede_p1KUwoWbw7R.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-881371F76711A2E9",
+        "source_asset_id": "Womens_Suede_Bahama_in_Graphite_Suede_p1KUwoWbw7R",
+        "material_label_raw": "suede",
+        "material_name_cn": "绒面材料（源标签）",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Suede",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Suede_Bahama_in_Graphite_Suede_p1KUwoWbw7R/tip/files/metadata.pbtxt",
+        "source_sha256": "e8a99e1c1b801b45761857cb06ff38a15e5e379ae667b5c713460c67e1a8a630",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-1DC8F8143F5E929EDB96",
+        "source_label_normalized": "suede",
+        "semantic_part_key": "",
+        "quoted_scope": "Suede",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-F019D6C7042E7AD4",
@@ -279,10 +601,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Suede_Bahama_in_Graphite_Suede_t22AJSRjBOX/tip/Womens_Suede_Bahama_in_Graphite_Suede_t22AJSRjBOX.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-F019D6C7042E7AD4",
+        "source_asset_id": "Womens_Suede_Bahama_in_Graphite_Suede_t22AJSRjBOX",
+        "material_label_raw": "suede",
+        "material_name_cn": "绒面材料（源标签）",
+        "component_scope_reported": "Source product-title material; exact shoe region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Suede",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Suede_Bahama_in_Graphite_Suede_t22AJSRjBOX/tip/files/metadata.pbtxt",
+        "source_sha256": "2df1bbc3612da9ad2646a8ff5ec5bd5f0a6b0e212d7e143ff2274d2ba02d3f96",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source title label only; not every region of shoe. Suede/nubuck/canvas retain construction; no chemical/animal identity inferred.",
+        "mapping_delta_id": "GSO-MAT-F237857F75E3486D1DD4",
+        "source_label_normalized": "suede",
+        "semantic_part_key": "",
+        "quoted_scope": "Suede",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-5363F3448BE96A5A",
@@ -294,10 +642,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Teva_Capistrano_Bootie/tip/Womens_Teva_Capistrano_Bootie.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-5679616199C99DC4",
@@ -309,10 +659,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Womens_Teva_Capistrano_Bootie_ldjRT9yZ5Ht/tip/Womens_Teva_Capistrano_Bootie_ldjRT9yZ5Ht.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-BE7D5C73F15357AE",
@@ -324,7 +676,7 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Wooden_ABC_123_Blocks_50_pack/tip/Wooden_ABC_123_Blocks_50_pack.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
     "sourceMaterialBacklinks": [
@@ -333,19 +685,27 @@
         "source_asset_id": "Wooden_ABC_123_Blocks_50_pack",
         "material_label_raw": "wood",
         "material_name_cn": "木材",
-        "component_scope_reported": "wooden blocks; not packaging",
+        "component_scope_reported": "Source-labelled blocks; package quantity does not create component rows",
         "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
-        "source_quote": "Wooden ABC 123 Blocks - 50 pack",
+        "source_quote": "Wooden ABC 123 Blocks",
         "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Wooden_ABC_123_Blocks_50_pack/tip/files/metadata.pbtxt",
         "source_sha256": "e92a8e88b377eeab7a0041be15ede6be5606e5ada16eef2e62dc852747e6a460",
-        "source_locator": "officialGoogle metadata.pbtxt description",
+        "source_locator": "metadata.pbtxt: description",
         "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
         "physical_properties_supplied": "false",
         "new_authored_component_rows": "0",
-        "asset_material_assignment_effect": "PROPOSED_BACKLINK_ONLY_NOT_MERGED",
-        "limitations": "50pack is product description, not50geometryassets or50authoredparts; wood species unreported."
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. ",
+        "mapping_delta_id": "GSO-MAT-238E2434690D47E3A2AF",
+        "source_label_normalized": "wood",
+        "semantic_part_key": "",
+        "quoted_scope": "Wooden ABC 123 Blocks",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
       }
-    ]
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-7F6E4E8831C55919",
@@ -357,10 +717,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Wrigley_Orbit_Mint_Variety_18_Count/tip/Wrigley_Orbit_Mint_Variety_18_Count.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-295B0FD5A0882691",
@@ -372,10 +734,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Xyli_Pure_Xylitol/tip/Xyli_Pure_Xylitol.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-468740BC01664450",
@@ -387,10 +751,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/YumYum_D3_Liquid/tip/YumYum_D3_Liquid.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-7D3E7E4CF7E4B4ED",
@@ -402,10 +768,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/ZX700_lYiwcTIekXk/tip/ZX700_lYiwcTIekXk.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-C182B52FF7767BEA",
@@ -417,10 +785,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/ZX700_mf9Pc06uL06/tip/ZX700_mf9Pc06uL06.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-AD86CE3D9CF7CF32",
@@ -432,10 +802,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/ZX700_mzGbdP3u6JB/tip/ZX700_mzGbdP3u6JB.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-CE05D699E6D5C048",
@@ -447,10 +819,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/ZigKick_Hoops/tip/ZigKick_Hoops.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-28A54DE3BD93ADD4",
@@ -462,10 +836,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/adiZero_Slide_2_SC/tip/adiZero_Slide_2_SC.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-C0182912B05D49A8",
@@ -477,10 +853,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/adistar_boost_m/tip/adistar_boost_m.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-35B51038BE38A87A",
@@ -492,10 +870,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/adizero_5Tool_25/tip/adizero_5Tool_25.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-9300BBE2C1DF9C26",
@@ -507,9 +887,11 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/adizero_F50_TRX_FG_LEA/tip/adizero_F50_TRX_FG_LEA.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   }
 ]

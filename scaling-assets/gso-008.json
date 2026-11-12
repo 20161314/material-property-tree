@@ -9,10 +9,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Ravenna_4_Color_WhtOlyBluBlkShkOrngSlvRdO_Size_70/tip/Ravenna_4_Color_WhtOlyBluBlkShkOrngSlvRdO_Size_70.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-A63663D91A2D7694",
@@ -24,10 +26,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Rayna_BootieWP/tip/Rayna_BootieWP.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-F00103561F500E21",
@@ -39,10 +43,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Razer_Abyssus_Ambidextrous_Gaming_Mouse/tip/Razer_Abyssus_Ambidextrous_Gaming_Mouse.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-F672B1C7CA9178D6",
@@ -54,10 +60,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Razer_BlackWidow_Stealth_2014_Keyboard_07VFzIVabgh/tip/Razer_BlackWidow_Stealth_2014_Keyboard_07VFzIVabgh.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-76B22F24FBC2ED05",
@@ -69,10 +77,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Razer_BlackWidow_Ultimate_2014_Mechanical_Gaming_Keyboard/tip/Razer_BlackWidow_Ultimate_2014_Mechanical_Gaming_Keyboard.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-358EC474C44F868F",
@@ -84,10 +94,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Razer_Blackwidow_Tournament_Edition_Keyboard/tip/Razer_Blackwidow_Tournament_Edition_Keyboard.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-CBD24A3D0DF30803",
@@ -99,10 +111,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Razer_Goliathus_Control_Edition_Small_Soft_Gaming_Mouse_Mat/tip/Razer_Goliathus_Control_Edition_Small_Soft_Gaming_Mouse_Mat.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-CBD24A3D0DF30803",
+        "source_asset_id": "Razer_Goliathus_Control_Edition_Small_Soft_Gaming_Mouse_Mat",
+        "material_label_raw": "rubber",
+        "material_name_cn": "橡胶",
+        "component_scope_reported": "Rubber base",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "rubber base",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Razer_Goliathus_Control_Edition_Small_Soft_Gaming_Mouse_Mat/tip/files/metadata.pbtxt",
+        "source_sha256": "9125c1fd859ec9b459dcfdb85b82fb83fbe08d4d28dc2a3aad33138ded2f904a",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. ",
+        "mapping_delta_id": "GSO-MAT-9A2AF5B3F64E713D0935",
+        "source_label_normalized": "rubber",
+        "semantic_part_key": "GSO-SEM-0732AB0761C12FBB6C71",
+        "quoted_scope": "rubber base",
+        "scope_explicitness": "EXPLICIT_SOURCE_SEMANTIC_COMPONENT",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-3B3D98D883CF2127",
@@ -114,10 +152,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Razer_Kraken_71_Chroma_headset_Full_size_Black/tip/Razer_Kraken_71_Chroma_headset_Full_size_Black.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-E8540E6B22585EDE",
@@ -129,10 +169,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Razer_Kraken_Pro_headset_Full_size_Black/tip/Razer_Kraken_Pro_headset_Full_size_Black.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-E8540E6B22585EDE",
+        "source_asset_id": "Razer_Kraken_Pro_headset_Full_size_Black",
+        "material_label_raw": "neodymium magnet",
+        "material_name_cn": "钕磁体（源标签）",
+        "component_scope_reported": "Driver neodymium magnets",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "neodymium magnet drivers",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Razer_Kraken_Pro_headset_Full_size_Black/tip/files/metadata.pbtxt",
+        "source_sha256": "6062218e39c2dffd95706c8a55c452fc4e86af50e4de25fd7dc0b6033391326b",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Source magnet label; do not promote to pure elemental neodymium or exact alloy grade.",
+        "mapping_delta_id": "GSO-MAT-0BD00ED0D1D19AB6BA35",
+        "source_label_normalized": "neodymium magnet",
+        "semantic_part_key": "GSO-SEM-846104C32A189A59792E",
+        "quoted_scope": "neodymium magnet drivers",
+        "scope_explicitness": "EXPLICIT_SOURCE_SEMANTIC_COMPONENT",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-3CE2A18FF9022733",
@@ -144,10 +210,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Razer_Naga_MMO_Gaming_Mouse/tip/Razer_Naga_MMO_Gaming_Mouse.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-31933B400E172FA9",
@@ -159,10 +227,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Razer_Taipan_Black_Ambidextrous_Gaming_Mouse/tip/Razer_Taipan_Black_Ambidextrous_Gaming_Mouse.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-1E5D6CE995004F8F",
@@ -174,10 +244,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Razer_Taipan_White_Ambidextrous_Gaming_Mouse/tip/Razer_Taipan_White_Ambidextrous_Gaming_Mouse.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-0CBE03CDEF1B6955",
@@ -189,10 +261,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/ReadytoUse_Rolled_Fondant_Pure_White_24_oz_box/tip/ReadytoUse_Rolled_Fondant_Pure_White_24_oz_box.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-82D9C7FB42CA2A2B",
@@ -204,10 +278,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Real_Deal_1nIwCHX1MTh/tip/Real_Deal_1nIwCHX1MTh.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-B803C134E306D6F1",
@@ -219,10 +295,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/RedBlack_Nintendo_3DSXL/tip/RedBlack_Nintendo_3DSXL.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-73D58220A4E65D54",
@@ -234,10 +312,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_ALLYLYNN/tip/Reebok_ALLYLYNN.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-B2DB1AB5DCD83CB4",
@@ -249,10 +329,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_BREAKPOINT_LO_2V/tip/Reebok_BREAKPOINT_LO_2V.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-350A8F1920F2AB0C",
@@ -264,10 +346,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_BREAKPOINT_MID/tip/Reebok_BREAKPOINT_MID.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-074B9D6CAE02E4EA",
@@ -279,10 +363,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_CLASSIC_JOGGER/tip/Reebok_CLASSIC_JOGGER.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-8BE80246528FAD85",
@@ -294,10 +380,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_CLASSIC_LEGACY_II/tip/Reebok_CLASSIC_LEGACY_II.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-31149D33519BED20",
@@ -309,10 +397,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_CL_DIBELLO_II/tip/Reebok_CL_DIBELLO_II.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-C7354C7957859786",
@@ -324,10 +414,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_CL_LTHR_R12/tip/Reebok_CL_LTHR_R12.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-C0C2CAED062CFD63",
@@ -339,10 +431,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_CL_RAYEN/tip/Reebok_CL_RAYEN.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-D8B5817C465B55E0",
@@ -354,10 +448,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_COMFORT_REEFRESH_FLIP/tip/Reebok_COMFORT_REEFRESH_FLIP.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-ABA44961136B5ABC",
@@ -369,10 +465,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_DMX_MAX_MANIA_WD_D/tip/Reebok_DMX_MAX_MANIA_WD_D.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-545E131F9A4C40A5",
@@ -384,10 +482,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_DMX_MAX_PLUS_ATHLETIC/tip/Reebok_DMX_MAX_PLUS_ATHLETIC.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-8F8808765C60294B",
@@ -399,10 +499,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_DMX_MAX_PLUS_RAINWALKER/tip/Reebok_DMX_MAX_PLUS_RAINWALKER.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-7DE55B367734B7E7",
@@ -414,10 +516,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_EASYTONE_CL_LEATHER/tip/Reebok_EASYTONE_CL_LEATHER.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-7C039104CFF6919D",
@@ -429,10 +533,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_FS_HI_INT_R12/tip/Reebok_FS_HI_INT_R12.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-ED2F9FCEE5C779C2",
@@ -444,10 +550,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_FS_HI_MINI/tip/Reebok_FS_HI_MINI.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-1CCBB7ACDF847839",
@@ -459,10 +567,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_FUELTRAIN/tip/Reebok_FUELTRAIN.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-35A716EEB135A43C",
@@ -474,10 +584,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_GL_6000/tip/Reebok_GL_6000.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-5E5460470DCD6282",
@@ -489,10 +601,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_HIMARA_LTR/tip/Reebok_HIMARA_LTR.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-A4015E66BEEC025A",
@@ -504,10 +618,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_JR_ZIG_COOPERSTOWN_MR/tip/Reebok_JR_ZIG_COOPERSTOWN_MR.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-6B3487E732DA5866",
@@ -519,10 +635,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_KAMIKAZE_II_MID/tip/Reebok_KAMIKAZE_II_MID.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-319964835CF4B34B",
@@ -534,10 +652,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_PUMP_OMNI_LITE_HLS/tip/Reebok_PUMP_OMNI_LITE_HLS.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-07EDF19363D763C6",
@@ -549,10 +669,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_REALFLEX_SELECT/tip/Reebok_REALFLEX_SELECT.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-1FCCDC888689AEEE",
@@ -564,10 +686,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_REESCULPT_TRAINER_II/tip/Reebok_REESCULPT_TRAINER_II.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-F0A8B4336CD01F60",
@@ -579,10 +703,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_RETRO_RUSH_2V/tip/Reebok_RETRO_RUSH_2V.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-4C75FDEB7AEEF254",
@@ -594,10 +720,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_R_CROSSFIT_OLY_UFORM/tip/Reebok_R_CROSSFIT_OLY_UFORM.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-F8D762840882055B",
@@ -609,10 +737,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_R_DANCE_FLASH/tip/Reebok_R_DANCE_FLASH.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-7C9521F15404A991",
@@ -624,10 +754,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_SH_COURT_MID_II/tip/Reebok_SH_COURT_MID_II.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-B799ED800A9BCB9E",
@@ -639,10 +771,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_SH_NEWPORT_LOW/tip/Reebok_SH_NEWPORT_LOW.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-B84820ACEFDAB0AA",
@@ -654,10 +788,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_SH_PRIME_COURT_LOW/tip/Reebok_SH_PRIME_COURT_LOW.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-8B950EACF2F2EC59",
@@ -669,10 +805,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_SH_PRIME_COURT_MID/tip/Reebok_SH_PRIME_COURT_MID.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-E9BC9585156AE454",
@@ -684,10 +822,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_SL_FLIP_UPDATE/tip/Reebok_SL_FLIP_UPDATE.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-02FB8DE6843B0551",
@@ -699,10 +839,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_SMOOTHFLEX_CUSHRUN_20/tip/Reebok_SMOOTHFLEX_CUSHRUN_20.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-D78583BE4C3AB6D5",
@@ -714,10 +856,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_SOMERSET_RUN/tip/Reebok_SOMERSET_RUN.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-DE4DF68A65A55061",
@@ -729,10 +873,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_STUDIO_BEAT_LOW_V/tip/Reebok_STUDIO_BEAT_LOW_V.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-3568569D2A8CD2B4",
@@ -744,10 +890,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_TRIPLE_BREAK_LITE/tip/Reebok_TRIPLE_BREAK_LITE.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-15400B6DF0AEF69D",
@@ -759,10 +907,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_TURBO_RC/tip/Reebok_TURBO_RC.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-3F89BBE388D276F7",
@@ -774,10 +924,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_ULTIMATIC_2V/tip/Reebok_ULTIMATIC_2V.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-8BE4947FC83C2E70",
@@ -789,10 +941,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_VERSA_TRAIN/tip/Reebok_VERSA_TRAIN.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-901EB3FA2F1153E9",
@@ -804,10 +958,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_ZIGCOOPERSTOWN_QUAG/tip/Reebok_ZIGCOOPERSTOWN_QUAG.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-18BA5E3686F6E998",
@@ -819,10 +975,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_ZIGLITE_RUSH/tip/Reebok_ZIGLITE_RUSH.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-27963F44DD228A37",
@@ -834,10 +992,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_ZIGLITE_RUSH_AC/tip/Reebok_ZIGLITE_RUSH_AC.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-030483960A8792B6",
@@ -849,10 +1009,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_ZIGSTORM/tip/Reebok_ZIGSTORM.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-CF1854FFA2CDFA00",
@@ -864,10 +1026,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reebok_ZIGTECH_SHARK_MAYHEM360/tip/Reebok_ZIGTECH_SHARK_MAYHEM360.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-092B3FA0885C4D77",
@@ -879,10 +1043,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Reef_Star_Cushion_Flipflops_Size_8_Black/tip/Reef_Star_Cushion_Flipflops_Size_8_Black.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-CC940F7C5F80C477",
@@ -894,10 +1060,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Remington_1_12_inch_Hair_Straightener/tip/Remington_1_12_inch_Hair_Straightener.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-7B5177ABCF1F2EA3",
@@ -909,10 +1077,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Remington_TStudio_Hair_Dryer/tip/Remington_TStudio_Hair_Dryer.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-4FD3C77B5651FCDA",
@@ -924,10 +1094,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Remington_TStudio_Silk_Ceramic_Hair_Straightener_2_Inch_Floating_Plates/tip/Remington_TStudio_Silk_Ceramic_Hair_Straightener_2_Inch_Floating_Plates.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-4FD3C77B5651FCDA",
+        "source_asset_id": "Remington_TStudio_Silk_Ceramic_Hair_Straightener_2_Inch_Floating_Plates",
+        "material_label_raw": "ceramic coating",
+        "material_name_cn": "陶瓷涂层",
+        "component_scope_reported": "Ceramic coating",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "high-performance ceramic coating",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Remington_TStudio_Silk_Ceramic_Hair_Straightener_2_Inch_Floating_Plates/tip/files/metadata.pbtxt",
+        "source_sha256": "b243da3e7fc2dd10500266cc0d626dcaa6e5dff3f00b851fc9a08aa1bd54b7ec",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. Title says 2-inch but description says 1-inch. Preserve size conflict; coating statement not extended to whole appliance.",
+        "mapping_delta_id": "GSO-MAT-613E867F6D00E01EA87C",
+        "source_label_normalized": "ceramic coating",
+        "semantic_part_key": "GSO-SEM-1624B5AFA236598D0284",
+        "quoted_scope": "high-performance ceramic coating",
+        "scope_explicitness": "EXPLICIT_SOURCE_SEMANTIC_COMPONENT",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-E13663453CC0E83A",
@@ -939,10 +1135,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Retail_Leadership_Summit/tip/Retail_Leadership_Summit.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-9489DE69E8D8E546",
@@ -954,10 +1152,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Retail_Leadership_Summit_eCT3zqHYIkX/tip/Retail_Leadership_Summit_eCT3zqHYIkX.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-473A2D812A1700A3",
@@ -969,10 +1169,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Retail_Leadership_Summit_tQFCizMt6g0/tip/Retail_Leadership_Summit_tQFCizMt6g0.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-D18990802E24F925",
@@ -984,10 +1186,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Rexy_Glove_Heavy_Duty_Gloves_Medium/tip/Rexy_Glove_Heavy_Duty_Gloves_Medium.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-DD1860E5B52254F8",
@@ -999,10 +1203,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Rexy_Glove_Heavy_Duty_Large/tip/Rexy_Glove_Heavy_Duty_Large.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-05A4F61A339B1EAE",
@@ -1014,10 +1220,59 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Romantic_Blush_Tieks_Metallic_Italian_Leather_Ballet_Flats/tip/Romantic_Blush_Tieks_Metallic_Italian_Leather_Ballet_Flats.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-05A4F61A339B1EAE",
+        "source_asset_id": "Romantic_Blush_Tieks_Metallic_Italian_Leather_Ballet_Flats",
+        "material_label_raw": "top-grain Italian leather",
+        "material_name_cn": "意大利头层皮革",
+        "component_scope_reported": "Source-described leather shoe construction; exact region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Made with premium, soft, top-grain Italian leather.",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Romantic_Blush_Tieks_Metallic_Italian_Leather_Ballet_Flats/tip/files/metadata.pbtxt",
+        "source_sha256": "4f49d12aece248172df6838b9a61de15fcd7c49ee74f6ddc8e0a808548fc06fa",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. No animal species or tanning process supplied. Does not assign leather to rubber sole.",
+        "mapping_delta_id": "GSO-MAT-B76BA66E0E8757A9EF1F",
+        "source_label_normalized": "top-grain Italian leather",
+        "semantic_part_key": "",
+        "quoted_scope": "Made with premium, soft, top-grain Italian leather.",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      },
+      {
+        "object_id": "OBJ-GSO-05A4F61A339B1EAE",
+        "source_asset_id": "Romantic_Blush_Tieks_Metallic_Italian_Leather_Ballet_Flats",
+        "material_label_raw": "rubber",
+        "material_name_cn": "橡胶",
+        "component_scope_reported": "Rubber soles",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "durable, non-skid rubber soles",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Romantic_Blush_Tieks_Metallic_Italian_Leather_Ballet_Flats/tip/files/metadata.pbtxt",
+        "source_sha256": "4f49d12aece248172df6838b9a61de15fcd7c49ee74f6ddc8e0a808548fc06fa",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. ",
+        "mapping_delta_id": "GSO-MAT-1232D159722F3C2A48C8",
+        "source_label_normalized": "rubber",
+        "semantic_part_key": "GSO-SEM-3594418345710591F43A",
+        "quoted_scope": "durable, non-skid rubber soles",
+        "scope_explicitness": "EXPLICIT_SOURCE_SEMANTIC_COMPONENT",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 2,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-83BDCBD27EDC6B3C",
@@ -1029,10 +1284,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Room_Essentials_Bowl_Turquiose/tip/Room_Essentials_Bowl_Turquiose.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-1157E490F6CEE4B1",
@@ -1044,10 +1301,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Room_Essentials_Dish_Drainer_Collapsible_White/tip/Room_Essentials_Dish_Drainer_Collapsible_White.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-46C2B8614B71CB6A",
@@ -1059,10 +1318,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Room_Essentials_Fabric_Cube_Lavender/tip/Room_Essentials_Fabric_Cube_Lavender.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-46C2B8614B71CB6A",
+        "source_asset_id": "Room_Essentials_Fabric_Cube_Lavender",
+        "material_label_raw": "fabric textile",
+        "material_name_cn": "织物",
+        "component_scope_reported": "Source-labelled fabric cube; fibre chemistry unreported",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Fabric Cube",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Room_Essentials_Fabric_Cube_Lavender/tip/files/metadata.pbtxt",
+        "source_sha256": "d231547198746151f19188988b4cc5f0d7fb3977133a5b782f7ad688710654a6",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. ",
+        "mapping_delta_id": "GSO-MAT-B26953135EAD5C5885EF",
+        "source_label_normalized": "fabric textile",
+        "semantic_part_key": "",
+        "quoted_scope": "Fabric Cube",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-8360D0536C16B39C",
@@ -1074,10 +1359,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Room_Essentials_Kitchen_Towels_16_x_26_2_count/tip/Room_Essentials_Kitchen_Towels_16_x_26_2_count.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-75FEB11DC1FAAD41",
@@ -1089,10 +1376,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Room_Essentials_Mug_White_Yellow/tip/Room_Essentials_Mug_White_Yellow.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-14DC27E7C19E2B50",
@@ -1104,10 +1393,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Room_Essentials_Salad_Plate_Turquoise/tip/Room_Essentials_Salad_Plate_Turquoise.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-698A4656449FE1F6",
@@ -1119,10 +1410,59 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Rose_Garden_Tieks_Leather_Ballet_Flats_with_Floral_Rosettes/tip/Rose_Garden_Tieks_Leather_Ballet_Flats_with_Floral_Rosettes.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-698A4656449FE1F6",
+        "source_asset_id": "Rose_Garden_Tieks_Leather_Ballet_Flats_with_Floral_Rosettes",
+        "material_label_raw": "top-grain Italian leather",
+        "material_name_cn": "意大利头层皮革",
+        "component_scope_reported": "Source-described leather shoe construction; exact region not stated",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "Made with premium, soft, top-grain Italian leather.",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Rose_Garden_Tieks_Leather_Ballet_Flats_with_Floral_Rosettes/tip/files/metadata.pbtxt",
+        "source_sha256": "1cda9bb1aac6ad5504339ceac7617d91218cfc022aaf18ce937b54f92a271a86",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. No animal species or tanning process supplied. Does not assign leather to rubber sole.",
+        "mapping_delta_id": "GSO-MAT-DC5B400F2E06B3DA1EF6",
+        "source_label_normalized": "top-grain Italian leather",
+        "semantic_part_key": "",
+        "quoted_scope": "Made with premium, soft, top-grain Italian leather.",
+        "scope_explicitness": "SOURCE_BODY_LABEL_REGION_NOT_ENUMERATED",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      },
+      {
+        "object_id": "OBJ-GSO-698A4656449FE1F6",
+        "source_asset_id": "Rose_Garden_Tieks_Leather_Ballet_Flats_with_Floral_Rosettes",
+        "material_label_raw": "rubber",
+        "material_name_cn": "橡胶",
+        "component_scope_reported": "Rubber soles",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "durable, non-skid rubber soles",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Rose_Garden_Tieks_Leather_Ballet_Flats_with_Floral_Rosettes/tip/files/metadata.pbtxt",
+        "source_sha256": "1cda9bb1aac6ad5504339ceac7617d91218cfc022aaf18ce937b54f92a271a86",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. ",
+        "mapping_delta_id": "GSO-MAT-DBAD933534B91240AD49",
+        "source_label_normalized": "rubber",
+        "semantic_part_key": "GSO-SEM-0DF5A51AEC4790533144",
+        "quoted_scope": "durable, non-skid rubber soles",
+        "scope_explicitness": "EXPLICIT_SOURCE_SEMANTIC_COMPONENT",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 2,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-4AF090D498082133",
@@ -1134,10 +1474,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Rubbermaid_Large_Drainer/tip/Rubbermaid_Large_Drainer.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-0D68B0A469BCD21F",
@@ -1149,10 +1491,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SAMBA_HEMP/tip/SAMBA_HEMP.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-44B320FA1F4D870E",
@@ -1164,10 +1508,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SAMOA/tip/SAMOA.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-1F451D6B630E12C3",
@@ -1179,10 +1525,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SAMe_200/tip/SAMe_200.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-4C975FEA52D6D186",
@@ -1194,10 +1542,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SAMe_200_KX7ZmOw47co/tip/SAMe_200_KX7ZmOw47co.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-A080935D04A46365",
@@ -1209,10 +1559,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SANDWICH_MEAL/tip/SANDWICH_MEAL.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-B925B02C4CDB9B49",
@@ -1224,10 +1576,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SAPPHIRE_R7_260X_OC/tip/SAPPHIRE_R7_260X_OC.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-847B83905DF53FA3",
@@ -1239,10 +1593,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SCHOOL_BUS/tip/SCHOOL_BUS.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-53B8F329989F2B1B",
@@ -1254,10 +1610,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SHAPE_MATCHING/tip/SHAPE_MATCHING.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-E186E4AB5EFB2A60",
@@ -1269,10 +1627,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SHAPE_MATCHING_NxacpAY9jDt/tip/SHAPE_MATCHING_NxacpAY9jDt.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-3D222DCAC10BCF3B",
@@ -1284,10 +1644,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SHAPE_SORTER/tip/SHAPE_SORTER.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-4BCAEE571B1233B6",
@@ -1299,10 +1661,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SIT_N_WALK_PUPPY/tip/SIT_N_WALK_PUPPY.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-A3CEAA49BFF744B0",
@@ -1314,10 +1678,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SLACK_CRUISER/tip/SLACK_CRUISER.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-16F98AAEDF672BC8",
@@ -1329,10 +1695,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SNAIL_MEASURING_TAPE/tip/SNAIL_MEASURING_TAPE.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-716744C467A74F30",
@@ -1344,10 +1712,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SORTING_BUS/tip/SORTING_BUS.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-1C51695EE45CFFBB",
@@ -1359,10 +1729,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SORTING_TRAIN/tip/SORTING_TRAIN.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-15E533CEDF6DCC3B",
@@ -1374,10 +1746,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SPEED_BOAT/tip/SPEED_BOAT.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-BF57C0194B1C9993",
@@ -1389,10 +1763,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/STACKING_BEAR/tip/STACKING_BEAR.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-67A0B5BFC887A4E8",
@@ -1404,10 +1780,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/STACKING_BEAR_V04KKgGBn2A/tip/STACKING_BEAR_V04KKgGBn2A.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-34BBFB503C74FFB5",
@@ -1419,10 +1797,36 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/STACKING_RING/tip/STACKING_RING.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [
+      {
+        "object_id": "OBJ-GSO-34BBFB503C74FFB5",
+        "source_asset_id": "STACKING_RING",
+        "material_label_raw": "wood",
+        "material_name_cn": "木材",
+        "component_scope_reported": "Wooden rings",
+        "evidence_status": "SOURCE_REPORTED_TEXT_LABEL",
+        "source_quote": "wooden ring set",
+        "source_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/STACKING_RING/tip/files/metadata.pbtxt",
+        "source_sha256": "00e261880d27281a7db42f997cec0c06c853f832716601f86f478185d7cfaa89",
+        "source_locator": "metadata.pbtxt: description",
+        "origin": "GOOGLE_OFFICIAL_RELEASE_DESCRIPTION_NOT_INDEPENDENT_MANUFACTURER_VERIFICATION",
+        "physical_properties_supplied": "false",
+        "new_authored_component_rows": "0",
+        "asset_material_assignment_effect": "SOURCE_REPORTED_BACKLINK_ONLY_NOT_FORMAL_PROPERTY_ASSIGNMENT",
+        "limitations": "No E/nu/rho evidence; not proof of exact chemistry or measured product material. ",
+        "mapping_delta_id": "GSO-MAT-E5CDD4610D9A16EA6653",
+        "source_label_normalized": "wood",
+        "semantic_part_key": "GSO-SEM-673E776589EAB62A050F",
+        "quoted_scope": "wooden ring set",
+        "scope_explicitness": "EXPLICIT_SOURCE_SEMANTIC_COMPONENT",
+        "label_relationship": "SOURCE_REPORTED_SINGLE_LABEL"
+      }
+    ],
+    "sourceMaterialBacklinkCount": 1,
+    "materialReviewNote": "有官方文本材料回链；范围见逐条原文，未证明网格部件绑定。"
   },
   {
     "id": "OBJ-GSO-7A886ADCFCD73863",
@@ -1434,10 +1838,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/STEAK_SET/tip/STEAK_SET.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-A29F7AEF59161179",
@@ -1449,10 +1855,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/SUPERSTAR_CLR/tip/SUPERSTAR_CLR.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-2A154E6A4339C85E",
@@ -1464,10 +1872,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Saccharomyces_Boulardii_MOS_Value_Size/tip/Saccharomyces_Boulardii_MOS_Value_Size.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-E05EC0C544B2E297",
@@ -1479,10 +1889,12 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Samoa_onepiece/tip/Samoa_onepiece.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   },
   {
     "id": "OBJ-GSO-6AEE187C2526F0CF",
@@ -1494,9 +1906,11 @@
     "assetUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Samsung_CLTC406S_Toner_Cartridge_Cyan_1pack/tip/Samsung_CLTC406S_Toner_Cartridge_Cyan_1pack.zip",
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
-    "materialStatus": "UNRESOLVED_NOT_ASSIGNED",
+    "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
     "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
     "license": "Creative Commons Attribution 4.0 International",
-    "sourceMaterialBacklinks": []
+    "sourceMaterialBacklinks": [],
+    "sourceMaterialBacklinkCount": 0,
+    "materialReviewNote": "本轮元数据已筛查；尚无可接受材料回链，不等于材料不存在。"
   }
 ]

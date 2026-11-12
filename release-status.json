@@ -1,12 +1,13 @@
 {
-  "release_id": "source-taxonomy-object-sync3-2026-11-13",
-  "validated_at": "2026-11-13T02:58:40.638556+08:00",
+  "release_id": "object-material-cycle2-2026-11-13",
+  "validated_at": "2026-11-13T03:36:20.219606+08:00",
   "local_validation": "PASS",
   "complete": 6140,
-  "partial": 93507,
+  "partial": 93518,
   "object_identities": 42564,
-  "distinct_object_component_pairs": 65985,
-  "material_labels": 2592,
+  "distinct_object_component_pairs": 66036,
+  "component_status_rows": 66085,
+  "material_labels": 2597,
   "geometry_content_deduplication_complete": false,
   "original_database_papers_individually_rechecked": false
 }
