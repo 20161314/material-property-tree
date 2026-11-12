@@ -33,7 +33,7 @@
     "count-complete": summary.complete_records, "count-partial": summary.partial_records,
   };
   Object.entries(counts).forEach(([id, value]) => { $(id).textContent = fmt(value); });
-  $("delta-gso").textContent = `+${fmt(summary.new_source_object_identities)}`;
+  $("delta-gso").textContent = `+${fmt(summary.current_cycle === "cycle3" ? 0 : summary.new_source_object_identities)}`;
   const cycle2 = Number.isFinite(summary.cycle2_real_components_added);
   const cycle3 = summary.current_cycle === "cycle3";
   $("delta-components").textContent = `+${fmt(cycle3 ? summary.current_cycle_net_component_increment : cycle2 ? summary.cycle2_net_component_increment : summary.net_real_component_increment)}`;
@@ -89,7 +89,7 @@
   const pages = data.gsoPages || [];
   const pageSelect = $("gso-page");
   pageSelect.innerHTML = pages.map((page, index) => `<option value="${index}">第 ${index + 1} / ${pages.length} 页（${page.count} 项）</option>`).join("");
-  $("gso-count-note").textContent = `${fmt(summary.new_source_object_identities)} 个官方来源身份，按 100 项分页。材料未核不当作正式赋值；已下载校验 ${fmt(summary.new_GSO_geometry_files_downloaded_and_hashed)} 个样本。`;
+  $("gso-count-note").textContent = `${fmt(summary.current_cycle === "cycle3" ? 0 : summary.new_source_object_identities)} 个官方来源身份，按 100 项分页。材料未核不当作正式赋值；已下载校验 ${fmt(summary.new_GSO_geometry_files_downloaded_and_hashed)} 个样本。`;
   let activePage = 0;
   let currentRows = [];
   let requestVersion = 0;
