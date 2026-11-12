@@ -23,7 +23,7 @@
   };
   const queueNames = {
     MATERIAL_WITHOUT_EXACT_OBJECT_LINK: "材料待精确关联对象", MATERIAL_FIRST_NUMERICAL_SOURCE: "材料待首个数值来源",
-    MATERIAL_MISSING_PROPERTY: "材料待补齐缺失属性", OBJECT_MATERIAL_AND_PART_REVIEW: "新增对象待核材料与部件",
+    OBJECT_AUTHORED_COMPONENT_ENUMERATION: "对象真实组件待枚举", MATERIAL_MISSING_PROPERTY: "材料待补齐缺失属性", OBJECT_MATERIAL_AND_PART_REVIEW: "新增对象待核材料与部件",
     REAL_COMPONENT_MATERIAL_BINDING: "真实组件待核材料绑定",
   };
   $("release-date").textContent = `扩充发布 · ${summary.date} · 按来源快照核验`;
@@ -33,9 +33,9 @@
     "count-complete": summary.complete_records, "count-partial": summary.partial_records,
   };
   Object.entries(counts).forEach(([id, value]) => { $(id).textContent = fmt(value); });
-  $("delta-gso").textContent = `+${fmt(summary.current_cycle === "cycle3" ? 0 : summary.new_source_object_identities)}`;
+  $("delta-gso").textContent = `+${fmt(Boolean(summary.current_cycle) ? 0 : summary.new_source_object_identities)}`;
   const cycle2 = Number.isFinite(summary.cycle2_real_components_added);
-  const cycle3 = summary.current_cycle === "cycle3";
+  const cycle3 = Boolean(summary.current_cycle);
   $("delta-components").textContent = `+${fmt(cycle3 ? summary.current_cycle_net_component_increment : cycle2 ? summary.cycle2_net_component_increment : summary.net_real_component_increment)}`;
   $("delta-components-note").textContent = cycle3
     ? `本轮 ${fmt(summary.current_cycle_real_components_added)} 个实体替换 ${fmt(summary.current_cycle_fallbacks_replaced)} 个整件占位，净增 ${fmt(summary.current_cycle_net_component_increment)}；另更新 ${fmt(summary.current_cycle_existing_component_material_updates)} 个组件的材料标签`
@@ -81,7 +81,7 @@
     <p>原文定位：${esc(item.source_locator || "见官方结构文件")}</p>${link(item.source_url, "打开官方结构文件")}${link(item.source_manifest_url, "打开资产包")}
   </article>`;
   }).join("");
-  const propertyNote = cycle3 ? `本轮新增 ${fmt(summary.current_cycle_complete_property_groups)} 完整组、${fmt(summary.current_cycle_incomplete_property_groups)} 缺项组（${fmt(summary.current_cycle_property_value_cells)} 个属性值），其中2完整为文献明确报告参考值；不等于商品实测。` : cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
+  const propertyNote = cycle3 ? `本轮新增 ${fmt(summary.current_cycle_complete_property_groups)} 完整组、${fmt(summary.current_cycle_incomplete_property_groups)} 缺项组（${fmt(summary.current_cycle_property_value_cells)} 个属性值），来源组包含实测、实验推导与同文厂家参考配对；方法逐条保留，不等于商品实测。` : cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
   $("release-boundary").textContent = `研究完整与缺项共 ${fmt(summary.total_records)} 组，包含独立标记的数据库转录层。${propertyNote}正式材料映射 ${fmt(summary.formal_material_mapping_rows_unchanged)} 行未因本轮标签或组件新增而自动晋级。全库几何内容去重未完成。`;
   const hashes = { expanded_inventory_sha256: "扩充对象组件清单 SHA-256", feedback_queue_sha256: "待办队列 SHA-256", baseline_sha256: "原始对象表 SHA-256" };
   $("release-hashes").innerHTML = Object.entries(hashes).filter(([key]) => summary[key]).map(([key, label]) => `<dt>${label}</dt><dd>${esc(summary[key])}</dd>`).join("");
@@ -89,7 +89,7 @@
   const pages = data.gsoPages || [];
   const pageSelect = $("gso-page");
   pageSelect.innerHTML = pages.map((page, index) => `<option value="${index}">第 ${index + 1} / ${pages.length} 页（${page.count} 项）</option>`).join("");
-  $("gso-count-note").textContent = `${fmt(summary.current_cycle === "cycle3" ? 0 : summary.new_source_object_identities)} 个官方来源身份，按 100 项分页。材料未核不当作正式赋值；已下载校验 ${fmt(summary.new_GSO_geometry_files_downloaded_and_hashed)} 个样本。`;
+  $("gso-count-note").textContent = `${fmt(summary.new_source_object_identities)} 个官方来源身份，按 100 项分页。材料未核不当作正式赋值；已下载校验 ${fmt(summary.new_GSO_geometry_files_downloaded_and_hashed)} 个样本。`;
   let activePage = 0;
   let currentRows = [];
   let requestVersion = 0;
