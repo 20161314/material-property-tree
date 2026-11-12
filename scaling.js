@@ -67,20 +67,67 @@
     partsBadge.textContent = `累计 ${fmt(summary.featured_physical_component_count)} 组件：${fmt(statuses.official)} 官方标签、${fmt(statuses.approximate)} 近似、${fmt(statuses.hold)} HOLD`;
   }
   if (cycle2) $("parts-heading").textContent = "已核实体组件与材料状态";
-  $("component-cards").innerHTML = (data.newPhysicalComponents || []).map((item) => {
+  const componentPageSize = 60;
+  const flexibleMaterialNames = new Set(["rubber", "fabric", "leather"]);
+  const sourceMaterialTokens = (value) => String(value || "").toLocaleLowerCase().split(/[|,;\/\s]+/).filter(Boolean);
+  const componentEntries = (data.newPhysicalComponents || []).map((item, index) => {
+    const acceptedRegions = (item.official_bound_material_regions || []).filter((region) =>
+      !/REJECT|QUARANTIN|HOLD/i.test([region.plausibility_status, region.review_decision].join(" ")));
+    const hasRegionReview = (item.official_bound_material_regions?.length || 0) + (item.quarantined_bound_material_regions?.length || 0) > 0;
+    const sourceLabels = hasRegionReview ? acceptedRegions.flatMap((region) => [region.source_label_raw, region.source_label_normalized]) : [item.material_label_raw];
+    const flexibleTags = new Set(["official", "approximate"].includes(item.material_status_kind) ? sourceLabels.flatMap(sourceMaterialTokens).filter((tag) => flexibleMaterialNames.has(tag)) : []);
+    const searchText = [item.component_id, item.object_id, item.component_path,
+      item.component_name_cn, item.component_name_en, item.component_scope,
+      item.object_name_cn, item.object_name_en, item.material_label, item.material_label_raw,
+      ...acceptedRegions.flatMap((region) => [region.source_label_raw, region.source_label_normalized, region.source_label_cn])].join(" ").toLocaleLowerCase();
+    return { item, index, flexibleTags, searchText };
+  }).sort((a, b) => Number(b.flexibleTags.size > 0) - Number(a.flexibleTags.size > 0) || a.index - b.index);
+  let activeComponentPage = 0;
+  const componentPageSelect = $("component-page");
+  function componentCardHtml(item) {
     const kind = item.material_status_kind || "hold";
     const label = item.material_status_label || "组件材料待核";
     const note = item.material_status_note || "组件身份已核，材料对应关系仍待补证。";
     const material = kind === "hold" ? "材料尚未核定" : (item.material_label || item.material_label_raw || "来源标签见原文");
     const regionNote = item.official_bound_material_regions?.length ? `<small>${fmt(item.official_bound_material_regions.length)} 条来源材料绑定；几何面区有效覆盖尚未核验，不新增组件数。</small>` : "";
-    return `<article>
+    return `<article data-component-id="${esc(item.component_id)}">
     <h3>${esc(item.component_name_cn || item.component_scope || item.component_id)}</h3><p>${esc(item.object_name_cn || item.object_name_en)} · ${esc(item.object_name_en)}</p>
-    <code>${esc(item.component_path)}</code><p>${esc(item.component_identity_note || "独立官方几何引用、质量/惯量及关节成员关系；通过组件身份审核。")}</p>
+    <small>组件 ID：${esc(item.component_id)}</small><code>${esc(item.component_path)}</code><p>${esc(item.component_identity_note || "独立官方几何引用、质量/惯量及关节成员关系；通过组件身份审核。")}</p>
     <span class="scaling-badge ${kind === "official" ? "verified" : "pending"}">${esc(label)}</span>
     <p><strong>${esc(material)}</strong></p><p>${esc(note)}</p><small>${esc(item.material_scope_note || "")}</small>${regionNote}
     <p>原文定位：${esc(item.source_locator || "见官方结构文件")}</p>${link(item.source_url, "打开官方结构文件")}${link(item.source_manifest_url, "打开资产包")}
   </article>`;
-  }).join("");
+  }
+
+  function renderComponents(resetPage = false) {
+    if (resetPage) activeComponentPage = 0;
+    const query = $("component-search").value.trim().toLocaleLowerCase();
+    const materialFilter = $("component-material").value;
+    const matches = componentEntries.filter((entry) => (!query || entry.searchText.includes(query)) &&
+      (materialFilter === "all" || (materialFilter === "flexible" ? entry.flexibleTags.size > 0 : entry.flexibleTags.has(materialFilter))));
+    const pageCount = Math.ceil(matches.length / componentPageSize);
+    activeComponentPage = Math.max(0, Math.min(activeComponentPage, pageCount - 1));
+    componentPageSelect.innerHTML = pageCount ? Array.from({ length: pageCount }, (_, index) =>
+      '<option value="' + index + '">第 ' + (index + 1) + ' / ' + pageCount + ' 页</option>').join("") : '<option value="0">无匹配页</option>';
+    componentPageSelect.value = String(activeComponentPage);
+    componentPageSelect.disabled = !pageCount;
+    $("component-prev").disabled = !pageCount || activeComponentPage === 0;
+    $("component-next").disabled = !pageCount || activeComponentPage === pageCount - 1;
+    const start = activeComponentPage * componentPageSize;
+    const visible = matches.slice(start, start + componentPageSize);
+    $("component-page-status").textContent = '共 ' + fmt(componentEntries.length) + ' 张实体组件卡 · 筛选命中 ' + fmt(matches.length) + ' 张 · ' +
+      (pageCount ? '第 ' + (activeComponentPage + 1) + '/' + pageCount + ' 页 · 本页第 ' + fmt(start + 1) + '–' + fmt(start + visible.length) + ' 张（每页最多 ' + componentPageSize + ' 张）' : '无匹配组件，请调整搜索或筛选');
+    $("component-cards").innerHTML = visible.length ? visible.map((entry) => componentCardHtml(entry.item)).join("") : '<p class="scaling-note">没有匹配组件；可清空搜索并选择“全部材料”。</p>';
+  }
+  componentPageSelect.addEventListener("change", () => {
+    activeComponentPage = Number(componentPageSelect.value);
+    renderComponents();
+  });
+  $("component-prev").addEventListener("click", () => { activeComponentPage -= 1; renderComponents(); });
+  $("component-next").addEventListener("click", () => { activeComponentPage += 1; renderComponents(); });
+  $("component-search").addEventListener("input", () => renderComponents(true));
+  $("component-material").addEventListener("change", () => renderComponents(true));
+  renderComponents();
   const propertyNote = cycle3 ? `本轮新增 ${fmt(summary.current_cycle_complete_property_groups)} 完整组、${fmt(summary.current_cycle_incomplete_property_groups)} 缺项组（${fmt(summary.current_cycle_property_value_cells)} 个属性槽位），包含实测、实验推导及来源参考汇编；方向、统计量、密度与模量定义逐条保留，不等于商品实测。` : cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
   $("release-boundary").textContent = `研究完整与缺项共 ${fmt(summary.total_records)} 组，包含独立标记的数据库转录层。${propertyNote}正式材料映射 ${fmt(summary.formal_material_mapping_rows_unchanged)} 行未因本轮标签或组件新增而自动晋级。全库几何内容去重未完成。`;
   const hashes = { expanded_inventory_sha256: "扩充对象组件清单 SHA-256", feedback_queue_sha256: "待办队列 SHA-256", baseline_sha256: "原始对象表 SHA-256" };

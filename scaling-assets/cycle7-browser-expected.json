@@ -1,0 +1,860 @@
+{
+  "objects": 42564,
+  "rows": 68828,
+  "components": 68779,
+  "cards": 3164,
+  "accepted": 8679,
+  "quarantined": 143,
+  "materials": 2741,
+  "complete": 6173,
+  "partial": 93662,
+  "sourceLabelEntries": 62,
+  "featuredHeldRegions": 63,
+  "sourceRecords": {
+    "C6-GROUP-5E5BBB7FAB8710D00D4A": {
+      "E": [
+        "E=0.230 MPa (0%–20%); E=0.157 MPa (20%–40%); E=0.147 MPa (40%–60%); E=0.178 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Dragon Skin 10S - Ecoflex 00–30 80/20",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.230",
+          "lower_IQR_MPa": "0.229",
+          "upper_IQR_MPa": "0.231"
+        },
+        {
+          "source_material": "Dragon Skin 10S - Ecoflex 00–30 80/20",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.157",
+          "lower_IQR_MPa": "0.157",
+          "upper_IQR_MPa": "0.158"
+        },
+        {
+          "source_material": "Dragon Skin 10S - Ecoflex 00–30 80/20",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.147",
+          "lower_IQR_MPa": "0.147",
+          "upper_IQR_MPa": "0.149"
+        },
+        {
+          "source_material": "Dragon Skin 10S - Ecoflex 00–30 80/20",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.178",
+          "lower_IQR_MPa": "0.177",
+          "upper_IQR_MPa": "0.179"
+        }
+      ]
+    },
+    "FMS6-PMC11477809-CORK-C": {
+      "E": [],
+      "nu": [],
+      "rho": [
+        "400.0 kg/m3"
+      ]
+    },
+    "C6-GROUP-DC64B6935B96C21C2FFE": {
+      "E": [
+        "E=0.145 MPa (0%–20%); E=0.102 MPa (20%–40%); E=0.091 MPa (40%–60%); E=0.113 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Dragon Skin 10S - Ecoflex 00–30 40/60",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.145",
+          "lower_IQR_MPa": "0.145",
+          "upper_IQR_MPa": "0.146"
+        },
+        {
+          "source_material": "Dragon Skin 10S - Ecoflex 00–30 40/60",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.102",
+          "lower_IQR_MPa": "0.102",
+          "upper_IQR_MPa": "0.103"
+        },
+        {
+          "source_material": "Dragon Skin 10S - Ecoflex 00–30 40/60",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.091",
+          "lower_IQR_MPa": "0.091",
+          "upper_IQR_MPa": "0.092"
+        },
+        {
+          "source_material": "Dragon Skin 10S - Ecoflex 00–30 40/60",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.113",
+          "lower_IQR_MPa": "0.112",
+          "upper_IQR_MPa": "0.114"
+        }
+      ]
+    },
+    "C6-GROUP-04E50F8EB2E636823A11": {
+      "E": [
+        "E=1.487 MPa (0%–20%); E=1.204 MPa (20%–40%); E=1.411 MPa (40%–60%); E=1.377 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Dow Sylgard 184",
+          "strain_range": "0%–20%",
+          "median_MPa": "1.487",
+          "lower_IQR_MPa": "1.407",
+          "upper_IQR_MPa": "1.506"
+        },
+        {
+          "source_material": "Dow Sylgard 184",
+          "strain_range": "20%–40%",
+          "median_MPa": "1.204",
+          "lower_IQR_MPa": "1.120",
+          "upper_IQR_MPa": "1.220"
+        },
+        {
+          "source_material": "Dow Sylgard 184",
+          "strain_range": "40%–60%",
+          "median_MPa": "1.411",
+          "lower_IQR_MPa": "1.301",
+          "upper_IQR_MPa": "1.486"
+        },
+        {
+          "source_material": "Dow Sylgard 184",
+          "strain_range": "0%–60%",
+          "median_MPa": "1.377",
+          "lower_IQR_MPa": "1.278",
+          "upper_IQR_MPa": "1.404"
+        }
+      ]
+    },
+    "SC5-MAME202500075-T3-Sylgard184": {
+      "E": [
+        "E=3.9 ± 0.2 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "SC5-MAME202500075-T3-rHM": {
+      "E": [
+        "E=0.44 ± 0.05 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "C6-GROUP-3D2F6CE93F3B3D76B49E": {
+      "E": [
+        "E=1.409 MPa (0%–20%); E=1.187 MPa (20%–40%); E=1.321 MPa (40%–60%); E=1.301 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Wacker Elastosil RT601",
+          "strain_range": "0%–20%",
+          "median_MPa": "1.409",
+          "lower_IQR_MPa": "1.388",
+          "upper_IQR_MPa": "1.425"
+        },
+        {
+          "source_material": "Wacker Elastosil RT601",
+          "strain_range": "20%–40%",
+          "median_MPa": "1.187",
+          "lower_IQR_MPa": "1.177",
+          "upper_IQR_MPa": "1.206"
+        },
+        {
+          "source_material": "Wacker Elastosil RT601",
+          "strain_range": "40%–60%",
+          "median_MPa": "1.321",
+          "lower_IQR_MPa": "1.313",
+          "upper_IQR_MPa": "1.353"
+        },
+        {
+          "source_material": "Wacker Elastosil RT601",
+          "strain_range": "0%–60%",
+          "median_MPa": "1.301",
+          "lower_IQR_MPa": "1.293",
+          "upper_IQR_MPa": "1.326"
+        }
+      ]
+    },
+    "FMS6-PMC10725245-T3-AORTA": {
+      "E": [
+        "0.115;0.198;0.326;0.213 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "C6-GROUP-33D2411BCF364BE45095": {
+      "E": [
+        "E=0.121 MPa (0%–20%); E=0.089 MPa (20%–40%); E=0.100 MPa (40%–60%); E=0.103 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Dragon Skin 30 - Ecoflex 00–10 50/50",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.121",
+          "lower_IQR_MPa": "0.120",
+          "upper_IQR_MPa": "0.121"
+        },
+        {
+          "source_material": "Dragon Skin 30 - Ecoflex 00–10 50/50",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.089",
+          "lower_IQR_MPa": "0.088",
+          "upper_IQR_MPa": "0.089"
+        },
+        {
+          "source_material": "Dragon Skin 30 - Ecoflex 00–10 50/50",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.100",
+          "lower_IQR_MPa": "0.098",
+          "upper_IQR_MPa": "0.101"
+        },
+        {
+          "source_material": "Dragon Skin 30 - Ecoflex 00–10 50/50",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.103",
+          "lower_IQR_MPa": "0.102",
+          "upper_IQR_MPa": "0.104"
+        }
+      ]
+    },
+    "C6-GROUP-1205249B1C52B4FD27A9": {
+      "E": [
+        "E=0.050 MPa (0%–20%); E=0.038 MPa (20%–40%); E=0.033 MPa (40%–60%); E=0.041 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Ecoflex 00–20",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.050",
+          "lower_IQR_MPa": "0.049",
+          "upper_IQR_MPa": "0.051"
+        },
+        {
+          "source_material": "Ecoflex 00–20",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.038",
+          "lower_IQR_MPa": "0.038",
+          "upper_IQR_MPa": "0.039"
+        },
+        {
+          "source_material": "Ecoflex 00–20",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.033",
+          "lower_IQR_MPa": "0.033",
+          "upper_IQR_MPa": "0.034"
+        },
+        {
+          "source_material": "Ecoflex 00–20",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.041",
+          "lower_IQR_MPa": "0.040",
+          "upper_IQR_MPa": "0.041"
+        }
+      ]
+    },
+    "FMS6-PMC10725245-T3-RIGHTVENTRICLE": {
+      "E": [
+        "0.005;0.029;0.219;0.083 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "C6-GROUP-D0D5E11EE323ECBEC7AF": {
+      "E": [
+        "E=0.217 MPa (0%–20%); E=0.157 MPa (20%–40%); E=0.163 MPa (40%–60%); E=0.179 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Dragon Skin 20 - Ecoflex 00–30 50/50",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.217",
+          "lower_IQR_MPa": "0.215",
+          "upper_IQR_MPa": "0.219"
+        },
+        {
+          "source_material": "Dragon Skin 20 - Ecoflex 00–30 50/50",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.157",
+          "lower_IQR_MPa": "0.156",
+          "upper_IQR_MPa": "0.159"
+        },
+        {
+          "source_material": "Dragon Skin 20 - Ecoflex 00–30 50/50",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.163",
+          "lower_IQR_MPa": "0.160",
+          "upper_IQR_MPa": "0.165"
+        },
+        {
+          "source_material": "Dragon Skin 20 - Ecoflex 00–30 50/50",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.179",
+          "lower_IQR_MPa": "0.177",
+          "upper_IQR_MPa": "0.181"
+        }
+      ]
+    },
+    "FMS6-PMC12645458-REENTRANT-HONEYCOMB": {
+      "E": [],
+      "nu": [
+        "-2.97 dimensionless"
+      ],
+      "rho": []
+    },
+    "FMS6-PMC11477809-CORK-A": {
+      "E": [],
+      "nu": [],
+      "rho": [
+        "210.0 kg/m3"
+      ]
+    },
+    "C6-GROUP-9F32E5B304C5E93C585C": {
+      "E": [
+        "E=0.191 MPa (0%–20%); E=0.133 MPa (20%–40%); E=0.122 MPa (40%–60%); E=0.149 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Dragon Skin 10S - Ecoflex 00–30 60/40",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.191",
+          "lower_IQR_MPa": "0.190",
+          "upper_IQR_MPa": "0.192"
+        },
+        {
+          "source_material": "Dragon Skin 10S - Ecoflex 00–30 60/40",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.133",
+          "lower_IQR_MPa": "0.132",
+          "upper_IQR_MPa": "0.133"
+        },
+        {
+          "source_material": "Dragon Skin 10S - Ecoflex 00–30 60/40",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.122",
+          "lower_IQR_MPa": "0.122",
+          "upper_IQR_MPa": "0.124"
+        },
+        {
+          "source_material": "Dragon Skin 10S - Ecoflex 00–30 60/40",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.149",
+          "lower_IQR_MPa": "0.148",
+          "upper_IQR_MPa": "0.150"
+        }
+      ]
+    },
+    "SC5-MAME202500075-T3-Sylgard186": {
+      "E": [
+        "E=1.3 ± 0.1 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "FMS6-PMC10725245-T5-AGILUSBLACK": {
+      "E": [
+        "1.827;0.744;0.625;1.067;1.762;0.731;0.618;1.037;1.793;0.737;0.618;1.05 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "C6-GROUP-5F74D201EB0A0B79607E": {
+      "E": [
+        "E=0.028 MPa (0%–20%); E=0.020 MPa (20%–40%); E=0.019 MPa (40%–60%); E=0.022 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Ecoflex 00–10",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.028",
+          "lower_IQR_MPa": "0.028",
+          "upper_IQR_MPa": "0.029"
+        },
+        {
+          "source_material": "Ecoflex 00–10",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.020",
+          "lower_IQR_MPa": "0.019",
+          "upper_IQR_MPa": "0.020"
+        },
+        {
+          "source_material": "Ecoflex 00–10",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.019",
+          "lower_IQR_MPa": "0.018",
+          "upper_IQR_MPa": "0.020"
+        },
+        {
+          "source_material": "Ecoflex 00–10",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.022",
+          "lower_IQR_MPa": "0.022",
+          "upper_IQR_MPa": "0.023"
+        }
+      ]
+    },
+    "SC5-MAME202500075-T3-Ecoflex00-10": {
+      "E": [
+        "E=0.06 ± 0.0 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "C6-GROUP-A7C9D2D6AF7F0DA0BAF4": {
+      "E": [
+        "E=0.346 MPa (0%–20%); E=0.218 MPa (20%–40%); E=0.183 MPa (40%–60%); E=0.249 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Elastosil Vario 15",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.346",
+          "lower_IQR_MPa": "0.345",
+          "upper_IQR_MPa": "0.350"
+        },
+        {
+          "source_material": "Elastosil Vario 15",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.218",
+          "lower_IQR_MPa": "0.217",
+          "upper_IQR_MPa": "0.220"
+        },
+        {
+          "source_material": "Elastosil Vario 15",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.183",
+          "lower_IQR_MPa": "0.183",
+          "upper_IQR_MPa": "0.185"
+        },
+        {
+          "source_material": "Elastosil Vario 15",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.249",
+          "lower_IQR_MPa": "0.248",
+          "upper_IQR_MPa": "0.251"
+        }
+      ]
+    },
+    "FMS6-PMC12645458-TRIANGLES-LONG": {
+      "E": [],
+      "nu": [
+        "-0.74 dimensionless"
+      ],
+      "rho": []
+    },
+    "FMS6-PMC12645458-ROTATING-SQUARES": {
+      "E": [],
+      "nu": [
+        "-0.05 dimensionless"
+      ],
+      "rho": []
+    },
+    "SC5-MAME202500075-T3-ElastosilM4511": {
+      "E": [
+        "E=0.303 ± 0.005 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "SC5-MAME202500075-T3-PowersilXLR630AB": {
+      "E": [
+        "E=1.77 ± 0.07 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "FMS6-PMC10725245-T3-PULMONARY": {
+      "E": [
+        "0.026;0.06;0.124;0.07 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "FMS6-PMC11713860-T1-N-T190-16-P1.0": {
+      "E": [],
+      "nu": [],
+      "rho": [
+        "68.0 kg/m3"
+      ]
+    },
+    "FMS6-PMC11713860-T1-N-T200-16-P1.0": {
+      "E": [],
+      "nu": [],
+      "rho": [
+        "114.2 kg/m3"
+      ]
+    },
+    "FMS6-PMC11713860-T1-N-T205-10-P1.0": {
+      "E": [],
+      "nu": [],
+      "rho": [
+        "84.8 kg/m3"
+      ]
+    },
+    "FMS6-PMC11713860-T1-N-T205-16-P1.0": {
+      "E": [],
+      "nu": [],
+      "rho": [
+        "120.8 kg/m3"
+      ]
+    },
+    "FMS6-PMC11713860-T1-N-T205-24-P1.0": {
+      "E": [],
+      "nu": [],
+      "rho": [
+        "124.4 kg/m3"
+      ]
+    },
+    "FMS6-PMC11713860-T1-N-T205-24-P5.0": {
+      "E": [],
+      "nu": [],
+      "rho": [
+        "138.0 kg/m3"
+      ]
+    },
+    "FMS6-PMC11713860-T1-N-T205-36-P1.0": {
+      "E": [],
+      "nu": [],
+      "rho": [
+        "135.1 kg/m3"
+      ]
+    },
+    "FMS6-PMC11713860-T1-N-T205-6-P1.0": {
+      "E": [],
+      "nu": [],
+      "rho": [
+        "73.3 kg/m3"
+      ]
+    },
+    "FMS6-PMC10725245-T3-LEFTVENTRICLE": {
+      "E": [
+        "0.128;0.275;0.281;0.189;0.005;0.03;0.22;0.086;0.101;0.179;0.177;0.121 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "C6-GROUP-15B11B71FE360701B988": {
+      "E": [
+        "E=0.065 MPa (0%–20%); E=0.048 MPa (20%–40%); E=0.040 MPa (40%–60%); E=0.051 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Ecoflex 00–30",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.065",
+          "lower_IQR_MPa": "0.064",
+          "upper_IQR_MPa": "0.065"
+        },
+        {
+          "source_material": "Ecoflex 00–30",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.048",
+          "lower_IQR_MPa": "0.048",
+          "upper_IQR_MPa": "0.048"
+        },
+        {
+          "source_material": "Ecoflex 00–30",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.040",
+          "lower_IQR_MPa": "0.040",
+          "upper_IQR_MPa": "0.041"
+        },
+        {
+          "source_material": "Ecoflex 00–30",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.051",
+          "lower_IQR_MPa": "0.051",
+          "upper_IQR_MPa": "0.051"
+        }
+      ]
+    },
+    "SC5-MAME202500075-T3-Ecoflex00-30": {
+      "E": [
+        "E=0.22 ± 0.02 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "FMS6-PMC10725245-T5-AGILUSCLEAR": {
+      "E": [
+        "1.879;0.693;0.556;1.044;1.839;0.684;0.55;1.024;1.824;0.689;0.555;1.026 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "SC5-MAME202500075-T3-Ecoflex00-50": {
+      "E": [
+        "E=0.19 ± 0.01 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "C6-GROUP-2B78C0BE7E8FA4476FA1": {
+      "E": [
+        "E=0.482 MPa (0%–20%); E=0.346 MPa (20%–40%); E=0.404 MPa (40%–60%); E=0.410 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Dragon Skin 20",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.482",
+          "lower_IQR_MPa": "0.478",
+          "upper_IQR_MPa": "0.484"
+        },
+        {
+          "source_material": "Dragon Skin 20",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.346",
+          "lower_IQR_MPa": "0.344",
+          "upper_IQR_MPa": "0.348"
+        },
+        {
+          "source_material": "Dragon Skin 20",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.404",
+          "lower_IQR_MPa": "0.401",
+          "upper_IQR_MPa": "0.405"
+        },
+        {
+          "source_material": "Dragon Skin 20",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.410",
+          "lower_IQR_MPa": "0.409",
+          "upper_IQR_MPa": "0.412"
+        }
+      ]
+    },
+    "FMS6-PMC11477809-CORK-B": {
+      "E": [],
+      "nu": [],
+      "rho": [
+        "300.0 kg/m3"
+      ]
+    },
+    "FMS6-PMC10725245-T5-IORA": {
+      "E": [
+        "2.842;1.183;1.143;1.713;2.735;1.185;1.141;1.692;2.827;1.197;1.142;1.722 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "FMS6-PMC12644749-NYLONCOATED": {
+      "E": [
+        "361.4;183.3 MPa"
+      ],
+      "nu": [
+        "0.35 dimensionless"
+      ],
+      "rho": []
+    },
+    "SC5-MAME202500075-T3-ElastosilRT620AB": {
+      "E": [
+        "E=0.19 ± 0.01 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "C6-GROUP-136D2348DD46A4D7B7B6": {
+      "E": [
+        "E=0.316 MPa (0%–20%); E=0.213 MPa (20%–40%); E=0.201 MPa (40%–60%); E=0.243 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Dragon Skin 10S",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.316",
+          "lower_IQR_MPa": "0.315",
+          "upper_IQR_MPa": "0.317"
+        },
+        {
+          "source_material": "Dragon Skin 10S",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.213",
+          "lower_IQR_MPa": "0.212",
+          "upper_IQR_MPa": "0.213"
+        },
+        {
+          "source_material": "Dragon Skin 10S",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.201",
+          "lower_IQR_MPa": "0.200",
+          "upper_IQR_MPa": "0.202"
+        },
+        {
+          "source_material": "Dragon Skin 10S",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.243",
+          "lower_IQR_MPa": "0.242",
+          "upper_IQR_MPa": "0.244"
+        }
+      ]
+    },
+    "SC5-MAME202500075-T3-ElastosilRT625AB": {
+      "E": [
+        "E=1.0 ± 0.1 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "SC5-MAME202500075-T3-HM": {
+      "E": [
+        "E=0.38 ± 0.0 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "FMS6-PMC12645458-TRIANGLES-SHORT": {
+      "E": [],
+      "nu": [
+        "-0.21 dimensionless"
+      ],
+      "rho": []
+    },
+    "SC5-MAME202500075-T3-SilbioneRTV4410QCAB": {
+      "E": [
+        "E=0.4 ± 0.04 MPa"
+      ],
+      "nu": [],
+      "rho": []
+    },
+    "C6-GROUP-CB2C4E77910DB363A28E": {
+      "E": [
+        "E=0.098 MPa (0%–20%); E=0.070 MPa (20%–40%); E=0.059 MPa (40%–60%); E=0.076 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Dragon Skin 10S—Ecoflex 00–30 20/80",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.098",
+          "lower_IQR_MPa": "0.097",
+          "upper_IQR_MPa": "0.098"
+        },
+        {
+          "source_material": "Dragon Skin 10S—Ecoflex 00–30 20/80",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.070",
+          "lower_IQR_MPa": "0.069",
+          "upper_IQR_MPa": "0.070"
+        },
+        {
+          "source_material": "Dragon Skin 10S—Ecoflex 00–30 20/80",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.059",
+          "lower_IQR_MPa": "0.059",
+          "upper_IQR_MPa": "0.060"
+        },
+        {
+          "source_material": "Dragon Skin 10S—Ecoflex 00–30 20/80",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.076",
+          "lower_IQR_MPa": "0.075",
+          "upper_IQR_MPa": "0.076"
+        }
+      ]
+    },
+    "FMS6-PMC12645458-SQUARE-GRID": {
+      "E": [],
+      "nu": [
+        "-0.79 dimensionless"
+      ],
+      "rho": []
+    },
+    "C6-GROUP-70E961CC7F727167155E": {
+      "E": [
+        "E=0.800 MPa (0%–20%); E=0.572 MPa (20%–40%); E=0.679 MPa (40%–60%); E=0.682 MPa (0%–60%)"
+      ],
+      "nu": [],
+      "rho": [],
+      "groupedObservations": [
+        {
+          "source_material": "Dragon Skin 30",
+          "strain_range": "0%–20%",
+          "median_MPa": "0.800",
+          "lower_IQR_MPa": "0.777",
+          "upper_IQR_MPa": "0.805"
+        },
+        {
+          "source_material": "Dragon Skin 30",
+          "strain_range": "20%–40%",
+          "median_MPa": "0.572",
+          "lower_IQR_MPa": "0.563",
+          "upper_IQR_MPa": "0.577"
+        },
+        {
+          "source_material": "Dragon Skin 30",
+          "strain_range": "40%–60%",
+          "median_MPa": "0.679",
+          "lower_IQR_MPa": "0.663",
+          "upper_IQR_MPa": "0.682"
+        },
+        {
+          "source_material": "Dragon Skin 30",
+          "strain_range": "0%–60%",
+          "median_MPa": "0.682",
+          "lower_IQR_MPa": "0.669",
+          "upper_IQR_MPa": "0.688"
+        }
+      ]
+    }
+  },
+  "details": [
+    {
+      "id": "SC5-MAME202500075-T3-Sylgard184",
+      "nodeId": "RESEARCH-MAT-1F148943E56957ED1FC6",
+      "visibleTokens": [
+        "MEAN_WITH_SD_SEPARATE",
+        "0.2 MPa"
+      ]
+    },
+    {
+      "id": "C6-GROUP-5E5BBB7FAB8710D00D4A",
+      "nodeId": "RESEARCH-MAT-02A17590502D330B83F2",
+      "visibleTokens": [
+        "MEDIANS_AND_IQR_BY_STRAIN_REGIME_NOT_FOUR_INDEPENDENT_GROUPS",
+        "0%–20%",
+        "0%–60%"
+      ]
+    },
+    {
+      "id": "FMS6-PMC11477809-CORK-C",
+      "nodeId": "RESEARCH-MAT-0C1330924497A49B4F5A",
+      "visibleTokens": [
+        "400.0 kg/m3",
+        "SOURCE_REPORTED_MANUFACTURED_SPECIMEN_BULK_DENSITY"
+      ]
+    },
+    {
+      "id": "FMS7-PMC12223022-REGUPOL-E43",
+      "nodeId": "RESEARCH-MAT-E46F1CE634E846C03387",
+      "visibleTokens": [
+        "0.39;0.43",
+        "3.9 MPa",
+        "0.84 g/cm3"
+      ]
+    }
+  ]
+}

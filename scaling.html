@@ -66,6 +66,17 @@
     </section>
     <section class="scaling-panel" aria-labelledby="parts-heading">
       <div class="scaling-section-heading"><div><p class="scaling-kicker">官方结构证据</p><h2 id="parts-heading">新增真实组件</h2></div><span class="scaling-badge pending">组件通过 · 材料绑定待核</span></div>
+      <div class="scaling-asset-controls">
+        <label for="component-search">搜索全部组件<input id="component-search" type="search" placeholder="名称、物体 / 组件 ID、材料" autocomplete="off"></label>
+        <label for="component-material">来源材料标签<select id="component-material">
+          <option value="all">全部材料</option><option value="flexible">含橡胶 / 织物 / 皮革标签</option>
+          <option value="rubber">橡胶 rubber</option><option value="fabric">织物 fabric</option><option value="leather">皮革 leather</option>
+        </select></label>
+        <label for="component-page">组件分页<select id="component-page" aria-controls="component-cards"></select></label>
+        <div class="scaling-pagination"><button id="component-prev" type="button" aria-controls="component-cards">上一页</button><button id="component-next" type="button" aria-controls="component-cards">下一页</button></div>
+      </div>
+      <p id="component-page-status" class="scaling-note" aria-live="polite" role="status"></p>
+      <p class="scaling-note">默认优先显示含 rubber、fabric、leather 来源标签的组件；标签可只覆盖混合组件中的局部区域，不代表整个物体柔软。隔离标签不参与该筛选。</p>
       <div id="component-cards" class="scaling-component-grid"></div>
       <p class="scaling-note">来源部件名或资产包材料池不能单独证明组件使用该材料；资产默认物理参数不计入文献物性组。</p>
     </section>
@@ -88,7 +99,7 @@
     <footer class="scaling-footer"><p id="release-boundary"></p><details><summary>发布快照与校验</summary><dl id="release-hashes"></dl></details></footer>
   </main>
   <noscript>此页面需要启用 JavaScript，以载入发布统计和分页资产。</noscript>
-  <script src="scaling-data.js?v=1cd6e76694cb"></script>
-  <script src="scaling.js?v=935ec9a34dd8"></script>
+  <script src="scaling-data.js?v=131e0e7f6266"></script>
+  <script src="scaling.js?v=9c0bcdb641e4"></script>
 </body>
 </html>
