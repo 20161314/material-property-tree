@@ -2021,11 +2021,17 @@
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
     "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
-    "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
+    "assetStatus": "DOWNLOADED_OFFICIAL_ZIP_CRC_AND_OBJ_SHA_VERIFIED",
     "license": "Creative Commons Attribution 4.0 International",
     "sourceMaterialBacklinks": [],
     "sourceMaterialBacklinkCount": 0,
-    "materialReviewNote": "本批无可接受回链，不等于材料不存在。"
+    "materialReviewNote": "本批无可接受回链，不等于材料不存在。",
+    "geometrySha256": "263f654bf7ef5a61096383c5f9b89d420227629b24a52bd554af88ff6466dfc4",
+    "geometryArchiveEntryPath": "meshes/model.obj",
+    "sourceArchiveSha256": "21b866e314a01e751179ead60189ff323dff71b30f846b7fce2a47af061101b2",
+    "geometryVertices": "11398",
+    "geometryFaces": "22828",
+    "payloadVerificationScope": "Downloaded ZIP CRC and exact source OBJ bytes/indices; global dedup, full mechanical parts and material properties not verified."
   },
   {
     "id": "OBJ-GSO-A4F4EDBFF52B25CA",

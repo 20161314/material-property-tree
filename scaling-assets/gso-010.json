@@ -51,7 +51,7 @@
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
     "materialStatus": "SOURCE_REPORTED_TEXT_LABEL_WITH_SCOPE",
-    "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
+    "assetStatus": "DOWNLOADED_OFFICIAL_ZIP_CRC_AND_OBJ_SHA_VERIFIED",
     "license": "Creative Commons Attribution 4.0 International",
     "sourceMaterialBacklinks": [
       {
@@ -79,7 +79,13 @@
       }
     ],
     "sourceMaterialBacklinkCount": 1,
-    "materialReviewNote": "官方文本回链；未证明网格部件绑定。"
+    "materialReviewNote": "官方文本回链；未证明网格部件绑定。",
+    "geometrySha256": "5e5d406b1a5a82b65faff627ef4a19266bdf9af5901ea0143a9349c2d2c4f71a",
+    "geometryArchiveEntryPath": "meshes/model.obj",
+    "sourceArchiveSha256": "cba7f120b2e5f0487473e3b1e8b71dfb048262e252971a478d637671a427232c",
+    "geometryVertices": "4407",
+    "geometryFaces": "8810",
+    "payloadVerificationScope": "Downloaded ZIP CRC and exact source OBJ bytes/indices; global dedup, full mechanical parts and material properties not verified."
   },
   {
     "id": "OBJ-GSO-D9B332A69F78573F",
@@ -2886,11 +2892,17 @@
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
     "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
-    "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
+    "assetStatus": "DOWNLOADED_OFFICIAL_ZIP_CRC_AND_OBJ_SHA_VERIFIED",
     "license": "Creative Commons Attribution 4.0 International",
     "sourceMaterialBacklinks": [],
     "sourceMaterialBacklinkCount": 0,
-    "materialReviewNote": "本批无可接受回链，不等于材料不存在。"
+    "materialReviewNote": "本批无可接受回链，不等于材料不存在。",
+    "geometrySha256": "5b33933eb3a9f1f3ba99818ef8df4ab4de0024de18798fd77ec738d90fcf0ca9",
+    "geometryArchiveEntryPath": "meshes/model.obj",
+    "sourceArchiveSha256": "de824c24f59a1208e3762799bafa8bc947454eac90865594e931d70ef20a6283",
+    "geometryVertices": "13638",
+    "geometryFaces": "27864",
+    "payloadVerificationScope": "Downloaded ZIP CRC and exact source OBJ bytes/indices; global dedup, full mechanical parts and material properties not verified."
   },
   {
     "id": "OBJ-GSO-91A41F521B406B80",

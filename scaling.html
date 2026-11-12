@@ -13,14 +13,14 @@
   <link rel="stylesheet" href="scaling.css?v=80e55df78265">
 </head>
 <body class="scaling-page">
-  <a class="skip-link" href="#gso-heading">跳到新增物体</a>
+  <a class="skip-link" href="#new-source-heading">跳到新增物体</a>
   <header class="app-header scaling-header">
     <div class="title-block">
       <p class="edition" id="release-date">扩充发布 · 载入中</p>
       <h1>物体与材料扩充总览</h1>
       <p class="subtitle">新增来源身份、真实组件与材料证据分开核验；柔性优先检索，硬类持续扩充。</p>
     </div>
-    <a class="scaling-action" href="#gso-heading">查看新增物体 <span aria-hidden="true">↓</span></a>
+    <a class="scaling-action" href="#new-source-heading">查看新增物体 <span aria-hidden="true">↓</span></a>
   </header>
   <nav class="scaling-nav" aria-label="数据视图">
     <a href="scaling.html" aria-current="page">扩充总览</a>
@@ -41,8 +41,8 @@
     </section>
     <section class="scaling-delta" aria-labelledby="delta-heading">
       <div class="delta-title"><p class="scaling-kicker">本轮已落地</p><h2 id="delta-heading">新增对象与组件</h2></div>
-      <div><strong id="delta-gso">—</strong><span>GSO 来源对象</span><small>与 Kubric 同源 ID 合并一次</small></div>
-      <div><strong id="delta-components">—</strong><span>净新增真实组件</span><small id="delta-components-note">独立部件替换整件占位</small></div>
+      <div><strong id="delta-objects">—</strong><span>新增来源对象</span><small>按来源 ID 去重；跨库内容去重未完成</small></div>
+      <div><strong id="delta-components">—</strong><span>真实分件净增</span><small id="delta-components-note">独立部件替换整件占位</small></div>
       <p id="delta-source-note">新增资产保留材料未核状态。</p>
     </section>
     <div class="scaling-two-columns">
@@ -58,10 +58,17 @@
         <p class="scaling-note">这是已保存的待办队列，不会在后台自动执行。类别只决定检索顺序，不证明软硬或组件材质。</p>
       </section>
     </div>
+    <section class="scaling-panel scaling-assets" aria-labelledby="new-source-heading">
+      <div class="scaling-section-heading"><div><p class="scaling-kicker">本轮新增来源对象</p><h2 id="new-source-heading">柔性与混合候选优先</h2><p class="scaling-note">保留来源身份、下载路径和材料状态。WHOLE 为整件占位，未完成真实分件；候选标签不是官方材料证明。</p></div></div>
+      <div class="scaling-asset-controls"><label for="new-source-search">搜索全部新增对象<input id="new-source-search" type="search" placeholder="名称、来源 ID、材料" autocomplete="off"></label><label for="new-source-filter">来源 / 检索优先<select id="new-source-filter"><option value="all">全部新增对象</option><option value="flexible">柔性 / 混合候选</option></select></label><label for="new-source-page">分页<select id="new-source-page"></select></label><div class="scaling-pagination"><button id="new-source-prev" type="button">上一页</button><button id="new-source-next" type="button">下一页</button></div></div>
+      <p id="new-source-status" class="scaling-note" aria-live="polite"></p>
+      <div class="scaling-asset-table"><table><thead><tr><th>物体与来源身份</th><th>组件 / 材料状态</th><th>来源与 3D 资产</th></tr></thead><tbody id="new-source-rows"></tbody></table></div>
+    </section>
     <section class="scaling-panel scaling-assets" aria-labelledby="gso-heading">
       <div class="scaling-section-heading"><div><p class="scaling-kicker">新增官方资产</p><h2 id="gso-heading">Google Scanned Objects</h2><p class="scaling-note" id="gso-count-note"></p></div><a href="https://fuel.gazebosim.org/1.0/GoogleResearch/models" target="_blank" rel="noopener noreferrer">打开官方清单 ↗</a></div>
       <div class="scaling-asset-controls"><label for="gso-search">筛选当前页<input id="gso-search" type="search" placeholder="名称、类别或对象 ID" autocomplete="off"></label><label for="gso-page">资产页<select id="gso-page"></select></label><div class="scaling-pagination"><button id="gso-prev" type="button">上一页</button><button id="gso-next" type="button">下一页</button></div></div>
       <p class="scaling-note" id="gso-page-status" aria-live="polite">载入资产页…</p>
+      <p class="scaling-note"><a href="scaling-assets/cycle8-gso-verified-payloads.csv" download>下载本轮12个GSO样本的ZIP / OBJ校验清单</a> · <a href="scaling-assets/cycle8-gso-verified-payloads.json">查看完整公开清单</a>；累计13个下载样本。仅核验文件身份和网格索引，不证明材料或仿真就绪。</p>
       <div class="scaling-asset-table"><table><thead><tr><th scope="col">物体与来源身份</th><th scope="col">组件 / 材料状态</th><th scope="col">来源与 3D 资产</th></tr></thead><tbody id="gso-rows"></tbody></table></div>
     </section>
     <section class="scaling-panel" aria-labelledby="parts-heading">
@@ -99,7 +106,7 @@
     <footer class="scaling-footer"><p id="release-boundary"></p><details><summary>发布快照与校验</summary><dl id="release-hashes"></dl></details></footer>
   </main>
   <noscript>此页面需要启用 JavaScript，以载入发布统计和分页资产。</noscript>
-  <script src="scaling-data.js?v=131e0e7f6266"></script>
-  <script src="scaling.js?v=9c0bcdb641e4"></script>
+  <script src="scaling-data.js?v=220e6eed2bec"></script>
+  <script src="scaling.js?v=30e857c10bbd"></script>
 </body>
 </html>

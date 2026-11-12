@@ -1268,11 +1268,17 @@
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
     "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
-    "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
+    "assetStatus": "DOWNLOADED_OFFICIAL_ZIP_CRC_AND_OBJ_SHA_VERIFIED",
     "license": "Creative Commons Attribution 4.0 International",
     "sourceMaterialBacklinks": [],
     "sourceMaterialBacklinkCount": 0,
-    "materialReviewNote": "本批无可接受回链，不等于材料不存在。"
+    "materialReviewNote": "本批无可接受回链，不等于材料不存在。",
+    "geometrySha256": "8fd79faf5c9183e824259756a44715ed5b0af9be76449565e294a4a6a8737eb4",
+    "geometryArchiveEntryPath": "meshes/model.obj",
+    "sourceArchiveSha256": "d18795f504259382a02ac9ace289b2d5308c9282372283cd3f8d0ded166f9a39",
+    "geometryVertices": "6874",
+    "geometryFaces": "13760",
+    "payloadVerificationScope": "Downloaded ZIP CRC and exact source OBJ bytes/indices; global dedup, full mechanical parts and material properties not verified."
   },
   {
     "id": "OBJ-GSO-5F3946277C98426D",
@@ -1319,11 +1325,17 @@
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
     "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
-    "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
+    "assetStatus": "DOWNLOADED_OFFICIAL_ZIP_CRC_AND_OBJ_SHA_VERIFIED",
     "license": "Creative Commons Attribution 4.0 International",
     "sourceMaterialBacklinks": [],
     "sourceMaterialBacklinkCount": 0,
-    "materialReviewNote": "本批无可接受回链，不等于材料不存在。"
+    "materialReviewNote": "本批无可接受回链，不等于材料不存在。",
+    "geometrySha256": "3a51db25cb95378bb4312f1d7a0f56f1799784af4d4d742f1cbc83b6cde62dfa",
+    "geometryArchiveEntryPath": "meshes/model.obj",
+    "sourceArchiveSha256": "9f52e2af5185a343119788450cd38caf14a65b88427b364a2923c01eacd42594",
+    "geometryVertices": "14293",
+    "geometryFaces": "28666",
+    "payloadVerificationScope": "Downloaded ZIP CRC and exact source OBJ bytes/indices; global dedup, full mechanical parts and material properties not verified."
   },
   {
     "id": "OBJ-GSO-A1E1D5F34FB87490",
@@ -1404,11 +1416,17 @@
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
     "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
-    "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
+    "assetStatus": "DOWNLOADED_OFFICIAL_ZIP_CRC_AND_OBJ_SHA_VERIFIED",
     "license": "Creative Commons Attribution 4.0 International",
     "sourceMaterialBacklinks": [],
     "sourceMaterialBacklinkCount": 0,
-    "materialReviewNote": "本批无可接受回链，不等于材料不存在。"
+    "materialReviewNote": "本批无可接受回链，不等于材料不存在。",
+    "geometrySha256": "4ec7b040ad885636a7195b646e6b0eec9af8e6b6f6f1c2134d3bbcc6c7cb3995",
+    "geometryArchiveEntryPath": "meshes/model.obj",
+    "sourceArchiveSha256": "c7ae267bfd13afc90175c2f8e70c81d7a29a3078ad4789c945332d39ce132476",
+    "geometryVertices": "14651",
+    "geometryFaces": "29314",
+    "payloadVerificationScope": "Downloaded ZIP CRC and exact source OBJ bytes/indices; global dedup, full mechanical parts and material properties not verified."
   },
   {
     "id": "OBJ-GSO-67E44D6D4174D188",
@@ -1472,11 +1490,17 @@
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
     "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
-    "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
+    "assetStatus": "DOWNLOADED_OFFICIAL_ZIP_CRC_AND_OBJ_SHA_VERIFIED",
     "license": "Creative Commons Attribution 4.0 International",
     "sourceMaterialBacklinks": [],
     "sourceMaterialBacklinkCount": 0,
-    "materialReviewNote": "本批无可接受回链，不等于材料不存在。"
+    "materialReviewNote": "本批无可接受回链，不等于材料不存在。",
+    "geometrySha256": "d1eef18acdd8bf511223c6d161862916bd588c317d57339858c43211f4b00718",
+    "geometryArchiveEntryPath": "meshes/model.obj",
+    "sourceArchiveSha256": "a0dd85b2fad5d1de55bb4e62cda02bf875a5df154f19265a8688082562dc59e5",
+    "geometryVertices": "15019",
+    "geometryFaces": "30086",
+    "payloadVerificationScope": "Downloaded ZIP CRC and exact source OBJ bytes/indices; global dedup, full mechanical parts and material properties not verified."
   },
   {
     "id": "OBJ-GSO-22DD44B5C71DF7A5",
@@ -1540,11 +1564,17 @@
     "sourceUrl": "https://fuel.gazebosim.org/1.0/GoogleResearch/models",
     "material": "NOT_REPORTED_IN_MANIFEST",
     "materialStatus": "SOURCE_TEXT_REVIEW_NO_ACCEPTED_MATERIAL_LABEL",
-    "assetStatus": "ONE_SAMPLE_DOWNLOADED; otherURLsconstructed_fromofficialFuelpatternnotallprobed",
+    "assetStatus": "DOWNLOADED_OFFICIAL_ZIP_CRC_AND_OBJ_SHA_VERIFIED",
     "license": "Creative Commons Attribution 4.0 International",
     "sourceMaterialBacklinks": [],
     "sourceMaterialBacklinkCount": 0,
-    "materialReviewNote": "本批无可接受回链，不等于材料不存在。"
+    "materialReviewNote": "本批无可接受回链，不等于材料不存在。",
+    "geometrySha256": "c6124834764ae08c881578c14212b8efa9f03d8edc61cf20fba50636f74cf488",
+    "geometryArchiveEntryPath": "meshes/model.obj",
+    "sourceArchiveSha256": "337538a58fc12e5a229f368b2c58a9735f9b687de51ed2b48a66fa56dbd5be06",
+    "geometryVertices": "21922",
+    "geometryFaces": "43896",
+    "payloadVerificationScope": "Downloaded ZIP CRC and exact source OBJ bytes/indices; global dedup, full mechanical parts and material properties not verified."
   },
   {
     "id": "OBJ-GSO-1E32AE0E9085DCFB",
