@@ -35,8 +35,11 @@
   Object.entries(counts).forEach(([id, value]) => { $(id).textContent = fmt(value); });
   $("delta-gso").textContent = `+${fmt(summary.new_source_object_identities)}`;
   const cycle2 = Number.isFinite(summary.cycle2_real_components_added);
-  $("delta-components").textContent = `+${fmt(cycle2 ? summary.cycle2_net_component_increment : summary.net_real_component_increment)}`;
-  $("delta-components-note").textContent = cycle2
+  const cycle3 = summary.current_cycle === "cycle3";
+  $("delta-components").textContent = `+${fmt(cycle3 ? summary.current_cycle_net_component_increment : cycle2 ? summary.cycle2_net_component_increment : summary.net_real_component_increment)}`;
+  $("delta-components-note").textContent = cycle3
+    ? `本轮 ${fmt(summary.current_cycle_real_components_added)} 个实体替换 ${fmt(summary.current_cycle_fallbacks_replaced)} 个整件占位，净增 ${fmt(summary.current_cycle_net_component_increment)}；另更新 ${fmt(summary.current_cycle_existing_component_material_updates)} 个组件的材料标签`
+    : cycle2
     ? `本轮新增 ${fmt(summary.cycle2_real_components_added)} 个实体组件；另更新既有 ${fmt(summary.cycle2_existing_component_material_updates)} 个组件的官方材料标签`
     : `${fmt(summary.real_components_added)} 个独立部件替换 ${fmt(summary.fallbacks_replaced)} 个整件占位`;
   const cycle2Note = cycle2 ? `其中软优先对象 ${fmt(summary.gso_soft_priority_objects_with_source_labels)}/${fmt(summary.gso_soft_priority_input_objects)}；${fmt(summary.source_text_semantic_component_proposals)} 个文本语义部件仅作来源范围，不计实体组件。` : "";
@@ -69,7 +72,7 @@
     const label = item.material_status_label || "组件材料待核";
     const note = item.material_status_note || "组件身份已核，材料对应关系仍待补证。";
     const material = kind === "hold" ? "材料尚未核定" : (item.material_label || item.material_label_raw || "来源标签见原文");
-    const regionNote = item.official_bound_material_regions?.length ? `<small>${fmt(item.official_bound_material_regions.length)} 个已核材料区域；不新增组件数。</small>` : "";
+    const regionNote = item.official_bound_material_regions?.length ? `<small>${fmt(item.official_bound_material_regions.length)} 条来源材料绑定；几何面区有效覆盖尚未核验，不新增组件数。</small>` : "";
     return `<article>
     <h3>${esc(item.component_name_cn || item.component_scope || item.component_id)}</h3><p>${esc(item.object_name_cn || item.object_name_en)} · ${esc(item.object_name_en)}</p>
     <code>${esc(item.component_path)}</code><p>${esc(item.component_identity_note || "独立官方几何引用、质量/惯量及关节成员关系；通过组件身份审核。")}</p>
@@ -78,7 +81,7 @@
     <p>原文定位：${esc(item.source_locator || "见官方结构文件")}</p>${link(item.source_url, "打开官方结构文件")}${link(item.source_manifest_url, "打开资产包")}
   </article>`;
   }).join("");
-  const propertyNote = cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
+  const propertyNote = cycle3 ? `本轮新增 ${fmt(summary.current_cycle_complete_property_groups)} 完整组、${fmt(summary.current_cycle_incomplete_property_groups)} 缺项组（${fmt(summary.current_cycle_property_value_cells)} 个属性值），其中2完整为文献明确报告参考值；不等于商品实测。` : cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
   $("release-boundary").textContent = `研究完整与缺项共 ${fmt(summary.total_records)} 组，包含独立标记的数据库转录层。${propertyNote}正式材料映射 ${fmt(summary.formal_material_mapping_rows_unchanged)} 行未因本轮标签或组件新增而自动晋级。全库几何内容去重未完成。`;
   const hashes = { expanded_inventory_sha256: "扩充对象组件清单 SHA-256", feedback_queue_sha256: "待办队列 SHA-256", baseline_sha256: "原始对象表 SHA-256" };
   $("release-hashes").innerHTML = Object.entries(hashes).filter(([key]) => summary[key]).map(([key, label]) => `<dt>${label}</dt><dd>${esc(summary[key])}</dd>`).join("");
