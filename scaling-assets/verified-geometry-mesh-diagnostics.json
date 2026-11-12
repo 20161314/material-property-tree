@@ -1,0 +1,6038 @@
+[
+  {
+    "mesh_errors": [],
+    "vertex_count": 64,
+    "face_count": 152,
+    "triangles": 152,
+    "nondegenerate_triangles": 152,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.527838,
+        0.515988
+      ],
+      [
+        -0.39991,
+        0.415579
+      ],
+      [
+        -0.161163,
+        0.165033
+      ]
+    ],
+    "bbox_diagonal": 1.364184319589182,
+    "bbox_volume": 0.27766737122766316,
+    "total_triangle_area": 5.0678518679264615,
+    "unique_unoriented_triangles": 76,
+    "repeated_unoriented_triangles": 76,
+    "reverse_winding_triangle_pairs": 76,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 87,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-005D7CFE8200DC78156B",
+    "object_id": "OBJ-PHYSX3D-00398",
+    "part_name": "bag_body",
+    "source_object_name": "Shopping Bag",
+    "obj_bytes": 3943,
+    "obj_sha256": "dcead88108113a465da07f48d5add3422ba4dd7b9e48c8fc459a163e20e1abbb",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 28,
+    "face_count": 26,
+    "triangles": 26,
+    "nondegenerate_triangles": 26,
+    "zero_area_triangles": 0,
+    "affine_rank": 2,
+    "bounding_box": [
+      [
+        -0.309333,
+        0.307377
+      ],
+      [
+        0.032301,
+        0.032301
+      ],
+      [
+        -0.111208,
+        0.397906
+      ]
+    ],
+    "bbox_diagonal": 0.7997051263409534,
+    "bbox_volume": 0.0,
+    "total_triangle_area": 0.2999456019550001,
+    "unique_unoriented_triangles": 26,
+    "repeated_unoriented_triangles": 0,
+    "reverse_winding_triangle_pairs": 0,
+    "boundary_edges": 28,
+    "edges_with_more_than_two_incident_faces": 0,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-01D7B205B168B693D2CC",
+    "object_id": "OBJ-PHYSX3D-08325",
+    "part_name": "Seat Cushion",
+    "source_object_name": "Chair",
+    "obj_bytes": 1303,
+    "obj_sha256": "cc565b205ca6dda98cbc53269a663d7d2eb13dff2978d36ce1ed95f3f7c2af64",
+    "quality_notes": [
+      "PLANAR_SURFACE_NOT_SOLID_VOLUME",
+      "OPEN_SURFACE"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.604835,
+        -0.488753
+      ],
+      [
+        -0.533621,
+        -0.450705
+      ],
+      [
+        0.537743,
+        0.653825
+      ]
+    ],
+    "bbox_diagonal": 0.18391608005827007,
+    "bbox_volume": 0.0011172956475111841,
+    "total_triangle_area": 0.13090056379200005,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-039389A05850D7E6B518",
+    "object_id": "OBJ-PHYSX3D-08967",
+    "part_name": "Front Left Leg",
+    "source_object_name": "Armchair",
+    "obj_bytes": 523,
+    "obj_sha256": "6ce3a11c421d157a47885c92bb04192d75c03183c3eb0d7e2dae4a33bccec9e3",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 4,
+    "face_count": 4,
+    "triangles": 4,
+    "nondegenerate_triangles": 4,
+    "zero_area_triangles": 0,
+    "affine_rank": 2,
+    "bounding_box": [
+      [
+        -0.829185,
+        0.806806
+      ],
+      [
+        -0.449602,
+        0.476846
+      ],
+      [
+        0.063047,
+        0.063047
+      ]
+    ],
+    "bbox_diagonal": 1.880099052918489,
+    "bbox_volume": 0.0,
+    "total_triangle_area": 3.0313211799359996,
+    "unique_unoriented_triangles": 2,
+    "repeated_unoriented_triangles": 2,
+    "reverse_winding_triangle_pairs": 2,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 1,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-05C258A6BAD808A1DF9F",
+    "object_id": "OBJ-PHYSX3D-11411",
+    "part_name": "Screen",
+    "source_object_name": "Monitor",
+    "obj_bytes": 211,
+    "obj_sha256": "0657ccc4d0fd9b3545dbe321cac70fbaa320d68710f822f1109f874a9abc37c1",
+    "quality_notes": [
+      "PLANAR_SURFACE_NOT_SOLID_VOLUME",
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 44,
+    "face_count": 168,
+    "triangles": 168,
+    "nondegenerate_triangles": 168,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.450296,
+        0.570315
+      ],
+      [
+        -0.739874,
+        -0.351273
+      ],
+      [
+        0.367532,
+        0.49729
+      ]
+    ],
+    "bbox_diagonal": 0.42691033733794737,
+    "bbox_volume": 0.006051848684642604,
+    "total_triangle_area": 0.2658008655716075,
+    "unique_unoriented_triangles": 84,
+    "repeated_unoriented_triangles": 84,
+    "reverse_winding_triangle_pairs": 84,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 126,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-0808AD6615C3A70DCE21",
+    "object_id": "OBJ-PHYSX3D-08984",
+    "part_name": "Front Right Leg",
+    "source_object_name": "Decorative Bench",
+    "obj_bytes": 3369,
+    "obj_sha256": "afed37e918c2ff41cd6758f340725609b7c08ecace78491bd17673335f2a6d66",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.650963,
+        0.764407
+      ],
+      [
+        -0.418981,
+        0.04135
+      ],
+      [
+        0.315334,
+        0.346875
+      ]
+    ],
+    "bbox_diagonal": 0.4751515604288804,
+    "bbox_volume": 0.0016471274772545232,
+    "total_triangle_area": 0.23182042100000172,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-088E06F1DB7126482CE8",
+    "object_id": "OBJ-PHYSX3D-20543",
+    "part_name": "leg",
+    "source_object_name": "Rectangular Table",
+    "obj_bytes": 511,
+    "obj_sha256": "27c893322efb76fc3aec0b4ecc733bb53ac0e8d3945c8a4dc4f1bfcbab62d340",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 88,
+    "face_count": 264,
+    "triangles": 264,
+    "nondegenerate_triangles": 264,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.534378,
+        0.579636
+      ],
+      [
+        0.111081,
+        0.131863
+      ],
+      [
+        -0.384421,
+        0.389431
+      ]
+    ],
+    "bbox_diagonal": 1.356578785630971,
+    "bbox_volume": 0.017915787332787706,
+    "total_triangle_area": 4.102366013944012,
+    "unique_unoriented_triangles": 132,
+    "repeated_unoriented_triangles": 132,
+    "reverse_winding_triangle_pairs": 132,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 198,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-08A4606460F4F34D8083",
+    "object_id": "OBJ-PHYSX3D-21627",
+    "part_name": "tabletop_surface",
+    "source_object_name": "Table",
+    "obj_bytes": 6023,
+    "obj_sha256": "0e9bd75d3ee077953d42c07222efa12203ca2a167ded36f5f505493e5b196fc1",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 10,
+    "face_count": 32,
+    "triangles": 32,
+    "nondegenerate_triangles": 32,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.857181,
+        0.8914
+      ],
+      [
+        -0.188469,
+        0.177724
+      ],
+      [
+        -0.009621,
+        0.35057
+      ]
+    ],
+    "bbox_diagonal": 0.5147871498891556,
+    "bbox_volume": 0.004513466350948996,
+    "total_triangle_area": 0.627022227836,
+    "unique_unoriented_triangles": 16,
+    "repeated_unoriented_triangles": 16,
+    "reverse_winding_triangle_pairs": 16,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 24,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-09AB75F9B948E1068BCA",
+    "object_id": "OBJ-PHYSX3D-23920",
+    "part_name": "vertical_side_panel",
+    "source_object_name": "Bench",
+    "obj_bytes": 657,
+    "obj_sha256": "39f97b20730c83bfb92432954b362e0b6b46f0b2b4bcecccfcd2d0c131c3805e",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 96,
+    "face_count": 136,
+    "triangles": 136,
+    "nondegenerate_triangles": 136,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.235553,
+        -0.138733
+      ],
+      [
+        -0.872539,
+        -0.040314
+      ],
+      [
+        -0.145024,
+        -0.048204
+      ]
+    ],
+    "bbox_diagonal": 0.8434137036028049,
+    "bbox_volume": 0.00780137069209,
+    "total_triangle_area": 0.2815291150567474,
+    "unique_unoriented_triangles": 92,
+    "repeated_unoriented_triangles": 44,
+    "reverse_winding_triangle_pairs": 44,
+    "boundary_edges": 48,
+    "edges_with_more_than_two_incident_faces": 42,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-0B34B067BB13B95C2C3E",
+    "object_id": "OBJ-PHYSX3D-08325",
+    "part_name": "Leg A",
+    "source_object_name": "Chair",
+    "obj_bytes": 5153,
+    "obj_sha256": "1d083c81e1970baa45942d44434c119fdc68fa516e64b4c08eb7ad2d3c6a6a7e",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "OPEN_SURFACE",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 40,
+    "face_count": 152,
+    "triangles": 152,
+    "nondegenerate_triangles": 152,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.454364,
+        0.747918
+      ],
+      [
+        -0.384779,
+        0.370829
+      ],
+      [
+        -0.456958,
+        0.585159
+      ]
+    ],
+    "bbox_diagonal": 1.3202746844005606,
+    "bbox_volume": 0.23115379634179134,
+    "total_triangle_area": 5.090892274339186,
+    "unique_unoriented_triangles": 76,
+    "repeated_unoriented_triangles": 76,
+    "reverse_winding_triangle_pairs": 76,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 114,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-0C49F2AED86A15AEDA45",
+    "object_id": "OBJ-PHYSX3D-08818",
+    "part_name": "Left Armrest",
+    "source_object_name": "Armchair",
+    "obj_bytes": 3037,
+    "obj_sha256": "50bb78465813fa4db899574ec21512956786898bce08012d6b064a2d8fb1e69c",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 48,
+    "face_count": 96,
+    "triangles": 96,
+    "nondegenerate_triangles": 96,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.54461,
+        -0.43876
+      ],
+      [
+        -0.42536,
+        -0.319879
+      ],
+      [
+        -0.339995,
+        -0.234471
+      ]
+    ],
+    "bbox_diagonal": 0.18293654210408594,
+    "bbox_volume": 0.0011781927501074002,
+    "total_triangle_area": 0.058020184626803945,
+    "unique_unoriented_triangles": 48,
+    "repeated_unoriented_triangles": 48,
+    "reverse_winding_triangle_pairs": 48,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 48,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-0FFAFD1DACE5F92FB38E",
+    "object_id": "OBJ-PHYSX3D-03427",
+    "part_name": "foot",
+    "source_object_name": "Armless Sofa Chair",
+    "obj_bytes": 2859,
+    "obj_sha256": "ac7cdc3519e09b66b978093fef1e6806c837f1dfdf6b00114fb85b59332fc9b6",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 40,
+    "face_count": 136,
+    "triangles": 136,
+    "nondegenerate_triangles": 132,
+    "zero_area_triangles": 4,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.380913,
+        0.417377
+      ],
+      [
+        -0.3252,
+        0.14792
+      ],
+      [
+        -0.223677,
+        0.638077
+      ]
+    ],
+    "bbox_diagonal": 1.2663843867546694,
+    "bbox_volume": 0.3254732526642592,
+    "total_triangle_area": 5.8123157507443866,
+    "unique_unoriented_triangles": 68,
+    "repeated_unoriented_triangles": 68,
+    "reverse_winding_triangle_pairs": 68,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 98,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-108B42766103A474BCA8",
+    "object_id": "OBJ-PHYSX3D-08756",
+    "part_name": "Seat Surface",
+    "source_object_name": "Sofa Chair",
+    "obj_bytes": 2877,
+    "obj_sha256": "a273b2755226ac46130f668fb3a73edf9f31c2278a0f3077e5f2fd0357819d35",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 714,
+    "face_count": 2256,
+    "triangles": 2256,
+    "nondegenerate_triangles": 2256,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.815657,
+        0.817374
+      ],
+      [
+        -0.014959,
+        0.897008
+      ],
+      [
+        -0.328906,
+        -0.112361
+      ]
+    ],
+    "bbox_diagonal": 1.8829141757061048,
+    "bbox_volume": 0.32249405486520943,
+    "total_triangle_area": 7.295491818966775,
+    "unique_unoriented_triangles": 1128,
+    "repeated_unoriented_triangles": 1128,
+    "reverse_winding_triangle_pairs": 1128,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 1564,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-110F8B6A0CE514A3F8BE",
+    "object_id": "OBJ-PHYSX3D-08984",
+    "part_name": "Backrest",
+    "source_object_name": "Decorative Bench",
+    "obj_bytes": 56699,
+    "obj_sha256": "8bf2323925f6a5442441a168bf2dd25a2c68406f6014b3d64c8c35ebd027b02f",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 40,
+    "face_count": 152,
+    "triangles": 152,
+    "nondegenerate_triangles": 152,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.499134,
+        0.802015
+      ],
+      [
+        -0.302705,
+        0.363634
+      ],
+      [
+        -0.505069,
+        0.570159
+      ]
+    ],
+    "bbox_diagonal": 1.3007151167976791,
+    "bbox_volume": 0.2170040446427913,
+    "total_triangle_area": 4.814597957733987,
+    "unique_unoriented_triangles": 76,
+    "repeated_unoriented_triangles": 76,
+    "reverse_winding_triangle_pairs": 76,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 114,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-11925C1DCAB951BE10E8",
+    "object_id": "OBJ-PHYSX3D-07765",
+    "part_name": "Right Armrest",
+    "source_object_name": "Sofa",
+    "obj_bytes": 3037,
+    "obj_sha256": "2b726736b47f142a99fa13167b9a50d98ba94a1357594cb1e8841fbcfbeb8d4a",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.526352,
+        0.510848
+      ],
+      [
+        0.43592,
+        0.666409
+      ],
+      [
+        -0.546249,
+        -0.511675
+      ]
+    ],
+    "bbox_diagonal": 1.0630636766426553,
+    "bbox_volume": 0.0082653707587192,
+    "total_triangle_area": 1.1315690811439998,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-121E5563FABE81B907DA",
+    "object_id": "OBJ-PHYSX3D-12437",
+    "part_name": "frame_horizontal_bar",
+    "source_object_name": "Cabinet",
+    "obj_bytes": 519,
+    "obj_sha256": "c9566fb4349c1dc5b4e14732a0ebc6b164b6d6fb494dcdf798f4873ff34dfe57",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 88,
+    "face_count": 264,
+    "triangles": 264,
+    "nondegenerate_triangles": 264,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.430178,
+        0.464808
+      ],
+      [
+        -0.250068,
+        -0.049629
+      ],
+      [
+        -0.689353,
+        0.690417
+      ]
+    ],
+    "bbox_diagonal": 1.65678634283875,
+    "bbox_volume": 0.24751707669578357,
+    "total_triangle_area": 14.911493618535967,
+    "unique_unoriented_triangles": 132,
+    "repeated_unoriented_triangles": 132,
+    "reverse_winding_triangle_pairs": 132,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 198,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-12887592F01DF3E5AB1A",
+    "object_id": "OBJ-PHYSX3D-00658",
+    "part_name": "Bed Frame Base",
+    "source_object_name": "Bed",
+    "obj_bytes": 6107,
+    "obj_sha256": "e848c0a1f7ed1468a76e0e57cdde300340c4ce84f4de43459bcbe5a782ae145a",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 44,
+    "face_count": 168,
+    "triangles": 168,
+    "nondegenerate_triangles": 168,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.449065,
+        0.566483
+      ],
+      [
+        -0.739874,
+        -0.351273
+      ],
+      [
+        -0.264855,
+        -0.136996
+      ]
+    ],
+    "bbox_diagonal": 0.4256120860666436,
+    "bbox_volume": 0.005834046629841261,
+    "total_triangle_area": 0.265801030481795,
+    "unique_unoriented_triangles": 84,
+    "repeated_unoriented_triangles": 84,
+    "reverse_winding_triangle_pairs": 84,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 126,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-16138E1D12EEC7723158",
+    "object_id": "OBJ-PHYSX3D-08984",
+    "part_name": "Back Right Leg",
+    "source_object_name": "Decorative Bench",
+    "obj_bytes": 3413,
+    "obj_sha256": "1e42944b146a680d4647ed398742e8cfb562883799c2d146aa3796790ddcc7cf",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 171,
+    "face_count": 560,
+    "triangles": 560,
+    "nondegenerate_triangles": 554,
+    "zero_area_triangles": 6,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.583516,
+        0.61297
+      ],
+      [
+        -0.117232,
+        0.069552
+      ],
+      [
+        -0.790921,
+        0.776365
+      ]
+    ],
+    "bbox_diagonal": 1.980619200312872,
+    "bbox_volume": 0.3502640356347409,
+    "total_triangle_area": 9.58540967561591,
+    "unique_unoriented_triangles": 280,
+    "repeated_unoriented_triangles": 280,
+    "reverse_winding_triangle_pairs": 280,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 418,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-17C4A79B87D39F78C7E8",
+    "object_id": "OBJ-PHYSX3D-00603",
+    "part_name": "Bed Frame Horizontal Surface",
+    "source_object_name": "Bed",
+    "obj_bytes": 13096,
+    "obj_sha256": "86f5539f2acd6d15820450dde5ec336691e973d775ea428378e4159336efca77",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 32,
+    "face_count": 96,
+    "triangles": 96,
+    "nondegenerate_triangles": 96,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.931858,
+        0.959928
+      ],
+      [
+        0.00982,
+        0.041351
+      ],
+      [
+        -0.34677,
+        0.346875
+      ]
+    ],
+    "bbox_diagonal": 2.015190278802972,
+    "bbox_volume": 0.04137585791395407,
+    "total_triangle_area": 0.7653882383306813,
+    "unique_unoriented_triangles": 48,
+    "repeated_unoriented_triangles": 48,
+    "reverse_winding_triangle_pairs": 48,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 72,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-17CAF7E3B0B5D8BD7AD6",
+    "object_id": "OBJ-PHYSX3D-20543",
+    "part_name": "tabletop_frame",
+    "source_object_name": "Rectangular Table",
+    "obj_bytes": 2161,
+    "obj_sha256": "a9e3660ecf7b5a933b31991874a5ca93035310926eaba40a32c91de8554e0998",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.663917,
+        0.691987
+      ],
+      [
+        -0.05324,
+        0.030631
+      ],
+      [
+        -0.015645,
+        0.015752
+      ]
+    ],
+    "bbox_diagonal": 1.3588582609919255,
+    "bbox_volume": 0.0035704990025844474,
+    "total_triangle_area": 0.635702560236,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-1949AF3363B7465A5955",
+    "object_id": "OBJ-PHYSX3D-20543",
+    "part_name": "tabletop_connector",
+    "source_object_name": "Rectangular Table",
+    "obj_bytes": 519,
+    "obj_sha256": "9bf47ee890bedd33f2df2d0dce89927e29bbb40183844c9865923467e5402035",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 20,
+    "triangles": 20,
+    "nondegenerate_triangles": 20,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.745619,
+        -0.700187
+      ],
+      [
+        -0.393569,
+        -0.332993
+      ],
+      [
+        0.488503,
+        0.533935
+      ]
+    ],
+    "bbox_diagonal": 0.08830393549553728,
+    "bbox_volume": 0.0001250328998154242,
+    "total_triangle_area": 0.026144843904000032,
+    "unique_unoriented_triangles": 10,
+    "repeated_unoriented_triangles": 10,
+    "reverse_winding_triangle_pairs": 10,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 13,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-1A85A580B2B88A88BFF7",
+    "object_id": "OBJ-PHYSX3D-07765",
+    "part_name": "Front Left Leg",
+    "source_object_name": "Sofa",
+    "obj_bytes": 491,
+    "obj_sha256": "5a6f56f09b1633c345bb457b861e4cf2fead9fcef80d8cfc0aaa37a878b1b1e7",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 33,
+    "face_count": 108,
+    "triangles": 108,
+    "nondegenerate_triangles": 92,
+    "zero_area_triangles": 16,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.404072,
+        0.42228
+      ],
+      [
+        -0.518591,
+        0.385231
+      ],
+      [
+        -0.1009,
+        0.085029
+      ]
+    ],
+    "bbox_diagonal": 1.238677289946417,
+    "bbox_volume": 0.1388657436926526,
+    "total_triangle_area": 5.351168826201624,
+    "unique_unoriented_triangles": 54,
+    "repeated_unoriented_triangles": 54,
+    "reverse_winding_triangle_pairs": 54,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 76,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-1DE61B5996B22F85EF71",
+    "object_id": "OBJ-PHYSX3D-00359",
+    "part_name": "bag_body",
+    "source_object_name": "Handbag",
+    "obj_bytes": 2347,
+    "obj_sha256": "ba8e4fbfa642136af8c07c450890ef552ecd4665b5ec7a2ee5984e2928dce463",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.313001,
+        -0.118127
+      ],
+      [
+        -0.914384,
+        0.025595
+      ],
+      [
+        0.199592,
+        0.394466
+      ]
+    ],
+    "bbox_diagonal": 0.979546972938511,
+    "bbox_volume": 0.0356965258300466,
+    "total_triangle_area": 0.35804787175233405,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-1E3D01346261649DC623",
+    "object_id": "OBJ-PHYSX3D-05378",
+    "part_name": "Leg",
+    "source_object_name": "Bar Stool",
+    "obj_bytes": 519,
+    "obj_sha256": "3e61bfe8bda7cfcf79305f2a22fd4a69ae8fcda78ab6856184ead1036febaef6",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 60,
+    "face_count": 228,
+    "triangles": 228,
+    "nondegenerate_triangles": 228,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.230159,
+        0.260487
+      ],
+      [
+        0.385231,
+        1.004995
+      ],
+      [
+        -0.049253,
+        -0.02343
+      ]
+    ],
+    "bbox_diagonal": 0.7908904730371963,
+    "bbox_volume": 0.007852379919368713,
+    "total_triangle_area": 0.25991553241702914,
+    "unique_unoriented_triangles": 114,
+    "repeated_unoriented_triangles": 114,
+    "reverse_winding_triangle_pairs": 114,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 169,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-1E7BCBCD835B351404C0",
+    "object_id": "OBJ-PHYSX3D-00359",
+    "part_name": "handle",
+    "source_object_name": "Handbag",
+    "obj_bytes": 4625,
+    "obj_sha256": "96ccf59cb79cb7ccc31aea1a95eb08664926fd053e2d0361be92e6446890b108",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 36,
+    "face_count": 136,
+    "triangles": 136,
+    "nondegenerate_triangles": 136,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.51476,
+        -0.346696
+      ],
+      [
+        -0.167829,
+        0.799794
+      ],
+      [
+        -0.356908,
+        0.066637
+      ]
+    ],
+    "bbox_diagonal": 1.0695467008270374,
+    "bbox_volume": 0.06887798567442624,
+    "total_triangle_area": 1.8655274845459302,
+    "unique_unoriented_triangles": 68,
+    "repeated_unoriented_triangles": 68,
+    "reverse_winding_triangle_pairs": 68,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 102,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-1EA294EBE184E58C57A4",
+    "object_id": "OBJ-PHYSX3D-08434",
+    "part_name": "Side Wing (Right)",
+    "source_object_name": "Upholstered Armchair",
+    "obj_bytes": 2755,
+    "obj_sha256": "4f9ac251737f48dbdda5a95b2d4214bd045e4ba3c2d8899158db9480072f6b46",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 32,
+    "face_count": 96,
+    "triangles": 96,
+    "nondegenerate_triangles": 96,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.366929,
+        0.377562
+      ],
+      [
+        0.321024,
+        0.477797
+      ],
+      [
+        -0.33293,
+        0.329623
+      ]
+    ],
+    "bbox_diagonal": 1.0088712011049774,
+    "bbox_volume": 0.0773305939498773,
+    "total_triangle_area": 2.227437982648002,
+    "unique_unoriented_triangles": 48,
+    "repeated_unoriented_triangles": 48,
+    "reverse_winding_triangle_pairs": 48,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 72,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-1FD1F64047D994FDEB8D",
+    "object_id": "OBJ-PHYSX3D-20662",
+    "part_name": "tabletop_frame",
+    "source_object_name": "Bar Stool",
+    "obj_bytes": 2159,
+    "obj_sha256": "bbb0a236d69583d32afea81bf5ccc6b95021844cb5fe735c49a776cef2be7bcf",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 20,
+    "triangles": 20,
+    "nondegenerate_triangles": 20,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.745619,
+        -0.700187
+      ],
+      [
+        -0.393569,
+        -0.332993
+      ],
+      [
+        -0.480717,
+        -0.435285
+      ]
+    ],
+    "bbox_diagonal": 0.08830393549553728,
+    "bbox_volume": 0.0001250328998154242,
+    "total_triangle_area": 0.026144843904000032,
+    "unique_unoriented_triangles": 10,
+    "repeated_unoriented_triangles": 10,
+    "reverse_winding_triangle_pairs": 10,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 13,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-29FC13AAD703D96ECB76",
+    "object_id": "OBJ-PHYSX3D-07765",
+    "part_name": "Center Leg",
+    "source_object_name": "Sofa",
+    "obj_bytes": 499,
+    "obj_sha256": "76214ea1c0147a460d3d96bb4de75b8bb8012a0680bb82a91128358988f721c5",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 216,
+    "face_count": 704,
+    "triangles": 704,
+    "nondegenerate_triangles": 704,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.527668,
+        0.559824
+      ],
+      [
+        -0.026879,
+        0.463757
+      ],
+      [
+        -0.719772,
+        -0.628726
+      ]
+    ],
+    "bbox_diagonal": 1.196516572670851,
+    "bbox_volume": 0.048578751852337926,
+    "total_triangle_area": 6.217584120757699,
+    "unique_unoriented_triangles": 352,
+    "repeated_unoriented_triangles": 352,
+    "reverse_winding_triangle_pairs": 352,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 528,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-29FF239095D628EA7EE8",
+    "object_id": "OBJ-PHYSX3D-00520",
+    "part_name": "headboard",
+    "source_object_name": "Storage Bed",
+    "obj_bytes": 16617,
+    "obj_sha256": "a20ddefa0dcc6c45be852e66e7d263ccdd2410f6d2c5c2b3637ee2fff87512cf",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 32,
+    "face_count": 104,
+    "triangles": 104,
+    "nondegenerate_triangles": 104,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.756942,
+        0.721214
+      ],
+      [
+        -0.061473,
+        0.611535
+      ],
+      [
+        -0.556693,
+        0.101819
+      ]
+    ],
+    "bbox_diagonal": 1.7525760989309425,
+    "bbox_volume": 0.6550948582535671,
+    "total_triangle_area": 5.5646339826412055,
+    "unique_unoriented_triangles": 52,
+    "repeated_unoriented_triangles": 52,
+    "reverse_winding_triangle_pairs": 52,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 78,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-2B8A960921E1383F07F9",
+    "object_id": "OBJ-PHYSX3D-06115",
+    "part_name": "Back Soft Surface",
+    "source_object_name": "Rocking Chair",
+    "obj_bytes": 2265,
+    "obj_sha256": "e311f62c09e28aa4784be769d04b3f50ecded32381ae790b820b9b87deb0f518",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 44,
+    "face_count": 168,
+    "triangles": 168,
+    "nondegenerate_triangles": 168,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.577313,
+        -0.459894
+      ],
+      [
+        -0.739874,
+        -0.351273
+      ],
+      [
+        -0.264855,
+        -0.136996
+      ]
+    ],
+    "bbox_diagonal": 0.42561236194805246,
+    "bbox_volume": 0.005834096315976518,
+    "total_triangle_area": 0.26580137020708433,
+    "unique_unoriented_triangles": 84,
+    "repeated_unoriented_triangles": 84,
+    "reverse_winding_triangle_pairs": 84,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 126,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-2BB60C86017AC3D34365",
+    "object_id": "OBJ-PHYSX3D-08984",
+    "part_name": "Front Left Leg",
+    "source_object_name": "Decorative Bench",
+    "obj_bytes": 3457,
+    "obj_sha256": "bd65f0ecab35f5f64762c3326b4571ca09e965a4b55162defe347c62f60487f3",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.58613,
+        0.619122
+      ],
+      [
+        -0.71345,
+        0.131863
+      ],
+      [
+        -0.384421,
+        -0.318438
+      ]
+    ],
+    "bbox_diagonal": 0.8485259550078595,
+    "bbox_volume": 0.0018401712831055636,
+    "total_triangle_area": 0.3321089873351348,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-2BFFEA8B94259C2B0F27",
+    "object_id": "OBJ-PHYSX3D-21627",
+    "part_name": "leg",
+    "source_object_name": "Table",
+    "obj_bytes": 519,
+    "obj_sha256": "00fcb32fa3092d37d0b5db33dce66df5c00cf0d4ee2013387318659c510149b1",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 12,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.510848,
+        0.545421
+      ],
+      [
+        -0.681306,
+        0.712507
+      ],
+      [
+        -0.546249,
+        0.514
+      ]
+    ],
+    "bbox_diagonal": 1.7515815462886677,
+    "bbox_volume": 0.05109159354585551,
+    "total_triangle_area": 6.250532499852002,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 14,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-30853BD5AF399CC5BD30",
+    "object_id": "OBJ-PHYSX3D-12437",
+    "part_name": "vertical_side_panel",
+    "source_object_name": "Cabinet",
+    "obj_bytes": 679,
+    "obj_sha256": "20a055096a5c70e1d17bbc3c41319ceb765e53eaba5f97a8d6abb2f6d8e59410",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 144,
+    "face_count": 568,
+    "triangles": 568,
+    "nondegenerate_triangles": 568,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.320531,
+        0.339647
+      ],
+      [
+        0.28063,
+        0.538688
+      ],
+      [
+        -0.321427,
+        -0.174115
+      ]
+    ],
+    "bbox_diagonal": 0.7239680575771281,
+    "bbox_volume": 0.025096693140497086,
+    "total_triangle_area": 1.0038922628821882,
+    "unique_unoriented_triangles": 284,
+    "repeated_unoriented_triangles": 284,
+    "reverse_winding_triangle_pairs": 284,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 426,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-31106F30A3411328A38A",
+    "object_id": "OBJ-PHYSX3D-05378",
+    "part_name": "Back Surface",
+    "source_object_name": "Bar Stool",
+    "obj_bytes": 11941,
+    "obj_sha256": "aaece35829603e7e4db878e055837197970826d81baaa7b0fb660d675939778d",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 12,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.560926,
+        -0.526352
+      ],
+      [
+        -0.681306,
+        0.712507
+      ],
+      [
+        -0.546249,
+        0.514
+      ]
+    ],
+    "bbox_diagonal": 1.7515815660271148,
+    "bbox_volume": 0.051093071334694824,
+    "total_triangle_area": 6.250542316099998,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 14,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-316141C7693C2723280D",
+    "object_id": "OBJ-PHYSX3D-12437",
+    "part_name": "vertical_side_panel",
+    "source_object_name": "Cabinet",
+    "obj_bytes": 677,
+    "obj_sha256": "969bac33d156c94bd1f078d2f29da3326ec4e46406e14ecb7e083f154d95712c",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 104,
+    "face_count": 360,
+    "triangles": 360,
+    "nondegenerate_triangles": 360,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.823237,
+        0.812408
+      ],
+      [
+        -0.351273,
+        -0.109651
+      ],
+      [
+        -0.294984,
+        0.522838
+      ]
+    ],
+    "bbox_diagonal": 1.8445998429450763,
+    "bbox_volume": 0.3232096466521382,
+    "total_triangle_area": 4.5113147650921865,
+    "unique_unoriented_triangles": 180,
+    "repeated_unoriented_triangles": 180,
+    "reverse_winding_triangle_pairs": 180,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 257,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-31A5CEF54190C42A9C25",
+    "object_id": "OBJ-PHYSX3D-08984",
+    "part_name": "Seat Support",
+    "source_object_name": "Decorative Bench",
+    "obj_bytes": 7759,
+    "obj_sha256": "776b2f254a64181106fea7965eb2b378fec4c80fc29144bc61123289b463a0a2",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 20,
+    "triangles": 20,
+    "nondegenerate_triangles": 20,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.741869,
+        -0.697836
+      ],
+      [
+        -0.472846,
+        -0.414135
+      ],
+      [
+        -0.427603,
+        -0.38357
+      ]
+    ],
+    "bbox_diagonal": 0.08558499692703155,
+    "bbox_volume": 0.00011383505668027897,
+    "total_triangle_area": 0.024559581881999987,
+    "unique_unoriented_triangles": 10,
+    "repeated_unoriented_triangles": 10,
+    "reverse_winding_triangle_pairs": 10,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 13,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-32AD194A0F3A09C4FFFA",
+    "object_id": "OBJ-PHYSX3D-08818",
+    "part_name": "Rear Left Foot",
+    "source_object_name": "Armchair",
+    "obj_bytes": 499,
+    "obj_sha256": "39fdb6423618e38def473c352baa1f6d401b2562343bc55de55a4a5af1a0a8c9",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.736338,
+        -0.622894
+      ],
+      [
+        -0.418981,
+        0.04135
+      ],
+      [
+        -0.34677,
+        -0.315229
+      ]
+    ],
+    "bbox_diagonal": 0.47515156042888046,
+    "bbox_volume": 0.0016471274772545275,
+    "total_triangle_area": 0.23182042100000194,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-38398948ACB01818D874",
+    "object_id": "OBJ-PHYSX3D-20543",
+    "part_name": "leg",
+    "source_object_name": "Rectangular Table",
+    "obj_bytes": 527,
+    "obj_sha256": "d111378c3bb4f9506d5aac3eb3ec099dfab4f48e37cf4f95407975ae3ca81533",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 152,
+    "face_count": 456,
+    "triangles": 456,
+    "nondegenerate_triangles": 456,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.565358,
+        0.599988
+      ],
+      [
+        -0.049629,
+        0.085551
+      ],
+      [
+        -0.689353,
+        0.83492
+      ]
+    ],
+    "bbox_diagonal": 1.9234638313846715,
+    "bbox_volume": 0.24012096984665243,
+    "total_triangle_area": 13.952944626903989,
+    "unique_unoriented_triangles": 228,
+    "repeated_unoriented_triangles": 228,
+    "reverse_winding_triangle_pairs": 228,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 342,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-39D0391AF518E0B37DA9",
+    "object_id": "OBJ-PHYSX3D-00658",
+    "part_name": "Bed Frame Horizontal Surface",
+    "source_object_name": "Bed",
+    "obj_bytes": 10969,
+    "obj_sha256": "c72846c09f16a112c3846af76208581c0f4873848a5a157cd033cee9dd18c37b",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 40,
+    "face_count": 136,
+    "triangles": 136,
+    "nondegenerate_triangles": 132,
+    "zero_area_triangles": 4,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.477671,
+        0.454364
+      ],
+      [
+        -0.384779,
+        -0.092986
+      ],
+      [
+        -0.163404,
+        0.585159
+      ]
+    ],
+    "bbox_diagonal": 1.2305197930317902,
+    "bbox_volume": 0.20358015819430905,
+    "total_triangle_area": 8.38984866293085,
+    "unique_unoriented_triangles": 68,
+    "repeated_unoriented_triangles": 68,
+    "reverse_winding_triangle_pairs": 68,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 98,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-3B2E99DCC6D6BF549B26",
+    "object_id": "OBJ-PHYSX3D-08818",
+    "part_name": "Left Seat Support",
+    "source_object_name": "Armchair",
+    "obj_bytes": 2905,
+    "obj_sha256": "4c4828404016d2f6b86df4d7630f5cd2ff13bd97634551346c0a99381de3c289",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 40,
+    "face_count": 152,
+    "triangles": 152,
+    "nondegenerate_triangles": 152,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.718856,
+        -0.380913
+      ],
+      [
+        -0.3252,
+        0.418274
+      ],
+      [
+        -0.561619,
+        0.638077
+      ]
+    ],
+    "bbox_diagonal": 1.451285482715582,
+    "bbox_volume": 0.30142582022086944,
+    "total_triangle_area": 5.993790435306347,
+    "unique_unoriented_triangles": 76,
+    "repeated_unoriented_triangles": 76,
+    "reverse_winding_triangle_pairs": 76,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 114,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-3E4582B1B3D341495DF0",
+    "object_id": "OBJ-PHYSX3D-08756",
+    "part_name": "Right Armrest",
+    "source_object_name": "Sofa Chair",
+    "obj_bytes": 3077,
+    "obj_sha256": "ebfbeeac172a5ee98779bcc572cdabb0997d4f8e4b5aa03048bcb41f320d2d8b",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.604835,
+        -0.488753
+      ],
+      [
+        -0.533621,
+        -0.450705
+      ],
+      [
+        -0.510624,
+        -0.394542
+      ]
+    ],
+    "bbox_diagonal": 0.18391608005827004,
+    "bbox_volume": 0.0011172956475111837,
+    "total_triangle_area": 0.130900563792,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-423E1F262322FA32D4CA",
+    "object_id": "OBJ-PHYSX3D-08967",
+    "part_name": "Front Right Leg",
+    "source_object_name": "Armchair",
+    "obj_bytes": 531,
+    "obj_sha256": "7f77d477b0c185a7be6ceefe0f3d390d5c203c11b81860a7709f01d307bc2deb",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 256,
+    "face_count": 1016,
+    "triangles": 1016,
+    "nondegenerate_triangles": 1016,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.20572,
+        0.193869
+      ],
+      [
+        0.346991,
+        1.006946
+      ],
+      [
+        0.124038,
+        0.137026
+      ]
+    ],
+    "bbox_diagonal": 0.7716091362147027,
+    "bbox_volume": 0.0034250753313330626,
+    "total_triangle_area": 0.07332844242478931,
+    "unique_unoriented_triangles": 508,
+    "repeated_unoriented_triangles": 508,
+    "reverse_winding_triangle_pairs": 508,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 762,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-428C7A3A9E9C5EF357AF",
+    "object_id": "OBJ-PHYSX3D-00398",
+    "part_name": "handle",
+    "source_object_name": "Shopping Bag",
+    "obj_bytes": 22051,
+    "obj_sha256": "e056a1355ef473a9e216ab775d6d9807eb86083289d624a4e1e988b99e898252",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 12,
+    "face_count": 40,
+    "triangles": 40,
+    "nondegenerate_triangles": 40,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.83855,
+        0.819704
+      ],
+      [
+        0.221027,
+        0.248664
+      ],
+      [
+        -0.413084,
+        0.416043
+      ]
+    ],
+    "bbox_diagonal": 1.85419031235038,
+    "bbox_volume": 0.03799819875059834,
+    "total_triangle_area": 5.6860166847721665,
+    "unique_unoriented_triangles": 20,
+    "repeated_unoriented_triangles": 20,
+    "reverse_winding_triangle_pairs": 20,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 30,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-42F8A0B0B8B56A44FFAA",
+    "object_id": "OBJ-PHYSX3D-19754",
+    "part_name": "board",
+    "source_object_name": "Coffee Table",
+    "obj_bytes": 813,
+    "obj_sha256": "e4d6b6e564eaac555ac25d5c477b7701b36339aff0b8d4a8388a38aada241595",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 128,
+    "face_count": 504,
+    "triangles": 504,
+    "nondegenerate_triangles": 504,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.635203,
+        0.645904
+      ],
+      [
+        -0.226039,
+        0.065465
+      ],
+      [
+        -0.442764,
+        0.677375
+      ]
+    ],
+    "bbox_diagonal": 1.7265344209676214,
+    "bbox_volume": 0.418313461965635,
+    "total_triangle_area": 7.267235388940883,
+    "unique_unoriented_triangles": 252,
+    "repeated_unoriented_triangles": 252,
+    "reverse_winding_triangle_pairs": 252,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 378,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-4404301ABBDB259BA1DA",
+    "object_id": "OBJ-PHYSX3D-03427",
+    "part_name": "seat_surface",
+    "source_object_name": "Armless Sofa Chair",
+    "obj_bytes": 10493,
+    "obj_sha256": "dfdf04865a0a1ec4c399ab238542cc6d1ac864fe6f71c5d312928999ff623f5c",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.132298,
+        0.327172
+      ],
+      [
+        -0.914384,
+        0.025595
+      ],
+      [
+        0.199592,
+        0.394466
+      ]
+    ],
+    "bbox_diagonal": 0.979546972938511,
+    "bbox_volume": 0.03569652583004661,
+    "total_triangle_area": 0.3580478717523341,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-450172BF39BE72404C76",
+    "object_id": "OBJ-PHYSX3D-05378",
+    "part_name": "Leg",
+    "source_object_name": "Bar Stool",
+    "obj_bytes": 511,
+    "obj_sha256": "f11281d0afa2be68e40fb8af507ef727c5a5e7b9b5320b08e829a06916cf76ea",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.736338,
+        -0.622894
+      ],
+      [
+        -0.418981,
+        0.04135
+      ],
+      [
+        0.315334,
+        0.346875
+      ]
+    ],
+    "bbox_diagonal": 0.47515156042888046,
+    "bbox_volume": 0.0016471274772545247,
+    "total_triangle_area": 0.23182042100000183,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-467252DABB28F387A119",
+    "object_id": "OBJ-PHYSX3D-20543",
+    "part_name": "leg",
+    "source_object_name": "Rectangular Table",
+    "obj_bytes": 519,
+    "obj_sha256": "606aecb2f830502491df20f0185ce42be9aa7196e4437ff80a6cdc0ff675e075",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 208,
+    "face_count": 272,
+    "triangles": 272,
+    "nondegenerate_triangles": 272,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.373308,
+        0.371352
+      ],
+      [
+        -0.040314,
+        0.032301
+      ],
+      [
+        -0.282779,
+        0.461881
+      ]
+    ],
+    "bbox_diagonal": 1.0556088145828453,
+    "bbox_volume": 0.04026636201029401,
+    "total_triangle_area": 0.8797096503392434,
+    "unique_unoriented_triangles": 272,
+    "repeated_unoriented_triangles": 0,
+    "reverse_winding_triangle_pairs": 0,
+    "boundary_edges": 152,
+    "edges_with_more_than_two_incident_faces": 0,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-468FCE74761FF095D02B",
+    "object_id": "OBJ-PHYSX3D-08325",
+    "part_name": "Seat Base",
+    "source_object_name": "Chair",
+    "obj_bytes": 11024,
+    "obj_sha256": "b2816ef3553a8caa4d6b0b51ec06eab854b5c6c87d47b7b1473c288d060f2eb5",
+    "quality_notes": [
+      "OPEN_SURFACE"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 70,
+    "face_count": 228,
+    "triangles": 228,
+    "nondegenerate_triangles": 228,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.439384,
+        0.461305
+      ],
+      [
+        -0.012454,
+        0.660656
+      ],
+      [
+        0.551455,
+        0.61772
+      ]
+    ],
+    "bbox_diagonal": 0.6767190351733872,
+    "bbox_volume": 0.0009777562642021512,
+    "total_triangle_area": 0.10312392602414477,
+    "unique_unoriented_triangles": 114,
+    "repeated_unoriented_triangles": 114,
+    "reverse_winding_triangle_pairs": 114,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 150,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-4A7C936E1EA945192430",
+    "object_id": "OBJ-PHYSX3D-12437",
+    "part_name": "handle",
+    "source_object_name": "Cabinet",
+    "obj_bytes": 4883,
+    "obj_sha256": "d53c35170b96caa0beeae6ec57fe60641bc03f57eff70ab8cbaba9c97acbe83a",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 56,
+    "face_count": 216,
+    "triangles": 216,
+    "nondegenerate_triangles": 216,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.527996,
+        0.513219
+      ],
+      [
+        -0.62667,
+        -0.167829
+      ],
+      [
+        -0.425025,
+        0.651486
+      ]
+    ],
+    "bbox_diagonal": 1.5663778830879218,
+    "bbox_volume": 0.5143054251722974,
+    "total_triangle_area": 8.287067238387122,
+    "unique_unoriented_triangles": 108,
+    "repeated_unoriented_triangles": 108,
+    "reverse_winding_triangle_pairs": 108,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 162,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-4ADF7530CFB42ECF03F6",
+    "object_id": "OBJ-PHYSX3D-08434",
+    "part_name": "Side Skirt",
+    "source_object_name": "Upholstered Armchair",
+    "obj_bytes": 4357,
+    "obj_sha256": "77ecbb7109841790263b70b9136ddedfc603e055ffbf44463c6334d0bee2c1d9",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 20,
+    "triangles": 20,
+    "nondegenerate_triangles": 20,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.741869,
+        -0.697836
+      ],
+      [
+        -0.472846,
+        -0.414135
+      ],
+      [
+        0.511771,
+        0.555804
+      ]
+    ],
+    "bbox_diagonal": 0.08558499692703155,
+    "bbox_volume": 0.00011383505668027897,
+    "total_triangle_area": 0.024559581881999987,
+    "unique_unoriented_triangles": 10,
+    "repeated_unoriented_triangles": 10,
+    "reverse_winding_triangle_pairs": 10,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 13,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-4B63768E43E630C21EB2",
+    "object_id": "OBJ-PHYSX3D-08818",
+    "part_name": "Rear Right Foot",
+    "source_object_name": "Armchair",
+    "obj_bytes": 491,
+    "obj_sha256": "d254735f931dc143f443a31f72f4b2e5330fdcb5b264df8027ec8176a7143bb4",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 43,
+    "face_count": 140,
+    "triangles": 140,
+    "nondegenerate_triangles": 138,
+    "zero_area_triangles": 2,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.478964,
+        0.518687
+      ],
+      [
+        -0.15534,
+        -0.08819
+      ],
+      [
+        -0.691691,
+        0.692246
+      ]
+    ],
+    "bbox_diagonal": 1.7073658835381478,
+    "bbox_volume": 0.09271307376292706,
+    "total_triangle_area": 1.8982436706249013,
+    "unique_unoriented_triangles": 70,
+    "repeated_unoriented_triangles": 70,
+    "reverse_winding_triangle_pairs": 70,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 105,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-4E4689727781C71F09BE",
+    "object_id": "OBJ-PHYSX3D-00603",
+    "part_name": "Bed Frame Base",
+    "source_object_name": "Bed",
+    "obj_bytes": 3082,
+    "obj_sha256": "cb0f1ed84a92c5f816335a4bee0e789ecf1410b6254f6f9fd9e3f9e7cbd77035",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.523131,
+        0.639213
+      ],
+      [
+        -0.533621,
+        -0.450705
+      ],
+      [
+        0.537743,
+        0.653825
+      ]
+    ],
+    "bbox_diagonal": 0.18391608005827007,
+    "bbox_volume": 0.0011172956475111841,
+    "total_triangle_area": 0.13090056379200005,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-4E6D7B5C26F4D9401E3B",
+    "object_id": "OBJ-PHYSX3D-08967",
+    "part_name": "Rear Left Leg",
+    "source_object_name": "Armchair",
+    "obj_bytes": 515,
+    "obj_sha256": "3fc2d712c0bb7fb4c874f1802d509269cd3c75860e552a2b2dc1b69ccf3d8821",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 96,
+    "face_count": 136,
+    "triangles": 136,
+    "nondegenerate_triangles": 136,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.136777,
+        0.233597
+      ],
+      [
+        -0.872539,
+        -0.040314
+      ],
+      [
+        0.227306,
+        0.324126
+      ]
+    ],
+    "bbox_diagonal": 0.8434137036028049,
+    "bbox_volume": 0.007801370692090001,
+    "total_triangle_area": 0.2815288835140565,
+    "unique_unoriented_triangles": 92,
+    "repeated_unoriented_triangles": 44,
+    "reverse_winding_triangle_pairs": 44,
+    "boundary_edges": 48,
+    "edges_with_more_than_two_incident_faces": 42,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-4FE0C9139CF7B4A5F04F",
+    "object_id": "OBJ-PHYSX3D-08325",
+    "part_name": "Leg D",
+    "source_object_name": "Chair",
+    "obj_bytes": 4960,
+    "obj_sha256": "93556f08fc875046dc098e7fab83e991cb0a71e608eb16d79c6f3a1529991d7b",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "OPEN_SURFACE",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 234,
+    "face_count": 844,
+    "triangles": 844,
+    "nondegenerate_triangles": 844,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.651495,
+        0.548295
+      ],
+      [
+        -0.672834,
+        0.304429
+      ],
+      [
+        -0.496105,
+        0.573762
+      ]
+    ],
+    "bbox_diagonal": 1.8812640465809152,
+    "bbox_volume": 1.2544301571240555,
+    "total_triangle_area": 2.6052282087656278,
+    "unique_unoriented_triangles": 422,
+    "repeated_unoriented_triangles": 422,
+    "reverse_winding_triangle_pairs": 422,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 625,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-5056AB402AAC7BDF40A8",
+    "object_id": "OBJ-PHYSX3D-06115",
+    "part_name": "Chair Base",
+    "source_object_name": "Rocking Chair",
+    "obj_bytes": 19404,
+    "obj_sha256": "e8a5e757bbabe78bd3c9adc489867b986905959606669e2cbd53d9111e09d771",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 40,
+    "face_count": 136,
+    "triangles": 136,
+    "nondegenerate_triangles": 132,
+    "zero_area_triangles": 4,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.380913,
+        0.417377
+      ],
+      [
+        -0.3252,
+        0.553789
+      ],
+      [
+        -0.561619,
+        -0.256381
+      ]
+    ],
+    "bbox_diagonal": 1.225992994623134,
+    "bbox_volume": 0.21418188106170674,
+    "total_triangle_area": 4.788181815611913,
+    "unique_unoriented_triangles": 68,
+    "repeated_unoriented_triangles": 68,
+    "reverse_winding_triangle_pairs": 68,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 98,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-53289A6A8D92F430A803",
+    "object_id": "OBJ-PHYSX3D-08756",
+    "part_name": "Backrest",
+    "source_object_name": "Sofa Chair",
+    "obj_bytes": 2901,
+    "obj_sha256": "1b370cba2eee29d120f9ef6ce97868f313d1e820075434f71322ef149448630e",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 59,
+    "face_count": 162,
+    "triangles": 162,
+    "nondegenerate_triangles": 162,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.58758,
+        -0.316223
+      ],
+      [
+        -0.167829,
+        0.223909
+      ],
+      [
+        -0.092804,
+        0.439713
+      ]
+    ],
+    "bbox_diagonal": 0.7146101296385324,
+    "bbox_volume": 0.05660700892256893,
+    "total_triangle_area": 1.156503101511017,
+    "unique_unoriented_triangles": 81,
+    "repeated_unoriented_triangles": 81,
+    "reverse_winding_triangle_pairs": 81,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 86,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-576678D841306A4B6566",
+    "object_id": "OBJ-PHYSX3D-08434",
+    "part_name": "Armrest (Left)",
+    "source_object_name": "Upholstered Armchair",
+    "obj_bytes": 3807,
+    "obj_sha256": "75e4c3b489638df6cb822f043073b8f8e5733a0ded62d8fa3d0343864aa2e476",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 45,
+    "face_count": 172,
+    "triangles": 172,
+    "nondegenerate_triangles": 172,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.514683,
+        0.680514
+      ],
+      [
+        -0.119043,
+        0.44028
+      ],
+      [
+        -0.551925,
+        0.695126
+      ]
+    ],
+    "bbox_diagonal": 1.3767637181052528,
+    "bbox_volume": 0.11566783664672403,
+    "total_triangle_area": 3.7743963902123707,
+    "unique_unoriented_triangles": 86,
+    "repeated_unoriented_triangles": 86,
+    "reverse_winding_triangle_pairs": 86,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 129,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-5E1A48BA2525803263A3",
+    "object_id": "OBJ-PHYSX3D-08967",
+    "part_name": "Right Armrest",
+    "source_object_name": "Armchair",
+    "obj_bytes": 3411,
+    "obj_sha256": "267b21cea97bb8a80129d128de15d6fd75a0a9690330fbae30faf07bf50e9062",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 32,
+    "face_count": 96,
+    "triangles": 96,
+    "nondegenerate_triangles": 96,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.26703,
+        0.281201
+      ],
+      [
+        -0.482895,
+        -0.443532
+      ],
+      [
+        -0.199736,
+        0.348495
+      ]
+    ],
+    "bbox_diagonal": 0.776314307797428,
+    "bbox_volume": 0.011830834219337054,
+    "total_triangle_area": 0.4943462645352069,
+    "unique_unoriented_triangles": 48,
+    "repeated_unoriented_triangles": 48,
+    "reverse_winding_triangle_pairs": 48,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 64,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-6040CF2CDDFCBB14554E",
+    "object_id": "OBJ-PHYSX3D-05378",
+    "part_name": "Circular Stretcher",
+    "source_object_name": "Bar Stool",
+    "obj_bytes": 2181,
+    "obj_sha256": "e74b82ea03d1380ee6fa672a7e8044cb143308d5d6ceb428d23809d8860792c3",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 48,
+    "face_count": 96,
+    "triangles": 96,
+    "nondegenerate_triangles": 96,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.458853,
+        0.564703
+      ],
+      [
+        -0.42536,
+        -0.319879
+      ],
+      [
+        -0.328174,
+        -0.22265
+      ]
+    ],
+    "bbox_diagonal": 0.18293654210408591,
+    "bbox_volume": 0.0011781927501073996,
+    "total_triangle_area": 0.05802024593365729,
+    "unique_unoriented_triangles": 48,
+    "repeated_unoriented_triangles": 48,
+    "reverse_winding_triangle_pairs": 48,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 48,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-615D95BAA268E7B3AFC3",
+    "object_id": "OBJ-PHYSX3D-03427",
+    "part_name": "foot",
+    "source_object_name": "Armless Sofa Chair",
+    "obj_bytes": 2811,
+    "obj_sha256": "351ba420d62c583cea7444d61160ffc05164da4230f9643361a81fef96b23842",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 36,
+    "face_count": 112,
+    "triangles": 112,
+    "nondegenerate_triangles": 112,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.325623,
+        0.336257
+      ],
+      [
+        0.432924,
+        0.477797
+      ],
+      [
+        -0.287384,
+        0.28422
+      ]
+    ],
+    "bbox_diagonal": 0.8756882169727991,
+    "bbox_volume": 0.01697694817494898,
+    "total_triangle_area": 1.9591967273439987,
+    "unique_unoriented_triangles": 56,
+    "repeated_unoriented_triangles": 56,
+    "reverse_winding_triangle_pairs": 56,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 84,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-61610F0F25E0C9B7C6A9",
+    "object_id": "OBJ-PHYSX3D-20662",
+    "part_name": "tabletop_surface",
+    "source_object_name": "Bar Stool",
+    "obj_bytes": 2477,
+    "obj_sha256": "6e9391dd06ff3d1d0609828c4d69cc29abd7f1be2ac5a19537b89f32effee59e",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 58,
+    "face_count": 224,
+    "triangles": 224,
+    "nondegenerate_triangles": 224,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.949694,
+        0.905288
+      ],
+      [
+        -0.206072,
+        -0.190663
+      ],
+      [
+        -0.338516,
+        0.355451
+      ]
+    ],
+    "bbox_diagonal": 1.9806023969222093,
+    "bbox_volume": 0.019835948587989954,
+    "total_triangle_area": 5.067879487490143,
+    "unique_unoriented_triangles": 112,
+    "repeated_unoriented_triangles": 112,
+    "reverse_winding_triangle_pairs": 112,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 168,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-69A668E5CAABC211B650",
+    "object_id": "OBJ-PHYSX3D-23920",
+    "part_name": "bottom_panel",
+    "source_object_name": "Bench",
+    "obj_bytes": 4467,
+    "obj_sha256": "42dcc7acadea96fb457ec5b708ae6d0f5ecb2e021b9343c37ebc1d31c36c299f",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 16,
+    "face_count": 56,
+    "triangles": 56,
+    "nondegenerate_triangles": 56,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.690704,
+        -0.606579
+      ],
+      [
+        -0.404896,
+        -0.001096
+      ],
+      [
+        -0.200837,
+        0.202963
+      ]
+    ],
+    "bbox_diagonal": 0.5772225702664441,
+    "bbox_volume": 0.013716954765,
+    "total_triangle_area": 0.9239751599999989,
+    "unique_unoriented_triangles": 28,
+    "repeated_unoriented_triangles": 28,
+    "reverse_winding_triangle_pairs": 28,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 42,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-6B6B294658AAD31C3D3F",
+    "object_id": "OBJ-PHYSX3D-18486",
+    "part_name": "Leg",
+    "source_object_name": "Table",
+    "obj_bytes": 1151,
+    "obj_sha256": "d2942afc848ba9535887252accff9dd21b47be75b85e280a265e4170e34ece93",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 36,
+    "face_count": 136,
+    "triangles": 136,
+    "nondegenerate_triangles": 136,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.345154,
+        0.513219
+      ],
+      [
+        -0.167829,
+        0.799794
+      ],
+      [
+        -0.356908,
+        0.066637
+      ]
+    ],
+    "bbox_diagonal": 1.0695468579632217,
+    "bbox_volume": 0.06887839550630975,
+    "total_triangle_area": 1.8655313435616405,
+    "unique_unoriented_triangles": 68,
+    "repeated_unoriented_triangles": 68,
+    "reverse_winding_triangle_pairs": 68,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 102,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-6BD7729BCF8EF2463EB7",
+    "object_id": "OBJ-PHYSX3D-08434",
+    "part_name": "Side Wing (Left)",
+    "source_object_name": "Upholstered Armchair",
+    "obj_bytes": 2719,
+    "obj_sha256": "79fa89074657c8f4947e89cb426ae65412e874030f99702924e6d462a91f5557",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 40,
+    "face_count": 152,
+    "triangles": 152,
+    "nondegenerate_triangles": 152,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.417377,
+        0.755319
+      ],
+      [
+        -0.3252,
+        0.418274
+      ],
+      [
+        -0.561619,
+        0.638077
+      ]
+    ],
+    "bbox_diagonal": 1.4512852498582076,
+    "bbox_volume": 0.30142492827808554,
+    "total_triangle_area": 5.9937832041885315,
+    "unique_unoriented_triangles": 76,
+    "repeated_unoriented_triangles": 76,
+    "reverse_winding_triangle_pairs": 76,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 114,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-6FB5A0F141B15B3A6CD3",
+    "object_id": "OBJ-PHYSX3D-08756",
+    "part_name": "Left Armrest",
+    "source_object_name": "Sofa Chair",
+    "obj_bytes": 3037,
+    "obj_sha256": "7606fa6fb4b652d4231161e8d174fc7fe4be64fdf86f617c931bc805e7a9ec16",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 128,
+    "face_count": 504,
+    "triangles": 504,
+    "nondegenerate_triangles": 504,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.635301,
+        0.645708
+      ],
+      [
+        -0.33157,
+        -0.145598
+      ],
+      [
+        -0.426154,
+        0.685681
+      ]
+    ],
+    "bbox_diagonal": 1.7063841039138874,
+    "bbox_volume": 0.26487445974382756,
+    "total_triangle_area": 6.2654314004454115,
+    "unique_unoriented_triangles": 252,
+    "repeated_unoriented_triangles": 252,
+    "reverse_winding_triangle_pairs": 252,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 378,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-70F1DB4B38D5D1F0348E",
+    "object_id": "OBJ-PHYSX3D-03427",
+    "part_name": "seat_support",
+    "source_object_name": "Armless Sofa Chair",
+    "obj_bytes": 10527,
+    "obj_sha256": "aff0063f7ece7f7100cd453e48c768db9bf4eae3345b2f7e318ba9b245a021aa",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.691987,
+        0.723384
+      ],
+      [
+        -0.05324,
+        0.030631
+      ],
+      [
+        -0.315229,
+        0.315334
+      ]
+    ],
+    "bbox_diagonal": 0.6368907388390884,
+    "bbox_volume": 0.0016604601524640816,
+    "total_triangle_area": 0.301268134684,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-78FE36D436EE60E4296F",
+    "object_id": "OBJ-PHYSX3D-20543",
+    "part_name": "tabletop_connector",
+    "source_object_name": "Rectangular Table",
+    "obj_bytes": 515,
+    "obj_sha256": "4ab21b30ccd5880571614feccd26bd5ed02984b5510b660bda2679547eeec2cd",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 157,
+    "face_count": 233,
+    "triangles": 233,
+    "nondegenerate_triangles": 231,
+    "zero_area_triangles": 2,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.223451,
+        0.221494
+      ],
+      [
+        0.032301,
+        0.967042
+      ],
+      [
+        -0.246471,
+        -0.173856
+      ]
+    ],
+    "bbox_diagonal": 1.0377811562805521,
+    "bbox_volume": 0.03020118369120067,
+    "total_triangle_area": 0.6216486629794148,
+    "unique_unoriented_triangles": 193,
+    "repeated_unoriented_triangles": 40,
+    "reverse_winding_triangle_pairs": 40,
+    "boundary_edges": 67,
+    "edges_with_more_than_two_incident_faces": 38,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-78FEABB2DE025303A59A",
+    "object_id": "OBJ-PHYSX3D-08325",
+    "part_name": "Backrest Panel A",
+    "source_object_name": "Chair",
+    "obj_bytes": 8575,
+    "obj_sha256": "47d325b63b904177696f72765e728daadcd516efe39a59ad02ce54fcf22679f6",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "OPEN_SURFACE",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 20,
+    "triangles": 20,
+    "nondegenerate_triangles": 20,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.670834,
+        0.721525
+      ],
+      [
+        -0.426583,
+        -0.358994
+      ],
+      [
+        0.553592,
+        0.604283
+      ]
+    ],
+    "bbox_diagonal": 0.09852628016422825,
+    "bbox_volume": 0.00017367517236330894,
+    "total_triangle_area": 0.03254838695399999,
+    "unique_unoriented_triangles": 10,
+    "repeated_unoriented_triangles": 10,
+    "reverse_winding_triangle_pairs": 10,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 13,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-790C329DE41A84536469",
+    "object_id": "OBJ-PHYSX3D-08756",
+    "part_name": "Back Right Foot",
+    "source_object_name": "Sofa Chair",
+    "obj_bytes": 483,
+    "obj_sha256": "0307d143788e98121f991ef5816fb77bd0b4ccfcce477abaadcf61642d905307",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 96,
+    "face_count": 136,
+    "triangles": 136,
+    "nondegenerate_triangles": 136,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.136777,
+        0.233597
+      ],
+      [
+        -0.872539,
+        -0.040314
+      ],
+      [
+        -0.145024,
+        -0.048204
+      ]
+    ],
+    "bbox_diagonal": 0.8434137036028049,
+    "bbox_volume": 0.007801370692089998,
+    "total_triangle_area": 0.28152911505674727,
+    "unique_unoriented_triangles": 92,
+    "repeated_unoriented_triangles": 44,
+    "reverse_winding_triangle_pairs": 44,
+    "boundary_edges": 48,
+    "edges_with_more_than_two_incident_faces": 42,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-7A3F739C897A383D44C8",
+    "object_id": "OBJ-PHYSX3D-08325",
+    "part_name": "Leg C",
+    "source_object_name": "Chair",
+    "obj_bytes": 5035,
+    "obj_sha256": "907f7f0ee3f0ae213ba429a2342a37d03f08e1e16f5ed9fa6bb2623273e2aacb",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "OPEN_SURFACE",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.526352,
+        0.510848
+      ],
+      [
+        -0.635209,
+        0.666408
+      ],
+      [
+        -0.511675,
+        -0.500151
+      ]
+    ],
+    "bbox_diagonal": 1.664368786436768,
+    "bbox_volume": 0.01555782814425757,
+    "total_triangle_area": 5.507958718031999,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-7AC26CF41CA453FAA444",
+    "object_id": "OBJ-PHYSX3D-12437",
+    "part_name": "back_panel",
+    "source_object_name": "Cabinet",
+    "obj_bytes": 523,
+    "obj_sha256": "a96131887e30ca54e6da45a5ffd41a3242566b02ee1a038cbc90e386dcb8d7c6",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.541764,
+        0.577122
+      ],
+      [
+        -0.078937,
+        0.14484
+      ],
+      [
+        -0.75238,
+        0.739468
+      ]
+    ],
+    "bbox_diagonal": 1.8781886172131383,
+    "bbox_volume": 0.3735303231088559,
+    "total_triangle_area": 9.013720254583996,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-7C71B534EAC68B261081",
+    "object_id": "OBJ-PHYSX3D-00603",
+    "part_name": "Mattress",
+    "source_object_name": "Bed",
+    "obj_bytes": 519,
+    "obj_sha256": "ac1921816277412f95ba1345bf4b2fb973399ba59acb4876fe51b6cb5f295cc9",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.695314,
+        -0.663917
+      ],
+      [
+        -0.05324,
+        0.030631
+      ],
+      [
+        -0.315229,
+        0.315334
+      ]
+    ],
+    "bbox_diagonal": 0.6368907388390884,
+    "bbox_volume": 0.0016604601524640816,
+    "total_triangle_area": 0.301268134684,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-7CF08578EB3BA46F0BFA",
+    "object_id": "OBJ-PHYSX3D-20543",
+    "part_name": "tabletop_connector",
+    "source_object_name": "Rectangular Table",
+    "obj_bytes": 523,
+    "obj_sha256": "1d65fee7c7807947dd2026534ad4013e87df80395b1d988c1d0c1066c3b932a5",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 34,
+    "face_count": 102,
+    "triangles": 102,
+    "nondegenerate_triangles": 98,
+    "zero_area_triangles": 4,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.473026,
+        0.499395
+      ],
+      [
+        -0.303008,
+        0.485089
+      ],
+      [
+        -0.511903,
+        -0.237435
+      ]
+    ],
+    "bbox_diagonal": 1.2814180292449455,
+    "bbox_volume": 0.21034186540742572,
+    "total_triangle_area": 4.8877693095893715,
+    "unique_unoriented_triangles": 51,
+    "repeated_unoriented_triangles": 51,
+    "reverse_winding_triangle_pairs": 51,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 70,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-7D146D0C82B273D475C7",
+    "object_id": "OBJ-PHYSX3D-07765",
+    "part_name": "Backrest",
+    "source_object_name": "Sofa",
+    "obj_bytes": 2328,
+    "obj_sha256": "442d6fd7a700a6d3504fd4c7fb19f98b648789661cb96bf3ef25cad120b7f9fb",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.025526,
+        0.550402
+      ],
+      [
+        0.023904,
+        0.235125
+      ],
+      [
+        -0.060142,
+        0.348451
+      ]
+    ],
+    "bbox_diagonal": 0.6978949533174745,
+    "bbox_volume": 0.045298594953490416,
+    "total_triangle_area": 0.6350257417445975,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-7D40050D04F9799DAAF1",
+    "object_id": "OBJ-PHYSX3D-06115",
+    "part_name": "Pillow",
+    "source_object_name": "Rocking Chair",
+    "obj_bytes": 509,
+    "obj_sha256": "88968623a1cfabeba5568e92339a0216d952f520fa0ec7d1492c9264353bc9cf",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 48,
+    "face_count": 96,
+    "triangles": 96,
+    "nondegenerate_triangles": 96,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.44907,
+        0.55492
+      ],
+      [
+        -0.42536,
+        -0.254515
+      ],
+      [
+        0.502302,
+        0.607826
+      ]
+    ],
+    "bbox_diagonal": 0.22699680857007656,
+    "bbox_volume": 0.0019082900275129986,
+    "total_triangle_area": 0.09437748320227721,
+    "unique_unoriented_triangles": 48,
+    "repeated_unoriented_triangles": 48,
+    "reverse_winding_triangle_pairs": 48,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 48,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-7E0932E8440D57A318E9",
+    "object_id": "OBJ-PHYSX3D-03427",
+    "part_name": "foot",
+    "source_object_name": "Armless Sofa Chair",
+    "obj_bytes": 2763,
+    "obj_sha256": "c35bf2755f69b7d1626ec722c09b154a3ded9dd873c9f47973bb6b07746107b3",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 32,
+    "face_count": 72,
+    "triangles": 72,
+    "nondegenerate_triangles": 72,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.573864,
+        0.619122
+      ],
+      [
+        0.045097,
+        0.131863
+      ],
+      [
+        -0.384421,
+        0.389431
+      ]
+    ],
+    "bbox_diagonal": 1.4246370951424787,
+    "bbox_volume": 0.08010190284337915,
+    "total_triangle_area": 1.3855671503,
+    "unique_unoriented_triangles": 36,
+    "repeated_unoriented_triangles": 36,
+    "reverse_winding_triangle_pairs": 36,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 46,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-7F0569D01FE7C1B593AD",
+    "object_id": "OBJ-PHYSX3D-21627",
+    "part_name": "tabletop_frame",
+    "source_object_name": "Table",
+    "obj_bytes": 1931,
+    "obj_sha256": "893563da931fa8b38311eda24bffef2221884df88bf173791a1d3bad71cbd84a",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.650963,
+        0.764407
+      ],
+      [
+        -0.418981,
+        0.04135
+      ],
+      [
+        -0.34677,
+        -0.315229
+      ]
+    ],
+    "bbox_diagonal": 0.4751515604288804,
+    "bbox_volume": 0.001647127477254526,
+    "total_triangle_area": 0.23182042100000178,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-86786B3A002F76A25E31",
+    "object_id": "OBJ-PHYSX3D-20543",
+    "part_name": "leg",
+    "source_object_name": "Rectangular Table",
+    "obj_bytes": 519,
+    "obj_sha256": "81127e7092981e1b7a825b918b98f9ddcb12973348c950389261c6f267b60db2",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 128,
+    "face_count": 504,
+    "triangles": 504,
+    "nondegenerate_triangles": 504,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.624824,
+        0.646139
+      ],
+      [
+        -0.014976,
+        0.686055
+      ],
+      [
+        -0.496371,
+        -0.170086
+      ]
+    ],
+    "bbox_diagonal": 1.4877006794227796,
+    "bbox_volume": 0.29071486546199116,
+    "total_triangle_area": 5.308582633931786,
+    "unique_unoriented_triangles": 252,
+    "repeated_unoriented_triangles": 252,
+    "reverse_winding_triangle_pairs": 252,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 378,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-8884E6BCECD7E1464EC6",
+    "object_id": "OBJ-PHYSX3D-03427",
+    "part_name": "back_single_surface",
+    "source_object_name": "Armless Sofa Chair",
+    "obj_bytes": 10515,
+    "obj_sha256": "db0f03b772a59ab8e9ca355c96fd01d2c4745a0ad45eb4dd86bad616e3a50664",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 64,
+    "face_count": 192,
+    "triangles": 192,
+    "nondegenerate_triangles": 192,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.931858,
+        0.959928
+      ],
+      [
+        0.030631,
+        0.04135
+      ],
+      [
+        -0.34677,
+        0.346875
+      ]
+    ],
+    "bbox_diagonal": 2.0149720972713245,
+    "bbox_volume": 0.01406577085977843,
+    "total_triangle_area": 5.879551194411191,
+    "unique_unoriented_triangles": 96,
+    "repeated_unoriented_triangles": 96,
+    "reverse_winding_triangle_pairs": 96,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 144,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-89E212360ECC8B094D13",
+    "object_id": "OBJ-PHYSX3D-20543",
+    "part_name": "tabletop_surface",
+    "source_object_name": "Rectangular Table",
+    "obj_bytes": 4363,
+    "obj_sha256": "665a0c56b5917ca8a8799f4c97ed7582f8c38fe63f825179b3ed47bc0d0cd39d",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 45,
+    "face_count": 172,
+    "triangles": 172,
+    "nondegenerate_triangles": 172,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.646137,
+        -0.480305
+      ],
+      [
+        -0.119043,
+        0.44028
+      ],
+      [
+        -0.551925,
+        0.695126
+      ]
+    ],
+    "bbox_diagonal": 1.3767638385554728,
+    "bbox_volume": 0.11566853415103051,
+    "total_triangle_area": 3.7744012477069746,
+    "unique_unoriented_triangles": 86,
+    "repeated_unoriented_triangles": 86,
+    "reverse_winding_triangle_pairs": 86,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 129,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-8AD770BCC5BDEFF245E5",
+    "object_id": "OBJ-PHYSX3D-08967",
+    "part_name": "Left Armrest",
+    "source_object_name": "Armchair",
+    "obj_bytes": 3456,
+    "obj_sha256": "1d6e0ce432be900be51251af30bbdff3a3b138019f3670bb57b7299b7fea4daf",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 256,
+    "face_count": 768,
+    "triangles": 768,
+    "nondegenerate_triangles": 768,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.489732,
+        0.521889
+      ],
+      [
+        -0.284842,
+        -0.026879
+      ],
+      [
+        -0.709656,
+        0.792601
+      ]
+    ],
+    "bbox_diagonal": 1.8293982756794651,
+    "bbox_volume": 0.392030170533068,
+    "total_triangle_area": 15.631056627160056,
+    "unique_unoriented_triangles": 384,
+    "repeated_unoriented_triangles": 384,
+    "reverse_winding_triangle_pairs": 384,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 576,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-8AE1700DF979F23382FB",
+    "object_id": "OBJ-PHYSX3D-00520",
+    "part_name": "other_leaf",
+    "source_object_name": "Storage Bed",
+    "obj_bytes": 19253,
+    "obj_sha256": "bbb80e2b71aad0de64b8a8ffffa72a2785e15b08a097cf545acaf22ecc082ee9",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 32,
+    "face_count": 104,
+    "triangles": 104,
+    "nondegenerate_triangles": 104,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.835004,
+        0.69732
+      ],
+      [
+        -0.181068,
+        0.08359
+      ],
+      [
+        -0.277799,
+        0.59311
+      ]
+    ],
+    "bbox_diagonal": 1.782285943450433,
+    "bbox_volume": 0.3531900080179595,
+    "total_triangle_area": 5.5646301241355465,
+    "unique_unoriented_triangles": 52,
+    "repeated_unoriented_triangles": 52,
+    "reverse_winding_triangle_pairs": 52,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 78,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-9097C518957CC5323F09",
+    "object_id": "OBJ-PHYSX3D-06115",
+    "part_name": "Seat Surface",
+    "source_object_name": "Rocking Chair",
+    "obj_bytes": 2275,
+    "obj_sha256": "1e4359d20dde834988a5cd74c00edbc243bdb11ea966c7ba8f370e5839ebdcc6",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 33,
+    "face_count": 122,
+    "triangles": 122,
+    "nondegenerate_triangles": 122,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.480305,
+        0.517508
+      ],
+      [
+        -0.119043,
+        0.768291
+      ],
+      [
+        -0.551925,
+        -0.240162
+      ]
+    ],
+    "bbox_diagonal": 1.3711996859298063,
+    "bbox_volume": 0.27603290273317554,
+    "total_triangle_area": 5.222745796228689,
+    "unique_unoriented_triangles": 61,
+    "repeated_unoriented_triangles": 61,
+    "reverse_winding_triangle_pairs": 61,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 90,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-91345F6554625FAF66DA",
+    "object_id": "OBJ-PHYSX3D-08967",
+    "part_name": "Backrest",
+    "source_object_name": "Armchair",
+    "obj_bytes": 2448,
+    "obj_sha256": "82edd92246f04164635220ae5dd19f813196f3964fe1609fb47d735e0fd559f3",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 52,
+    "face_count": 200,
+    "triangles": 200,
+    "nondegenerate_triangles": 200,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.480305,
+        0.514683
+      ],
+      [
+        -0.131826,
+        0.116921
+      ],
+      [
+        -0.310275,
+        0.720787
+      ]
+    ],
+    "bbox_diagonal": 1.4542919369909881,
+    "bbox_volume": 0.2551881337344782,
+    "total_triangle_area": 5.549855222242884,
+    "unique_unoriented_triangles": 100,
+    "repeated_unoriented_triangles": 100,
+    "reverse_winding_triangle_pairs": 100,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 150,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-91A9348905B16AF9D3A6",
+    "object_id": "OBJ-PHYSX3D-08967",
+    "part_name": "Seat Cushion",
+    "source_object_name": "Armchair",
+    "obj_bytes": 4025,
+    "obj_sha256": "d0604de76ccbba7bc6b25df71d3468e056f3333a1e71a95c7f6cd220e001d5a6",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 40,
+    "face_count": 136,
+    "triangles": 136,
+    "nondegenerate_triangles": 132,
+    "zero_area_triangles": 4,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.477671,
+        0.454364
+      ],
+      [
+        -0.407481,
+        0.76742
+      ],
+      [
+        -0.651753,
+        -0.099216
+      ]
+    ],
+    "bbox_diagonal": 1.5982423900632219,
+    "bbox_volume": 0.6050550083856683,
+    "total_triangle_area": 11.402852665437592,
+    "unique_unoriented_triangles": 68,
+    "repeated_unoriented_triangles": 68,
+    "reverse_winding_triangle_pairs": 68,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 98,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-929364ECBC22672891C4",
+    "object_id": "OBJ-PHYSX3D-08818",
+    "part_name": "Backrest",
+    "source_object_name": "Armchair",
+    "obj_bytes": 2905,
+    "obj_sha256": "3fcde94f10bd7e6070920fed29a5604a068902f4f81c9271de94bb46e57dd4b9",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 256,
+    "face_count": 1016,
+    "triangles": 1016,
+    "nondegenerate_triangles": 1016,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.20572,
+        0.193869
+      ],
+      [
+        0.346853,
+        1.006809
+      ],
+      [
+        -0.130697,
+        -0.117709
+      ]
+    ],
+    "bbox_diagonal": 0.7716099915119036,
+    "bbox_volume": 0.003425080521194995,
+    "total_triangle_area": 0.07332932464840368,
+    "unique_unoriented_triangles": 508,
+    "repeated_unoriented_triangles": 508,
+    "reverse_winding_triangle_pairs": 508,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 762,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-93DD2BBD722F707FB894",
+    "object_id": "OBJ-PHYSX3D-00398",
+    "part_name": "handle",
+    "source_object_name": "Shopping Bag",
+    "obj_bytes": 22307,
+    "obj_sha256": "fb937b97820d50285a627a8b1482ce190e1d194293b0372d33cd40212f60319c",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.565358,
+        0.599988
+      ],
+      [
+        -0.049629,
+        0.313959
+      ],
+      [
+        -0.717321,
+        -0.689353
+      ]
+    ],
+    "bbox_diagonal": 1.2210690981611154,
+    "bbox_volume": 0.011850204414257659,
+    "total_triangle_area": 1.8658681902399992,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-9847190B69CACB558386",
+    "object_id": "OBJ-PHYSX3D-00658",
+    "part_name": "Headboard",
+    "source_object_name": "Bed",
+    "obj_bytes": 523,
+    "obj_sha256": "cfe869dea130e672aadbf19f154b5c7217faea0a0b1e9221b0fc22a778928e21",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 38,
+    "face_count": 144,
+    "triangles": 144,
+    "nondegenerate_triangles": 142,
+    "zero_area_triangles": 2,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.527996,
+        0.513219
+      ],
+      [
+        -0.167829,
+        0.897569
+      ],
+      [
+        -0.477968,
+        -0.303017
+      ]
+    ],
+    "bbox_diagonal": 1.4999364743314965,
+    "bbox_volume": 0.1940746101392001,
+    "total_triangle_area": 5.0810554852900705,
+    "unique_unoriented_triangles": 72,
+    "repeated_unoriented_triangles": 72,
+    "reverse_winding_triangle_pairs": 72,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 108,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-985559F955DEAEEE1890",
+    "object_id": "OBJ-PHYSX3D-08434",
+    "part_name": "Back Support",
+    "source_object_name": "Upholstered Armchair",
+    "obj_bytes": 2876,
+    "obj_sha256": "d7e6e98bda9dd34a7c67d9ab9073ecb57c4c2a8898b2bd483e418ad53a44c44f",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 120,
+    "face_count": 484,
+    "triangles": 484,
+    "nondegenerate_triangles": 470,
+    "zero_area_triangles": 14,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.902713,
+        0.880333
+      ],
+      [
+        -0.528645,
+        0.555888
+      ],
+      [
+        -0.098714,
+        0.066724
+      ]
+    ],
+    "bbox_diagonal": 2.0935220557827905,
+    "bbox_volume": 0.3199194097761229,
+    "total_triangle_area": 16.066599676971848,
+    "unique_unoriented_triangles": 242,
+    "repeated_unoriented_triangles": 242,
+    "reverse_winding_triangle_pairs": 242,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 354,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-98A3026DD45DD05F5DE8",
+    "object_id": "OBJ-PHYSX3D-11411",
+    "part_name": "Frame",
+    "source_object_name": "Monitor",
+    "obj_bytes": 9903,
+    "obj_sha256": "8080e2429dd48add15ed340d6f5f831cbeb93c5367bb81fc60a49190280ddd6b",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 96,
+    "face_count": 384,
+    "triangles": 384,
+    "nondegenerate_triangles": 384,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.359689,
+        0.380535
+      ],
+      [
+        0.261745,
+        1.001969
+      ],
+      [
+        -0.060619,
+        0.036849
+      ]
+    ],
+    "bbox_diagonal": 1.051362521386415,
+    "bbox_volume": 0.05340579428191437,
+    "total_triangle_area": 1.7831758560235238,
+    "unique_unoriented_triangles": 192,
+    "repeated_unoriented_triangles": 192,
+    "reverse_winding_triangle_pairs": 192,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 288,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-A096B6F6BC42965C6E85",
+    "object_id": "OBJ-PHYSX3D-00386",
+    "part_name": "handle",
+    "source_object_name": "Handbag",
+    "obj_bytes": 7597,
+    "obj_sha256": "73718a9e11db7e444481075d94e894e3dcaaabdffcb43a2c7ef791933d650f43",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 12,
+    "face_count": 36,
+    "triangles": 36,
+    "nondegenerate_triangles": 36,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.360967,
+        0.345566
+      ],
+      [
+        0.043943,
+        0.783042
+      ],
+      [
+        -0.356908,
+        -0.184087
+      ]
+    ],
+    "bbox_diagonal": 1.0369779698388004,
+    "bbox_volume": 0.0902467518294467,
+    "total_triangle_area": 1.0979303648358265,
+    "unique_unoriented_triangles": 18,
+    "repeated_unoriented_triangles": 18,
+    "reverse_winding_triangle_pairs": 18,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 25,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-A2A66AF8CEAA5AE79B93",
+    "object_id": "OBJ-PHYSX3D-08434",
+    "part_name": "Back Surface",
+    "source_object_name": "Upholstered Armchair",
+    "obj_bytes": 785,
+    "obj_sha256": "f367fbcfeed995c2094353fa2ec83548a62a6667bf53fdea67a8ceaa6102b1a4",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 13,
+    "face_count": 40,
+    "triangles": 40,
+    "nondegenerate_triangles": 40,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.745619,
+        0.469692
+      ],
+      [
+        -0.332993,
+        -0.302705
+      ],
+      [
+        -0.480717,
+        0.533935
+      ]
+    ],
+    "bbox_diagonal": 1.583482513565906,
+    "bbox_volume": 0.03734867001135032,
+    "total_triangle_area": 5.1411718649120015,
+    "unique_unoriented_triangles": 20,
+    "repeated_unoriented_triangles": 20,
+    "reverse_winding_triangle_pairs": 20,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 28,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-A39E1674C79729AAC2A4",
+    "object_id": "OBJ-PHYSX3D-07765",
+    "part_name": "Seat Base Support",
+    "source_object_name": "Sofa",
+    "obj_bytes": 873,
+    "obj_sha256": "dbe2de308a47c4326073fc6feae1903ebf0a22f5854d1eb5bb8feea81706fb55",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 56,
+    "face_count": 216,
+    "triangles": 216,
+    "nondegenerate_triangles": 216,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.759285,
+        0.757391
+      ],
+      [
+        -0.565722,
+        0.423048
+      ],
+      [
+        -0.083447,
+        0.113134
+      ]
+    ],
+    "bbox_diagonal": 1.8211579534562619,
+    "bbox_volume": 0.2948014637961901,
+    "total_triangle_area": 5.885163975878981,
+    "unique_unoriented_triangles": 108,
+    "repeated_unoriented_triangles": 108,
+    "reverse_winding_triangle_pairs": 108,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 162,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-A3DE57DAC5FE9D7BDC6F",
+    "object_id": "OBJ-PHYSX3D-00386",
+    "part_name": "bag_body",
+    "source_object_name": "Handbag",
+    "obj_bytes": 4367,
+    "obj_sha256": "5198ae057528298c0aeb865f1db38618ad17d3aa44c992ec284249feacd3fd57",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 20,
+    "triangles": 20,
+    "nondegenerate_triangles": 20,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.685062,
+        -0.63437
+      ],
+      [
+        -0.426583,
+        -0.358994
+      ],
+      [
+        -0.527825,
+        -0.477134
+      ]
+    ],
+    "bbox_diagonal": 0.09852679466013292,
+    "bbox_volume": 0.00017367859851730784,
+    "total_triangle_area": 0.03254875869199998,
+    "unique_unoriented_triangles": 10,
+    "repeated_unoriented_triangles": 10,
+    "reverse_winding_triangle_pairs": 10,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 13,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-A465766F17FC21E9B372",
+    "object_id": "OBJ-PHYSX3D-08756",
+    "part_name": "Front Left Foot",
+    "source_object_name": "Sofa Chair",
+    "obj_bytes": 499,
+    "obj_sha256": "6a2e4f60ed66d35798ff97ae8188ebbcdd51e637c50a21167201972cca636422",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 20,
+    "triangles": 20,
+    "nondegenerate_triangles": 20,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.71683,
+        0.762262
+      ],
+      [
+        -0.393569,
+        -0.332993
+      ],
+      [
+        0.494439,
+        0.539871
+      ]
+    ],
+    "bbox_diagonal": 0.08830393549553725,
+    "bbox_volume": 0.00012503289981542404,
+    "total_triangle_area": 0.026144843904000008,
+    "unique_unoriented_triangles": 10,
+    "repeated_unoriented_triangles": 10,
+    "reverse_winding_triangle_pairs": 10,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 13,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-A805C36D60964115267B",
+    "object_id": "OBJ-PHYSX3D-07765",
+    "part_name": "Front Right Leg",
+    "source_object_name": "Sofa",
+    "obj_bytes": 483,
+    "obj_sha256": "2fe238196b137185978d4f6fba5b7f282d28822abcd23acc9568d5d0c0c5d9cb",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.526352,
+        0.510848
+      ],
+      [
+        -0.635209,
+        -0.40472
+      ],
+      [
+        -0.546249,
+        -0.511675
+      ]
+    ],
+    "bbox_diagonal": 1.063063676642655,
+    "bbox_volume": 0.008265370758719198,
+    "total_triangle_area": 1.1315690811439996,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-AA534C7D216AD748C5E7",
+    "object_id": "OBJ-PHYSX3D-12437",
+    "part_name": "frame_horizontal_bar",
+    "source_object_name": "Cabinet",
+    "obj_bytes": 527,
+    "obj_sha256": "3a5720595731e19784aadc6d5a40be7b9a810d7012e38d03e0c1ad1555b44345",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 52,
+    "face_count": 200,
+    "triangles": 200,
+    "nondegenerate_triangles": 200,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.066697,
+        0.080868
+      ],
+      [
+        0.034232,
+        0.312274
+      ],
+      [
+        -0.277818,
+        -0.242136
+      ]
+    ],
+    "bbox_diagonal": 0.31679013260043315,
+    "bbox_volume": 0.0014640063311418608,
+    "total_triangle_area": 0.18193425083983075,
+    "unique_unoriented_triangles": 100,
+    "repeated_unoriented_triangles": 100,
+    "reverse_winding_triangle_pairs": 100,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 150,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-AA58AF468D45A63F4AB4",
+    "object_id": "OBJ-PHYSX3D-05378",
+    "part_name": "Back Connector",
+    "source_object_name": "Bar Stool",
+    "obj_bytes": 4031,
+    "obj_sha256": "d8db8ad3bd5d5609981c4867dfc047fe78b7bdb61c40f5196086c9916ba9e024",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 96,
+    "face_count": 136,
+    "triangles": 136,
+    "nondegenerate_triangles": 136,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.235553,
+        -0.138733
+      ],
+      [
+        -0.872539,
+        -0.040314
+      ],
+      [
+        0.227306,
+        0.324126
+      ]
+    ],
+    "bbox_diagonal": 0.8434137036028049,
+    "bbox_volume": 0.007801370692090003,
+    "total_triangle_area": 0.28152888351405647,
+    "unique_unoriented_triangles": 92,
+    "repeated_unoriented_triangles": 44,
+    "reverse_winding_triangle_pairs": 44,
+    "boundary_edges": 48,
+    "edges_with_more_than_two_incident_faces": 42,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-AD9A09EDA16E31B63C96",
+    "object_id": "OBJ-PHYSX3D-08325",
+    "part_name": "Leg B",
+    "source_object_name": "Chair",
+    "obj_bytes": 5035,
+    "obj_sha256": "1768092edff2a021417d2c954b7a0ec0c1fcc0dfe28f1503ef80de91bc145399",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "OPEN_SURFACE",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 59,
+    "face_count": 162,
+    "triangles": 162,
+    "nondegenerate_triangles": 162,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.301446,
+        0.572803
+      ],
+      [
+        -0.167829,
+        0.223909
+      ],
+      [
+        -0.092804,
+        0.439713
+      ]
+    ],
+    "bbox_diagonal": 0.7146101296385324,
+    "bbox_volume": 0.05660700892256892,
+    "total_triangle_area": 1.156503065618029,
+    "unique_unoriented_triangles": 81,
+    "repeated_unoriented_triangles": 81,
+    "reverse_winding_triangle_pairs": 81,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 86,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-AE7BCD7F715EB92E0550",
+    "object_id": "OBJ-PHYSX3D-08434",
+    "part_name": "Armrest (Right)",
+    "source_object_name": "Upholstered Armchair",
+    "obj_bytes": 3768,
+    "obj_sha256": "243f420b0826f291aa4214c250f43d9e8a5654087d66ed39e0b362df1376324b",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 26,
+    "face_count": 88,
+    "triangles": 88,
+    "nondegenerate_triangles": 88,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.685062,
+        0.721525
+      ],
+      [
+        -0.358994,
+        -0.3252
+      ],
+      [
+        -0.527825,
+        0.604283
+      ]
+    ],
+    "bbox_diagonal": 1.805906295096454,
+    "bbox_volume": 0.05381384931401242,
+    "total_triangle_area": 6.865838047912002,
+    "unique_unoriented_triangles": 44,
+    "repeated_unoriented_triangles": 44,
+    "reverse_winding_triangle_pairs": 44,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 66,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-AFF3B23B61E5B65EA338",
+    "object_id": "OBJ-PHYSX3D-08756",
+    "part_name": "Seat Support",
+    "source_object_name": "Sofa Chair",
+    "obj_bytes": 1868,
+    "obj_sha256": "df424639c965b5b34c33674fe89cf3464db7497fbfaf70757493366723dadd6b",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 34,
+    "face_count": 102,
+    "triangles": 102,
+    "nondegenerate_triangles": 98,
+    "zero_area_triangles": 4,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.473026,
+        0.500099
+      ],
+      [
+        -0.302705,
+        0.121329
+      ],
+      [
+        -0.208317,
+        0.564223
+      ]
+    ],
+    "bbox_diagonal": 1.3128576276127584,
+    "bbox_volume": 0.31877942715157503,
+    "total_triangle_area": 5.826109069024067,
+    "unique_unoriented_triangles": 51,
+    "repeated_unoriented_triangles": 51,
+    "reverse_winding_triangle_pairs": 51,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 70,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-B0244C9A7AE50199D16B",
+    "object_id": "OBJ-PHYSX3D-07765",
+    "part_name": "Seat Cushion",
+    "source_object_name": "Sofa",
+    "obj_bytes": 2290,
+    "obj_sha256": "20570f13b622147ecd1823e3a99c86148b0f4336c27656a286a51c6680932583",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 16,
+    "face_count": 40,
+    "triangles": 40,
+    "nondegenerate_triangles": 40,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.646137,
+        0.680514
+      ],
+      [
+        -0.450705,
+        -0.119043
+      ],
+      [
+        -0.551925,
+        0.695126
+      ]
+    ],
+    "bbox_diagonal": 1.850713039519093,
+    "bbox_volume": 0.5487020957665361,
+    "total_triangle_area": 10.0320024357,
+    "unique_unoriented_triangles": 20,
+    "repeated_unoriented_triangles": 20,
+    "reverse_winding_triangle_pairs": 20,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 26,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-B0F640F49CF168CDB7CC",
+    "object_id": "OBJ-PHYSX3D-08967",
+    "part_name": "Seat Base",
+    "source_object_name": "Armchair",
+    "obj_bytes": 979,
+    "obj_sha256": "a9fbb7cb768e015453be3faabba102fe9ddc788e32b8730310a883b319e83132",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.132298,
+        0.327172
+      ],
+      [
+        -0.914384,
+        0.025595
+      ],
+      [
+        -0.245707,
+        -0.050833
+      ]
+    ],
+    "bbox_diagonal": 0.979546972938511,
+    "bbox_volume": 0.03569652583004661,
+    "total_triangle_area": 0.3580478905758701,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-B269414C42C53A6805DD",
+    "object_id": "OBJ-PHYSX3D-05378",
+    "part_name": "Leg",
+    "source_object_name": "Bar Stool",
+    "obj_bytes": 519,
+    "obj_sha256": "e5b4476c667cfdacd6ad15c9fa4b1fc99e413be8203a965320f455ffb5265cd0",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 20,
+    "triangles": 20,
+    "nondegenerate_triangles": 20,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.67453,
+        0.718563
+      ],
+      [
+        -0.472846,
+        -0.414135
+      ],
+      [
+        0.511771,
+        0.555804
+      ]
+    ],
+    "bbox_diagonal": 0.08558499692703155,
+    "bbox_volume": 0.00011383505668027897,
+    "total_triangle_area": 0.024559581881999987,
+    "unique_unoriented_triangles": 10,
+    "repeated_unoriented_triangles": 10,
+    "reverse_winding_triangle_pairs": 10,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 13,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-B5192BD9EA53AF73BC77",
+    "object_id": "OBJ-PHYSX3D-08818",
+    "part_name": "Front Left Foot",
+    "source_object_name": "Armchair",
+    "obj_bytes": 483,
+    "obj_sha256": "c24c35cf87b7323275eeaf1c55ddd581107c762e587b5eada7af25707a1ccc77",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 40,
+    "face_count": 152,
+    "triangles": 152,
+    "nondegenerate_triangles": 152,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.771225,
+        -0.477671
+      ],
+      [
+        -0.384779,
+        0.370829
+      ],
+      [
+        -0.456958,
+        0.585159
+      ]
+    ],
+    "bbox_diagonal": 1.3202746844005606,
+    "bbox_volume": 0.2311537963417914,
+    "total_triangle_area": 5.090891770278915,
+    "unique_unoriented_triangles": 76,
+    "repeated_unoriented_triangles": 76,
+    "reverse_winding_triangle_pairs": 76,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 114,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-B597E88DDCF7CB1E5D73",
+    "object_id": "OBJ-PHYSX3D-08818",
+    "part_name": "Right Armrest",
+    "source_object_name": "Armchair",
+    "obj_bytes": 3077,
+    "obj_sha256": "bb4c38d8146ca9bf3454510d6619cca30c1471b8d6505bb4f01beb93d15b226c",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.542051,
+        0.576681
+      ],
+      [
+        0.015631,
+        0.202086
+      ],
+      [
+        -0.68003,
+        0.811613
+      ]
+    ],
+    "bbox_diagonal": 1.8738531410700254,
+    "bbox_volume": 0.3111465494260236,
+    "total_triangle_area": 8.621864909204003,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-B905E845F3E4F9B435DA",
+    "object_id": "OBJ-PHYSX3D-00658",
+    "part_name": "Mattress",
+    "source_object_name": "Bed",
+    "obj_bytes": 515,
+    "obj_sha256": "df0d0c8fa1f5dad0d1d242d2320ed11731310a1d4c29e25438ab906cf6cd2037",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 12,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.526352,
+        0.510848
+      ],
+      [
+        0.666409,
+        0.712506
+      ],
+      [
+        -0.546249,
+        0.514
+      ]
+    ],
+    "bbox_diagonal": 1.4839261152126137,
+    "bbox_volume": 0.05069242204429154,
+    "total_triangle_area": 4.785505477411997,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 14,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-BAB15A84C1494F5EB870",
+    "object_id": "OBJ-PHYSX3D-12437",
+    "part_name": "top_panel",
+    "source_object_name": "Cabinet",
+    "obj_bytes": 679,
+    "obj_sha256": "120b5ba9ec1532cc60acb972f82b92065dca1f5ba19a886a1343cc95b9ccd274",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 69,
+    "face_count": 212,
+    "triangles": 212,
+    "nondegenerate_triangles": 212,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.230159,
+        0.260487
+      ],
+      [
+        0.359408,
+        1.004995
+      ],
+      [
+        0.019141,
+        0.044964
+      ]
+    ],
+    "bbox_diagonal": 0.8112847214227569,
+    "bbox_volume": 0.008179556081033247,
+    "total_triangle_area": 0.21453937955002894,
+    "unique_unoriented_triangles": 106,
+    "repeated_unoriented_triangles": 106,
+    "reverse_winding_triangle_pairs": 106,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 144,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-BB0B279AC63F342F69C8",
+    "object_id": "OBJ-PHYSX3D-00359",
+    "part_name": "handle",
+    "source_object_name": "Handbag",
+    "obj_bytes": 4718,
+    "obj_sha256": "ac4ba355ecbc06bb257305b087b9a91f737b50667714cb98a65a7bc1077856aa",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 72,
+    "face_count": 280,
+    "triangles": 280,
+    "nondegenerate_triangles": 280,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.313487,
+        0.327658
+      ],
+      [
+        0.025595,
+        0.161126
+      ],
+      [
+        -0.246193,
+        0.394952
+      ]
+    ],
+    "bbox_diagonal": 0.9167892200560608,
+    "bbox_volume": 0.055712309518129284,
+    "total_triangle_area": 2.156660705050086,
+    "unique_unoriented_triangles": 140,
+    "repeated_unoriented_triangles": 140,
+    "reverse_winding_triangle_pairs": 140,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 210,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-BB4122F1458683737D49",
+    "object_id": "OBJ-PHYSX3D-05378",
+    "part_name": "Seat Soft Surface",
+    "source_object_name": "Bar Stool",
+    "obj_bytes": 5595,
+    "obj_sha256": "871dcbcea070922d7e9325d8ccd1bcd38d05fc1711d31b2358f7015829157917",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 20,
+    "triangles": 20,
+    "nondegenerate_triangles": 20,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.67453,
+        0.718563
+      ],
+      [
+        -0.472846,
+        -0.414135
+      ],
+      [
+        -0.427603,
+        -0.38357
+      ]
+    ],
+    "bbox_diagonal": 0.08558499692703155,
+    "bbox_volume": 0.00011383505668027897,
+    "total_triangle_area": 0.024559581881999987,
+    "unique_unoriented_triangles": 10,
+    "repeated_unoriented_triangles": 10,
+    "reverse_winding_triangle_pairs": 10,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 13,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-BDA3156708FEC816FD93",
+    "object_id": "OBJ-PHYSX3D-08818",
+    "part_name": "Front Right Foot",
+    "source_object_name": "Armchair",
+    "obj_bytes": 491,
+    "obj_sha256": "d13a5a9d8fd7875f49bcb6072b82afe71984518a9e5cf029f8fd313d29f6081f",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 80,
+    "face_count": 240,
+    "triangles": 240,
+    "nondegenerate_triangles": 240,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.325623,
+        0.336257
+      ],
+      [
+        -0.915067,
+        0.432924
+      ],
+      [
+        -0.289152,
+        0.28422
+      ]
+    ],
+    "bbox_diagonal": 1.6074577197752355,
+    "bbox_volume": 0.5115672476861457,
+    "total_triangle_area": 6.61037141684801,
+    "unique_unoriented_triangles": 120,
+    "repeated_unoriented_triangles": 120,
+    "reverse_winding_triangle_pairs": 120,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 180,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-BE2037DE6FF81C911ED8",
+    "object_id": "OBJ-PHYSX3D-20662",
+    "part_name": "table_base",
+    "source_object_name": "Bar Stool",
+    "obj_bytes": 5519,
+    "obj_sha256": "bbb7682152b9bdfeda4989dfeb5b93f8c1512d97ec465492d899b2bc8a0790dc",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 20,
+    "triangles": 20,
+    "nondegenerate_triangles": 20,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.685062,
+        -0.63437
+      ],
+      [
+        -0.426583,
+        -0.358994
+      ],
+      [
+        0.553592,
+        0.604283
+      ]
+    ],
+    "bbox_diagonal": 0.09852679466013294,
+    "bbox_volume": 0.00017367859851730803,
+    "total_triangle_area": 0.032548758691999996,
+    "unique_unoriented_triangles": 10,
+    "repeated_unoriented_triangles": 10,
+    "reverse_winding_triangle_pairs": 10,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 13,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-C00599DE47CD9C1A8387",
+    "object_id": "OBJ-PHYSX3D-08756",
+    "part_name": "Back Left Foot",
+    "source_object_name": "Sofa Chair",
+    "obj_bytes": 491,
+    "obj_sha256": "370e29f21f8e8e9745ade7e3e1727f5c17f26ad34ca840112ca2af17f60f9a4e",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 60,
+    "face_count": 232,
+    "triangles": 232,
+    "nondegenerate_triangles": 232,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.527996,
+        0.513219
+      ],
+      [
+        -0.167829,
+        0.043943
+      ],
+      [
+        -0.195605,
+        0.651486
+      ]
+    ],
+    "bbox_diagonal": 1.3588742467535397,
+    "bbox_volume": 0.1867837205007112,
+    "total_triangle_area": 4.08412116360782,
+    "unique_unoriented_triangles": 116,
+    "repeated_unoriented_triangles": 116,
+    "reverse_winding_triangle_pairs": 116,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 174,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-C4B93879411C489A6A86",
+    "object_id": "OBJ-PHYSX3D-08434",
+    "part_name": "Seat Cushion",
+    "source_object_name": "Upholstered Armchair",
+    "obj_bytes": 4647,
+    "obj_sha256": "feea360bee187ed13663dd65b57cc7e45a2bd1acf7b0e8f443947ef68cd0c2fe",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.523131,
+        0.639213
+      ],
+      [
+        -0.533621,
+        -0.450705
+      ],
+      [
+        -0.510624,
+        -0.394542
+      ]
+    ],
+    "bbox_diagonal": 0.18391608005827004,
+    "bbox_volume": 0.0011172956475111837,
+    "total_triangle_area": 0.130900563792,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-C96738FA5167572D47B0",
+    "object_id": "OBJ-PHYSX3D-08967",
+    "part_name": "Rear Right Leg",
+    "source_object_name": "Armchair",
+    "obj_bytes": 523,
+    "obj_sha256": "2eafb383737d1cdec8dcb089e0b98055f9615813d81f319345b0d32c3d64b4b9",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 44,
+    "face_count": 168,
+    "triangles": 168,
+    "nondegenerate_triangles": 168,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.581144,
+        -0.461125
+      ],
+      [
+        -0.739874,
+        -0.351273
+      ],
+      [
+        0.367532,
+        0.49729
+      ]
+    ],
+    "bbox_diagonal": 0.42691033733794737,
+    "bbox_volume": 0.006051848684642602,
+    "total_triangle_area": 0.2658013172158942,
+    "unique_unoriented_triangles": 84,
+    "repeated_unoriented_triangles": 84,
+    "reverse_winding_triangle_pairs": 84,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 126,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-C9C1E1ADB4B6A483ACFE",
+    "object_id": "OBJ-PHYSX3D-08984",
+    "part_name": "Back Left Leg",
+    "source_object_name": "Decorative Bench",
+    "obj_bytes": 3413,
+    "obj_sha256": "a2dcf77eb2eaf9da9f1b65603b4c5102ceb95f231d1ae1c086cc81d0213e5083",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 114,
+    "face_count": 216,
+    "triangles": 216,
+    "nondegenerate_triangles": 216,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.59671,
+        0.59484
+      ],
+      [
+        -0.62667,
+        -0.167829
+      ],
+      [
+        -0.425025,
+        0.730554
+      ]
+    ],
+    "bbox_diagonal": 1.7221176762991546,
+    "bbox_volume": 0.6317920103745153,
+    "total_triangle_area": 2.7205346203605325,
+    "unique_unoriented_triangles": 108,
+    "repeated_unoriented_triangles": 108,
+    "reverse_winding_triangle_pairs": 108,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 105,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-CC3D31A647CA16ECB842",
+    "object_id": "OBJ-PHYSX3D-08434",
+    "part_name": "Front Skirt",
+    "source_object_name": "Upholstered Armchair",
+    "obj_bytes": 6627,
+    "obj_sha256": "12a794c39e8aa20f3414c2805b3b642583e88995252622cb1a486b5c2bac832f",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 16,
+    "face_count": 56,
+    "triangles": 56,
+    "nondegenerate_triangles": 56,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.672122,
+        0.756247
+      ],
+      [
+        -0.404896,
+        -0.001096
+      ],
+      [
+        -0.200837,
+        0.202963
+      ]
+    ],
+    "bbox_diagonal": 0.5772225702664441,
+    "bbox_volume": 0.013716954765,
+    "total_triangle_area": 0.9239751599999989,
+    "unique_unoriented_triangles": 28,
+    "repeated_unoriented_triangles": 28,
+    "reverse_winding_triangle_pairs": 28,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 42,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-D13A2552A48CBED8AA33",
+    "object_id": "OBJ-PHYSX3D-18486",
+    "part_name": "Leg",
+    "source_object_name": "Table",
+    "obj_bytes": 1135,
+    "obj_sha256": "6d540bfbf0acab6fce7275fe9e6a5d751c16c63225c7d478ee09a18aec851eab",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.573864,
+        -0.540873
+      ],
+      [
+        -0.71345,
+        0.131863
+      ],
+      [
+        -0.384421,
+        -0.318438
+      ]
+    ],
+    "bbox_diagonal": 0.848525916126903,
+    "bbox_volume": 0.0018401155068178891,
+    "total_triangle_area": 0.33210541945561384,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-D2C5B6D02B0B6C553598",
+    "object_id": "OBJ-PHYSX3D-21627",
+    "part_name": "leg",
+    "source_object_name": "Table",
+    "obj_bytes": 527,
+    "obj_sha256": "6d18646a05d78ab3889cbf5a90010d43415a884324eb44add6f03de09c40a586",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.313001,
+        -0.118127
+      ],
+      [
+        -0.914384,
+        0.025595
+      ],
+      [
+        -0.245707,
+        -0.050833
+      ]
+    ],
+    "bbox_diagonal": 0.979546972938511,
+    "bbox_volume": 0.0356965258300466,
+    "total_triangle_area": 0.3580478905758701,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-D58BC7624EE681ADECE3",
+    "object_id": "OBJ-PHYSX3D-05378",
+    "part_name": "Leg",
+    "source_object_name": "Bar Stool",
+    "obj_bytes": 527,
+    "obj_sha256": "dc583e7637f1ca66b8cdc7675c471a426de459898ee4a3ba88026c3fde52a9c9",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.58613,
+        0.619122
+      ],
+      [
+        -0.71345,
+        0.131863
+      ],
+      [
+        0.323448,
+        0.389431
+      ]
+    ],
+    "bbox_diagonal": 0.8485259550078595,
+    "bbox_volume": 0.0018401712831055636,
+    "total_triangle_area": 0.3321089873351348,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-D6EB306200EC81140B99",
+    "object_id": "OBJ-PHYSX3D-21627",
+    "part_name": "leg",
+    "source_object_name": "Table",
+    "obj_bytes": 511,
+    "obj_sha256": "1ea612dca81cc359ae0eaa02b83b93d6801a73b1a64f6de3fda2c323c6213d72",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 40,
+    "face_count": 136,
+    "triangles": 136,
+    "nondegenerate_triangles": 132,
+    "zero_area_triangles": 4,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.504616,
+        0.481309
+      ],
+      [
+        -0.109222,
+        0.09795
+      ],
+      [
+        -0.172002,
+        0.576561
+      ]
+    ],
+    "bbox_diagonal": 1.2551154959516675,
+    "bbox_volume": 0.15289852462525827,
+    "total_triangle_area": 7.535647682090865,
+    "unique_unoriented_triangles": 68,
+    "repeated_unoriented_triangles": 68,
+    "reverse_winding_triangle_pairs": 68,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 98,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-D8FB56A1A53179D03E96",
+    "object_id": "OBJ-PHYSX3D-08818",
+    "part_name": "Seat Cushion",
+    "source_object_name": "Armchair",
+    "obj_bytes": 2881,
+    "obj_sha256": "ba40c5912a86c473f11849e0661aa78c7f3fb32607f47f3528191553a6f59f91",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 41,
+    "face_count": 39,
+    "triangles": 39,
+    "nondegenerate_triangles": 39,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.135575,
+        0.133618
+      ],
+      [
+        0.032301,
+        0.967042
+      ],
+      [
+        -0.246471,
+        -0.173856
+      ]
+    ],
+    "bbox_diagonal": 0.9754376179720566,
+    "bbox_volume": 0.018271802675353988,
+    "total_triangle_area": 0.3764185149184069,
+    "unique_unoriented_triangles": 39,
+    "repeated_unoriented_triangles": 0,
+    "reverse_winding_triangle_pairs": 0,
+    "boundary_edges": 41,
+    "edges_with_more_than_two_incident_faces": 0,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-DA70C0CEBCFCCABF5280",
+    "object_id": "OBJ-PHYSX3D-08325",
+    "part_name": "Backrest Panel B",
+    "source_object_name": "Chair",
+    "obj_bytes": 1938,
+    "obj_sha256": "15e5d4e6549dc17cb0d2e2be8f41c0c75e4a308706c8ff3efee8b7f631060af5",
+    "quality_notes": [
+      "OPEN_SURFACE"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 88,
+    "face_count": 264,
+    "triangles": 264,
+    "nondegenerate_triangles": 264,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.527668,
+        0.559824
+      ],
+      [
+        -0.026879,
+        0.023702
+      ],
+      [
+        -0.638842,
+        0.865969
+      ]
+    ],
+    "bbox_diagonal": 1.857324267150462,
+    "bbox_volume": 0.08277428522645099,
+    "total_triangle_area": 9.462952529889888,
+    "unique_unoriented_triangles": 132,
+    "repeated_unoriented_triangles": 132,
+    "reverse_winding_triangle_pairs": 132,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 198,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-DD2CA5F32922FA1F5295",
+    "object_id": "OBJ-PHYSX3D-00520",
+    "part_name": "bed_frame_horizontal_surface",
+    "source_object_name": "Storage Bed",
+    "obj_bytes": 6039,
+    "obj_sha256": "d1f7426ef38574bd556ccc63d713c1c63e060e5556c46a9b1b045f95752880ef",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 48,
+    "face_count": 96,
+    "triangles": 96,
+    "nondegenerate_triangles": 96,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.554393,
+        -0.448543
+      ],
+      [
+        -0.42536,
+        -0.254515
+      ],
+      [
+        0.490481,
+        0.596005
+      ]
+    ],
+    "bbox_diagonal": 0.22699680857007662,
+    "bbox_volume": 0.0019082900275130003,
+    "total_triangle_area": 0.09437745981684914,
+    "unique_unoriented_triangles": 48,
+    "repeated_unoriented_triangles": 48,
+    "reverse_winding_triangle_pairs": 48,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 48,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-DFB5CF638AEBFAAADB25",
+    "object_id": "OBJ-PHYSX3D-03427",
+    "part_name": "foot",
+    "source_object_name": "Armless Sofa Chair",
+    "obj_bytes": 2811,
+    "obj_sha256": "62d7a59b51555f066a5f87338825c1e35d0bc8a9f6d4856cd82597322321c403",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.573864,
+        -0.540873
+      ],
+      [
+        -0.71345,
+        0.131863
+      ],
+      [
+        0.323448,
+        0.389431
+      ]
+    ],
+    "bbox_diagonal": 0.848525916126903,
+    "bbox_volume": 0.0018401155068178891,
+    "total_triangle_area": 0.33210541945561384,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-E18DA40B13B77C6A3678",
+    "object_id": "OBJ-PHYSX3D-21627",
+    "part_name": "leg",
+    "source_object_name": "Table",
+    "obj_bytes": 519,
+    "obj_sha256": "ec38e40868f0d6f9cb01682c8eae74cc7e7a9f45b206a9d8c06e05b7d73480b9",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 10,
+    "face_count": 32,
+    "triangles": 32,
+    "nondegenerate_triangles": 32,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.936197,
+        -0.901979
+      ],
+      [
+        -0.189051,
+        0.177143
+      ],
+      [
+        -0.333367,
+        0.026823
+      ]
+    ],
+    "bbox_diagonal": 0.514787095079121,
+    "bbox_volume": 0.004513334246115476,
+    "total_triangle_area": 0.627019298288,
+    "unique_unoriented_triangles": 16,
+    "repeated_unoriented_triangles": 16,
+    "reverse_winding_triangle_pairs": 16,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 24,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-E69BAEB88DEB571775D9",
+    "object_id": "OBJ-PHYSX3D-23920",
+    "part_name": "vertical_side_panel",
+    "source_object_name": "Bench",
+    "obj_bytes": 669,
+    "obj_sha256": "fb76d319e68c60a080c5171831ed82fb63a2298acea7bf3492bac71d7d1fd1fe",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 20,
+    "triangles": 20,
+    "nondegenerate_triangles": 20,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.670834,
+        0.721525
+      ],
+      [
+        -0.426583,
+        -0.358994
+      ],
+      [
+        -0.527825,
+        -0.477134
+      ]
+    ],
+    "bbox_diagonal": 0.09852628016422822,
+    "bbox_volume": 0.00017367517236330875,
+    "total_triangle_area": 0.032548386953999975,
+    "unique_unoriented_triangles": 10,
+    "repeated_unoriented_triangles": 10,
+    "reverse_winding_triangle_pairs": 10,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 13,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-E78967795759BAEBDCA1",
+    "object_id": "OBJ-PHYSX3D-08756",
+    "part_name": "Front Right Foot",
+    "source_object_name": "Sofa Chair",
+    "obj_bytes": 491,
+    "obj_sha256": "dcd2ee4a9687efe00b3341ab495338cdc0710719e4267bd735394a3cf5cc5c44",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 58,
+    "face_count": 224,
+    "triangles": 224,
+    "nondegenerate_triangles": 224,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.946976,
+        0.908005
+      ],
+      [
+        0.177543,
+        0.192952
+      ],
+      [
+        -0.346326,
+        0.347641
+      ]
+    ],
+    "bbox_diagonal": 1.9806014603475883,
+    "bbox_volume": 0.01983593789465245,
+    "total_triangle_area": 5.06787768292827,
+    "unique_unoriented_triangles": 112,
+    "repeated_unoriented_triangles": 112,
+    "reverse_winding_triangle_pairs": 112,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 168,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-E7C9D2561092300547BB",
+    "object_id": "OBJ-PHYSX3D-23920",
+    "part_name": "board",
+    "source_object_name": "Bench",
+    "obj_bytes": 4457,
+    "obj_sha256": "f6c321e1441ecad138b5d60c0d75fb3ce64f780306dc66a9137474dfd4351000",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 40,
+    "face_count": 152,
+    "triangles": 152,
+    "nondegenerate_triangles": 152,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.775908,
+        -0.473026
+      ],
+      [
+        -0.302705,
+        0.363634
+      ],
+      [
+        -0.511005,
+        0.564223
+      ]
+    ],
+    "bbox_diagonal": 1.300715349655335,
+    "bbox_volume": 0.21700476110914158,
+    "total_triangle_area": 4.81460066908569,
+    "unique_unoriented_triangles": 76,
+    "repeated_unoriented_triangles": 76,
+    "reverse_winding_triangle_pairs": 76,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 114,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-E9133C8BECA0CFB63D8A",
+    "object_id": "OBJ-PHYSX3D-07765",
+    "part_name": "Left Armrest",
+    "source_object_name": "Sofa",
+    "obj_bytes": 3077,
+    "obj_sha256": "4a31ebfa1540692bcbd67576307edc6ab443353e3a8daefbb3fd0aa4a3a99b3f",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 104,
+    "face_count": 312,
+    "triangles": 312,
+    "nondegenerate_triangles": 312,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.520081,
+        0.552237
+      ],
+      [
+        -0.026879,
+        0.00347
+      ],
+      [
+        -0.638842,
+        0.858356
+      ]
+    ],
+    "bbox_diagonal": 1.8418438604097256,
+    "bbox_volume": 0.048724480804292446,
+    "total_triangle_area": 1.8187497331200033,
+    "unique_unoriented_triangles": 156,
+    "repeated_unoriented_triangles": 156,
+    "reverse_winding_triangle_pairs": 156,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 234,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-E9536A781EC95F90EAFF",
+    "object_id": "OBJ-PHYSX3D-00520",
+    "part_name": "bed_frame_base",
+    "source_object_name": "Storage Bed",
+    "obj_bytes": 7209,
+    "obj_sha256": "cabdf3c81e938eaadccb8fde0be4c70f0484f612f6ef1f80afd835e84a394c9f",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 12,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.526352,
+        0.510848
+      ],
+      [
+        -0.681306,
+        -0.635209
+      ],
+      [
+        -0.546249,
+        0.514
+      ]
+    ],
+    "bbox_diagonal": 1.4839261152126137,
+    "bbox_volume": 0.05069242204429154,
+    "total_triangle_area": 4.785505477412,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 14,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-EA07A6CED7DEA4F9E452",
+    "object_id": "OBJ-PHYSX3D-12437",
+    "part_name": "bottom_panel",
+    "source_object_name": "Cabinet",
+    "obj_bytes": 677,
+    "obj_sha256": "5f47056d0299f4ee022fce8b2bd3345be68e2d10f32aa0451a501e5d73eed2b1",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.526352,
+        0.510848
+      ],
+      [
+        -0.010325,
+        0.035773
+      ],
+      [
+        -0.500151,
+        0.502476
+      ]
+    ],
+    "bbox_diagonal": 1.4433190107294367,
+    "bbox_volume": 0.04793844994539119,
+    "total_triangle_area": 4.535826677783998,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-EA1A1F5A69158B18F5A2",
+    "object_id": "OBJ-PHYSX3D-12437",
+    "part_name": "shelf",
+    "source_object_name": "Cabinet",
+    "obj_bytes": 519,
+    "obj_sha256": "aa8e614d05849902ad55e14e62fe40390cfe228441d6761eb42df3c660067142",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 20,
+    "triangles": 20,
+    "nondegenerate_triangles": 20,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        0.71683,
+        0.762262
+      ],
+      [
+        -0.393569,
+        -0.332993
+      ],
+      [
+        -0.474781,
+        -0.429349
+      ]
+    ],
+    "bbox_diagonal": 0.08830393549553728,
+    "bbox_volume": 0.0001250328998154242,
+    "total_triangle_area": 0.02614484390400003,
+    "unique_unoriented_triangles": 10,
+    "repeated_unoriented_triangles": 10,
+    "reverse_winding_triangle_pairs": 10,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 13,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-F204A1DDB40E14808F50",
+    "object_id": "OBJ-PHYSX3D-07765",
+    "part_name": "Rear Right Leg",
+    "source_object_name": "Sofa",
+    "obj_bytes": 491,
+    "obj_sha256": "2313ec2f1483803cce053f74a1d4c337ff448b8f1419cdd37fb5cd7581053d58",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 13,
+    "face_count": 44,
+    "triangles": 44,
+    "nondegenerate_triangles": 44,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.520081,
+        0.552237
+      ],
+      [
+        0.013586,
+        0.215973
+      ],
+      [
+        -0.628726,
+        0.858356
+      ]
+    ],
+    "bbox_diagonal": 1.8445159976581933,
+    "bbox_volume": 0.3227313286034334,
+    "total_triangle_area": 8.30666495746901,
+    "unique_unoriented_triangles": 22,
+    "repeated_unoriented_triangles": 22,
+    "reverse_winding_triangle_pairs": 22,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 33,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-F32F43521D56038B6E39",
+    "object_id": "OBJ-PHYSX3D-00520",
+    "part_name": "mattress",
+    "source_object_name": "Storage Bed",
+    "obj_bytes": 894,
+    "obj_sha256": "de01f861bab9a0224c24d8026c6e977f15712fe3f1e22df391bcc90ea7211c8d",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 26,
+    "face_count": 80,
+    "triangles": 80,
+    "nondegenerate_triangles": 80,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.741869,
+        0.718563
+      ],
+      [
+        -0.414135,
+        -0.384779
+      ],
+      [
+        -0.427603,
+        0.555804
+      ]
+    ],
+    "bbox_diagonal": 1.7609124705700165,
+    "bbox_volume": 0.04216105936534533,
+    "total_triangle_area": 9.658830455711996,
+    "unique_unoriented_triangles": 40,
+    "repeated_unoriented_triangles": 40,
+    "reverse_winding_triangle_pairs": 40,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 56,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-F37C74C6724DB615995D",
+    "object_id": "OBJ-PHYSX3D-08818",
+    "part_name": "Right Seat Support",
+    "source_object_name": "Armchair",
+    "obj_bytes": 1792,
+    "obj_sha256": "773273fa9601ef2418bc5aafb9ab0e28437edf9ac5b50ec408a612503cc9a9be",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 128,
+    "face_count": 408,
+    "triangles": 408,
+    "nondegenerate_triangles": 396,
+    "zero_area_triangles": 12,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.870333,
+        0.851487
+      ],
+      [
+        -0.400819,
+        0.221027
+      ],
+      [
+        -0.363336,
+        0.366296
+      ]
+    ],
+    "bbox_diagonal": 1.9707154577817672,
+    "bbox_volume": 0.7812220020638632,
+    "total_triangle_area": 8.15528388973675,
+    "unique_unoriented_triangles": 204,
+    "repeated_unoriented_triangles": 204,
+    "reverse_winding_triangle_pairs": 204,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 306,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-F4EB06A4B41EB4CABB36",
+    "object_id": "OBJ-PHYSX3D-19754",
+    "part_name": "table_base",
+    "source_object_name": "Coffee Table",
+    "obj_bytes": 9359,
+    "obj_sha256": "ef426fb2a682510e5bb08d2bd44893701f69fcbf0274c6ff296c6afa73dabbdd",
+    "quality_notes": [
+      "CONTAINS_ZERO_AREA_TRIANGLES",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 102,
+    "face_count": 376,
+    "triangles": 376,
+    "nondegenerate_triangles": 376,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.892604,
+        0.958147
+      ],
+      [
+        -0.001096,
+        0.083029
+      ],
+      [
+        -0.402737,
+        0.404864
+      ]
+    ],
+    "bbox_diagonal": 2.021033313636121,
+    "bbox_volume": 0.12573897564627787,
+    "total_triangle_area": 9.916392332468316,
+    "unique_unoriented_triangles": 188,
+    "repeated_unoriented_triangles": 188,
+    "reverse_winding_triangle_pairs": 188,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 270,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-F4F08D77A8CEE5A6CA8B",
+    "object_id": "OBJ-PHYSX3D-18486",
+    "part_name": "Board",
+    "source_object_name": "Table",
+    "obj_bytes": 7725,
+    "obj_sha256": "8b49847b7e3675e018c95c28c84ca99c2de82f0b31c780e4211316fea51db7cd",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 104,
+    "face_count": 408,
+    "triangles": 408,
+    "nondegenerate_triangles": 408,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.823237,
+        0.812408
+      ],
+      [
+        -0.109651,
+        0.007285
+      ],
+      [
+        -0.294984,
+        0.522838
+      ]
+    ],
+    "bbox_diagonal": 1.8324413818196206,
+    "bbox_volume": 0.15642136577345786,
+    "total_triangle_area": 5.464210972426958,
+    "unique_unoriented_triangles": 204,
+    "repeated_unoriented_triangles": 204,
+    "reverse_winding_triangle_pairs": 204,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 306,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": false,
+    "source_part_id": "SOURCE-PART-PHYSXNET-FD7CFE04C5456134D336",
+    "object_id": "OBJ-PHYSX3D-08984",
+    "part_name": "Seat Cushion",
+    "source_object_name": "Decorative Bench",
+    "obj_bytes": 8273,
+    "obj_sha256": "33d2dd0fd7a474519268dfc88524268beda065ed0d8b275ed44633c912a64974",
+    "quality_notes": [
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  },
+  {
+    "mesh_errors": [],
+    "vertex_count": 8,
+    "face_count": 24,
+    "triangles": 24,
+    "nondegenerate_triangles": 24,
+    "zero_area_triangles": 0,
+    "affine_rank": 3,
+    "bounding_box": [
+      [
+        -0.558045,
+        0.54254
+      ],
+      [
+        -0.681306,
+        0.706754
+      ],
+      [
+        0.516881,
+        0.551455
+      ]
+    ],
+    "bbox_diagonal": 1.7717768672440104,
+    "bbox_volume": 0.05281793969406739,
+    "total_triangle_area": 6.454881709319997,
+    "unique_unoriented_triangles": 12,
+    "repeated_unoriented_triangles": 12,
+    "reverse_winding_triangle_pairs": 12,
+    "boundary_edges": 0,
+    "edges_with_more_than_two_incident_faces": 18,
+    "unused_vertices": 0,
+    "low_resolution_8_or_fewer_vertices": true,
+    "source_part_id": "SOURCE-PART-PHYSXNET-FFBE586C83CE9081A1E3",
+    "object_id": "OBJ-PHYSX3D-12437",
+    "part_name": "cabinet_door_surface",
+    "source_object_name": "Cabinet",
+    "obj_bytes": 515,
+    "obj_sha256": "3f460ab841a728593d527d4bd0ff1d7a39087c514538b053f3f7d42036298aec",
+    "quality_notes": [
+      "VERY_LOW_RESOLUTION",
+      "REVERSED_DUPLICATE_TRIANGLES",
+      "NONMANIFOLD_OR_DOUBLED_SURFACE_EDGES"
+    ]
+  }
+]

@@ -38,7 +38,7 @@
   const cycle3 = Boolean(summary.current_cycle);
   $("delta-components").textContent = `+${fmt(cycle3 ? summary.current_cycle_net_component_increment : cycle2 ? summary.cycle2_net_component_increment : summary.net_real_component_increment)}`;
   $("delta-components-note").textContent = cycle3
-    ? `本轮 ${fmt(summary.current_cycle_real_components_added)} 个实体替换 ${fmt(summary.current_cycle_fallbacks_replaced)} 个整件占位，净增 ${fmt(summary.current_cycle_net_component_increment)}；另更新 ${fmt(summary.current_cycle_existing_component_material_updates)} 个组件的材料标签`
+    ? `本轮 ${fmt(summary.current_cycle_real_components_added)} 个实体替换 ${fmt(summary.current_cycle_fallbacks_replaced)} 个整件占位，净增 ${fmt(summary.current_cycle_net_component_increment)}；另补 ${fmt(summary.current_cycle_existing_component_material_updates)} 条既有组件材料回链`
     : cycle2
     ? `本轮新增 ${fmt(summary.cycle2_real_components_added)} 个实体组件；另更新既有 ${fmt(summary.cycle2_existing_component_material_updates)} 个组件的官方材料标签`
     : `${fmt(summary.real_components_added)} 个独立部件替换 ${fmt(summary.fallbacks_replaced)} 个整件占位`;
@@ -81,7 +81,7 @@
     <p>原文定位：${esc(item.source_locator || "见官方结构文件")}</p>${link(item.source_url, "打开官方结构文件")}${link(item.source_manifest_url, "打开资产包")}
   </article>`;
   }).join("");
-  const propertyNote = cycle3 ? `本轮新增 ${fmt(summary.current_cycle_complete_property_groups)} 完整组、${fmt(summary.current_cycle_incomplete_property_groups)} 缺项组（${fmt(summary.current_cycle_property_value_cells)} 个属性值），来源组包含实测、实验推导与同文厂家参考配对；方法逐条保留，不等于商品实测。` : cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
+  const propertyNote = cycle3 ? `本轮新增 ${fmt(summary.current_cycle_complete_property_groups)} 完整组、${fmt(summary.current_cycle_incomplete_property_groups)} 缺项组（${fmt(summary.current_cycle_property_value_cells)} 个属性槽位），包含实测、实验推导及来源参考汇编；方向、统计量、密度与模量定义逐条保留，不等于商品实测。` : cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
   $("release-boundary").textContent = `研究完整与缺项共 ${fmt(summary.total_records)} 组，包含独立标记的数据库转录层。${propertyNote}正式材料映射 ${fmt(summary.formal_material_mapping_rows_unchanged)} 行未因本轮标签或组件新增而自动晋级。全库几何内容去重未完成。`;
   const hashes = { expanded_inventory_sha256: "扩充对象组件清单 SHA-256", feedback_queue_sha256: "待办队列 SHA-256", baseline_sha256: "原始对象表 SHA-256" };
   $("release-hashes").innerHTML = Object.entries(hashes).filter(([key]) => summary[key]).map(([key, label]) => `<dt>${label}</dt><dd>${esc(summary[key])}</dd>`).join("");
