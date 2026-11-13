@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3322；三项各有来源值1652。
+材料3471；三项各有来源值1659。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -130,6 +130,14 @@
 - RESEARCH-MAT-8D14C2F3924E9168E166 复合材料 · 89wt%SasolWax0907 microcrystalline wax +10wt%SEBS-MA +1wt%carbon black fuel formulation / 89wt%SasolWax0907 microcrystalline wax +10wt%SEBS-MA +1wt%carbon black fuel formulation：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-FF97568BF0BDFCA1C4BE 复合材料 · 94wt%SasolWax0907 microcrystalline wax +5wt%SEBS-MA +1wt%carbon black fuel formulation / 94wt%SasolWax0907 microcrystalline wax +5wt%SEBS-MA +1wt%carbon black fuel formulation：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-4DA51BA0E32CF22D6461 复合材料 · 99wt%SasolWax0907 microcrystalline wax +1wt%carbon black fuel formulation / 99wt%SasolWax0907 microcrystalline wax +1wt%carbon black fuel formulation：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-A031D8B9AF7FF79DA6CA 复合材料 · AIREX PXc continuous-glass-fiber reinforced polymer foam PXc.245 / AIREX PXc continuous-glass-fiber reinforced polymer foam PXc.245：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A69C86213EFC0748612D 复合材料 · AIREX PXc continuous-glass-fiber reinforced polymer foam PXc.320 / AIREX PXc continuous-glass-fiber reinforced polymer foam PXc.320：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-522AFECBC0876AB86BE6 复合材料 · AIREX PXc continuous-glass-fiber reinforced polymer foam PXc.385 / AIREX PXc continuous-glass-fiber reinforced polymer foam PXc.385：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-968EEDD79CB352C0278A 复合材料 · AIREX PXc continuous-glass-fiber reinforced polymer foam PXc.420 / AIREX PXc continuous-glass-fiber reinforced polymer foam PXc.420：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-3D67192E838D9207F5FB 复合材料 · AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.320 / AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.320：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-BF17DE7F1DE6FAC4688A 复合材料 · AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.385 / AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.385：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-245668E109CDF33B0A9F 复合材料 · AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.420 / AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.420：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F934B893DE2E6EE8AD1C 复合材料 · AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.520 / AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.520：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F602F095B94D1829157E 复合材料 · CF/PEEK honeycomb skeleton H22-t0.6-T / CF/PEEK honeycomb skeleton H22-t0.6-T：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-E5A644ECF794F9426F1E 复合材料 · CF/PEEK honeycomb skeleton H26-t0.6-T / CF/PEEK honeycomb skeleton H26-t0.6-T：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-EB35A466CBFF4B8A479D 复合材料 · CF/PEEK honeycomb skeleton H26-t0.8-T / CF/PEEK honeycomb skeleton H26-t0.8-T：缺 nu;rho；已有完整组0、缺项组1。
@@ -176,6 +184,39 @@
 - RESEARCH-MAT-ADD363AFB7D42D448DBB 复合材料 · Silicone-urethane hybrid foam SUF137 / Silicone-urethane hybrid foam SUF137：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FCD2F80FF2B180B6F848 复合材料 · Silicone-urethane hybrid foam SUF150 / Silicone-urethane hybrid foam SUF150：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F03659F82C3C343B06E7 复合材料 · Silicone-urethane hybrid foam SUF200 / Silicone-urethane hybrid foam SUF200：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-40F14F564FEF5D84AFD6 泡沫 · AIREX C70 polymer foam C70.130 / AIREX C70 polymer foam C70.130：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5748A48E68FA18E94766 泡沫 · AIREX C70 polymer foam C70.55 / AIREX C70 polymer foam C70.55：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-44A1C9E9D9049AD6E092 泡沫 · AIREX C70 polymer foam C70.75 / AIREX C70 polymer foam C70.75：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-897D582E8B6EE493EC1F 泡沫 · AIREX C70 polymer foam C70.90 / AIREX C70 polymer foam C70.90：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-D1C0127BDE0E37E25EDD 泡沫 · AIREX R82 thermoplastic polymer foam R82.110 / AIREX R82 thermoplastic polymer foam R82.110：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-6941F94AD25E60001F32 泡沫 · AIREX R82 thermoplastic polymer foam R82.60 / AIREX R82 thermoplastic polymer foam R82.60：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1D26E644FC44A8B3A2FF 泡沫 · AIREX R82 thermoplastic polymer foam R82.80 / AIREX R82 thermoplastic polymer foam R82.80：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-FF5F5B732E6301E8B9D7 泡沫 · AIREX T10 thermoplastic polymer foam T10.100 / AIREX T10 thermoplastic polymer foam T10.100：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-23F13C8B17EA66DBAB89 泡沫 · AIREX T10 thermoplastic polymer foam T10.110 / AIREX T10 thermoplastic polymer foam T10.110：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-20DE47A23EE9FB0DAE8E 泡沫 · AIREX T90 polymer foam T90.100 / AIREX T90 polymer foam T90.100：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-D8F2AB52160AEC380F6A 泡沫 · AIREX T90 polymer foam T90.150 / AIREX T90 polymer foam T90.150：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-DE7F821CCBEEDBC5B3C9 泡沫 · AIREX T90 polymer foam T90.210 / AIREX T90 polymer foam T90.210：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-3750EAAF4DA458AF2AAE 泡沫 · AIREX T90 polymer foam T90.60 / AIREX T90 polymer foam T90.60：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-45EA590258E143C71433 泡沫 · AIREX T92 PET foam T92.100 / AIREX T92 PET foam T92.100：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-002054FCD4A45E1CBF6B 泡沫 · AIREX T92 PET foam T92.110 / AIREX T92 PET foam T92.110：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C3137939E23D8386F556 泡沫 · AIREX T92 PET foam T92.130 / AIREX T92 PET foam T92.130：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E6C3938BE38887622F00 泡沫 · AIREX T92 PET foam T92.150 / AIREX T92 PET foam T92.150：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-75B2DDB59D5C64845599 泡沫 · AIREX T92 PET foam T92.200 / AIREX T92 PET foam T92.200：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-23799F6E24F46DCFB370 泡沫 · AIREX T92 PET foam T92.230 / AIREX T92 PET foam T92.230：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-986A0E7356DA13BE545E 泡沫 · AIREX T92 PET foam T92.280 / AIREX T92 PET foam T92.280：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-BD3531F0591E71EE4CBD 泡沫 · AIREX T92 PET foam T92.70 / AIREX T92 PET foam T92.70：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-0BBB06D97EFAFAA05334 泡沫 · AIREX T92 PET foam T92.80 / AIREX T92 PET foam T92.80：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9C92E495E80605D9D8FD 泡沫 · AIREX TK90 fire-retardant rigid PET foam TK90.100 / AIREX TK90 fire-retardant rigid PET foam TK90.100：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9D0251E08BD108FD9CE1 泡沫 · AIREX TK90 fire-retardant rigid PET foam TK90.150 / AIREX TK90 fire-retardant rigid PET foam TK90.150：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C1DA4433CDBCB624C412 泡沫 · AIREX TK90 fire-retardant rigid PET foam TK90.210 / AIREX TK90 fire-retardant rigid PET foam TK90.210：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-6E751C67FDB94CA50BED 泡沫 · AIREX TK90 fire-retardant rigid PET foam TK90.60 / AIREX TK90 fire-retardant rigid PET foam TK90.60：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-58307C894889CE3969D9 泡沫 · AIREX TK92 rigid PET foam TK92.100 / AIREX TK92 rigid PET foam TK92.100：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CD9BA494A920CE35DA0F 泡沫 · AIREX TK92 rigid PET foam TK92.130 / AIREX TK92 rigid PET foam TK92.130：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-BDA414ADC1896805AB7F 泡沫 · AIREX TK92 rigid PET foam TK92.150 / AIREX TK92 rigid PET foam TK92.150：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A1A86C27D53FDD986786 泡沫 · AIREX TK92 rigid PET foam TK92.200 / AIREX TK92 rigid PET foam TK92.200：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9E431964115190568318 泡沫 · AIREX TK92 rigid PET foam TK92.60 / AIREX TK92 rigid PET foam TK92.60：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-DB24DA33B3A81C003C45 泡沫 · AIREX TK92 rigid PET foam TK92.80 / AIREX TK92 rigid PET foam TK92.80：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-54A5BF186F172DCCC004 泡沫 · AIREX TegraCore thermoplastic polymer foam TegraCore / AIREX TegraCore thermoplastic polymer foam TegraCore：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-032B19B3F4B522FBE8D8 泡沫 · Cardanol-Mannich GX9104/SUPRASEC2085 polyurethane foam, cellulose5wt% / Cardanol-Mannich GX9104/SUPRASEC2085 polyurethane foam, cellulose5wt%：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-EB5CE4C2EB07DB1BFD99 泡沫 · Cardanol-Mannich GX9104/SUPRASEC2085 polyurethane foam, diatomite5wt% / Cardanol-Mannich GX9104/SUPRASEC2085 polyurethane foam, diatomite5wt%：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-BD2F11BD455A5D78F30D 泡沫 · Cardanol-Mannich GX9104/SUPRASEC2085 polyurethane foam, unfilled / Cardanol-Mannich GX9104/SUPRASEC2085 polyurethane foam, unfilled：缺 nu；已有完整组0、缺项组1。
@@ -186,6 +227,38 @@
 - RESEARCH-MAT-2F60FB9618AF9DB2E992 泡沫 · Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.30/0.15 / Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.30/0.15：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-A2ED9B5E04F3D9198A76 泡沫 · Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.40/0.05 / Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.40/0.05：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CB8A94E8F7F7E9976610 泡沫 · Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.60/0.40/0.00 / Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.60/0.40/0.00：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-2EAE9F9FAA35670A3376 泡沫 · Diab Divinycell F PES foam F130 / Diab Divinycell F PES foam F130：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9DD162A92D8AC7439F9E 泡沫 · Diab Divinycell F PES foam F40 / Diab Divinycell F PES foam F40：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CD5E636EAC828034615A 泡沫 · Diab Divinycell F PES foam F50 / Diab Divinycell F PES foam F50：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-87430D9BF2489D6D9510 泡沫 · Diab Divinycell F PES foam F90 / Diab Divinycell F PES foam F90：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C6DAC6303610F7BE74AD 泡沫 · Diab Divinycell HCP PVC foam HCP100 / Diab Divinycell HCP PVC foam HCP100：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A2D68D84C95F93FC8063 泡沫 · Diab Divinycell HCP PVC foam HCP30 / Diab Divinycell HCP PVC foam HCP30：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-926A2D002C6A18EFFC21 泡沫 · Diab Divinycell HCP PVC foam HCP50 / Diab Divinycell HCP PVC foam HCP50：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4BEC1774736FF6640AAE 泡沫 · Diab Divinycell HCP PVC foam HCP70 / Diab Divinycell HCP PVC foam HCP70：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-74CDE0DDF21CFE627D87 泡沫 · Diab Divinycell HCP PVC foam HCP90 / Diab Divinycell HCP PVC foam HCP90：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-294404FD312A74BD18EC 泡沫 · Diab Divinycell HM PVC foam HM100 / Diab Divinycell HM PVC foam HM100：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C70E268108D8C01B6C5F 泡沫 · Diab Divinycell HM PVC foam HM130 / Diab Divinycell HM PVC foam HM130：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-648EFE0610E37AD4B483 泡沫 · Diab Divinycell HM PVC foam HM80 / Diab Divinycell HM PVC foam HM80：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-ED113D6F935F5D31F98E 泡沫 · Diab Divinycell HT PVC foam HT101 / Diab Divinycell HT PVC foam HT101：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1872C8714104345C1C60 泡沫 · Diab Divinycell HT PVC foam HT131 / Diab Divinycell HT PVC foam HT131：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8905D521C04586EF13BE 泡沫 · Diab Divinycell HT PVC foam HT251 / Diab Divinycell HT PVC foam HT251：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-53F3A3805C94E4E8C76E 泡沫 · Diab Divinycell HT PVC foam HT61 / Diab Divinycell HT PVC foam HT61：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4F6DF81E46775E44EF7F 泡沫 · Diab Divinycell HT PVC foam HT81 / Diab Divinycell HT PVC foam HT81：缺 E；已有完整组0、缺项组1。
+- RESEARCH-MAT-ED1F696FC3DC2DE6298D 泡沫 · Diab Divinycell PL PET foam PL100 / Diab Divinycell PL PET foam PL100：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-2F9B199E3D4BB6EE3F74 泡沫 · Diab Divinycell PL PET foam PL105 / Diab Divinycell PL PET foam PL105：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-55A1E40C0753A8312D7B 泡沫 · Diab Divinycell PL PET foam PL110 / Diab Divinycell PL PET foam PL110：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A04770D07004F9A23668 泡沫 · Diab Divinycell PL PET foam PL135 / Diab Divinycell PL PET foam PL135：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-2ABC07013BD31D7770FD 泡沫 · Diab Divinycell PL PET foam PL150 / Diab Divinycell PL PET foam PL150：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-04AF49603C367F8B7768 泡沫 · Diab Divinycell PL PET foam PL200 / Diab Divinycell PL PET foam PL200：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-738EE8B57BD19947F1DF 泡沫 · Diab Divinycell PL PET foam PL230 / Diab Divinycell PL PET foam PL230：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CD8A0273C5DAF5E8B429 泡沫 · Diab Divinycell PR PET foam PR100 / Diab Divinycell PR PET foam PR100：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5D984439BDADB94F9B42 泡沫 · Diab Divinycell PR PET foam PR150 / Diab Divinycell PR PET foam PR150：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-121E85D0B3EBA2377910 泡沫 · Diab Divinycell PR PET foam PR200 / Diab Divinycell PR PET foam PR200：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C88F613F81AD7B7E3526 泡沫 · Diab Divinycell PR PET foam PR250 / Diab Divinycell PR PET foam PR250：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-7A9A21C15971C31F65D6 泡沫 · Diab Divinycell PR PET foam PR80 / Diab Divinycell PR PET foam PR80：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-FDE274969292830CFF0E 泡沫 · Diab Divinycell U PEI foam U110 / Diab Divinycell U PEI foam U110：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F57E4B915627FB6F368B 泡沫 · Diab Divinycell U PEI foam U60 / Diab Divinycell U PEI foam U60：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-2621B6E5CC85B703A7AB 泡沫 · Diab Divinycell U PEI foam U80 / Diab Divinycell U PEI foam U80：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-75F70A23724BE04B4C4B 泡沫 · Dunlop natural rubber latex cushion foam net with 10.0phr bamboo-leaf fibre / Dunlop natural rubber latex cushion foam net with 10.0phr bamboo-leaf fibre：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CE7441279A3CA36A15E7 泡沫 · Dunlop natural rubber latex cushion foam net with 2.5phr bamboo-leaf fibre / Dunlop natural rubber latex cushion foam net with 2.5phr bamboo-leaf fibre：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-44E6DB5F914D8A40D9AD 泡沫 · Dunlop natural rubber latex cushion foam net with 5.0phr bamboo-leaf fibre / Dunlop natural rubber latex cushion foam net with 5.0phr bamboo-leaf fibre：缺 E;nu；已有完整组0、缺项组1。
@@ -224,6 +297,22 @@
 - RESEARCH-MAT-8FE0CDDBDE96423A675E 泡沫 · Foam-formed driedcellulosefibrous cushion,pine/eucalyptus50:50,carboxymethylcelluloseandcitricacid / Foam-formed driedcellulosefibrous cushion,pine/eucalyptus50:50,carboxymethylcelluloseandcitricacid：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7AAEAB05024077934059 泡沫 · Foam-formed driedcellulosefibrous cushion,pine/eucalyptus50:50,citricacid1% / Foam-formed driedcellulosefibrous cushion,pine/eucalyptus50:50,citricacid1%：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-C5277695574B9E519648 泡沫 · Foam-formed driedcellulosefibrous cushion,pine/eucalyptus50:50,guargum0.5% / Foam-formed driedcellulosefibrous cushion,pine/eucalyptus50:50,guargum0.5%：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-AD82FB450F7EC7F3FE6D 泡沫 · Gurit Corecell I SAN structural foam I-100 / Gurit Corecell I SAN structural foam I-100：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CA3BF38B1896080FD9AB 泡沫 · Gurit Corecell I SAN structural foam I-40 / Gurit Corecell I SAN structural foam I-40：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-55A8074D30CF500D1CC5 泡沫 · Gurit Corecell I SAN structural foam I-60 / Gurit Corecell I SAN structural foam I-60：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CB0376E21F39008DF686 泡沫 · Gurit Corecell I SAN structural foam I-80 / Gurit Corecell I SAN structural foam I-80：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-7C58799DC91D6BD941C2 泡沫 · Gurit Corecell M structural foam M-100 / Gurit Corecell M structural foam M-100：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-731DC6B95F6D121A62D7 泡沫 · Gurit Corecell M structural foam M-130 / Gurit Corecell M structural foam M-130：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A0B423A2B517E08D7BE9 泡沫 · Gurit Corecell M structural foam M-200 / Gurit Corecell M structural foam M-200：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B1D69FB4365EE0C84A23 泡沫 · Gurit Corecell M structural foam M-60 / Gurit Corecell M structural foam M-60：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-D1197187D9F232B7A3BD 泡沫 · Gurit Corecell M structural foam M-80 / Gurit Corecell M structural foam M-80：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B59C648E4D31A960BFFE 泡沫 · Gurit Corecell S SAN structural foam S210 / Gurit Corecell S SAN structural foam S210：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1424DF72E2145E6F6190 泡沫 · Gurit Corecell S SAN structural foam S250 / Gurit Corecell S SAN structural foam S250：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9AD6D5753F8F0731529E 泡沫 · Gurit Corecell S SAN structural foam S270 / Gurit Corecell S SAN structural foam S270：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4680AADDD61F4D4D3514 泡沫 · Gurit Corecell S SAN structural foam S315 / Gurit Corecell S SAN structural foam S315：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-0A2142832810BFD7F138 泡沫 · Gurit Corecell S SAN structural foam S350 / Gurit Corecell S SAN structural foam S350：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F21D40E27706BD6D3617 泡沫 · Gurit Corecell S SAN structural foam S400 / Gurit Corecell S SAN structural foam S400：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B63F32AC973975FF7156 泡沫 · Gurit Corecell S SAN structural foam S450 / Gurit Corecell S SAN structural foam S450：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E266006E1EE482E18C63 泡沫 · MM2520 TPU/Ecoflex closed-cell foam,30wt%Ecoflex5wt%azodicarbonamide,TPU/Ecoflex/carbonblack coating / MM2520 TPU/Ecoflex closed-cell foam,30wt%Ecoflex5wt%azodicarbonamide,TPU/Ecoflex/carbonblack coating：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-A944408A956133ACA2FB 泡沫 · MM2520 thermoplastic polyurethane/Ecoflex closed-cell foam,30wt%Ecoflex5wt%azodicarbonamide / MM2520 thermoplastic polyurethane/Ecoflex closed-cell foam,30wt%Ecoflex5wt%azodicarbonamide：缺 nu；已有完整组0、缺项组1。
 - MAT-FOAM-MEMORY-BROAD 记忆泡沫（聚合物/密度未详） / Memory foam, polymer/density unspecified：缺 nu；已有完整组0、缺项组3。
@@ -263,6 +352,8 @@
 - RESEARCH-MAT-5F8379F0BF21BA74EF2C 泡沫 · Reduced graphene oxide-polypyrrole-polyurethane foam1 aerogel,triaxially hot-pressed / Reduced graphene oxide-polypyrrole-polyurethane foam1 aerogel,triaxially hot-pressed：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-631A8B113DF29FDAD643 泡沫 · Reduced graphene oxide-polypyrrole-polyurethane foam1 aerogel,uniaxially hot-pressed / Reduced graphene oxide-polypyrrole-polyurethane foam1 aerogel,uniaxially hot-pressed：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-DAE15E95D905CC4D777A 泡沫 · Reduced graphene oxide-polypyrrole-polyurethane foam2 aerogel,uniaxially hot-pressed / Reduced graphene oxide-polypyrrole-polyurethane foam2 aerogel,uniaxially hot-pressed：缺 E;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-518FF41699EC59A33AFA 泡沫 · Rogers BISCO MS80 open-cell platinum-cured silicone foam / Rogers BISCO MS80 open-cell platinum-cured silicone foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A4A448067D59DC39E467 泡沫 · Rogers BISCO MS96 open-cell platinum-cured silicone foam / Rogers BISCO MS96 open-cell platinum-cured silicone foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-A60936225216D10A7E99 泡沫 · RokopolF3600/Ongronat1080 flexibleopen-cellpolyurethanefoam,halloysitenanofiller5php / RokopolF3600/Ongronat1080 flexibleopen-cellpolyurethanefoam,halloysitenanofiller5php：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-31F14AD59B553F541042 泡沫 · RokopolF3600/Ongronat1080 flexibleopen-cellpolyurethanefoam,unfilledcontrol / RokopolF3600/Ongronat1080 flexibleopen-cellpolyurethanefoam,unfilledcontrol：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FC9156ABCEBD6E8F73E8 泡沫 · Sawbones closed-cell rigid polyurethane foam PCF10 / Sawbones closed-cell rigid polyurethane foam PCF10：缺 nu；已有完整组0、缺项组1。
@@ -272,6 +363,53 @@
 - RESEARCH-MAT-77C30E01E2BD1614B74B 泡沫 · Vacuum/mechanically processed Nylon6 closed-cell foam / Vacuum/mechanically processed Nylon6 closed-cell foam：缺 E;nu；已有完整组0、缺项组8。
 - RESEARCH-MAT-9A6831B42C76955197CE 泡沫 · Viscoelastic polyurethane foam vPU-REF without biopolyol / Viscoelastic polyurethane foam vPU-REF without biopolyol：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-18089445AF935A4A855A 泡沫 · Vitafoam Vasco40 open-cell urethane memory foam / Vitafoam Vasco40 open-cell urethane memory foam：缺 nu；已有完整组0、缺项组2。
+- RESEARCH-MAT-6266B2088BB4864C40CC 泡沫 · Zotefoams ECOZOTE® LDR18 foam / Zotefoams ECOZOTE® LDR18 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-65065FFBDA038648C437 泡沫 · Zotefoams ECOZOTE® LDR27 foam / Zotefoams ECOZOTE® LDR27 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-FE906A18C92CF4C9F033 泡沫 · Zotefoams ECOZOTE® LDR29 foam / Zotefoams ECOZOTE® LDR29 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-14FA53B1637298761DDF 泡沫 · Zotefoams ECOZOTE® LDR45 foam / Zotefoams ECOZOTE® LDR45 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-DF5AA0AFF4B4653DD92C 泡沫 · Zotefoams ECOZOTE® PE/R30 MBK foam / Zotefoams ECOZOTE® PE/R30 MBK foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-20628AF321803A7F392C 泡沫 · Zotefoams EVAZOTE® EV30 foam / Zotefoams EVAZOTE® EV30 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-72065860CA6082D6DD7D 泡沫 · Zotefoams EVAZOTE® EV45CN foam / Zotefoams EVAZOTE® EV45CN foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F32A868B4A6FC71E71FF 泡沫 · Zotefoams EVAZOTE® EV50 foam / Zotefoams EVAZOTE® EV50 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4E9E18F3F7097261173D 泡沫 · Zotefoams EVAZOTE® VA35 foam / Zotefoams EVAZOTE® VA35 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A63836137611375AA273 泡沫 · Zotefoams PLASTAZOTE® HD110 foam / Zotefoams PLASTAZOTE® HD110 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-2874DA2721692D9D3082 泡沫 · Zotefoams PLASTAZOTE® HD115 foam / Zotefoams PLASTAZOTE® HD115 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F773D8A377F44391E6E2 泡沫 · Zotefoams PLASTAZOTE® HD30 foam / Zotefoams PLASTAZOTE® HD30 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-003B6119EDA4D1421319 泡沫 · Zotefoams PLASTAZOTE® HD60 foam / Zotefoams PLASTAZOTE® HD60 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CE8FCB334136663D561C 泡沫 · Zotefoams PLASTAZOTE® HD80 foam / Zotefoams PLASTAZOTE® HD80 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-83EEE6434F96AA73FD7E 泡沫 · Zotefoams PLASTAZOTE® LA15 foam / Zotefoams PLASTAZOTE® LA15 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-7020FDA7FAE77B75A8F2 泡沫 · Zotefoams PLASTAZOTE® LD15 FM foam / Zotefoams PLASTAZOTE® LD15 FM foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-62FBC13D6E41EA3D0603 泡沫 · Zotefoams PLASTAZOTE® LD15 foam / Zotefoams PLASTAZOTE® LD15 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B4B99F7037AB964CC938 泡沫 · Zotefoams PLASTAZOTE® LD18 foam / Zotefoams PLASTAZOTE® LD18 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-456FA96CCC58FF91539F 泡沫 · Zotefoams PLASTAZOTE® LD24 FM foam / Zotefoams PLASTAZOTE® LD24 FM foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-41494620BDB68F22693F 泡沫 · Zotefoams PLASTAZOTE® LD24 FR foam / Zotefoams PLASTAZOTE® LD24 FR foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-14228D08C3832C227D96 泡沫 · Zotefoams PLASTAZOTE® LD24 foam / Zotefoams PLASTAZOTE® LD24 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-FA7CED3A18490F2CBD19 泡沫 · Zotefoams PLASTAZOTE® LD29 foam / Zotefoams PLASTAZOTE® LD29 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-AD01C593381828E5B0AB 泡沫 · Zotefoams PLASTAZOTE® LD30 SD foam / Zotefoams PLASTAZOTE® LD30 SD foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-158762D28A05B3E97849 泡沫 · Zotefoams PLASTAZOTE® LD32 CN foam / Zotefoams PLASTAZOTE® LD32 CN foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-40DBCC294F222FB0E33F 泡沫 · Zotefoams PLASTAZOTE® LD33 foam / Zotefoams PLASTAZOTE® LD33 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-ED570C9848E0D46C06C4 泡沫 · Zotefoams PLASTAZOTE® LD45 FR foam / Zotefoams PLASTAZOTE® LD45 FR foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8A5BC9CF9F9A1022125B 泡沫 · Zotefoams PLASTAZOTE® LD45 foam / Zotefoams PLASTAZOTE® LD45 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F1F9B01EBFAB74C1EF7D 泡沫 · Zotefoams PLASTAZOTE® LD50 CN foam / Zotefoams PLASTAZOTE® LD50 CN foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E8CD73BDE5557D442F1E 泡沫 · Zotefoams PLASTAZOTE® LD60 foam / Zotefoams PLASTAZOTE® LD60 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A83A77651F76428E609F 泡沫 · Zotefoams PLASTAZOTE® LD70 foam / Zotefoams PLASTAZOTE® LD70 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-65C42B0BC62655CBFB41 泡沫 · Zotefoams PLASTAZOTE® MP15 FR foam / Zotefoams PLASTAZOTE® MP15 FR foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-ABA2CD3B0716C1AC59C3 泡沫 · Zotefoams PLASTAZOTE® MP15 foam / Zotefoams PLASTAZOTE® MP15 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-97A62D4CA1C73A9F47FD 泡沫 · Zotefoams PLASTAZOTE® MP24 foam / Zotefoams PLASTAZOTE® MP24 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-48C7FBFEA21949BFB31B 泡沫 · Zotefoams PLASTAZOTE® MP33 foam / Zotefoams PLASTAZOTE® MP33 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-07593727DD2BC0646131 泡沫 · Zotefoams PLASTAZOTE® MP45 foam / Zotefoams PLASTAZOTE® MP45 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CCBD629310AB1CEAC8D7 泡沫 · Zotefoams PLASTAZOTE® MT35 foam / Zotefoams PLASTAZOTE® MT35 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-365954C2A8905993391F 泡沫 · Zotefoams PLASTAZOTE® PK80 foam / Zotefoams PLASTAZOTE® PK80 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-101E02F75FD3A375D88D 泡沫 · Zotefoams Plastazote® LD27 foam / Zotefoams Plastazote® LD27 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C6CFD1A677407B28231A 泡沫 · Zotefoams Supazote® EM26 foam / Zotefoams Supazote® EM26 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E9EB3AAFB690D3FA24A1 泡沫 · Zotefoams ZOTEK® F OSU F foam / Zotefoams ZOTEK® F OSU F foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8E303DC418F42C00D923 泡沫 · Zotefoams ZOTEK® F OSU R foam / Zotefoams ZOTEK® F OSU R foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5DD3013B3107F1674D6C 泡沫 · Zotefoams ZOTEK® F OSU SR foam / Zotefoams ZOTEK® F OSU SR foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B13F4945B7DDC3EE3643 泡沫 · Zotefoams ZOTEK® F30 foam / Zotefoams ZOTEK® F30 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-DF6958D87A3C24E70F60 泡沫 · Zotefoams ZOTEK® F40 HT foam / Zotefoams ZOTEK® F40 HT foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CA03A1A5735CAAC22054 泡沫 · Zotefoams ZOTEK® F74 HT foam / Zotefoams ZOTEK® F74 HT foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E4C5DCC8342D7795D710 泡沫 · Zotefoams ZOTEK® T P55 foam / Zotefoams ZOTEK® T P55 foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5DC6B6CC0D0EC5E24836 泡沫 · Zotefoams ZOTEK® T75 foam / Zotefoams ZOTEK® T75 foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-324381402B19C64CA97B 玻璃 · CDGM H-LaK72 optical glass / CDGM H-LaK72 optical glass：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-22D3E6A701986E001BB7 玻璃 · CDGM H-TF21 optical glass / CDGM H-TF21 optical glass：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-349C31B73C503E508FBE 玻璃 · CDGM H-TF29 optical glass / CDGM H-TF29 optical glass：缺 E;nu；已有完整组0、缺项组1。
@@ -1535,6 +1673,10 @@
 - RESEARCH-MAT-740BEC01E4DFAD8E3467 木材 · Alder, red / Alder, red：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-359E92ADE1A88A21D51B 木材 · American elm / American elm：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-F429D3010282F36E83D7 木材 · Atlantic white cedar / Atlantic white cedar：缺 nu;rho；已有完整组0、缺项组2。
+- RESEARCH-MAT-E24D94DAFADF5684F427 木材 · BALTEK SBC kiln-dried Ochroma pyramidale end-grain balsa core SBC.100 / BALTEK SBC kiln-dried Ochroma pyramidale end-grain balsa core SBC.100：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4CA3EDE976306022EDC1 木材 · BALTEK SBC kiln-dried Ochroma pyramidale end-grain balsa core SBC.150 / BALTEK SBC kiln-dried Ochroma pyramidale end-grain balsa core SBC.150：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-508A9737FE156A2A5540 木材 · BALTEK SBC kiln-dried Ochroma pyramidale end-grain balsa core SBC.50 / BALTEK SBC kiln-dried Ochroma pyramidale end-grain balsa core SBC.50：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-ECE77FD7558F9E9C313E 木材 · BALTEK SBC kiln-dried Ochroma pyramidale end-grain balsa core SBC.80 / BALTEK SBC kiln-dried Ochroma pyramidale end-grain balsa core SBC.80：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-3F95E978EC90F9B3F19C 木材 · Baldcypress / Baldcypress：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-C24D54027BC353B6FDC6 木材 · Balsam fir / Balsam fir：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-7FB43586A069EEB8DD84 木材 · Balsam poplar / Balsam poplar：缺 nu;rho；已有完整组0、缺项组2。
