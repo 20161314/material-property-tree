@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3827；三项各有来源值1682。
+材料3830；三项各有来源值1683。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -1819,6 +1819,8 @@
 - RESEARCH-MAT-A485A61500971BC6FE41 纺织材料 · Duck down feather barb / Duck down feather barb：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-75A10C43BCF8AB66C20A 纺织材料 · Duck down feather material / Duck down feather material：缺 E;nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-9A9EB51F11DB4836A02E 纺织材料 · Eider down feather barb / Eider down feather barb：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-C650B35E78F57FE4AA17 纺织材料 · Electrospun 0.5 wt% BNNT-PMMA microfiber mesh / Electrospun 0.5 wt% BNNT-PMMA microfiber mesh：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-A4601CAAF1732562F25C 纺织材料 · Electrospun PMMA microfiber mesh / Electrospun PMMA microfiber mesh：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-D170BE6D148E577E34CA 纺织材料 · Electrospun polyacrylonitrile nanofibre mat / Electrospun polyacrylonitrile nanofibre mat：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-E45F6688EEC3D5839DF9 纺织材料 · ExxonMobil Achieve 6936G2 polypropylene meltblown nonwoven fabric / ExxonMobil Achieve 6936G2 polypropylene meltblown nonwoven fabric：缺 E;nu；已有完整组0、缺项组16。
 - RESEARCH-MAT-E4AAD2FC76C4AD4E7B03 纺织材料 · FDM SUNLU PLA cylindrical-link structured fabric / FDM SUNLU PLA cylindrical-link structured fabric：缺 nu;rho；已有完整组0、缺项组1。
@@ -1877,9 +1879,9 @@
 - RESEARCH-MAT-6DB985E616DEA86EC914 纺织材料 · Machine-embroidered polyester lace, rotating semi-rigid squares / Machine-embroidered polyester lace, rotating semi-rigid squares：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-F011C3568AD3138D952F 纺织材料 · Machine-embroidered polyester lace, square grid / Machine-embroidered polyester lace, square grid：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-9CA3CD2D1EE1E801CEDF 纺织材料 · Mesh acoustic fibre sheet, chemistry unspecified / Mesh acoustic fibre sheet, chemistry unspecified：缺 E;nu；已有完整组0、缺项组1。
-- MAT-TEXTILE-MESH-BROAD 网布/网眼织物（纤维/结构未详） / Mesh textile, fibre/construction unspecified：缺 nu；已有完整组0、缺项组5。
+- MAT-TEXTILE-MESH-BROAD 网布/网眼织物（纤维/结构未详） / Mesh textile, fibre/construction unspecified：缺 nu；已有完整组0、缺项组7。
 - RESEARCH-MAT-07B89ABC8EA60194C479 纺织材料 · Meta-aramid/Para-aramid Woven/non-woven composite barrier fabric / Meta-aramid/Para-aramid Woven/non-woven composite barrier fabric：缺 E;nu；已有完整组0、缺项组1。
-- MAT-TEXTILE-MICROFIBER-BROAD 超细纤维织物（纤维组成/结构未详） / Microfiber textile, fibre/construction unspecified：缺 E;nu；已有完整组0、缺项组1。
+- MAT-TEXTILE-MICROFIBER-BROAD 超细纤维织物（纤维组成/结构未详） / Microfiber textile, fibre/construction unspecified：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-BA493061411DE4743CF3 纺织材料 · Modacrylic fibre MAC1.7 / Modacrylic fibre MAC1.7：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-52E3741E8104B11F2E25 纺织材料 · Modacrylic microfibre MAC1.0 / Modacrylic microfibre MAC1.0：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-821BA8DF6DE37CD38CBE 纺织材料 · Mulberry silkworm fiber natural fibre / Mulberry silkworm fiber natural fibre：缺 nu；已有完整组0、缺项组1。
@@ -2040,8 +2042,8 @@
 - RESEARCH-MAT-AA060430DFFED406EE34 木材 · Eastern hemlock / Eastern hemlock：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-DCF776E6D0B43AE58017 木材 · Eastern redcedar / Eastern redcedar：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-6A5D43585E4FC1917D9B 木材 · Eastern white pine / Eastern white pine：缺 nu;rho；已有完整组0、缺项组2。
+- RESEARCH-MAT-BC08E89A9C718847E7D5 木材 · Elm wood (Ulmus sp.; source-pooled Hokkaido elm species) / Elm wood (Ulmus sp.; source-pooled Hokkaido elm species)：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-C971F99FA4DC48D4C34E 木材 · Elm wood(Ulmus sp.)in Frey-Amon official wood lexicon / Elm wood(Ulmus sp.)in Frey-Amon official wood lexicon：缺 nu；已有完整组0、缺项组1。
-- MAT-WOOD-ELM-BROAD 榆木（树种/含水率未详） / Elm wood, species/moisture unspecified：缺 nu；已有完整组0、缺项组7。
 - RESEARCH-MAT-6E68F8A23AF4CA1DBD5B 木材 · Engelmann spruce / Engelmann spruce：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-39F6E9454F7D637D2AB9 木材 · Grand fir / Grand fir：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-5134F47441BAB1BF9AEC 木材 · Green ash / Green ash：缺 nu;rho；已有完整组0、缺项组2。

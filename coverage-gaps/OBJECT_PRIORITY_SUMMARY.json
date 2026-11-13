@@ -5,13 +5,13 @@
     "targetCount": 211,
     "materialsWithCompleteRecord": 138,
     "materialsWithIncompleteRecord": 110,
-    "materialsWithE": 166,
-    "materialsWithNu": 152,
+    "materialsWithE": 167,
+    "materialsWithNu": 153,
     "materialsWithRho": 179,
-    "materialsWithAllThreeFromAnyGroup": 152,
+    "materialsWithAllThreeFromAnyGroup": 153,
     "materialsWithoutAnyValue": 30,
-    "coveragePercent": 72.03791469194313,
-    "missingMaterials": 59
+    "coveragePercent": 72.51184834123222,
+    "missingMaterials": 58
   },
   "unlinkedComplete": {
     "targetCount": 1530,
@@ -24,27 +24,27 @@
     "materialsWithoutAnyValue": 0
   },
   "researchCandidates": {
-    "targetCount": 2086,
+    "targetCount": 2089,
     "materialsWithCompleteRecord": 0,
-    "materialsWithIncompleteRecord": 2085,
-    "materialsWithE": 1527,
-    "materialsWithNu": 113,
+    "materialsWithIncompleteRecord": 2088,
+    "materialsWithE": 1529,
+    "materialsWithNu": 114,
     "materialsWithRho": 1401,
     "materialsWithAllThreeFromAnyGroup": 0,
     "materialsWithoutAnyValue": 1
   },
   "allResearch": {
-    "targetCount": 3827,
+    "targetCount": 3830,
     "materialsWithCompleteRecord": 1663,
-    "materialsWithIncompleteRecord": 2224,
-    "materialsWithE": 3223,
-    "materialsWithNu": 1795,
+    "materialsWithIncompleteRecord": 2227,
+    "materialsWithE": 3226,
+    "materialsWithNu": 1797,
     "materialsWithRho": 3110,
-    "materialsWithAllThreeFromAnyGroup": 1682,
+    "materialsWithAllThreeFromAnyGroup": 1683,
     "materialsWithoutAnyValue": 31
   },
   "input_sha256": {
-    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "b0e5f29cc5adb9b72d9cd63efa3dfc64a8d5640c46387c5d8b565e97e3a1cf25"
+    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "7054909e5b8e41ab23e0a2029c6cf4890cdae334e633dd82350e3b5423d31788"
   },
   "complete_record_count_unchanged_by_cohort": true,
   "incomplete_record_count_unchanged_by_cohort": true,

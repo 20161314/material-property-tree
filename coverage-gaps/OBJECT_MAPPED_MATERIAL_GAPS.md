@@ -1,10 +1,10 @@
 # 当前物体关联材料补缺清单
 
-物体关联材料 211；三项各有来源值 152；缺项 59；覆盖率 72.04%。
+物体关联材料 211；三项各有来源值 153；缺项 58；覆盖率 72.51%。
 
 覆盖范围含当前已接受的来源标签和合理近似材料选项；不代表每个组件材料身份均已核定，也不代表商品实测或可自动赋值。不同来源分别提供三项仍不拼成完整来源组。
 
-无关联物体但三项齐全材料 1530 保留；无关联物体且缺项 2086 单列研究候选。分组变化不算补齐证据。
+无关联物体但三项齐全材料 1530 保留；无关联物体且缺项 2089 单列研究候选。分组变化不算补齐证据。
 
 - `MAT-NATURAL-DEAD-LEAF-GRASS-BROAD`：`dead_leaf_grass` 植物有机材料（NVIDIA 来源宽标签） / Dead leaf/grass plant material, NVIDIA source broad label；缺 **E;nu**；关联物体16、组件16。
 - `MAT-NATURAL-DRIED-MOSS-SOURCE-BROAD`：干燥苔藓（种类/处理未详） / Dried moss, species/treatment unspecified；缺 **E;nu**；关联物体1、组件1。
@@ -44,7 +44,7 @@
 - `MAT-TEXTILE-FLANNELETTE-SOURCE-BROAD`：绒布/法兰绒类底材（纤维未详） / Flannelette material, fibre unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `MAT-TEXTILE-HEMP-ROPE-SOURCE-BROAD`：麻绳（纤维种/结构未详） / Hemp rope, fibre species/construction unspecified；缺 **nu**；关联物体1、组件1。
 - `MAT-TEXTILE-MESH-BROAD`：网布/网眼织物（纤维/结构未详） / Mesh textile, fibre/construction unspecified；缺 **nu**；关联物体6、组件6。
-- `MAT-TEXTILE-MICROFIBER-BROAD`：超细纤维织物（纤维组成/结构未详） / Microfiber textile, fibre/construction unspecified；缺 **E;nu**；关联物体20、组件20。
+- `MAT-TEXTILE-MICROFIBER-BROAD`：超细纤维织物（纤维组成/结构未详） / Microfiber textile, fibre/construction unspecified；缺 **nu**；关联物体20、组件20。
 - `MAT-TEXTILE-POLYESTER-ACRYLIC-BLEND`：聚酯/腈纶混纺（比例/结构未详） / Polyester/acrylic textile blend, ratio/construction unspecified；缺 **E;nu;rho**；关联物体8、组件8。
 - `MAT-TEXTILE-POLYESTER-LINEN-BLEND`：聚酯/亚麻混纺（比例/结构未详） / Polyester/linen textile blend, ratio/construction unspecified；缺 **E;nu;rho**；关联物体118、组件118。
 - `MAT-TEXTILE-POLYESTER-LINEN-COTTON-BLEND`：聚酯/亚麻/棉混纺（比例/结构未详） / Polyester/linen/cotton textile blend, ratio/construction unspecified；缺 **E;nu;rho**；关联物体2、组件2。
@@ -63,5 +63,4 @@
 - `SOURCE-MAT-66DD06D9FFA9BF4AFC73`：绒面材料（源标签）（来源构造标签） / suede — source-labelled material, finer composition unspecified；缺 **E;nu**；关联物体14、组件14。
 - `MAT-RATTAN-BROAD`：藤材/藤编（种类/结构未详） / Rattan, species/construction unspecified；缺 **nu**；关联物体10、组件11。
 - `MAT-RATTAN-TWINE-SOURCE-BROAD`：藤/绳复合编织（绳纤维未详） / Rattan/twine composite weave, twine fibre unspecified；缺 **E;nu;rho**；关联物体1、组件1。
-- `MAT-WOOD-ELM-BROAD`：榆木（树种/含水率未详） / Elm wood, species/moisture unspecified；缺 **nu**；关联物体6、组件7。
 - `MAT-WOOD-PAINTED-BROAD`：涂装木材（木种/涂层未详） / Painted wood, species/coating unspecified；缺 **nu**；关联物体1、组件3。
