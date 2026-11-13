@@ -28,19 +28,19 @@
     <a href="scaling.html">扩充总览</a>
     <a href="research.html">完整与缺项证据树</a>
     <a href="evidence-catalog.html?collection=sciglass">外部玻璃组成身份（分页）</a>
-    <a href="index.html">物体与材料映射树</a>
+    <a href="research.html">材料物性来源树</a>
     <a href="references.html">材料标签与来源对照</a>
   </nav>
   <main class="phase1-content">
     <p id="coverage-scope-note">覆盖分母载入中。外部数据库组成身份单列分页，不与规范树节点直接相加。</p>
     <section class="phase1-metrics" aria-label="材料覆盖统计">
-      <div><span>有完整组材料</span><strong id="stat-covered">1622/3067 规范材料</strong><small id="coverage-denominator-note">当前分母：最新规范材料全库（历史目标可切换）</small></div>
-      <div><span>有缺项组材料</span><strong id="stat-partial-materials">1479/3067 规范材料</strong><small>可能与有完整组材料重叠，不能相加</small></div>
-      <div><span>有 E 来源值</span><strong id="stat-e-coverage">2674/3067 规范材料</strong><small>值可来自完整组或不完整组</small></div>
-      <div><span>有 ν 来源值</span><strong id="stat-nu-coverage">1730/3067 规范材料</strong><small>值可来自完整组或不完整组</small></div>
-      <div><span>有 ρ 来源值</span><strong id="stat-rho-coverage">2418/3067 规范材料</strong><small>值可来自完整组或不完整组</small></div>
-      <div><span>E、ν、ρ 均有来源值</span><strong id="stat-all-properties">1626/3067 规范材料</strong><small>不要求来自同一来源组</small></div>
-      <div><span>尚无任何来源值</span><strong id="stat-no-values">38/3067 规范材料</strong><small>仅指当前已入账来源，不代表全网不存在</small></div>
+      <div><span>有完整组材料</span><strong id="stat-covered">1622/3064 规范材料</strong><small id="coverage-denominator-note">当前分母：最新规范材料全库（历史目标可切换）</small></div>
+      <div><span>有缺项组材料</span><strong id="stat-partial-materials">1479/3064 规范材料</strong><small>可能与有完整组材料重叠，不能相加</small></div>
+      <div><span>有 E 来源值</span><strong id="stat-e-coverage">2674/3064 规范材料</strong><small>值可来自完整组或不完整组</small></div>
+      <div><span>有 ν 来源值</span><strong id="stat-nu-coverage">1730/3064 规范材料</strong><small>值可来自完整组或不完整组</small></div>
+      <div><span>有 ρ 来源值</span><strong id="stat-rho-coverage">2418/3064 规范材料</strong><small>值可来自完整组或不完整组</small></div>
+      <div><span>E、ν、ρ 均有来源值</span><strong id="stat-all-properties">1626/3064 规范材料</strong><small>不要求来自同一来源组</small></div>
+      <div><span>尚无任何来源值</span><strong id="stat-no-values">35/3064 规范材料</strong><small>仅指当前已入账来源，不代表全网不存在</small></div>
       <div><span>文档/数据库引文键</span><strong id="stat-doc-keys">15,291</strong><small>不是独立来源数</small></div>
     </section>
     <section class="phase1-policy" aria-label="阶段定义">
@@ -60,7 +60,7 @@
           <p id="result-count">载入中</p>
         </div>
         <div class="phase1-filters">
-          <label><span class="sr-only">材料统计范围</span><select id="scope-filter"><option value="canonical">最新规范材料全库</option><option value="historical">历史 193 项追踪</option></select></label>
+          <label><span class="sr-only">材料统计范围</span><select id="scope-filter"><option value="canonical">最新规范材料全库</option><option value="historical">原193项中的190个非流体目标</option></select></label>
           <label><span class="sr-only">搜索材料</span><input id="material-search" type="search" placeholder="搜索材料名、ID 或来源标签"></label>
           <label><span class="sr-only">筛选覆盖状态</span><select id="status-filter"><option value="all">全部状态</option><option value="covered">有完整来源组</option><option value="partial">有不完整来源组</option><option value="missing">暂无来源组</option><option value="liquid">液体豁免</option></select></label>
           <label><span class="sr-only">筛选材料家族</span><select id="family-filter"><option value="all">全部材料家族</option></select></label>
@@ -80,7 +80,7 @@
     </section>
     <nav class="phase1-filters" aria-label="材料列表分页"><button type="button" id="materials-prev">上一页</button><span id="materials-page"></span><button type="button" id="materials-next">下一页</button></nav>
     <details class="unmapped-section" id="unmapped-section">
-      <summary><strong><span id="unmapped-summary-count">63</span> 条记录尚未关联到历史 193 项材料目标</strong><span>展开查看原文材料身份与来源</span></summary>
+      <summary><strong><span id="unmapped-summary-count">63</span> 条记录尚未关联到原193项中的190个非流体材料目标</strong><span>展开查看原文材料身份与来源</span></summary>
       <p id="unmapped-note">这些完整记录仍计入研究总账，但当前没有纳入任一目标的精确、细分或家族关系，因此不影响目标覆盖统计。</p>
       <div class="unmapped-table-wrap"><table><thead><tr><th>记录 ID</th><th>来源材料定义</th><th>家族</th><th>E / ν / ρ</th><th>来源</th><th>定位</th></tr></thead><tbody id="unmapped-table-body"></tbody></table></div>
     </details>
@@ -89,7 +89,7 @@
       <p>阶段账本与复核报告由项目中的 <code>audit/material_range_phase1_v1/</code> 维护。</p>
     </footer>
   </main>
-  <script src="phase1-ranges-data.js?v=182a11874ac5"></script>
-  <script src="phase1-ranges.js?v=dde71772e24a"></script>
+  <script src="phase1-ranges-data.js?v=fb87debc748e"></script>
+  <script src="phase1-ranges.js?v=7462391a4568"></script>
 </body>
 </html>

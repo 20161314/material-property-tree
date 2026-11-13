@@ -73,14 +73,14 @@
       "stat-doc-keys": fmt(current.sourceDocumentKeys),
     };
     Object.entries(values).forEach(([id, value]) => { $(id).textContent = value; });
-    $("unmapped-note").textContent = `这 ${fmt(data.summary.unmappedRecords)} 条完整记录未关联到历史 193 项目标，仍计入研究总账；其中部分材料已在最新规范材料全库中单独建叶。`;
+    $("unmapped-note").textContent = `这 ${fmt(data.summary.unmappedRecords)} 条完整记录未关联到原193项中的190个非流体目标，仍计入研究总账；其中部分材料已在最新规范材料全库中单独建叶。`;
     $("stage-progress-copy").textContent = `${Number(current.reviewedRecords).toLocaleString("en")} 条；持续扩充，不设数量上限`;
     $("unmapped-summary-count").textContent = fmt(data.summary.unmappedRecords);
     $("coverage-copy").textContent = isCanonical() ? "规范材料及已审参考覆盖；子树汇总与外库组成身份不重复计为新材料。" : `精确身份/原文标签 ${current.exactTargets} 项 · 细分材料参考 ${current.subtypeTargets} 项 · 家族参考 ${current.familyReferenceTargets} 项`;
     $("origin-copy").textContent = Object.entries(current.origins || {}).map(([key, count]) => `${originNames[key] || key} ${fmt(count)}`).join("；");
-    $("coverage-scope-note").textContent = isCanonical() ? "覆盖分母：最新规范材料全库。外部数据库组成身份单列分页，不与树节点直接相加。" : (hasCanonical ? "当前为历史 193 项目标追踪；最新规范材料全库可在筛选器切换。" : "当前为历史 193 项目标追踪；最新全库覆盖数据尚未载入。");
-    $("table-title").textContent = isCanonical() ? "最新规范材料全库" : "历史 193 项材料目标";
-    $("coverage-denominator-note").textContent = isCanonical() ? "分母为最新规范材料并集；细材料可无对应物体" : "分母为历史 193 项目标；保留原追踪口径";
+    $("coverage-scope-note").textContent = isCanonical() ? "覆盖分母：最新规范材料全库。外部数据库组成身份单列分页，不与树节点直接相加。" : (hasCanonical ? "当前为原193项中的190个非流体目标追踪；最新规范材料全库可在筛选器切换。" : "当前为原193项中的190个非流体目标追踪；最新全库覆盖数据尚未载入。");
+    $("table-title").textContent = isCanonical() ? "最新规范材料全库" : "原193项中的190个非流体材料目标";
+    $("coverage-denominator-note").textContent = isCanonical() ? "分母为最新规范材料并集；细材料可无对应物体" : "分母为原193项中的190个非流体目标；保留原追踪口径";
   }
 
   if (summary.externalCatalogUrl) {

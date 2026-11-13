@@ -1,0 +1,11 @@
+.dataset-views { display:flex; gap:8px; padding:16px 36px; border-block:1px solid #dce5e2; background:#f4f8f6; flex-wrap:wrap; }
+.dataset-views a { display:inline-flex; align-items:center; padding:12px 20px; border:1px solid #d4e0db; border-radius:8px; color:#345b4d; font-size:16px; font-weight:600; text-decoration:none; background:#fff; }
+.dataset-views a[aria-current="page"] { background:#246b56; color:#fff; border-color:#246b56; }
+.dataset-views a:hover { box-shadow:0 2px 5px #173e2714; }
+.dataset-views a:focus-visible { outline:3px solid #3f9478; outline-offset:3px; }
+.coverage-progress { margin:16px 36px; padding:16px 20px; border:1px solid #dce5e2; border-radius:10px; background:#fff; }
+.coverage-progress p { margin:6px 0; font-size:16px; line-height:1.6; }
+.coverage-progress strong { color:#246b56; }
+.coverage-progress a { color:#246b56; text-underline-offset:3px; }
+.archive-notice { padding:16px 36px; margin:0; background:#fff4dc; line-height:1.6; }
+@media(max-width:600px) { .dataset-views {padding:12px 16px;} .dataset-views a{padding:10px 12px;font-size:14px;} .coverage-progress{margin:12px 16px;} }

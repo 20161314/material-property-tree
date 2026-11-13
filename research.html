@@ -10,6 +10,7 @@
   <title>材料物性来源树</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles.css?v=238c8dc7d668">
+  <link rel="stylesheet" href="dataset-views.css?v=1763c8da51bc">
 </head>
 <body>
   <a class="skip-link" href="#tree-canvas">跳到材料树</a>
@@ -24,20 +25,20 @@
       <dl class="dataset-stats" aria-label="核心数据统计">
         <div><dt>完整数据组</dt><dd id="stat-complete-records">6,148</dd></div>
         <div><dt>不完整数据组</dt><dd id="stat-partial-records">93,999</dd></div>
-        <div><dt>规范材料节点总数</dt><dd id="stat-canonical-materials">3,067</dd></div>
+        <div><dt>当前非流体材料节点</dt><dd id="stat-canonical-materials">3,064</dd></div>
         <div><dt>主账来源材料身份</dt><dd id="stat-source-identities">3,001</dd></div>
-        <div><dt>有完整组材料</dt><dd id="stat-complete-materials">1,622/3,067 规范材料</dd></div>
-        <div><dt>有缺项组材料</dt><dd id="stat-partial-materials">1,479/3,067 规范材料</dd></div>
-        <div><dt>有 E 来源值</dt><dd id="stat-e-materials">2,674/3,067 规范材料</dd></div>
-        <div><dt>有 ν 来源值</dt><dd id="stat-nu-materials">1,730/3,067 规范材料</dd></div>
-        <div><dt>有 ρ 来源值</dt><dd id="stat-rho-materials">2,418/3,067 规范材料</dd></div>
-        <div><dt>三项各有来源值</dt><dd id="stat-all-properties">1,626/3,067 规范材料</dd></div>
-        <div><dt>尚无任何来源值</dt><dd id="stat-no-values">38/3,067 规范材料</dd></div>
+        <div><dt>有完整组材料</dt><dd id="stat-complete-materials">1,622/3,064 规范材料</dd></div>
+        <div><dt>有缺项组材料</dt><dd id="stat-partial-materials">1,479/3,064 规范材料</dd></div>
+        <div><dt>有 E 来源值</dt><dd id="stat-e-materials">2,674/3,064 规范材料</dd></div>
+        <div><dt>有 ν 来源值</dt><dd id="stat-nu-materials">1,730/3,064 规范材料</dd></div>
+        <div><dt>有 ρ 来源值</dt><dd id="stat-rho-materials">2,418/3,064 规范材料</dd></div>
+        <div><dt>三项各有来源值</dt><dd id="stat-all-properties">1,626/3,064 规范材料</dd></div>
+        <div><dt>尚无任何来源值</dt><dd id="stat-no-values">35/3,064 规范材料</dd></div>
         <div><dt>文档/数据库引文键</dt><dd id="stat-source-documents">15,291</dd></div>
         <div><dt>隔离仿真预设</dt><dd id="stat-simulation-presets">3,518</dd></div>
       </dl>
     </div>
-  </header>
+  </header><nav class="dataset-views" aria-label="数据双表"><a href="scaling.html">物体与材料扩充总览</a><a href="research.html" aria-current="page">材料物性来源树</a></nav><section class="coverage-progress" aria-label="当前三项覆盖率"><p><strong>三项各有来源值：1,626 / 3,064（53.1%）</strong>；同组完整三元组：1,622 / 3,064（52.9%）。</p><p>已排除3个明确流体目标。缺1项541个、缺2项862个、三项均缺35个。已审细分材料参考计入粗节点覆盖；不代表商品实测。</p><p><a href="coverage-gaps/ACTIVE_NONFLUID_MISSING_PROPERTIES.csv" download>下载逐材料缺项名单</a> · <a href="coverage-gaps/FAMILY_GAP_REPORT.md">按材料族查看全部缺口</a> · <a href="phase1-ranges.html">查看各材料原始数值及来源</a> · <a href="mapping-archive.html">历史对象赋值映射树</a></p></section>
   <p class="node-note" id="material-coverage-scope">全库覆盖统计载入中；外部数据库组成身份另列。</p>
   <section class="scope-note collapsed" id="scope-note" aria-label="数据解释边界">
     <div class="scope-note-bar">
@@ -67,10 +68,10 @@
   </details>
   <nav class="toolbar" aria-label="材料树工具栏">
     <a class="research-view-link" href="scaling.html">扩充总览</a>
-    <a class="research-view-link" href="index.html">返回物体与材料映射树</a>
+    <a class="research-view-link" href="mapping-archive.html">历史对象赋值映射树</a>
     <a class="research-view-link" href="references.html">材料标签与来源对照</a>
     <a class="research-view-link" href="phase1-ranges.html">全库材料范围与覆盖</a>
-    <a class="research-view-link" href="phase1-ranges.html?scope=historical">历史 193 项追踪</a>
+    <a class="research-view-link" href="phase1-ranges.html?scope=historical">原193项中的190个非流体目标</a>
     <a class="research-view-link" href="evidence-catalog.html?collection=sciglass">外部玻璃组成身份（分页）</a>
     <div class="search-wrap">
       <i data-lucide="search" aria-hidden="true"></i>
@@ -118,7 +119,7 @@
   <noscript>此页面需要启用 JavaScript 才能显示交互式材料树。</noscript>
   <script src="vendor/d3.min.js?v=f2094bbf6141"></script>
   <script src="vendor/lucide.min.js?v=3411692820cb"></script>
-  <script src="research-data.js?v=d314830635f9"></script>
+  <script src="research-data.js?v=3bc4bf086e24"></script>
   <script src="app.js?v=5851127c5faf"></script>
 </body>
 </html>
