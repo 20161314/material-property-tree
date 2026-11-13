@@ -49,17 +49,17 @@
 
   const scopeFilter = $("scope-filter");
   const hasCanonical = Array.isArray(data.canonicalTargets) && Boolean(data.canonicalSummary);
-  scopeFilter.value = new URLSearchParams(window.location.search).get("scope") === "historical" || !hasCanonical ? "historical" : "canonical";
-  if (!hasCanonical) scopeFilter.options[0].disabled = true;
+  scopeFilter.value = "canonical"; // Current scope always follows the dynamic material union.
+  if (!hasCanonical) throw new Error("当前材料覆盖数据缺失");
   let page = 0;
   const pageSize = 100;
-  const isCanonical = () => scopeFilter.value === "canonical" && hasCanonical;
+  const isCanonical = () => true;
   const targets = () => isCanonical() ? data.canonicalTargets : data.targets;
   const summary = data.summary;
 
   function renderSummary() {
     const current = isCanonical() ? { ...data.summary, ...data.canonicalSummary } : data.summary;
-    const coverage = (value) => value === undefined ? "待汇总" : value + "/" + current.targetCount + (isCanonical() ? " 规范材料" : " 历史目标");
+    const coverage = (value) => value === undefined ? "待汇总" : value + "/" + current.targetCount + " 规范材料";
     const values = {
       "stat-records": fmt(current.tripletRecords),
       "stat-incomplete-records": fmt(current.incompleteRecords),
@@ -74,14 +74,14 @@
       "stat-doc-keys": fmt(current.sourceDocumentKeys),
     };
     Object.entries(values).forEach(([id, value]) => { $(id).textContent = value; });
-    $("unmapped-note").textContent = `这 ${fmt(data.summary.unmappedRecords)} 条完整记录未关联到原193项中的190个非流体目标，仍计入研究总账；其中部分材料已在最新规范材料全库中单独建叶。`;
+    $("unmapped-note").textContent = `这 ${fmt(data.summary.unmappedRecords)} 条主账完整记录尚未关联当前规范材料节点；仍保留在研究账中。`; 
     $("stage-progress-copy").textContent = `${Number(current.reviewedRecords).toLocaleString("en")} 条；持续扩充，不设数量上限`;
     $("unmapped-summary-count").textContent = fmt(data.summary.unmappedRecords);
-    $("coverage-copy").textContent = isCanonical() ? "规范材料及已审参考覆盖；子树汇总与外库组成身份不重复计为新材料。" : `精确身份/原文标签 ${current.exactTargets} 项 · 细分材料参考 ${current.subtypeTargets} 项 · 家族参考 ${current.familyReferenceTargets} 项`;
+    $("coverage-copy").textContent = "规范材料及已审细分参考覆盖；关联行不重复计为新来源组。";
     $("origin-copy").textContent = Object.entries(current.origins || {}).map(([key, count]) => `${originNames[key] || key} ${fmt(count)}`).join("；");
-    $("coverage-scope-note").textContent = isCanonical() ? "覆盖分母：最新规范材料全库。外部数据库组成身份单列分页，不与树节点直接相加。" : (hasCanonical ? "当前为原193项中的190个非流体目标追踪；最新规范材料全库可在筛选器切换。" : "当前为原193项中的190个非流体目标追踪；最新全库覆盖数据尚未载入。");
-    $("table-title").textContent = isCanonical() ? "最新规范材料全库" : "原193项中的190个非流体材料目标";
-    $("coverage-denominator-note").textContent = isCanonical() ? "分母为最新规范材料并集；细材料可无对应物体" : "分母为原193项中的190个非流体目标；保留原追踪口径";
+    $("coverage-scope-note").textContent = "覆盖分母：当前非液体规范材料并集。外库组成身份另列，不重复计入。";
+    $("table-title").textContent = "当前规范材料全库";
+    $("coverage-denominator-note").textContent = "分母随当前材料库更新；证据叶可以暂无对应物体";
   }
 
   if (summary.externalCatalogUrl) {
@@ -98,7 +98,6 @@
   });
 
   function statusLabel(target) {
-    if (target.status === "LIQUID_WAIVER") return ["液体豁免", "liquid"];
     if (target.completeRecordCount > 0) return ["有完整组", ""];
     if (target.incompleteRecordCount > 0) return ["仅有不完整组", "partial"];
     return ["暂无来源组", "missing"];
@@ -165,8 +164,7 @@
     let rows = targets().filter((target) => {
       if (status === "covered" && target.completeRecordCount === 0) return false;
       if (status === "partial" && target.incompleteRecordCount === 0) return false;
-      if (status === "missing" && (target.status === "LIQUID_WAIVER" || target.completeRecordCount > 0 || target.incompleteRecordCount > 0)) return false;
-      if (status === "liquid" && target.status !== "LIQUID_WAIVER") return false;
+      if (status === "missing" && (target.completeRecordCount > 0 || target.incompleteRecordCount > 0)) return false;
       if (family !== "all" && target.family !== family) return false;
       const searchable = [target.id, target.nameCn, target.nameEn, target.sourceLabels, familyNames[target.family]].join(" ").toLocaleLowerCase();
       const exactId = targets().some(item => item.id.toLocaleLowerCase() === query);
@@ -189,7 +187,7 @@
       const relationCount = `完整 ${target.completeRecordCount} · 不完整 ${target.incompleteRecordCount}`;
       const extCount = (target.externalCompleteRecordCount || 0) + (target.externalIncompleteRecordCount || 0);
       const detailSummary = target.recordCount ? `<details class="material-expand" data-target="${esc(target.id)}"><summary><strong>${esc(target.nameCn)}</strong><small>${esc(target.nameEn)} · ${esc(target.id)}</small><span>查看 ${target.recordCount} 条关联记录</span></summary><div class="evidence-list"></div></details>` : `<strong>${esc(target.nameCn)}</strong><small>${esc(target.nameEn)} · ${esc(target.id)}</small>`;
-      const stage2 = target.status === "LIQUID_WAIVER" ? "液体不作硬性要求" : "完整与缺项记录同步收集";
+      const stage2 = "完整与缺项记录同步收集";
       return `<tr>
         <td>${detailSummary}<small class="family-label">${esc(familyNames[target.family] || target.family)}</small><div class="material-view-links"><a href="research.html?material=${encodeURIComponent(target.id)}">材料树</a><a href="scaling.html?material=${encodeURIComponent(target.id)}">关联物体</a></div></td>
         <td><strong>${relationCount}</strong><small>主账 ${target.recordCount.toLocaleString("en")} 组</small>${extCount ? `<small>另有数据库完整 ${target.externalCompleteRecordCount.toLocaleString("en")} · 缺项 ${target.externalIncompleteRecordCount.toLocaleString("en")}</small><a href="${esc(target.externalCollectionUrl)}">分页查看数据库原始来源组</a>` : ""}</td>

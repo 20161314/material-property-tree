@@ -120,7 +120,7 @@
         return value === undefined || denominator === undefined ? "待汇总" : String(fmt(value)) + "/" + fmt(denominator) + (canonical ? " 规范材料" : " 历史目标");
       };
       const scopeLabel = document.getElementById("material-coverage-scope");
-      if (scopeLabel) scopeLabel.textContent = canonical ? `覆盖分母：最新材料标签与已审来源身份的规范并集；其中有直接来源记录 ${fmt(meta.directEvidenceMaterialCount ?? meta.canonicalMaterialNodeCount)} 个。外部数据库组成身份分页另列，不与树节点直接相加。` : "历史 193 项目标覆盖（全库覆盖汇总尚未载入）；规范节点总量单列。";
+      if (scopeLabel) scopeLabel.textContent = canonical ? `覆盖分母：最新材料标签与已审来源身份的规范并集；其中有直接来源记录 ${fmt(meta.directEvidenceMaterialCount ?? meta.canonicalMaterialNodeCount)} 个。外部数据库组成身份分页另列，不与树节点直接相加。` : "当前覆盖汇总尚未载入；不展示过期分母。";
       const values = {
         "stat-complete-records": meta.completeRecordCount ?? meta.evidenceCount,
         "stat-partial-records": meta.incompleteRecordCount,
