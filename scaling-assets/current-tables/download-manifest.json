@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "release_id": "52de24a24f",
-  "source_delivery_summary_sha256": "bfd59c9398ff7513f69b1a79c4639ea78c6acc1439dd7b737f0d1d3d4c8d1b40",
+  "release_id": "0b144bd573",
+  "source_delivery_summary_sha256": "cf1ea20724753ccdb78ee48929fc8478af10704e0e2ae53130ae5093f61227c1",
   "records": {
-    "complete": 6187,
-    "partial": 94799,
-    "total": 100986,
+    "complete": 6189,
+    "partial": 94807,
+    "total": 100996,
     "main": {
-      "complete": 2430,
-      "incomplete": 2948
+      "complete": 2432,
+      "incomplete": 2956
     },
     "database": {
       "complete": 3757,
@@ -17,13 +17,13 @@
     }
   },
   "materials": {
-    "total": 3834,
-    "with_complete": 1663,
-    "with_all_properties": 1684,
-    "with_E": 3233,
-    "with_nu": 1798,
-    "with_rho": 3111,
-    "no_values": 31,
+    "total": 3843,
+    "with_complete": 1667,
+    "with_all_properties": 1689,
+    "with_E": 3236,
+    "with_nu": 1804,
+    "with_rho": 3122,
+    "no_values": 29,
     "scope": "Current active non-fluid material nodes, including reviewed narrower-material references. No automatic product parameter assignment.",
     "excluded_fluid_targets": 5
   },
@@ -109,34 +109,34 @@
     {
       "file": "object_derived_material_table.csv.gz",
       "source": "data/current_two_table_delivery_v1/object_derived_material_table.csv",
-      "original_sha256": "41318fb1c8df1656fd782154036df802916d42027ce38c1b3b0031318b4c8954",
-      "gzip_sha256": "aff6ea34e41538a3e95279718b8510c851b255a94ab2cc6e2767cdbe15922b5b",
-      "original_bytes": 969725,
-      "bytes": 75191
+      "original_sha256": "ec3d094753662ec7b747f05af0ca0b5f933409c7518cd8292ad22b4109d6a2b7",
+      "gzip_sha256": "b7edeb0b9135d3208331d536ba39f82db765f809cba3d838784f5cba9ce552ed",
+      "original_bytes": 971273,
+      "bytes": 75459
     },
     {
       "file": "material_reverse_index_and_property_ranges.csv.gz",
       "source": "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv",
-      "original_sha256": "7e9fe053e471a2c207fb1e47be5f206589c77f7ab4abbf1ddd0560033c1b10d9",
-      "gzip_sha256": "df7d8cd30245f44f2f9423ff3b10d43da1666f2877720b887b5e2b978f8fcf81",
-      "original_bytes": 3562906,
-      "bytes": 390726
+      "original_sha256": "fab61eb00ea16a33b45295760eada2bc3ab75f3511953b95c09b44a086e5b7f6",
+      "gzip_sha256": "882ced17d7a5dbdca8e19068fa027844e2314aa5d6557d6ccf648419eb1e29a8",
+      "original_bytes": 3570568,
+      "bytes": 391979
     },
     {
       "file": "property_ranges_by_reported_definition.csv.gz",
       "source": "data/current_two_table_delivery_v1/property_ranges_by_reported_definition.csv",
-      "original_sha256": "16feb8a4e2fd24eb8a19a115a53ca2658b8a573b987e07e09b3bc6d9cee0d337",
-      "gzip_sha256": "f5522eeae0f7f9fdd2ac49a146b4e01ee688203ed1b15dfcd777c3ebe9f87e84",
-      "original_bytes": 2803484,
-      "bytes": 314108
+      "original_sha256": "aeb0992506938082d1d437ac10fe658e1bcdcd62c1516e43f861a1dd7c631dd6",
+      "gzip_sha256": "cfd0b3b2ed4545f8d8349d0a533e8c26cf90dec0d9260114024278432636143e",
+      "original_bytes": 2812344,
+      "bytes": 315431
     },
     {
       "file": "main_property_source_groups.csv.gz",
       "source": "data/current_two_table_delivery_v1/main_property_source_groups.csv",
-      "original_sha256": "3c40b098ee32a06cf2c499e562412eabce58a8ca636beb4e50b76ffadf01b15c",
-      "gzip_sha256": "9b471283877e5d71f1dda6fe69deece10e26190779462b75debc226db9491f9b",
-      "original_bytes": 16956151,
-      "bytes": 1242158
+      "original_sha256": "50b6c69187d147424a5e5eaba3555a73c1d55319059345555b087a5b65f4895e",
+      "gzip_sha256": "b354bef898da432604f6b565b5539c48d49f969793e19e010fd16071769e10cf",
+      "original_bytes": 17130583,
+      "bytes": 1253335
     },
     {
       "file": "source_reported_material_label_index.csv.gz",
@@ -221,5 +221,5 @@
   ],
   "byte_preserving_gzip": true,
   "independent_paper_lineage_deduplication_complete": false,
-  "source_release_id": "933cb80234"
+  "source_release_id": "91e31f3528"
 }

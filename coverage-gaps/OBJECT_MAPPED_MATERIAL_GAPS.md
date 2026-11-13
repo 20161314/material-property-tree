@@ -1,16 +1,15 @@
 # 当前物体关联材料补缺清单
 
-物体关联材料 211；三项各有来源值 154；缺项 57；覆盖率 72.99%。
+物体关联材料 211；三项各有来源值 157；缺项 54；覆盖率 74.41%。
 
 覆盖范围含当前已接受的来源标签和合理近似材料选项；不代表每个组件材料身份均已核定，也不代表商品实测或可自动赋值。不同来源分别提供三项仍不拼成完整来源组。
 
-无关联物体但三项齐全材料 1530 保留；无关联物体且缺项 2093 单列研究候选。分组变化不算补齐证据。
+无关联物体但三项齐全材料 1532 保留；无关联物体且缺项 2100 单列研究候选。分组变化不算补齐证据。
 
 - `MAT-NATURAL-DEAD-LEAF-GRASS-BROAD`：`dead_leaf_grass` 植物有机材料（NVIDIA 来源宽标签） / Dead leaf/grass plant material, NVIDIA source broad label；缺 **E;nu**；关联物体16、组件16。
 - `MAT-NATURAL-DRIED-MOSS-SOURCE-BROAD`：干燥苔藓（种类/处理未详） / Dried moss, species/treatment unspecified；缺 **E;nu**；关联物体1、组件1。
 - `SOURCE-MAT-4A827ED8F19132725B5D`：Twinface 双面羊皮（来源构造标签） / Twinface sheepskin — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体5、组件5。
 - `SOURCE-MAT-60D9636AD9C377CDF07F`：羊皮（来源构造标签） / sheepskin — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
-- `MAT-EARTHENWARE-BROAD`：陶器（组成/烧成工艺未详） / Earthenware, composition/firing unspecified；缺 **nu**；关联物体9、组件9。
 - `SOURCE-MAT-A99EEA820F3B6552019A`：陶瓷涂层（来源构造标签） / ceramic coating — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `MAT-STEEL-POWDER-COATED-BROAD`：粉末涂层钢（钢种/涂层未详） / Powder-coated steel, steel/coating unspecified；缺 **nu;rho**；关联物体3、组件3。
 - `MAT-FROSTED-GLASS-BROAD`：磨砂玻璃（组成/处理工艺未详） / Frosted glass, composition/treatment unspecified；缺 **nu**；关联物体38、组件41。
@@ -19,7 +18,6 @@
 - `SOURCE-MAT-8A028E07CA77C88C6217`：磨砂皮革（来源构造标签） / nubuck leather — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-F634E6F2E8FA1662BFEA`：全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified；缺 **E;nu**；关联物体1、组件1。
 - `MAT-PEWTER-BROAD`：白镴/锡基合金（组成未详） / Pewter, composition unspecified；缺 **nu**；关联物体1、组件1。
-- `MAT-STEEL-ENAMELED-BROAD`：搪瓷钢（钢种/涂层未详） / Enameled steel, steel/coating unspecified；缺 **E;nu;rho**；关联物体2、组件2。
 - `MAT-INK-SOURCE-BROAD`：油墨/墨料（组成未详） / Ink material, composition unspecified；缺 **nu;rho**；关联物体3、组件3。
 - `MAT-MUD-BROAD`：泥状材料（组成/含水率未详） / Mud-like material, composition/moisture unspecified；缺 **E;nu**；关联物体20、组件20。
 - `SOURCE-MAT-1FE70C971D491482EF79`：合成绒面材料（来源构造标签） / synthetic suede — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
@@ -56,9 +54,8 @@
 - `MAT-TEXTILE-VELVET-BROAD`：天鹅绒/丝绒（纤维组成未详） / Velvet, fibre composition unspecified；缺 **E;nu;rho**；关联物体13、组件13。
 - `MAT-TEXTILE-WOOL-COTTON-BLEND`：羊毛/棉混纺（比例/结构见原文） / Wool/cotton textile blend, ratio/construction source-conditioned；缺 **E;nu;rho**；关联物体18、组件18。
 - `MAT-TEXTILE-WOOL-COTTON-POLYESTER-BLEND`：羊毛/棉/聚酯混纺（比例/结构见原文） / Wool/cotton/polyester textile blend, ratio/construction source-conditioned；缺 **E;nu;rho**；关联物体14、组件14。
-- `MAT-TEXTILE-WOOL-VISCOSE-BLEND`：羊毛/粘胶混纺（比例/结构见原文） / Wool/viscose textile blend, ratio/construction source-conditioned；缺 **E;nu;rho**；关联物体3、组件3。
+- `MAT-TEXTILE-WOOL-VISCOSE-BLEND`：羊毛/粘胶混纺（比例/结构见原文） / Wool/viscose textile blend, ratio/construction source-conditioned；缺 **E;nu**；关联物体3、组件3。
 - `SOURCE-MAT-05579D669DD1178BFA7B`：再生塑料帆布（来源构造标签） / recycled-plastic canvas — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体2、组件2。
-- `SOURCE-MAT-154C9A0B0375CC4D8EE9`：大麻纤维（源标签 hemp，具体构造未详） / hemp — source-labelled material, finer composition unspecified；缺 **nu**；关联物体1、组件1。
 - `SOURCE-MAT-66DD06D9FFA9BF4AFC73`：绒面材料（源标签）（来源构造标签） / suede — source-labelled material, finer composition unspecified；缺 **E;nu**；关联物体14、组件14。
 - `MAT-RATTAN-BROAD`：藤材/藤编（种类/结构未详） / Rattan, species/construction unspecified；缺 **nu**；关联物体10、组件11。
 - `MAT-RATTAN-TWINE-SOURCE-BROAD`：藤/绳复合编织（绳纤维未详） / Rattan/twine composite weave, twine fibre unspecified；缺 **E;nu;rho**；关联物体1、组件1。

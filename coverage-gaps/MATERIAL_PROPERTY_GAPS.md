@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3834；三项各有来源值1684。
+材料3843；三项各有来源值1689。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -114,7 +114,6 @@
 - RESEARCH-MAT-25E99A6E16C81B236110 陶瓷 · CeramTec ZN40 zirconia / CeramTec ZN40 zirconia：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-4415F1768AAFF655B466 陶瓷 · Crystal Quartz SiO2 / Crystal Quartz SiO2：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F062BCD974237700B6AE 陶瓷 · Earthenware body / Earthenware body：缺 nu；已有完整组0、缺项组1。
-- MAT-EARTHENWARE-BROAD 陶器（组成/烧成工艺未详） / Earthenware, composition/firing unspecified：缺 nu；已有完整组0、缺项组25。
 - RESEARCH-MAT-A8D3B3B7756EE91F786B 陶瓷 · Ferro Ground Coat A vitreous porcelain enamel / Ferro Ground Coat A vitreous porcelain enamel：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-17FD11A5F08A454E76D6 陶瓷 · Fired Gashiga pit 1, clayey layer C2 earthenware / Fired Gashiga pit 1, clayey layer C2 earthenware：缺 E;nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-2884C6995BA8FE22B4F8 陶瓷 · Fired Gashiga pit 2, clayey layer C2 earthenware / Fired Gashiga pit 2, clayey layer C2 earthenware：缺 E;nu；已有完整组0、缺项组3。
@@ -637,9 +636,9 @@
 - RESEARCH-MAT-2C78F60762E7EC363BC3 金属 · Cast iron, grade 20 / Cast iron, grade 20：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-378125C089FBCDA8AC01 金属 · EN-GJL-250 / KIPP cast iron / EN-GJL-250 / KIPP cast iron：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-68E72E75A2D26DA5C39D 金属 · Electrodeposited hard chromium coating layer,unspecified bath / Electrodeposited hard chromium coating layer,unspecified bath：缺 nu;rho；已有完整组0、缺项组1。
-- MAT-STEEL-ENAMELED-BROAD 搪瓷钢（钢种/涂层未详） / Enameled steel, steel/coating unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-0150237DD9EF5A6E5DBE 金属 · HYDC20MnV6 chrome-plated steel rod product / HYDC20MnV6 chrome-plated steel rod product：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-649E77408AA048BEBE08 金属 · KME C11000 / Cu-ETP / KME C11000 / Cu-ETP：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E5E1986838EC287E351A 金属 · Monolithic vitreous-enamelled steel panel / Monolithic vitreous-enamelled steel panel：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-8B71A036519261ACF1C4 金属 · Nathan Trotter Britannia Pewter, Sn91.75-Sb8-Cu0.25wt% / Nathan Trotter Britannia Pewter, Sn91.75-Sb8-Cu0.25wt%：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-AEE76768AB24D849B7AD 金属 · Outokumpu Core 304 / 1.4301 / Outokumpu Core 304 / 1.4301：缺 nu；已有完整组0、缺项组1。
 - MAT-PEWTER-BROAD 白镴/锡基合金（组成未详） / Pewter, composition unspecified：缺 nu；已有完整组0、缺项组3。
@@ -682,6 +681,7 @@
 - RESEARCH-MAT-E7C379109D4F1FE331C7 金属 · UNS C70600 Copper-Nickel, 10% / UNS C70600 Copper-Nickel, 10%：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-4415199B6AFBBDA3EAAC 金属 · UNS C71500 Copper-Nickel, 30% / UNS C71500 Copper-Nickel, 30%：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E54AA4D4F4664C91DAE4 金属 · UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes) / UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes)：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-94BD971073843AE9567B 金属 · Vitranamel vitreous-enamelled steel panel / Vitranamel vitreous-enamelled steel panel：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7CD50DAC0430840C1D3D 其他材料 · ArnoldN35 sinteredneodymium-iron-boronpermanentmagnet / ArnoldN35 sinteredneodymium-iron-boronpermanentmagnet：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-618E7BA73FAB4597D75B 其他材料 · Black paraffin wax, supplied ship-model stock / Black paraffin wax, supplied ship-model stock：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-AFABB2EEFE341CC544A5 其他材料 · Chikugo estuary mud / Chikugo estuary mud：缺 E;nu；已有完整组0、缺项组1。
@@ -1815,9 +1815,11 @@
 - RESEARCH-MAT-EE81778A4CCF4FFD2AD1 纺织材料 · Cotton natural fibre / Cotton natural fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-C816AD2C540A3E9849C6 纺织材料 · Cotton rope / Cotton rope：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-737E34517FE5AD3912BB 纺织材料 · Cotton textile comparison specimen / Cotton textile comparison specimen：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-5909717B6048FC2D018C 纺织材料 · Cotton twill 1/3 woven fabric / Cotton twill 1/3 woven fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-AA6DA697DF824E949BAC 纺织材料 · Cotton/glass fiber Knit/backcoated barrier fabric / Cotton/glass fiber Knit/backcoated barrier fabric：缺 E;nu；已有完整组0、缺项组1。
 - MAT-TEXTILE-COTTON-LINEN-BLEND 棉/亚麻混纺（比例/结构未详） / Cotton/linen textile blend, ratio/construction unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - MAT-TEXTILE-COTTON-LINEN-VISCOSE-POLYESTER-BLEND 棉/亚麻/粘胶/聚酯混纺（比例/结构未详） / Cotton/linen/viscose/polyester blend, ratio/construction unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
+- RESEARCH-MAT-2DF2E6B2B441014C4DE4 纺织材料 · Cotton/polyester plain woven fabric / Cotton/polyester plain woven fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-16043AECEDCA4C39D822 纺织材料 · Cottonpile/cotton-Lycra ground weft-knitted loop-pile fabric / Cottonpile/cotton-Lycra ground weft-knitted loop-pile fabric：缺 E;nu；已有完整组0、缺项组1。
 - MAT-DOWN-FILLING-BROAD 羽绒/羽毛填充物（比例未详） / Down/feather filling, ratio unspecified：缺 E;nu；已有完整组0、缺项组4。
 - RESEARCH-MAT-A485A61500971BC6FE41 纺织材料 · Duck down feather barb / Duck down feather barb：缺 nu;rho；已有完整组0、缺项组2。
@@ -1862,7 +1864,6 @@
 - RESEARCH-MAT-667859D9FD39EB809A4D 纺织材料 · Graphitised thick PAN-precursor carbon felt, Beijing Great Wall PSF2 / Graphitised thick PAN-precursor carbon felt, Beijing Great Wall PSF2：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-B79E79AAF116F77432C1 纺织材料 · Graphitised thin PAN-precursor carbon felt, CeraMaterials GFE-1 / Graphitised thin PAN-precursor carbon felt, CeraMaterials GFE-1：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-18D29367A2424453168C 纺织材料 · HC12 Ag-plated nylon conductive yarn235x2dtex / HC12 Ag-plated nylon conductive yarn235x2dtex：缺 E;nu；已有完整组0、缺项组1。
-- RESEARCH-MAT-3319A008A599420D112E 纺织材料 · Hemp fibre / Hemp fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-0BBE035E2E0DC9B41B96 纺织材料 · Hemp natural fibre / Hemp natural fibre：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-3C30605680B21108410F 纺织材料 · Hemp rope / Hemp rope：缺 nu；已有完整组0、缺项组1。
 - MAT-TEXTILE-HEMP-ROPE-SOURCE-BROAD 麻绳（纤维种/结构未详） / Hemp rope, fibre species/construction unspecified：缺 nu；已有完整组0、缺项组1。
@@ -1927,6 +1928,7 @@
 - RESEARCH-MAT-7131E8993CAFE1C2FDD6 纺织材料 · Plain woven polyester Fabric 2 / Plain woven polyester Fabric 2：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-14C0D2018CA0CDBC80D7 纺织材料 · Plain woven wool Fabric 4 / Plain woven wool Fabric 4：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-8288D317F6E0D243F72F 纺织材料 · Polyacrylate fibre PAC / Polyacrylate fibre PAC：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-46748E71F7A10268CE19 纺织材料 · Polyamide ripstop woven fabric / Polyamide ripstop woven fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-07EBF11B779F88FB8C3D 纺织材料 · Polyamide6 multifilament yarn / Polyamide6 multifilament yarn：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-110C7788388CBE1E9E4A 纺织材料 · Polybenzoxazole (PBO) fiber / Polybenzoxazole (PBO) fiber：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-576A12D03348EFFE7239 纺织材料 · Polybutylene terephthalate meltblown nonwoven / Polybutylene terephthalate meltblown nonwoven：缺 E;nu；已有完整组0、缺项组4。
@@ -1994,10 +1996,12 @@
 - RESEARCH-MAT-555D4F2E050699CD0789 纺织材料 · Wool 13.6wt%/TEOS-VTMS silica aerogel composite — matrix precursor ratio 73-27 TEOS-VTMS / Wool 13.6wt%/TEOS-VTMS silica aerogel composite — matrix precursor ratio 73-27 TEOS-VTMS：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-4BB7C69F13EE4BDFB51D 纺织材料 · Wool 14.8wt%/TEOS-VTMS silica aerogel composite — matrix precursor ratio 82-18 TEOS-VTMS / Wool 14.8wt%/TEOS-VTMS silica aerogel composite — matrix precursor ratio 82-18 TEOS-VTMS：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-734F664683473E372E39 纺织材料 · Wool natural fibre / Wool natural fibre：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-554DAA6D64B47F3412FF 纺织材料 · Wool plain woven fabric / Wool plain woven fabric：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E9648425D1C445EFC176 纺织材料 · Wool twill 1/2 woven fabric / Wool twill 1/2 woven fabric：缺 E;nu；已有完整组0、缺项组1。
 - MAT-TEXTILE-WOOL-COTTON-BLEND 羊毛/棉混纺（比例/结构见原文） / Wool/cotton textile blend, ratio/construction source-conditioned：缺 E;nu;rho；已有完整组0、缺项组0。
 - MAT-TEXTILE-WOOL-COTTON-POLYESTER-BLEND 羊毛/棉/聚酯混纺（比例/结构见原文） / Wool/cotton/polyester textile blend, ratio/construction source-conditioned：缺 E;nu;rho；已有完整组0、缺项组0。
-- MAT-TEXTILE-WOOL-VISCOSE-BLEND 羊毛/粘胶混纺（比例/结构见原文） / Wool/viscose textile blend, ratio/construction source-conditioned：缺 E;nu;rho；已有完整组0、缺项组0。
-- SOURCE-MAT-154C9A0B0375CC4D8EE9 大麻纤维（源标签 hemp，具体构造未详） / hemp — source-labelled material, finer composition unspecified：缺 nu；已有完整组0、缺项组2。
+- MAT-TEXTILE-WOOL-VISCOSE-BLEND 羊毛/粘胶混纺（比例/结构见原文） / Wool/viscose textile blend, ratio/construction source-conditioned：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-3EF3A7BD3AE974658A74 纺织材料 · Wool/viscose twill 2/2 woven fabric / Wool/viscose twill 2/2 woven fabric：缺 E;nu；已有完整组0、缺项组1。
 - SOURCE-MAT-05579D669DD1178BFA7B 再生塑料帆布（来源构造标签） / recycled-plastic canvas — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-66DD06D9FFA9BF4AFC73 绒面材料（源标签）（来源构造标签） / suede — source-labelled material, finer composition unspecified：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-D40F38399C7E437DD567 木材 · 18 mm Kronospan MDF / 18 mm Kronospan MDF：缺 nu；已有完整组0、缺项组1。
