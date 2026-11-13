@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3860；三项各有来源值1690。
+材料3865；三项各有来源值1691。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -691,6 +691,7 @@
 - RESEARCH-MAT-4415199B6AFBBDA3EAAC 金属 · UNS C71500 Copper-Nickel, 30% / UNS C71500 Copper-Nickel, 30%：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E54AA4D4F4664C91DAE4 金属 · UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes) / UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-94BD971073843AE9567B 金属 · Vitranamel vitreous-enamelled steel panel / Vitranamel vitreous-enamelled steel panel：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-DDF8A2E8A43B6C07F3C0 其他材料 · Cast paraffin wax / Cast paraffin wax：缺 rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-7CD50DAC0430840C1D3D 其他材料 · ArnoldN35 sinteredneodymium-iron-boronpermanentmagnet / ArnoldN35 sinteredneodymium-iron-boronpermanentmagnet：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-618E7BA73FAB4597D75B 其他材料 · Black paraffin wax, supplied ship-model stock / Black paraffin wax, supplied ship-model stock：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-AFABB2EEFE341CC544A5 其他材料 · Chikugo estuary mud / Chikugo estuary mud：缺 E;nu；已有完整组0、缺项组1。
@@ -718,10 +719,10 @@
 - RESEARCH-MAT-B28B18DB699B29ECAE7C 其他材料 · Rushil decorative HPL phenolic-kraft melamine-surface laminate sheet / Rushil decorative HPL phenolic-kraft melamine-surface laminate sheet：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-3399A333068E57782E8A 其他材料 · Screen-printed carbon-blend-based ink layer / Screen-printed carbon-blend-based ink layer：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-E8477652FE578599A1F8 其他材料 · Screen-printed silver-nanoparticle ink layer / Screen-printed silver-nanoparticle ink layer：缺 nu;rho；已有完整组0、缺项组1。
+- MAT-SOAP-BROAD 固体皂/清洁块（配方未详） / Solid bar soap / cleansing bar, formulation unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-BD46CCABC4721F394E69 Solyte 中底材料（源商品名）（来源构造标签） / Solyte branded material — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-47A18A12736A61A71AE5 其他材料 · Tianjin new port mud / Tianjin new port mud：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-8497198167753FC4A615 其他材料 · Titanium White pigment / cold-pressed linseed-oil paint / Titanium White pigment / cold-pressed linseed-oil paint：缺 rho；已有完整组0、缺项组4。
-- MAT-APPROX-WAX 蜡（未细分） / Wax, unspecified：缺 E;nu；已有完整组0、缺项组8。
 - RESEARCH-MAT-F5506665DEA74DA037A0 其他材料 · Wilsonart Traceless TP compact high-pressure laminate / Wilsonart Traceless TP compact high-pressure laminate：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-1F50D93F0FB384814122 其他材料 · Wilsonart Traceless TP thin decorative high-pressure laminate sheet / Wilsonart Traceless TP thin decorative high-pressure laminate sheet：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-91D2EB65601642B2EBB5 其他材料 · Wilsonart Traceless TS thin decorative high-pressure laminate sheet / Wilsonart Traceless TS thin decorative high-pressure laminate sheet：缺 E;nu；已有完整组0、缺项组1。
@@ -1859,6 +1860,7 @@
 - MAT-TEXTILE-FLANNELETTE-SOURCE-BROAD 绒布/法兰绒类底材（纤维未详） / Flannelette material, fibre unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-1D8430B14C0A8171D9F5 纺织材料 · Flax Linum usitatissimum fibre / Flax Linum usitatissimum fibre：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-6CCAFD4991A65D4878D4 纺织材料 · Flax fibre / Flax fibre：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-E1744D63C57B7E860C91 纺织材料 · Flax linen plain-woven fabric / Flax linen plain-woven fabric：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-C3C6B9242C1D26AE7C7D 纺织材料 · Flax natural fibre / Flax natural fibre：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-B3F1B2E43B380069F500 纺织材料 · Flax rope / Flax rope：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-959F95DF836700590B20 纺织材料 · Flax warp / hemp weft blended panama2/2 woven fabric / Flax warp / hemp weft blended panama2/2 woven fabric：缺 E;nu；已有完整组0、缺项组1。
@@ -1990,6 +1992,8 @@
 - RESEARCH-MAT-C74E891E29A42B716B39 纺织材料 · SLA ANYCUBIC UV-resin annular-link structured fabric / SLA ANYCUBIC UV-resin annular-link structured fabric：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-86BB42654A3138970117 纺织材料 · Silk (silkworm) / Silk (silkworm)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-1A8AD896412C6B614A5F 纺织材料 · Silk fibre / Silk fibre：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-5CEB1F8A4451AFF3C1C3 纺织材料 · Silk/polyester 50/50 plain-woven fabric / Silk/polyester 50/50 plain-woven fabric：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-D6E15FF639E44A2EEB10 纺织材料 · Silk/polyester 80/20 plain-woven fabric / Silk/polyester 80/20 plain-woven fabric：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-EEB9CE18599A9E293961 纺织材料 · Sisal fibre (source compilation DOI10.3390/polym14102024) / Sisal fibre (source compilation DOI10.3390/polym14102024)：缺 nu；已有完整组0、缺项组1。
 - MAT-TEXTILE-SISAL-BROAD 剑麻纤维/织物（结构未详） / Sisal fibre/textile, construction unspecified：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-CF923D04F6615FE966FA 纺织材料 · Sisal natural fibre / Sisal natural fibre：缺 nu；已有完整组0、缺项组2。

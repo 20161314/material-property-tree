@@ -26,7 +26,13 @@
     const c=priority.objectMaterials;
     const panel=document.createElement('section'); panel.className='object-priority-coverage';
     panel.setAttribute('aria-label','物体关联材料覆盖');
-    panel.innerHTML='<div><span>当前优先 · 物体关联材料标签</span><strong>'+fmt(c.materialsWithAllThreeFromAnyGroup)+' / '+fmt(c.targetCount)+' 三项研究来源覆盖 · '+c.coveragePercent.toFixed(2)+'%</strong><small>仍缺项 '+fmt(c.missingMaterials)+' 种；统计当前标签的研究值，实际材质仍须核验，非商品实测。</small></div><div><a href="references.html?scope=object">查看物体材料</a><a href="'+priority.downloads.report+'">缺项名单</a><details><summary>研究材料范围</summary><p>无物体且三项齐全 '+fmt(priority.unlinkedComplete.targetCount)+' 种保留；无物体且缺项 '+fmt(priority.researchCandidates.targetCount)+' 种单列候选。全部研究材料 '+fmt(priority.allResearch.targetCount)+' 种。分组不算新增证据。</p><a href="references.html?scope=canonical">全部研究材料</a> · <a href="references.html?scope=candidate">研究候选</a></details><details><summary>材料身份待纠正</summary><p>部分蜡烛、肥皂的来源标签被归入 mud。自然泥研究值不能证明这些商品是泥土，也不代表其实际材质已补齐；逐组件纠正仍待完成。</p><a href="coverage-gaps/MATERIAL_IDENTITY_NOTICES.md">查看限制与处理原则</a></details></div>';
+    panel.innerHTML='<div><span>当前优先 · 已规范的物体材料标签</span><strong>'+fmt(c.materialsWithAllThreeFromAnyGroup)+' / '+fmt(c.targetCount)+' 三项研究来源覆盖 · '+c.coveragePercent.toFixed(2)+'%</strong><small>仍缺项 '+fmt(c.missingMaterials)+' 种；统计当前标签的研究值，实际材质仍须核验，非商品实测。</small></div><div><a href="references.html?scope=object">查看物体材料</a><a href="'+priority.downloads.report+'">缺项名单</a><details><summary>研究材料范围</summary><p>无物体且三项齐全 '+fmt(priority.unlinkedComplete.targetCount)+' 种保留；无物体且缺项 '+fmt(priority.researchCandidates.targetCount)+' 种单列候选。全部研究材料 '+fmt(priority.allResearch.targetCount)+' 种。分组不算新增证据。</p><a href="references.html?scope=canonical">全部研究材料</a> · <a href="references.html?scope=candidate">研究候选</a></details><details><summary>材料身份审查</summary><p>14 条蜡烛已改为宽类蜡，4 条皂块已改为宽类固体皂；原 mud 标签留档。另 2 条壶/番茄酱包装组件范围仍待核。新标签不继承泥类数值，宽标签不代表精确配方。</p><a href="coverage-gaps/MATERIAL_IDENTITY_NOTICES.md">查看限制与处理原则</a> · <a href="coverage-gaps/METHOD_DEFINED_SOAP_MODULUS.md">皂块实测模量旁表</a></details></div>';
+    const unresolved=priority.unresolvedSourceLabels;
+    if(unresolved?.labelCount){
+      const note=document.createElement('p');note.className='priority-tree-scope-note';
+      note.innerHTML='另有 '+fmt(unresolved.relationRows)+' 条已接受来源关系（'+fmt(unresolved.labelCount)+' 个来源标签）待规范对齐，尚未计入上方分母。全物体材料覆盖仍未完成。 <a href="'+unresolved.report+'">查看逐标签名单</a>';
+      panel.append(note);
+    }
     const header=document.querySelector('.app-header');
     if (header) header.after(panel);
     if (page==='materials') {

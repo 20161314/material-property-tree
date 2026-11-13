@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "release_id": "4e950555c5",
-  "source_delivery_summary_sha256": "59dd2c25103281878ec356a949b432ebaefefea96ee56561189c99696ba30e14",
+  "release_id": "a39c2ac4d1",
+  "source_delivery_summary_sha256": "e85e8da8d1f42f24b47fad2c7849f5247787c03f53df4e0535c6c987fc68badb",
   "records": {
     "complete": 6188,
-    "partial": 94851,
-    "total": 101039,
+    "partial": 94856,
+    "total": 101044,
     "main": {
       "complete": 2431,
-      "incomplete": 3000
+      "incomplete": 3005
     },
     "database": {
       "complete": 3757,
@@ -17,13 +17,13 @@
     }
   },
   "materials": {
-    "total": 3860,
+    "total": 3865,
     "with_complete": 1666,
-    "with_all_properties": 1690,
-    "with_E": 3243,
-    "with_nu": 1809,
+    "with_all_properties": 1691,
+    "with_E": 3248,
+    "with_nu": 1811,
     "with_rho": 3135,
-    "no_values": 25,
+    "no_values": 26,
     "scope": "Current active non-fluid material nodes, including reviewed narrower-material references. No automatic product parameter assignment.",
     "excluded_fluid_targets": 5
   },
@@ -69,10 +69,10 @@
     {
       "file": "物体表_05.md.gz",
       "source": "data/current_two_table_delivery_v1/object_markdown_shards/物体表_05.md",
-      "original_sha256": "fa2e2fe46293f080c669ccd8b644581d35210f7c94cec6bed59d06f067fe51fb",
-      "gzip_sha256": "68a218d191f0ccc5ccf0d552735db08b0f16f77a32ef6f0baea7001f84dce669",
-      "original_bytes": 31440639,
-      "bytes": 1013644
+      "original_sha256": "959ed4f3341890c6aef9b81f771eb21b316a179fa302ba9010360503558bf52c",
+      "gzip_sha256": "108715c49a81d2a99265f2c6394eb498197efd5a3b20b13388ec88e734112589",
+      "original_bytes": 31439737,
+      "bytes": 1013639
     },
     {
       "file": "source_asset_material_semantic_holds.csv.gz",
@@ -85,10 +85,10 @@
     {
       "file": "current_material_options.csv.gz",
       "source": "data/current_two_table_delivery_v1/current_material_options.csv",
-      "original_sha256": "d144afdf10977bcfafe4b5950d7c668e4c7d3c0e5b0daecd9c2725f269c1c28d",
-      "gzip_sha256": "95556748659eb0eb91981551fee52f5a87bb40ce81dd1f4a5c11740d4809e1ad",
-      "original_bytes": 146449435,
-      "bytes": 7502831
+      "original_sha256": "c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49",
+      "gzip_sha256": "78b95b9e5b957c4ec21abb94f1e7cc7b3d5b3057e8c0553ed05f61e553b613e4",
+      "original_bytes": 147097941,
+      "bytes": 7512190
     },
     {
       "file": "intake_source_material_relations.csv.gz",
@@ -109,34 +109,34 @@
     {
       "file": "object_derived_material_table.csv.gz",
       "source": "data/current_two_table_delivery_v1/object_derived_material_table.csv",
-      "original_sha256": "08773bdc5a5ad1c1d36913ecdab2cd1c3eb1087c841a8b531beb62beb756cd4e",
-      "gzip_sha256": "bfdb81dee42d18a6e8616be04e72ecd26cf03c91e41e8f901ac54ddc8a4e2626",
-      "original_bytes": 977638,
-      "bytes": 76242
+      "original_sha256": "0baee16db7ee5e25f6421aa48db71e2db72e4041641255a6999f95292379e0db",
+      "gzip_sha256": "c8ea10389ca13717533f20f4a906544592c03b7bd8431e4c528132679bc33384",
+      "original_bytes": 980078,
+      "bytes": 76566
     },
     {
       "file": "material_reverse_index_and_property_ranges.csv.gz",
       "source": "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv",
-      "original_sha256": "d825f456f7864429505cc35b9143062fca19ff62c3ab2ad45b6eb1147c814233",
-      "gzip_sha256": "a6657e810f9d6d44675137e5b4264791cb45cfb5ac44bbcf271c8012ecfce2d2",
-      "original_bytes": 3593191,
-      "bytes": 395271
+      "original_sha256": "c21dc33349569248a64472ab16c04c9e102fd77be5c90807b951a165541854a7",
+      "gzip_sha256": "35e400650ad6297d05abdcb05405b8e7fa2e0f47d1f2259c187150a06cf8e760",
+      "original_bytes": 3596877,
+      "bytes": 395839
     },
     {
       "file": "property_ranges_by_reported_definition.csv.gz",
       "source": "data/current_two_table_delivery_v1/property_ranges_by_reported_definition.csv",
-      "original_sha256": "2ea6ca677fef44293f7597c76c8701add1cb9cb8ea258bfdf6a73081b3093277",
-      "gzip_sha256": "798b0fd77ee6e7d89a70a0dca582c9d05f0ad6aa9bb78ac7cf3e505a82535061",
-      "original_bytes": 2824777,
-      "bytes": 318182
+      "original_sha256": "8df7cb9a0a24d8171f6bfae01f81b1c74c6a8c509ca236771f91ccb6b7b8d3ff",
+      "gzip_sha256": "bbf807e25621cd8761265dfcf70185d1d7af3d147ab7f3e3b5bfe4e9b9df1875",
+      "original_bytes": 2827145,
+      "bytes": 318671
     },
     {
       "file": "main_property_source_groups.csv.gz",
       "source": "data/current_two_table_delivery_v1/main_property_source_groups.csv",
-      "original_sha256": "827f042f998107015d314c3fb26ac8aac142c3509846fc49de73bf6a4ad6f219",
-      "gzip_sha256": "67c6e04235025f49abbaae0b653d83c1196257ff042faef79e9124da2fe09340",
-      "original_bytes": 17405880,
-      "bytes": 1278620
+      "original_sha256": "590b3c1d654adeb86f82c0b9b40bd4d849256db462e0629eb2cba70b0152f1c2",
+      "gzip_sha256": "cf665fe5bee8b6bfe1d7941cbe073c79002f183e3d2d187ba6590c4a22983cdf",
+      "original_bytes": 17505841,
+      "bytes": 1284386
     },
     {
       "file": "source_reported_material_label_index.csv.gz",
@@ -197,10 +197,10 @@
     {
       "file": "quarantined_legacy_options.csv.gz",
       "source": "data/current_two_table_delivery_v1/quarantined_legacy_options.csv",
-      "original_sha256": "d7acb6ee20b5857740e39cd56f5a3c954c55161f5889f464cb2c0047dc6959ff",
-      "gzip_sha256": "992754d554aac89df0f5f4c827f56045beb6f17c2ea4bf9c3d235bc4f06dfaae",
-      "original_bytes": 2092323,
-      "bytes": 95561
+      "original_sha256": "dbcfec1f2fa28961612035a7b134ce0140b56b5a7181e4b01b30164d60a72047",
+      "gzip_sha256": "bc396cb696578f385124434cd17e6e390ea3e8f67e9a11abfea70baf10048336",
+      "original_bytes": 2100339,
+      "bytes": 95624
     },
     {
       "file": "physxnet_source_part_index.csv.gz",
@@ -221,5 +221,5 @@
   ],
   "byte_preserving_gzip": true,
   "independent_paper_lineage_deduplication_complete": false,
-  "source_release_id": "2ab9564225"
+  "source_release_id": "db27736bb7"
 }

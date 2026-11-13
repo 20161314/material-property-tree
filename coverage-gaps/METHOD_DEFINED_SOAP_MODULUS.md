@@ -1,0 +1,9 @@
+# Soap original-source independent review
+
+PASS_INDEPENDENT_C26_SOAP_SOURCE_DEFINED_ES_RESEARCH_REVIEW; 146/146 passed.
+
+Read original EPO EP0276971A2 PDF and visually viewed independently rendered pages4–8. Page4 explicitly reports bar/punch modulus measurement, defines Es for the bar, Ed for the punch and Ec=1/(1/Es+1/Ed). Only narrative mean Es values enter: Examples1–5 =20,10,7,20,30MPa. Five formulations/source groups; one document and one lineage. Example6 uses Example1 formulation and gives no new narrative bar mean.
+
+These are valid source-defined measured soap elastic moduli, not solely model inputs. Standardized tensile Young modulus is NOT confirmed: no Es extraction equation, geometry/strain window or evidence that Es itself was derived by the described punch method. Retain a definition-specific research Es range; do not silently merge it into standard Young values. Five method-specific partial groups, zero complete; nu/rho absent. Standard Young evidence and coverage increment are both ZERO. Retain these five rows in a separate method-specific Es table only; do not ingest them into the standard E/nu/rho ledgers, even though original transport columns retain E field names.
+
+Fine formulation nodes may contribute only upward to broad soap/cleansing bar. The four NVIDIA soap bodies have no proven matching formulation or product values. No parameter defaults, mud inheritance or Ec/Ed reverse-calculation. All source numeric strings preserved, metadata corrections explicitly recorded. Example5 original recipe sums to98wt%, leaving2wt% unexplained; this anomaly is retained without normalization or invented ingredients. The first review failure is preserved in its original directory; v2 corrects only the mistaken total100 expectation and adds stricter side-table routing.

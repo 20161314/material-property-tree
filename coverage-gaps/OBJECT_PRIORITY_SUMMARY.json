@@ -2,16 +2,16 @@
   "policyVersion": "OBJECT_FIRST_2026_11_14",
   "scope": "Current object-associated material labels and options; three properties may come from different admitted groups. No new property values or automatic product assignments.",
   "objectMaterials": {
-    "targetCount": 211,
+    "targetCount": 213,
     "materialsWithCompleteRecord": 140,
-    "materialsWithIncompleteRecord": 119,
-    "materialsWithE": 174,
-    "materialsWithNu": 159,
-    "materialsWithRho": 184,
-    "materialsWithAllThreeFromAnyGroup": 159,
-    "materialsWithoutAnyValue": 24,
-    "coveragePercent": 75.35545023696683,
-    "missingMaterials": 52
+    "materialsWithIncompleteRecord": 120,
+    "materialsWithE": 175,
+    "materialsWithNu": 160,
+    "materialsWithRho": 185,
+    "materialsWithAllThreeFromAnyGroup": 160,
+    "materialsWithoutAnyValue": 25,
+    "coveragePercent": 75.11737089201878,
+    "missingMaterials": 53
   },
   "unlinkedComplete": {
     "targetCount": 1531,
@@ -24,33 +24,55 @@
     "materialsWithoutAnyValue": 0
   },
   "researchCandidates": {
-    "targetCount": 2118,
+    "targetCount": 2121,
     "materialsWithCompleteRecord": 0,
-    "materialsWithIncompleteRecord": 2117,
-    "materialsWithE": 1538,
-    "materialsWithNu": 119,
-    "materialsWithRho": 1420,
+    "materialsWithIncompleteRecord": 2120,
+    "materialsWithE": 1542,
+    "materialsWithNu": 120,
+    "materialsWithRho": 1419,
     "materialsWithAllThreeFromAnyGroup": 0,
     "materialsWithoutAnyValue": 1
   },
   "allResearch": {
-    "targetCount": 3860,
+    "targetCount": 3865,
     "materialsWithCompleteRecord": 1666,
-    "materialsWithIncompleteRecord": 2266,
-    "materialsWithE": 3243,
-    "materialsWithNu": 1809,
+    "materialsWithIncompleteRecord": 2270,
+    "materialsWithE": 3248,
+    "materialsWithNu": 1811,
     "materialsWithRho": 3135,
-    "materialsWithAllThreeFromAnyGroup": 1690,
-    "materialsWithoutAnyValue": 25
+    "materialsWithAllThreeFromAnyGroup": 1691,
+    "materialsWithoutAnyValue": 26
   },
   "input_sha256": {
-    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "d825f456f7864429505cc35b9143062fca19ff62c3ab2ad45b6eb1147c814233"
+    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "c21dc33349569248a64472ab16c04c9e102fd77be5c90807b951a165541854a7",
+    "data/current_two_table_delivery_v1/source_reported_material_relations.csv": "f726c838d2937e5c643caebe203ac82efcfed14f7c8a255b3ad8d2c1b88ab612",
+    "data/current_two_table_delivery_v1/official_bound_material_relations.csv": "c2010b943e33e9e566b85d500896c74eb16ba49cdb9da04bd993cf3f1307995b",
+    "data/current_two_table_delivery_v1/approximate_component_material_relations.csv": "7d72338a3f90b8167ac8b75fb3acb4bc7dd587abd5f70823c205bad4e363949c",
+    "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "942a03fe08a8fe3830c329663b6b6c3a1941675b6b33a5f0baaf6081328aa093"
   },
   "complete_record_count_unchanged_by_cohort": true,
   "incomplete_record_count_unchanged_by_cohort": true,
+  "unresolvedSourceLabels": {
+    "labelCount": 62,
+    "relationRows": 457,
+    "objectCount": 447,
+    "componentCount": 448,
+    "countedAsCanonicalMaterials": false,
+    "propertyCoverage": "NOT_EVALUATED_WITHOUT_REVIEWED_IDENTITY_LINK",
+    "completionRequired": true,
+    "download": "coverage-gaps/UNRESOLVED_OBJECT_SOURCE_LABELS.csv",
+    "report": "coverage-gaps/UNRESOLVED_OBJECT_SOURCE_LABELS.md"
+  },
+  "entireObjectMaterialTableComplete": false,
   "downloads": {
     "gaps": "coverage-gaps/OBJECT_MAPPED_MATERIAL_GAPS.csv",
     "report": "coverage-gaps/OBJECT_MAPPED_MATERIAL_GAPS.md",
     "candidates": "coverage-gaps/UNLINKED_INCOMPLETE_RESEARCH_CANDIDATES.csv"
+  },
+  "methodSideTables": {
+    "soapMeasuredEsGroups": 5,
+    "standardEIncrement": 0,
+    "standardGroupIncrement": 0,
+    "report": "coverage-gaps/METHOD_DEFINED_SOAP_MODULUS.md"
   }
 }
