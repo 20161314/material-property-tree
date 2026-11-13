@@ -17,14 +17,18 @@
     "ABO-3D": ["Amazon Berkeley Objects", "https://amazon-berkeley-objects.s3.amazonaws.com/index.html"],
     "VOMP-GVM-PUBLIC": ["VoMP / GVM", "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-PhysicalAssets-VoMP"],
     PIXIEVERSE: ["PIXIEVerse / SLAT-Phys 复用", "https://huggingface.co/datasets/vlongle/pixieverse"],
-    "PHYSXNET-FINALINDEX": ["PhysX-3D", ""],
+    "PHYSXNET-FINALINDEX": ["PhysX-3D", "https://huggingface.co/datasets/Caoza/PhysX-3D"],
     "NVIDIA-SIMREADY-HF": ["NVIDIA SimReady", "https://huggingface.co/datasets/nvidia/simready-assets"],
-    "PHYSX-MOBILITY": ["PhysX-Mobility", ""],
+    "PHYSX-MOBILITY": ["PhysX-Mobility", "https://huggingface.co/datasets/Caoza/PhysX-Mobility"],
     "LEGACY-CURATED": ["既有人工整理对象", ""],
     "YCB-OFFICIAL": ["YCB Object and Model Set", "https://www.ycbbenchmarks.com/"],
     "SUPPLEMENTAL-OBJAVERSE-LVIS-FLEXIBLE": ["Objaverse-LVIS 柔性候选", "https://huggingface.co/datasets/allenai/objaverse"],
     "Objaverse-LVIS": ["Objaverse-LVIS 硬质候选", "https://huggingface.co/datasets/allenai/objaverse"],
     "SUPPLEMENTAL-GOOGLE-GSO": ["Google Scanned Objects", "https://fuel.gazebosim.org/1.0/GoogleResearch/models"],
+  };
+  const sourceAssetLinks = {
+    "PHYSXNET-FINALINDEX": [["https://huggingface.co/datasets/Caoza/PhysX-3D/tree/main", "资产文件目录"], ["https://github.com/ziangcao0312/PhysX-3D", "项目说明 / 代码"]],
+    "PHYSX-MOBILITY": [["https://huggingface.co/datasets/Caoza/PhysX-Mobility/resolve/d0768ee9e1415f6be8db78d6389ba018b85134c0/PhysX-Mobility.zip", "下载 3D 资产 ZIP"]],
   };
   const queueNames = {
     MATERIAL_WITHOUT_EXACT_OBJECT_LINK: "材料待精确关联对象", MATERIAL_FIRST_NUMERICAL_SOURCE: "材料待首个数值来源",
@@ -56,7 +60,8 @@
   const sourceKeys = [...new Set([...Object.keys(objectCounts), ...Object.keys(rowCounts)])];
   $("source-rows").innerHTML = sourceKeys.map((id) => {
     const [label, url] = sourceLabels[id] || [id, ""];
-    return `<tr><td>${link(url, label) || esc(label)}</td><td>${fmt(objectCounts[id])}</td><td>${fmt(rowCounts[id])}</td></tr>`;
+    const assets = (sourceAssetLinks[id] || []).map(([href, text]) => link(href, text)).join(" · ");
+    return `<tr data-source-id="${esc(id)}"><td>${link(url, label) || esc(label)}${assets ? `<div class="scaling-asset-links">${assets}</div>` : ""}</td><td>${fmt(objectCounts[id])}</td><td>${fmt(rowCounts[id])}</td></tr>`;
   }).join("");
   const sourceTotal = Object.values(objectCounts).reduce((sum, value) => sum + Number(value), 0);
   $("source-total").textContent = Object.keys(objectCounts).length ? `${fmt(sourceTotal)} 对象` : "对象分来源汇总待载入";
