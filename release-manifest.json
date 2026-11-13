@@ -130,7 +130,7 @@
     "site-shell.js": "c243dde1ae8d76e21ca766747b05b0d2806bfbaab5958c05cbd7a67f3d59b2ea",
     "site-shell.css": "a5734279cd4afaa4add1947c664bb4f65dbc0cdf1e7314aa5d5ca9f02b8f3585",
     "payload-loader.js": "58330e5c1ac8ac85169379bab061b1f34846d67107e0dea2be22a18ec2089d49",
-    "app.js": "97571edb76924508bf6d7298e7e140cec127eaf44ef2145034c4b48f9e79a6e4",
+    "app.js": "ce9bc4804466f52bc327821e556e18db5aeaa8a7ef1226f4408631817b2c202c",
     "scaling.js": "f9f0424889a5cd5788bef06485c885a71a66386b13df4887bb08bc7e1c46e4b4",
     "phase1-ranges.js": "e807186bed14759588e6784c0fcc75b525d5b232e6a3aa4d38e529de12b22240"
   },
@@ -200,8 +200,8 @@
     },
     "files": {
       "app.js": {
-        "sha256": "97571edb76924508bf6d7298e7e140cec127eaf44ef2145034c4b48f9e79a6e4",
-        "bytes": 47076
+        "sha256": "ce9bc4804466f52bc327821e556e18db5aeaa8a7ef1226f4408631817b2c202c",
+        "bytes": 50154
       },
       "data.js": {
         "sha256": "5ce062c79d73a492833e9e7f8dc9374f6ab246786af3e733175c68e2139d6dd2",
@@ -260,5 +260,17 @@
         "bytes": 243
       }
     }
-  }
+  },
+  "progressive_material_tree": {
+    "bootstrap": "research-bootstrap.js",
+    "compressed_bootstrap": "research-bootstrap.js.gz",
+    "bootstrap_sha256": "55745dc99664845ae005b9d389b1e6f71fda720fb77205a82f393e34e0563ff1",
+    "compressed_bootstrap_sha256": "fd3300d44d8e6696b7424dd77eff39a16c99a6c601e602a4adc4750423e0c5dd",
+    "detail_directory": "research-details/",
+    "scientific_payload_sha256": "e7fa4be1339ed715163360c521ae5997d61e2a41737ef8845e1f4b95538f505d",
+    "original_full_payload_retained": true,
+    "evidence_loaded_on_demand": true,
+    "data_revision": "f02bdaa297"
+  },
+  "ui_revision": "ce9bc4804466-55745dc99664"
 }

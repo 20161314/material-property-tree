@@ -13,6 +13,42 @@
   const d3 = window.d3;
   const fmt = (value) => value === null || value === undefined ? "待汇总" : Number(value).toLocaleString("zh-CN");
   const nodesById = new Map(data.nodes.map((node) => [node.id, { ...node, childIds: [], level: 0 }]));
+  const detailRequests = new Map();
+  const loadedDetailChunks = new Set();
+  const detailErrors = new Map();
+  async function ensureNodeDetails(node) {
+    if (!data.progressiveDetails || !node.directEvidenceCount || loadedDetailChunks.has(node.detailChunk)) return;
+    const key = node.detailChunk;
+    if (!detailRequests.has(key)) {
+      const request = (async () => {
+        const chunk = data.detailChunks[key];
+        const url = new URL(chunk.url, location.href);
+        if (url.origin !== location.origin) throw new Error('证据地址与当前站点不一致');
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 30000);
+        let bytes;
+        try {
+          const response = await fetch(url, {signal:controller.signal});
+          if (!response.ok) throw new Error('HTTP '+response.status);
+          bytes = new Uint8Array(await response.arrayBuffer());
+        } finally { clearTimeout(timeout); }
+        if (bytes[0] === 31 && bytes[1] === 139) {
+          bytes = new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer());
+        }
+        const digest = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes))).map(value=>value.toString(16).padStart(2,'0')).join('');
+        if (digest !== chunk.sha256) throw new Error('证据分块校验失败');
+        const details = JSON.parse(new TextDecoder().decode(bytes));
+        details.nodes.forEach(full => { if (nodesById.has(full.id)) Object.assign(nodesById.get(full.id), full); });
+        Object.assign(data.evidenceByNode, details.evidenceByNode);
+        loadedDetailChunks.add(key);
+        detailErrors.delete(key);
+      })();
+      detailRequests.set(key, request);
+      request.catch(error => { detailRequests.delete(key); detailErrors.set(key,error.message); });
+    }
+    return detailRequests.get(key);
+  }
+
   const parentless = [];
   nodesById.forEach((node) => {
     if (node.parentId && node.parentId !== node.id && nodesById.has(node.parentId)) nodesById.get(node.parentId).childIds.push(node.id);
@@ -102,7 +138,7 @@
   function nodeKind(node) {
     if (node.childIds.length && node.subtreeEvidenceCount) return ["子树汇总", "aggregate"];
     if (data.meta.researchMode && node.id.startsWith("RESEARCH-FAMILY-")) return ["分类/材料族", "category"];
-    if ((data.evidenceByNode[node.id] || []).length) return [data.meta.researchMode ? "存在来源记录" : "存在完整证据", "evidenced"];
+    if ((data.evidenceByNode[node.id] || []).length || node.directEvidenceCount) return [data.meta.researchMode ? "存在来源记录" : "存在完整证据", "evidenced"];
     if (node.childIds.length) return ["分类/材料族", "category"];
     return ["材料身份", "identity"];
   }
@@ -412,6 +448,10 @@
       const href = /^evidence-catalog\.html(?:[?].*)?$/.test(url) ? url : "evidence-catalog.html";
       return '<p class="boundary-note">数据库转录实验记录。已核结构、单位、引用连接与重复键；未逐篇人工回读原论文。完整组仅含唯一引文；多引文缺项组保留引用集合。</p><a class="source-link" href="' + escapeHtml(href) + '">打开完整与缺项物性分页目录</a>';
     }
+    if (data.progressiveDetails && node.directEvidenceCount && !loadedDetailChunks.has(node.detailChunk)) {
+      const failure = detailErrors.get(node.detailChunk);
+      return failure ? '<p class="empty-inline" role="alert">该材料证据载入失败：'+escapeHtml(failure)+'</p><button type="button" id="retry-evidence">重试证据</button>' : '<p class="empty-inline" role="status" data-evidence-loading>正在载入此材料的来源明细，分类和搜索可继续使用。</p>';
+    }
     if (data.meta.researchMode && node.id.startsWith("RESEARCH-FAMILY-") && !node.childIds.length) {
       return '<p class="empty-inline">该材料家族目前尚无通过审核的完整来源。保留为检索缺口，未填入占位数值。</p>';
     }
@@ -484,7 +524,15 @@
 
   function renderDetail(node) {
     if (!node) return;
-    if (data.meta.researchMode) { renderResearchDetail(node); return; }
+    if (data.meta.researchMode) {
+      renderResearchDetail(node);
+      const retry = document.getElementById('retry-evidence');
+      if (retry) retry.onclick = () => { detailErrors.delete(node.detailChunk); renderDetail(node); };
+      if (!detailErrors.has(node.detailChunk)) ensureNodeDetails(node).then(() => {
+        if (selectedId === node.id && node.directEvidenceCount) renderResearchDetail(node);
+      }).catch(() => { if (selectedId === node.id) renderDetail(node); });
+      return;
+    }
     const kind = nodeKind(node);
     const path = ancestorsOf(node.id);
     const aggregateOnly = node.childIds.length > 0;
@@ -602,6 +650,7 @@
 
   let resizeTimer = null;
   window.addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => fitTree(false), 120); });
+  document.addEventListener("material-icons-ready", iconRefresh, {once:true});
   setStats();
   renderTripletPriorities();
   renderSourceCoverage();
@@ -611,6 +660,8 @@
   const requestedNode = new URLSearchParams(location.search).get("material") || new URLSearchParams(location.search).get("node");
   if (requestedNode && nodesById.has(requestedNode)) revealNode(requestedNode);
   iconRefresh();
+  performance.mark("material-tree-interactive");
+  document.body.dataset.treeInteractive = "true";
 })();
 
 })().catch(() => {});
