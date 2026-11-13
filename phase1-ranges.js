@@ -1,6 +1,7 @@
 (async () => { if (window.MATERIAL_PAYLOAD_READY) await window.MATERIAL_PAYLOAD_READY;
 (() => {
   const data = window.PHASE1_RANGES;
+  if (!window.verifyDatasetView || !window.verifyDatasetView('coverage', data)) return;
   if (!data) return;
 
   const familyNames = {
@@ -154,6 +155,8 @@
     }).join("");
   }
 
+  const selectedMaterial = new URLSearchParams(location.search).get("material");
+  if (selectedMaterial) $("material-search").value = selectedMaterial;
   function render() {
     const query = $("material-search").value.trim().toLocaleLowerCase();
     const status = $("status-filter").value;
@@ -166,7 +169,8 @@
       if (status === "liquid" && target.status !== "LIQUID_WAIVER") return false;
       if (family !== "all" && target.family !== family) return false;
       const searchable = [target.id, target.nameCn, target.nameEn, target.sourceLabels, familyNames[target.family]].join(" ").toLocaleLowerCase();
-      return !query || searchable.includes(query);
+      const exactId = targets().some(item => item.id.toLocaleLowerCase() === query);
+      return !query || (exactId ? target.id.toLocaleLowerCase() === query : searchable.includes(query));
     });
     rows = [...rows].sort((a, b) => {
       if (sort === "name") return a.nameCn.localeCompare(b.nameCn, "zh-CN");
@@ -187,16 +191,18 @@
       const detailSummary = target.recordCount ? `<details class="material-expand" data-target="${esc(target.id)}"><summary><strong>${esc(target.nameCn)}</strong><small>${esc(target.nameEn)} · ${esc(target.id)}</small><span>查看 ${target.recordCount} 条关联记录</span></summary><div class="evidence-list"></div></details>` : `<strong>${esc(target.nameCn)}</strong><small>${esc(target.nameEn)} · ${esc(target.id)}</small>`;
       const stage2 = target.status === "LIQUID_WAIVER" ? "液体不作硬性要求" : "完整与缺项记录同步收集";
       return `<tr>
-        <td>${detailSummary}<small class="family-label">${esc(familyNames[target.family] || target.family)}</small></td>
+        <td>${detailSummary}<small class="family-label">${esc(familyNames[target.family] || target.family)}</small><div class="material-view-links"><a href="research.html?material=${encodeURIComponent(target.id)}">材料树</a><a href="scaling.html?material=${encodeURIComponent(target.id)}">关联物体</a></div></td>
         <td><strong>${relationCount}</strong><small>主账 ${target.recordCount.toLocaleString("en")} 组</small>${extCount ? `<small>另有数据库完整 ${target.externalCompleteRecordCount.toLocaleString("en")} · 缺项 ${target.externalIncompleteRecordCount.toLocaleString("en")}</small><a href="${esc(target.externalCollectionUrl)}">分页查看数据库原始来源组</a>` : ""}</td>
         <td>${target.documentKeyCount.toLocaleString("en")}<small>主账文档键（外库另列）</small></td>
         <td class="range-cell">${fmtRange(target.E)}<small>报告跨度</small></td>
         <td class="range-cell">${fmtRange(target.nu)}<small>报告跨度</small></td>
-        <td class="range-cell">${fmtRange(target.rho)}<small>${esc(target.densityScopeNote || '报告跨度')}</small></td>
+        <td class="range-cell">${fmtRange(target.rho)}<small>${esc(target.densityScopeNote ? '密度定义与条件见原始记录' : '报告跨度')}</small></td>
         <td><span class="status-badge ${badge}">${label}</span><small>${stage2}</small></td>
       </tr>`;
     }).join("");
 
+    const cellLabels=['材料与来源','数据组','文档键','E（GPa）','ν','ρ（kg/m³）','覆盖状态'];
+    $("material-table-body").querySelectorAll('tr').forEach(row => [...row.cells].forEach((cell,index)=>cell.dataset.label=cellLabels[index]));
     $("material-table-body").querySelectorAll("details[data-target]").forEach((details) => {
       details.addEventListener("toggle", () => {
         if (!details.open || details.dataset.loaded) return;

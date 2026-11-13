@@ -11,14 +11,17 @@
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles.css?v=238c8dc7d668">
   <link rel="stylesheet" href="evidence-catalog.css?v=cc7e90fbf9b4">
+  <link rel="stylesheet" href="site-shell.css?v=a5734279cd4a">
+  <script src="release-data.js?v=59636778b879"></script>
+  <script src="site-shell.js?v=c243dde1ae8d"></script>
 </head>
-<body class="catalog-page">
+<body class="catalog-page" data-view="catalog">
   <a class="skip-link" href="#catalog-table">跳到来源数据组</a>
   <header class="app-header catalog-header">
     <div class="title-block"><p class="edition">材料物性来源库 · 外部数据目录</p><h1 id="catalog-title">SciGlass 来源数据组</h1><p class="subtitle">逐条保留材料成分、E / ν / ρ、文献引用与来源定位。</p></div>
     <dl class="catalog-stats" aria-label="目录记录数"><div><dt>完整来源组</dt><dd id="stat-complete">—</dd></div><div><dt>不完整来源组</dt><dd id="stat-incomplete">—</dd></div><div><dt>合计来源组</dt><dd id="stat-total">—</dd></div></dl>
   </header>
-  <nav class="catalog-nav" aria-label="数据视图"><a href="research.html">材料证据树</a><a href="phase1-ranges.html">193 项材料覆盖与范围</a><a href="index.html">物体与材料映射树</a></nav>
+  
   <main class="catalog-content">
     <section class="catalog-boundary" aria-labelledby="boundary-title"><h2 id="boundary-title">数据库转录证据，原论文未逐篇人工回查</h2><p>本目录保留 SciGlass 转录的实验数据及其引文。完整组须在同一材料 / 来源组中同时有 E、ν、ρ；不完整组只有一项或两项。单一引文与多引文组分别标明，三项齐全但引用归属不明确的记录单独隔离，不计入这里的完整组。缺项显示“—”，不补零，不跨来源拼组。</p><ul id="collection-limitations" hidden></ul></section>
     <section class="catalog-summary" aria-label="来源与材料身份统计"><p><span>原文引用键</span><strong id="stat-citations">—</strong><small>去重后的引文标识，不等于已核定独立来源数</small></p><p><span>来源定义材料身份</span><strong id="stat-identities">—</strong><small>不同成分 / 配方保留原定义，不等于对象数量</small></p></section>

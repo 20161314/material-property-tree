@@ -1,6 +1,7 @@
 (async () => {
   const $ = (id) => document.getElementById(id);
   const data = window.SCALING_BOOTSTRAP || window.SCALING_DATA;
+  if (!window.verifyDatasetView || !window.verifyDatasetView('objects', data)) return;
   if (!data?.summary) {
     $("load-error").hidden = false;
     $("load-error").textContent = "发布数据未载入，请刷新页面或检查 scaling-data.js。";
@@ -12,6 +13,38 @@
   const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[char]));
   const safeUrl = (value) => /^https?:\/\//i.test(String(value || "")) ? String(value) : "";
   const link = (url, text) => safeUrl(url) ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(text)} ↗</a>` : "";
+  const materialId = new URLSearchParams(location.search).get('material');
+  async function renderMaterialObjects() {
+    const section = $('material-linked-objects');
+    if (!materialId || !section) return;
+    section.hidden = false;
+    $('linked-material-tree').href = 'research.html?material=' + encodeURIComponent(materialId);
+    $('linked-material-note').textContent = '正在读取当前版本的材料映射…';
+    try {
+      const pin = window.DATASET_RELEASE.object_material_index;
+      const response = await fetch(pin.file + '?v=' + pin.sha256.slice(0,12), {signal:AbortSignal.timeout(30000)});
+      if (!response.ok) throw new Error('材料索引请求失败：' + response.status);
+      const bytes = await response.arrayBuffer();
+      const hash = [...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(n=>n.toString(16).padStart(2,'0')).join('');
+      if (hash !== pin.sha256) throw new Error('材料索引与当前发布版本不一致');
+      const decoded = await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+      const index = JSON.parse(decoded);
+      if (index.releaseId !== window.DATASET_RELEASE.id) throw new Error('材料索引版本不一致');
+      const entry = index.materials[materialId];
+      const rows = entry?.rows || [];
+      $('linked-material-title').textContent = entry ? entry.nameCn : materialId;
+      $('linked-material-note').textContent = rows.length ? new Set(rows.map(r=>r.object_id)).size.toLocaleString('en') + ' 个来源物体，' + rows.length.toLocaleString('en') + ' 条已有组件映射。保留原审核状态；物性证据不自动赋给这些商品。' : '此材料尚无以规范 ID 建立的物体映射；来源值仍可查看，不据名称猜测物体。';
+      let shown = 0;
+      const append = () => {
+        const next = rows.slice(shown, shown+24); shown += next.length;
+        $('linked-material-rows').insertAdjacentHTML('beforeend', next.map(row=>'<article data-object-id="'+esc(row.object_id)+'"><h3>'+esc(row.object_name_cn || row.object_name_en)+'</h3><p>'+esc(row.object_name_en)+'</p><small>'+esc(row.object_id)+' · '+esc(row.component_id)+'</small><p><strong>'+esc(row.component_scope)+'</strong> · '+esc(row.material_label)+'</p><p>'+esc(row.material_identity_status)+'<br>'+esc(row.material_release_status)+'</p><div class="scaling-asset-links">'+link(row.asset_url,'打开 3D 资产')+link(row.mapping_source_url,'查看材料依据')+'</div></article>').join(''));
+        $('linked-material-more').hidden = shown >= rows.length;
+        $('linked-material-more').textContent = '继续加载（'+shown+' / '+rows.length+'）';
+      };
+      $('linked-material-more').addEventListener('click',append); append();
+    } catch(error) { $('linked-material-note').textContent = error.message + '，请重新载入。'; }
+  }
+  renderMaterialObjects();
   const sourceLabels = {
     "ABO-3D": ["Amazon Berkeley Objects", "https://amazon-berkeley-objects.s3.amazonaws.com/index.html"],
     "VOMP-GVM-PUBLIC": ["VoMP / GVM", "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-PhysicalAssets-VoMP"],
@@ -82,6 +115,7 @@
     if (window.MATERIAL_PAYLOAD_READY) await window.MATERIAL_PAYLOAD_READY;
     if (!window.SCALING_DATA) throw new Error("交互数据未载入，请重试。");
     Object.assign(data, window.SCALING_DATA);
+    if (!window.verifyDatasetView('objects', data)) return;
   } catch (error) {
     $("load-error").hidden = false;
     $("load-error").textContent = "交互列表暂未载入：" + error.message + " 上方为已发布快照。";
@@ -229,9 +263,12 @@
     try {
       let rows = cache.get(index);
       if (!rows) {
-        const response = await fetch(pages[index].url);
+        const response = await fetch(pages[index].url, {signal:AbortSignal.timeout(30000)});
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        rows = await response.json();
+        const bytes = await response.arrayBuffer();
+        const hash = [...new Uint8Array(await crypto.subtle.digest('SHA-256', bytes))].map(n=>n.toString(16).padStart(2,'0')).join('');
+        if (!pages[index].sha256 || hash !== pages[index].sha256) throw new Error('资产分页与当前发布版本不一致');
+        rows = JSON.parse(new TextDecoder().decode(bytes));
         if (!Array.isArray(rows) || rows.length !== pages[index].count) throw new Error("分页条数与索引不一致");
         cache.set(index, rows);
       }

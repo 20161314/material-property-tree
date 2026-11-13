@@ -3,6 +3,7 @@
   "use strict";
 
   const data = window.SITE_DATA;
+  if (data?.meta?.researchMode && (!window.verifyDatasetView || !window.verifyDatasetView('materials', data))) return;
   const hasD3 = typeof window.d3 !== "undefined";
   if (!data || !hasD3) {
     document.body.innerHTML = '<div class="fatal-error" role="alert">网站资源未完整载入。请确认 data.js、vendor/d3.min.js 和 vendor/lucide.min.js 均已部署。</div>';
@@ -30,6 +31,23 @@
     node.childIds.forEach((id) => levelQueue.push({ id, level: current.level + 1 }));
   }
 
+  let treeMode = data.meta.researchMode ? 'directory' : 'graph';
+  const treePanel = document.querySelector('.tree-panel');
+  const directory = document.createElement('div'); directory.className='site-directory';
+  treePanel.append(directory);
+  const modeSwitch = document.createElement('div'); modeSwitch.className='directory-modes';
+  modeSwitch.innerHTML='<button type="button" data-mode="directory">分类目录</button><button type="button" data-mode="graph">树形画布</button>';
+  if (data.meta.researchMode) treePanel.querySelector('.panel-heading').append(modeSwitch);
+  function updateDirectory() {
+    document.body.dataset.treeMode=treeMode;
+    modeSwitch.querySelectorAll('button').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.mode===treeMode)));
+    const node=nodesById.get(selectedId);
+    const children=node.childIds.map(id=>nodesById.get(id));
+    if(treeMode==='directory')document.getElementById('visible-summary').textContent='逐级浏览分类；材料节点 '+fmt(data.meta.canonicalCoverage.targetCount)+' 个，分类目录另计。';
+    directory.innerHTML='<div class="directory-heading"><strong>'+escapeHtml(node.nameCn)+'</strong><span>'+children.length+' 个直属分类或材料</span></div><div class="directory-path">'+ancestorsOf(node.id).map(item=>'<button type="button" data-directory-id="'+escapeHtml(item.id)+'">'+escapeHtml(item.nameCn)+'</button>').join('')+'</div><div class="directory-grid">'+children.map(item=>'<button type="button" data-directory-id="'+escapeHtml(item.id)+'"><strong>'+escapeHtml(item.nameCn)+'</strong><small>'+escapeHtml(item.nameEn)+'</small><small>'+fmt(item.classifiedEvidenceCount ?? item.subtreeEvidenceCount)+' 条来源组'+(item.childIds.length ? ' · '+item.childIds.length+' 个子类' : '')+'</small></button>').join('')+'</div>'+(!children.length ? '<p class="site-caption">已到材料叶节点。右侧查看逐来源的原始数值，或进入物性覆盖页查看范围。</p>' : '');
+    directory.querySelectorAll('[data-directory-id]').forEach(button=>button.onclick=()=>revealNode(button.dataset.directoryId));
+  }
+  modeSwitch.querySelectorAll('button').forEach(button=>button.onclick=()=>{treeMode=button.dataset.mode;updateDirectory();requestAnimationFrame(()=>fitTree(false));});
   const expanded = new Set([rootId]);
   let selectedId = rootId;
   let viewRootId = rootId;
@@ -294,7 +312,7 @@
     groups.append("text").attr("class", "node-count").attr("x", -86).attr("y", 27).text((item) => {
       const count = item.data.classifiedEvidenceCount ?? (item.data.childIds.length ? item.data.subtreeEvidenceCount : item.data.directEvidenceCount);
       return data.meta.researchMode
-        ? `${fmt(item.data.sourceDocumentCount)} 个文档键 · ${fmt(count)} 条记录`
+        ? `${fmt(item.data.classifiedSourceDocumentCount ?? item.data.sourceDocumentCount)} 个文档键 · ${fmt(count)} 条记录`
         : `L${item.data.level} · ${fmt(item.data.subtreeObjectCount)} 对象 · ${fmt(count)} ${item.data.childIds.length ? "子树" : "直接"}证据`;
     });
     const toggles = groups.filter((item) => item.data.childIds.length > 0);
@@ -305,6 +323,7 @@
     document.getElementById("expand-all").querySelector("span").textContent = scopeParents.every((node) => expanded.has(node.id)) ? "收起分支" : "展开分支";
     updateTreeContext();
     renderMinimap(root);
+    if (data.meta.researchMode) updateDirectory();
     if (options.fit) requestAnimationFrame(() => fitTree(false));
     if (options.focusId) requestAnimationFrame(() => centerNode(options.focusId));
   }
@@ -430,7 +449,7 @@
     const aggregate = node.childIds.length > 0 || (node.secondaryChildIds || []).length > 0;
     const children = node.childIds.map((id) => nodesById.get(id));
     const title = aggregate ? "分类来源覆盖" : "逐来源物性数据组";
-    content.innerHTML = `<div class="detail-header"><div class="detail-path">${path.map((item) => `<button type="button" class="crumb-button" data-node-id="${escapeHtml(item.id)}">${escapeHtml(item.nameCn)}</button>`).join("")}</div><h2 id="detail-heading">${escapeHtml(node.nameCn)}</h2><p class="detail-en">${escapeHtml(node.nameEn)}</p></div><div class="detail-body"><section class="detail-section"><h3>来源覆盖</h3><div class="metric-grid"><div class="metric"><span>文档文件键</span><strong>${fmt(node.classifiedSourceDocumentCount ?? node.sourceDocumentCount)}</strong></div><div class="metric"><span>发布主体</span><strong>${fmt(node.classifiedPublisherSubjectCount ?? node.publisherSubjectCount)}</strong></div><div class="metric"><span>${aggregate ? "分类去重" : "直接"}数据组</span><strong>${fmt(aggregate ? (node.classifiedEvidenceCount ?? node.subtreeEvidenceCount) : node.directEvidenceCount)}</strong></div><div class="metric"><span>本库新增对象赋值</span><strong>0</strong></div></div><p class="boundary-note">${escapeHtml(node.notes)}</p></section><section class="detail-section"><div class="section-heading-row"><h3>${title}</h3><p>${aggregate ? "仅汇总，不上推" : "原文条件，独立保留"}</p></div>${evidenceHtml(node)}</section>${children.length ? `<section class="detail-section"><h3>进入材料分支</h3><div class="research-branch-list">${children.slice(0, 40).map((child) => `<button type="button" class="research-branch" data-node-id="${escapeHtml(child.id)}"><span>${escapeHtml(child.nameCn)}</span><small>${fmt(child.sourceDocumentCount)} 个文档键 · ${fmt(child.subtreeEvidenceCount)} 条数据组</small></button>`).join("")}</div>${children.length > 40 ? '<p class="node-note">分支较多，可用顶部搜索框定位完整材料名或牌号。</p>' : ""}</section>` : ""}</div>`;
+    content.innerHTML = `<div class="detail-header"><div class="detail-path">${path.map((item) => `<button type="button" class="crumb-button" data-node-id="${escapeHtml(item.id)}">${escapeHtml(item.nameCn)}</button>`).join("")}</div><h2 id="detail-heading">${escapeHtml(node.nameCn)}</h2><p class="detail-en">${escapeHtml(node.nameEn)}</p></div><div class="detail-body"><section class="detail-section"><h3>来源覆盖</h3><div class="metric-grid"><div class="metric"><span>文档文件键</span><strong>${fmt(node.classifiedSourceDocumentCount ?? node.sourceDocumentCount)}</strong></div><div class="metric"><span>发布主体</span><strong>${fmt(node.classifiedPublisherSubjectCount ?? node.publisherSubjectCount)}</strong></div><div class="metric"><span>${aggregate ? "分类去重" : "直接"}数据组</span><strong>${fmt(aggregate ? (node.classifiedEvidenceCount ?? node.subtreeEvidenceCount) : node.directEvidenceCount)}</strong></div><div class="metric"><span>本库新增对象赋值</span><strong>0</strong></div></div><p class="boundary-note">${escapeHtml(node.notes)}</p></section><section class="detail-section"><div class="section-heading-row"><h3>${title}</h3><p>${aggregate ? "仅汇总，不上推" : "原文条件，独立保留"}</p></div>${evidenceHtml(node)}</section><section class="detail-section"><h3>关联视图</h3><div class="object-links"><a href="references.html?material=${encodeURIComponent(node.id)}">查看此材料数值与覆盖</a><a href="scaling.html?material=${encodeURIComponent(node.id)}#material-linked-objects">查找已映射物体</a></div></section>${children.length ? `<section class="detail-section"><h3>进入材料分支</h3><div class="research-branch-list">${children.slice(0, 40).map((child) => `<button type="button" class="research-branch" data-node-id="${escapeHtml(child.id)}"><span>${escapeHtml(child.nameCn)}</span><small>${fmt(child.sourceDocumentCount)} 个文档键 · ${fmt(child.subtreeEvidenceCount)} 条数据组</small></button>`).join("")}</div>${children.length > 40 ? '<p class="node-note">分支较多，可用顶部搜索框定位完整材料名或牌号。</p>' : ""}</section>` : ""}</div>`;
     const relatedParents = (node.secondaryParentIds || []).map(id => nodesById.get(id)).filter(Boolean);
     const relatedChildren = (node.secondaryChildIds || []).map(id => nodesById.get(id)).filter(Boolean);
     if (relatedParents.length || relatedChildren.length) {
@@ -589,7 +608,7 @@
   setScopeCollapsed(true);
   renderTree({ fit: true });
   renderDetail(nodesById.get(rootId));
-  const requestedNode = new URLSearchParams(location.search).get("node");
+  const requestedNode = new URLSearchParams(location.search).get("material") || new URLSearchParams(location.search).get("node");
   if (requestedNode && nodesById.has(requestedNode)) revealNode(requestedNode);
   iconRefresh();
 })();
