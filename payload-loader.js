@@ -19,16 +19,50 @@
     const url = new URL(tag.dataset.src, location.href);
     if (url.origin !== location.origin) throw new Error('Payload must be same-origin');
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 30000);
+    let idleTimer;
+    let timeoutReason = '';
+    const abort = reason => { timeoutReason = reason; controller.abort(); };
+    const resetIdleTimer = () => {
+      clearTimeout(idleTimer);
+      idleTimer = setTimeout(() => abort('网络连续30秒未收到数据，请重试。'), 30000);
+    };
+    const totalTimer = setTimeout(() => abort('网络下载超过180秒，请重试。'), 180000);
+    resetIdleTimer();
     let bytes;
     try {
       const response = await fetch(url, {signal: controller.signal});
       if (!response.ok) throw new Error('HTTP ' + response.status);
-      bytes = new Uint8Array(await response.arrayBuffer());
+      resetIdleTimer();
+      if (response.body) {
+        const reader = response.body.getReader();
+        const chunks = [];
+        let received = 0;
+        let lastProgress = 0;
+        try {
+          while (true) {
+            const {done, value} = await reader.read();
+            if (done) break;
+            if (!value.byteLength) continue;
+            resetIdleTimer();
+            chunks.push(value);
+            received += value.byteLength;
+            if (performance.now() - lastProgress >= 250) {
+              setStatus('正在载入交互数据，已下载 ' + Math.ceil(received / 1024).toLocaleString() + ' KB。');
+              lastProgress = performance.now();
+            }
+          }
+        } finally { reader.releaseLock(); }
+        bytes = new Uint8Array(received);
+        let offset = 0;
+        for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
+      } else {
+        bytes = new Uint8Array(await response.arrayBuffer());
+      }
     } catch (error) {
-      if (error.name === 'AbortError') throw new Error('网络请求超过30秒，请重试。');
+      if (error.name === 'AbortError') throw new Error(timeoutReason || '网络请求已中断，请重试。');
       throw error;
-    } finally { clearTimeout(timer); }
+    } finally { clearTimeout(idleTimer); clearTimeout(totalTimer); }
+    setStatus('下载完成，正在校验交互数据。');
     if (bytes[0] === 31 && bytes[1] === 139) {
       if (typeof DecompressionStream !== 'function') throw new Error('浏览器不支持 gzip 解压，请使用新版浏览器。');
       bytes = new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer());
