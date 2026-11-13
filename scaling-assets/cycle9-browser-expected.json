@@ -1,0 +1,23 @@
+{
+  "objects": 42776,
+  "rows": 69040,
+  "components": 68991,
+  "cards": 3164,
+  "newObjects": 83,
+  "cumulativeNewObjects": 212,
+  "newWhole": 83,
+  "gsoPages": 11,
+  "gsoObjects": 1033,
+  "gsoVerified": 13,
+  "flexSourceCards": 68,
+  "hardSourceCards": 49,
+  "downloadedGLB": 14,
+  "complete": 6173,
+  "partial": 93726,
+  "materials": 2801,
+  "accepted": 8679,
+  "quarantined": 143,
+  "intake": 221,
+  "intakeHeld": 1,
+  "sourceLabelEntries": 72
+}

@@ -59,8 +59,10 @@
       </section>
     </div>
     <section class="scaling-panel scaling-assets" aria-labelledby="new-source-heading">
-      <div class="scaling-section-heading"><div><p class="scaling-kicker">本轮新增来源对象</p><h2 id="new-source-heading">柔性与混合候选优先</h2><p class="scaling-note">保留来源身份、下载路径和材料状态。WHOLE 为整件占位，未完成真实分件；候选标签不是官方材料证明。</p></div></div>
+      <div class="scaling-section-heading"><div><p class="scaling-kicker">累计新增来源对象</p><h2 id="new-source-heading">柔性优先，硬质持续</h2><p class="scaling-note">保留来源身份、下载路径和材料状态。WHOLE 为整件占位，未完成真实分件；候选标签不是官方材料证明。</p></div></div>
       <div class="scaling-asset-controls"><label for="new-source-search">搜索全部新增对象<input id="new-source-search" type="search" placeholder="名称、来源 ID、材料" autocomplete="off"></label><label for="new-source-filter">来源 / 检索优先<select id="new-source-filter"><option value="all">全部新增对象</option><option value="flexible">柔性 / 混合候选</option></select></label><label for="new-source-page">分页<select id="new-source-page"></select></label><div class="scaling-pagination"><button id="new-source-prev" type="button">上一页</button><button id="new-source-next" type="button">下一页</button></div></div>
+      <p id="cycle9-payload-note" class="scaling-note"></p>
+      <p class="scaling-note"><a href="scaling-assets/cycle9-flexible-glb-verified.csv" download>14个既有GLB的字节与网格核验清单</a> · <a href="scaling-assets/cycle9-flexible-glb-verified.json">查看摘要、SHA及范围</a> · <a href="scaling-assets/cycle9-new-source-objects.csv" download>本轮83个新来源对象清单</a>。本轮新对象仍未下载；下载状态仅对应下表明确标记的既有14项。</p>
       <p id="new-source-status" class="scaling-note" aria-live="polite"></p>
       <div class="scaling-asset-table"><table><thead><tr><th>物体与来源身份</th><th>组件 / 材料状态</th><th>来源与 3D 资产</th></tr></thead><tbody id="new-source-rows"></tbody></table></div>
     </section>
@@ -106,7 +108,7 @@
     <footer class="scaling-footer"><p id="release-boundary"></p><details><summary>发布快照与校验</summary><dl id="release-hashes"></dl></details></footer>
   </main>
   <noscript>此页面需要启用 JavaScript，以载入发布统计和分页资产。</noscript>
-  <script src="scaling-data.js?v=220e6eed2bec"></script>
-  <script src="scaling.js?v=30e857c10bbd"></script>
+  <script src="scaling-data.js?v=962eb48e6dee"></script>
+  <script src="scaling.js?v=0e9e6121bb84"></script>
 </body>
 </html>

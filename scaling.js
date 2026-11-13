@@ -21,6 +21,7 @@
     "LEGACY-CURATED": ["既有人工整理对象", ""],
     "YCB-OFFICIAL": ["YCB Object and Model Set", "https://www.ycbbenchmarks.com/"],
     "SUPPLEMENTAL-OBJAVERSE-LVIS-FLEXIBLE": ["Objaverse-LVIS 柔性候选", "https://huggingface.co/datasets/allenai/objaverse"],
+    "Objaverse-LVIS": ["Objaverse-LVIS 硬质候选", "https://huggingface.co/datasets/allenai/objaverse"],
     "SUPPLEMENTAL-GOOGLE-GSO": ["Google Scanned Objects", "https://fuel.gazebosim.org/1.0/GoogleResearch/models"],
   };
   const queueNames = {
@@ -35,11 +36,11 @@
     "count-complete": summary.complete_records, "count-partial": summary.partial_records,
   };
   Object.entries(counts).forEach(([id, value]) => { $(id).textContent = fmt(value); });
-  $("delta-objects").textContent = summary.current_cycle === "cycle8" ? `+${fmt(summary.current_cycle_new_geometry_identities)}` : `+${fmt(Boolean(summary.current_cycle) ? 0 : summary.new_source_object_identities)}`;
+  $("delta-objects").textContent = ["cycle8", "cycle9"].includes(summary.current_cycle) ? `+${fmt(summary.current_cycle_new_geometry_identities)}` : `+${fmt(Boolean(summary.current_cycle) ? 0 : summary.new_source_object_identities)}`;
   const cycle2 = Number.isFinite(summary.cycle2_real_components_added);
   const cycle3 = Boolean(summary.current_cycle);
   $("delta-components").textContent = `+${fmt(cycle3 ? summary.current_cycle_net_component_increment : cycle2 ? summary.cycle2_net_component_increment : summary.net_real_component_increment)}`;
-  $("delta-components-note").textContent = summary.current_cycle === "cycle8"
+  $("delta-components-note").textContent = ["cycle8", "cycle9"].includes(summary.current_cycle)
     ? `本轮新增 ${fmt(summary.current_cycle_new_whole_object_fallbacks)} 个 WHOLE 整件占位；新增真实分件 ${fmt(summary.current_cycle_real_components_added)}，保留原 ${fmt(summary.featured_physical_component_count)} 张实体组件卡。`
     : cycle3
     ? `本轮 ${fmt(summary.current_cycle_real_components_added)} 个实体替换 ${fmt(summary.current_cycle_fallbacks_replaced)} 个整件占位，净增 ${fmt(summary.current_cycle_net_component_increment)}；另补 ${fmt(summary.current_cycle_existing_component_material_updates)} 条既有组件材料回链`
@@ -139,7 +140,7 @@
 
 
   // New WHOLE source objects remain separate from authored physical-component cards.
-  const newItems = (data.cycle8NewSourceObjects || []).map((item, index) => ({item, index, search: [item.objectId, item.sourceId, item.nameCn, item.nameEn, item.category, item.materialLabel, item.sourceFamily].join(" ").toLowerCase()})).sort((a,b) => Number(b.item.flexiblePriority)-Number(a.item.flexiblePriority) || a.index-b.index);
+  const newItems = (data.newSourceObjects || data.cycle8NewSourceObjects || []).map((item, index) => ({item, index, search: [item.objectId, item.sourceId, item.nameCn, item.nameEn, item.category, item.materialLabel, item.sourceFamily].join(" ").toLowerCase()})).sort((a,b) => Number(b.item.flexiblePriority)-Number(a.item.flexiblePriority) || a.index-b.index);
   let newPage=0;
   const newSize=40, newSelect=$("new-source-page");
   function renderNew(reset=false) {
@@ -150,19 +151,20 @@
     newSelect.innerHTML=pages?Array.from({length:pages},(_,i)=>`<option value="${i}">第 ${i+1}/${pages} 页</option>`).join(""):'<option value="0">无匹配页</option>';
     newSelect.value=String(newPage);newSelect.disabled=!pages;
     $("new-source-prev").disabled=!pages || newPage===0;$("new-source-next").disabled=!pages || newPage===pages-1;
-    $("new-source-status").textContent=`新增来源对象 ${fmt(newItems.length)} 个 · 命中 ${fmt(hits.length)} 个 · 第 ${pages?newPage+1:0}/${pages} 页 · 每页最多 ${newSize} 个`;
+    $("new-source-status").textContent=`累计新增来源对象 ${fmt(newItems.length)} 个 · 命中 ${fmt(hits.length)} 个 · 第 ${pages?newPage+1:0}/${pages} 页 · 每页最多 ${newSize} 个`;
     $("new-source-rows").innerHTML=hits.slice(newPage*newSize,(newPage+1)*newSize).map(({item})=>`<tr>
-      <td data-label="物体与来源身份"><strong>${esc(item.nameCn || item.nameEn)}</strong><small>${esc(item.nameEn)}</small><small>${esc(item.objectId)}</small><small>${esc(item.sourceId)} · ${esc(item.sourceFamily)}</small><small>${esc(item.category)}</small></td>
+      <td data-label="物体与来源身份"><strong>${esc(item.nameCn || item.nameEn)}</strong><small>${esc(item.nameEn)}</small><small>${esc(item.objectId)}</small><small>${esc(item.sourceId)} · ${esc(item.sourceFamilyLabel || item.sourceFamily)}</small><small>${esc(item.category)}</small></td>
       <td data-label="组件 / 材料状态"><p>${esc(item.componentScope)}</p><span class="scaling-badge pending">${esc(item.materialStatusLabel)}</span><p>${esc(item.materialLabel)}</p><small>${esc(item.materialNote)}</small><small>WHOLE 整件占位；未枚举真实分件；本批无 E/ν/ρ 物性赋值。</small><small>${item.flexiblePriority?"柔性 / 混合候选优先，仅检索分类，不证明材料或软硬。":"来源身份与材料证据分层记录。"}</small></td>
-      <td data-label="来源与 3D 资产"><div class="scaling-asset-links">${link(item.sourceUrl,"来源清单")}${link(item.mappingSourceUrl,"材料说明 / 候选依据")}${link(item.assetUrl,"下载 3D 资产包")}</div><span class="scaling-badge pending">${esc(item.assetStatusLabel)}</span><small>${esc(item.license)}</small><small>包内路径：${esc(item.archivePath)}</small><small>${esc(item.downloadStatus)}</small><small>${esc(item.limitations)}</small></td></tr>`).join("") || '<tr><td colspan="3">没有匹配的新增对象。</td></tr>';
+      <td data-label="来源与 3D 资产"><div class="scaling-asset-links">${link(item.sourceUrl,"来源清单")}${link(item.mappingSourceUrl,"材料说明 / 候选依据")}${link(item.assetUrl,"下载 3D 资产包")}</div><span class="scaling-badge pending">${esc(item.assetStatusLabel)}</span><small>${esc(item.license)}</small><small>包内路径：${esc(item.archivePath)}</small><small>${esc(item.downloadStatus)}</small>${item.geometrySha256 ? `<small>GLB SHA-256：${esc(item.geometrySha256)}</small><small>负载顶点 / 三角形：${fmt(item.geometryVertices)} / ${fmt(item.geometryFaces)}；mesh / 材质槽 / 纹理：${fmt(item.geometryMeshes)} / ${fmt(item.materialSlots)} / ${fmt(item.textures)}</small>` : ""}<small>${esc(item.limitations)}</small></td></tr>`).join("") || '<tr><td colspan="3">没有匹配的新增对象。</td></tr>';
   }
   newSelect.addEventListener("change",()=>{newPage=Number(newSelect.value);renderNew();});
   $("new-source-prev").addEventListener("click",()=>{newPage--;renderNew();});
   $("new-source-next").addEventListener("click",()=>{newPage++;renderNew();});
   $("new-source-search").addEventListener("input",()=>renderNew(true));
-  $("new-source-filter").innerHTML += [...new Set(newItems.map(({item})=>item.sourceFamily))].map(f=>`<option value="${esc(f)}">${esc(f)}</option>`).join("");
+  $("new-source-filter").innerHTML += [...new Set(newItems.map(({item})=>item.sourceFamily))].map(f=>`<option value="${esc(f)}">${esc(sourceLabels[f]?.[0] || f)}</option>`).join("");
   $("new-source-filter").addEventListener("change",()=>renderNew(true));
   renderNew();
+  if ($("cycle9-payload-note")) $("cycle9-payload-note").textContent = `本轮 ${fmt(summary.current_cycle_new_geometry_identities)} 个新来源对象：柔性 / 混合 ${fmt(summary.cycle9_flexible_source_objects)}，硬质 ${fmt(summary.cycle9_hard_source_objects)}；新增真实机械分件 ${fmt(summary.current_cycle_real_components_added)}。另验证既有 ${fmt(summary.cycle9_verified_glb_payloads)} 个 GLB，共 ${fmt(summary.cycle9_verified_glb_bytes)} 字节；下载验证不增加材料证明、物性组或对象数。`;
 
   const pages = data.gsoPages || [];
   const pageSelect = $("gso-page");
