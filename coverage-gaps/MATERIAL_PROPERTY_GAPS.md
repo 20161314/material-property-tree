@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3813；三项各有来源值1677。
+材料3822；三项各有来源值1680。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -686,6 +686,7 @@
 - RESEARCH-MAT-903DF7B319E2CD87B657 其他材料 · Clariant Licowax PED 153, oxidized high-density polyethylene wax / Clariant Licowax PED 153, oxidized high-density polyethylene wax：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7F51507B0ECEEC3B27F7 其他材料 · Clariant Licowax PED 522 granules, oxidized copolymer wax / Clariant Licowax PED 522 granules, oxidized copolymer wax：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9C225FA9614122C37200 其他材料 · Corundum-protected paper HPL with melamine decorative and phenolic core layers / Corundum-protected paper HPL with melamine decorative and phenolic core layers：缺 rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-E77FB8220A6437D6C45B 其他材料 · Cured acrylate-based self-polishing copolymer antifouling paint film (AkzoNobel Interswift 6600) / Cured acrylate-based self-polishing copolymer antifouling paint film (AkzoNobel Interswift 6600)：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-0C322945397B6A7D37E9 其他材料 · Fundermax Max Compact Exterior F-quality NT-surface high-pressure laminate panel / Fundermax Max Compact Exterior F-quality NT-surface high-pressure laminate panel：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7D328B59D9BDB16AA592 其他材料 · Hangzhou bay mud / Hangzhou bay mud：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FD17AEB846C8789C15F3 其他材料 · Huangmaohai estuary mud / Huangmaohai estuary mud：缺 E;nu；已有完整组0、缺项组1。
@@ -694,7 +695,6 @@
 - RESEARCH-MAT-FB6A4467BBE27D108ED5 其他材料 · Lianyungang port mud / Lianyungang port mud：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-38705AC3C402C9E60C86 其他材料 · Lianyungang waterway mud / Lianyungang waterway mud：缺 E;nu；已有完整组0、缺项组1。
 - MAT-MUD-BROAD 泥状材料（组成/含水率未详） / Mud-like material, composition/moisture unspecified：缺 E;nu；已有完整组0、缺项组9。
-- MAT-PAINT-SOURCE-BROAD 涂料（化学组成未详） / Paint material, chemistry unspecified：缺 rho；已有完整组0、缺项组7。
 - SOURCE-MAT-97839AB86E352442295F PlanWood（源商品材料名）（来源构造标签） / PlanWood — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-98E2098CC7B846BFA524 其他材料 · Prussian Blue pigment / cold-pressed linseed-oil paint / Prussian Blue pigment / cold-pressed linseed-oil paint：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-324840F5C9CB4780A40A 其他材料 · Resopal Traceless fingerprint-resistant decorative laminate sheet / Resopal Traceless fingerprint-resistant decorative laminate sheet：缺 E;nu；已有完整组0、缺项组1。
@@ -1989,7 +1989,7 @@
 - MAT-TEXTILE-WOOL-COTTON-BLEND 羊毛/棉混纺（比例/结构见原文） / Wool/cotton textile blend, ratio/construction source-conditioned：缺 E;nu;rho；已有完整组0、缺项组0。
 - MAT-TEXTILE-WOOL-COTTON-POLYESTER-BLEND 羊毛/棉/聚酯混纺（比例/结构见原文） / Wool/cotton/polyester textile blend, ratio/construction source-conditioned：缺 E;nu;rho；已有完整组0、缺项组0。
 - MAT-TEXTILE-WOOL-VISCOSE-BLEND 羊毛/粘胶混纺（比例/结构见原文） / Wool/viscose textile blend, ratio/construction source-conditioned：缺 E;nu;rho；已有完整组0、缺项组0。
-- SOURCE-MAT-154C9A0B0375CC4D8EE9 大麻纤维（源标签 hemp，具体构造未详） / hemp — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
+- SOURCE-MAT-154C9A0B0375CC4D8EE9 大麻纤维（源标签 hemp，具体构造未详） / hemp — source-labelled material, finer composition unspecified：缺 nu；已有完整组0、缺项组2。
 - SOURCE-MAT-05579D669DD1178BFA7B 再生塑料帆布（来源构造标签） / recycled-plastic canvas — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-66DD06D9FFA9BF4AFC73 绒面材料（源标签）（来源构造标签） / suede — source-labelled material, finer composition unspecified：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-D40F38399C7E437DD567 木材 · 18 mm Kronospan MDF / 18 mm Kronospan MDF：缺 nu；已有完整组0、缺项组1。
@@ -2020,6 +2020,10 @@
 - RESEARCH-MAT-FB7FA4AC50E1C7645FB7 木材 · Bur oak / Bur oak：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-6658152657348561774D 木材 · Butternut / Butternut：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-068F3384E5EB541AC0ED 木材 · CNF-surface-treated Scots pine sapwood (Pinus sylvestris) / CNF-surface-treated Scots pine sapwood (Pinus sylvestris)：缺 nu；已有完整组0、缺项组3。
+- RESEARCH-MAT-00D4B8D78F138376EC2A 木材 · Calamus crinitus subsp. sabut rattan cane / Calamus crinitus subsp. sabut rattan cane：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-397966DDC72FC3418803 木材 · Calamus manan rattan cane / Calamus manan rattan cane：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E2489C7DA738F6EC671A 木材 · Calamus ornatus rattan cane / Calamus ornatus rattan cane：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-875B99C60853922D791E 木材 · Calamus ridleyanus rattan cane / Calamus ridleyanus rattan cane：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-555BC377546AFC039681 木材 · California red fir / California red fir：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-CCC8CB276B4BA382CCC4 木材 · Cherry, black / Cherry, black：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-62D954F18AF8BDBBB612 木材 · Cherrybark oak / Cherrybark oak：缺 nu;rho；已有完整组0、缺项组2。
@@ -2033,7 +2037,8 @@
 - RESEARCH-MAT-AA060430DFFED406EE34 木材 · Eastern hemlock / Eastern hemlock：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-DCF776E6D0B43AE58017 木材 · Eastern redcedar / Eastern redcedar：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-6A5D43585E4FC1917D9B 木材 · Eastern white pine / Eastern white pine：缺 nu;rho；已有完整组0、缺项组2。
-- MAT-WOOD-ELM-BROAD 榆木（树种/含水率未详） / Elm wood, species/moisture unspecified：缺 nu;rho；已有完整组0、缺项组6。
+- RESEARCH-MAT-C971F99FA4DC48D4C34E 木材 · Elm wood(Ulmus sp.)in Frey-Amon official wood lexicon / Elm wood(Ulmus sp.)in Frey-Amon official wood lexicon：缺 nu；已有完整组0、缺项组1。
+- MAT-WOOD-ELM-BROAD 榆木（树种/含水率未详） / Elm wood, species/moisture unspecified：缺 nu；已有完整组0、缺项组7。
 - RESEARCH-MAT-6E68F8A23AF4CA1DBD5B 木材 · Engelmann spruce / Engelmann spruce：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-39F6E9454F7D637D2AB9 木材 · Grand fir / Grand fir：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-5134F47441BAB1BF9AEC 木材 · Green ash / Green ash：缺 nu;rho；已有完整组0、缺项组2。
@@ -2048,6 +2053,8 @@
 - RESEARCH-MAT-E4B99FC0059E992A676A 木材 · Interior West Douglas-fir / Interior West Douglas-fir：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-380200E4F6898D4EFE09 木材 · Jack pine / Jack pine：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-1FB406940478F3BDB654 木材 · Juglans nigra / Black walnut / Juglans nigra / Black walnut：缺 rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-FCFE139B8129ACEE809A 木材 · Korthalsia scortechinii rattan cane / Korthalsia scortechinii rattan cane：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E72763070C1EC699CE2C 木材 · Korthalsia tenuissima rattan cane / Korthalsia tenuissima rattan cane：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-C9E6DE94ABC113CBF749 木材 · Larch, western / Larch, western：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-C666E3E289D75BD97614 木材 · Laurel oak / Laurel oak：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-94B1F5829B089FDD6893 木材 · Live oak / Live oak：缺 nu;rho；已有完整组0、缺项组2。
@@ -2074,7 +2081,6 @@
 - MAT-WOOD-PAINTED-BROAD 涂装木材（木种/涂层未详） / Painted wood, species/coating unspecified：缺 nu；已有完整组0、缺项组4。
 - RESEARCH-MAT-CB91E065731368EA9F57 木材 · Paper birch / Paper birch：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-21D60202D170E24E18B5 木材 · Paulownia tomentosa wood / Paulownia tomentosa wood：缺 nu；已有完整组0、缺项组3。
-- MAT-WOOD-PAULOWNIA-BROAD 泡桐木（树种/含水率未详） / Paulownia wood, species/moisture unspecified：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-1D6A3E869B730E6CC5D2 木材 · Pecan hickory / Pecan hickory：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-41B15EB800D873AC238A 木材 · Pignut hickory / Pignut hickory：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-8C70C646CC219590FE1A 木材 · Pin oak / Pin oak：缺 nu;rho；已有完整组0、缺项组2。
@@ -2086,7 +2092,7 @@
 - RESEARCH-MAT-A4DCCAEE17D1E1AE62E1 木材 · Post oak / Post oak：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-3C6B397F76FA4E424504 木材 · Quaking aspen / Quaking aspen：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-B74A8D648ADE0FB7417E 木材 · Rattan cane / Rattan cane：缺 nu;rho；已有完整组0、缺项组4。
-- MAT-RATTAN-BROAD 藤材/藤编（种类/结构未详） / Rattan, species/construction unspecified：缺 nu;rho；已有完整组0、缺项组4。
+- MAT-RATTAN-BROAD 藤材/藤编（种类/结构未详） / Rattan, species/construction unspecified：缺 nu；已有完整组0、缺项组10。
 - MAT-RATTAN-TWINE-SOURCE-BROAD 藤/绳复合编织（绳纤维未详） / Rattan/twine composite weave, twine fibre unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-B05CDDA4EAA7BAFEA5F5 木材 · Red maple / Red maple：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-FEBCC9A0AB25BAC74762 木材 · Red oak group / Red oak group：缺 E；已有完整组0、缺项组2。

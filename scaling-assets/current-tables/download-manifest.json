@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "release_id": "40804107f9",
-  "source_delivery_summary_sha256": "7575769f834ec4d1877346999155ce4354dfa15745d7759c1f3983b0c270bf33",
+  "release_id": "034132a9b5",
+  "source_delivery_summary_sha256": "745cdaa212d813e9b23f1ddfd1620f592991c635e4135784a7ed8529799db94d",
   "records": {
-    "complete": 6184,
-    "partial": 94775,
-    "total": 100959,
+    "complete": 6187,
+    "partial": 94785,
+    "total": 100972,
     "main": {
-      "complete": 2427,
-      "incomplete": 2924
+      "complete": 2430,
+      "incomplete": 2934
     },
     "database": {
       "complete": 3757,
@@ -17,13 +17,13 @@
     }
   },
   "materials": {
-    "total": 3813,
-    "with_complete": 1660,
-    "with_all_properties": 1677,
-    "with_E": 3216,
-    "with_nu": 1791,
-    "with_rho": 3089,
-    "no_values": 35,
+    "total": 3822,
+    "with_complete": 1662,
+    "with_all_properties": 1680,
+    "with_E": 3219,
+    "with_nu": 1793,
+    "with_rho": 3102,
+    "no_values": 34,
     "scope": "Current active non-fluid material nodes, including reviewed narrower-material references. No automatic product parameter assignment.",
     "excluded_fluid_targets": 3
   },
@@ -109,34 +109,34 @@
     {
       "file": "object_derived_material_table.csv.gz",
       "source": "data/current_two_table_delivery_v1/object_derived_material_table.csv",
-      "original_sha256": "1dd6f379eb7ffbc44377e5864152d56ec045cbd0dac0498f7a922fee33921345",
-      "gzip_sha256": "1acfd9dc88121d9045613899949c9b5f97f54011638230eee88976417a81415c",
-      "original_bytes": 962205,
-      "bytes": 74198
+      "original_sha256": "06cfcb140a3ade14444e6f24f35124a68c4721f7832ae442cbd851f2577ec23d",
+      "gzip_sha256": "f78864877093ffa54c4affea5fab870647d2baaf589eed2c427c31108acfd3d0",
+      "original_bytes": 964374,
+      "bytes": 74541
     },
     {
       "file": "material_reverse_index_and_property_ranges.csv.gz",
       "source": "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv",
-      "original_sha256": "eb1960888f2915a60fe5db1a01d393a09009f684ab2b04d0e1335065ad4ac494",
-      "gzip_sha256": "8410a7a9a5270b58c4d442d5a450f596f9d72c67f30f360202be652dd5b66a6a",
-      "original_bytes": 3540210,
-      "bytes": 387234
+      "original_sha256": "fb30cdcf297c5800dc8271987b5ea43e9c62528eda3d7246fa7367101eb6b07c",
+      "gzip_sha256": "7918ade00c2b06e9111fd0aad62850cef878161d46d27fe6069e51e2f2543bf6",
+      "original_bytes": 3549033,
+      "bytes": 388672
     },
     {
       "file": "property_ranges_by_reported_definition.csv.gz",
       "source": "data/current_two_table_delivery_v1/property_ranges_by_reported_definition.csv",
-      "original_sha256": "11a2e50fca8190cebcfc03c585254bf5ffae06aa3671b473172319a02fce36ea",
-      "gzip_sha256": "a54d983469a232fcd0c38f3c54a27e02a638548a62c6488a130aee0ed3132be2",
-      "original_bytes": 2783156,
-      "bytes": 310310
+      "original_sha256": "80c3ba9d08f8061fbac0f93412e5c4bfc6af47ec076450eaff98cf3836f7eb42",
+      "gzip_sha256": "f7d3f4559f86400c8f97ab77ee846ebb35f419d88d9f5c870ab4ffe0d7356666",
+      "original_bytes": 2792425,
+      "bytes": 312058
     },
     {
       "file": "main_property_source_groups.csv.gz",
       "source": "data/current_two_table_delivery_v1/main_property_source_groups.csv",
-      "original_sha256": "b1e53a0d3e1c507fa4fc13feed85d86e67f67e4a2f96abe8ef14ac0ecb3d444e",
-      "gzip_sha256": "2efcdf2612c427e309c04f4e1ee9d4483022df98174bb92ecadd48d0574fdd43",
-      "original_bytes": 16513795,
-      "bytes": 1205825
+      "original_sha256": "8847bd45b2ab9c15f575f8a2a739c059a26067934c1b336c780ce8d1c087f4e7",
+      "gzip_sha256": "46d70681435a42fe3819d334b1510b1f33d94117eea7e4d1d283d05ec949d55c",
+      "original_bytes": 16624646,
+      "bytes": 1220565
     },
     {
       "file": "source_reported_material_label_index.csv.gz",
@@ -221,5 +221,5 @@
   ],
   "byte_preserving_gzip": true,
   "independent_paper_lineage_deduplication_complete": false,
-  "source_release_id": "ffa30cbe58"
+  "source_release_id": "90f261abeb"
 }
