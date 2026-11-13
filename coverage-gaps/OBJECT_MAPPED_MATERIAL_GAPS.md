@@ -4,11 +4,11 @@
 
 覆盖范围含当前已接受的来源标签和合理近似材料选项；不代表每个组件材料身份均已核定，也不代表商品实测或可自动赋值。不同来源分别提供三项仍不拼成完整来源组。
 
-另有 457 条已接受来源关系、62 个来源标签尚未规范对齐：[逐标签清单](UNRESOLVED_OBJECT_SOURCE_LABELS.md)。未计入规范材料分母，不能宣称全物体材料已完成。
+另有 53 条已接受来源关系、17 个来源标签尚未完全对齐：[逐标签清单](UNRESOLVED_OBJECT_SOURCE_LABELS.md)。未计入规范材料分母，不能宣称全物体材料已完成。
 
 材料身份限制：[查看标签待纠正说明](MATERIAL_IDENTITY_NOTICES.md)。18条蜡烛/皂块标签已逐组件纠正；另2条范围待核。新标签不继承泥类物性。
 
-无关联物体但三项齐全材料 1531 保留；无关联物体且缺项 2121 单列研究候选。分组变化不算补齐证据。
+无关联物体但三项齐全材料 1531 保留；无关联物体且缺项 2131 单列研究候选。分组变化不算补齐证据。
 
 - `MAT-NATURAL-DEAD-LEAF-GRASS-BROAD`：`dead_leaf_grass` 植物有机材料（NVIDIA 来源宽标签） / Dead leaf/grass plant material, NVIDIA source broad label；缺 **E;nu**；关联物体16、组件16。
 - `MAT-NATURAL-DRIED-MOSS-SOURCE-BROAD`：干燥苔藓（种类/处理未详） / Dried moss, species/treatment unspecified；缺 **E;nu**；关联物体1、组件1。
@@ -22,8 +22,8 @@
 - `SOURCE-MAT-8A028E07CA77C88C6217`：磨砂皮革（来源构造标签） / nubuck leather — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-F634E6F2E8FA1662BFEA`：全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified；缺 **E;nu**；关联物体1、组件1。
 - `MAT-PEWTER-BROAD`：白镴/锡基合金（组成未详） / Pewter, composition unspecified；缺 **nu**；关联物体1、组件1。
+- `MAT-SOAP-BROAD`：固体皂/清洁块（配方未详） / Solid bar soap / cleansing bar, formulation unspecified；缺 **nu**；关联物体4、组件4。
 - `MAT-INK-SOURCE-BROAD`：油墨/墨料（组成未详） / Ink material, composition unspecified；缺 **nu;rho**；关联物体3、组件3。
-- `MAT-SOAP-BROAD`：固体皂/清洁块（配方未详） / Solid bar soap / cleansing bar, formulation unspecified；缺 **E;nu;rho**；关联物体4、组件4。
 - `SOURCE-MAT-2DDEB3646CFF4B123AA8`：防泼水绒面材料（来源构造标签） / water-resistant suede — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-939686697864E247B482`：剖层绒面材料（来源构造标签） / split suede — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-97839AB86E352442295F`：PlanWood（源商品材料名）（来源构造标签） / PlanWood — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体6、组件6。
@@ -54,7 +54,7 @@
 - `MAT-TEXTILE-RECYCLED-COTTON-BROAD`：再生棉纤维/织物（工艺/结构未详） / Recycled cotton fibre/textile, process/construction unspecified；缺 **nu**；关联物体2、组件2。
 - `MAT-TEXTILE-SISAL-BROAD`：剑麻纤维/织物（结构未详） / Sisal fibre/textile, construction unspecified；缺 **nu**；关联物体12、组件12。
 - `MAT-TEXTILE-TETORON-SOURCE-BROAD`：Tetoron源标签纤维（化学组成未独立确认） / Tetoron source-label fibre, chemistry not independently confirmed；缺 **E;nu**；关联物体1、组件1。
-- `MAT-TEXTILE-VELVET-BROAD`：天鹅绒/丝绒（纤维组成未详） / Velvet, fibre composition unspecified；缺 **E;nu;rho**；关联物体13、组件13。
+- `MAT-TEXTILE-VELVET-BROAD`：天鹅绒/丝绒（纤维组成未详） / Velvet, fibre composition unspecified；缺 **E;nu;rho**；关联物体14、组件14。
 - `MAT-TEXTILE-WOOL-COTTON-BLEND`：羊毛/棉混纺（比例/结构见原文） / Wool/cotton textile blend, ratio/construction source-conditioned；缺 **E;nu;rho**；关联物体18、组件18。
 - `MAT-TEXTILE-WOOL-COTTON-POLYESTER-BLEND`：羊毛/棉/聚酯混纺（比例/结构见原文） / Wool/cotton/polyester textile blend, ratio/construction source-conditioned；缺 **E;nu;rho**；关联物体14、组件14。
 - `MAT-TEXTILE-WOOL-VISCOSE-BLEND`：羊毛/粘胶混纺（比例/结构见原文） / Wool/viscose textile blend, ratio/construction source-conditioned；缺 **E;nu**；关联物体3、组件3。

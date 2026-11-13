@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3865；三项各有来源值1691。
+材料3875；三项各有来源值1691。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -691,7 +691,18 @@
 - RESEARCH-MAT-4415199B6AFBBDA3EAAC 金属 · UNS C71500 Copper-Nickel, 30% / UNS C71500 Copper-Nickel, 30%：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E54AA4D4F4664C91DAE4 金属 · UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes) / UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-94BD971073843AE9567B 金属 · Vitranamel vitreous-enamelled steel panel / Vitranamel vitreous-enamelled steel panel：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-DC1644A54F30CC721E0C 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE1 COMPARATIVE1 formulation / Aerated frame-cast soap;JP2006045437A TABLE1 COMPARATIVE1 formulation：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-94428C648B50F82AA25F 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE1 EXAMPLE1 formulation / Aerated frame-cast soap;JP2006045437A TABLE1 EXAMPLE1 formulation：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-BEB0EF590DC1AA99B85F 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE1 EXAMPLE2 formulation / Aerated frame-cast soap;JP2006045437A TABLE1 EXAMPLE2 formulation：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-176925164C4C5BD10AA0 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE3 COMPARATIVE4 formulation / Aerated frame-cast soap;JP2006045437A TABLE3 COMPARATIVE4 formulation：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-82910EED33EC3589524D 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE3 EXAMPLE3 formulation / Aerated frame-cast soap;JP2006045437A TABLE3 EXAMPLE3 formulation：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-A1D7A8DCEA63A410582E 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE3 EXAMPLE4 formulation / Aerated frame-cast soap;JP2006045437A TABLE3 EXAMPLE4 formulation：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-2EB127FA6C37F9DCE096 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE3 EXAMPLE5 formulation / Aerated frame-cast soap;JP2006045437A TABLE3 EXAMPLE5 formulation：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-60A0FE84878025C5C528 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE3 EXAMPLE6 formulation / Aerated frame-cast soap;JP2006045437A TABLE3 EXAMPLE6 formulation：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-DDF8A2E8A43B6C07F3C0 其他材料 · Cast paraffin wax / Cast paraffin wax：缺 rho；已有完整组0、缺项组2。
+- RESEARCH-MAT-65351B3DC9A60EA298D5 其他材料 · Nitrogen-aerated sodium-laurate cleansing bar (Kao Table1 formulation) / Nitrogen-aerated sodium-laurate cleansing bar (Kao Table1 formulation)：缺 E;nu；已有完整组0、缺项组7。
+- MAT-SOAP-BROAD 固体皂/清洁块（配方未详） / Solid bar soap / cleansing bar, formulation unspecified：缺 nu；已有完整组0、缺项组15。
+- RESEARCH-MAT-0DA34E093C0DCB551DA9 其他材料 · Suede and microfiber synthetic suede palm-sheet materials (pooled) / Suede and microfiber synthetic suede palm-sheet materials (pooled)：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-7CD50DAC0430840C1D3D 其他材料 · ArnoldN35 sinteredneodymium-iron-boronpermanentmagnet / ArnoldN35 sinteredneodymium-iron-boronpermanentmagnet：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-618E7BA73FAB4597D75B 其他材料 · Black paraffin wax, supplied ship-model stock / Black paraffin wax, supplied ship-model stock：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-AFABB2EEFE341CC544A5 其他材料 · Chikugo estuary mud / Chikugo estuary mud：缺 E;nu；已有完整组0、缺项组1。
@@ -719,7 +730,6 @@
 - RESEARCH-MAT-B28B18DB699B29ECAE7C 其他材料 · Rushil decorative HPL phenolic-kraft melamine-surface laminate sheet / Rushil decorative HPL phenolic-kraft melamine-surface laminate sheet：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-3399A333068E57782E8A 其他材料 · Screen-printed carbon-blend-based ink layer / Screen-printed carbon-blend-based ink layer：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-E8477652FE578599A1F8 其他材料 · Screen-printed silver-nanoparticle ink layer / Screen-printed silver-nanoparticle ink layer：缺 nu;rho；已有完整组0、缺项组1。
-- MAT-SOAP-BROAD 固体皂/清洁块（配方未详） / Solid bar soap / cleansing bar, formulation unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-BD46CCABC4721F394E69 Solyte 中底材料（源商品名）（来源构造标签） / Solyte branded material — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-47A18A12736A61A71AE5 其他材料 · Tianjin new port mud / Tianjin new port mud：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-8497198167753FC4A615 其他材料 · Titanium White pigment / cold-pressed linseed-oil paint / Titanium White pigment / cold-pressed linseed-oil paint：缺 rho；已有完整组0、缺项组4。

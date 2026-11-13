@@ -21,7 +21,9 @@
     $('linked-material-tree').href = 'research.html?material=' + encodeURIComponent(materialId);
     $('linked-material-note').textContent = '正在读取当前版本的材料映射…';
     try {
-      const pin = window.DATASET_RELEASE.object_material_index;
+      const indexPin = window.DATASET_RELEASE.object_material_index;
+      const detailPin = indexPin.material_files?.[materialId];
+      const pin = detailPin || indexPin;
       const response = await fetch(pin.file + '?v=' + pin.sha256.slice(0,12), {signal:AbortSignal.timeout(30000)});
       if (!response.ok) throw new Error('材料索引请求失败：' + response.status);
       const bytes = await response.arrayBuffer();
@@ -29,15 +31,20 @@
       if (hash !== pin.sha256) throw new Error('材料索引与当前发布版本不一致');
       const decoded = await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
       const index = JSON.parse(decoded);
-      if (index.releaseId !== window.DATASET_RELEASE.id) throw new Error('材料索引版本不一致');
-      const entry = index.materials[materialId];
+      if (detailPin ? index.materialId !== materialId : index.releaseId !== window.DATASET_RELEASE.id) throw new Error('材料索引版本不一致');
+      const entry = detailPin ? index.entry : index.materials[materialId];
       const rows = entry?.rows || [];
       $('linked-material-title').textContent = entry ? entry.nameCn : materialId;
       $('linked-material-note').textContent = rows.length ? new Set(rows.map(r=>r.object_id)).size.toLocaleString('en') + ' 个来源物体，' + rows.length.toLocaleString('en') + ' 条已有组件映射。保留原审核状态；物性证据不自动赋给这些商品。' : '此材料尚无以规范 ID 建立的物体映射；来源值仍可查看，不据名称猜测物体。';
+      const navigationEvidence = (row) => (row.navigation_evidence || []).map(item => {
+        const mode = /ALTERNATIVE/i.test(item.relation_mode || '') ? '备选材料，非同时组成' : item.relation_mode === 'COEXISTING_SCOPES' ? '并存材料，仅限注明部位' : '来源材料关联';
+        const partial = item.resolution === 'PARTIAL' ? '；原材料描述仍有未对齐部分' : '';
+        return '<p><small>' + esc(mode + partial) + '</small><br>' + esc(item.status || '') + '<br>' + esc(item.basis || '') + '</p>';
+      }).join('');
       let shown = 0;
       const append = () => {
         const next = rows.slice(shown, shown+24); shown += next.length;
-        $('linked-material-rows').insertAdjacentHTML('beforeend', next.map(row=>'<article data-object-id="'+esc(row.object_id)+'"><h3>'+esc(row.object_name_cn || row.object_name_en)+'</h3><p>'+esc(row.object_name_en)+'</p><small>'+esc(row.object_id)+' · '+esc(row.component_id)+'</small><p><strong>'+esc(row.component_scope)+'</strong> · '+esc(row.material_label)+'</p><p>'+esc(row.material_identity_status)+'<br>'+esc(row.material_release_status)+'</p><div class="scaling-asset-links">'+link(row.asset_url,'打开 3D 资产')+link(row.mapping_source_url,'查看材料依据')+'</div></article>').join(''));
+        $('linked-material-rows').insertAdjacentHTML('beforeend', next.map(row=>'<article data-object-id="'+esc(row.object_id)+'"><h3>'+esc(row.object_name_cn || row.object_name_en)+'</h3><p>'+esc(row.object_name_en)+'</p><small>'+esc(row.object_id)+' · '+esc(row.component_id)+'</small><p><strong>'+esc(row.component_scope)+'</strong> · '+esc(row.material_label)+'</p><p>'+esc(row.material_identity_status)+'<br>'+esc(row.material_release_status)+'</p>'+navigationEvidence(row)+'<div class="scaling-asset-links">'+link(row.asset_url,'打开 3D 资产')+link(row.mapping_source_url,'查看材料依据')+'</div></article>').join(''));
         $('linked-material-more').hidden = shown >= rows.length;
         $('linked-material-more').textContent = '继续加载（'+shown+' / '+rows.length+'）';
       };

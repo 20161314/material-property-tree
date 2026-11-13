@@ -1,68 +1,23 @@
 # 当前物体来源标签待对齐清单
 
-已接受但尚无已审规范映射的来源关系 457 条，涉及 62 个不同来源标签。
+已接受但尚未完全对齐的来源关系 53 条，涉及 17 个不同来源标签。其中 27 条已有部分粗粒度关联，其余仍无已审关联。
 
-这些是当前物体的待办，未计入规范材料分母。原文同名词、并列材料和多选描述不自动当作不同规范材料，先按来源/组件核对后再接入证据。不表示这些材料没有文献。物体/组件ID及来源见同名CSV。
+这些是当前物体的待办。已接受的粗粒度关联按规范ID计入分母；尚未对齐的剩余描述单列，不与规范ID重复计数。原文同名词、并列材料和多选描述不自动当作不同规范材料，先按来源/组件核对后再接入证据。不表示这些材料没有文献。物体/组件ID及来源见同名CSV。
 
-- Animal hide, tanning unspecified：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Bag body textile/leather/synthetic leather plausible options：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Bag body: textile, leather or synthetic leather plausible options：42 条关系；42 个物体；尚未建立已审规范材料关联。
-- Basket body: plant weaving material or plastic plausible options：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Birch bark：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Burlap fabric, fibre species unspecified：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Chiffon fabric, fibre unspecified：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Chromel-R metal fabric, silicone rubber and rubber layers：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Cotton lawn fabric：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Curtain textile or flexible polymer plausible options：4 条关系；4 个物体；尚未建立已审规范材料关联。
-- Diaper outer textile/nonwoven/flexible polymer plausible options：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Fire blanket fire-resistant fibre textile plausible option, composition unspecified：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Flexible polymer bag film plausible option：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Foam cushion and rubber outsole：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Footwear textile/leather/synthetic leather upper and rubber sole plausible options：39 条关系；39 个物体；尚未建立已审规范材料关联。
-- Footwear: textile/leather/synthetic leather upper options and rubber sole option：61 条关系；61 个物体；尚未建立已审规范材料关联。
-- Front wool or silk fabric; cotton lining/back; brass buttons：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Glove outer shell: textile, leather or synthetic leather plausible options：13 条关系；13 个物体；尚未建立已审规范材料关联。
-- Glove outer textile/leather/synthetic leather plausible options：9 条关系；9 个物体；尚未建立已审规范材料关联。
-- Grey cloth cap body with patent leather visor：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Hat body: textile or straw plausible options：8 条关系；8 个物体；尚未建立已审规范材料关联。
-- Iron gauntlet shell, grade unspecified：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Jersey fabric, fibre unspecified：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Knitted fabric, fibre unspecified：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Leatherite upholstery, composition unspecified：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Lycra garment fabric, blend unspecified：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Mixed synthetic and natural materials, composition unspecified：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Moulded foam polymer footwear plausible option：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Plant weaving material or textile plausible options：3 条关系；3 个物体；尚未建立已审规范材料关联。
-- Polymer housing and textile glove plausible options：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Recycled fire hose, compound construction unspecified：5 条关系；5 个物体；尚未建立已审规范材料关联。
-- Sheepskin body with leather-covered wooden buttons：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Strap leather or textile plausible options：8 条关系；8 个物体；尚未建立已审规范材料关联。
-- Straw, plant species unspecified：4 条关系；4 个物体；尚未建立已审规范材料关联。
-- Stretch denim, blend unspecified：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Tarp textile or coated polymer fabric plausible options：3 条关系；3 个物体；尚未建立已审规范材料关联。
-- Toy textile, rubber or plastic outer body plausible options：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Upholstery textile, leather or synthetic leather plausible options：2 条关系；2 个物体；尚未建立已审规范材料关联。
-- Upholstery textile/leather/synthetic leather plausible options：65 条关系；65 个物体；尚未建立已审规范材料关联。
-- Velvet garment panels with gold embroidery thread：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- Wood table structure with textile cloth：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- aluminum：5 条关系；5 个物体；尚未建立已审规范材料关联。
-- asphalt：7 条关系；7 个物体；尚未建立已审规范材料关联。
-- carbon_fiber：2 条关系；2 个物体；尚未建立已审规范材料关联。
-- ceramic：13 条关系；13 个物体；尚未建立已审规范材料关联。
-- fiber：12 条关系；12 个物体；尚未建立已审规范材料关联。
-- fiberglass：2 条关系；1 个物体；尚未建立已审规范材料关联。
-- foam：2 条关系；2 个物体；尚未建立已审规范材料关联。
-- hard_plastic：3 条关系；3 个物体；尚未建立已审规范材料关联。
-- leather：2 条关系；2 个物体；尚未建立已审规范材料关联。
-- leather_fabric：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- metal：17 条关系；17 个物体；尚未建立已审规范材料关联。
-- other_plastic：38 条关系；38 个物体；尚未建立已审规范材料关联。
-- paper：6 条关系；6 个物体；尚未建立已审规范材料关联。
-- plastic：13 条关系；13 个物体；尚未建立已审规范材料关联。
-- rubber：2 条关系；2 个物体；尚未建立已审规范材料关联。
-- soft_plastic：10 条关系；10 个物体；尚未建立已审规范材料关联。
-- steel：11 条关系；11 个物体；尚未建立已审规范材料关联。
-- straw：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- straw_silk：1 条关系；1 个物体；尚未建立已审规范材料关联。
-- wood：15 条关系；15 个物体；尚未建立已审规范材料关联。
-- wool_cotton：1 条关系；1 个物体；尚未建立已审规范材料关联。
+- Basket body: plant weaving material or plastic plausible options：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- Birch bark：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- Grey cloth cap body with patent leather visor：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- Hat body: textile or straw plausible options：8 条关系；8 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- Leatherite upholstery, composition unspecified：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- Mixed synthetic and natural materials, composition unspecified：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- Plant weaving material or textile plausible options：3 条关系；3 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- Recycled fire hose, compound construction unspecified：5 条关系；5 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- Straw, plant species unspecified：4 条关系；4 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- Tarp textile or coated polymer fabric plausible options：3 条关系；3 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- Velvet garment panels with gold embroidery thread：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- asphalt：7 条关系；7 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- fiber：12 条关系；12 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- fiberglass：2 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- straw：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- straw_silk：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- wool_cotton：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
