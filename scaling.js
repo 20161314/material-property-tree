@@ -143,8 +143,11 @@
     const label = item.material_status_label || "组件材料待核";
     const note = item.material_status_note || "组件身份已核，材料对应关系仍待补证。";
     const material = kind === "hold" ? "材料尚未核定" : (item.material_label || item.material_label_raw || "来源标签见原文");
-    const regionCount = item.officialBoundRegionCount ?? item.official_bound_material_regions?.length;
-    const regionNote = regionCount ? `<small>${fmt(regionCount)} 条来源材料绑定；几何面区有效覆盖尚未核验，不新增组件数。</small>` : "";
+    const sourceStatementsOnly = item.bindingCountScope === "SOURCE_STATEMENTS_NOT_VERIFIED_NONEMPTY_FACE_REGIONS";
+    const regionCount = item.authoredBindingStatementCount ?? item.officialBoundRegionCount ?? item.official_bound_material_regions?.length;
+    const regionNote = regionCount ? (sourceStatementsOnly
+      ? `<small>${fmt(regionCount)} 条源定义绑定语句（不是非空面区数量）；最终几何面区有效覆盖尚未核验，不新增组件数。</small>`
+      : `<small>${fmt(regionCount)} 条来源材料绑定；几何面区有效覆盖尚未核验，不新增组件数。</small>`) : "";
     return `<article data-component-id="${esc(item.component_id)}">
     <h3>${esc(item.component_name_cn || item.component_scope || item.component_id)}</h3><p>${esc(item.object_name_cn || item.object_name_en)} · ${esc(item.object_name_en)}</p>
     <small>组件 ID：${esc(item.component_id)}</small><code>${esc(item.component_path)}</code><p>${esc(item.component_identity_note || "独立官方几何引用、质量/惯量及关节成员关系；通过组件身份审核。")}</p>

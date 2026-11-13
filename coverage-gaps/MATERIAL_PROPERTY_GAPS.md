@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3471；三项各有来源值1659。
+材料3678；三项各有来源值1661。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -96,6 +96,7 @@
 - RESEARCH-MAT-BDF2698172340EF0FFBF 陶瓷 · Aremco 502-600 glass ceramic / Aremco 502-600 glass ceramic：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-DFC4F3C860EF24A09D40 陶瓷 · Aremco 502-800 Macor glass ceramic / Aremco 502-800 Macor glass ceramic：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-6274C48DC53D7F9B31BC 陶瓷 · Calcite CaCO3 / Calcite CaCO3：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-BC74066E6AFA572EC38A 陶瓷 · Ce:YAG phosphor (cerium-doped yttrium aluminum garnet) / Ce:YAG phosphor (cerium-doped yttrium aluminum garnet)：缺 E；已有完整组0、缺项组1。
 - RESEARCH-MAT-4415F1768AAFF655B466 陶瓷 · Crystal Quartz SiO2 / Crystal Quartz SiO2：缺 nu；已有完整组0、缺项组1。
 - MAT-EARTHENWARE-BROAD 陶器（组成/烧成工艺未详） / Earthenware, composition/firing unspecified：缺 E;nu；已有完整组0、缺项组24。
 - RESEARCH-MAT-A8D3B3B7756EE91F786B 陶瓷 · Ferro Ground Coat A vitreous porcelain enamel / Ferro Ground Coat A vitreous porcelain enamel：缺 nu;rho；已有完整组0、缺项组1。
@@ -169,6 +170,11 @@
 - RESEARCH-MAT-FA69585FC066CA4D10A0 复合材料 · DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.4960) / DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.4960)：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-60535E7B8470F38E9B4F 复合材料 · DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.4981) / DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.4981)：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-5D3A7A73F7F680E07A5D 复合材料 · Green kiwi peel/PVP/polyglycerol leather-like film / Green kiwi peel/PVP/polyglycerol leather-like film：缺 nu;rho；已有完整组0、缺项组10。
+- RESEARCH-MAT-9BD2A2C0CAF686F4C869 复合材料 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 10 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 10 wt%：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-236092F8FF30E1C2FB84 复合材料 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 20 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 20 wt%：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-F0B811ED78D0FF35B7F0 复合材料 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 30 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 30 wt%：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-84E7D537B65732C593AB 复合材料 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 40 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 40 wt%：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-55CD720168D923122C32 复合材料 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 5 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 5 wt%：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-73398C9F6A9716415462 复合材料 · Orthotic interface layer: neoprene sheet with retained cotton surface and residual adhesive / Orthotic interface layer: neoprene sheet with retained cotton surface and residual adhesive：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-CF728D311739ABA7A28C 复合材料 · PVAc-bonded coffee-filter-paper/date-palm-surface-fibre composite board, dried mass 23.2/69.4/7.4 wt% (paper/fibre/binder) / PVAc-bonded coffee-filter-paper/date-palm-surface-fibre composite board, dried mass 23.2/69.4/7.4 wt% (paper/fibre/binder)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-5DC5CB1F80E4D580149A 复合材料 · PVAc-bonded coffee-filter-paper/date-palm-surface-fibre composite board, dried mass 46/46/8.0 wt% (paper/fibre/binder) / PVAc-bonded coffee-filter-paper/date-palm-surface-fibre composite board, dried mass 46/46/8.0 wt% (paper/fibre/binder)：缺 nu；已有完整组0、缺项组1。
@@ -180,10 +186,78 @@
 - RESEARCH-MAT-0C1330924497A49B4F5A 复合材料 · Rigid-polyurethane-bonded agglomerated cork, 12wt% binder / Rigid-polyurethane-bonded agglomerated cork, 12wt% binder：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9DFD57B4AE2B627DB3E3 复合材料 · Rigid-polyurethane-bonded agglomerated cork, 14wt% binder / Rigid-polyurethane-bonded agglomerated cork, 14wt% binder：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-46B9010E96377B0E2042 复合材料 · Rigid-polyurethane-bonded agglomerated cork, 15wt% binder / Rigid-polyurethane-bonded agglomerated cork, 15wt% binder：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-0B3543478D157041810C 复合材料 · Röchling Astrawood® COOL colored decor / Röchling Astrawood® COOL colored decor：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5A7735FED62C5CED31E1 复合材料 · Röchling Astrawood® COOL woodgrain decor / Röchling Astrawood® COOL woodgrain decor：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-57F023E777F8C3CE6A9C 复合材料 · Röchling Durolight® S / Röchling Durolight® S：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-25ECF600B26648B7D00C 复合材料 · Röchling Durolight® S1 / Röchling Durolight® S1：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B0EB65D5403E007FEF0B 复合材料 · Röchling Durolight® S2 / Röchling Durolight® S2：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1E334D1438DAE8D8001D 复合材料 · Röchling Durolight® S3 / Röchling Durolight® S3：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1F8420817ADDFC3715FD 复合材料 · Röchling Durolight® S4 / Röchling Durolight® S4：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-41B6B2697909353FAF09 复合材料 · Röchling Durolight® S7 / Röchling Durolight® S7：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-225E613899065BE60FBB 复合材料 · Röchling Durostone® CAG 762 / Röchling Durostone® CAG 762：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B5A67BD31DF0FDED2C3F 复合材料 · Röchling Durostone® CAS 761 / Röchling Durostone® CAS 761：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-19069D6E3C56CBC40BA0 复合材料 · Röchling Durostone® CHP 760 / Röchling Durostone® CHP 760：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-267BF8410D89FE76D894 复合材料 · Röchling Durostone® EPC 203 / Röchling Durostone® EPC 203：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-32CC8F4FAE54C952E445 复合材料 · Röchling Durostone® EPC 204 / Röchling Durostone® EPC 204：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-047889C79DB48C4522DA 复合材料 · Röchling Durostone® EPC 205 / Röchling Durostone® EPC 205：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-66D4AB9CF1EB7B5E4EF8 复合材料 · Röchling Durostone® EPF S1 / Röchling Durostone® EPF S1：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B43991A23371A8AC3039 复合材料 · Röchling Durostone® EPF S3 / Röchling Durostone® EPF S3：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-D314CCC0E2DEDA5CAC16 复合材料 · Röchling Durostone® PMP 325 / Röchling Durostone® PMP 325：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1B687CFFB8CB52DF8C4A 复合材料 · Röchling Durostone® PMP 334 / Röchling Durostone® PMP 334：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-641856AB6328099DC27E 复合材料 · Röchling Durostone® PMP 376 / Röchling Durostone® PMP 376：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-118D3D4117630F8A3F79 复合材料 · Röchling Durostone® UPM S1 / Röchling Durostone® UPM S1：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-442E321824CFDCC37680 复合材料 · Röchling Durostone® UPM S16 / Röchling Durostone® UPM S16：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9F931F36EF577FC6A25F 复合材料 · Röchling Durostone® UPR S19 / Röchling Durostone® UPR S19：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8F7701F87924E0FCE23B 复合材料 · Röchling Durostone® WGR 781 / Röchling Durostone® WGR 781：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4EA70D1B91B4A50DC41C 复合材料 · Röchling Fibracon® PTFE + 10% Carbon Fibre / Röchling Fibracon® PTFE + 10% Carbon Fibre：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8264FEF58986152CB765 复合材料 · Röchling Fibracon® PTFE + 10% Carbon+ 5% Graphite / Röchling Fibracon® PTFE + 10% Carbon+ 5% Graphite：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-044DC3C6930E7B9F5CC1 复合材料 · Röchling Fibracon® PTFE + 10% Ekonol / Röchling Fibracon® PTFE + 10% Ekonol：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9E820AB8C18EDA33AFE7 复合材料 · Röchling Fibracon® PTFE + 10% Polyimide / Röchling Fibracon® PTFE + 10% Polyimide：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-75A6037311EC3745E848 复合材料 · Röchling Fibracon® PTFE + 15% Carbon / Röchling Fibracon® PTFE + 15% Carbon：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1772676EF669DB958C2F 复合材料 · Röchling Fibracon® PTFE + 15% Carbon Fibre / Röchling Fibracon® PTFE + 15% Carbon Fibre：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-3EE24FF28358494603D6 复合材料 · Röchling Fibracon® PTFE + 15% Glass / Röchling Fibracon® PTFE + 15% Glass：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1A2321C9DCCDAC7D7617 复合材料 · Röchling Fibracon® PTFE + 15% Glass + 5% MoS2 / Röchling Fibracon® PTFE + 15% Glass + 5% MoS2：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A8E4CB7F9F97A920B654 复合材料 · Röchling Fibracon® PTFE + 15% Graphite / Röchling Fibracon® PTFE + 15% Graphite：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-57EE5C0F18AFDAC68D9D 复合材料 · Röchling Glastherm® HT 200 / Röchling Glastherm® HT 200：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-039F9412696D8F351B3A 复合材料 · Röchling Glastherm® HT 200 (SMC) / Röchling Glastherm® HT 200 (SMC)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-840077DABB257B9BB3EC 复合材料 · Röchling Glastherm® HT 220 / Röchling Glastherm® HT 220：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8251367008EAD8D4D820 复合材料 · Röchling Glastherm® HT 250 HQ / Röchling Glastherm® HT 250 HQ：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CBF1602DBCA10F4F746E 复合材料 · Röchling Glastherm® HT 250 M / Röchling Glastherm® HT 250 M：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-780C6563226072814AE0 复合材料 · Röchling Glastherm® HT 300 / Röchling Glastherm® HT 300：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-87E346BA6A02EF0349B5 复合材料 · Röchling Glastherm® HT 500 / Röchling Glastherm® HT 500：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-893B4F5324A5499DC64B 复合材料 · Röchling Glastherm® S / Röchling Glastherm® S：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C629095715E263A2AA12 复合材料 · Röchling Laminex® 2010 / Röchling Laminex® 2010：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-50C7D9029AAA944C553A 复合材料 · Röchling Laminex® 2100 / Röchling Laminex® 2100：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-92A0436DA094C438E2FF 复合材料 · Röchling Laminex® 2101 / Röchling Laminex® 2101：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-DE7090F0C530F408486C 复合材料 · Röchling Maywodec® ABS PVDF / Röchling Maywodec® ABS PVDF：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8BC84F2B9F601183CD84 复合材料 · Röchling Maywodec® ABS-PMMA / Röchling Maywodec® ABS-PMMA：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1D247791B7BDB82B171A 复合材料 · Röchling Maywosoft® TPU-ABS-TPU / Röchling Maywosoft® TPU-ABS-TPU：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-6CAA1F8A91DB0446D614 复合材料 · Röchling Mitela® 2-5 A / Röchling Mitela® 2-5 A：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-A59F7F1D169F60773D74 复合材料 · Röchling Mitela® HD8B / Röchling Mitela® HD8B：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-70F1B736534210EA08FD 复合材料 · Röchling Robaflow® C / Röchling Robaflow® C：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-6F208A8200D7195136C2 复合材料 · Röchling Robaseal® A / Röchling Robaseal® A：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9490D0B490A2BCBF3C3D 复合材料 · Röchling Robaseal® S / Röchling Robaseal® S：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5580DF68A4BA8C38E031 复合材料 · Röchling SustaPEEK CF 30 black / Röchling SustaPEEK CF 30 black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A1C9101AE531DC526BFC 复合材料 · Röchling SustaPEEK CM CF 30 black / Röchling SustaPEEK CM CF 30 black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-463083A012C17415DE51 复合材料 · Röchling SustaPEI GF 30 natural / Röchling SustaPEI GF 30 natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E0C5440C882A5A3F18A6 复合材料 · Röchling SustaPPE GF 30 black / Röchling SustaPPE GF 30 black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9519CC168F77B7A2BFD9 复合材料 · Röchling Sustamid® 12 GF 30 natural / Röchling Sustamid® 12 GF 30 natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C244DAEF00298A20C351 复合材料 · Röchling Sustamid® 6 GF 30 black / Röchling Sustamid® 6 GF 30 black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-D2AB77093386ECD28954 复合材料 · Röchling Sustamid® 66 GF 30 black / Röchling Sustamid® 66 GF 30 black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-24AFAD1103624F5EAED5 复合材料 · Röchling Sustamid® 66 MO (Extruded Nylon MoS2 Filled) / Röchling Sustamid® 66 MO (Extruded Nylon MoS2 Filled)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1AB350EAB8614A18D599 复合材料 · Röchling Sustanat® PC GF 20 / Röchling Sustanat® PC GF 20：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A6CAC1684DCDD8BBCFB3 复合材料 · Röchling Sustatron® PPS GF 40 black / Röchling Sustatron® PPS GF 40 black：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-D54977E7D1943BB4D3D5 复合材料 · Silicone-urethane hybrid foam SUF125 / Silicone-urethane hybrid foam SUF125：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-ADD363AFB7D42D448DBB 复合材料 · Silicone-urethane hybrid foam SUF137 / Silicone-urethane hybrid foam SUF137：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FCD2F80FF2B180B6F848 复合材料 · Silicone-urethane hybrid foam SUF150 / Silicone-urethane hybrid foam SUF150：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F03659F82C3C343B06E7 复合材料 · Silicone-urethane hybrid foam SUF200 / Silicone-urethane hybrid foam SUF200：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5DA08EC885029304D231 复合材料 · Tufnol 10G/40 woven-glass epoxy laminate sheet / Tufnol 10G/40 woven-glass epoxy laminate sheet：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-19255481064E8664FC00 复合材料 · Tufnol 1P/13 paper phenolic laminate sheet / Tufnol 1P/13 paper phenolic laminate sheet：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-9D8F7F47F04F855F1729 复合材料 · Tufnol Bear Brand medium-weave cotton phenolic laminate sheet / Tufnol Bear Brand medium-weave cotton phenolic laminate sheet：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-7FD551BA2AA00629D30B 复合材料 · Tufnol Crow Brand medium/coarse-weave cotton phenolic laminate sheet / Tufnol Crow Brand medium/coarse-weave cotton phenolic laminate sheet：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-0C74AB4E0E841163A37D 复合材料 · Tufnol PGM/2 polyester continuous-roving glass mat laminate / Tufnol PGM/2 polyester continuous-roving glass mat laminate：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-99F19542F14D2A250602 复合材料 · Tufnol PGM/3 polyester continuous-roving glass mat laminate / Tufnol PGM/3 polyester continuous-roving glass mat laminate：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-26C1767CA9311216C530 复合材料 · Tufnol Whale Brand medium-weave cotton phenolic laminate sheet / Tufnol Whale Brand medium-weave cotton phenolic laminate sheet：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-40F14F564FEF5D84AFD6 泡沫 · AIREX C70 polymer foam C70.130 / AIREX C70 polymer foam C70.130：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-5748A48E68FA18E94766 泡沫 · AIREX C70 polymer foam C70.55 / AIREX C70 polymer foam C70.55：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-44A1C9E9D9049AD6E092 泡沫 · AIREX C70 polymer foam C70.75 / AIREX C70 polymer foam C70.75：缺 nu；已有完整组0、缺项组1。
@@ -227,6 +301,7 @@
 - RESEARCH-MAT-2F60FB9618AF9DB2E992 泡沫 · Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.30/0.15 / Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.30/0.15：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-A2ED9B5E04F3D9198A76 泡沫 · Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.40/0.05 / Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.40/0.05：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CB8A94E8F7F7E9976610 泡沫 · Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.60/0.40/0.00 / Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.60/0.40/0.00：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E3983347E39E0C54F77D 泡沫 · Commercial EPS18 expanded polystyrene packaging foam / Commercial EPS18 expanded polystyrene packaging foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-2EAE9F9FAA35670A3376 泡沫 · Diab Divinycell F PES foam F130 / Diab Divinycell F PES foam F130：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9DD162A92D8AC7439F9E 泡沫 · Diab Divinycell F PES foam F40 / Diab Divinycell F PES foam F40：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CD5E636EAC828034615A 泡沫 · Diab Divinycell F PES foam F50 / Diab Divinycell F PES foam F50：缺 E;nu；已有完整组0、缺项组1。
@@ -313,8 +388,11 @@
 - RESEARCH-MAT-0A2142832810BFD7F138 泡沫 · Gurit Corecell S SAN structural foam S350 / Gurit Corecell S SAN structural foam S350：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F21D40E27706BD6D3617 泡沫 · Gurit Corecell S SAN structural foam S400 / Gurit Corecell S SAN structural foam S400：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-B63F32AC973975FF7156 泡沫 · Gurit Corecell S SAN structural foam S450 / Gurit Corecell S SAN structural foam S450：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-FDE6A0241C9063BBBA62 泡沫 · In-situ polyurethane foam, formulation unspecified / In-situ polyurethane foam, formulation unspecified：缺 E;nu；已有完整组0、缺项组3。
+- RESEARCH-MAT-27F363300A49F94AE22E 泡沫 · Laboratory-produced rigid polyurethane foam, formulation unspecified / Laboratory-produced rigid polyurethane foam, formulation unspecified：缺 E；已有完整组0、缺项组1。
 - RESEARCH-MAT-E266006E1EE482E18C63 泡沫 · MM2520 TPU/Ecoflex closed-cell foam,30wt%Ecoflex5wt%azodicarbonamide,TPU/Ecoflex/carbonblack coating / MM2520 TPU/Ecoflex closed-cell foam,30wt%Ecoflex5wt%azodicarbonamide,TPU/Ecoflex/carbonblack coating：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-A944408A956133ACA2FB 泡沫 · MM2520 thermoplastic polyurethane/Ecoflex closed-cell foam,30wt%Ecoflex5wt%azodicarbonamide / MM2520 thermoplastic polyurethane/Ecoflex closed-cell foam,30wt%Ecoflex5wt%azodicarbonamide：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8D078C2694F179A2F01B 泡沫 · McMaster-Carr conventional flexible open-cell polyurethane foam, unconverted / McMaster-Carr conventional flexible open-cell polyurethane foam, unconverted：缺 E;nu；已有完整组0、缺项组1。
 - MAT-FOAM-MEMORY-BROAD 记忆泡沫（聚合物/密度未详） / Memory foam, polymer/density unspecified：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-E015D6FA44EF0674DA93 泡沫 · Natural rubber latex foam reinforced with eucalyptus microfibrillated cellulose / Natural rubber latex foam reinforced with eucalyptus microfibrillated cellulose：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-D6E3C2E5E3C6850D287C 泡沫 · Natural rubber latex foam with20phr bacterial nanofibrillated cellulose / Natural rubber latex foam with20phr bacterial nanofibrillated cellulose：缺 E;nu；已有完整组0、缺项组1。
@@ -356,6 +434,14 @@
 - RESEARCH-MAT-A4A448067D59DC39E467 泡沫 · Rogers BISCO MS96 open-cell platinum-cured silicone foam / Rogers BISCO MS96 open-cell platinum-cured silicone foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-A60936225216D10A7E99 泡沫 · RokopolF3600/Ongronat1080 flexibleopen-cellpolyurethanefoam,halloysitenanofiller5php / RokopolF3600/Ongronat1080 flexibleopen-cellpolyurethanefoam,halloysitenanofiller5php：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-31F14AD59B553F541042 泡沫 · RokopolF3600/Ongronat1080 flexibleopen-cellpolyurethanefoam,unfilledcontrol / RokopolF3600/Ongronat1080 flexibleopen-cellpolyurethanefoam,unfilledcontrol：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-263144857E57E41771EF 泡沫 · Röchling Foamlite® G 752 + UV-stabilized black / Röchling Foamlite® G 752 + UV-stabilized black：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-49662202B830450FF552 泡沫 · Röchling Foamlite® G 752 black / Röchling Foamlite® G 752 black：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C7F70B39D5BA826FAB8D 泡沫 · Röchling Foamlite® P 650 + UV-stabilized white / Röchling Foamlite® P 650 + UV-stabilized white：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B170C0BEA077DBC07194 泡沫 · Röchling Foamlite® P 650 natural / Röchling Foamlite® P 650 natural：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-2462F281BA8E2E71601C 泡沫 · Röchling Foamlite® P 652 + UV-stabilized + FG blue / Röchling Foamlite® P 652 + UV-stabilized + FG blue：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F2536E930AE4F3D862AF 泡沫 · Röchling Foamlite® P 652 + UV-stabilized white / Röchling Foamlite® P 652 + UV-stabilized white：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-34F70CD31AEC9819CB36 泡沫 · Röchling Foamlite® P 653 + UV-stabilized black / Röchling Foamlite® P 653 + UV-stabilized black：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1131F63D1646C08A8D14 泡沫 · Röchling Maywoflamm® ECE lightweight / Röchling Maywoflamm® ECE lightweight：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FC9156ABCEBD6E8F73E8 泡沫 · Sawbones closed-cell rigid polyurethane foam PCF10 / Sawbones closed-cell rigid polyurethane foam PCF10：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-87344072ACE3B6E6E2D8 泡沫 · Sawbones closed-cell rigid polyurethane foam PCF25 / Sawbones closed-cell rigid polyurethane foam PCF25：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F09482207399BEBA84B5 泡沫 · Sawbones closed-cell rigid polyurethane foam PCF40 / Sawbones closed-cell rigid polyurethane foam PCF40：缺 nu；已有完整组0、缺项组1。
@@ -363,6 +449,7 @@
 - RESEARCH-MAT-77C30E01E2BD1614B74B 泡沫 · Vacuum/mechanically processed Nylon6 closed-cell foam / Vacuum/mechanically processed Nylon6 closed-cell foam：缺 E;nu；已有完整组0、缺项组8。
 - RESEARCH-MAT-9A6831B42C76955197CE 泡沫 · Viscoelastic polyurethane foam vPU-REF without biopolyol / Viscoelastic polyurethane foam vPU-REF without biopolyol：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-18089445AF935A4A855A 泡沫 · Vitafoam Vasco40 open-cell urethane memory foam / Vitafoam Vasco40 open-cell urethane memory foam：缺 nu；已有完整组0、缺项组2。
+- RESEARCH-MAT-0261188C3B3402BEF349 泡沫 · Xueru elevated-temperature silicone rubber foam with adhesive layer / Xueru elevated-temperature silicone rubber foam with adhesive layer：缺 nu;rho；已有完整组0、缺项组9。
 - RESEARCH-MAT-6266B2088BB4864C40CC 泡沫 · Zotefoams ECOZOTE® LDR18 foam / Zotefoams ECOZOTE® LDR18 foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-65065FFBDA038648C437 泡沫 · Zotefoams ECOZOTE® LDR27 foam / Zotefoams ECOZOTE® LDR27 foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FE906A18C92CF4C9F033 泡沫 · Zotefoams ECOZOTE® LDR29 foam / Zotefoams ECOZOTE® LDR29 foam：缺 E;nu；已有完整组0、缺项组1。
@@ -561,7 +648,9 @@
 - RESEARCH-MAT-D1B4853A9868301EF0AD 纸材 · Cellulose nanofibril film CNF-90 / Cellulose nanofibril film CNF-90：缺 E；已有完整组0、缺项组1。
 - MAT-PAPER-COTTON-FIBER-BROAD 棉纤维纸（配方/定量未详） / Cotton-fibre paper, formulation/basis weight unspecified：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-50F78EBF089C81E06F54 纸材 · GarnTec kraft-paper cord / GarnTec kraft-paper cord：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A9D9F36B564FD2F81519 纸材 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%：缺 nu;rho；已有完整组0、缺项组1。
 - MAT-PAPER-RATTAN-WEAVE-BROAD 纸绳/仿藤编织物（结构未详） / Paper-rope/rattan weave, construction unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
+- RESEARCH-MAT-0F130C15E5CB19280C8F 纸材 · Testliner paper, constituent sheet of honeycomb paperboard / Testliner paper, constituent sheet of honeycomb paperboard：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-81F01B66766A20AF2286 纸材 · Two-liner / one-flute corrugated cardboard sandwich / Two-liner / one-flute corrugated cardboard sandwich：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-B278A8A4A4E2CE023371 聚合物 · 10% Carbon Fibre Reinforced POM Copolymer Granules / 10% Carbon Fibre Reinforced POM Copolymer Granules：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F8B0D9A23724974304FD 聚合物 · 100 wt% bio-polyethylene / 100 wt% bio-polyethylene：缺 E;nu；已有完整组0、缺项组1。
@@ -1108,6 +1197,116 @@
 - RESEARCH-MAT-CB75BCB45FCAF25A9D55 聚合物 · RP806/19 polyacrylonitrile-based acrylic finishingfilm,metal-free retannedD2leatherpowder 30mg/mL / RP806/19 polyacrylonitrile-based acrylic finishingfilm,metal-free retannedD2leatherpowder 30mg/mL：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-243EE89E5982191D2F91 聚合物 · RP806/19 polyacrylonitrile-based acrylic finishingfilm,unfilled / RP806/19 polyacrylonitrile-based acrylic finishingfilm,unfilled：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-A85786698AD91A07C522 聚合物 · Rilsan® BMN TLD Nylon 11 Rod / Rilsan® BMN TLD Nylon 11 Rod：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9B1DB4AB8BD940BA16A2 聚合物 · Röchling EtroX® I CM G15 grey / Röchling EtroX® I CM G15 grey：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5236404DAB288ECFA5BA 聚合物 · Röchling EtroX® I CM G40 grey / Röchling EtroX® I CM G40 grey：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4941DF4124B127D4B064 聚合物 · Röchling EtroX® I CM GLIDE / Röchling EtroX® I CM GLIDE：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F7521517451E7315B1EE 聚合物 · Röchling EtroX® I CM UHT natural / Röchling EtroX® I CM UHT natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-477C89EA440543E4F6A7 聚合物 · Röchling EtroX® I CM natural / Röchling EtroX® I CM natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-181AD499929CC428D006 聚合物 · Röchling EtroX® V natural / Röchling EtroX® V natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-29D119944A8BB5C20567 聚合物 · Röchling Formaterm® PS-HI sign-advertising / Röchling Formaterm® PS-HI sign-advertising：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-D8023E79B42E5A15A7F6 聚合物 · Röchling Lamigamid® 1200 / Röchling Lamigamid® 1200：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-484EADEE65984D85BC20 聚合物 · Röchling Lamigamid® 1207-1209 / Röchling Lamigamid® 1207-1209：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-34D89CFCEA900B476B6A 聚合物 · Röchling Lamigamid® 1220 / Röchling Lamigamid® 1220：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-FF40884E9314540627A2 聚合物 · Röchling LubX® AST white / Röchling LubX® AST white：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C5BFF70B41F7762CACD1 聚合物 · Röchling LubX® C natural / Röchling LubX® C natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-6F6C6832905A3B218CDF 聚合物 · Röchling LubX® C white / Röchling LubX® C white：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E285B68AB3CB26A232B7 聚合物 · Röchling LubX® CV natural / Röchling LubX® CV natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-25F0F2FA3F3A24E7E6F6 聚合物 · Röchling MAYWOflamm® PS / Röchling MAYWOflamm® PS：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-944E55B3FF1A6AD65CE4 聚合物 · Röchling Maywoblend® PC-ABS / Röchling Maywoblend® PC-ABS：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-854941E9E679AD01D08B 聚合物 · Röchling Maywoblend® PS-PE / Röchling Maywoblend® PS-PE：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-6A8C889410BBE96A3EEC 聚合物 · Röchling Maywoblend® PS-PE CR / Röchling Maywoblend® PS-PE CR：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-BDA0178A67756DD6FA1F 聚合物 · Röchling Maywoflamm® ABS MA / Röchling Maywoflamm® ABS MA：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-AA922ADC09E101E11475 聚合物 · Röchling Maywoflamm® ABS V0 / Röchling Maywoflamm® ABS V0：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-19DB5D13CF767DC56542 聚合物 · Röchling Maywoflamm® ASA PC / Röchling Maywoflamm® ASA PC：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-2CBF7CCA63890982C140 聚合物 · Röchling Maywoflamm® ECE / Röchling Maywoflamm® ECE：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4D117BC052A682711845 聚合物 · Röchling Maywoflamm® ECE 37 / Röchling Maywoflamm® ECE 37：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-68420016FC5F04CACC7E 聚合物 · Röchling Maywoflamm® ECE PC-ABS / Röchling Maywoflamm® ECE PC-ABS：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-783A5EB5952ACC6C6B39 聚合物 · Röchling Maywoflamm® PC-ABS / Röchling Maywoflamm® PC-ABS：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-67D6644EAD7FE178E7E9 聚合物 · Röchling Maywoflamm® plus / Röchling Maywoflamm® plus：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A20C045F5FD2E323E5FB 聚合物 · Röchling Maywoflamm® plus SPX / Röchling Maywoflamm® plus SPX：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-952689788697A7BC0232 聚合物 · Röchling Maywogreen ABS BIO (mb) / Röchling Maywogreen ABS BIO (mb)：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-47E342DAFC199EF40DF0 聚合物 · Röchling Maywogreen PLA BIO (deg) / Röchling Maywogreen PLA BIO (deg)：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-21C3337B494F880C6544 聚合物 · Röchling Maywogreen PS BIO (mb) / Röchling Maywogreen PS BIO (mb)：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-BBD1489F95E1C3DC6179 聚合物 · Röchling Maywogreen PS PCR® 1227 / Röchling Maywogreen PS PCR® 1227：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-FC10C80B8D9D9E89EB9C 聚合物 · Röchling Maywogreen PS PCR® 1230 / Röchling Maywogreen PS PCR® 1230：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-D9952ECBC62EC22F2C0A 聚合物 · Röchling Maywosoft® ABS-TPU / Röchling Maywosoft® ABS-TPU：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-BA7BD75CD18A5801CAA3 聚合物 · Röchling Maywosoft® ABS-TPU super matt / Röchling Maywosoft® ABS-TPU super matt：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-DDEAE57297340F58447C 聚合物 · Röchling Maywosol ABS ST / Röchling Maywosol ABS ST：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4E9D5DCE866FCE11A940 聚合物 · Röchling Maywosol ABS-PMMA matt / Röchling Maywosol ABS-PMMA matt：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CE3DCF437C6293BF2026 聚合物 · Röchling Maywosol ASA / Röchling Maywosol ASA：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F04E6EA14A5FA2313FF4 聚合物 · Röchling Maywotron® ABS-TPU Sur-R / Röchling Maywotron® ABS-TPU Sur-R：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-7F0AD806CFAFEE620291 聚合物 · Röchling Maywotron® ABS-TPU Vol-R / Röchling Maywotron® ABS-TPU Vol-R：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-DF29A1DDCBD7DAC376E5 聚合物 · Röchling Maywotron® ASA P / Röchling Maywotron® ASA P：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8A3DD067493ED44C676A 聚合物 · Röchling Maywo® PS HI / Röchling Maywo® PS HI：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-3BCE5F363E02D1A439EF 聚合物 · Röchling Maywo® PS HI FT / Röchling Maywo® PS HI FT：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E187125DB6CA274C7B26 聚合物 · Röchling Optamid® / Röchling Optamid®：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-04AB2336C4E6E4622902 聚合物 · Röchling Polystone® P CubX® homopolymer grey / Röchling Polystone® P CubX® homopolymer grey：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-AE381C3CAAE0BD33BC86 聚合物 · Röchling Polystone® P copolymer PG + UV-stabilized beige / Röchling Polystone® P copolymer PG + UV-stabilized beige：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-EE915DAE8E4D2DF6F3BE 聚合物 · Röchling Polystone® P copolymer PG + UV-stabilized blue / Röchling Polystone® P copolymer PG + UV-stabilized blue：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-66C6F4925172403C95B3 聚合物 · Röchling Polystone® P copolymer PG + UV-stabilized grey / Röchling Polystone® P copolymer PG + UV-stabilized grey：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C9E68D28831ED714DE49 聚合物 · Röchling Polystone® P copolymer PG + UV-stabilized white / Röchling Polystone® P copolymer PG + UV-stabilized white：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1A58A2CE5EFFCBB19D7C 聚合物 · Röchling Robaflow® PC / Röchling Robaflow® PC：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-25C40063AF073EDAC8B3 聚合物 · Röchling Robaflow® S / Röchling Robaflow® S：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-587ABFDCC9AE536334F5 聚合物 · Röchling Robatube PVC / Röchling Robatube PVC：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-676829B36EC6289DBF0E 聚合物 · Röchling SustaABS grey / Röchling SustaABS grey：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-063384887796C2577525 聚合物 · Röchling SustaECTFE natural / Röchling SustaECTFE natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-821F76DD700B6EB35168 聚合物 · Röchling SustaPEEK CM MOD black / Röchling SustaPEEK CM MOD black：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-324B3FABBF7B1E0DE0D4 聚合物 · Röchling SustaPEEK CM natural / Röchling SustaPEEK CM natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E41B8E5FB022A905D342 聚合物 · Röchling SustaPEEK black / Röchling SustaPEEK black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-2E76EA70C6CBDBD4C450 聚合物 · Röchling SustaPEI CM ESD 90 black / Röchling SustaPEI CM ESD 90 black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9CCB604BA54505F1ACC0 聚合物 · Röchling SustaPEI MG (ULTEMTM HU1000) / Röchling SustaPEI MG (ULTEMTM HU1000)：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B7A07125952169B76874 聚合物 · Röchling SustaPEI MG natural / Röchling SustaPEI MG natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4798595B855AE60B2390 聚合物 · Röchling SustaPEI blue / Röchling SustaPEI blue：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-0B1EF50FF07D6F0C5826 聚合物 · Röchling SustaPPO / Röchling SustaPPO：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-906415A8F32F364AD201 聚合物 · Röchling SustaPPO MG / Röchling SustaPPO MG：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F23140641A600088389B 聚合物 · Röchling SustaPVDF ESD 60 black / Röchling SustaPVDF ESD 60 black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A313D0C828E106DEFAA0 聚合物 · Röchling SustaPVDF FG natural / Röchling SustaPVDF FG natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-FEE2670F22F5739C0B28 聚合物 · Röchling SustaPVDF natural / Röchling SustaPVDF natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-83C91706868EEA79C843 聚合物 · Röchling Sustadur® PBT / Röchling Sustadur® PBT：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-27ED44E6FD0A2CD8AF63 聚合物 · Röchling Sustadur® PET GLD 120 grey / Röchling Sustadur® PET GLD 120 grey：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F25273106EB277375FC0 聚合物 · Röchling Sustadur® PET GLD 130 natural / Röchling Sustadur® PET GLD 130 natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-124DA8A1A90C170791D2 聚合物 · Röchling Sustadur® PET TF / Röchling Sustadur® PET TF：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-FE14665AA48D5B452516 聚合物 · Röchling Sustadur® PET blue / Röchling Sustadur® PET blue：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-BF79D895753572C8BC56 聚合物 · Röchling Sustaglide® black / Röchling Sustaglide® black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-D4EF195CB7C338AAC8B3 聚合物 · Röchling Sustakon® natural / Röchling Sustakon® natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F98AFD59CFC485CAFA94 聚合物 · Röchling Sustamid® 12 natural / Röchling Sustamid® 12 natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-D352C5B34EDE44C3FD60 聚合物 · Röchling Sustamid® 46 brown / Röchling Sustamid® 46 brown：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4ADEA2BBB845437F2E65 聚合物 · Röchling Sustamid® 6 BIO (mb) natural / Röchling Sustamid® 6 BIO (mb) natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E92DD1B3B0DF83C1B869 聚合物 · Röchling Sustamid® 6 FG natural / Röchling Sustamid® 6 FG natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9167AE30172B4621B672 聚合物 · Röchling Sustamid® 6 FR natural / Röchling Sustamid® 6 FR natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-AEC709F1A59C4B9FAFFD 聚合物 · Röchling Sustamid® 6 GC black / Röchling Sustamid® 6 GC black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B26F4797F977AECB72E1 聚合物 · Röchling Sustamid® 6 blue / Röchling Sustamid® 6 blue：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C88DE0D70A891EC6C6FB 聚合物 · Röchling Sustamid® 66 black / Röchling Sustamid® 66 black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-BBF001F79AA0153DD902 聚合物 · Röchling Sustamid® 6G blue / Röchling Sustamid® 6G blue：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-816C8436E734E12E672A 聚合物 · Röchling Sustanat® PC MG / Röchling Sustanat® PC MG：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1CFDD06B700BC1956B34 聚合物 · Röchling Sustanat® PC natural / Röchling Sustanat® PC natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-6BD91DE4127C48D9E42D 聚合物 · Röchling Sustarin® C / Röchling Sustarin® C：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-FCD98D44AFB5908167E3 聚合物 · Röchling Sustarin® C BIO (mb) / Röchling Sustarin® C BIO (mb)：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B646DB3776D61FE36B5C 聚合物 · Röchling Sustarin® C DWS natural / Röchling Sustarin® C DWS natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-76EFE5D0793DC0DAB632 聚合物 · Röchling Sustarin® C ESD 60 / Röchling Sustarin® C ESD 60：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-6042811405498C7F8B1D 聚合物 · Röchling Sustarin® C ESD 60 PLUS black / Röchling Sustarin® C ESD 60 PLUS black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-31D892BD232D1C231F6E 聚合物 · Röchling Sustarin® C ESD 90 / Röchling Sustarin® C ESD 90：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-AF032CEE888656086074 聚合物 · Röchling Sustarin® C brown / Röchling Sustarin® C brown：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-17937DB735069990C7BD 聚合物 · Röchling Sustarin® H (Delrin® ) AF 20 / Röchling Sustarin® H (Delrin® ) AF 20：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-5419656AE668220A21BF 聚合物 · Röchling Sustarin® H (Delrin®) AF / Röchling Sustarin® H (Delrin®) AF：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-40E8EA47A1EFE379A523 聚合物 · Röchling Sustarin® H (Delrin®) AF - DE588 / Röchling Sustarin® H (Delrin®) AF - DE588：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8FABA60441347439C91D 聚合物 · Röchling Sustarin® H (Delrin®) black / Röchling Sustarin® H (Delrin®) black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-D495E967184FB34A8AE3 聚合物 · Röchling Sustarin® H natural / Röchling Sustarin® H natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-EB1DD6F55767353CAA16 聚合物 · Röchling Sustason® PES natural / Röchling Sustason® PES natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-01767011F6BB435B1C5C 聚合物 · Röchling Sustason® PPSU MG (Radel® R5500) blue / Röchling Sustason® PPSU MG (Radel® R5500) blue：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-3C227D8E44A7BE16A2D6 聚合物 · Röchling Sustason® PPSU MG (Radel® R5500) bone NT15 / Röchling Sustason® PPSU MG (Radel® R5500) bone NT15：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-2AC407E29EB7012F60F3 聚合物 · Röchling Sustason® PPSU MG (Radel® R5500) brown / Röchling Sustason® PPSU MG (Radel® R5500) brown：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C864677AF00E376C61CE 聚合物 · Röchling Sustason® PPSU MG (Radel® R5500) dark grey / Röchling Sustason® PPSU MG (Radel® R5500) dark grey：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-7DD5F28E7DF9FB565427 聚合物 · Röchling Sustason® PPSU MG (Radel® R5500) red / Röchling Sustason® PPSU MG (Radel® R5500) red：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4C4FB21B84B0A1AEAF9B 聚合物 · Röchling Sustason® PPSU black / Röchling Sustason® PPSU black：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4307CBD6FB640FE14FDC 聚合物 · Röchling Sustason® PSU MG natural / Röchling Sustason® PSU MG natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1A3F4B2C87A39EE3A9E6 聚合物 · Röchling Sustason® PSU natural / Röchling Sustason® PSU natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-61B30B72036C9517DD16 聚合物 · Röchling Sustatron® PPS MOD blue / Röchling Sustatron® PPS MOD blue：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-266187CAFA0835ECFE32 聚合物 · Röchling Sustatron® PPS natural / Röchling Sustatron® PPS natural：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A4C496125D8FDC5D8AED 聚合物 · Röchling Trovidur® EA white / Röchling Trovidur® EA white：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-68E809D37AE68FCB6E33 聚合物 · Röchling Trovidur® EC Clad / Röchling Trovidur® EC Clad：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A1BDEE90B2C52FAE44F3 聚合物 · Röchling Trovidur® EC N grey / Röchling Trovidur® EC N grey：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B8BA9D4195CA2F980F79 聚合物 · Röchling Trovidur® PHT / Röchling Trovidur® PHT：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-B96E78E44AC3F0085858 聚合物 · SABIC CYCOLOY FR RESIN CS9610 / SABIC CYCOLOY FR RESIN CS9610：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-D8C161EAF2178A3D88D1 聚合物 · SABIC CYCOLOY FR RESIN CX2142ME / SABIC CYCOLOY FR RESIN CX2142ME：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F4D05F368FE1EDF05195 聚合物 · SABIC CYCOLOY FR RESIN CX2244ME / SABIC CYCOLOY FR RESIN CX2244ME：缺 nu；已有完整组0、缺项组1。
@@ -1356,6 +1555,7 @@
 - RESEARCH-MAT-DAE5940167C902EB49ED 橡胶 · Diving neoprene sheet M3NOc / Diving neoprene sheet M3NOc：缺 E;nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-E23D4EE78914B47717EA 橡胶 · Diving neoprene sheet M4BS / Diving neoprene sheet M4BS：缺 E;nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-986DC33519ED873901EA 橡胶 · Diving neoprene sheet M4OS / Diving neoprene sheet M4OS：缺 E;nu；已有完整组0、缺项组3。
+- RESEARCH-MAT-9F7943477E3B7B1AC84A 橡胶 · Dow Corning CY52-276 A/B cured silicone gel, 1:1 volume formulation / Dow Corning CY52-276 A/B cured silicone gel, 1:1 volume formulation：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-7B10E7AC3359007801A8 橡胶 · Dow Sylgard184 PDMS layered bond,base:crosslinker10:1 / Dow Sylgard184 PDMS layered bond,base:crosslinker10:1：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-FDA655E8BED96973DE9F 橡胶 · Dow Sylgard184 PDMS layered bond,base:crosslinker10:1,crosslinker adhesive interlayer / Dow Sylgard184 PDMS layered bond,base:crosslinker10:1,crosslinker adhesive interlayer：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-FB6D7D8C7462FBB50008 橡胶 · Dow Sylgard184 PDMS layered bond,base:crosslinker20:1 / Dow Sylgard184 PDMS layered bond,base:crosslinker20:1：缺 nu;rho；已有完整组0、缺项组1。
@@ -1378,6 +1578,7 @@
 - RESEARCH-MAT-D6C5048FBC3BEDE96B14 橡胶 · Elastosil RT625 A/B silicone elastomer / Elastosil RT625 A/B silicone elastomer：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-5E69FFF4EF51D3759FB5 橡胶 · Elastosil Vario15 silicone elastomer / Elastosil Vario15 silicone elastomer：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-32F9794700F2E283C3BC 橡胶 · Gamma-crosslinked carboxymethylcellulose/polyacrylicacid/tannicacid elastomer,CMC2gAAc20mLTA0.5gper100mL / Gamma-crosslinked carboxymethylcellulose/polyacrylicacid/tannicacid elastomer,CMC2gAAc20mLTA0.5gper100mL：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-C1A39429CD734C2D45B7 橡胶 · Gelest DMS-V31/HMS-301/SIP6831.2 cured PDMS silicone gel / Gelest DMS-V31/HMS-301/SIP6831.2 cured PDMS silicone gel：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-23862C38A1FCF5978004 橡胶 · Homemade DMS-V31/HMS-301 PDMS elastomer with20phr treated silica / Homemade DMS-V31/HMS-301 PDMS elastomer with20phr treated silica：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-DB0D4DF6D19195992AA9 橡胶 · Homemade DMS-V31/HMS-301 platinum-cured unfilled PDMS elastomer / Homemade DMS-V31/HMS-301 platinum-cured unfilled PDMS elastomer：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-D3A8C1221B1DD93A818F 橡胶 · Industrial latex rubber elastic sheet / Industrial latex rubber elastic sheet：缺 rho；已有完整组0、缺项组2。
@@ -1387,6 +1588,7 @@
 - RESEARCH-MAT-6E6A694E01F5FC4731DD 橡胶 · NR70/SBR30 tyre-tread rubber with N330 carbonblack23phr/MWCNT7phr / NR70/SBR30 tyre-tread rubber with N330 carbonblack23phr/MWCNT7phr：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-98DB00F2544FBB3AD47B 橡胶 · NR70/SBR30 tyre-tread rubber with N330 carbonblack27phr/MWCNT3phr / NR70/SBR30 tyre-tread rubber with N330 carbonblack27phr/MWCNT3phr：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-EBCEA94AB713A713189D 橡胶 · NR70/SBR30 tyre-tread rubber with N330 carbonblack30phr/MWCNT0phr / NR70/SBR30 tyre-tread rubber with N330 carbonblack30phr/MWCNT0phr：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-BC22A5EAB5C86A1A7AEE 橡胶 · NinjaTek NinjaFlex 85A, FFF-printed thermoplastic polyurethane / NinjaTek NinjaFlex 85A, FFF-printed thermoplastic polyurethane：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-CFFF90DE663A24CB0779 橡胶 · Nonvulcanized natural rubber McMaster-Carr strip / Nonvulcanized natural rubber McMaster-Carr strip：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-054BF05B137D89EEA9B6 橡胶 · Phenolicresin-vulcanizedPP/EPDMthermoplasticvulcanizate,TPV1injectiongrade / Phenolicresin-vulcanizedPP/EPDMthermoplasticvulcanizate,TPV1injectiongrade：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-B104817EE979529A16C7 橡胶 · Phenolicresin-vulcanizedPP/EPDMthermoplasticvulcanizate,TPV2extrusiongrade / Phenolicresin-vulcanizedPP/EPDMthermoplasticvulcanizate,TPV2extrusiongrade：缺 nu;rho；已有完整组0、缺项组1。
@@ -1403,9 +1605,12 @@
 - RESEARCH-MAT-FEF69CFA40798B22801C 橡胶 · Polycraft GP3481-F RTV silicone rubber with RTC-10F/VF catalyst20:1 / Polycraft GP3481-F RTV silicone rubber with RTC-10F/VF catalyst20:1：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-72C1D258C6EB509F28E4 橡胶 · Powersil XLR630 A/B silicone elastomer / Powersil XLR630 A/B silicone elastomer：缺 nu;rho；已有完整组0、缺项组1。
 - MAT-RUBBERIZED-MATERIAL-SOURCE-BROAD 橡胶化材料（基材/构造未详） / Rubberized material, substrate/construction unspecified：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-CF17498C549186B5874A 橡胶 · Röchling Robatube EPDM black / Röchling Robatube EPDM black：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-110D0323388AD7E11B7C 橡胶 · Röchling Robatube ES / Röchling Robatube ES：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-DD6CADDFED1DB61C41AA 橡胶 · SEBS-polyolefin thermoplastic elastomer Marfran KP330 / SEBS-polyolefin thermoplastic elastomer Marfran KP330：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-5A0E6FA0E43A25EB8BA6 橡胶 · SEBS-polyolefin thermoplastic elastomer Marfran KP330 with10wt% wet-blue leather-waste fibres / SEBS-polyolefin thermoplastic elastomer Marfran KP330 with10wt% wet-blue leather-waste fibres：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-E3855E85AA4911F0D08F 橡胶 · Silbione RTV4410QC A/B silicone elastomer / Silbione RTV4410QC A/B silicone elastomer：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-5F81DCBF6E2B1D5F6587 橡胶 · Silicone, grade unspecified / Silicone, grade unspecified：缺 E；已有完整组0、缺项组1。
 - RESEARCH-MAT-1F0E681D6B5A5C2B1BCB 橡胶 · Smooth-On silicone mixture Dragon Skin 10S - Ecoflex 00–30 40/60 / Smooth-On silicone mixture Dragon Skin 10S - Ecoflex 00–30 40/60：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-4A8340AE0E3B30367A55 橡胶 · Smooth-On silicone mixture Dragon Skin 10S - Ecoflex 00–30 60/40 / Smooth-On silicone mixture Dragon Skin 10S - Ecoflex 00–30 60/40：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-02A17590502D330B83F2 橡胶 · Smooth-On silicone mixture Dragon Skin 10S - Ecoflex 00–30 80/20 / Smooth-On silicone mixture Dragon Skin 10S - Ecoflex 00–30 80/20：缺 nu;rho；已有完整组0、缺项组1。
@@ -1419,7 +1624,7 @@
 - RESEARCH-MAT-FEDBEB954B2A38AA6082 橡胶 · Sulfur-cured natural rubber with finished leather residues 40phr / Sulfur-cured natural rubber with finished leather residues 40phr：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-818FB2CF150D9FA202D1 橡胶 · Sulfur-cured natural rubber with finished leather residues 50phr / Sulfur-cured natural rubber with finished leather residues 50phr：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-993F897B33B0E625BD51 橡胶 · Sulfur-cured natural rubber with finished leather residues 60phr / Sulfur-cured natural rubber with finished leather residues 60phr：缺 E;nu；已有完整组0、缺项组1。
-- RESEARCH-MAT-1F148943E56957ED1FC6 橡胶 · Sylgard 184 silicone elastomer / Sylgard 184 silicone elastomer：缺 nu;rho；已有完整组0、缺项组2。
+- RESEARCH-MAT-1F148943E56957ED1FC6 橡胶 · Sylgard 184 silicone elastomer / Sylgard 184 silicone elastomer：缺 nu;rho；已有完整组0、缺项组6。
 - RESEARCH-MAT-4C2B13EC611694B72AF8 橡胶 · Sylgard186 silicone elastomer / Sylgard186 silicone elastomer：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-F34617275D1557D75DB8 橡胶 · Thermoplastic polyurethane Elastollane 11600 D50 (source spelling) / Thermoplastic polyurethane Elastollane 11600 D50 (source spelling)：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-7698DE923DC290897A43 橡胶 · Thermoplastic polyurethane Elastollane 11600 D50 (source spelling) with10wt% wet-blue leather-waste fibres / Thermoplastic polyurethane Elastollane 11600 D50 (source spelling) with10wt% wet-blue leather-waste fibres：缺 nu;rho；已有完整组0、缺项组1。
