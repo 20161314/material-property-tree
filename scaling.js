@@ -8,6 +8,7 @@
     return;
   }
   const summary = data.summary;
+  const isDownloadedGlb = (item) => item.isDownloaded === true || String(item.downloadStatus || "").startsWith("DOWNLOADED_GLB") || item.downloadStatus === "DOWNLOADED_SHA256_AND_GLB_HEADER_VERIFIED";
   const fmt = (value) => value === undefined || value === null ? "待核" : Number(value).toLocaleString("en");
   const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[char]));
   const safeUrl = (value) => /^https?:\/\//i.test(String(value || "")) ? String(value) : "";
@@ -37,12 +38,12 @@
     "count-complete": summary.complete_records, "count-partial": summary.partial_records,
   };
   Object.entries(counts).forEach(([id, value]) => { $(id).textContent = fmt(value); });
-  $("delta-objects").textContent = ["cycle8", "cycle9", "cycle10", "cycle11", "cycle12"].includes(summary.current_cycle) ? `+${fmt(summary.current_cycle_new_geometry_identities)}` : `+${fmt(Boolean(summary.current_cycle) ? 0 : summary.new_source_object_identities)}`;
+  $("delta-objects").textContent = ["cycle8", "cycle9", "cycle10", "cycle11", "cycle12", "cycle13"].includes(summary.current_cycle) ? `+${fmt(summary.current_cycle_new_geometry_identities)}` : `+${fmt(Boolean(summary.current_cycle) ? 0 : summary.new_source_object_identities)}`;
   const cycle2 = Number.isFinite(summary.cycle2_real_components_added);
   const cycle3 = Boolean(summary.current_cycle);
   $("delta-components").textContent = `+${fmt(cycle3 ? summary.current_cycle_net_component_increment : cycle2 ? summary.cycle2_net_component_increment : summary.net_real_component_increment)}`;
-  $("delta-components-note").textContent = ["cycle8", "cycle9", "cycle10", "cycle11", "cycle12"].includes(summary.current_cycle)
-    ? `本轮新增 ${fmt(summary.current_cycle_new_whole_object_fallbacks)} 个 WHOLE 整件占位；新增真实分件 ${fmt(summary.current_cycle_real_components_added)}，累计展示 ${fmt(summary.featured_physical_component_count)} 张实体组件卡；其中C11既有3513张原样保留。`
+  $("delta-components-note").textContent = ["cycle8", "cycle9", "cycle10", "cycle11", "cycle12", "cycle13"].includes(summary.current_cycle)
+    ? `本轮新增 ${fmt(summary.current_cycle_new_whole_object_fallbacks)} 个 WHOLE 整件占位；新增真实分件 ${fmt(summary.current_cycle_real_components_added)}，累计展示 ${fmt(summary.featured_physical_component_count)} 张实体组件卡；其中上轮既有 ${fmt(summary.current_cycle_legacy_physical_cards || 3513)} 张原样保留。`
     : cycle3
     ? `本轮 ${fmt(summary.current_cycle_real_components_added)} 个实体替换 ${fmt(summary.current_cycle_fallbacks_replaced)} 个整件占位，净增 ${fmt(summary.current_cycle_net_component_increment)}；另补 ${fmt(summary.current_cycle_existing_component_material_updates)} 条既有组件材料回链`
     : cycle2
@@ -134,7 +135,7 @@
   $("component-search").addEventListener("input", () => renderComponents(true));
   $("component-material").addEventListener("change", () => renderComponents(true));
   renderComponents();
-  const propertyNote = cycle3 ? `本轮新增 ${fmt(summary.current_cycle_complete_property_groups)} 完整组、${fmt(summary.current_cycle_incomplete_property_groups)} 缺项组（${fmt(summary.current_cycle_property_value_cells)} 个属性槽位），包含实测、实验推导及来源参考汇编；方向、统计量、密度与模量定义逐条保留，不等于商品实测。` : cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
+  const propertyNote = summary.current_cycle === "cycle13" ? "本轮新采集 " + fmt(summary.current_cycle_collection_complete_groups) + " 完整组、" + fmt(summary.current_cycle_collection_partial_groups) + " 缺项组；另复核35条旧完整组，修正7条，撤回或重分28条，并恢复25条缺项记录。来源纠错净完整组−27、缺项组+25；合计净完整组−26、缺项组+55。缺项不补值，来源预设及项目混合律不作实测证据。" : cycle3 ? `本轮新增 ${fmt(summary.current_cycle_complete_property_groups)} 完整组、${fmt(summary.current_cycle_incomplete_property_groups)} 缺项组（${fmt(summary.current_cycle_property_value_cells)} 个属性槽位），包含实测、实验推导及来源参考汇编；方向、统计量、密度与模量定义逐条保留，不等于商品实测。` : cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
   $("release-boundary").textContent = `研究完整与缺项共 ${fmt(summary.total_records)} 组，包含独立标记的数据库转录层。${propertyNote}正式材料映射 ${fmt(summary.formal_material_mapping_rows_unchanged)} 行未因本轮标签或组件新增而自动晋级。全库几何内容去重未完成。`;
   const hashes = { expanded_inventory_sha256: "扩充对象组件清单 SHA-256", feedback_queue_sha256: "待办队列 SHA-256", baseline_sha256: "原始对象表 SHA-256" };
   $("release-hashes").innerHTML = Object.entries(hashes).filter(([key]) => summary[key]).map(([key, label]) => `<dt>${label}</dt><dd>${esc(summary[key])}</dd>`).join("");
@@ -156,7 +157,7 @@
     $("new-source-rows").innerHTML=hits.slice(newPage*newSize,(newPage+1)*newSize).map(({item})=>`<tr>
       <td data-label="物体与来源身份"><strong>${esc(item.nameCn || item.nameEn)}</strong><small>${esc(item.nameEn)}</small><small>${esc(item.objectId)}</small><small>${esc(item.sourceId)} · ${esc(item.sourceFamilyLabel || item.sourceFamily)}</small><small>${esc(item.category)}</small></td>
       <td data-label="组件 / 材料状态"><p>${esc(item.componentScope)}</p><span class="scaling-badge pending">${esc(item.materialStatusLabel)}</span><p>${esc(item.materialLabel)}</p><small>${esc(item.materialNote)}</small><small>WHOLE 整件占位；未枚举真实分件；本批无 E/ν/ρ 物性赋值。</small><small>${item.flexiblePriority?"柔性 / 混合候选优先，仅检索分类，不证明材料或软硬。":"来源身份与材料证据分层记录。"}</small></td>
-      <td data-label="来源与 3D 资产"><div class="scaling-asset-links">${link(item.sourceUrl,"来源清单")}${link(item.mappingSourceUrl,"材料说明 / 候选依据")}${link(item.assetUrl,"下载 3D 资产包")}</div><span class="scaling-badge pending">${esc(item.assetStatusLabel)}</span><small>${esc(item.license)}</small><small>包内路径：${esc(item.archivePath)}</small><small>${esc(item.downloadStatus)}</small>${item.geometrySha256 ? `<small>GLB SHA-256：${esc(item.geometrySha256)}</small><small>负载顶点 / 三角形：${fmt(item.geometryVertices)} / ${fmt(item.geometryFaces)}；mesh / 材质槽 / 纹理：${fmt(item.geometryMeshes)} / ${fmt(item.materialSlots)} / ${fmt(item.textures)}</small>` : ""}<small>${esc(item.limitations)}</small></td></tr>`).join("") || '<tr><td colspan="3">没有匹配的新增对象。</td></tr>';
+      <td data-label="来源与 3D 资产"><div class="scaling-asset-links">${link(item.sourceUrl,"来源清单")}${link(item.mappingSourceUrl,"材料说明 / 候选依据")}${link(item.assetUrl,"下载 3D 资产包")}</div><span class="scaling-badge ${isDownloadedGlb(item) ? "verified" : "pending"}">${esc(item.assetStatusLabel)}</span><small>${esc(item.license)}</small><small>包内路径：${esc(item.archivePath)}</small><small>${esc(item.downloadStatus)}</small>${item.geometrySha256 ? `<small>GLB SHA-256：${esc(item.geometrySha256)}</small><small>负载顶点 / 三角形：${fmt(item.geometryVertices)} / ${fmt(item.geometryFaces)}；mesh / 材质槽 / 纹理：${fmt(item.geometryMeshes)} / ${fmt(item.materialSlots)} / ${fmt(item.textures)}</small>` : ""}<small>${esc(item.limitations)}</small></td></tr>`).join("") || '<tr><td colspan="3">没有匹配的新增对象。</td></tr>';
   }
   newSelect.addEventListener("change",()=>{newPage=Number(newSelect.value);renderNew();});
   $("new-source-prev").addEventListener("click",()=>{newPage--;renderNew();});
@@ -165,7 +166,8 @@
   $("new-source-filter").innerHTML += [...new Set(newItems.map(({item})=>item.sourceFamily))].map(f=>`<option value="${esc(f)}">${esc(sourceLabels[f]?.[0] || f)}</option>`).join("");
   $("new-source-filter").addEventListener("change",()=>renderNew(true));
   renderNew();
-  if ($("cycle12-payload-note")) $("cycle12-payload-note").textContent = `本轮新增 ${fmt(summary.current_cycle_new_geometry_identities)} 个柔性优先来源对象；新增来源定义实体 ${fmt(summary.current_cycle_real_components_added)} 个，替换 WHOLE ${fmt(summary.current_cycle_fallbacks_replaced)} 个；来源卡累计 ${fmt((data.newSourceObjects || []).length)}。检索优先不代表整件柔软，来源分割不代表完整机械装配。`;
+  if ($("cycle13-payload-note")) $("cycle13-payload-note").textContent = "本轮新增 " + fmt(summary.current_cycle_new_geometry_identities) + " 个来源对象；" + fmt(summary.current_cycle_real_components_added) + " 个作者实体替换 " + fmt(summary.current_cycle_fallbacks_replaced) + " 个WHOLE。新增1个实际GLB及2个USDC主几何，外部依赖未全冻结。旧完整组纠错与新采集分别列示，不把净变化当新增。";
+  if ($("cycle12-payload-note")) $("cycle12-payload-note").textContent = "Cycle12：304个新增来源对象，260个来源实体替63个WHOLE；未新增GLB。此条为已发布历史记录。";
   if ($("cycle11-payload-note")) $("cycle11-payload-note").textContent = "Cycle11 已核161个柔性/混合优先来源对象、185个来源实体替换44个WHOLE；该轮来源卡累计484，未新增GLB下载。";
   if ($("cycle10-payload-note")) $("cycle10-payload-note").textContent = "Cycle10 已收111个来源对象、164个源定义实体，替换97个WHOLE；该轮来源卡累计323。本行仅记录历史批次。";
   if ($("cycle9-payload-note")) $("cycle9-payload-note").textContent = `Cycle9 已核既有 ${fmt(summary.cycle9_verified_glb_payloads)} 个 GLB，共 ${fmt(summary.cycle9_verified_glb_bytes)} 字节；Cycle10、Cycle11 没有新增 GLB 下载事实。`;
