@@ -133,7 +133,7 @@
     "payload-loader.js": "1a77424845845e0d6d2b4b943b36af6a3fa8fdef79b233e8407f66d6bbc2738d",
     "app.js": "ce9bc4804466f52bc327821e556e18db5aeaa8a7ef1226f4408631817b2c202c",
     "scaling.js": "598e86f4f89fb430fb300acb4490f1b8d6b706c03e2bd794805bc695ed637111",
-    "phase1-ranges.js": "e807186bed14759588e6784c0fcc75b525d5b232e6a3aa4d38e529de12b22240"
+    "phase1-ranges.js": "54cb618e73301ec6ac31665066cb03d8d1396623896c67370979d3804444887e"
   },
   "inline_payloads": {
     "scaling-bootstrap": {
@@ -236,8 +236,8 @@
         "bytes": 232
       },
       "phase1-ranges.js": {
-        "sha256": "e807186bed14759588e6784c0fcc75b525d5b232e6a3aa4d38e529de12b22240",
-        "bytes": 16757
+        "sha256": "54cb618e73301ec6ac31665066cb03d8d1396623896c67370979d3804444887e",
+        "bytes": 21242
       },
       "research-data.js": {
         "sha256": "5c27013b27e3eee6dedf008c7e5d20816c8b98475ccee4010e14b5468759e961",
@@ -277,6 +277,21 @@
       }
     }
   },
+  "progressive_coverage": {
+    "bootstrap": "phase1-bootstrap.js",
+    "compressed_bootstrap": "phase1-bootstrap.js.gz",
+    "bootstrap_sha256": "28d3612dbbc8a28672ad0c4fa0c62e03c4411d3cecf3471c3ebb4319487c2834",
+    "bootstrap_logical_sha256": "9fac95ece9bf55b3967bb4bad89c1033c1722b9ae7a31f170b95662b07d3bdbd",
+    "compressed_bootstrap_sha256": "c964edb3c0409b3661f1aa1ac1b565e4f6e7f981a45a4dd3a9c66de5ad6619ee",
+    "compressed_bytes": 400057,
+    "detail_directory": "coverage-details/",
+    "chunks": 42,
+    "records": 5312,
+    "original_full_payload_retained": true,
+    "original_fields_preserved": true,
+    "scientific_payload_sha256": "2899c7c942a4739bcfeb769f806be7fa0ab22bb2057d6a74ccd31224b8af35e9",
+    "data_revision": "2774c5c9bc"
+  },
   "progressive_material_tree": {
     "bootstrap": "research-bootstrap.js",
     "compressed_bootstrap": "research-bootstrap.js.gz",
@@ -288,5 +303,5 @@
     "evidence_loaded_on_demand": true,
     "data_revision": "2774c5c9bc"
   },
-  "ui_revision": "ce9bc4804466-c5b5131159fa-1a7742484584"
+  "ui_revision": "ce9bc4804466-c5b5131159fa-1a7742484584-54cb618e7330-c964edb3c040"
 }

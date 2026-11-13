@@ -56,6 +56,64 @@
   const isCanonical = () => true;
   const targets = () => isCanonical() ? data.canonicalTargets : data.targets;
   const summary = data.summary;
+  const evidenceRequests = new Map();
+  async function loadEvidenceChunk(index) {
+    if (evidenceRequests.has(index)) return evidenceRequests.get(index);
+    const task = (async () => {
+      const spec = data.recordDetailChunks?.[index];
+      if (!spec) throw new Error("证据分块索引缺失");
+      const url = new URL(spec.url, location.href);
+      if (url.origin !== location.origin || !url.pathname.includes('/coverage-details/')) throw new Error("证据路径无效");
+      const controller = new AbortController();
+      let idleTimer;
+      const resetIdle = () => { clearTimeout(idleTimer); idleTimer = setTimeout(() => controller.abort(), 30000); };
+      const totalTimer = setTimeout(() => controller.abort(), 180000);
+      resetIdle();
+      let bytes;
+      try {
+        const response = await fetch(url, {signal: controller.signal});
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        resetIdle();
+        if (response.body) {
+          const reader = response.body.getReader(), chunks = [];
+          let length = 0;
+          try {
+            while (true) {
+              const {done, value} = await reader.read();
+              if (done) break;
+              if (!value.byteLength) continue;
+              resetIdle(); chunks.push(value); length += value.byteLength;
+            }
+          } finally { reader.releaseLock(); }
+          bytes = new Uint8Array(length);
+          let offset = 0;
+          for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
+        } else bytes = new Uint8Array(await response.arrayBuffer());
+      } finally { clearTimeout(idleTimer); clearTimeout(totalTimer); }
+      if (bytes[0] === 31 && bytes[1] === 139) {
+        bytes = new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer());
+      }
+      const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes))).map(x => x.toString(16).padStart(2, '0')).join('');
+      if (hash !== spec.sha256) throw new Error("证据校验失败");
+      const chunk = JSON.parse(new TextDecoder().decode(bytes));
+      if (chunk.releaseId !== data.releaseId || !chunk.recordsById || Object.keys(chunk.recordsById).length !== spec.records) throw new Error("证据版本或条数不一致");
+      for (const [id, record] of Object.entries(chunk.recordsById)) {
+        if (record.record_id !== id || data.recordDetails[id] !== index) throw new Error("证据身份索引不一致");
+      }
+      Object.assign(data.recordsById, chunk.recordsById);
+    })();
+    evidenceRequests.set(index, task);
+    try { await task; } catch (error) { evidenceRequests.delete(index); throw error; }
+  }
+  async function ensureEvidence(entries) {
+    if (!data.progressiveEvidence) return;
+    const indexes = [...new Set(entries.filter(entry => !data.recordsById[entry.recordId]).map(entry => data.recordDetails[entry.recordId]))];
+    // Bound each evidence batch; simultaneous material expansions share matching requests.
+    for (let start = 0; start < indexes.length; start += 3) {
+      await Promise.all(indexes.slice(start, start + 3).map(loadEvidenceChunk));
+    }
+    if (entries.some(entry => !data.recordsById[entry.recordId])) throw new Error("关联记录未完整载入");
+  }
 
   function renderSummary() {
     const current = isCanonical() ? { ...data.summary, ...data.canonicalSummary } : data.summary;
@@ -161,13 +219,13 @@
     const status = $("status-filter").value;
     const family = familyFilter.value;
     const sort = $("sort-order").value;
+    const exactId = targets().some(item => item.id.toLocaleLowerCase() === query);
     let rows = targets().filter((target) => {
       if (status === "covered" && target.completeRecordCount === 0) return false;
       if (status === "partial" && target.incompleteRecordCount === 0) return false;
       if (status === "missing" && (target.completeRecordCount > 0 || target.incompleteRecordCount > 0)) return false;
       if (family !== "all" && target.family !== family) return false;
       const searchable = [target.id, target.nameCn, target.nameEn, target.sourceLabels, familyNames[target.family]].join(" ").toLocaleLowerCase();
-      const exactId = targets().some(item => item.id.toLocaleLowerCase() === query);
       return !query || (exactId ? target.id.toLocaleLowerCase() === query : searchable.includes(query));
     });
     rows = [...rows].sort((a, b) => {
@@ -203,19 +261,29 @@
     $("material-table-body").querySelectorAll('tr').forEach(row => [...row.cells].forEach((cell,index)=>cell.dataset.label=cellLabels[index]));
     $("material-table-body").querySelectorAll("details[data-target]").forEach((details) => {
       details.addEventListener("toggle", () => {
-        if (!details.open || details.dataset.loaded) return;
+        if (!details.open || details.dataset.loaded || details.dataset.loading) return;
         const target = targets().find((item) => item.id === details.dataset.target);
         const list = details.querySelector(".evidence-list");
         if (target) appendEvidenceBatch(target, list, 0);
-        details.dataset.loaded = "true";
       });
     });
   }
 
-  function appendEvidenceBatch(target, list, offset) {
+  async function appendEvidenceBatch(target, list, offset) {
+    if (list.dataset.loading) return;
+    const details = list.closest('details');
+    list.dataset.loading = "true"; details.dataset.loading = "true";
     list.querySelector(".load-more-evidence")?.remove();
     const pageSize = 25;
     const next = target.evidence.slice(offset, offset + pageSize);
+    list.querySelectorAll('.evidence-load-status').forEach(node => node.remove());
+    const notice = document.createElement('p');
+    notice.className = 'evidence-load-status';
+    notice.setAttribute('role', 'status'); notice.textContent = '正在载入本组来源证据…'; list.append(notice);
+    try {
+      await ensureEvidence(next);
+      if (!list.isConnected) return;
+      notice.remove(); details.dataset.loaded = "true";
     list.insertAdjacentHTML("beforeend", evidenceHtml(next));
     const nextOffset = offset + next.length;
     list.dataset.offset = String(nextOffset);
@@ -226,6 +294,16 @@
       button.textContent = `加载后续 ${Math.min(pageSize, target.evidence.length - nextOffset)} 条（已显示 ${nextOffset}/${target.evidence.length}）`;
       button.addEventListener("click", () => appendEvidenceBatch(target, list, Number(list.dataset.offset)));
       list.append(button);
+    }
+    } catch (error) {
+      if (!list.isConnected) return;
+      notice.textContent = '来源证据载入失败：' + (error.name === 'AbortError' ? '网络超时' : error.message);
+      const retry = document.createElement('button'); retry.type = 'button'; retry.className = 'load-more-evidence';
+      retry.textContent = '重试载入'; retry.addEventListener('click', () => appendEvidenceBatch(target, list, offset));
+      list.append(retry);
+    } finally {
+      delete list.dataset.loading; delete details.dataset.loading;
+      if (!details.open) notice.remove();
     }
   }
 
