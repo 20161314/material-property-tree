@@ -1,7 +1,6 @@
-(async () => { if (window.MATERIAL_PAYLOAD_READY) await window.MATERIAL_PAYLOAD_READY;
-(() => {
+(async () => {
   const $ = (id) => document.getElementById(id);
-  const data = window.SCALING_DATA;
+  const data = window.SCALING_BOOTSTRAP || window.SCALING_DATA;
   if (!data?.summary) {
     $("load-error").hidden = false;
     $("load-error").textContent = "发布数据未载入，请刷新页面或检查 scaling-data.js。";
@@ -79,19 +78,28 @@
     partsBadge.textContent = `累计 ${fmt(summary.featured_physical_component_count)} 组件：${fmt(statuses.official)} 官方标签、${fmt(statuses.approximate)} 近似、${fmt(statuses.hold)} HOLD`;
   }
   if (cycle2) $("parts-heading").textContent = "已核实体组件与材料状态";
+  try {
+    if (window.MATERIAL_PAYLOAD_READY) await window.MATERIAL_PAYLOAD_READY;
+    if (!window.SCALING_DATA) throw new Error("交互数据未载入，请重试。");
+    Object.assign(data, window.SCALING_DATA);
+  } catch (error) {
+    $("load-error").hidden = false;
+    $("load-error").textContent = "交互列表暂未载入：" + error.message + " 上方为已发布快照。";
+    return;
+  }
   const componentPageSize = 60;
   const flexibleMaterialNames = new Set(["rubber", "fabric", "leather"]);
   const sourceMaterialTokens = (value) => String(value || "").toLocaleLowerCase().split(/[|,;\/\s]+/).filter(Boolean);
   const componentEntries = (data.newPhysicalComponents || []).map((item, index) => {
     const acceptedRegions = (item.official_bound_material_regions || []).filter((region) =>
       !/REJECT|QUARANTIN|HOLD/i.test([region.plausibility_status, region.review_decision].join(" ")));
-    const hasRegionReview = (item.official_bound_material_regions?.length || 0) + (item.quarantined_bound_material_regions?.length || 0) > 0;
-    const sourceLabels = hasRegionReview ? acceptedRegions.flatMap((region) => [region.source_label_raw, region.source_label_normalized]) : [item.material_label_raw];
+    const hasRegionReview = item.hasRegionReview ?? ((item.official_bound_material_regions?.length || 0) + (item.quarantined_bound_material_regions?.length || 0) > 0);
+    const sourceLabels = hasRegionReview ? (item.acceptedMaterialTokens || acceptedRegions.flatMap((region) => [region.source_label_raw, region.source_label_normalized])) : [item.material_label_raw];
     const flexibleTags = new Set(["official", "approximate"].includes(item.material_status_kind) ? sourceLabels.flatMap(sourceMaterialTokens).filter((tag) => flexibleMaterialNames.has(tag)) : []);
     const searchText = [item.component_id, item.object_id, item.component_path,
       item.component_name_cn, item.component_name_en, item.component_scope,
       item.object_name_cn, item.object_name_en, item.material_label, item.material_label_raw,
-      ...acceptedRegions.flatMap((region) => [region.source_label_raw, region.source_label_normalized, region.source_label_cn])].join(" ").toLocaleLowerCase();
+      ...(item.acceptedMaterialLabels || acceptedRegions.flatMap((region) => [region.source_label_raw, region.source_label_normalized, region.source_label_cn]))].join(" ").toLocaleLowerCase();
     return { item, index, flexibleTags, searchText };
   }).sort((a, b) => Number(b.flexibleTags.size > 0) - Number(a.flexibleTags.size > 0) || a.index - b.index);
   let activeComponentPage = 0;
@@ -101,7 +109,8 @@
     const label = item.material_status_label || "组件材料待核";
     const note = item.material_status_note || "组件身份已核，材料对应关系仍待补证。";
     const material = kind === "hold" ? "材料尚未核定" : (item.material_label || item.material_label_raw || "来源标签见原文");
-    const regionNote = item.official_bound_material_regions?.length ? `<small>${fmt(item.official_bound_material_regions.length)} 条来源材料绑定；几何面区有效覆盖尚未核验，不新增组件数。</small>` : "";
+    const regionCount = item.officialBoundRegionCount ?? item.official_bound_material_regions?.length;
+    const regionNote = regionCount ? `<small>${fmt(regionCount)} 条来源材料绑定；几何面区有效覆盖尚未核验，不新增组件数。</small>` : "";
     return `<article data-component-id="${esc(item.component_id)}">
     <h3>${esc(item.component_name_cn || item.component_scope || item.component_id)}</h3><p>${esc(item.object_name_cn || item.object_name_en)} · ${esc(item.object_name_en)}</p>
     <small>组件 ID：${esc(item.component_id)}</small><code>${esc(item.component_path)}</code><p>${esc(item.component_identity_note || "独立官方几何引用、质量/惯量及关节成员关系；通过组件身份审核。")}</p>
@@ -240,6 +249,4 @@
   $("gso-next").addEventListener("click", () => loadPage(activePage + 1));
   $("gso-search").addEventListener("input", renderAssets);
   loadPage(0);
-})();
-
 })();

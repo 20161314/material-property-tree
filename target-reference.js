@@ -56,4 +56,4 @@
   renderList(); renderDetail();
 })();
 
-})();
+})().catch(() => {});

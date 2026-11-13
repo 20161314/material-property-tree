@@ -62,7 +62,7 @@
     const values = {
       "stat-records": fmt(current.tripletRecords),
       "stat-incomplete-records": fmt(current.incompleteRecords),
-      "stat-reviewed": fmt(current.reviewedRecords),
+      "stat-reviewed": Number(current.reviewedRecords).toLocaleString("en"),
       "stat-covered": coverage(current.materialsWithCompleteRecord),
       "stat-partial-materials": coverage(current.materialsWithIncompleteRecord),
       "stat-no-values": coverage(current.materialsWithoutAnyValue),
@@ -74,7 +74,7 @@
     };
     Object.entries(values).forEach(([id, value]) => { $(id).textContent = value; });
     $("unmapped-note").textContent = `这 ${fmt(data.summary.unmappedRecords)} 条完整记录未关联到历史 193 项目标，仍计入研究总账；其中部分材料已在最新规范材料全库中单独建叶。`;
-    $("stage-progress-copy").textContent = `${fmt(current.reviewedRecords)} 条；持续扩充，不设数量上限`;
+    $("stage-progress-copy").textContent = `${Number(current.reviewedRecords).toLocaleString("en")} 条；持续扩充，不设数量上限`;
     $("unmapped-summary-count").textContent = fmt(data.summary.unmappedRecords);
     $("coverage-copy").textContent = isCanonical() ? "规范材料及已审参考覆盖；子树汇总与外库组成身份不重复计为新材料。" : `精确身份/原文标签 ${current.exactTargets} 项 · 细分材料参考 ${current.subtypeTargets} 项 · 家族参考 ${current.familyReferenceTargets} 项`;
     $("origin-copy").textContent = Object.entries(current.origins || {}).map(([key, count]) => `${originNames[key] || key} ${fmt(count)}`).join("；");
@@ -239,4 +239,4 @@
   render();
 })();
 
-})();
+})().catch(() => {});
