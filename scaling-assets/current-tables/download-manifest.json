@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "release_id": "c155112cb4",
-  "source_delivery_summary_sha256": "35fd976d1a04c61c0df437efe8dfba991ab5bcd266c643c6c57a395a78338611",
+  "release_id": "2774c5c9bc",
+  "source_delivery_summary_sha256": "6253d93815604b9fbbb3e19fe3583f97d323b62da13a93a04eecc117263c7c5d",
   "records": {
     "complete": 6172,
-    "partial": 94619,
-    "total": 100791,
+    "partial": 94748,
+    "total": 100920,
     "main": {
       "complete": 2415,
-      "incomplete": 2768
+      "incomplete": 2897
     },
     "database": {
       "complete": 3757,
@@ -17,12 +17,12 @@
     }
   },
   "materials": {
-    "total": 3678,
+    "total": 3801,
     "with_complete": 1647,
     "with_all_properties": 1661,
-    "with_E": 3117,
-    "with_nu": 1768,
-    "with_rho": 2988,
+    "with_E": 3203,
+    "with_nu": 1775,
+    "with_rho": 3070,
     "no_values": 35,
     "scope": "Current active non-fluid material nodes, including reviewed narrower-material references. No automatic product parameter assignment.",
     "excluded_fluid_targets": 3
@@ -109,34 +109,34 @@
     {
       "file": "object_derived_material_table.csv.gz",
       "source": "data/current_two_table_delivery_v1/object_derived_material_table.csv",
-      "original_sha256": "05414f83a0f39111b750ba286986787408d9b1a13d62bbc2f8e94a3f06547a56",
-      "gzip_sha256": "7f08baa71344871be75113d0a413887cd09b4729d88bddca706d09a4e8352788",
-      "original_bytes": 939622,
-      "bytes": 72204
+      "original_sha256": "34432d1210c92b201d1b32e8406e4b93e5aa55565df918db661fc51d38d08dc0",
+      "gzip_sha256": "b2b6ce8659ad4591985a4ec754e3833509a9882be200b79ebc289a2d53324c7b",
+      "original_bytes": 958004,
+      "bytes": 73658
     },
     {
       "file": "material_reverse_index_and_property_ranges.csv.gz",
       "source": "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv",
-      "original_sha256": "79768c418fd24d2d6a99d633a084ff93af18987621823bd053bb1f3b629de733",
-      "gzip_sha256": "065cfecb63571fd7efea06fbcf0df1b8b21841796dee732daf2058a1bd7ba6e7",
-      "original_bytes": 3418802,
-      "bytes": 370289
+      "original_sha256": "fa0d428da36b217b0aad170ab93e11bd54f4a3493fcbc6d24470b74043af74d2",
+      "gzip_sha256": "e4156064c43d8cea55fd0ce7c9d0b09df8ec2e8e85427755da3df78b378fac7c",
+      "original_bytes": 3523209,
+      "bytes": 384416
     },
     {
       "file": "property_ranges_by_reported_definition.csv.gz",
       "source": "data/current_two_table_delivery_v1/property_ranges_by_reported_definition.csv",
-      "original_sha256": "56b85b390ebe48be3c2a4d34be206e859661a4d19527cdc9ffd4657d804e8e40",
-      "gzip_sha256": "980a4329f69ea2a80441096e3de1a02c4ed5a7a7d13fff10ce34e03d906ebadd",
-      "original_bytes": 2699428,
-      "bytes": 295085
+      "original_sha256": "4e2e27f1de5f22f611e2a529b1e3e0cd1184b4fa49a4cb1f007d9f46bce2db7b",
+      "gzip_sha256": "088a52feba36b06a75e1a7342d509752f4f4d017fe6668fa123ebdc35ddeca5f",
+      "original_bytes": 2761239,
+      "bytes": 306925
     },
     {
       "file": "main_property_source_groups.csv.gz",
       "source": "data/current_two_table_delivery_v1/main_property_source_groups.csv",
-      "original_sha256": "9f3edf79bc6e5ad8b60223ca0ffb44e1cbd47732eb3b362c13a132186aab1a59",
-      "gzip_sha256": "b66cb0b10406f3bc13a2be0714ea7947fc8800c246c9d8a2d242646d822d5507",
-      "original_bytes": 15262210,
-      "bytes": 1122443
+      "original_sha256": "dd05856a9338c4e731077121e4b859faa5e5cfa2ead6bf05c88c0a5ff1396889",
+      "gzip_sha256": "14d83368607be3c8d4034fb675c05bba171b68cf14f8037228bfb759148dd8ac",
+      "original_bytes": 16229601,
+      "bytes": 1179104
     },
     {
       "file": "source_reported_material_label_index.csv.gz",
@@ -221,5 +221,5 @@
   ],
   "byte_preserving_gzip": true,
   "independent_paper_lineage_deduplication_complete": false,
-  "source_release_id": "bbfaed29ed"
+  "source_release_id": "b662b370b2"
 }

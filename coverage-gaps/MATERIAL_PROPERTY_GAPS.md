@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3678；三项各有来源值1661。
+材料3801；三项各有来源值1661。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -30,7 +30,9 @@
 - RESEARCH-MAT-5C622EBDB6851FA1692D 生物材料 · Diafiltered Australian merino wool keratin film / Diafiltered Australian merino wool keratin film：缺 nu;rho；已有完整组0、缺项组1。
 - MAT-NATURAL-DRIED-MOSS-SOURCE-BROAD 干燥苔藓（种类/处理未详） / Dried moss, species/treatment unspecified：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-407457CDE24C0EFCE4F1 生物材料 · Dry keratin film for ocular-surface reconstruction / Dry keratin film for ocular-surface reconstruction：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-4A06D62F7670F32E292C 生物材料 · Electrospun regenerated Bombyx mori silk fibroin scaffold / Electrospun regenerated Bombyx mori silk fibroin scaffold：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-F8AE11151C3141A9999B 生物材料 · Fatsia japonica air-dried leaf fragments / Fatsia japonica air-dried leaf fragments：缺 E;nu；已有完整组0、缺项组3。
+- RESEARCH-MAT-F84AE91D252326912BD9 生物材料 · Fomes fomentarius fungal mycelium mat / Fomes fomentarius fungal mycelium mat：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-159D7E6F399627A6DAEF 生物材料 · Fomitella fraxinea cheesecloth-overlayered mycelium-based leather, 15% EG / Fomitella fraxinea cheesecloth-overlayered mycelium-based leather, 15% EG：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-C35F2E95A9D87B32245C 生物材料 · Fomitella fraxinea cheesecloth-overlayered mycelium-based leather, 15% G / Fomitella fraxinea cheesecloth-overlayered mycelium-based leather, 15% G：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-20ADDD571AC160CC0DF9 生物材料 · Fomitella fraxinea cheesecloth-overlayered mycelium-based leather, 20% PEG / Fomitella fraxinea cheesecloth-overlayered mycelium-based leather, 20% PEG：缺 nu;rho；已有完整组0、缺项组1。
@@ -51,6 +53,9 @@
 - RESEARCH-MAT-71C3A0505774CD3B414A 生物材料 · Lecithin-tanned microbial cellulose biotextile / Lecithin-tanned microbial cellulose biotextile：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-3DB5B6EC7E67793F2147 生物材料 · Loose dried Sphagnum peat-moss particles / Loose dried Sphagnum peat-moss particles：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FE65FF96718B8AA3FD64 生物材料 · Orangutan hair fibre / Orangutan hair fibre：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-DAE716CF6109B67A4FF7 生物材料 · Pleurotus ostreatus mycelium mat, 20b×#61 control / Pleurotus ostreatus mycelium mat, 20b×#61 control：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-C16327772576F5043D2E 生物材料 · Pleurotus ostreatus mycelium mat, Δmbp1#2×mbp1g2#1 / Pleurotus ostreatus mycelium mat, Δmbp1#2×mbp1g2#1：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-432BEBEF14CF22CEF579 生物材料 · Pleurotus ostreatus mycelium mat, Δmbp1#4×mbp1g2#1 / Pleurotus ostreatus mycelium mat, Δmbp1#4×mbp1g2#1：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-B5A42698AE426763E4FD 生物材料 · Pleurotuseryngii mycelialnetwork16layer hotpressedfilm,randomhyphae / Pleurotuseryngii mycelialnetwork16layer hotpressedfilm,randomhyphae：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FAC74394C58BE44522C9 生物材料 · Pleurotuseryngii mycelialnetwork16layer hotpressedfilm,unidirectionalhyphae / Pleurotuseryngii mycelialnetwork16layer hotpressedfilm,unidirectionalhyphae：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-2B0EDF6B66C3497C37CD 生物材料 · Porcine aortic tissue / Porcine aortic tissue：缺 nu;rho；已有完整组0、缺项组1。
@@ -75,7 +80,14 @@
 - RESEARCH-MAT-926D173F66B76E69E27F 生物材料 · Rhizopus delemar CBS145940 fungal sheet, Tara tanned single layer / Rhizopus delemar CBS145940 fungal sheet, Tara tanned single layer：缺 nu;rho；已有完整组0、缺项组1。
 - SOURCE-MAT-4A827ED8F19132725B5D Twinface 双面羊皮（来源构造标签） / Twinface sheepskin — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-95629A336F6B9E1FA243 生物材料 · Untreated human Caucasian scalp hair / Untreated human Caucasian scalp hair：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-908A4C2635008445A4BB 生物材料 · Xinluzao84 whole cottonseed / Xinluzao84 whole cottonseed：缺 E；已有完整组0、缺项组1。
 - RESEARCH-MAT-318016C55F1F70D55754 生物材料 · Yak belly hair, commercial source / Yak belly hair, commercial source：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-866A688010F2E3C613C9 生物材料 · human hair cell membrane complex / human hair cell membrane complex：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-1630F83235047B54B971 生物材料 · human hair exposed cortex / human hair exposed cortex：缺 nu;rho；已有完整组0、缺项组2。
+- RESEARCH-MAT-C5945D0EF56B28C5A7C9 生物材料 · human hair macrofibril / human hair macrofibril：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-FD1BFBE8CB72E3D25CE9 生物材料 · porcupine quill cell membrane complex / porcupine quill cell membrane complex：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-FB192B770A353FD4D0EE 生物材料 · porcupine quill cortical cell / porcupine quill cortical cell：缺 nu;rho；已有完整组0、缺项组2。
+- RESEARCH-MAT-98A0D0B037E9ECFD144D 生物材料 · porcupine quill macrofibril / porcupine quill macrofibril：缺 nu;rho；已有完整组0、缺项组1。
 - SOURCE-MAT-60D9636AD9C377CDF07F 羊皮（来源构造标签） / sheepskin — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-29134E76032371C5F370 陶瓷 · Accuratus Boron Nitride, Grade BO / Accuratus Boron Nitride, Grade BO：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CCEB30C86AAF4B3A7EB0 陶瓷 · Accuratus Boron Nitride, Grade CA / Accuratus Boron Nitride, Grade CA：缺 nu；已有完整组0、缺项组1。
@@ -97,6 +109,9 @@
 - RESEARCH-MAT-DFC4F3C860EF24A09D40 陶瓷 · Aremco 502-800 Macor glass ceramic / Aremco 502-800 Macor glass ceramic：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-6274C48DC53D7F9B31BC 陶瓷 · Calcite CaCO3 / Calcite CaCO3：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-BC74066E6AFA572EC38A 陶瓷 · Ce:YAG phosphor (cerium-doped yttrium aluminum garnet) / Ce:YAG phosphor (cerium-doped yttrium aluminum garnet)：缺 E；已有完整组0、缺项组1。
+- RESEARCH-MAT-A230DF6BAF3696EAAEA6 陶瓷 · CeramTec HTZ500 zirconia / CeramTec HTZ500 zirconia：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B91C0889A6ECA0D8E7FE 陶瓷 · CeramTec MZ429 zirconia / CeramTec MZ429 zirconia：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-25E99A6E16C81B236110 陶瓷 · CeramTec ZN40 zirconia / CeramTec ZN40 zirconia：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-4415F1768AAFF655B466 陶瓷 · Crystal Quartz SiO2 / Crystal Quartz SiO2：缺 nu；已有完整组0、缺项组1。
 - MAT-EARTHENWARE-BROAD 陶器（组成/烧成工艺未详） / Earthenware, composition/firing unspecified：缺 E;nu；已有完整组0、缺项组24。
 - RESEARCH-MAT-A8D3B3B7756EE91F786B 陶瓷 · Ferro Ground Coat A vitreous porcelain enamel / Ferro Ground Coat A vitreous porcelain enamel：缺 nu;rho；已有完整组0、缺项组1。
@@ -145,6 +160,7 @@
 - RESEARCH-MAT-C00A363BA1C72A3E79F0 复合材料 · CF/PEEK honeycomb skeleton with TPU skin MH22-t0.6-T / CF/PEEK honeycomb skeleton with TPU skin MH22-t0.6-T：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-8B59138A9F3404A8BB3A 复合材料 · CF/PEEK honeycomb skeleton with TPU skin MH26-t0.6-T / CF/PEEK honeycomb skeleton with TPU skin MH26-t0.6-T：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-BF62FED0CCDAE2DBEA50 复合材料 · CF/PEEK honeycomb skeleton with TPU skin MH26-t0.8-T / CF/PEEK honeycomb skeleton with TPU skin MH26-t0.8-T：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-DC9DA84345210F4544AA 复合材料 · Coaxial electrospun PGA-core/silk-fibroin-shell scaffold / Coaxial electrospun PGA-core/silk-fibroin-shell scaffold：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-44CC3DD28717CE9558F5 复合材料 · DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.0245) / DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.0245)：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-28C8518316706FF92067 复合材料 · DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.0482) / DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.0482)：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-27685E17A13557AED7DF 复合材料 · DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.0494) / DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.0494)：缺 rho；已有完整组0、缺项组1。
@@ -169,7 +185,12 @@
 - RESEARCH-MAT-68FC0E65AC406B2B209A 复合材料 · DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.4513) / DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.4513)：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-FA69585FC066CA4D10A0 复合材料 · DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.4960) / DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.4960)：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-60535E7B8470F38E9B4F 复合材料 · DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.4981) / DGEBA DER-332/TETA epoxy with Cataphote No. 4000 soda-lime optical-crown glass spheres (phi=.4981)：缺 rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-CCA8FB5579BDD1AE97F0 复合材料 · Electrospun PGA/silk fibroin (1:1 feed mass) scaffold / Electrospun PGA/silk fibroin (1:1 feed mass) scaffold：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-1002CA85FE4BFC963C3E 复合材料 · Electrospun PGA/silk fibroin (1:1 feed mass) scaffold with cross-linked deferoxamine / Electrospun PGA/silk fibroin (1:1 feed mass) scaffold with cross-linked deferoxamine：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-C0A39CF5AAC749B0C0EA 复合材料 · Fomes fomentarius mycelium mat reinforced with printed PHBH / Fomes fomentarius mycelium mat reinforced with printed PHBH：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-1B5EC052DE6471AC658E 复合材料 · Fomes fomentarius mycelium mat reinforced with printed PLA / Fomes fomentarius mycelium mat reinforced with printed PLA：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-5D3A7A73F7F680E07A5D 复合材料 · Green kiwi peel/PVP/polyglycerol leather-like film / Green kiwi peel/PVP/polyglycerol leather-like film：缺 nu;rho；已有完整组0、缺项组10。
+- RESEARCH-MAT-CC88F39F88D12BFF7D31 复合材料 · HTS45/LY556 uni-weave carbon-fibre non-crimp-fabric epoxy laminate / HTS45/LY556 uni-weave carbon-fibre non-crimp-fabric epoxy laminate：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-9BD2A2C0CAF686F4C869 复合材料 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 10 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 10 wt%：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-236092F8FF30E1C2FB84 复合材料 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 20 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 20 wt%：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-F0B811ED78D0FF35B7F0 复合材料 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 30 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 30 wt%：缺 nu;rho；已有完整组0、缺项组1。
@@ -183,6 +204,7 @@
 - RESEARCH-MAT-AD7E742FFA88EF77AE32 复合材料 · PVAc-bonded polypropylene medical-isolation-gown/date-palm-surface-fibre composite board, dried mass 45.9/45.9/8.2 wt% (gown/fibre/binder) / PVAc-bonded polypropylene medical-isolation-gown/date-palm-surface-fibre composite board, dried mass 45.9/45.9/8.2 wt% (gown/fibre/binder)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-56BBAEE575CEFEEA335C 复合材料 · PVAc-bonded polypropylene medical-isolation-gown/date-palm-surface-fibre composite board, dried mass 58.3/19.4/22.3 wt% (gown/fibre/binder) / PVAc-bonded polypropylene medical-isolation-gown/date-palm-surface-fibre composite board, dried mass 58.3/19.4/22.3 wt% (gown/fibre/binder)：缺 nu；已有完整组0、缺项组1。
 - MAT-STEEL-POWDER-COATED-BROAD 粉末涂层钢（钢种/涂层未详） / Powder-coated steel, steel/coating unspecified：缺 nu;rho；已有完整组0、缺项组2。
+- RESEARCH-MAT-0EFCE2C8BF90309C225A 复合材料 · Recycled leather short-fibre/Araldite LY556–Aradur HY951 epoxy composite, nominal Vf≈0.30 / Recycled leather short-fibre/Araldite LY556–Aradur HY951 epoxy composite, nominal Vf≈0.30：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-0C1330924497A49B4F5A 复合材料 · Rigid-polyurethane-bonded agglomerated cork, 12wt% binder / Rigid-polyurethane-bonded agglomerated cork, 12wt% binder：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9DFD57B4AE2B627DB3E3 复合材料 · Rigid-polyurethane-bonded agglomerated cork, 14wt% binder / Rigid-polyurethane-bonded agglomerated cork, 14wt% binder：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-46B9010E96377B0E2042 复合材料 · Rigid-polyurethane-bonded agglomerated cork, 15wt% binder / Rigid-polyurethane-bonded agglomerated cork, 15wt% binder：缺 E;nu；已有完整组0、缺项组1。
@@ -291,6 +313,7 @@
 - RESEARCH-MAT-9E431964115190568318 泡沫 · AIREX TK92 rigid PET foam TK92.60 / AIREX TK92 rigid PET foam TK92.60：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-DB24DA33B3A81C003C45 泡沫 · AIREX TK92 rigid PET foam TK92.80 / AIREX TK92 rigid PET foam TK92.80：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-54A5BF186F172DCCC004 泡沫 · AIREX TegraCore thermoplastic polymer foam TegraCore / AIREX TegraCore thermoplastic polymer foam TegraCore：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-7BAF838863EEB83F653E 泡沫 · Bio-modified flexible polyurethane foam F_B / Bio-modified flexible polyurethane foam F_B：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-032B19B3F4B522FBE8D8 泡沫 · Cardanol-Mannich GX9104/SUPRASEC2085 polyurethane foam, cellulose5wt% / Cardanol-Mannich GX9104/SUPRASEC2085 polyurethane foam, cellulose5wt%：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-EB5CE4C2EB07DB1BFD99 泡沫 · Cardanol-Mannich GX9104/SUPRASEC2085 polyurethane foam, diatomite5wt% / Cardanol-Mannich GX9104/SUPRASEC2085 polyurethane foam, diatomite5wt%：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-BD2F11BD455A5D78F30D 泡沫 · Cardanol-Mannich GX9104/SUPRASEC2085 polyurethane foam, unfilled / Cardanol-Mannich GX9104/SUPRASEC2085 polyurethane foam, unfilled：缺 nu；已有完整组0、缺项组1。
@@ -301,7 +324,18 @@
 - RESEARCH-MAT-2F60FB9618AF9DB2E992 泡沫 · Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.30/0.15 / Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.30/0.15：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-A2ED9B5E04F3D9198A76 泡沫 · Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.40/0.05 / Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.40/0.05：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CB8A94E8F7F7E9976610 泡沫 · Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.60/0.40/0.00 / Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.60/0.40/0.00：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-EC0AB757A9D40BCCBFED 泡沫 · Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 0 wt% isosorbide in polyol fraction / Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 0 wt% isosorbide in polyol fraction：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-0C93F3C131B2F0CE5D04 泡沫 · Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 10 wt% isosorbide in polyol fraction / Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 10 wt% isosorbide in polyol fraction：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9A72DBAEA6B59BC70EEE 泡沫 · Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 2 wt% isosorbide in polyol fraction / Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 2 wt% isosorbide in polyol fraction：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-D786756EB1CE1A20DFB6 泡沫 · Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 4 wt% isosorbide in polyol fraction / Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 4 wt% isosorbide in polyol fraction：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-46E868BCCE1F89863AF2 泡沫 · Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 6 wt% isosorbide in polyol fraction / Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 6 wt% isosorbide in polyol fraction：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-81FA0B8F3472552F4F41 泡沫 · Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 8 wt% isosorbide in polyol fraction / Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 8 wt% isosorbide in polyol fraction：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E3983347E39E0C54F77D 泡沫 · Commercial EPS18 expanded polystyrene packaging foam / Commercial EPS18 expanded polystyrene packaging foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-2F731B642DB746D7BA50 泡沫 · Cured silicone rubber foam with hydrogen-containing silicone oil crosslinker 0.5 wt% / Cured silicone rubber foam with hydrogen-containing silicone oil crosslinker 0.5 wt%：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1EF6E142FDD6F8F9EF25 泡沫 · Cured silicone rubber foam with hydrogen-containing silicone oil crosslinker 1 wt% / Cured silicone rubber foam with hydrogen-containing silicone oil crosslinker 1 wt%：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-177B77C3DCC1482BBF35 泡沫 · Cured silicone rubber foam with hydrogen-containing silicone oil crosslinker 2 wt% / Cured silicone rubber foam with hydrogen-containing silicone oil crosslinker 2 wt%：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-08B4283F0022E349A9E8 泡沫 · Cured silicone rubber foam with hydrogen-containing silicone oil crosslinker 3 wt% / Cured silicone rubber foam with hydrogen-containing silicone oil crosslinker 3 wt%：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5A718EF283EFA9BC5491 泡沫 · Cured silicone rubber foam with hydrogen-containing silicone oil crosslinker 4 wt% / Cured silicone rubber foam with hydrogen-containing silicone oil crosslinker 4 wt%：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-2EAE9F9FAA35670A3376 泡沫 · Diab Divinycell F PES foam F130 / Diab Divinycell F PES foam F130：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9DD162A92D8AC7439F9E 泡沫 · Diab Divinycell F PES foam F40 / Diab Divinycell F PES foam F40：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CD5E636EAC828034615A 泡沫 · Diab Divinycell F PES foam F50 / Diab Divinycell F PES foam F50：缺 E;nu；已有完整组0、缺项组1。
@@ -339,6 +373,8 @@
 - RESEARCH-MAT-44E6DB5F914D8A40D9AD 泡沫 · Dunlop natural rubber latex cushion foam net with 5.0phr bamboo-leaf fibre / Dunlop natural rubber latex cushion foam net with 5.0phr bamboo-leaf fibre：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F32F03BE81C0AFBEF4BF 泡沫 · Dunlop natural rubber latex cushion foam net with 7.5phr bamboo-leaf fibre / Dunlop natural rubber latex cushion foam net with 7.5phr bamboo-leaf fibre：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-C0273F8FEAE752D821A8 泡沫 · Dunlop natural rubber latex cushion foam net without bamboo-leaf filler / Dunlop natural rubber latex cushion foam net without bamboo-leaf filler：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C3E4FBA4D16E4B2F48A0 泡沫 · EVA Fitness-Mad foam / EVA Fitness-Mad foam：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-98DAEE8ED72B5646CAE4 泡沫 · Eurofoam R5235 Cellpur high-resilience PUR foam / Eurofoam R5235 Cellpur high-resilience PUR foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-393B3E6831DEA81E36EF 泡沫 · Expanded polyethylene cushion foam net / Expanded polyethylene cushion foam net：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-486E73A515819250698D 泡沫 · FlexFoam-iT III polyurethane foam / FlexFoam-iT III polyurethane foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7407C5F6E2C6DC5EE83C 泡沫 · FlexFoam-iT IIIV polyurethane foam (UF*) / FlexFoam-iT IIIV polyurethane foam (UF*)：缺 E;nu；已有完整组0、缺项组1。
@@ -393,7 +429,8 @@
 - RESEARCH-MAT-E266006E1EE482E18C63 泡沫 · MM2520 TPU/Ecoflex closed-cell foam,30wt%Ecoflex5wt%azodicarbonamide,TPU/Ecoflex/carbonblack coating / MM2520 TPU/Ecoflex closed-cell foam,30wt%Ecoflex5wt%azodicarbonamide,TPU/Ecoflex/carbonblack coating：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-A944408A956133ACA2FB 泡沫 · MM2520 thermoplastic polyurethane/Ecoflex closed-cell foam,30wt%Ecoflex5wt%azodicarbonamide / MM2520 thermoplastic polyurethane/Ecoflex closed-cell foam,30wt%Ecoflex5wt%azodicarbonamide：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-8D078C2694F179A2F01B 泡沫 · McMaster-Carr conventional flexible open-cell polyurethane foam, unconverted / McMaster-Carr conventional flexible open-cell polyurethane foam, unconverted：缺 E;nu；已有完整组0、缺项组1。
-- MAT-FOAM-MEMORY-BROAD 记忆泡沫（聚合物/密度未详） / Memory foam, polymer/density unspecified：缺 nu；已有完整组0、缺项组3。
+- RESEARCH-MAT-2E43E3F4AB6E3436D7A3 泡沫 · Memory SANTAS foam / Memory SANTAS foam：缺 nu；已有完整组0、缺项组1。
+- MAT-FOAM-MEMORY-BROAD 记忆泡沫（聚合物/密度未详） / Memory foam, polymer/density unspecified：缺 nu；已有完整组0、缺项组13。
 - RESEARCH-MAT-E015D6FA44EF0674DA93 泡沫 · Natural rubber latex foam reinforced with eucalyptus microfibrillated cellulose / Natural rubber latex foam reinforced with eucalyptus microfibrillated cellulose：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-D6E3C2E5E3C6850D287C 泡沫 · Natural rubber latex foam with20phr bacterial nanofibrillated cellulose / Natural rubber latex foam with20phr bacterial nanofibrillated cellulose：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7D525E918BF93C25BA8E 泡沫 · Natural-rubber latex foam with 2 phr Aerosil 200 hydrophilic fumed silica / Natural-rubber latex foam with 2 phr Aerosil 200 hydrophilic fumed silica：缺 E;nu；已有完整组0、缺项组1。
@@ -401,10 +438,12 @@
 - RESEARCH-MAT-2C90144F97D98F72B45C 泡沫 · Natural-rubber latex foam with 2 phr Reolosil DM30 hydrophobic fumed silica / Natural-rubber latex foam with 2 phr Reolosil DM30 hydrophobic fumed silica：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-84F219D437669BB726D1 泡沫 · Natural-rubber latex foam with 2 phr Sipernat 22S precipitated silica / Natural-rubber latex foam with 2 phr Sipernat 22S precipitated silica：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CD4CC3BE2F9565067465 泡沫 · Natural-rubber latex foam with no silica / Natural-rubber latex foam with no silica：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-316298AD43E233F82759 泡沫 · NeuroCom foam / NeuroCom foam：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7A976AA0CFA56C85F4F7 泡沫 · PEG400/PAPI flexiblepolyurethanefoam,water1.5gper100gPEG400 / PEG400/PAPI flexiblepolyurethanefoam,water1.5gper100gPEG400：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-A70FDE509662EB7E2CD7 泡沫 · PEG400/PAPI flexiblepolyurethanefoam,water2.5gper100gPEG400 / PEG400/PAPI flexiblepolyurethanefoam,water2.5gper100gPEG400：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-8F3FF0207490FA438DBA 泡沫 · PEG400/PAPI flexiblepolyurethanefoam,water2gper100gPEG400 / PEG400/PAPI flexiblepolyurethanefoam,water2gper100gPEG400：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-B08ABAAD389C054B0D9F 泡沫 · PEG400/PAPI flexiblepolyurethanefoam,water2gper100gPEG400,MTMSchemicalvapordepositedsiloxanesurfacelayer / PEG400/PAPI flexiblepolyurethanefoam,water2gper100gPEG400,MTMSchemicalvapordepositedsiloxanesurfacelayer：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-58749ABB6F412470171E 泡沫 · Petrochemical flexible polyurethane foam F_P REF / Petrochemical flexible polyurethane foam F_P REF：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-BEF146034A2AC8123328 泡沫 · Polyurethane foam PUR_A filled with titanium dioxide (9.78 wt% as reported) / Polyurethane foam PUR_A filled with titanium dioxide (9.78 wt% as reported)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-05B1A49746F58152F8E9 泡沫 · Polyurethane foam PUR_B filled with titanium dioxide (7.52 wt% as reported) / Polyurethane foam PUR_B filled with titanium dioxide (7.52 wt% as reported)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-DCB371E293E7DC1014F3 泡沫 · Polyurethane foam PUR_C filled with titanium dioxide (7.53 wt% as reported) / Polyurethane foam PUR_C filled with titanium dioxide (7.53 wt% as reported)：缺 nu；已有完整组0、缺项组1。
@@ -445,9 +484,31 @@
 - RESEARCH-MAT-FC9156ABCEBD6E8F73E8 泡沫 · Sawbones closed-cell rigid polyurethane foam PCF10 / Sawbones closed-cell rigid polyurethane foam PCF10：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-87344072ACE3B6E6E2D8 泡沫 · Sawbones closed-cell rigid polyurethane foam PCF25 / Sawbones closed-cell rigid polyurethane foam PCF25：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F09482207399BEBA84B5 泡沫 · Sawbones closed-cell rigid polyurethane foam PCF40 / Sawbones closed-cell rigid polyurethane foam PCF40：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-661E7AEAB6E209D4DEEA 泡沫 · Sponge foam coated with plastic sheath (custom-made) / Sponge foam coated with plastic sheath (custom-made)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-DA0B405C5B5A80EDAD85 泡沫 · Unfilled natural rubber latex foam / Unfilled natural rubber latex foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-77C30E01E2BD1614B74B 泡沫 · Vacuum/mechanically processed Nylon6 closed-cell foam / Vacuum/mechanically processed Nylon6 closed-cell foam：缺 E;nu；已有完整组0、缺项组8。
+- RESEARCH-MAT-AFC39E979690CBB5D01D 泡沫 · Vapeks S3534 conventional PUR foam / Vapeks S3534 conventional PUR foam：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9387762ACE8458EB7B42 泡沫 · Viscoelastic polyurethane foam VEF (10.3390/polym16223189) / Viscoelastic polyurethane foam VEF (10.3390/polym16223189)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-ADC1CF06D664E69E7E68 泡沫 · Viscoelastic polyurethane foam VEF (10.3390/polym17182459) / Viscoelastic polyurethane foam VEF (10.3390/polym17182459)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F5947CC74200E1F6F2B3 泡沫 · Viscoelastic polyurethane foam VEF_10APP (10.3390/polym17182459) / Viscoelastic polyurethane foam VEF_10APP (10.3390/polym17182459)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-3A5557C761BD187274AD 泡沫 · Viscoelastic polyurethane foam VEF_10APP_20EG (10.3390/polym17182459) / Viscoelastic polyurethane foam VEF_10APP_20EG (10.3390/polym17182459)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-61D69B40624741A05D48 泡沫 · Viscoelastic polyurethane foam VEF_10APP_30EG (10.3390/polym17182459) / Viscoelastic polyurethane foam VEF_10APP_30EG (10.3390/polym17182459)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-D9DF9AC76937D42BF1FB 泡沫 · Viscoelastic polyurethane foam VEF_10EG (10.3390/polym17182459) / Viscoelastic polyurethane foam VEF_10EG (10.3390/polym17182459)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8609F50804475D6657A9 泡沫 · Viscoelastic polyurethane foam VEF_10OP (10.3390/polym17182459) / Viscoelastic polyurethane foam VEF_10OP (10.3390/polym17182459)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-6A2B40BD736AF7466A93 泡沫 · Viscoelastic polyurethane foam VEF_10OP_20EG (10.3390/polym17182459) / Viscoelastic polyurethane foam VEF_10OP_20EG (10.3390/polym17182459)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4B76CA22C936AC23AC3E 泡沫 · Viscoelastic polyurethane foam VEF_10OP_30EG (10.3390/polym17182459) / Viscoelastic polyurethane foam VEF_10OP_30EG (10.3390/polym17182459)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CD856F0DAF75EB4AF2B3 泡沫 · Viscoelastic polyurethane foam VEF_20EG (10.3390/polym17182459) / Viscoelastic polyurethane foam VEF_20EG (10.3390/polym17182459)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5F10AAD8E161D1941F39 泡沫 · Viscoelastic polyurethane foam VEF_30EG (10.3390/polym17182459) / Viscoelastic polyurethane foam VEF_30EG (10.3390/polym17182459)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-34F3AF727F41F1104432 泡沫 · Viscoelastic polyurethane foam VEF_G (10.3390/polym16223189) / Viscoelastic polyurethane foam VEF_G (10.3390/polym16223189)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-6A7BBB7AB6371F6E1DCD 泡沫 · Viscoelastic polyurethane foam VEF_G_BC (10.3390/polym16223189) / Viscoelastic polyurethane foam VEF_G_BC (10.3390/polym16223189)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-0226F340F797DCD5774F 泡沫 · Viscoelastic polyurethane foam VEF_G_BC_S (10.3390/polym16223189) / Viscoelastic polyurethane foam VEF_G_BC_S (10.3390/polym16223189)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-27C0306FDC6C7941830B 泡沫 · Viscoelastic polyurethane foam VEF_G_S (10.3390/polym16223189) / Viscoelastic polyurethane foam VEF_G_S (10.3390/polym16223189)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-128FED4D0D8FE1EB219D 泡沫 · Viscoelastic polyurethane foam VF-CAM (10.1039/d5ra04620c) / Viscoelastic polyurethane foam VF-CAM (10.1039/d5ra04620c)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-81368C2F6BFC9F50209F 泡沫 · Viscoelastic polyurethane foam VF-CAR (10.1039/d5ra04620c) / Viscoelastic polyurethane foam VF-CAR (10.1039/d5ra04620c)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-41984CE07A7C6F0B216C 泡沫 · Viscoelastic polyurethane foam VF-RAP (10.1039/d5ra04620c) / Viscoelastic polyurethane foam VF-RAP (10.1039/d5ra04620c)：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-26BAEA78A7E9DB685794 泡沫 · Viscoelastic polyurethane foam VF-REF (10.1039/d5ra04620c) / Viscoelastic polyurethane foam VF-REF (10.1039/d5ra04620c)：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9A6831B42C76955197CE 泡沫 · Viscoelastic polyurethane foam vPU-REF without biopolyol / Viscoelastic polyurethane foam vPU-REF without biopolyol：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-B36AD4FE1D94C4CF4D55 泡沫 · Vitafoam V5015 low-resilience PUR foam / Vitafoam V5015 low-resilience PUR foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-18089445AF935A4A855A 泡沫 · Vitafoam Vasco40 open-cell urethane memory foam / Vitafoam Vasco40 open-cell urethane memory foam：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-0261188C3B3402BEF349 泡沫 · Xueru elevated-temperature silicone rubber foam with adhesive layer / Xueru elevated-temperature silicone rubber foam with adhesive layer：缺 nu;rho；已有完整组0、缺项组9。
 - RESEARCH-MAT-6266B2088BB4864C40CC 泡沫 · Zotefoams ECOZOTE® LDR18 foam / Zotefoams ECOZOTE® LDR18 foam：缺 E;nu；已有完整组0、缺项组1。
@@ -582,6 +643,37 @@
 - RESEARCH-MAT-709A432756971819F284 金属 · Stainless steel 444 / Stainless steel 444：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-73CAF21C8EB8F4273879 金属 · Stainless steel 6%Mo / Stainless steel 6%Mo：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-36A3AEBE18D967B4BD67 金属 · Stainless steel 630 / Stainless steel 630：缺 nu；已有完整组0、缺项组6。
+- RESEARCH-MAT-A874620DFA2832965669 金属 · UNS C10100 Oxygen-Free-Electronic / UNS C10100 Oxygen-Free-Electronic：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-3DBE79AF0D3EF11EBED9 金属 · UNS C10200 Oxygen-Free / UNS C10200 Oxygen-Free：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9367ACE7611032EE0307 金属 · UNS C10300 Oxygen-Free Copper / UNS C10300 Oxygen-Free Copper：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-6E928FEFCDF0858445F9 金属 · UNS C10400 Oxygen-Free with Ag / UNS C10400 Oxygen-Free with Ag：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-7BDCE5F74F0B2451F23A 金属 · UNS C10500 Oxygen-Free with Ag / UNS C10500 Oxygen-Free with Ag：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F5EA2D48C52AD45297B6 金属 · UNS C10700 Oxygen-Free with Ag / UNS C10700 Oxygen-Free with Ag：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-55C30A5B3135B463CE2A 金属 · UNS C10800 Coppers / UNS C10800 Coppers：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-103892F01B68FCC0DCE6 金属 · UNS C10810 Oxygen-Free with Ca / UNS C10810 Oxygen-Free with Ca：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-71B23A36A277C13A3583 金属 · UNS C10850 Oxygen-Free with Mg / UNS C10850 Oxygen-Free with Mg：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-DBF7F722969E16E1ACF0 金属 · UNS C10910 Coppers / UNS C10910 Coppers：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C0B62CA80E9F1BB6B2B1 金属 · UNS C11100 Electronic Tough Pitch, Anneal Resistant / UNS C11100 Electronic Tough Pitch, Anneal Resistant：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E79CB2FB430DE498464C 金属 · UNS C11300 Tough Pitch with Ag / UNS C11300 Tough Pitch with Ag：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-0835E144C827E1055AA8 金属 · UNS C11400 Tough Pitch with Ag / UNS C11400 Tough Pitch with Ag：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A040392B357BB3D0C5A8 金属 · UNS C11500 Tough Pitch with Ag / UNS C11500 Tough Pitch with Ag：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A304E220947F9E72D48C 金属 · UNS C11600 Tough Pitch with Ag / UNS C11600 Tough Pitch with Ag：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8BB56856F5481AFD2250 金属 · UNS C14500 Tellurium-Bearing / UNS C14500 Tellurium-Bearing：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-7670613AE4EF0364E86F 金属 · UNS C17500 Copper Beryllium / UNS C17500 Copper Beryllium：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5ED7F2DAA2258958EF76 金属 · UNS C19400 High Copper Alloys / UNS C19400 High Copper Alloys：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E2F3BCA8ECE921EC6473 金属 · UNS C22000 Commercial Bronze, 90% / UNS C22000 Commercial Bronze, 90%：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-6E504275191A95B137B9 金属 · UNS C23000 Red Brass, 85% / UNS C23000 Red Brass, 85%：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-374A3F1122FC38CE4B5B 金属 · UNS C24000 Low Brass, 80% / UNS C24000 Low Brass, 80%：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E609A8A5C60FB433E33A 金属 · UNS C26800 Yellow Brass, 66% / UNS C26800 Yellow Brass, 66%：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CE736A77215A4F356692 金属 · UNS C27200 Yellow Brass / UNS C27200 Yellow Brass：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5409DA23397245797188 金属 · UNS C28000 Muntz Metal, 60% / UNS C28000 Muntz Metal, 60%：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-A1D501FDC2C28DDF230B 金属 · UNS C33000 Low Leaded Brass (Tube) / UNS C33000 Low Leaded Brass (Tube)：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-89A906A6285F79C84378 金属 · UNS C35300 High Leaded Brass, 62% / UNS C35300 High Leaded Brass, 62%：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-2AAEA81516B4F0AEAF11 金属 · UNS C36000 Free-Cutting Brass / UNS C36000 Free-Cutting Brass：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-BF925D9E6E082B2298B2 金属 · UNS C63000 Aluminum Bronze / UNS C63000 Aluminum Bronze：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E7C379109D4F1FE331C7 金属 · UNS C70600 Copper-Nickel, 10% / UNS C70600 Copper-Nickel, 10%：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4415199B6AFBBDA3EAAC 金属 · UNS C71500 Copper-Nickel, 30% / UNS C71500 Copper-Nickel, 30%：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E54AA4D4F4664C91DAE4 金属 · UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes) / UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7CD50DAC0430840C1D3D 其他材料 · ArnoldN35 sinteredneodymium-iron-boronpermanentmagnet / ArnoldN35 sinteredneodymium-iron-boronpermanentmagnet：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-618E7BA73FAB4597D75B 其他材料 · Black paraffin wax, supplied ship-model stock / Black paraffin wax, supplied ship-model stock：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-AFABB2EEFE341CC544A5 其他材料 · Chikugo estuary mud / Chikugo estuary mud：缺 E;nu；已有完整组0、缺项组1。
@@ -712,12 +804,14 @@
 - RESEARCH-MAT-E8A2FB987546A6D18B23 聚合物 · Corn thermoplastic starch / Corn thermoplastic starch：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-5C15D9B4665F240E4F6F 聚合物 · Covestro Makrolon 2405 / Covestro Makrolon 2405：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-72A4ABDE9E430C02B553 聚合物 · Cross-Linked Polystyrene Film/Sheet / Cross-Linked Polystyrene Film/Sheet：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-1EA2108020BD42689AE2 聚合物 · Cured Araldite LY556 epoxy/Aradur HY951 hardener (100:10 mass) / Cured Araldite LY556 epoxy/Aradur HY951 hardener (100:10 mass)：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-ACD3DA848EF3011E45A3 聚合物 · DSM Bionate 75D polycarbonate urethane (PCU) / DSM Bionate 75D polycarbonate urethane (PCU)：缺 rho；已有完整组0、缺项组4。
 - RESEARCH-MAT-C2CFF3D48D1FEE5626B6 聚合物 · DSM Bionate 80A polycarbonate urethane (PCU) / DSM Bionate 80A polycarbonate urethane (PCU)：缺 rho；已有完整组0、缺项组4。
 - RESEARCH-MAT-2DAC1CC47868B06B6A10 聚合物 · Dense essential-oil varnish coating layer in Zhou2026 varnished spruce cross-section / Dense essential-oil varnish coating layer in Zhou2026 varnished spruce cross-section：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-EFF903DE688ECBE954D2 聚合物 · EDC/NHS-crosslinked hyaluronic acid hydrogel,1%w/v HA precursor / EDC/NHS-crosslinked hyaluronic acid hydrogel,1%w/v HA precursor：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-A4D87888241D41A8D62D 聚合物 · EMICO Bakelite / phenolic sheet / EMICO Bakelite / phenolic sheet：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-A9EAC35715C59BD57673 聚合物 · ETFE Rod / ETFE Rod：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-257BBA8A10F9A6349BE9 聚合物 · Electrospun polyglycolic acid scaffold / Electrospun polyglycolic acid scaffold：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-73A7254FD63638A07E20 聚合物 · Ensinger TECADUR MT TR — PCT-G (Poly Cyclohexylenedimethylene Terephthalate glycol-modified) / Ensinger TECADUR MT TR — PCT-G (Poly Cyclohexylenedimethylene Terephthalate glycol-modified)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-627E91DF9B4DD5E21E14 聚合物 · Ensinger TECADUR PBT GF30 — PBT (Polybutylene terephthalate) / Ensinger TECADUR PBT GF30 — PBT (Polybutylene terephthalate)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-18A9E62182D68443310F 聚合物 · Ensinger TECADUR PBT UD — PBT (Polybutylene terephthalate) / Ensinger TECADUR PBT UD — PBT (Polybutylene terephthalate)：缺 nu；已有完整组0、缺项组1。
@@ -1114,6 +1208,8 @@
 - RESEARCH-MAT-477A36E980F13985B524 聚合物 · MCAM Techtron™ PSBG PPS / MCAM Techtron™ PSBG PPS：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-83FAEED9C31723AA49A3 聚合物 · MCAM Techtron™ PSGF PPS / MCAM Techtron™ PSGF PPS：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-3341E3B9FB974F4279D9 聚合物 · MM2520 thermoplastic polyurethane/Ecoflex blend film,30wt%Ecoflex / MM2520 thermoplastic polyurethane/Ecoflex blend film,30wt%Ecoflex：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-B8DA12964BE10F679820 聚合物 · Material-extrusion printed PHBH, 3DK filament (modified formulation unspecified) / Material-extrusion printed PHBH, 3DK filament (modified formulation unspecified)：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-3D693CBC49233675C6E5 聚合物 · Material-extrusion printed PLA, Filafarm filament / Material-extrusion printed PLA, Filafarm filament：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-F7C9BF98301695FAF491 聚合物 · Mazzucchelli cellulose acetate formulation, 24% DEP / Mazzucchelli cellulose acetate formulation, 24% DEP：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FC4EC0909DCE044E61AA 聚合物 · Mazzucchelli cellulose acetate formulation, 26% DEP / Mazzucchelli cellulose acetate formulation, 26% DEP：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-8E4FFB690E59BBFB9D5F 聚合物 · Mazzucchelli cellulose acetate formulation, 28% DEP / Mazzucchelli cellulose acetate formulation, 28% DEP：缺 nu；已有完整组0、缺项组1。
@@ -1177,6 +1273,11 @@
 - RESEARCH-MAT-FA8052AF37B8C0A238FD 聚合物 · Poly(lactic acid) Ingeo 4043D with10wt% wet-blue leather-waste fibres / Poly(lactic acid) Ingeo 4043D with10wt% wet-blue leather-waste fibres：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-575D034EE3C345313E62 聚合物 · Poly(urea-formaldehyde) microcapsule shell wall, Keller-Sottos in-situ polymerized / Poly(urea-formaldehyde) microcapsule shell wall, Keller-Sottos in-situ polymerized：缺 nu;rho；已有完整组0、缺项组3。
 - RESEARCH-MAT-7F9E5C21314A659AAD12 聚合物 · PolyJet Fullcure720 cured photopolymer resin / PolyJet Fullcure720 cured photopolymer resin：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-0C25E201A815D79433C9 聚合物 · Polyacrylamide hydrogel, N,N'-methylenebisacrylamide crosslinker %C=1% / Polyacrylamide hydrogel, N,N'-methylenebisacrylamide crosslinker %C=1%：缺 rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-0BA23D2D29649B857FB5 聚合物 · Polyacrylamide hydrogel, N,N'-methylenebisacrylamide crosslinker %C=1.5% / Polyacrylamide hydrogel, N,N'-methylenebisacrylamide crosslinker %C=1.5%：缺 rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-5922597BE7FDB64814FB 聚合物 · Polyacrylamide hydrogel, N,N'-methylenebisacrylamide crosslinker %C=2% / Polyacrylamide hydrogel, N,N'-methylenebisacrylamide crosslinker %C=2%：缺 rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-26003B3F0BC260B390EE 聚合物 · Polyacrylamide hydrogel, N,N'-methylenebisacrylamide crosslinker %C=4% / Polyacrylamide hydrogel, N,N'-methylenebisacrylamide crosslinker %C=4%：缺 rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-703C34F9F1137DE4E017 聚合物 · Polyacrylamide hydrogel, N,N'-methylenebisacrylamide crosslinker %C=9% / Polyacrylamide hydrogel, N,N'-methylenebisacrylamide crosslinker %C=9%：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-3F3F03B611EA307BA983 聚合物 · Polyamide12 Grilamid XE3982 / Polyamide12 Grilamid XE3982：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-CD68EC08EED2E7628435 聚合物 · Polyamide12 Grilamid XE3982 with10wt% wet-blue leather-waste fibres / Polyamide12 Grilamid XE3982 with10wt% wet-blue leather-waste fibres：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-3E526D51A20294D8F4D2 聚合物 · Polyaramid Honeycomb Panel / Polyaramid Honeycomb Panel：缺 E;nu；已有完整组0、缺项组1。
@@ -1516,6 +1617,11 @@
 - RESEARCH-MAT-3D1BD34511C6B9004A60 橡胶 · Bio-based TPU ESTANE ECO12T80E with10wt% glutaraldehyde-tanned bovine leather fibres / Bio-based TPU ESTANE ECO12T80E with10wt% glutaraldehyde-tanned bovine leather fibres：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-940ED76BD70585D5CF6B 橡胶 · Bio-based TPU ESTANE ECO12T80E with20wt% glutaraldehyde-tanned bovine leather fibres / Bio-based TPU ESTANE ECO12T80E with20wt% glutaraldehyde-tanned bovine leather fibres：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-04E8844F12CD692FE103 橡胶 · Bio-based TPU ESTANE ECO12T80E with30wt% glutaraldehyde-tanned bovine leather fibres / Bio-based TPU ESTANE ECO12T80E with30wt% glutaraldehyde-tanned bovine leather fibres：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-A2818A66DE1DE8B616B1 橡胶 · China Bluestar Chengrand cured silicone rubber, feedstock molecular weight 32000, 1.5 phr tetrapropoxysilane / China Bluestar Chengrand cured silicone rubber, feedstock molecular weight 32000, 1.5 phr tetrapropoxysilane：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-205321C58CB2AB5F9DD2 橡胶 · China Bluestar Chengrand cured silicone rubber, feedstock molecular weight 39000, 1.5 phr tetrapropoxysilane / China Bluestar Chengrand cured silicone rubber, feedstock molecular weight 39000, 1.5 phr tetrapropoxysilane：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-50603F2DA5689E9838AD 橡胶 · China Bluestar Chengrand cured silicone rubber, feedstock molecular weight 44000, 1.5 phr tetrapropoxysilane / China Bluestar Chengrand cured silicone rubber, feedstock molecular weight 44000, 1.5 phr tetrapropoxysilane：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E79B12121923472F62AD 橡胶 · China Bluestar Chengrand cured silicone rubber, feedstock molecular weight 48000, 1.5 phr tetrapropoxysilane / China Bluestar Chengrand cured silicone rubber, feedstock molecular weight 48000, 1.5 phr tetrapropoxysilane：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E7C7F62DAECC7E75A187 橡胶 · China Bluestar Chengrand cured silicone rubber, feedstock molecular weight 53000, 1.5 phr tetrapropoxysilane / China Bluestar Chengrand cured silicone rubber, feedstock molecular weight 53000, 1.5 phr tetrapropoxysilane：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CE480E573782AC76DBA2 橡胶 · Commercial black 5 mm neoprene sheet supplied by Brammer UK / Commercial black 5 mm neoprene sheet supplied by Brammer UK：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-947F019411E4FCDB016C 橡胶 · Cured PDMS silicone rubber with 0wt% WO3 nanoparticles (40nm) / Cured PDMS silicone rubber with 0wt% WO3 nanoparticles (40nm)：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-382918E87E45E23164E8 橡胶 · Cured PDMS silicone rubber with 10wt% WO3 nanoparticles (40nm) / Cured PDMS silicone rubber with 10wt% WO3 nanoparticles (40nm)：缺 E;nu；已有完整组0、缺项组1。
@@ -1592,6 +1698,7 @@
 - RESEARCH-MAT-CFFF90DE663A24CB0779 橡胶 · Nonvulcanized natural rubber McMaster-Carr strip / Nonvulcanized natural rubber McMaster-Carr strip：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-054BF05B137D89EEA9B6 橡胶 · Phenolicresin-vulcanizedPP/EPDMthermoplasticvulcanizate,TPV1injectiongrade / Phenolicresin-vulcanizedPP/EPDMthermoplasticvulcanizate,TPV1injectiongrade：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-B104817EE979529A16C7 橡胶 · Phenolicresin-vulcanizedPP/EPDMthermoplasticvulcanizate,TPV2extrusiongrade / Phenolicresin-vulcanizedPP/EPDMthermoplasticvulcanizate,TPV2extrusiongrade：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-86972BA9B8B2C0C6F04C 橡胶 · Photocured polychloroprene elastomer, ODT 90SH/chain formulation / Photocured polychloroprene elastomer, ODT 90SH/chain formulation：缺 E;nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-B1C5DAE49E462247FE5C 橡胶 · PlatsilGel0030 silicone/PMX200 siliconeoil phantom,softgel:oil 100:0 / PlatsilGel0030 silicone/PMX200 siliconeoil phantom,softgel:oil 100:0：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-4C2D60176971289109A1 橡胶 · PlatsilGel0030 silicone/PMX200 siliconeoil phantom,softgel:oil 35:65 / PlatsilGel0030 silicone/PMX200 siliconeoil phantom,softgel:oil 35:65：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-43CD6BCFCA74065E0DA8 橡胶 · PlatsilGel0030 silicone/PMX200 siliconeoil phantom,softgel:oil 40:60 / PlatsilGel0030 silicone/PMX200 siliconeoil phantom,softgel:oil 40:60：缺 nu;rho；已有完整组0、缺项组1。
@@ -1629,6 +1736,11 @@
 - RESEARCH-MAT-F34617275D1557D75DB8 橡胶 · Thermoplastic polyurethane Elastollane 11600 D50 (source spelling) / Thermoplastic polyurethane Elastollane 11600 D50 (source spelling)：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-7698DE923DC290897A43 橡胶 · Thermoplastic polyurethane Elastollane 11600 D50 (source spelling) with10wt% wet-blue leather-waste fibres / Thermoplastic polyurethane Elastollane 11600 D50 (source spelling) with10wt% wet-blue leather-waste fibres：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-BBDB54AB438CF0357407 橡胶 · Trapped-rubber-processing silicone rubber / Trapped-rubber-processing silicone rubber：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-89877A062C278FAAC46B 橡胶 · Two-layer cured silicone rubber laminate, molecular weight 39000 surface / 32000 bottom, 1.5 phr tetrapropoxysilane / Two-layer cured silicone rubber laminate, molecular weight 39000 surface / 32000 bottom, 1.5 phr tetrapropoxysilane：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-8F6F433F6C3261545FAB 橡胶 · Two-layer cured silicone rubber laminate, molecular weight 39000 surface / 39000 bottom, 1.5 phr tetrapropoxysilane / Two-layer cured silicone rubber laminate, molecular weight 39000 surface / 39000 bottom, 1.5 phr tetrapropoxysilane：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-F240BBFEEC89C6CDF429 橡胶 · Two-layer cured silicone rubber laminate, molecular weight 39000 surface / 44000 bottom, 1.5 phr tetrapropoxysilane / Two-layer cured silicone rubber laminate, molecular weight 39000 surface / 44000 bottom, 1.5 phr tetrapropoxysilane：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-3332799AD4382F187FD1 橡胶 · Two-layer cured silicone rubber laminate, molecular weight 39000 surface / 48000 bottom, 1.5 phr tetrapropoxysilane / Two-layer cured silicone rubber laminate, molecular weight 39000 surface / 48000 bottom, 1.5 phr tetrapropoxysilane：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-809E93F6A3630DFAFC1A 橡胶 · Two-layer cured silicone rubber laminate, molecular weight 39000 surface / 53000 bottom, 1.5 phr tetrapropoxysilane / Two-layer cured silicone rubber laminate, molecular weight 39000 surface / 53000 bottom, 1.5 phr tetrapropoxysilane：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-B2F3512D13053AB8A1A9 橡胶 · Unfilled polychloroprene rubber / Unfilled polychloroprene rubber：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-2D9F78BDBD0FB6FE9A49 岩石与矿物 · Basalt / Basalt：缺 nu;rho；已有完整组0、缺项组5。
 - RESEARCH-MAT-F33FEEE49D749288BDE6 岩石与矿物 · Beishan granite / Beishan granite：缺 nu;rho；已有完整组0、缺项组7。
@@ -1651,6 +1763,12 @@
 - RESEARCH-MAT-FCEFAFC09196BCCDF3D5 纺织材料 · 100% rayon chamoix fabric / 100% rayon chamoix fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7115B5BD4682DCF108B8 纺织材料 · 100% woven cotton laparotomy sponge fabric / 100% woven cotton laparotomy sponge fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E934B42AFC353E18F236 纺织材料 · 20% nylon / 80% polyester composite microfiber towel / 20% nylon / 80% polyester composite microfiber towel：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-8D4CA1F866068AA5407F 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Comp/MAC 1.0 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Comp/MAC 1.0：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-D9588D40BB80CBB2D3EC 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Comp/MAC 1.7 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Comp/MAC 1.7：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-B0B836C13478FEA15B68 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Conv/MAC 1.0 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Conv/MAC 1.0：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-7BE0C6B791ACEFCF6B75 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Conv/MAC 1.7 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Conv/MAC 1.7：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-5D5423BA574E2B6546F1 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Siro/MAC 1.0 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Siro/MAC 1.0：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-774AD7C5CAA9B3D640F1 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Siro/MAC 1.7 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Siro/MAC 1.7：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-C9BF6EF6E9ACD835CA85 纺织材料 · 80% recycled hollow PET /20% bicomponent-PET thermo-bonded nonwoven / 80% recycled hollow PET /20% bicomponent-PET thermo-bonded nonwoven：缺 E;nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-28AA2EBBF9AF3C00003A 纺织材料 · 80% recycled solid PET /20% bicomponent-PET thermo-bonded nonwoven / 80% recycled solid PET /20% bicomponent-PET thermo-bonded nonwoven：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-08DB3DA6FF30E776B45D 纺织材料 · AB Linas T561 plain linen-warp cotton-and-amber-weft fabric / AB Linas T561 plain linen-warp cotton-and-amber-weft fabric：缺 nu;rho；已有完整组0、缺项组1。
@@ -1752,6 +1870,7 @@
 - RESEARCH-MAT-6F81EAF51C160D108C3F 纺织材料 · Kevlar 49 fibre / Kevlar 49 fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-9DA36259E79264EB1CFB 纺织材料 · Liquid crystal aromatic polyester (LCP) fiber / Liquid crystal aromatic polyester (LCP) fiber：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-4E5D96E1E882AE71FF9B 纺织材料 · Lyocell fibre / Lyocell fibre：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-287A6BA6A6FA42A860B3 纺织材料 · Lyocell fibre CLY / Lyocell fibre CLY：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-426239816F9BDC79562C 纺织材料 · Machine-embroidered polyester lace, re-entrant honeycomb / Machine-embroidered polyester lace, re-entrant honeycomb：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-60EFEA337B1EBE08A2F1 纺织材料 · Machine-embroidered polyester lace, re-entrant triangles long sides / Machine-embroidered polyester lace, re-entrant triangles long sides：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-DDA2F9253E56A613B762 纺织材料 · Machine-embroidered polyester lace, re-entrant triangles short sides / Machine-embroidered polyester lace, re-entrant triangles short sides：缺 E;rho；已有完整组0、缺项组1。
@@ -1761,6 +1880,8 @@
 - MAT-TEXTILE-MESH-BROAD 网布/网眼织物（纤维/结构未详） / Mesh textile, fibre/construction unspecified：缺 nu；已有完整组0、缺项组5。
 - RESEARCH-MAT-07B89ABC8EA60194C479 纺织材料 · Meta-aramid/Para-aramid Woven/non-woven composite barrier fabric / Meta-aramid/Para-aramid Woven/non-woven composite barrier fabric：缺 E;nu；已有完整组0、缺项组1。
 - MAT-TEXTILE-MICROFIBER-BROAD 超细纤维织物（纤维组成/结构未详） / Microfiber textile, fibre/construction unspecified：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-BA493061411DE4743CF3 纺织材料 · Modacrylic fibre MAC1.7 / Modacrylic fibre MAC1.7：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-52E3741E8104B11F2E25 纺织材料 · Modacrylic microfibre MAC1.0 / Modacrylic microfibre MAC1.0：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-821BA8DF6DE37CD38CBE 纺织材料 · Mulberry silkworm fiber natural fibre / Mulberry silkworm fiber natural fibre：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-1C673EA8D2723298971C 纺织材料 · Needle-punched 30% post-consumer leather residue with recycled-polyester matrix (source percentage basis not explicit) nonwoven / Needle-punched 30% post-consumer leather residue with recycled-polyester matrix (source percentage basis not explicit) nonwoven：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-4523E3152E03E3E7518D 纺织材料 · Needle-punched 40% mixed post-consumer footwear residue with recycled-polyester matrix (source percentage basis not explicit) nonwoven / Needle-punched 40% mixed post-consumer footwear residue with recycled-polyester matrix (source percentage basis not explicit) nonwoven：缺 nu；已有完整组0、缺项组1。
@@ -1800,6 +1921,7 @@
 - RESEARCH-MAT-CBCFE74D807FEFC48898 纺织材料 · Plain woven polyester Fabric 1 / Plain woven polyester Fabric 1：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-7131E8993CAFE1C2FDD6 纺织材料 · Plain woven polyester Fabric 2 / Plain woven polyester Fabric 2：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-14C0D2018CA0CDBC80D7 纺织材料 · Plain woven wool Fabric 4 / Plain woven wool Fabric 4：缺 E;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-8288D317F6E0D243F72F 纺织材料 · Polyacrylate fibre PAC / Polyacrylate fibre PAC：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-07EBF11B779F88FB8C3D 纺织材料 · Polyamide6 multifilament yarn / Polyamide6 multifilament yarn：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-110C7788388CBE1E9E4A 纺织材料 · Polybenzoxazole (PBO) fiber / Polybenzoxazole (PBO) fiber：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-576A12D03348EFFE7239 纺织材料 · Polybutylene terephthalate meltblown nonwoven / Polybutylene terephthalate meltblown nonwoven：缺 E;nu；已有完整组0、缺项组4。
@@ -1845,7 +1967,8 @@
 - RESEARCH-MAT-C74E891E29A42B716B39 纺织材料 · SLA ANYCUBIC UV-resin annular-link structured fabric / SLA ANYCUBIC UV-resin annular-link structured fabric：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-86BB42654A3138970117 纺织材料 · Silk (silkworm) / Silk (silkworm)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-1A8AD896412C6B614A5F 纺织材料 · Silk fibre / Silk fibre：缺 nu;rho；已有完整组0、缺项组1。
-- MAT-TEXTILE-SISAL-BROAD 剑麻纤维/织物（结构未详） / Sisal fibre/textile, construction unspecified：缺 nu；已有完整组0、缺项组2。
+- RESEARCH-MAT-EEB9CE18599A9E293961 纺织材料 · Sisal fibre (source compilation DOI10.3390/polym14102024) / Sisal fibre (source compilation DOI10.3390/polym14102024)：缺 nu；已有完整组0、缺项组1。
+- MAT-TEXTILE-SISAL-BROAD 剑麻纤维/织物（结构未详） / Sisal fibre/textile, construction unspecified：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-CF923D04F6615FE966FA 纺织材料 · Sisal natural fibre / Sisal natural fibre：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-3BA10CA3F121AE1E9189 纺织材料 · Spider silk natural fibre / Spider silk natural fibre：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-9B109911859F5624658C 纺织材料 · Sprich Baft polyester hexagonal mesh spacer fabric / Sprich Baft polyester hexagonal mesh spacer fabric：缺 E;nu；已有完整组0、缺项组1。
