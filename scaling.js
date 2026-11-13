@@ -1,3 +1,4 @@
+(async () => { if (window.MATERIAL_PAYLOAD_READY) await window.MATERIAL_PAYLOAD_READY;
 (() => {
   const $ = (id) => document.getElementById(id);
   const data = window.SCALING_DATA;
@@ -36,12 +37,12 @@
     "count-complete": summary.complete_records, "count-partial": summary.partial_records,
   };
   Object.entries(counts).forEach(([id, value]) => { $(id).textContent = fmt(value); });
-  $("delta-objects").textContent = ["cycle8", "cycle9", "cycle10", "cycle11"].includes(summary.current_cycle) ? `+${fmt(summary.current_cycle_new_geometry_identities)}` : `+${fmt(Boolean(summary.current_cycle) ? 0 : summary.new_source_object_identities)}`;
+  $("delta-objects").textContent = ["cycle8", "cycle9", "cycle10", "cycle11", "cycle12"].includes(summary.current_cycle) ? `+${fmt(summary.current_cycle_new_geometry_identities)}` : `+${fmt(Boolean(summary.current_cycle) ? 0 : summary.new_source_object_identities)}`;
   const cycle2 = Number.isFinite(summary.cycle2_real_components_added);
   const cycle3 = Boolean(summary.current_cycle);
   $("delta-components").textContent = `+${fmt(cycle3 ? summary.current_cycle_net_component_increment : cycle2 ? summary.cycle2_net_component_increment : summary.net_real_component_increment)}`;
-  $("delta-components-note").textContent = ["cycle8", "cycle9", "cycle10", "cycle11"].includes(summary.current_cycle)
-    ? `本轮新增 ${fmt(summary.current_cycle_new_whole_object_fallbacks)} 个 WHOLE 整件占位；新增真实分件 ${fmt(summary.current_cycle_real_components_added)}，累计展示 ${fmt(summary.featured_physical_component_count)} 张实体组件卡；其中C10既有3328张原样保留。`
+  $("delta-components-note").textContent = ["cycle8", "cycle9", "cycle10", "cycle11", "cycle12"].includes(summary.current_cycle)
+    ? `本轮新增 ${fmt(summary.current_cycle_new_whole_object_fallbacks)} 个 WHOLE 整件占位；新增真实分件 ${fmt(summary.current_cycle_real_components_added)}，累计展示 ${fmt(summary.featured_physical_component_count)} 张实体组件卡；其中C11既有3513张原样保留。`
     : cycle3
     ? `本轮 ${fmt(summary.current_cycle_real_components_added)} 个实体替换 ${fmt(summary.current_cycle_fallbacks_replaced)} 个整件占位，净增 ${fmt(summary.current_cycle_net_component_increment)}；另补 ${fmt(summary.current_cycle_existing_component_material_updates)} 条既有组件材料回链`
     : cycle2
@@ -164,7 +165,8 @@
   $("new-source-filter").innerHTML += [...new Set(newItems.map(({item})=>item.sourceFamily))].map(f=>`<option value="${esc(f)}">${esc(sourceLabels[f]?.[0] || f)}</option>`).join("");
   $("new-source-filter").addEventListener("change",()=>renderNew(true));
   renderNew();
-  if ($("cycle11-payload-note")) $("cycle11-payload-note").textContent = `本轮新增 ${fmt(summary.current_cycle_new_geometry_identities)} 个柔性优先来源对象；新增来源定义实体组件 ${fmt(summary.current_cycle_real_components_added)} 个，替换 WHOLE ${fmt(summary.current_cycle_fallbacks_replaced)} 个；来源卡累计 ${fmt((data.newSourceObjects || []).length)}。柔性优先是检索排序，不代表整件柔软或所有部件已核。`;
+  if ($("cycle12-payload-note")) $("cycle12-payload-note").textContent = `本轮新增 ${fmt(summary.current_cycle_new_geometry_identities)} 个柔性优先来源对象；新增来源定义实体 ${fmt(summary.current_cycle_real_components_added)} 个，替换 WHOLE ${fmt(summary.current_cycle_fallbacks_replaced)} 个；来源卡累计 ${fmt((data.newSourceObjects || []).length)}。检索优先不代表整件柔软，来源分割不代表完整机械装配。`;
+  if ($("cycle11-payload-note")) $("cycle11-payload-note").textContent = "Cycle11 已核161个柔性/混合优先来源对象、185个来源实体替换44个WHOLE；该轮来源卡累计484，未新增GLB下载。";
   if ($("cycle10-payload-note")) $("cycle10-payload-note").textContent = "Cycle10 已收111个来源对象、164个源定义实体，替换97个WHOLE；该轮来源卡累计323。本行仅记录历史批次。";
   if ($("cycle9-payload-note")) $("cycle9-payload-note").textContent = `Cycle9 已核既有 ${fmt(summary.cycle9_verified_glb_payloads)} 个 GLB，共 ${fmt(summary.cycle9_verified_glb_bytes)} 字节；Cycle10、Cycle11 没有新增 GLB 下载事实。`;
 
@@ -231,4 +233,6 @@
   $("gso-next").addEventListener("click", () => loadPage(activePage + 1));
   $("gso-search").addEventListener("input", renderAssets);
   loadPage(0);
+})();
+
 })();
