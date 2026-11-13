@@ -49,12 +49,23 @@
 
   const scopeFilter = $("scope-filter");
   const hasCanonical = Array.isArray(data.canonicalTargets) && Boolean(data.canonicalSummary);
+  const priority = window.DATASET_RELEASE.object_priority_coverage;
+  const objectIds = new Set(priority?.objectMaterialIds || []);
+  if (priority) {
+    scopeFilter.innerHTML='<option value="object">物体关联材料（优先）</option><option value="canonical">全部研究材料</option><option value="retained">无物体且三项齐全</option><option value="candidate">无物体缺项候选</option>';
+  }
   scopeFilter.value = "canonical"; // Current scope always follows the dynamic material union.
   if (!hasCanonical) throw new Error("当前材料覆盖数据缺失");
   let page = 0;
   const pageSize = 100;
   const isCanonical = () => true;
-  const targets = () => isCanonical() ? data.canonicalTargets : data.targets;
+  const targets = () => {
+    const rows=data.canonicalTargets;
+    if (!priority || scopeFilter.value==='canonical') return rows;
+    if (scopeFilter.value==='object') return rows.filter(row=>objectIds.has(row.id));
+    const complete=row=>['E','nu','rho'].every(key=>row[key][0]!=='');
+    return rows.filter(row=>!objectIds.has(row.id) && (scopeFilter.value==='retained' ? complete(row) : !complete(row)));
+  };
   const summary = data.summary;
   const evidenceRequests = new Map();
   async function loadEvidenceChunk(index) {
@@ -116,7 +127,8 @@
   }
 
   function renderSummary() {
-    const current = isCanonical() ? { ...data.summary, ...data.canonicalSummary } : data.summary;
+    const cohort = !priority || scopeFilter.value==='canonical' ? data.canonicalSummary : scopeFilter.value==='object' ? priority.objectMaterials : scopeFilter.value==='retained' ? priority.unlinkedComplete : priority.researchCandidates;
+    const current = { ...data.summary, ...cohort };
     const coverage = (value) => value === undefined ? "待汇总" : value + "/" + current.targetCount + " 规范材料";
     const values = {
       "stat-records": fmt(current.tripletRecords),
@@ -129,7 +141,7 @@
       "stat-nu-coverage": coverage(current.materialsWithNu),
       "stat-rho-coverage": coverage(current.materialsWithRho),
       "stat-all-properties": coverage(current.materialsWithAllThreeFromAnyGroup),
-      "stat-doc-keys": fmt(current.sourceDocumentKeys),
+      "stat-doc-keys": fmt(window.DATASET_RELEASE.source_keys.document_or_database_citation_keys),
     };
     Object.entries(values).forEach(([id, value]) => { $(id).textContent = value; });
     $("unmapped-note").textContent = `这 ${fmt(data.summary.unmappedRecords)} 条主账完整记录尚未关联当前规范材料节点；仍保留在研究账中。`; 
@@ -140,6 +152,12 @@
     $("coverage-scope-note").textContent = "覆盖分母：当前非液体规范材料并集。外库组成身份另列，不重复计入。";
     $("table-title").textContent = "当前规范材料全库";
     $("coverage-denominator-note").textContent = "分母随当前材料库更新；证据叶可以暂无对应物体";
+    if (priority) {
+      const label=scopeFilter.selectedOptions[0].textContent;
+      $("table-title").textContent=label;
+      $("coverage-scope-note").textContent='当前范围：'+label+'，共 '+current.targetCount+' 种。优先补齐物体关联材料；无物体且缺项仅列研究候选。';
+      $("coverage-denominator-note").textContent='分母为当前选中范围；完整/缺项组总数仍是全库来源组数';
+    }
   }
 
   if (summary.externalCatalogUrl) {
@@ -317,6 +335,12 @@
   scopeFilter.addEventListener("change", () => { page = 0; renderSummary(); render(); });
   $("materials-prev").addEventListener("click", () => { page -= 1; render(); });
   $("materials-next").addEventListener("click", () => { page += 1; render(); });
+  if (priority) {
+    const params=new URLSearchParams(location.search);
+    const selected=params.get('scope');
+    const material=params.get('material') || params.get('node') || params.get('q');
+    scopeFilter.value=['canonical','retained','candidate','object'].includes(selected) ? selected : material && !objectIds.has(material) ? 'canonical' : 'object';
+  }
   renderSummary();
   render();
 })();

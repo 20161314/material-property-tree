@@ -21,6 +21,22 @@
   };
   function mount() {
   const page = document.body.dataset.view;
+  const priority = release.object_priority_coverage;
+  if (priority && ['objects','materials','coverage'].includes(page)) {
+    const c=priority.objectMaterials;
+    const panel=document.createElement('section'); panel.className='object-priority-coverage';
+    panel.setAttribute('aria-label','物体关联材料覆盖');
+    panel.innerHTML='<div><span>当前优先 · 物体关联材料</span><strong>'+fmt(c.materialsWithAllThreeFromAnyGroup)+' / '+fmt(c.targetCount)+' 三项有来源值 · '+c.coveragePercent.toFixed(2)+'%</strong><small>仍缺项 '+fmt(c.missingMaterials)+' 种；含已接受标签与合理近似选项，非商品实测。</small></div><div><a href="references.html?scope=object">查看物体材料</a><a href="'+priority.downloads.report+'">缺项名单</a><details><summary>研究材料范围</summary><p>无物体且三项齐全 '+fmt(priority.unlinkedComplete.targetCount)+' 种保留；无物体且缺项 '+fmt(priority.researchCandidates.targetCount)+' 种单列候选。全部研究材料 '+fmt(priority.allResearch.targetCount)+' 种。分组不算新增证据。</p><a href="references.html?scope=canonical">全部研究材料</a> · <a href="references.html?scope=candidate">研究候选</a></details></div>';
+    const header=document.querySelector('.app-header');
+    if (header) header.after(panel);
+    if (page==='materials') {
+      const note=document.createElement('p');note.className='priority-tree-scope-note';
+      note.textContent='下方材料树包含全部研究材料；上方进度仅统计当前物体关联材料。无物体缺项节点单列研究候选，不计入优先补齐分母。';
+      panel.after(note);
+    }
+    const prior=document.querySelector('.coverage-progress');
+    if (prior) prior.hidden=true;
+  }
   const current = {objects:'scaling.html',materials:'research.html',coverage:'references.html'};
   const title = {objects:'物体与材料总览',materials:'材料物性来源树',coverage:'材料标签与三元组来源对照',archive:'历史映射',references:'历史对照',catalog:'玻璃数据'};
   const shell = document.createElement('nav'); shell.className='site-navigation'; shell.setAttribute('aria-label','数据库导航');

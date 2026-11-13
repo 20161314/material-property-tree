@@ -200,3 +200,15 @@ body[data-view=coverage] .phase1-table-heading input,body[data-view=coverage] .p
 .scaling-note,.detail-body>p,.detail-body>ul,.detail-body>ol {font-size:16px;line-height:1.65;}
 @media(max-width:1100px){body[data-view=coverage] .phase1-table-heading>.phase1-filters{grid-template-columns:repeat(3,minmax(0,1fr));}}
 @media(max-width:620px){body[data-view=coverage] .phase1-table-heading>.phase1-filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 8px;}body[data-view=coverage] .phase1-table-heading .phase1-filters label:first-child{grid-column:auto;}body[data-view=coverage] .phase1-table-heading .phase1-filters label:nth-child(2){grid-column:1/-1;grid-row:1;}.site-coverage-extra>.phase1-metrics{grid-template-columns:1fr 1fr;}.toolbar-actions button{min-height:44px;}.scaling-asset-controls input,.scaling-asset-controls select{font-size:16px;}.app-header{min-height:0;}}
+/* Object-linked material coverage is the user's primary completion target. */
+.object-priority-coverage{margin:12px 28px;padding:14px 18px;border:1px solid var(--site-line,#dce2e5);border-radius:10px;background:#fff;display:flex;justify-content:space-between;gap:20px;align-items:center;}
+.object-priority-coverage strong,.object-priority-coverage small,.object-priority-coverage span{display:block;}
+.object-priority-coverage strong{font-size:20px;line-height:1.5;color:#172f36;}
+.object-priority-coverage small,.object-priority-coverage span{font-size:13px;line-height:1.7;color:#52656c;}
+.object-priority-coverage>div:last-child{display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:14px;}
+.object-priority-coverage details{position:relative;}
+.object-priority-coverage details[open]{max-width:440px;}
+.object-priority-coverage summary{cursor:pointer;}
+@media(max-width:700px){.object-priority-coverage{margin:12px 16px;display:block;}.object-priority-coverage>div:last-child{margin-top:10px;}.object-priority-coverage strong{font-size:17px;}}
+
+.coverage-progress[hidden]{display:none!important;}
