@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3856；三项各有来源值1689。
+材料3860；三项各有来源值1690。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -617,6 +617,7 @@
 - RESEARCH-MAT-41FEF515E383ADF91DA7 皮革 · Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1+SA102 catalysts / polyurethane nonporous skins / Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1+SA102 catalysts / polyurethane nonporous skins：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CC55951CA87554ADFBF0 皮革 · Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1+SA506 catalysts / polyurethane nonporous skins / Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1+SA506 catalysts / polyurethane nonporous skins：缺 E;nu；已有完整组0、缺项组12。
 - RESEARCH-MAT-0D47303F775609AB49AA 皮革 · Seiren PU synthetic leather: polyester circular-knit substrate / polyester-polyurethane porous layer from Kuraray P2010 / polyurethane nonporous skins / Seiren PU synthetic leather: polyester circular-knit substrate / polyester-polyurethane porous layer from Kuraray P2010 / polyurethane nonporous skins：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9561339BAFE41F5943CC 皮革 · Sheep nappa leather with stitched seam / Sheep nappa leather with stitched seam：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-8A11CA01BBA33EDF5332 皮革 · Simmental bovine reticular-layer leather, metal-free vegetable tanned, non-dyed / Simmental bovine reticular-layer leather, metal-free vegetable tanned, non-dyed：缺 nu;rho；已有完整组0、缺项组6。
 - RESEARCH-MAT-3A460413C8C0545616D9 皮革 · Synthetic leather: 81.25% flexible PVC matrix + 13.75% polyester knitted fabric + 5% organic constituents / Synthetic leather: 81.25% flexible PVC matrix + 13.75% polyester knitted fabric + 5% organic constituents：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-ACB9302D60CCC296E5F3 皮革 · Synthetic leather: 88.671% flexible polyurethane matrix + 11.328% polyester knitted fabric / Synthetic leather: 88.671% flexible polyurethane matrix + 11.328% polyester knitted fabric：缺 rho；已有完整组0、缺项组1。
@@ -626,7 +627,7 @@
 - RESEARCH-MAT-D38CA42DD298FAD393DF 皮革 · Zebu bovine reticular-layer leather, metal-free vegetable tanned, non-dyed / Zebu bovine reticular-layer leather, metal-free vegetable tanned, non-dyed：缺 nu;rho；已有完整组0、缺项组3。
 - SOURCE-MAT-F634E6F2E8FA1662BFEA 全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified：缺 E;nu；已有完整组0、缺项组5。
 - SOURCE-MAT-8A028E07CA77C88C6217 磨砂皮革（来源构造标签） / nubuck leather — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
-- SOURCE-MAT-60D9636AD9C377CDF07F 羊皮（来源构造标签） / sheepskin — source-labelled material, finer composition unspecified：缺 nu；已有完整组0、缺项组5。
+- SOURCE-MAT-60D9636AD9C377CDF07F 羊皮（来源构造标签） / sheepskin — source-labelled material, finer composition unspecified：缺 nu；已有完整组0、缺项组6。
 - SOURCE-MAT-1FE70C971D491482EF79 合成绒面材料（来源构造标签） / synthetic suede — source-labelled material, finer composition unspecified：缺 E;nu；已有完整组0、缺项组5。
 - SOURCE-MAT-7D9FDA3D773C9610A031 意大利头层皮革（来源构造标签） / top-grain Italian leather — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-1E779E0A8E5D9B9A73BB 金属 · 18-8 stainless steel / 18-8 stainless steel：缺 E;rho；已有完整组0、缺项组1。
@@ -709,7 +710,8 @@
 - RESEARCH-MAT-AC841BF74F7F66C856DF 其他材料 · Kaolinite mud / Kaolinite mud：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FB6A4467BBE27D108ED5 其他材料 · Lianyungang port mud / Lianyungang port mud：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-38705AC3C402C9E60C86 其他材料 · Lianyungang waterway mud / Lianyungang waterway mud：缺 E;nu；已有完整组0、缺项组1。
-- MAT-MUD-BROAD 泥状材料（组成/含水率未详） / Mud-like material, composition/moisture unspecified：缺 E;nu；已有完整组0、缺项组9。
+- RESEARCH-MAT-A81D9C29103F021F1101 其他材料 · Natural soft cohesive marine sediment from Nova Scotia / Natural soft cohesive marine sediment from Nova Scotia：缺 E;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-48EB748DAAAA83438738 其他材料 · Overconsolidated fine-grained cohesive marine sediment from the Minas Basin / Overconsolidated fine-grained cohesive marine sediment from the Minas Basin：缺 nu;rho；已有完整组0、缺项组1。
 - SOURCE-MAT-97839AB86E352442295F PlanWood（源商品材料名）（来源构造标签） / PlanWood — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-98E2098CC7B846BFA524 其他材料 · Prussian Blue pigment / cold-pressed linseed-oil paint / Prussian Blue pigment / cold-pressed linseed-oil paint：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-324840F5C9CB4780A40A 其他材料 · Resopal Traceless fingerprint-resistant decorative laminate sheet / Resopal Traceless fingerprint-resistant decorative laminate sheet：缺 E;nu；已有完整组0、缺项组1。
@@ -1597,7 +1599,8 @@
 - RESEARCH-MAT-CDF85F89BD66CA8B1E84 聚合物 · Teknos Drywood Acrylic 2 wood-coating free films / Teknos Drywood Acrylic 2 wood-coating free films：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-AD92AD77EEC951BCE557 聚合物 · Teknos Drywood Alkyd 1 wood-coating free films / Teknos Drywood Alkyd 1 wood-coating free films：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-13A133A7C06EB543F72A 聚合物 · Unplasticised PVC Film/Sheet / Unplasticised PVC Film/Sheet：缺 nu；已有完整组0、缺项组1。
-- MAT-PLASTIC-UREA-FORMALDEHYDE-BROAD 脲醛塑料（牌号/填料未详） / Urea-formaldehyde plastic, grade/filler unspecified：缺 nu；已有完整组0、缺项组4。
+- MAT-PLASTIC-UREA-FORMALDEHYDE-BROAD 脲醛塑料（牌号/填料未详） / Urea-formaldehyde plastic, grade/filler unspecified：缺 nu；已有完整组0、缺项组5。
+- RESEARCH-MAT-7E16D9369EDEEB32C4EE 聚合物 · Urea-formaldehyde-based cavity-wall insulation foam, formulation unspecified / Urea-formaldehyde-based cavity-wall insulation foam, formulation unspecified：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CA37A6DF8DF370B097C4 聚合物 · VICTREX® APTIV® 1102 20% mineral filled PEEK Film / VICTREX® APTIV® 1102 20% mineral filled PEEK Film：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-57B042D412D8F082D659 聚合物 · Vectra® A115 15% Reinforced Glass Fibre LCP Rod / Vectra® A115 15% Reinforced Glass Fibre LCP Rod：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-C71EE1DDF0C557E7A369 聚合物 · Vectra® A130 30% Reinforced Glass Fibre LCP Granules / Vectra® A130 30% Reinforced Glass Fibre LCP Granules：缺 nu；已有完整组0、缺项组1。

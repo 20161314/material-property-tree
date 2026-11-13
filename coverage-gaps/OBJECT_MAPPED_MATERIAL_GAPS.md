@@ -1,10 +1,12 @@
 # 当前物体关联材料补缺清单
 
-物体关联材料 211；三项各有来源值 158；缺项 53；覆盖率 74.88%。
+物体关联材料 211；三项各有来源值 159；缺项 52；覆盖率 75.36%。
 
 覆盖范围含当前已接受的来源标签和合理近似材料选项；不代表每个组件材料身份均已核定，也不代表商品实测或可自动赋值。不同来源分别提供三项仍不拼成完整来源组。
 
-无关联物体但三项齐全材料 1531 保留；无关联物体且缺项 2114 单列研究候选。分组变化不算补齐证据。
+材料身份限制：[查看标签待纠正说明](MATERIAL_IDENTITY_NOTICES.md)。部分蜡烛/肥皂的 mud 标签不可信；研究覆盖不表示其实际材质已补齐。
+
+无关联物体但三项齐全材料 1531 保留；无关联物体且缺项 2118 单列研究候选。分组变化不算补齐证据。
 
 - `MAT-NATURAL-DEAD-LEAF-GRASS-BROAD`：`dead_leaf_grass` 植物有机材料（NVIDIA 来源宽标签） / Dead leaf/grass plant material, NVIDIA source broad label；缺 **E;nu**；关联物体16、组件16。
 - `MAT-NATURAL-DRIED-MOSS-SOURCE-BROAD`：干燥苔藓（种类/处理未详） / Dried moss, species/treatment unspecified；缺 **E;nu**；关联物体1、组件1。
@@ -19,7 +21,6 @@
 - `SOURCE-MAT-F634E6F2E8FA1662BFEA`：全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified；缺 **E;nu**；关联物体1、组件1。
 - `MAT-PEWTER-BROAD`：白镴/锡基合金（组成未详） / Pewter, composition unspecified；缺 **nu**；关联物体1、组件1。
 - `MAT-INK-SOURCE-BROAD`：油墨/墨料（组成未详） / Ink material, composition unspecified；缺 **nu;rho**；关联物体3、组件3。
-- `MAT-MUD-BROAD`：泥状材料（组成/含水率未详） / Mud-like material, composition/moisture unspecified；缺 **E;nu**；关联物体20、组件20。
 - `SOURCE-MAT-2DDEB3646CFF4B123AA8`：防泼水绒面材料（来源构造标签） / water-resistant suede — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-939686697864E247B482`：剖层绒面材料（来源构造标签） / split suede — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-97839AB86E352442295F`：PlanWood（源商品材料名）（来源构造标签） / PlanWood — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体6、组件6。

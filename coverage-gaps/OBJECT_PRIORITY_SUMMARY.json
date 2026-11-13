@@ -4,14 +4,14 @@
   "objectMaterials": {
     "targetCount": 211,
     "materialsWithCompleteRecord": 140,
-    "materialsWithIncompleteRecord": 118,
-    "materialsWithE": 173,
-    "materialsWithNu": 158,
+    "materialsWithIncompleteRecord": 119,
+    "materialsWithE": 174,
+    "materialsWithNu": 159,
     "materialsWithRho": 184,
-    "materialsWithAllThreeFromAnyGroup": 158,
+    "materialsWithAllThreeFromAnyGroup": 159,
     "materialsWithoutAnyValue": 24,
-    "coveragePercent": 74.88151658767772,
-    "missingMaterials": 53
+    "coveragePercent": 75.35545023696683,
+    "missingMaterials": 52
   },
   "unlinkedComplete": {
     "targetCount": 1531,
@@ -24,27 +24,27 @@
     "materialsWithoutAnyValue": 0
   },
   "researchCandidates": {
-    "targetCount": 2114,
+    "targetCount": 2118,
     "materialsWithCompleteRecord": 0,
-    "materialsWithIncompleteRecord": 2113,
-    "materialsWithE": 1536,
-    "materialsWithNu": 118,
-    "materialsWithRho": 1419,
+    "materialsWithIncompleteRecord": 2117,
+    "materialsWithE": 1538,
+    "materialsWithNu": 119,
+    "materialsWithRho": 1420,
     "materialsWithAllThreeFromAnyGroup": 0,
     "materialsWithoutAnyValue": 1
   },
   "allResearch": {
-    "targetCount": 3856,
+    "targetCount": 3860,
     "materialsWithCompleteRecord": 1666,
-    "materialsWithIncompleteRecord": 2261,
-    "materialsWithE": 3240,
-    "materialsWithNu": 1807,
-    "materialsWithRho": 3134,
-    "materialsWithAllThreeFromAnyGroup": 1689,
+    "materialsWithIncompleteRecord": 2266,
+    "materialsWithE": 3243,
+    "materialsWithNu": 1809,
+    "materialsWithRho": 3135,
+    "materialsWithAllThreeFromAnyGroup": 1690,
     "materialsWithoutAnyValue": 25
   },
   "input_sha256": {
-    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "27aed92b8a49cb8f965c96e7607e4f51e91e596d6c47a68f328c242430e2b912"
+    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "d825f456f7864429505cc35b9143062fca19ff62c3ab2ad45b6eb1147c814233"
   },
   "complete_record_count_unchanged_by_cohort": true,
   "incomplete_record_count_unchanged_by_cohort": true,

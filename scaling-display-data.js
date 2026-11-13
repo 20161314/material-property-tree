@@ -1,1 +1,1 @@
-document.write('<script src="payload-loader.js?v=1a7742484584" data-src="scaling-display-data.js.gz?v=87ee196b1120" data-key="SCALING_DATA" data-sha256="a03f5143561c314fa2ca2ab4f38af4a7fc340e092e5a9483a471dfa3ea04b800"><\/script>');
+document.write('<script src="payload-loader.js?v=1a7742484584" data-src="scaling-display-data.js.gz?v=dcf2996ed14c" data-key="SCALING_DATA" data-sha256="ba2467273d7ca9477ead2e3cc69d7163ff2b69f184607abac1fd33773f19d03e"><\/script>');
