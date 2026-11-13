@@ -1,14 +1,14 @@
 {
   "status": "PASS_CURRENT_DYNAMIC_NONFLUID_COVERAGE",
-  "materials": 3843,
-  "with_complete_group": 1667,
+  "materials": 3856,
+  "with_complete_group": 1666,
   "with_all_three_any_sources": 1689,
-  "with_E": 3236,
-  "with_nu": 1804,
-  "with_rho": 3122,
-  "missing_one": 970,
-  "missing_two": 1155,
-  "missing_three": 29,
+  "with_E": 3240,
+  "with_nu": 1807,
+  "with_rho": 3134,
+  "missing_one": 972,
+  "missing_two": 1170,
+  "missing_three": 25,
   "excluded_liquid_ids": [
     "MAT-APPROX-LIQUID-CHEMICAL",
     "MAT-SALT-WATER-BROAD",
@@ -17,10 +17,10 @@
     "RESEARCH-MAT-AE5D46A66E7F8413F90B"
   ],
   "collection_priority": "BROAD_MULTI_FAMILY_MULTI_SOURCE_NOT_ONLY_ONE_PROPERTY_GAPS",
-  "input_sha256": "65347e2d085ba06c9c1940373c078889bc7c1f5654ab774519c1a7fa916a085b",
+  "input_sha256": "98bcf8057806b2edce946072939fedf77f49926836be5e84ab74ded085411576",
   "record_counts": {
-    "complete": 2432,
-    "incomplete": 2956
+    "complete": 2431,
+    "incomplete": 2996
   },
-  "coverage_percent": 43.950039032006245
+  "coverage_percent": 43.801867219917014
 }

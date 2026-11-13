@@ -1,26 +1,25 @@
 # 当前物体关联材料补缺清单
 
-物体关联材料 211；三项各有来源值 157；缺项 54；覆盖率 74.41%。
+物体关联材料 211；三项各有来源值 158；缺项 53；覆盖率 74.88%。
 
 覆盖范围含当前已接受的来源标签和合理近似材料选项；不代表每个组件材料身份均已核定，也不代表商品实测或可自动赋值。不同来源分别提供三项仍不拼成完整来源组。
 
-无关联物体但三项齐全材料 1532 保留；无关联物体且缺项 2100 单列研究候选。分组变化不算补齐证据。
+无关联物体但三项齐全材料 1531 保留；无关联物体且缺项 2114 单列研究候选。分组变化不算补齐证据。
 
 - `MAT-NATURAL-DEAD-LEAF-GRASS-BROAD`：`dead_leaf_grass` 植物有机材料（NVIDIA 来源宽标签） / Dead leaf/grass plant material, NVIDIA source broad label；缺 **E;nu**；关联物体16、组件16。
 - `MAT-NATURAL-DRIED-MOSS-SOURCE-BROAD`：干燥苔藓（种类/处理未详） / Dried moss, species/treatment unspecified；缺 **E;nu**；关联物体1、组件1。
 - `SOURCE-MAT-4A827ED8F19132725B5D`：Twinface 双面羊皮（来源构造标签） / Twinface sheepskin — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体5、组件5。
-- `SOURCE-MAT-60D9636AD9C377CDF07F`：羊皮（来源构造标签） / sheepskin — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
-- `SOURCE-MAT-A99EEA820F3B6552019A`：陶瓷涂层（来源构造标签） / ceramic coating — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `MAT-STEEL-POWDER-COATED-BROAD`：粉末涂层钢（钢种/涂层未详） / Powder-coated steel, steel/coating unspecified；缺 **nu;rho**；关联物体3、组件3。
 - `MAT-FROSTED-GLASS-BROAD`：磨砂玻璃（组成/处理工艺未详） / Frosted glass, composition/treatment unspecified；缺 **nu**；关联物体38、组件41。
 - `MAT-LEATHER-BONDED-BROAD`：再生/复合皮革（组成未详） / Bonded leather, composition unspecified；缺 **E;nu**；关联物体4、组件4。
+- `SOURCE-MAT-1FE70C971D491482EF79`：合成绒面材料（来源构造标签） / synthetic suede — source-labelled material, finer composition unspecified；缺 **E;nu**；关联物体1、组件1。
+- `SOURCE-MAT-60D9636AD9C377CDF07F`：羊皮（来源构造标签） / sheepskin — source-labelled material, finer composition unspecified；缺 **nu**；关联物体1、组件1。
 - `SOURCE-MAT-7D9FDA3D773C9610A031`：意大利头层皮革（来源构造标签） / top-grain Italian leather — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体19、组件19。
 - `SOURCE-MAT-8A028E07CA77C88C6217`：磨砂皮革（来源构造标签） / nubuck leather — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-F634E6F2E8FA1662BFEA`：全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified；缺 **E;nu**；关联物体1、组件1。
 - `MAT-PEWTER-BROAD`：白镴/锡基合金（组成未详） / Pewter, composition unspecified；缺 **nu**；关联物体1、组件1。
 - `MAT-INK-SOURCE-BROAD`：油墨/墨料（组成未详） / Ink material, composition unspecified；缺 **nu;rho**；关联物体3、组件3。
 - `MAT-MUD-BROAD`：泥状材料（组成/含水率未详） / Mud-like material, composition/moisture unspecified；缺 **E;nu**；关联物体20、组件20。
-- `SOURCE-MAT-1FE70C971D491482EF79`：合成绒面材料（来源构造标签） / synthetic suede — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-2DDEB3646CFF4B123AA8`：防泼水绒面材料（来源构造标签） / water-resistant suede — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-939686697864E247B482`：剖层绒面材料（来源构造标签） / split suede — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-97839AB86E352442295F`：PlanWood（源商品材料名）（来源构造标签） / PlanWood — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体6、组件6。
@@ -36,7 +35,7 @@
 - `MAT-DOWN-FILLING-BROAD`：羽绒/羽毛填充物（比例未详） / Down/feather filling, ratio unspecified；缺 **E;nu**；关联物体2、组件2。
 - `MAT-TEXTILE-ACRYLIC-BROAD`：腈纶/丙烯酸系纤维（来源标签，配方/结构未详） / Acrylic fibre/textile constituent, formulation/construction unspecified；缺 **nu**；关联物体3、组件3。
 - `MAT-TEXTILE-CHENILLE-YARN-SOURCE-BROAD`：雪尼尔纱（纤维化学未详） / Chenille yarn, fibre chemistry unspecified；缺 **E;nu;rho**；关联物体1、组件1。
-- `MAT-TEXTILE-COTTON-LINEN-BLEND`：棉/亚麻混纺（比例/结构未详） / Cotton/linen textile blend, ratio/construction unspecified；缺 **E;nu;rho**；关联物体6、组件6。
+- `MAT-TEXTILE-COTTON-LINEN-BLEND`：棉/亚麻混纺（比例/结构未详） / Cotton/linen textile blend, ratio/construction unspecified；缺 **E;nu**；关联物体6、组件6。
 - `MAT-TEXTILE-COTTON-LINEN-VISCOSE-POLYESTER-BLEND`：棉/亚麻/粘胶/聚酯混纺（比例/结构未详） / Cotton/linen/viscose/polyester blend, ratio/construction unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `MAT-TEXTILE-FIBER-SOURCE-BROAD`：填充纤维（化学组成未详） / Filling fibre, chemistry unspecified；缺 **E;nu**；关联物体6、组件6。
 - `MAT-TEXTILE-FLANNELETTE-SOURCE-BROAD`：绒布/法兰绒类底材（纤维未详） / Flannelette material, fibre unspecified；缺 **E;nu;rho**；关联物体1、组件1。

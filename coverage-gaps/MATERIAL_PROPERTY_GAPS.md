@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3843；三项各有来源值1689。
+材料3856；三项各有来源值1689。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -88,11 +88,11 @@
 - RESEARCH-MAT-FD1BFBE8CB72E3D25CE9 生物材料 · porcupine quill cell membrane complex / porcupine quill cell membrane complex：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-FB192B770A353FD4D0EE 生物材料 · porcupine quill cortical cell / porcupine quill cortical cell：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-98A0D0B037E9ECFD144D 生物材料 · porcupine quill macrofibril / porcupine quill macrofibril：缺 nu;rho；已有完整组0、缺项组1。
-- SOURCE-MAT-60D9636AD9C377CDF07F 羊皮（来源构造标签） / sheepskin — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-29134E76032371C5F370 陶瓷 · Accuratus Boron Nitride, Grade BO / Accuratus Boron Nitride, Grade BO：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CCEB30C86AAF4B3A7EB0 陶瓷 · Accuratus Boron Nitride, Grade CA / Accuratus Boron Nitride, Grade CA：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-3E02929CF8A46B2F3752 陶瓷 · Accuratus Boron Nitride, Grade XP / Accuratus Boron Nitride, Grade XP：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F2650E00C44DD1A7EC65 陶瓷 · Accuratus Mullite — Cast and Extruded / Accuratus Mullite — Cast and Extruded：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-0116225D4C3A96A96521 陶瓷 · Air-plasma-sprayed titania ceramic coating / Air-plasma-sprayed titania ceramic coating：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-37397BB53CBA87B7485C 陶瓷 · Aremco 502-1100-FF full-fired alumino-silicate / Aremco 502-1100-FF full-fired alumino-silicate：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-2AD4DB321182F4CB3DCB 陶瓷 · Aremco 502-1100-UF unfired alumino-silicate / Aremco 502-1100-UF unfired alumino-silicate：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-581459CE7235B8D38BA9 陶瓷 · Aremco 502-1400-96 96% alumina / Aremco 502-1400-96 96% alumina：缺 E;nu；已有完整组0、缺项组1。
@@ -107,6 +107,8 @@
 - RESEARCH-MAT-BEF70D410FA3C84A14F1 陶瓷 · Aremco 502-1900-YTZP yttria-stabilized zirconia (12.0%) / Aremco 502-1900-YTZP yttria-stabilized zirconia (12.0%)：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-BDF2698172340EF0FFBF 陶瓷 · Aremco 502-600 glass ceramic / Aremco 502-600 glass ceramic：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-DFC4F3C860EF24A09D40 陶瓷 · Aremco 502-800 Macor glass ceramic / Aremco 502-800 Macor glass ceramic：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-558BD5169DDC8A947F35 陶瓷 · Atmospheric-plasma-sprayed 7 wt% yttria-stabilized zirconia ceramic coating / Atmospheric-plasma-sprayed 7 wt% yttria-stabilized zirconia ceramic coating：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-EB7E2666B0AA374E987B 陶瓷 · Atmospheric-plasma-sprayed alumina ceramic coating / Atmospheric-plasma-sprayed alumina ceramic coating：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-6274C48DC53D7F9B31BC 陶瓷 · Calcite CaCO3 / Calcite CaCO3：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-BC74066E6AFA572EC38A 陶瓷 · Ce:YAG phosphor (cerium-doped yttrium aluminum garnet) / Ce:YAG phosphor (cerium-doped yttrium aluminum garnet)：缺 E；已有完整组0、缺项组1。
 - RESEARCH-MAT-A230DF6BAF3696EAAEA6 陶瓷 · CeramTec HTZ500 zirconia / CeramTec HTZ500 zirconia：缺 nu；已有完整组0、缺项组1。
@@ -123,6 +125,8 @@
 - RESEARCH-MAT-960D4A55085686937032 陶瓷 · Fired Sekandé pit 2, clayey layer C2 earthenware / Fired Sekandé pit 2, clayey layer C2 earthenware：缺 E;nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-BCD4696224DFB85A3453 陶瓷 · Fired Sekandé pit 3, clayey layer C2 earthenware / Fired Sekandé pit 3, clayey layer C2 earthenware：缺 E;nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-F3E1717CE6ACA9AF2F73 陶瓷 · Fired Sekandé pit 4, clayey layer C2 earthenware / Fired Sekandé pit 4, clayey layer C2 earthenware：缺 E;nu；已有完整组0、缺项组3。
+- RESEARCH-MAT-8F96F35744183C25362B 陶瓷 · Flame-sprayed nanostructured titania ceramic coating / Flame-sprayed nanostructured titania ceramic coating：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-9AB2ADF42F4A64D946CD 陶瓷 · High-velocity oxyfuel-sprayed titania ceramic coating / High-velocity oxyfuel-sprayed titania ceramic coating：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-261C9644AB8846456C41 陶瓷 · Lanthanum Fluoride LaF3:Eu3+ / Lanthanum Fluoride LaF3:Eu3+：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-8BB68E90D14FF2AF8BA2 陶瓷 · Lead Fluoride (PbF2) / Lead Fluoride (PbF2)：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-5895517FAAF8C5CC5644 陶瓷 · McDanel 998 99.8% alumina / McDanel 998 99.8% alumina：缺 E;nu；已有完整组0、缺项组1。
@@ -140,7 +144,6 @@
 - RESEARCH-MAT-85C23A3BD4DB22C53827 陶瓷 · Rutile TiO2 / Rutile TiO2：缺 E；已有完整组0、缺项组1。
 - RESEARCH-MAT-1531E718309E6F318114 陶瓷 · Silver Bromide AgBr / Silver Bromide AgBr：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-455F20BDE34D35D918EB 陶瓷 · Son2015 fired mixed-oxide porcelain enamel prepared from frit / Son2015 fired mixed-oxide porcelain enamel prepared from frit：缺 nu;rho；已有完整组0、缺项组1。
-- SOURCE-MAT-A99EEA820F3B6552019A 陶瓷涂层（来源构造标签） / ceramic coating — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-2A5DAB782A3940DCC5F9 复合材料 · 08PS low-carbon steel with EUROPOLVERI epoxy-polyester powder coating / 08PS low-carbon steel with EUROPOLVERI epoxy-polyester powder coating：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-9D41109C8CEBB727E4DC 复合材料 · 50:50 PP/PET needle-punched thermoformed nonwoven composite laminate / 50:50 PP/PET needle-punched thermoformed nonwoven composite laminate：缺 nu;rho；已有完整组0、缺项组7。
 - RESEARCH-MAT-8D14C2F3924E9168E166 复合材料 · 89wt%SasolWax0907 microcrystalline wax +10wt%SEBS-MA +1wt%carbon black fuel formulation / 89wt%SasolWax0907 microcrystalline wax +10wt%SEBS-MA +1wt%carbon black fuel formulation：缺 nu;rho；已有完整组0、缺项组1。
@@ -596,6 +599,7 @@
 - RESEARCH-MAT-D88C74F1F80CB00B399F 皮革 · Calfskin leather and chrome-tanned sheep leather lining assembly / Calfskin leather and chrome-tanned sheep leather lining assembly：缺 rho；已有完整组0、缺项组9。
 - RESEARCH-MAT-C52EF58D767C00795365 皮革 · Calfskin leather and polyester knitted lining assembly / Calfskin leather and polyester knitted lining assembly：缺 rho；已有完整组0、缺项组9。
 - RESEARCH-MAT-F19135568423DDB50030 皮革 · Calfskin upper leather / Calfskin upper leather：缺 rho；已有完整组0、缺项组9。
+- RESEARCH-MAT-F63F4D62FE5DC7878BEE 皮革 · Cationic-dyeable modified-PET/polyurethane nonwoven synthetic suede / Cationic-dyeable modified-PET/polyurethane nonwoven synthetic suede：缺 E;nu；已有完整组0、缺项组5。
 - RESEARCH-MAT-3A220A79E289D2814A56 皮革 · Chrome-free synthetically tanned full-grain cattle leather with casein/polyurethane surface finish / Chrome-free synthetically tanned full-grain cattle leather with casein/polyurethane surface finish：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9569EDF665D8B231C089 皮革 · Chrome-free synthetically tanned full-grain cattle leather, uncoated / Chrome-free synthetically tanned full-grain cattle leather, uncoated：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-647973332A319859707E 皮革 · Chrome-tanned cattle hide leather,pickling 2% pTsOH / Chrome-tanned cattle hide leather,pickling 2% pTsOH：缺 nu;rho；已有完整组0、缺项组1。
@@ -605,8 +609,10 @@
 - RESEARCH-MAT-83E7E1CC3613C4ACD04E 皮革 · Direct-dried camel rawhide / Direct-dried camel rawhide：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-71BDB1C0000C345F3331 皮革 · Dorsal goat-hide leather, chrome tanned / Dorsal goat-hide leather, chrome tanned：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-13F958F23CE7ECC0C726 皮革 · Dorsal goat-hide leather, vegetable tanned / Dorsal goat-hide leather, vegetable tanned：缺 nu；已有完整组0、缺项组3。
+- RESEARCH-MAT-8B7AD4775B4BFA07C10F 皮革 · Full-grain vegetable-tanned sheep leather / Full-grain vegetable-tanned sheep leather：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-526AED933EC8C842A203 皮革 · Leather comparison specimen, tanning unspecified / Leather comparison specimen, tanning unspecified：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-D8FC5FB60DB0B7C191D6 皮革 · PVC synthetic roll leather, Duletai China, SL / PVC synthetic roll leather, Duletai China, SL：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-2512C34F980FE658623C 皮革 · Quebracho vegetable-tanned sheep leather / Quebracho vegetable-tanned sheep leather：缺 nu;rho；已有完整组0、缺项组4。
 - RESEARCH-MAT-2E2DD0FF2060EFFDB5DB 皮革 · Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1 catalyst only / polyurethane nonporous skins / Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1 catalyst only / polyurethane nonporous skins：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-41FEF515E383ADF91DA7 皮革 · Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1+SA102 catalysts / polyurethane nonporous skins / Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1+SA102 catalysts / polyurethane nonporous skins：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CC55951CA87554ADFBF0 皮革 · Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1+SA506 catalysts / polyurethane nonporous skins / Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1+SA506 catalysts / polyurethane nonporous skins：缺 E;nu；已有完整组0、缺项组12。
@@ -618,8 +624,10 @@
 - RESEARCH-MAT-34B8BDF54465622799FB 皮革 · Vegetable-tanned bovine reticular-layer leather collection, Simmental and zebu / Vegetable-tanned bovine reticular-layer leather collection, Simmental and zebu：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-5F41BA7F594BA436F91C 皮革 · Wet-blue leather-waste fibres,source chromium-tanned batch / Wet-blue leather-waste fibres,source chromium-tanned batch：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-D38CA42DD298FAD393DF 皮革 · Zebu bovine reticular-layer leather, metal-free vegetable tanned, non-dyed / Zebu bovine reticular-layer leather, metal-free vegetable tanned, non-dyed：缺 nu;rho；已有完整组0、缺项组3。
-- SOURCE-MAT-F634E6F2E8FA1662BFEA 全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified：缺 E;nu；已有完整组0、缺项组4。
+- SOURCE-MAT-F634E6F2E8FA1662BFEA 全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified：缺 E;nu；已有完整组0、缺项组5。
 - SOURCE-MAT-8A028E07CA77C88C6217 磨砂皮革（来源构造标签） / nubuck leather — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
+- SOURCE-MAT-60D9636AD9C377CDF07F 羊皮（来源构造标签） / sheepskin — source-labelled material, finer composition unspecified：缺 nu；已有完整组0、缺项组5。
+- SOURCE-MAT-1FE70C971D491482EF79 合成绒面材料（来源构造标签） / synthetic suede — source-labelled material, finer composition unspecified：缺 E;nu；已有完整组0、缺项组5。
 - SOURCE-MAT-7D9FDA3D773C9610A031 意大利头层皮革（来源构造标签） / top-grain Italian leather — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-1E779E0A8E5D9B9A73BB 金属 · 18-8 stainless steel / 18-8 stainless steel：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-18A771EFD069B32A53E8 金属 · AWM404GP stainless steel / AWM404GP stainless steel：缺 nu；已有完整组0、缺项组1。
@@ -719,7 +727,6 @@
 - SOURCE-MAT-A32FA74402C5069047F6 搪瓷/珐琅涂层铝（来源构造标签） / enamelled aluminum — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-AD6A28340DD32D3F688A 磨砂材料（源标签 nubuck，基材未进一步确认） / nubuck — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-939686697864E247B482 剖层绒面材料（来源构造标签） / split suede — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
-- SOURCE-MAT-1FE70C971D491482EF79 合成绒面材料（来源构造标签） / synthetic suede — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-2DDEB3646CFF4B123AA8 防泼水绒面材料（来源构造标签） / water-resistant suede — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-D8A4EF9DB13DA86281BA 防水皮革（来源构造标签） / waterproof leather — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-D586B41652BCF8DB3F7A 纸材 · 10 wt% lyocell / 90 wt% pine-spruce NBSK-pulp paper / 10 wt% lyocell / 90 wt% pine-spruce NBSK-pulp paper：缺 nu;rho；已有完整组0、缺项组1。
@@ -1763,22 +1770,26 @@
 - RESEARCH-MAT-7E94570B631441CCD06F 岩石与矿物 · Strathbogie granite / Strathbogie granite：缺 rho；已有完整组0、缺项组29。
 - RESEARCH-MAT-D69DE28AC212D7C4FA58 岩石与矿物 · Stripa granite / Stripa granite：缺 rho；已有完整组0、缺项组14。
 - RESEARCH-MAT-B080BAD23EDED2D32CB3 岩石与矿物 · Valdieri marble / Valdieri marble：缺 rho；已有完整组0、缺项组4。
+- RESEARCH-MAT-D102448B63260DD5BA97 纺织材料 · 100% cotton plain-woven fabric; 24 warp x 24 weft yarns/cm; 149.94 g/m2; 0.48 mm / 100% cotton plain-woven fabric; 24 warp x 24 weft yarns/cm; 149.94 g/m2; 0.48 mm：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-906E5C272CAD4E5C56A7 纺织材料 · 100% polyester fleece acoustic sheet / 100% polyester fleece acoustic sheet：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7D1214D92DED90BD52CF 纺织材料 · 100% polyester nonwoven upholstery/mattress batting / 100% polyester nonwoven upholstery/mattress batting：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FCEFAFC09196BCCDF3D5 纺织材料 · 100% rayon chamoix fabric / 100% rayon chamoix fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7115B5BD4682DCF108B8 纺织材料 · 100% woven cotton laparotomy sponge fabric / 100% woven cotton laparotomy sponge fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E934B42AFC353E18F236 纺织材料 · 20% nylon / 80% polyester composite microfiber towel / 20% nylon / 80% polyester composite microfiber towel：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-46002C64B0529EAD1B71 纺织材料 · 45% staple/30% hollow/25% bicomponent polyester thermally bonded nonwoven / 45% staple/30% hollow/25% bicomponent polyester thermally bonded nonwoven：缺 E;nu；已有完整组0、缺项组7。
 - RESEARCH-MAT-8D4CA1F866068AA5407F 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Comp/MAC 1.0 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Comp/MAC 1.0：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-D9588D40BB80CBB2D3EC 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Comp/MAC 1.7 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Comp/MAC 1.7：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-B0B836C13478FEA15B68 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Conv/MAC 1.0 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Conv/MAC 1.0：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-7BE0C6B791ACEFCF6B75 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Conv/MAC 1.7 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Conv/MAC 1.7：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-5D5423BA574E2B6546F1 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Siro/MAC 1.0 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Siro/MAC 1.0：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-774AD7C5CAA9B3D640F1 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Siro/MAC 1.7 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Siro/MAC 1.7：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-A86A3E2C8F0FB38DE2E0 纺织材料 · 70% polyacrylonitrile/30% wool single-jersey knitted fabric / 70% polyacrylonitrile/30% wool single-jersey knitted fabric：缺 E;nu；已有完整组0、缺项组5。
+- RESEARCH-MAT-5E2AEA7EA9F351F3A124 纺织材料 · 75% cotton/25% linen single-jersey knitted fabric / 75% cotton/25% linen single-jersey knitted fabric：缺 E;nu；已有完整组0、缺项组4。
 - RESEARCH-MAT-C9BF6EF6E9ACD835CA85 纺织材料 · 80% recycled hollow PET /20% bicomponent-PET thermo-bonded nonwoven / 80% recycled hollow PET /20% bicomponent-PET thermo-bonded nonwoven：缺 E;nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-28AA2EBBF9AF3C00003A 纺织材料 · 80% recycled solid PET /20% bicomponent-PET thermo-bonded nonwoven / 80% recycled solid PET /20% bicomponent-PET thermo-bonded nonwoven：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-08DB3DA6FF30E776B45D 纺织材料 · AB Linas T561 plain linen-warp cotton-and-amber-weft fabric / AB Linas T561 plain linen-warp cotton-and-amber-weft fabric：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-F58FEA8423126EF6C50A 纺织材料 · Abaca (Manila hemp) rope / Abaca (Manila hemp) rope：缺 nu；已有完整组0、缺项组1。
-- MAT-TEXTILE-ACRYLIC-BROAD 腈纶/丙烯酸系纤维（来源标签，配方/结构未详） / Acrylic fibre/textile constituent, formulation/construction unspecified：缺 nu；已有完整组0、缺项组4。
+- MAT-TEXTILE-ACRYLIC-BROAD 腈纶/丙烯酸系纤维（来源标签，配方/结构未详） / Acrylic fibre/textile constituent, formulation/construction unspecified：缺 nu；已有完整组0、缺项组9。
 - RESEARCH-MAT-B59992E6B9736D209011 纺织材料 · Acrylic textile fibre (at least85% acrylonitrile units), reviewed broad fibre family / Acrylic textile fibre (at least85% acrylonitrile units), reviewed broad fibre family：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-EC0723D7E6A8CB797412 纺织材料 · Aramid fibre / Aramid fibre：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-7BF3B8A3D0ECCE383BE9 纺织材料 · Asahi Kasei Cupro B4615 regenerated cellulose fibre / Asahi Kasei Cupro B4615 regenerated cellulose fibre：缺 nu;rho；已有完整组0、缺项组1。
@@ -1814,10 +1825,11 @@
 - RESEARCH-MAT-61F23246C8BAC94B7883 纺织材料 · Cotton lignocellulosic fibre / Cotton lignocellulosic fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-EE81778A4CCF4FFD2AD1 纺织材料 · Cotton natural fibre / Cotton natural fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-C816AD2C540A3E9849C6 纺织材料 · Cotton rope / Cotton rope：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-31193E3A98FC80AF144B 纺织材料 · Cotton single-jersey knitted fabric / Cotton single-jersey knitted fabric：缺 E;nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-737E34517FE5AD3912BB 纺织材料 · Cotton textile comparison specimen / Cotton textile comparison specimen：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-5909717B6048FC2D018C 纺织材料 · Cotton twill 1/3 woven fabric / Cotton twill 1/3 woven fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-AA6DA697DF824E949BAC 纺织材料 · Cotton/glass fiber Knit/backcoated barrier fabric / Cotton/glass fiber Knit/backcoated barrier fabric：缺 E;nu；已有完整组0、缺项组1。
-- MAT-TEXTILE-COTTON-LINEN-BLEND 棉/亚麻混纺（比例/结构未详） / Cotton/linen textile blend, ratio/construction unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
+- MAT-TEXTILE-COTTON-LINEN-BLEND 棉/亚麻混纺（比例/结构未详） / Cotton/linen textile blend, ratio/construction unspecified：缺 E;nu；已有完整组0、缺项组4。
 - MAT-TEXTILE-COTTON-LINEN-VISCOSE-POLYESTER-BLEND 棉/亚麻/粘胶/聚酯混纺（比例/结构未详） / Cotton/linen/viscose/polyester blend, ratio/construction unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-2DF2E6B2B441014C4DE4 纺织材料 · Cotton/polyester plain woven fabric / Cotton/polyester plain woven fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-16043AECEDCA4C39D822 纺织材料 · Cottonpile/cotton-Lycra ground weft-knitted loop-pile fabric / Cottonpile/cotton-Lycra ground weft-knitted loop-pile fabric：缺 E;nu；已有完整组0、缺项组1。
@@ -1928,6 +1940,7 @@
 - RESEARCH-MAT-7131E8993CAFE1C2FDD6 纺织材料 · Plain woven polyester Fabric 2 / Plain woven polyester Fabric 2：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-14C0D2018CA0CDBC80D7 纺织材料 · Plain woven wool Fabric 4 / Plain woven wool Fabric 4：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-8288D317F6E0D243F72F 纺织材料 · Polyacrylate fibre PAC / Polyacrylate fibre PAC：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-6B02EEA51735BEB1EC11 纺织材料 · Polyacrylonitrile single-jersey knitted fabric / Polyacrylonitrile single-jersey knitted fabric：缺 E;nu；已有完整组0、缺项组5。
 - RESEARCH-MAT-46748E71F7A10268CE19 纺织材料 · Polyamide ripstop woven fabric / Polyamide ripstop woven fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-07EBF11B779F88FB8C3D 纺织材料 · Polyamide6 multifilament yarn / Polyamide6 multifilament yarn：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-110C7788388CBE1E9E4A 纺织材料 · Polybenzoxazole (PBO) fiber / Polybenzoxazole (PBO) fiber：缺 nu；已有完整组0、缺项组1。
