@@ -3,15 +3,15 @@
   "scope": "Current object-associated material labels and options; three properties may come from different admitted groups. No new property values or automatic product assignments.",
   "objectMaterials": {
     "targetCount": 211,
-    "materialsWithCompleteRecord": 137,
-    "materialsWithIncompleteRecord": 108,
-    "materialsWithE": 163,
-    "materialsWithNu": 150,
-    "materialsWithRho": 175,
-    "materialsWithAllThreeFromAnyGroup": 150,
-    "materialsWithoutAnyValue": 33,
-    "coveragePercent": 71.09004739336493,
-    "missingMaterials": 61
+    "materialsWithCompleteRecord": 138,
+    "materialsWithIncompleteRecord": 110,
+    "materialsWithE": 166,
+    "materialsWithNu": 152,
+    "materialsWithRho": 179,
+    "materialsWithAllThreeFromAnyGroup": 152,
+    "materialsWithoutAnyValue": 30,
+    "coveragePercent": 72.03791469194313,
+    "missingMaterials": 59
   },
   "unlinkedComplete": {
     "targetCount": 1530,
@@ -24,27 +24,27 @@
     "materialsWithoutAnyValue": 0
   },
   "researchCandidates": {
-    "targetCount": 2081,
+    "targetCount": 2086,
     "materialsWithCompleteRecord": 0,
-    "materialsWithIncompleteRecord": 2080,
-    "materialsWithE": 1526,
+    "materialsWithIncompleteRecord": 2085,
+    "materialsWithE": 1527,
     "materialsWithNu": 113,
-    "materialsWithRho": 1397,
+    "materialsWithRho": 1401,
     "materialsWithAllThreeFromAnyGroup": 0,
     "materialsWithoutAnyValue": 1
   },
   "allResearch": {
-    "targetCount": 3822,
-    "materialsWithCompleteRecord": 1662,
-    "materialsWithIncompleteRecord": 2217,
-    "materialsWithE": 3219,
-    "materialsWithNu": 1793,
-    "materialsWithRho": 3102,
-    "materialsWithAllThreeFromAnyGroup": 1680,
-    "materialsWithoutAnyValue": 34
+    "targetCount": 3827,
+    "materialsWithCompleteRecord": 1663,
+    "materialsWithIncompleteRecord": 2224,
+    "materialsWithE": 3223,
+    "materialsWithNu": 1795,
+    "materialsWithRho": 3110,
+    "materialsWithAllThreeFromAnyGroup": 1682,
+    "materialsWithoutAnyValue": 31
   },
   "input_sha256": {
-    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "fb30cdcf297c5800dc8271987b5ea43e9c62528eda3d7246fa7367101eb6b07c"
+    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "b0e5f29cc5adb9b72d9cd63efa3dfc64a8d5640c46387c5d8b565e97e3a1cf25"
   },
   "complete_record_count_unchanged_by_cohort": true,
   "incomplete_record_count_unchanged_by_cohort": true,

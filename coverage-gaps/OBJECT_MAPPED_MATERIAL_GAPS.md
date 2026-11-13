@@ -1,10 +1,10 @@
 # 当前物体关联材料补缺清单
 
-物体关联材料 211；三项各有来源值 150；缺项 61；覆盖率 71.09%。
+物体关联材料 211；三项各有来源值 152；缺项 59；覆盖率 72.04%。
 
 覆盖范围含当前已接受的来源标签和合理近似材料选项；不代表每个组件材料身份均已核定，也不代表商品实测或可自动赋值。不同来源分别提供三项仍不拼成完整来源组。
 
-无关联物体但三项齐全材料 1530 保留；无关联物体且缺项 2081 单列研究候选。分组变化不算补齐证据。
+无关联物体但三项齐全材料 1530 保留；无关联物体且缺项 2086 单列研究候选。分组变化不算补齐证据。
 
 - `MAT-NATURAL-DEAD-LEAF-GRASS-BROAD`：`dead_leaf_grass` 植物有机材料（NVIDIA 来源宽标签） / Dead leaf/grass plant material, NVIDIA source broad label；缺 **E;nu**；关联物体16、组件16。
 - `MAT-NATURAL-DRIED-MOSS-SOURCE-BROAD`：干燥苔藓（种类/处理未详） / Dried moss, species/treatment unspecified；缺 **E;nu**；关联物体1、组件1。
@@ -17,8 +17,8 @@
 - `MAT-LEATHER-BONDED-BROAD`：再生/复合皮革（组成未详） / Bonded leather, composition unspecified；缺 **E;nu**；关联物体4、组件4。
 - `SOURCE-MAT-7D9FDA3D773C9610A031`：意大利头层皮革（来源构造标签） / top-grain Italian leather — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体19、组件19。
 - `SOURCE-MAT-8A028E07CA77C88C6217`：磨砂皮革（来源构造标签） / nubuck leather — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
-- `SOURCE-MAT-F634E6F2E8FA1662BFEA`：全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
-- `MAT-PEWTER-BROAD`：白镴/锡基合金（组成未详） / Pewter, composition unspecified；缺 **E;nu**；关联物体1、组件1。
+- `SOURCE-MAT-F634E6F2E8FA1662BFEA`：全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified；缺 **E;nu**；关联物体1、组件1。
+- `MAT-PEWTER-BROAD`：白镴/锡基合金（组成未详） / Pewter, composition unspecified；缺 **nu**；关联物体1、组件1。
 - `MAT-STEEL-ENAMELED-BROAD`：搪瓷钢（钢种/涂层未详） / Enameled steel, steel/coating unspecified；缺 **E;nu;rho**；关联物体2、组件2。
 - `MAT-INK-SOURCE-BROAD`：油墨/墨料（组成未详） / Ink material, composition unspecified；缺 **E;nu**；关联物体3、组件3。
 - `MAT-MUD-BROAD`：泥状材料（组成/含水率未详） / Mud-like material, composition/moisture unspecified；缺 **E;nu**；关联物体20、组件20。
@@ -26,16 +26,14 @@
 - `SOURCE-MAT-2DDEB3646CFF4B123AA8`：防泼水绒面材料（来源构造标签） / water-resistant suede — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-939686697864E247B482`：剖层绒面材料（来源构造标签） / split suede — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-97839AB86E352442295F`：PlanWood（源商品材料名）（来源构造标签） / PlanWood — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体6、组件6。
-- `SOURCE-MAT-9D0A3AA2A4AC1BA88254`：合成材料（化学类型未详）（来源构造标签） / synthetic material, chemistry unspecified — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-A32FA74402C5069047F6`：搪瓷/珐琅涂层铝（来源构造标签） / enamelled aluminum — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-AD6A28340DD32D3F688A`：磨砂材料（源标签 nubuck，基材未进一步确认） / nubuck — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-BD46CCABC4721F394E69`：Solyte 中底材料（源商品名）（来源构造标签） / Solyte branded material — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体2、组件2。
 - `SOURCE-MAT-D8A4EF9DB13DA86281BA`：防水皮革（来源构造标签） / waterproof leather — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
-- `MAT-PAPER-COTTON-FIBER-BROAD`：棉纤维纸（配方/定量未详） / Cotton-fibre paper, formulation/basis weight unspecified；缺 **nu;rho**；关联物体7、组件7。
+- `MAT-PAPER-COTTON-FIBER-BROAD`：棉纤维纸（配方/定量未详） / Cotton-fibre paper, formulation/basis weight unspecified；缺 **nu**；关联物体7、组件7。
 - `MAT-PAPER-RATTAN-WEAVE-BROAD`：纸绳/仿藤编织物（结构未详） / Paper-rope/rattan weave, construction unspecified；缺 **E;nu;rho**；关联物体5、组件5。
 - `MAT-PLASTIC-UREA-FORMALDEHYDE-BROAD`：脲醛塑料（牌号/填料未详） / Urea-formaldehyde plastic, grade/filler unspecified；缺 **nu**；关联物体3、组件3。
 - `MAT-POLYRESIN-BROAD`：聚合物树脂复合材料（配方未详） / Polyresin, formulation unspecified；缺 **E;nu**；关联物体1、组件1。
-- `SOURCE-MAT-6A43880421CB826B4A9B`：乙烯基材料（源标签）（来源构造标签） / vinyl — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体8、组件8。
 - `MAT-RUBBERIZED-MATERIAL-SOURCE-BROAD`：橡胶化材料（基材/构造未详） / Rubberized material, substrate/construction unspecified；缺 **nu;rho**；关联物体4、组件4。
 - `MAT-DOWN-FILLING-BROAD`：羽绒/羽毛填充物（比例未详） / Down/feather filling, ratio unspecified；缺 **E;nu**；关联物体2、组件2。
 - `MAT-TEXTILE-ACRYLIC-BROAD`：腈纶/丙烯酸系纤维（来源标签，配方/结构未详） / Acrylic fibre/textile constituent, formulation/construction unspecified；缺 **nu**；关联物体3、组件3。

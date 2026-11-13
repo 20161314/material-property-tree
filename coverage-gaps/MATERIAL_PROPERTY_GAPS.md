@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3822；三项各有来源值1680。
+材料3827；三项各有来源值1682。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -594,8 +594,11 @@
 - RESEARCH-MAT-D88C74F1F80CB00B399F 皮革 · Calfskin leather and chrome-tanned sheep leather lining assembly / Calfskin leather and chrome-tanned sheep leather lining assembly：缺 rho；已有完整组0、缺项组9。
 - RESEARCH-MAT-C52EF58D767C00795365 皮革 · Calfskin leather and polyester knitted lining assembly / Calfskin leather and polyester knitted lining assembly：缺 rho；已有完整组0、缺项组9。
 - RESEARCH-MAT-F19135568423DDB50030 皮革 · Calfskin upper leather / Calfskin upper leather：缺 rho；已有完整组0、缺项组9。
+- RESEARCH-MAT-3A220A79E289D2814A56 皮革 · Chrome-free synthetically tanned full-grain cattle leather with casein/polyurethane surface finish / Chrome-free synthetically tanned full-grain cattle leather with casein/polyurethane surface finish：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-9569EDF665D8B231C089 皮革 · Chrome-free synthetically tanned full-grain cattle leather, uncoated / Chrome-free synthetically tanned full-grain cattle leather, uncoated：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-647973332A319859707E 皮革 · Chrome-tanned cattle hide leather,pickling 2% pTsOH / Chrome-tanned cattle hide leather,pickling 2% pTsOH：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-1F8BA92B0E91804975CB 皮革 · Chrome-tanned cattle hide leather,pickling Control / Chrome-tanned cattle hide leather,pickling Control：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-04465CFA3F36665D4D4E 皮革 · Chromium-tanned full-grain cattle leather, uncoated / Chromium-tanned full-grain cattle leather, uncoated：缺 E;nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-01BE47359AC8A8879861 皮革 · Commercial synthetic polyurethane leather, construction unspecified / Commercial synthetic polyurethane leather, construction unspecified：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-83E7E1CC3613C4ACD04E 皮革 · Direct-dried camel rawhide / Direct-dried camel rawhide：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-71BDB1C0000C345F3331 皮革 · Dorsal goat-hide leather, chrome tanned / Dorsal goat-hide leather, chrome tanned：缺 nu；已有完整组0、缺项组3。
@@ -613,7 +616,7 @@
 - RESEARCH-MAT-34B8BDF54465622799FB 皮革 · Vegetable-tanned bovine reticular-layer leather collection, Simmental and zebu / Vegetable-tanned bovine reticular-layer leather collection, Simmental and zebu：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-5F41BA7F594BA436F91C 皮革 · Wet-blue leather-waste fibres,source chromium-tanned batch / Wet-blue leather-waste fibres,source chromium-tanned batch：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-D38CA42DD298FAD393DF 皮革 · Zebu bovine reticular-layer leather, metal-free vegetable tanned, non-dyed / Zebu bovine reticular-layer leather, metal-free vegetable tanned, non-dyed：缺 nu;rho；已有完整组0、缺项组3。
-- SOURCE-MAT-F634E6F2E8FA1662BFEA 全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
+- SOURCE-MAT-F634E6F2E8FA1662BFEA 全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified：缺 E;nu；已有完整组0、缺项组4。
 - SOURCE-MAT-8A028E07CA77C88C6217 磨砂皮革（来源构造标签） / nubuck leather — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-7D9FDA3D773C9610A031 意大利头层皮革（来源构造标签） / top-grain Italian leather — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-1E779E0A8E5D9B9A73BB 金属 · 18-8 stainless steel / 18-8 stainless steel：缺 E;rho；已有完整组0、缺项组1。
@@ -636,7 +639,7 @@
 - RESEARCH-MAT-649E77408AA048BEBE08 金属 · KME C11000 / Cu-ETP / KME C11000 / Cu-ETP：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-8B71A036519261ACF1C4 金属 · Nathan Trotter Britannia Pewter, Sn91.75-Sb8-Cu0.25wt% / Nathan Trotter Britannia Pewter, Sn91.75-Sb8-Cu0.25wt%：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-AEE76768AB24D849B7AD 金属 · Outokumpu Core 304 / 1.4301 / Outokumpu Core 304 / 1.4301：缺 nu；已有完整组0、缺项组1。
-- MAT-PEWTER-BROAD 白镴/锡基合金（组成未详） / Pewter, composition unspecified：缺 E;nu；已有完整组0、缺项组2。
+- MAT-PEWTER-BROAD 白镴/锡基合金（组成未详） / Pewter, composition unspecified：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-7B34B392E7077F1729FA 金属 · Stainless steel 2205 / Stainless steel 2205：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FF44631D7FB5B55B2821 金属 · Stainless steel 410 / Stainless steel 410：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-2C8564272982B35BD4A9 金属 · Stainless steel 410S / Stainless steel 410S：缺 nu；已有完整组0、缺项组2。
@@ -644,6 +647,7 @@
 - RESEARCH-MAT-709A432756971819F284 金属 · Stainless steel 444 / Stainless steel 444：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-73CAF21C8EB8F4273879 金属 · Stainless steel 6%Mo / Stainless steel 6%Mo：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-36A3AEBE18D967B4BD67 金属 · Stainless steel 630 / Stainless steel 630：缺 nu；已有完整组0、缺项组6。
+- RESEARCH-MAT-C53747EFE056D477E131 金属 · Tin-antimony-copper pewter alloy, nominal Sn95Sb4Cu1 / Tin-antimony-copper pewter alloy, nominal Sn95Sb4Cu1：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-A874620DFA2832965669 金属 · UNS C10100 Oxygen-Free-Electronic / UNS C10100 Oxygen-Free-Electronic：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-3DBE79AF0D3EF11EBED9 金属 · UNS C10200 Oxygen-Free / UNS C10200 Oxygen-Free：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9367ACE7611032EE0307 金属 · UNS C10300 Oxygen-Free Copper / UNS C10300 Oxygen-Free Copper：缺 nu；已有完整组0、缺项组1。
@@ -711,7 +715,6 @@
 - SOURCE-MAT-A32FA74402C5069047F6 搪瓷/珐琅涂层铝（来源构造标签） / enamelled aluminum — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-AD6A28340DD32D3F688A 磨砂材料（源标签 nubuck，基材未进一步确认） / nubuck — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-939686697864E247B482 剖层绒面材料（来源构造标签） / split suede — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
-- SOURCE-MAT-9D0A3AA2A4AC1BA88254 合成材料（化学类型未详）（来源构造标签） / synthetic material, chemistry unspecified — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-1FE70C971D491482EF79 合成绒面材料（来源构造标签） / synthetic suede — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-2DDEB3646CFF4B123AA8 防泼水绒面材料（来源构造标签） / water-resistant suede — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-D8A4EF9DB13DA86281BA 防水皮革（来源构造标签） / waterproof leather — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
@@ -738,12 +741,13 @@
 - RESEARCH-MAT-6E3BC664C5E6AB120797 纸材 · Cellulose nanofibril film CNF-360 / Cellulose nanofibril film CNF-360：缺 E；已有完整组0、缺项组1。
 - RESEARCH-MAT-843CF9649C5EBA687602 纸材 · Cellulose nanofibril film CNF-450 / Cellulose nanofibril film CNF-450：缺 E；已有完整组0、缺项组1。
 - RESEARCH-MAT-D1B4853A9868301EF0AD 纸材 · Cellulose nanofibril film CNF-90 / Cellulose nanofibril film CNF-90：缺 E；已有完整组0、缺项组1。
-- MAT-PAPER-COTTON-FIBER-BROAD 棉纤维纸（配方/定量未详） / Cotton-fibre paper, formulation/basis weight unspecified：缺 nu;rho；已有完整组0、缺项组2。
+- MAT-PAPER-COTTON-FIBER-BROAD 棉纤维纸（配方/定量未详） / Cotton-fibre paper, formulation/basis weight unspecified：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-50F78EBF089C81E06F54 纸材 · GarnTec kraft-paper cord / GarnTec kraft-paper cord：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-A9D9F36B564FD2F81519 纸材 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%：缺 nu;rho；已有完整组0、缺项组1。
 - MAT-PAPER-RATTAN-WEAVE-BROAD 纸绳/仿藤编织物（结构未详） / Paper-rope/rattan weave, construction unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-0F130C15E5CB19280C8F 纸材 · Testliner paper, constituent sheet of honeycomb paperboard / Testliner paper, constituent sheet of honeycomb paperboard：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-81F01B66766A20AF2286 纸材 · Two-liner / one-flute corrugated cardboard sandwich / Two-liner / one-flute corrugated cardboard sandwich：缺 rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-20D98E655C09FE379B55 纸材 · Whatman No.1 cotton-linter paper / Whatman No.1 cotton-linter paper：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-B278A8A4A4E2CE023371 聚合物 · 10% Carbon Fibre Reinforced POM Copolymer Granules / 10% Carbon Fibre Reinforced POM Copolymer Granules：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F8B0D9A23724974304FD 聚合物 · 100 wt% bio-polyethylene / 100 wt% bio-polyethylene：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-D7A8BCAC23D710ADAFA1 聚合物 · 100 wt.% Green PE SHC7260 Braskem (Bio-PE) / 100 wt.% Green PE SHC7260 Braskem (Bio-PE)：缺 nu；已有完整组0、缺项组3。
@@ -1589,7 +1593,6 @@
 - RESEARCH-MAT-221354783E5A4719B6A9 聚合物 · Vectra® A430 25% PTFE Filled Fibre LCP Rod / Vectra® A430 25% PTFE Filled Fibre LCP Rod：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-3BF35374E29A3A8201BD 聚合物 · Vectra® B130 30% Reinforced Glass Fibre LCP Rod / Vectra® B130 30% Reinforced Glass Fibre LCP Rod：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-152CA788FA623647C204 聚合物 · Vestakeep® 4000GF30 30% Glass Fibre Reinforced PEEK Granules / Vestakeep® 4000GF30 30% Glass Fibre Reinforced PEEK Granules：缺 E；已有完整组0、缺项组1。
-- SOURCE-MAT-6A43880421CB826B4A9B 乙烯基材料（源标签）（来源构造标签） / vinyl — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-88EEA50D993863A77B56 橡胶 · 110-2 VMQ silicone rubber electrode with SCCB12phr / 110-2 VMQ silicone rubber electrode with SCCB12phr：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-D0305939B9823C9798E3 橡胶 · 110-2 VMQ silicone rubber electrode with SCCB12phr/FMSP100phr / 110-2 VMQ silicone rubber electrode with SCCB12phr/FMSP100phr：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-D387E9E9A0FCF4A165A7 橡胶 · 110-2 VMQ silicone rubber electrode with SCCB12phr/FMSP150phr / 110-2 VMQ silicone rubber electrode with SCCB12phr/FMSP150phr：缺 nu;rho；已有完整组0、缺项组1。
