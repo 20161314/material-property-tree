@@ -5,13 +5,13 @@
     "targetCount": 211,
     "materialsWithCompleteRecord": 138,
     "materialsWithIncompleteRecord": 110,
-    "materialsWithE": 167,
-    "materialsWithNu": 153,
-    "materialsWithRho": 179,
-    "materialsWithAllThreeFromAnyGroup": 153,
+    "materialsWithE": 170,
+    "materialsWithNu": 154,
+    "materialsWithRho": 178,
+    "materialsWithAllThreeFromAnyGroup": 154,
     "materialsWithoutAnyValue": 30,
-    "coveragePercent": 72.51184834123222,
-    "missingMaterials": 58
+    "coveragePercent": 72.98578199052133,
+    "missingMaterials": 57
   },
   "unlinkedComplete": {
     "targetCount": 1530,
@@ -24,27 +24,27 @@
     "materialsWithoutAnyValue": 0
   },
   "researchCandidates": {
-    "targetCount": 2089,
+    "targetCount": 2093,
     "materialsWithCompleteRecord": 0,
-    "materialsWithIncompleteRecord": 2088,
-    "materialsWithE": 1529,
+    "materialsWithIncompleteRecord": 2092,
+    "materialsWithE": 1533,
     "materialsWithNu": 114,
-    "materialsWithRho": 1401,
+    "materialsWithRho": 1403,
     "materialsWithAllThreeFromAnyGroup": 0,
     "materialsWithoutAnyValue": 1
   },
   "allResearch": {
-    "targetCount": 3830,
+    "targetCount": 3834,
     "materialsWithCompleteRecord": 1663,
-    "materialsWithIncompleteRecord": 2227,
-    "materialsWithE": 3226,
-    "materialsWithNu": 1797,
-    "materialsWithRho": 3110,
-    "materialsWithAllThreeFromAnyGroup": 1683,
+    "materialsWithIncompleteRecord": 2231,
+    "materialsWithE": 3233,
+    "materialsWithNu": 1798,
+    "materialsWithRho": 3111,
+    "materialsWithAllThreeFromAnyGroup": 1684,
     "materialsWithoutAnyValue": 31
   },
   "input_sha256": {
-    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "7054909e5b8e41ab23e0a2029c6cf4890cdae334e633dd82350e3b5423d31788"
+    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "7e9fe053e471a2c207fb1e47be5f206589c77f7ab4abbf1ddd0560033c1b10d9"
   },
   "complete_record_count_unchanged_by_cohort": true,
   "incomplete_record_count_unchanged_by_cohort": true,

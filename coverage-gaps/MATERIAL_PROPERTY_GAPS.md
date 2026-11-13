@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3830；三项各有来源值1683。
+材料3834；三项各有来源值1684。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -113,7 +113,8 @@
 - RESEARCH-MAT-B91C0889A6ECA0D8E7FE 陶瓷 · CeramTec MZ429 zirconia / CeramTec MZ429 zirconia：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-25E99A6E16C81B236110 陶瓷 · CeramTec ZN40 zirconia / CeramTec ZN40 zirconia：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-4415F1768AAFF655B466 陶瓷 · Crystal Quartz SiO2 / Crystal Quartz SiO2：缺 nu；已有完整组0、缺项组1。
-- MAT-EARTHENWARE-BROAD 陶器（组成/烧成工艺未详） / Earthenware, composition/firing unspecified：缺 E;nu；已有完整组0、缺项组24。
+- RESEARCH-MAT-F062BCD974237700B6AE 陶瓷 · Earthenware body / Earthenware body：缺 nu；已有完整组0、缺项组1。
+- MAT-EARTHENWARE-BROAD 陶器（组成/烧成工艺未详） / Earthenware, composition/firing unspecified：缺 nu；已有完整组0、缺项组25。
 - RESEARCH-MAT-A8D3B3B7756EE91F786B 陶瓷 · Ferro Ground Coat A vitreous porcelain enamel / Ferro Ground Coat A vitreous porcelain enamel：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-17FD11A5F08A454E76D6 陶瓷 · Fired Gashiga pit 1, clayey layer C2 earthenware / Fired Gashiga pit 1, clayey layer C2 earthenware：缺 E;nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-2884C6995BA8FE22B4F8 陶瓷 · Fired Gashiga pit 2, clayey layer C2 earthenware / Fired Gashiga pit 2, clayey layer C2 earthenware：缺 E;nu；已有完整组0、缺项组3。
@@ -572,7 +573,9 @@
 - RESEARCH-MAT-03C7CD20782C452A7B51 玻璃 · Chelli SM003 fired vitreous enamel coating, density-table identity / Chelli SM003 fired vitreous enamel coating, density-table identity：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E1B61A4878FF05350395 玻璃 · Chelli SM005 fired vitreous enamel coating / Chelli SM005 fired vitreous enamel coating：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-40BDF446AD2BAA6F3410 玻璃 · Chelli SM006 fired vitreous enamel coating / Chelli SM006 fired vitreous enamel coating：缺 rho；已有完整组0、缺项组1。
-- MAT-FROSTED-GLASS-BROAD 磨砂玻璃（组成/处理工艺未详） / Frosted glass, composition/treatment unspecified：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-EE148B17443B0F9C439F 玻璃 · Frosted borosilicate glass ball, Preciseball EDE-HP product page / Frosted borosilicate glass ball, Preciseball EDE-HP product page：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F5664C22A2276239E56E 玻璃 · Frosted borosilicate glass bead 130, US20240417660A1 construction / Frosted borosilicate glass bead 130, US20240417660A1 construction：缺 nu；已有完整组0、缺项组1。
+- MAT-FROSTED-GLASS-BROAD 磨砂玻璃（组成/处理工艺未详） / Frosted glass, composition/treatment unspecified：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-137E1373FFEC9FA044F9 玻璃 · Matsunami 307 Borosilicate glass / Matsunami 307 Borosilicate glass：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9F7C3410648BC23BAEBC 玻璃 · Matsunami 801 Borosilicate glass / Matsunami 801 Borosilicate glass：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-EE08B9D70A467621E907 玻璃 · Matsunami BS12 Phosphoric glass / Matsunami BS12 Phosphoric glass：缺 E;nu；已有完整组0、缺项组1。
@@ -694,7 +697,7 @@
 - RESEARCH-MAT-0C322945397B6A7D37E9 其他材料 · Fundermax Max Compact Exterior F-quality NT-surface high-pressure laminate panel / Fundermax Max Compact Exterior F-quality NT-surface high-pressure laminate panel：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7D328B59D9BDB16AA592 其他材料 · Hangzhou bay mud / Hangzhou bay mud：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FD17AEB846C8789C15F3 其他材料 · Huangmaohai estuary mud / Huangmaohai estuary mud：缺 E;nu；已有完整组0、缺项组1。
-- MAT-INK-SOURCE-BROAD 油墨/墨料（组成未详） / Ink material, composition unspecified：缺 E;nu；已有完整组0、缺项组1。
+- MAT-INK-SOURCE-BROAD 油墨/墨料（组成未详） / Ink material, composition unspecified：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-AC841BF74F7F66C856DF 其他材料 · Kaolinite mud / Kaolinite mud：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FB6A4467BBE27D108ED5 其他材料 · Lianyungang port mud / Lianyungang port mud：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-38705AC3C402C9E60C86 其他材料 · Lianyungang waterway mud / Lianyungang waterway mud：缺 E;nu；已有完整组0、缺项组1。
@@ -703,8 +706,9 @@
 - RESEARCH-MAT-98E2098CC7B846BFA524 其他材料 · Prussian Blue pigment / cold-pressed linseed-oil paint / Prussian Blue pigment / cold-pressed linseed-oil paint：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-324840F5C9CB4780A40A 其他材料 · Resopal Traceless fingerprint-resistant decorative laminate sheet / Resopal Traceless fingerprint-resistant decorative laminate sheet：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-B28B18DB699B29ECAE7C 其他材料 · Rushil decorative HPL phenolic-kraft melamine-surface laminate sheet / Rushil decorative HPL phenolic-kraft melamine-surface laminate sheet：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-3399A333068E57782E8A 其他材料 · Screen-printed carbon-blend-based ink layer / Screen-printed carbon-blend-based ink layer：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-E8477652FE578599A1F8 其他材料 · Screen-printed silver-nanoparticle ink layer / Screen-printed silver-nanoparticle ink layer：缺 nu;rho；已有完整组0、缺项组1。
 - SOURCE-MAT-BD46CCABC4721F394E69 Solyte 中底材料（源商品名）（来源构造标签） / Solyte branded material — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
-- RESEARCH-MAT-3594919C2D6BA7C186C7 其他材料 · Sprinter Grade18114 propylene-glycol-based UV-fluorescing marking ink / Sprinter Grade18114 propylene-glycol-based UV-fluorescing marking ink：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-47A18A12736A61A71AE5 其他材料 · Tianjin new port mud / Tianjin new port mud：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-8497198167753FC4A615 其他材料 · Titanium White pigment / cold-pressed linseed-oil paint / Titanium White pigment / cold-pressed linseed-oil paint：缺 rho；已有完整组0、缺项组4。
 - MAT-APPROX-WAX 蜡（未细分） / Wax, unspecified：缺 E;nu；已有完整组0、缺项组8。
@@ -1879,7 +1883,6 @@
 - RESEARCH-MAT-6DB985E616DEA86EC914 纺织材料 · Machine-embroidered polyester lace, rotating semi-rigid squares / Machine-embroidered polyester lace, rotating semi-rigid squares：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-F011C3568AD3138D952F 纺织材料 · Machine-embroidered polyester lace, square grid / Machine-embroidered polyester lace, square grid：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-9CA3CD2D1EE1E801CEDF 纺织材料 · Mesh acoustic fibre sheet, chemistry unspecified / Mesh acoustic fibre sheet, chemistry unspecified：缺 E;nu；已有完整组0、缺项组1。
-- MAT-TEXTILE-MESH-BROAD 网布/网眼织物（纤维/结构未详） / Mesh textile, fibre/construction unspecified：缺 nu；已有完整组0、缺项组7。
 - RESEARCH-MAT-07B89ABC8EA60194C479 纺织材料 · Meta-aramid/Para-aramid Woven/non-woven composite barrier fabric / Meta-aramid/Para-aramid Woven/non-woven composite barrier fabric：缺 E;nu；已有完整组0、缺项组1。
 - MAT-TEXTILE-MICROFIBER-BROAD 超细纤维织物（纤维组成/结构未详） / Microfiber textile, fibre/construction unspecified：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-BA493061411DE4743CF3 纺织材料 · Modacrylic fibre MAC1.7 / Modacrylic fibre MAC1.7：缺 nu;rho；已有完整组0、缺项组1。
