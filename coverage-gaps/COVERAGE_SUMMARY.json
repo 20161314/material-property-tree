@@ -1,12 +1,12 @@
 {
   "status": "PASS_CURRENT_DYNAMIC_NONFLUID_COVERAGE",
-  "materials": 3900,
-  "with_complete_group": 1663,
-  "with_all_three_any_sources": 1691,
-  "with_E": 3263,
-  "with_nu": 1814,
-  "with_rho": 3151,
-  "missing_one": 978,
+  "materials": 3902,
+  "with_complete_group": 1667,
+  "with_all_three_any_sources": 1695,
+  "with_E": 3265,
+  "with_nu": 1818,
+  "with_rho": 3153,
+  "missing_one": 976,
   "missing_two": 1199,
   "missing_three": 32,
   "excluded_liquid_ids": [
@@ -17,10 +17,10 @@
     "RESEARCH-MAT-AE5D46A66E7F8413F90B"
   ],
   "collection_priority": "BROAD_MULTI_FAMILY_MULTI_SOURCE_NOT_ONLY_ONE_PROPERTY_GAPS",
-  "input_sha256": "702731bf00ebe6c00f9718b589fff512e95c63908a01d6fe15a4fad12bfa2ab5",
+  "input_sha256": "52410872ee949c9f860b1b2b062a21badf31532ffbfaee3e947194b8f1f18fb5",
   "record_counts": {
-    "complete": 2427,
+    "complete": 2429,
     "incomplete": 3046
   },
-  "coverage_percent": 43.35897435897436
+  "coverage_percent": 43.439261916965656
 }

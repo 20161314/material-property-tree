@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3900；三项各有来源值1691。
+材料3902；三项各有来源值1695。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -581,7 +581,6 @@
 - RESEARCH-MAT-40BDF446AD2BAA6F3410 玻璃 · Chelli SM006 fired vitreous enamel coating / Chelli SM006 fired vitreous enamel coating：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-EE148B17443B0F9C439F 玻璃 · Frosted borosilicate glass ball, Preciseball EDE-HP product page / Frosted borosilicate glass ball, Preciseball EDE-HP product page：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F5664C22A2276239E56E 玻璃 · Frosted borosilicate glass bead 130, US20240417660A1 construction / Frosted borosilicate glass bead 130, US20240417660A1 construction：缺 nu；已有完整组0、缺项组1。
-- MAT-FROSTED-GLASS-BROAD 磨砂玻璃（组成/处理工艺未详） / Frosted glass, composition/treatment unspecified：缺 nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-137E1373FFEC9FA044F9 玻璃 · Matsunami 307 Borosilicate glass / Matsunami 307 Borosilicate glass：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9F7C3410648BC23BAEBC 玻璃 · Matsunami 801 Borosilicate glass / Matsunami 801 Borosilicate glass：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-EE08B9D70A467621E907 玻璃 · Matsunami BS12 Phosphoric glass / Matsunami BS12 Phosphoric glass：缺 E;nu；已有完整组0、缺项组1。
@@ -657,7 +656,6 @@
 - RESEARCH-MAT-E5E1986838EC287E351A 金属 · Monolithic vitreous-enamelled steel panel / Monolithic vitreous-enamelled steel panel：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-8B71A036519261ACF1C4 金属 · Nathan Trotter Britannia Pewter, Sn91.75-Sb8-Cu0.25wt% / Nathan Trotter Britannia Pewter, Sn91.75-Sb8-Cu0.25wt%：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-AEE76768AB24D849B7AD 金属 · Outokumpu Core 304 / 1.4301 / Outokumpu Core 304 / 1.4301：缺 nu；已有完整组0、缺项组1。
-- MAT-PEWTER-BROAD 白镴/锡基合金（组成未详） / Pewter, composition unspecified：缺 nu；已有完整组0、缺项组4。
 - RESEARCH-MAT-7B34B392E7077F1729FA 金属 · Stainless steel 2205 / Stainless steel 2205：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FF44631D7FB5B55B2821 金属 · Stainless steel 410 / Stainless steel 410：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-2C8564272982B35BD4A9 金属 · Stainless steel 410S / Stainless steel 410S：缺 nu；已有完整组0、缺项组2。

@@ -1,6 +1,6 @@
 # 当前物体关联材料补缺清单
 
-物体关联材料 224；三项各有来源值 162；缺项 62；覆盖率 72.32%。
+物体关联材料 224；三项各有来源值 164；缺项 60；覆盖率 73.21%。
 
 覆盖范围含当前已接受的来源标签和合理近似材料选项；不代表每个组件材料身份均已核定，也不代表商品实测或可自动赋值。不同来源分别提供三项仍不拼成完整来源组。
 
@@ -8,7 +8,7 @@
 
 材料身份限制：[查看标签待纠正说明](MATERIAL_IDENTITY_NOTICES.md)。18条蜡烛/皂块标签已逐组件纠正；另2条范围待核。新标签不继承泥类物性。
 
-无关联物体但三项齐全材料 1529 保留；无关联物体且缺项 2147 单列研究候选。分组变化不算补齐证据。
+无关联物体但三项齐全材料 1531 保留；无关联物体且缺项 2147 单列研究候选。分组变化不算补齐证据。
 
 - `MAT-NATURAL-DRIED-MOSS-SOURCE-BROAD`：干燥苔藓（种类/处理未详） / Dried moss, species/treatment unspecified；缺 **E;nu**；关联物体1、组件1。
 - `SOURCE-MAT-4A827ED8F19132725B5D`：Twinface 双面羊皮（来源构造标签） / Twinface sheepskin — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体5、组件5。
@@ -17,7 +17,6 @@
 - `MAT-SOURCE-RECYCLED-FIREHOSE-COMPOSITE`：回收消防水带复合构造（组分层构未详） / Recycled fire-hose composite, construction unspecified；缺 **E;nu;rho**；关联物体5、组件5。
 - `MAT-STEEL-POWDER-COATED-BROAD`：粉末涂层钢（钢种/涂层未详） / Powder-coated steel, steel/coating unspecified；缺 **nu;rho**；关联物体3、组件3。
 - `MAT-SOURCE-CELLULOSE-CLEANING-SPONGE-BROAD`：纤维素基清洁海绵（配方未详） / Cellulose-based cleaning sponge, formulation unspecified；缺 **E;nu;rho**；关联物体1、组件1。
-- `MAT-FROSTED-GLASS-BROAD`：磨砂玻璃（组成/处理工艺未详） / Frosted glass, composition/treatment unspecified；缺 **nu**；关联物体38、组件41。
 - `MAT-LEATHER-BONDED-BROAD`：再生/复合皮革（组成未详） / Bonded leather, composition unspecified；缺 **E;nu**；关联物体4、组件4。
 - `MAT-SOURCE-PATENT-LEATHER-BROAD`：漆皮（涂层与基底未详） / Patent leather, coating and substrate unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-1FE70C971D491482EF79`：合成绒面材料（来源构造标签） / synthetic suede — source-labelled material, finer composition unspecified；缺 **E;nu**；关联物体1、组件1。
@@ -25,7 +24,6 @@
 - `SOURCE-MAT-7D9FDA3D773C9610A031`：意大利头层皮革（来源构造标签） / top-grain Italian leather — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体19、组件19。
 - `SOURCE-MAT-8A028E07CA77C88C6217`：磨砂皮革（来源构造标签） / nubuck leather — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-F634E6F2E8FA1662BFEA`：全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified；缺 **E;nu**；关联物体1、组件1。
-- `MAT-PEWTER-BROAD`：白镴/锡基合金（组成未详） / Pewter, composition unspecified；缺 **nu**；关联物体1、组件1。
 - `MAT-NATURAL-DEAD-LEAF-GRASS-BROAD`：`dead_leaf_grass` 植物有机材料（NVIDIA 来源宽标签） / Dead leaf/grass plant material, NVIDIA source broad label；缺 **E;nu**；关联物体16、组件16。
 - `MAT-SOURCE-BIRCH-BARK`：桦树皮 / Birch bark；缺 **E;nu**；关联物体1、组件1。
 - `MAT-SOURCE-PLANT-WEAVING-BROAD`：植物编织材料（种属与构造未详） / Plant weaving material, species and construction unspecified；缺 **E;nu;rho**；关联物体4、组件4。
