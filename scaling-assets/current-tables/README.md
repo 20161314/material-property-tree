@@ -1,12 +1,12 @@
 # 当前物体与材料表下载
 
-发布：51c7bb68a3；日期：2026-11-14。gzip 解压保留原文；物体 Markdown 每 10,000 个来源身份分片。
+发布：da5ac56dc5；日期：2026-11-14。gzip 解压保留原文；物体 Markdown 每 10,000 个来源身份分片。
 
-43,675 个来源对象身份；71,130 个对象组件对（含 WHOLE 占位）；3,893 个当前非流体材料节点。来源身份尚未完成跨源几何内容去重，真实部件尚未全枚举。
+43,675 个来源对象身份；71,130 个对象组件对（含 WHOLE 占位）；3,895 个当前非流体材料节点。来源身份尚未完成跨源几何内容去重，真实部件尚未全枚举。
 
-主账：2,427 完整＋3,034 缺项＝5,461 来源组。全库：6,184 完整＋94,885 缺项＝101,069 组，已包含主账，禁止重复相加。外库转录不等于逐篇回读原始论文。
+主账：2,427 完整＋3,037 缺项＝5,464 来源组。全库：6,184 完整＋94,888 缺项＝101,072 组，已包含主账，禁止重复相加。外库转录不等于逐篇回读原始论文。
 
-当前材料节点中，1,663 个有完整组；1,691 个三项分别有来源值；32 个暂无值。粗细节点可能包含彼此，不是互斥材料种数。
+当前材料节点中，1,663 个有完整组；1,691 个三项分别有来源值；31 个暂无值。粗细节点可能包含彼此，不是互斥材料种数。
 
 官方接受绑定语句 13,472 条，隔离 186 条。语句数不等于非空面区数或机械部件数；不自动赋予物体 E/ν/ρ。
 
@@ -25,10 +25,10 @@ source_asset_material_semantic_holds.csv 单列资产级材料语义疑点，与
 | [current_material_options.csv.gz](current_material_options.csv.gz) | 7512190 | c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49 |
 | [intake_source_material_relations.csv.gz](intake_source_material_relations.csv.gz) | 323549 | 942a03fe08a8fe3830c329663b6b6c3a1941675b6b33a5f0baaf6081328aa093 |
 | [quarantined_intake_source_material_relations.csv.gz](quarantined_intake_source_material_relations.csv.gz) | 1821 | ded123f11c4aeef55b93c6dd18aa9efeb7511e4e0f3ae5dbbf911d03dc800089 |
-| [object_derived_material_table.csv.gz](object_derived_material_table.csv.gz) | 78088 | 285c1c48a1ed55a748e9cf33e109745fc9eb976bdf56c9e29552f02f64a8d060 |
-| [material_reverse_index_and_property_ranges.csv.gz](material_reverse_index_and_property_ranges.csv.gz) | 399653 | 47a39e25380969ddd9b4cf3f9652963c4f4781f49d44e39680038054889d9c07 |
-| [property_ranges_by_reported_definition.csv.gz](property_ranges_by_reported_definition.csv.gz) | 321628 | bf1268f2c149a1a0a39d6caa1b15370014f27159c8872cdea64b7351715de4c9 |
-| [main_property_source_groups.csv.gz](main_property_source_groups.csv.gz) | 1303854 | 733d6f374f0bf1ec74f6306c42092456922b1c1bc251bc14de880b5fb99d3865 |
+| [object_derived_material_table.csv.gz](object_derived_material_table.csv.gz) | 78178 | 95bf214b7a9d15b1413f10139c5029b9fd75805403c0fdaab895775f932135da |
+| [material_reverse_index_and_property_ranges.csv.gz](material_reverse_index_and_property_ranges.csv.gz) | 399993 | a508546cd06df0af5d30903a0d3412b0bb071ce17ea9c4e939b48cbe095d4c79 |
+| [property_ranges_by_reported_definition.csv.gz](property_ranges_by_reported_definition.csv.gz) | 322037 | 43c0cafa8fe44e0fb51ec1cfe78065bcde472e7a00bbd1657e0061c7fc37035c |
+| [main_property_source_groups.csv.gz](main_property_source_groups.csv.gz) | 1307233 | 7cd0e59b51fef8d01501a0f173a4f7730acf847c3440093f96fd8bc0377e93e3 |
 | [source_reported_material_label_index.csv.gz](source_reported_material_label_index.csv.gz) | 214439 | 449e8c42b5d9e12cc0628e1225e26044f07a368fc48412faffa4a9bb28965bac |
 | [source_semantic_components.csv.gz](source_semantic_components.csv.gz) | 13673 | 909a55a723b6baafd0739b9e57003b2943c74359cd6ae06e21ebee0afdee2081 |
 | [source_reported_material_relations.csv.gz](source_reported_material_relations.csv.gz) | 22947 | f726c838d2937e5c643caebe203ac82efcfed14f7c8a255b3ad8d2c1b88ab612 |

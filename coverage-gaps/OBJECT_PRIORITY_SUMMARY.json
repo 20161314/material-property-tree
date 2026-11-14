@@ -4,12 +4,12 @@
   "objectMaterials": {
     "targetCount": 223,
     "materialsWithCompleteRecord": 139,
-    "materialsWithIncompleteRecord": 124,
+    "materialsWithIncompleteRecord": 125,
     "materialsWithE": 178,
     "materialsWithNu": 162,
-    "materialsWithRho": 189,
+    "materialsWithRho": 190,
     "materialsWithAllThreeFromAnyGroup": 162,
-    "materialsWithoutAnyValue": 31,
+    "materialsWithoutAnyValue": 30,
     "coveragePercent": 72.6457399103139,
     "missingMaterials": 61
   },
@@ -24,27 +24,27 @@
     "materialsWithoutAnyValue": 0
   },
   "researchCandidates": {
-    "targetCount": 2141,
+    "targetCount": 2143,
     "materialsWithCompleteRecord": 0,
-    "materialsWithIncompleteRecord": 2140,
+    "materialsWithIncompleteRecord": 2142,
     "materialsWithE": 1555,
     "materialsWithNu": 122,
-    "materialsWithRho": 1428,
+    "materialsWithRho": 1430,
     "materialsWithAllThreeFromAnyGroup": 0,
     "materialsWithoutAnyValue": 1
   },
   "allResearch": {
-    "targetCount": 3893,
+    "targetCount": 3895,
     "materialsWithCompleteRecord": 1663,
-    "materialsWithIncompleteRecord": 2294,
+    "materialsWithIncompleteRecord": 2297,
     "materialsWithE": 3262,
     "materialsWithNu": 1813,
-    "materialsWithRho": 3146,
+    "materialsWithRho": 3149,
     "materialsWithAllThreeFromAnyGroup": 1691,
-    "materialsWithoutAnyValue": 32
+    "materialsWithoutAnyValue": 31
   },
   "input_sha256": {
-    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "47a39e25380969ddd9b4cf3f9652963c4f4781f49d44e39680038054889d9c07",
+    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "a508546cd06df0af5d30903a0d3412b0bb071ce17ea9c4e939b48cbe095d4c79",
     "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "9ca5661ce0b73c6e85a742b3de7aaef47e11e313524ad3baf58fe9d7bc430e78",
     "data/current_two_table_delivery_v1/current_material_options.csv": "c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49",
     "data/current_two_table_delivery_v1/source_reported_material_relations.csv": "f726c838d2937e5c643caebe203ac82efcfed14f7c8a255b3ad8d2c1b88ab612",

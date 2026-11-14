@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3893；三项各有来源值1691。
+材料3895；三项各有来源值1691。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -652,10 +652,11 @@
 - RESEARCH-MAT-68E72E75A2D26DA5C39D 金属 · Electrodeposited hard chromium coating layer,unspecified bath / Electrodeposited hard chromium coating layer,unspecified bath：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-0150237DD9EF5A6E5DBE 金属 · HYDC20MnV6 chrome-plated steel rod product / HYDC20MnV6 chrome-plated steel rod product：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-649E77408AA048BEBE08 金属 · KME C11000 / Cu-ETP / KME C11000 / Cu-ETP：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-699421370C7FE3D40517 金属 · MetalShipper Sn-7.5Sb-0.5Cu pewter alloy / MetalShipper Sn-7.5Sb-0.5Cu pewter alloy：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E5E1986838EC287E351A 金属 · Monolithic vitreous-enamelled steel panel / Monolithic vitreous-enamelled steel panel：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-8B71A036519261ACF1C4 金属 · Nathan Trotter Britannia Pewter, Sn91.75-Sb8-Cu0.25wt% / Nathan Trotter Britannia Pewter, Sn91.75-Sb8-Cu0.25wt%：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-AEE76768AB24D849B7AD 金属 · Outokumpu Core 304 / 1.4301 / Outokumpu Core 304 / 1.4301：缺 nu；已有完整组0、缺项组1。
-- MAT-PEWTER-BROAD 白镴/锡基合金（组成未详） / Pewter, composition unspecified：缺 nu；已有完整组0、缺项组3。
+- MAT-PEWTER-BROAD 白镴/锡基合金（组成未详） / Pewter, composition unspecified：缺 nu；已有完整组0、缺项组4。
 - RESEARCH-MAT-7B34B392E7077F1729FA 金属 · Stainless steel 2205 / Stainless steel 2205：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FF44631D7FB5B55B2821 金属 · Stainless steel 410 / Stainless steel 410：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-2C8564272982B35BD4A9 金属 · Stainless steel 410S / Stainless steel 410S：缺 nu；已有完整组0、缺项组2。
@@ -696,7 +697,8 @@
 - RESEARCH-MAT-4415199B6AFBBDA3EAAC 金属 · UNS C71500 Copper-Nickel, 30% / UNS C71500 Copper-Nickel, 30%：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E54AA4D4F4664C91DAE4 金属 · UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes) / UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-94BD971073843AE9567B 金属 · Vitranamel vitreous-enamelled steel panel / Vitranamel vitreous-enamelled steel panel：缺 E;nu；已有完整组0、缺项组1。
-- MAT-SOURCE-BIRCH-BARK 桦树皮 / Birch bark：缺 E;nu;rho；已有完整组0、缺项组0。
+- RESEARCH-MAT-516B2B85F333E8053053 天然植物材料 · Betula pendula bark / Betula pendula bark：缺 E;nu；已有完整组0、缺项组2。
+- MAT-SOURCE-BIRCH-BARK 桦树皮 / Birch bark：缺 E;nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-7650354A7130D3CF989A 天然植物材料 · Calamus nambariensis var. xishuangbannaensis / Calamus nambariensis var. xishuangbannaensis：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-4852947A6D4AB6C3273B 天然植物材料 · Calamus nambariensis var. yingjiangensis / Calamus nambariensis var. yingjiangensis：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-80F800333CB84BEA7F3E 天然植物材料 · Calamus simplicifolius / Calamus simplicifolius：缺 nu；已有完整组0、缺项组2。
