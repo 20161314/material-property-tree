@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3910；三项各有来源值1697。
+材料3915；三项各有来源值1697。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -288,7 +288,6 @@
 - RESEARCH-MAT-99F19542F14D2A250602 复合材料 · Tufnol PGM/3 polyester continuous-roving glass mat laminate / Tufnol PGM/3 polyester continuous-roving glass mat laminate：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-26C1767CA9311216C530 复合材料 · Tufnol Whale Brand medium-weave cotton phenolic laminate sheet / Tufnol Whale Brand medium-weave cotton phenolic laminate sheet：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-1A15A561941F30AC8C78 复合材料 · Zeolite type3A/unsaturated-polyester-coated sisal-fibre back-sheet composite / Zeolite type3A/unsaturated-polyester-coated sisal-fibre back-sheet composite：缺 nu;rho；已有完整组0、缺项组1。
-- MAT-SOURCE-CELLULOSE-CLEANING-SPONGE-BROAD 纤维素基清洁海绵（配方未详） / Cellulose-based cleaning sponge, formulation unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-40F14F564FEF5D84AFD6 泡沫 · AIREX C70 polymer foam C70.130 / AIREX C70 polymer foam C70.130：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-5748A48E68FA18E94766 泡沫 · AIREX C70 polymer foam C70.55 / AIREX C70 polymer foam C70.55：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-44A1C9E9D9049AD6E092 泡沫 · AIREX C70 polymer foam C70.75 / AIREX C70 polymer foam C70.75：缺 nu；已有完整组0、缺项组1。
@@ -333,6 +332,8 @@
 - RESEARCH-MAT-2F60FB9618AF9DB2E992 泡沫 · Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.30/0.15 / Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.30/0.15：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-A2ED9B5E04F3D9198A76 泡沫 · Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.40/0.05 / Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.55/0.40/0.05：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-CB8A94E8F7F7E9976610 泡沫 · Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.60/0.40/0.00 / Castor-oil polyurethane foam Imperveg RD70A/RD70B/AGT1315B, mass fractions 0.60/0.40/0.00：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-C5F983FA34862FAB7705 泡沫 · Cellulose sponge cloth with cotton fibres,acetylation/resaponification route / Cellulose sponge cloth with cotton fibres,acetylation/resaponification route：缺 E;nu；已有完整组0、缺项组1。
+- MAT-SOURCE-CELLULOSE-CLEANING-SPONGE-BROAD 纤维素基清洁海绵（配方未详） / Cellulose-based cleaning sponge, formulation unspecified：缺 E;nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-EC0AB757A9D40BCCBFED 泡沫 · Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 0 wt% isosorbide in polyol fraction / Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 0 wt% isosorbide in polyol fraction：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-0C93F3C131B2F0CE5D04 泡沫 · Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 10 wt% isosorbide in polyol fraction / Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 10 wt% isosorbide in polyol fraction：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9A72DBAEA6B59BC70EEE 泡沫 · Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 2 wt% isosorbide in polyol fraction / Closed-cell rigid polyurethane foam, JOP-0655/pMDI formulation with 2 wt% isosorbide in polyol fraction：缺 E;nu；已有完整组0、缺项组1。
@@ -477,6 +478,7 @@
 - RESEARCH-MAT-5F8379F0BF21BA74EF2C 泡沫 · Reduced graphene oxide-polypyrrole-polyurethane foam1 aerogel,triaxially hot-pressed / Reduced graphene oxide-polypyrrole-polyurethane foam1 aerogel,triaxially hot-pressed：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-631A8B113DF29FDAD643 泡沫 · Reduced graphene oxide-polypyrrole-polyurethane foam1 aerogel,uniaxially hot-pressed / Reduced graphene oxide-polypyrrole-polyurethane foam1 aerogel,uniaxially hot-pressed：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-DAE15E95D905CC4D777A 泡沫 · Reduced graphene oxide-polypyrrole-polyurethane foam2 aerogel,uniaxially hot-pressed / Reduced graphene oxide-polypyrrole-polyurethane foam2 aerogel,uniaxially hot-pressed：缺 E;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-4B3FAD9B84E6E075284D 泡沫 · Regenerated-cellulose foam matrix before encapsulated PCM addition; reinforcement unspecified / Regenerated-cellulose foam matrix before encapsulated PCM addition; reinforcement unspecified：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-518FF41699EC59A33AFA 泡沫 · Rogers BISCO MS80 open-cell platinum-cured silicone foam / Rogers BISCO MS80 open-cell platinum-cured silicone foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-A4A448067D59DC39E467 泡沫 · Rogers BISCO MS96 open-cell platinum-cured silicone foam / Rogers BISCO MS96 open-cell platinum-cured silicone foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-A60936225216D10A7E99 泡沫 · RokopolF3600/Ongronat1080 flexibleopen-cellpolyurethanefoam,halloysitenanofiller5php / RokopolF3600/Ongronat1080 flexibleopen-cellpolyurethanefoam,halloysitenanofiller5php：缺 E;nu；已有完整组0、缺项组1。
@@ -516,6 +518,7 @@
 - RESEARCH-MAT-41984CE07A7C6F0B216C 泡沫 · Viscoelastic polyurethane foam VF-RAP (10.1039/d5ra04620c) / Viscoelastic polyurethane foam VF-RAP (10.1039/d5ra04620c)：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-26BAEA78A7E9DB685794 泡沫 · Viscoelastic polyurethane foam VF-REF (10.1039/d5ra04620c) / Viscoelastic polyurethane foam VF-REF (10.1039/d5ra04620c)：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9A6831B42C76955197CE 泡沫 · Viscoelastic polyurethane foam vPU-REF without biopolyol / Viscoelastic polyurethane foam vPU-REF without biopolyol：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-0CF97713AB5C1D846FEB 泡沫 · Viscose-regenerated cellulose sponge-cloth substrate before abrasive surface treatment; reinforcement as described / Viscose-regenerated cellulose sponge-cloth substrate before abrasive surface treatment; reinforcement as described：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-B36AD4FE1D94C4CF4D55 泡沫 · Vitafoam V5015 low-resilience PUR foam / Vitafoam V5015 low-resilience PUR foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-18089445AF935A4A855A 泡沫 · Vitafoam Vasco40 open-cell urethane memory foam / Vitafoam Vasco40 open-cell urethane memory foam：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-0261188C3B3402BEF349 泡沫 · Xueru elevated-temperature silicone rubber foam with adhesive layer / Xueru elevated-temperature silicone rubber foam with adhesive layer：缺 nu;rho；已有完整组0、缺项组9。
@@ -698,6 +701,7 @@
 - RESEARCH-MAT-4415199B6AFBBDA3EAAC 金属 · UNS C71500 Copper-Nickel, 30% / UNS C71500 Copper-Nickel, 30%：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E54AA4D4F4664C91DAE4 金属 · UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes) / UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-94BD971073843AE9567B 金属 · Vitranamel vitreous-enamelled steel panel / Vitranamel vitreous-enamelled steel panel：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-EB7920B2FCEAEC967964 天然植物材料 · Bambusa Nghiana bamboo radial-cut strips / Bambusa Nghiana bamboo radial-cut strips：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-516B2B85F333E8053053 天然植物材料 · Betula pendula bark / Betula pendula bark：缺 E;nu；已有完整组0、缺项组2。
 - MAT-SOURCE-BIRCH-BARK 桦树皮 / Birch bark：缺 E;nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-7650354A7130D3CF989A 天然植物材料 · Calamus nambariensis var. xishuangbannaensis / Calamus nambariensis var. xishuangbannaensis：缺 nu；已有完整组0、缺项组1。
@@ -706,8 +710,9 @@
 - RESEARCH-MAT-C1F39D7B056955990810 天然植物材料 · Calamus yunnanensis / Calamus yunnanensis：缺 nu；已有完整组0、缺项组1。
 - MAT-NATURAL-DEAD-LEAF-GRASS-BROAD `dead_leaf_grass` 植物有机材料（NVIDIA 来源宽标签） / Dead leaf/grass plant material, NVIDIA source broad label：缺 E;nu；已有完整组0、缺项组11。
 - RESEARCH-MAT-9CA97810C290138E365C 天然植物材料 · Dried mixed municipal leaves, loose-fill insulation / Dried mixed municipal leaves, loose-fill insulation：缺 E;nu；已有完整组0、缺项组5。
-- MAT-SOURCE-PLANT-WEAVING-BROAD 植物编织材料（种属与构造未详） / Plant weaving material, species and construction unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
+- MAT-SOURCE-PLANT-WEAVING-BROAD 植物编织材料（种属与构造未详） / Plant weaving material, species and construction unspecified：缺 nu；已有完整组0、缺项组1。
 - MAT-SOURCE-STRAW-WEAVING-BROAD 草秆编织材料（植物种属未详） / Straw plant weaving material, species unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
+- RESEARCH-MAT-F6C50146A64EDB31E0AB 天然植物材料 · Uncoated plain-woven Bambusa Nghiana bamboo-strip sheet / Uncoated plain-woven Bambusa Nghiana bamboo-strip sheet：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-DC1644A54F30CC721E0C 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE1 COMPARATIVE1 formulation / Aerated frame-cast soap;JP2006045437A TABLE1 COMPARATIVE1 formulation：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-94428C648B50F82AA25F 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE1 EXAMPLE1 formulation / Aerated frame-cast soap;JP2006045437A TABLE1 EXAMPLE1 formulation：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-BEB0EF590DC1AA99B85F 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE1 EXAMPLE2 formulation / Aerated frame-cast soap;JP2006045437A TABLE1 EXAMPLE2 formulation：缺 nu;rho；已有完整组0、缺项组1。

@@ -8,7 +8,7 @@
 
 材料身份限制：[查看标签待纠正说明](MATERIAL_IDENTITY_NOTICES.md)。18条蜡烛/皂块标签已逐组件纠正；另2条范围待核。新标签不继承泥类物性。
 
-无关联物体但三项齐全材料 1525 保留；无关联物体且缺项 2154 单列研究候选。分组变化不算补齐证据。
+无关联物体但三项齐全材料 1525 保留；无关联物体且缺项 2159 单列研究候选。分组变化不算补齐证据。
 
 - `MAT-NATURAL-DRIED-MOSS-SOURCE-BROAD`：干燥苔藓（种类/处理未详） / Dried moss, species/treatment unspecified；缺 **E;nu**；关联物体1、组件1。
 - `SOURCE-MAT-4A827ED8F19132725B5D`：Twinface 双面羊皮（来源构造标签） / Twinface sheepskin — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体5、组件5。
@@ -16,7 +16,7 @@
 - `MAT-SOURCE-LEATHERITE-SOURCE-BROAD`：来源标为Leatherite的软包表面（组成未详） / Leatherite-labelled upholstery, composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `MAT-SOURCE-RECYCLED-FIREHOSE-COMPOSITE`：回收消防水带复合构造（组分层构未详） / Recycled fire-hose composite, construction unspecified；缺 **E;nu;rho**；关联物体5、组件5。
 - `MAT-STEEL-POWDER-COATED-BROAD`：粉末涂层钢（钢种/涂层未详） / Powder-coated steel, steel/coating unspecified；缺 **nu;rho**；关联物体3、组件3。
-- `MAT-SOURCE-CELLULOSE-CLEANING-SPONGE-BROAD`：纤维素基清洁海绵（配方未详） / Cellulose-based cleaning sponge, formulation unspecified；缺 **E;nu;rho**；关联物体1、组件1。
+- `MAT-SOURCE-CELLULOSE-CLEANING-SPONGE-BROAD`：纤维素基清洁海绵（配方未详） / Cellulose-based cleaning sponge, formulation unspecified；缺 **E;nu**；关联物体1、组件1。
 - `MAT-LEATHER-BONDED-BROAD`：再生/复合皮革（组成未详） / Bonded leather, composition unspecified；缺 **E;nu**；关联物体4、组件4。
 - `MAT-SOURCE-PATENT-LEATHER-BROAD`：漆皮（涂层与基底未详） / Patent leather, coating and substrate unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-1FE70C971D491482EF79`：合成绒面材料（来源构造标签） / synthetic suede — source-labelled material, finer composition unspecified；缺 **E;nu**；关联物体1、组件1。
@@ -26,7 +26,7 @@
 - `SOURCE-MAT-F634E6F2E8FA1662BFEA`：全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified；缺 **E;nu**；关联物体1、组件1。
 - `MAT-NATURAL-DEAD-LEAF-GRASS-BROAD`：`dead_leaf_grass` 植物有机材料（NVIDIA 来源宽标签） / Dead leaf/grass plant material, NVIDIA source broad label；缺 **E;nu**；关联物体16、组件16。
 - `MAT-SOURCE-BIRCH-BARK`：桦树皮 / Birch bark；缺 **E;nu**；关联物体1、组件1。
-- `MAT-SOURCE-PLANT-WEAVING-BROAD`：植物编织材料（种属与构造未详） / Plant weaving material, species and construction unspecified；缺 **E;nu;rho**；关联物体4、组件4。
+- `MAT-SOURCE-PLANT-WEAVING-BROAD`：植物编织材料（种属与构造未详） / Plant weaving material, species and construction unspecified；缺 **nu**；关联物体4、组件4。
 - `MAT-SOURCE-STRAW-WEAVING-BROAD`：草秆编织材料（植物种属未详） / Straw plant weaving material, species unspecified；缺 **E;nu;rho**；关联物体14、组件14。
 - `MAT-SOAP-BROAD`：固体皂/清洁块（配方未详） / Solid bar soap / cleansing bar, formulation unspecified；缺 **nu**；关联物体4、组件4。
 - `MAT-INK-SOURCE-BROAD`：油墨/墨料（组成未详） / Ink material, composition unspecified；缺 **nu;rho**；关联物体3、组件3。
