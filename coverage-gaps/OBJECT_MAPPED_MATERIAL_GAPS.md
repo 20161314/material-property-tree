@@ -4,11 +4,11 @@
 
 覆盖范围含当前已接受的来源标签和合理近似材料选项；不代表每个组件材料身份均已核定，也不代表商品实测或可自动赋值。不同来源分别提供三项仍不拼成完整来源组。
 
-另有 5361 条已接受来源关系、60 个来源标签尚未完全对齐：[逐标签清单](UNRESOLVED_OBJECT_SOURCE_LABELS.md)。未计入规范材料分母，不能宣称全物体材料已完成。
+另有 5416 条已接受来源关系、60 个来源标签尚未完全对齐：[逐标签清单](UNRESOLVED_OBJECT_SOURCE_LABELS.md)。未计入规范材料分母，不能宣称全物体材料已完成。
 
 材料身份限制：[查看标签待纠正说明](MATERIAL_IDENTITY_NOTICES.md)。18条蜡烛/皂块标签已逐组件纠正；另2条范围待核。新标签不继承泥类物性。
 
-无关联物体但三项齐全材料 1525 保留；无关联物体且缺项 2147 单列研究候选。分组变化不算补齐证据。
+无关联物体但三项齐全材料 1525 保留；无关联物体且缺项 2154 单列研究候选。分组变化不算补齐证据。
 
 - `MAT-NATURAL-DRIED-MOSS-SOURCE-BROAD`：干燥苔藓（种类/处理未详） / Dried moss, species/treatment unspecified；缺 **E;nu**；关联物体1、组件1。
 - `SOURCE-MAT-4A827ED8F19132725B5D`：Twinface 双面羊皮（来源构造标签） / Twinface sheepskin — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体5、组件5。

@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3903；三项各有来源值1697。
+材料3910；三项各有来源值1697。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -279,6 +279,7 @@
 - RESEARCH-MAT-ADD363AFB7D42D448DBB 复合材料 · Silicone-urethane hybrid foam SUF137 / Silicone-urethane hybrid foam SUF137：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FCD2F80FF2B180B6F848 复合材料 · Silicone-urethane hybrid foam SUF150 / Silicone-urethane hybrid foam SUF150：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F03659F82C3C343B06E7 复合材料 · Silicone-urethane hybrid foam SUF200 / Silicone-urethane hybrid foam SUF200：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-5ED2A0E06B247FE5D309 复合材料 · TPU composite with30wt% wet-blue leather waste fibres / TPU composite with30wt% wet-blue leather waste fibres：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-5DA08EC885029304D231 复合材料 · Tufnol 10G/40 woven-glass epoxy laminate sheet / Tufnol 10G/40 woven-glass epoxy laminate sheet：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-19255481064E8664FC00 复合材料 · Tufnol 1P/13 paper phenolic laminate sheet / Tufnol 1P/13 paper phenolic laminate sheet：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-9D8F7F47F04F855F1729 复合材料 · Tufnol Bear Brand medium-weave cotton phenolic laminate sheet / Tufnol Bear Brand medium-weave cotton phenolic laminate sheet：缺 nu;rho；已有完整组0、缺项组1。
@@ -1733,6 +1734,9 @@
 - RESEARCH-MAT-70A57E4DA03EF618CE93 橡胶 · Latexco RG 65 latex rubber foam / Latexco RG 65 latex rubber foam：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-A788A8DE8EE47BCF074D 橡胶 · Methyl vinyl silicone rubber VMQ,source vibration-isolation formulation / Methyl vinyl silicone rubber VMQ,source vibration-isolation formulation：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-E14C12936E6C3EC1AA68 橡胶 · Monodomain side-chain acrylate liquid-crystal elastomer A6OCB-RM82-EHA / Monodomain side-chain acrylate liquid-crystal elastomer A6OCB-RM82-EHA：缺 rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-BC7D7A7DA677A668E530 橡胶 · N41 NBR compound reinforced with15phr stabilized leather fibre / N41 NBR compound reinforced with15phr stabilized leather fibre：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-B127749A2AA3B6F7D159 橡胶 · N41 NBR compound reinforced with50phr stabilized leather fibre / N41 NBR compound reinforced with50phr stabilized leather fibre：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-CCCCB421798759C4A32E 橡胶 · N41 NBR plasticized sulfur-cured compound,0phr stabilized leather fibre / N41 NBR plasticized sulfur-cured compound,0phr stabilized leather fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-6E6A694E01F5FC4731DD 橡胶 · NR70/SBR30 tyre-tread rubber with N330 carbonblack23phr/MWCNT7phr / NR70/SBR30 tyre-tread rubber with N330 carbonblack23phr/MWCNT7phr：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-98DB00F2544FBB3AD47B 橡胶 · NR70/SBR30 tyre-tread rubber with N330 carbonblack27phr/MWCNT3phr / NR70/SBR30 tyre-tread rubber with N330 carbonblack27phr/MWCNT3phr：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-EBCEA94AB713A713189D 橡胶 · NR70/SBR30 tyre-tread rubber with N330 carbonblack30phr/MWCNT0phr / NR70/SBR30 tyre-tread rubber with N330 carbonblack30phr/MWCNT0phr：缺 E;nu；已有完整组0、缺项组1。
@@ -1858,12 +1862,14 @@
 - RESEARCH-MAT-F4A632739F2E9FA9EBD0 纺织材料 · Cotton fibre / Cotton fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-61F23246C8BAC94B7883 纺织材料 · Cotton lignocellulosic fibre / Cotton lignocellulosic fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-EE81778A4CCF4FFD2AD1 纺织材料 · Cotton natural fibre / Cotton natural fibre：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-C41F338F9448BD3DE60C 纺织材料 · Cotton painting canvas,ground/sizing treatment scope source-dependent / Cotton painting canvas,ground/sizing treatment scope source-dependent：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-631ACAD392960BE09A24 纺织材料 · Cotton plainweave calico furnishing fabric / Cotton plainweave calico furnishing fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-C816AD2C540A3E9849C6 纺织材料 · Cotton rope / Cotton rope：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-31193E3A98FC80AF144B 纺织材料 · Cotton single-jersey knitted fabric / Cotton single-jersey knitted fabric：缺 E;nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-737E34517FE5AD3912BB 纺织材料 · Cotton textile comparison specimen / Cotton textile comparison specimen：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-5909717B6048FC2D018C 纺织材料 · Cotton twill 1/3 woven fabric / Cotton twill 1/3 woven fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-AA6DA697DF824E949BAC 纺织材料 · Cotton/glass fiber Knit/backcoated barrier fabric / Cotton/glass fiber Knit/backcoated barrier fabric：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-994BBC2FAEFA3AFC808E 纺织材料 · Cotton/linen painting canvas with glue sizing and ground layer / Cotton/linen painting canvas with glue sizing and ground layer：缺 nu;rho；已有完整组0、缺项组1。
 - MAT-TEXTILE-COTTON-LINEN-BLEND 棉/亚麻混纺（比例/结构未详） / Cotton/linen textile blend, ratio/construction unspecified：缺 E;nu；已有完整组0、缺项组5。
 - MAT-TEXTILE-COTTON-LINEN-VISCOSE-POLYESTER-BLEND 棉/亚麻/粘胶/聚酯混纺（比例/结构未详） / Cotton/linen/viscose/polyester blend, ratio/construction unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-2DF2E6B2B441014C4DE4 纺织材料 · Cotton/polyester plain woven fabric / Cotton/polyester plain woven fabric：缺 E;nu；已有完整组0、缺项组1。
@@ -1926,6 +1932,7 @@
 - RESEARCH-MAT-97358C01690480A4F4FB 纺织材料 · Kenaf natural fibre / Kenaf natural fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-6F81EAF51C160D108C3F 纺织材料 · Kevlar 49 fibre / Kevlar 49 fibre：缺 nu;rho；已有完整组0、缺项组1。
 - MAT-SOURCE-KNOTTED-WOOL-COTTON-TEXTILE 羊毛纱与棉结接织物构造（比例未详） / Knotted wool-yarn and cotton textile construction, ratio unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
+- RESEARCH-MAT-6292B780EF9851F65B1C 纺织材料 · Linen painting canvas,ground/sizing treatment scope source-dependent / Linen painting canvas,ground/sizing treatment scope source-dependent：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-9DA36259E79264EB1CFB 纺织材料 · Liquid crystal aromatic polyester (LCP) fiber / Liquid crystal aromatic polyester (LCP) fiber：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-4E5D96E1E882AE71FF9B 纺织材料 · Lyocell fibre / Lyocell fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-287A6BA6A6FA42A860B3 纺织材料 · Lyocell fibre CLY / Lyocell fibre CLY：缺 nu;rho；已有完整组0、缺项组1。
