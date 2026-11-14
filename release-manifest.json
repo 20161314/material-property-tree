@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "id": "da5ac56dc5",
+  "id": "338e057260",
   "date": "2026-11-14",
   "objects": {
     "total": 43675,
@@ -9,23 +9,23 @@
     "count_basis": "Source identities; whole-object fallbacks included; cross-source geometry deduplication incomplete."
   },
   "materials": {
-    "total": 3895,
+    "total": 3899,
     "with_complete": 1663,
     "with_all_properties": 1691,
     "with_E": 3262,
-    "with_nu": 1813,
-    "with_rho": 3149,
-    "no_values": 31,
+    "with_nu": 1814,
+    "with_rho": 3151,
+    "no_values": 32,
     "scope": "Current active non-fluid material nodes, including reviewed narrower-material references. No automatic product parameter assignment.",
     "excluded_fluid_targets": 5
   },
   "records": {
     "complete": 6184,
-    "partial": 94888,
-    "total": 101072,
+    "partial": 94896,
+    "total": 101080,
     "main": {
       "complete": 2427,
-      "incomplete": 3037
+      "incomplete": 3045
     },
     "database": {
       "complete": 3757,
@@ -36,29 +36,31 @@
   "inputs": {
     "data/scaling_release_v1/object_component_inventory.csv": "cf3c68c846ee67ce258e4fac403a1bb5b696ffa9a69011110281732cd074c284",
     "audit/material_range_phase1_v1/phase1_complete_triplet_record_ledger.csv": "1df84a8e12ddfe8ef2366e7512bf57f0bc572b80ca4e076c0d324da90fd7f0da",
-    "audit/material_range_phase1_v1/phase1_incomplete_triplet_record_ledger.csv": "dadc9a0b94ad8bb70c298989834a82fea0f796e11812aea316fb9ad4520f8103",
+    "audit/material_range_phase1_v1/phase1_incomplete_triplet_record_ledger.csv": "a16d5d6ffaaeafebb09e482b63474b008e6b98fdf8a17f4ccb0464477182ecbc",
     "data/material_scope_policy.json": "c0939ee6d349e24189ccd1e90b635a1a21d0ba74e0cfb0b699e02093e9ed5076",
-    "site_v3/evidence-catalog/sciglass/manifest.json": "a34617f15dc72419d08dc4a531903b244b7cb4a58474a375b401cf588e38cd71",
-    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "a508546cd06df0af5d30903a0d3412b0bb071ce17ea9c4e939b48cbe095d4c79",
-    "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "9ca5661ce0b73c6e85a742b3de7aaef47e11e313524ad3baf58fe9d7bc430e78",
+    "site_v3/evidence-catalog/sciglass/manifest.json": "69761ade60e1a6944e14f8515deafdb546baa14e55a658ac4359a5a2def95da4",
+    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "00a70dfdac5bc9021cd5225a75e304863dc1f898427d04c385ae21c21ce9ab8d",
+    "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "c3825886c2618ffe11ffbf024c0f55c033037ff70dc0c67ec0575656b856303a",
     "data/current_two_table_delivery_v1/current_material_options.csv": "c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49",
     "data/current_two_table_delivery_v1/source_reported_material_relations.csv": "f726c838d2937e5c643caebe203ac82efcfed14f7c8a255b3ad8d2c1b88ab612",
     "data/current_two_table_delivery_v1/official_bound_material_relations.csv": "c2010b943e33e9e566b85d500896c74eb16ba49cdb9da04bd993cf3f1307995b",
     "data/current_two_table_delivery_v1/approximate_component_material_relations.csv": "7d72338a3f90b8167ac8b75fb3acb4bc7dd587abd5f70823c205bad4e363949c",
-    "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "942a03fe08a8fe3830c329663b6b6c3a1941675b6b33a5f0baaf6081328aa093",
+    "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "e8621c8a0a6551924c1e4aff5a90705d826c772ceb0918e68daabfbbb54b6c30",
     "OBJECT_FIRST_SCOPE_STANDARD.md": "fa9d446fd250060fbacf30d8e7f803a6abdfc7b462ca4c368df3a3a1974215ca",
     "audit/material_evidence_cycle26_2026-11-14/soap_independent_review_v2/FINAL_MANIFEST.json": "1b575fc3d170696980a9ad5719b753f6d7942211900572556e2443c481bbb444",
     "audit/object_priority_coverage_v1.py": "512f8c0d41ac1bd395ce2f4208ace5a7c8549ab1e262c0229d7dba6b40250b48",
     "audit/current_material_object_index_v1.py": "268d08c8c632fdffc3d2b0f5436f9803a019d0aca787d1d7c8429f80f317d28c",
-    "data/current_two_table_delivery_v1/summary.json": "cf8830590f703686d1da9ed2eaaeba990757ee572063f34bb0dd1262b02cf515",
-    "audit/reviewed_source_material_links_c27.py": "404b64c5e3cfde973e0e2594ee86d559367d1d06da1fb591fe949ee13a0e8ab4",
+    "data/current_two_table_delivery_v1/summary.json": "aac9f227643f053b98a0fae34f4f5d8489fcd44e7eb52878a6ac9ef2130e491f",
+    "audit/reviewed_source_material_links_c27.py": "3470b429ba355121001a6782d5fa0c45c9e2a248a5aba3710802cf57507a3db0",
     "audit/material_evidence_cycle27_2026-11-14/LINK_REVIEW_PINS.json": "3a3c908c9b47c8369009fd25bb1a5d381472dc3970321deac72b7e8d5928ae55",
     "audit/material_property_record_accounting_v1/cycle28_source_label_overlay.py": "a7cb85eb74952c9918bf3eb592639480da76b8fc277ae38f9f771c4f1b233b01",
     "audit/material_property_record_accounting_v1/cycle28_reviewed_registration.py": "a6c66f8c14a525744e7e4f628021dea75ef8e6858f8f0befcb0d39f720ae06f6",
-    "audit/material_property_record_accounting_v1/cycle29_reviewed_registration.py": "9617e45814ff29723ccbfa499f9cf9c34d4533c4f3dc232fc597186b4acf7d22"
+    "audit/material_property_record_accounting_v1/cycle29_reviewed_registration.py": "9617e45814ff29723ccbfa499f9cf9c34d4533c4f3dc232fc597186b4acf7d22",
+    "audit/material_property_record_accounting_v1/cycle30_reviewed_registration.py": "eb73ed765ab454b8eb5abb4f7b7014907578fb28461b8e1bdb673f8354e71c71",
+    "audit/material_property_record_accounting_v1/cycle30_source_identity_overlay.py": "ff327a5706f3e9f4b288d19ef6e8700b12531ced137445975fa7f1dc1d61f958"
   },
   "source_keys": {
-    "document_or_database_citation_keys": 15914,
+    "document_or_database_citation_keys": 15917,
     "independent_source_count": null
   },
   "pages": {
@@ -73,16 +75,16 @@
     "policyVersion": "OBJECT_FIRST_2026_11_14",
     "scope": "Current object-associated material labels and options; three properties may come from different admitted groups. No new property values or automatic product assignments.",
     "objectMaterials": {
-      "targetCount": 223,
+      "targetCount": 224,
       "materialsWithCompleteRecord": 139,
       "materialsWithIncompleteRecord": 125,
       "materialsWithE": 178,
       "materialsWithNu": 162,
       "materialsWithRho": 190,
       "materialsWithAllThreeFromAnyGroup": 162,
-      "materialsWithoutAnyValue": 30,
-      "coveragePercent": 72.6457399103139,
-      "missingMaterials": 61
+      "materialsWithoutAnyValue": 31,
+      "coveragePercent": 72.32142857142857,
+      "missingMaterials": 62
     },
     "unlinkedComplete": {
       "targetCount": 1529,
@@ -95,62 +97,62 @@
       "materialsWithoutAnyValue": 0
     },
     "researchCandidates": {
-      "targetCount": 2143,
+      "targetCount": 2146,
       "materialsWithCompleteRecord": 0,
-      "materialsWithIncompleteRecord": 2142,
+      "materialsWithIncompleteRecord": 2145,
       "materialsWithE": 1555,
-      "materialsWithNu": 122,
-      "materialsWithRho": 1430,
+      "materialsWithNu": 123,
+      "materialsWithRho": 1432,
       "materialsWithAllThreeFromAnyGroup": 0,
       "materialsWithoutAnyValue": 1
     },
     "allResearch": {
-      "targetCount": 3895,
+      "targetCount": 3899,
       "materialsWithCompleteRecord": 1663,
-      "materialsWithIncompleteRecord": 2297,
+      "materialsWithIncompleteRecord": 2300,
       "materialsWithE": 3262,
-      "materialsWithNu": 1813,
-      "materialsWithRho": 3149,
+      "materialsWithNu": 1814,
+      "materialsWithRho": 3151,
       "materialsWithAllThreeFromAnyGroup": 1691,
-      "materialsWithoutAnyValue": 31
+      "materialsWithoutAnyValue": 32
     },
     "input_sha256": {
-      "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "a508546cd06df0af5d30903a0d3412b0bb071ce17ea9c4e939b48cbe095d4c79",
-      "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "9ca5661ce0b73c6e85a742b3de7aaef47e11e313524ad3baf58fe9d7bc430e78",
+      "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "00a70dfdac5bc9021cd5225a75e304863dc1f898427d04c385ae21c21ce9ab8d",
+      "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "c3825886c2618ffe11ffbf024c0f55c033037ff70dc0c67ec0575656b856303a",
       "data/current_two_table_delivery_v1/current_material_options.csv": "c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49",
       "data/current_two_table_delivery_v1/source_reported_material_relations.csv": "f726c838d2937e5c643caebe203ac82efcfed14f7c8a255b3ad8d2c1b88ab612",
       "data/current_two_table_delivery_v1/official_bound_material_relations.csv": "c2010b943e33e9e566b85d500896c74eb16ba49cdb9da04bd993cf3f1307995b",
       "data/current_two_table_delivery_v1/approximate_component_material_relations.csv": "7d72338a3f90b8167ac8b75fb3acb4bc7dd587abd5f70823c205bad4e363949c",
-      "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "942a03fe08a8fe3830c329663b6b6c3a1941675b6b33a5f0baaf6081328aa093",
+      "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "e8621c8a0a6551924c1e4aff5a90705d826c772ceb0918e68daabfbbb54b6c30",
       "data/scaling_release_v1/object_component_inventory.csv": "cf3c68c846ee67ce258e4fac403a1bb5b696ffa9a69011110281732cd074c284"
     },
     "complete_record_count_unchanged_by_cohort": true,
     "incomplete_record_count_unchanged_by_cohort": true,
     "unresolvedSourceLabels": {
-      "labelCount": 4,
-      "relationRows": 16,
-      "objectCount": 16,
-      "componentCount": 16,
+      "labelCount": 26,
+      "relationRows": 41,
+      "objectCount": 41,
+      "componentCount": 41,
       "countedAsCanonicalMaterials": false,
       "propertyCoverage": "NOT_EVALUATED_WITHOUT_REVIEWED_IDENTITY_LINK",
       "completionRequired": true,
-      "partiallyLinkedRelationRows": 3,
+      "partiallyLinkedRelationRows": 28,
       "unlinkedRelationRows": 13,
       "download": "coverage-gaps/UNRESOLVED_OBJECT_SOURCE_LABELS.csv",
       "report": "coverage-gaps/UNRESOLVED_OBJECT_SOURCE_LABELS.md"
     },
     "reviewedSourceMaterialLinks": {
-      "linkRows": 1059,
+      "linkRows": 1084,
       "completeRelations": 441,
-      "partiallyResolvedRelations": 3,
+      "partiallyResolvedRelations": 28,
       "sourceFieldsModified": false,
       "numericalAssignments": 0,
       "download": "scaling-assets/current-tables/reviewed_source_material_links.csv.gz"
     },
     "entireObjectMaterialTableComplete": false,
     "recordedComponentsWithoutReviewedMaterial": {
-      "componentCount": 910,
-      "objectCount": 910,
+      "componentCount": 885,
+      "objectCount": 885,
       "countedAsCanonicalMaterials": false,
       "completionRequired": true,
       "download": "coverage-gaps/OBJECT_COMPONENTS_WITHOUT_REVIEWED_MATERIAL.csv",
@@ -287,6 +289,7 @@
       "MAT-SOIL-BROAD",
       "MAT-SOURCE-BIRCH-BARK",
       "MAT-SOURCE-BITUMINOUS-ROOFING-BROAD",
+      "MAT-SOURCE-CELLULOSE-CLEANING-SPONGE-BROAD",
       "MAT-SOURCE-GFRP-MATRIX-UNSPEC",
       "MAT-SOURCE-KNOTTED-WOOL-COTTON-TEXTILE",
       "MAT-SOURCE-LEATHERITE-SOURCE-BROAD",
@@ -399,1370 +402,1376 @@
   },
   "object_material_index": {
     "file": "material-object-index.json.gz",
-    "sha256": "22379ced080718d33b4371df378ea2df81d7e6dbb9c1ac5b9662fa9c33e2d007",
-    "material_nodes": 223,
-    "mapping_rows": 173981,
+    "sha256": "a8b029b166d6c3dae37798c57066e6b53de3fe2d761833f264c81907a4a37655",
+    "material_nodes": 224,
+    "mapping_rows": 174006,
     "input_sha256": {
       "data/current_two_table_delivery_v1/current_material_options.csv": "c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49",
       "data/current_two_table_delivery_v1/source_reported_material_relations.csv": "f726c838d2937e5c643caebe203ac82efcfed14f7c8a255b3ad8d2c1b88ab612",
       "data/current_two_table_delivery_v1/official_bound_material_relations.csv": "c2010b943e33e9e566b85d500896c74eb16ba49cdb9da04bd993cf3f1307995b",
       "data/current_two_table_delivery_v1/approximate_component_material_relations.csv": "7d72338a3f90b8167ac8b75fb3acb4bc7dd587abd5f70823c205bad4e363949c",
-      "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "942a03fe08a8fe3830c329663b6b6c3a1941675b6b33a5f0baaf6081328aa093",
-      "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "9ca5661ce0b73c6e85a742b3de7aaef47e11e313524ad3baf58fe9d7bc430e78"
+      "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "e8621c8a0a6551924c1e4aff5a90705d826c772ceb0918e68daabfbbb54b6c30",
+      "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "c3825886c2618ffe11ffbf024c0f55c033037ff70dc0c67ec0575656b856303a"
     },
     "builder_sha256": "268d08c8c632fdffc3d2b0f5436f9803a019d0aca787d1d7c8429f80f317d28c",
     "basis": "Current material options plus accepted source relations and reviewed source-scope links; alternatives and coexisting scopes retained; no numerical property assignment.",
     "material_files": {
       "BUCKET-GLASS-GENERIC": {
         "file": "material-object-details/643d107e8e82f38f8516.json.gz",
-        "sha256": "0ee625b13d42d523777ae39be3c7afa24cd47d9e94c81eabf69d14e39bd7ec96",
+        "sha256": "5ee30ba5dac484d8bb69b5f4c18a757faaad77787b539bae703a3f5f65d447e9",
         "bytes": 69932,
         "rows": 1082
       },
       "BUCKET-AL-GRADE-UNSPEC": {
         "file": "material-object-details/21a21df78ffbbf1721d1.json.gz",
-        "sha256": "166c8b9b48d5d9cb8cd278a8f5894427a8ecb7889334b2622f44899e86a14b45",
+        "sha256": "175f2868dc1ed023fcf95bdb1626fd1ab180f9dbe9c4eeab8df8704de7b73b94",
         "bytes": 131408,
         "rows": 3363
       },
       "BUCKET-BRASS-GENERIC": {
         "file": "material-object-details/e3694d98353790bd5c4e.json.gz",
-        "sha256": "3c49810237b6e1f26452e35b28755c16a5c2f347c3f5e4ff316c7dda5b431591",
+        "sha256": "68daafb1616f8c5a138a7805127ad0037274a0bbbc02dce0d6e1b21404b062ad",
         "bytes": 9363,
         "rows": 116
       },
       "MAT-WOOD-OAK-BROAD": {
         "file": "material-object-details/e9dc062907c747ae068a.json.gz",
-        "sha256": "b1195f295f7479a0ec55bb054b43710537eef0bc81b7b6e6083fe852f1ab4aa9",
+        "sha256": "8a3fb7668baa8ad464098af5b1d4a192efd274096380125f1f3621cd07f074f8",
         "bytes": 10888,
         "rows": 115
       },
       "MAT-WOOD-PINE-BROAD": {
         "file": "material-object-details/21ebf981c5e8ec672d30.json.gz",
-        "sha256": "c570816f0b7a7923c0c2e513eada717587f0601bd064b8b30ac1a07bb96ff3a0",
+        "sha256": "3bc2d8e1c6ce0995239cecee5af80b43316fc1f418d271e577c97cf64e284109",
         "bytes": 25355,
         "rows": 384
       },
       "MAT-WOOD-MDF-BROAD": {
         "file": "material-object-details/9e8b66640ce0189f9396.json.gz",
-        "sha256": "f56bc48d743b877945e92e286eaa04964d70e417012f713f995e7d12f8a4a5ee",
+        "sha256": "f67fd2e4f4c1af8c9bf49aa252a8a182cc52d90637ae39dae1a17938caad864a",
         "bytes": 21890,
         "rows": 488
       },
       "MAT-WOOD-PARTICLEBOARD-BROAD": {
         "file": "material-object-details/99efdaca68455d3430ba.json.gz",
-        "sha256": "a6269bfc0d862861b636fa1e665f5974007ac6bad399f14704041e9a1e934885",
+        "sha256": "a51996e1b572f47b5dd762c29d3589bf64acb32b1eb818254abe225b35f8506b",
         "bytes": 9318,
         "rows": 213
       },
       "MAT-WOOD-BROAD": {
         "file": "material-object-details/ad625f7e44ff9bb5bf57.json.gz",
-        "sha256": "3609dc4f573b3f31f510a25826bf7b900103c6f99523a129e4ab8c4ad487d6ff",
-        "bytes": 261343,
-        "rows": 4465
+        "sha256": "563f183b610655833fff992746019173f57e56eaf9c6bf54b08a3fadc3ee8164",
+        "bytes": 262341,
+        "rows": 4470
       },
       "MAT-POLYURETHANE-BROAD": {
         "file": "material-object-details/a81bef1717558b7b6ee9.json.gz",
-        "sha256": "275dc19ed34cacd38dbad47eace7da323e470c9a0800de06de865f5abedbb280",
+        "sha256": "8bd1c50df1660bd36ddf1a4d965e19e3549d7e5b89611afb72be9c6641f1d289",
         "bytes": 3415,
         "rows": 36
       },
       "MAT-PU-FOAM-BROAD": {
         "file": "material-object-details/a2de99c3944d53f74c23.json.gz",
-        "sha256": "672c266b491e94216237e35179e1aa08adcd728ee849f5a68a18f151efcbe230",
+        "sha256": "086c01de82a0a11b2c951050b7a7db1501d088f47c76b08b5d52fa2ceedc01f3",
         "bytes": 11814,
         "rows": 195
       },
       "MAT-TEXTILE-FABRIC-BROAD": {
         "file": "material-object-details/97b7e4379008302eb453.json.gz",
-        "sha256": "c5c303ccfe80b330897c36a1636021774c2ff18ee7cbbd85f3bc4b5e4ae4b292",
-        "bytes": 192863,
-        "rows": 2373
+        "sha256": "dbaf5db25e5221f35441b7e9a299bf3f82f2a051fdf6343355ba722f71f21a2e",
+        "bytes": 194905,
+        "rows": 2390
       },
       "MAT-WOOD-ENGINEERED-BROAD": {
         "file": "material-object-details/71bb37c4579b89d612c8.json.gz",
-        "sha256": "ae00cc582211a6952237b88a5a8487af8364457efdfefa64deb342392441806d",
+        "sha256": "2775caa9e8848747b5b5e09c53f9e0e1720a8439956e01850f927ba02772349e",
         "bytes": 16340,
         "rows": 190
       },
       "MAT-STONE-MARBLE-BROAD": {
         "file": "material-object-details/a41ec9f4ce35de3b51a4.json.gz",
-        "sha256": "50700e65e5822e3ce451849ea6b627ea038b0c6bb45a580828bd04842acb4740",
+        "sha256": "0ca2e353a0107a60be4e13a7793d3bc83b813c7d53f6b59c3b321ac5e6f3bfca",
         "bytes": 2308,
         "rows": 8
       },
       "MAT-APPROX-STONE": {
         "file": "material-object-details/ad3846cf79a3bdac3c49.json.gz",
-        "sha256": "3db7dd18e35daede4435ceb1c4acb13d58561e01ff6386bdb21e2d86d9f43991",
+        "sha256": "a27532926c03eb0543d724460d77c627b09796f73013115abd3bb9c8a768fc7d",
         "bytes": 585438,
         "rows": 8938
       },
       "MAT-APPROX-WOOD": {
         "file": "material-object-details/5ce5cd9224f267463f68.json.gz",
-        "sha256": "8c8c1997b83da9047e114731531205cbb708284e674a883dc0368d714b71f35a",
+        "sha256": "c08af2e52948fac911f2bd043234c09c40e2bfcdbeb7b480a845b86173501117",
         "bytes": 1438492,
         "rows": 21623
       },
       "MAT-APPROX-METAL": {
         "file": "material-object-details/51d99348f27a7e1f9c23.json.gz",
-        "sha256": "da0065e5c5205397fc6c52db9377858334c180432803321959176035cb88bd80",
+        "sha256": "1ebbb032218f7cf8bc1dbd0fc039ec0e06d6ca877768e91c7793be5ab796ddfa",
         "bytes": 1975355,
         "rows": 29799
       },
       "MAT-APPROX-GLASS": {
         "file": "material-object-details/664163b539debbb3901e.json.gz",
-        "sha256": "386893ad91b57b90c0f03adfb267a7b1b4ec4cef526fc15810f33e85b50aeed3",
+        "sha256": "fdbc6f4166a06b2b0a1c1d3d580cf0e3599681fdaa43d6c36725756baf9579dd",
         "bytes": 1104070,
         "rows": 16621
       },
       "MAT-WOOD-PLYWOOD-BROAD": {
         "file": "material-object-details/6eaec285b60c95cf7318.json.gz",
-        "sha256": "90247fe9ba1d07677d1b62abee10544b90946c6fe00b453dd6635c2787a9748d",
+        "sha256": "825cbb28b44ae8319fd859a8583d4364bb3dcd057674bae69337f068bb9e5881",
         "bytes": 32333,
         "rows": 913
       },
       "BUCKET-CAST-IRON-UNSPEC": {
         "file": "material-object-details/651012359141d3d95298.json.gz",
-        "sha256": "12e7f5d40ab24dde1328b37aed2ba9febabd86e4b884ff092a9769f277259f3b",
+        "sha256": "3fe95b00a55cc1ec32efb8f324752a1709253b451cfe33fb6969ccf062cf2a15",
         "bytes": 5196,
         "rows": 50
       },
       "MAT-METAL-WIDE": {
         "file": "material-object-details/7188cadfd1594fff83c6.json.gz",
-        "sha256": "8a4bd470bacc9f5c32aeb003c675a4146246a8056a342372cc21529f05432f28",
+        "sha256": "c91a6c08a7d68bd0c879c3c3e80b0b5a60eee9ce39c538ae3416fcccb30d4362",
         "bytes": 92993,
         "rows": 1166
       },
       "MAT-LEATHER-BROAD": {
         "file": "material-object-details/ae5d1fe57fcc6baaa2ff.json.gz",
-        "sha256": "7bb3237017a840ef1fdeca5efc24bb9cadd14cb3032b80458ce40dc40f65db30",
-        "bytes": 65377,
-        "rows": 699
+        "sha256": "fccb36b2139bc2771d75eaf8d8b85fd206e0db955dc994c2785cc1598e20ffd0",
+        "bytes": 65967,
+        "rows": 700
       },
       "MAT-LEATHER-BONDED-BROAD": {
         "file": "material-object-details/c41233a2ed4ed6fa3a2d.json.gz",
-        "sha256": "710a18a790a9a8597e4097871e121b7a15c4a66a9839f3d7edb4e2cda234b81d",
+        "sha256": "3cfcb77d73019e82be3fa145cfc20f45bedcbd91aa93cc94e044b7a56286a334",
         "bytes": 1141,
         "rows": 4
       },
       "MAT-LEATHER-SYNTHETIC-BROAD": {
         "file": "material-object-details/701a4bf3dbf08820ee8c.json.gz",
-        "sha256": "443e1758b1a4f2d61d102948eb7fa387e9d4e012a932ed3a4f27a92a71979cd9",
+        "sha256": "5be0da017890c7f1ea01b1cd03e8b3e0099b7e7a79903c3765c95a3764afad1f",
         "bytes": 28240,
         "rows": 251
       },
       "MAT-APPROX-PLASTIC": {
         "file": "material-object-details/163854e4bcdba431f7c7.json.gz",
-        "sha256": "ce4958795c0132cfa857727b58d6360f163df9e210ef8b30bea39d3fc531a20d",
+        "sha256": "cd3375182d33ffd572c6040f56dcee396fea73960037abca83a4fbcf9b775055",
         "bytes": 1940067,
         "rows": 29071
       },
       "MAT-APPROX-TEXTILE": {
         "file": "material-object-details/c960054d6af5f3651b73.json.gz",
-        "sha256": "87983bdcab8f59da9fa517cb545d4f704c84abb271333da0c45669d40f27fe69",
+        "sha256": "3996690121cc6eb0996d4ab1bd06ef4ec3d06fe3473849db232d84efac78a3ec",
         "bytes": 507708,
         "rows": 7442
       },
       "MAT-APPROX-FOAM": {
         "file": "material-object-details/c82d686476767eecba54.json.gz",
-        "sha256": "35535594474bece1214d6700e2846a9b4f44be05b8ed555f445172244dfb2046",
+        "sha256": "7fad80a2f8c80e2ea5734306e3fa5c422ce3bb8bf9ac6715fd75be29fa834838",
         "bytes": 463847,
         "rows": 6991
       },
       "MAT-STONEWARE-BROAD": {
         "file": "material-object-details/0b2e452bdfce9b68af81.json.gz",
-        "sha256": "aad99cdcf33d020ca403a656d70984d6f25e9049dcc33505494fd7303dfb05af",
+        "sha256": "ef436fbf8f75f307fd31a192434f03f5f0ef36358505443be91215a2f9d32be2",
         "bytes": 13714,
         "rows": 181
       },
       "MAT-CERAMIC-BROAD": {
         "file": "material-object-details/7fed49842bdd1af48d74.json.gz",
-        "sha256": "985a4527405da6501d0442fdc5ba8a6858db185a4ec1ce678c56cdabaabc0bba",
+        "sha256": "d5467b11128cb48dc894647f7d4a99d0a5179bd26bb41d3c3b7a7cd3d74a5fa4",
         "bytes": 15630,
         "rows": 256
       },
       "MAT-APPROX-CERAMIC": {
         "file": "material-object-details/baf42359955467a855ad.json.gz",
-        "sha256": "aef3eb008a233882cb9c8533e65a4f0fc829dde24aa522e767adf069bb13b97c",
+        "sha256": "d6760e5b009700536d1ee7494d81f1f93da55c0afe08a8069c377783c02bff97",
         "bytes": 346621,
         "rows": 5186
       },
       "MAT-APPROX-RUBBER": {
         "file": "material-object-details/7c3fc8db195b972cf8cc.json.gz",
-        "sha256": "af8b34588e041d2ebdac5919a191bf04dc81d9a500be18bb896eda2cf19fe021",
+        "sha256": "f392d3d17fe6e8d3f59207b244b99eb3f63ce94937766bccdf35ce25d417184f",
         "bytes": 117950,
         "rows": 1610
       },
       "MAT-TEXTILE-POLYESTER-BROAD": {
         "file": "material-object-details/55b2ac37ef3fa27064c3.json.gz",
-        "sha256": "6a4e0679424c776cd6db302fa474da015ab427ed3a10512e85e561f84209370a",
+        "sha256": "f75cc8953733510e19c3596c71e0e09cc42ce97ecf2b6079ee57e8966abd59aa",
         "bytes": 48111,
         "rows": 704
       },
       "MAT-WOOD-BEECH-BROAD": {
         "file": "material-object-details/43dca94c57e5f61500be.json.gz",
-        "sha256": "ff5e127c854223667bc40bb4bb883d0945f6bf0784f2e1695f2ad5edca431e3c",
+        "sha256": "a8eea44b009e1e083edbe014d31172839ff2e4a48956adc9abf0c56aebff5b2d",
         "bytes": 3638,
         "rows": 31
       },
       "MAT-APPROX-LEATHER": {
         "file": "material-object-details/7b67bc437fcca9b0f8f0.json.gz",
-        "sha256": "d48b56361b2252fc23a6855fb2b1722b387c8ab2975ffe963a9fd274f043c6b7",
+        "sha256": "58ae3a5198954212ff84346277d095904234bae438fc9610300a253331646957",
         "bytes": 41862,
         "rows": 528
       },
       "MAT-PLASTIC-BROAD": {
         "file": "material-object-details/73642b8e90e0304d6f84.json.gz",
-        "sha256": "3cf263777f2954d291665eafa879c15772a1b9fefd5d401669963a92d3dc9e72",
+        "sha256": "5388faa3e938a19482f879b94c342c9bf70ebfcf43a6dc7b9ec9cd5ac69950ce",
         "bytes": 288310,
         "rows": 7142
       },
       "MAT-STEEL-BROAD": {
         "file": "material-object-details/0c4ad0b17c4c49a12a59.json.gz",
-        "sha256": "3f7aae6ab60e4eadd2e09d8d0b9d19c9a836e295c79c8423235f511eaabeee47",
+        "sha256": "c2d2d6232f26aee2463742afb65dbd5a5cb74aa7cb7d11ff15c5c0279daf3ccc",
         "bytes": 234022,
         "rows": 5354
       },
       "MAT-APPROX-PAPER": {
         "file": "material-object-details/2c5736b517d032afc667.json.gz",
-        "sha256": "c2cb36d7b8655e4117cdd2c56a1d186afbc4b715e5452b7f49ad6569c1c97751",
+        "sha256": "3a5d19fdd3f802f06bf8a62c7736aa006196dabff1297ec2f377f109f3f826b7",
         "bytes": 20044,
         "rows": 341
       },
       "MAT-APPROX-CARDBOARD": {
         "file": "material-object-details/2cbfe4a7f625d4a261a4.json.gz",
-        "sha256": "4373bc95bc20cad478d25f4ad6ed5b4ee44a2695256d2be958304a7ff5be5e50",
+        "sha256": "ae76f57ece58c49c97d0b564a78a4e5bb52b3a4b3249379dd58063098e0ba93e",
         "bytes": 34383,
         "rows": 584
       },
       "MAT-FOAM-BROAD": {
         "file": "material-object-details/2a2c0e7f2eabdab8b01b.json.gz",
-        "sha256": "f549ed52bffb2fe1897face74c21762b93ef114ed06a8463181bf2f5135ec8b5",
+        "sha256": "ef6392adbd599b0569dc25d8a58eb0e0404652c4a066879bba0c67810452f9dd",
         "bytes": 18919,
         "rows": 216
       },
       "MAT-TEXTILE-VELVET-BROAD": {
         "file": "material-object-details/b1308245d50f773feb0d.json.gz",
-        "sha256": "f6a62ca6d7fc24428224443336967fc10605c138f549d6de64609d19e0e74fd4",
+        "sha256": "3676982899559506a2f5ddad679221df6c7731480c6bb3a8938a4bd5fe260c04",
         "bytes": 3326,
         "rows": 14
       },
       "MAT-TEXTILE-LINEN-BROAD": {
         "file": "material-object-details/5924f93cb129222ad0f8.json.gz",
-        "sha256": "e45419b7415672ac116f64159478fa28cf5c021119c2be62a32a0a3ca2292442",
+        "sha256": "7284ded7d9c0db4bd1819d3881bd006e9082a88a85bad9371780f103a8f4ad40",
         "bytes": 4838,
         "rows": 46
       },
       "MAT-RESIN-BROAD": {
         "file": "material-object-details/4be2f7758aef3992066f.json.gz",
-        "sha256": "8eb41c51f22f6488845267fa7f19e8a0c28baa6c3ca6d09196c26f4915818cb1",
+        "sha256": "119473455f8ce86c81dc2c9e30cb938ffe4cf7bbee8d9a0c3020eff36b186e32",
         "bytes": 1485,
         "rows": 10
       },
       "MAT-POLYPROPYLENE-BROAD": {
         "file": "material-object-details/84d2ce1f8465f4297bbb.json.gz",
-        "sha256": "6d2fdd0a4a506e5ca6b10518320f6c9fb27a76ca4e0ee4e2b03fb87cdd589918",
+        "sha256": "d051638bcde0dad72571ad03049bf1254e8dab4c72b79f92b710d6d6662ab5a6",
         "bytes": 13944,
         "rows": 258
       },
       "MAT-PAPER-BROAD": {
         "file": "material-object-details/a2c6b648acc6e2bc42a9.json.gz",
-        "sha256": "869a340693c5f7a68f1a01e8f1373e0d9626309d8e12d32d205847f360ac0db2",
-        "bytes": 35700,
-        "rows": 454
+        "sha256": "0a47bbaa9b7093ace56b0eb4222cb24e0be3c76efb0b51c93b32eed52e181853",
+        "bytes": 36300,
+        "rows": 455
       },
       "MAT-TEXTILE-COTTON-BROAD": {
         "file": "material-object-details/4872f1fba7eabd412df9.json.gz",
-        "sha256": "ef7f73e9906d8a2c60bb6e2b7927a3ac8fd02af5f60773d88e0e1e6cf06d60e6",
+        "sha256": "4ed4c2bcf64a5f3e1aa824c1e2de3b71d4e088f2a98718e80e2edde45c0260ce",
         "bytes": 11012,
         "rows": 108
       },
       "MAT-TEXTILE-SISAL-BROAD": {
         "file": "material-object-details/1fe9564acb7fcf31fa73.json.gz",
-        "sha256": "0666d7cebeaf3b4f907b0ab3ce248251b4d535019084ef9b63493efba84f02fa",
+        "sha256": "def45143aae6f8e665ce8c5efbebf73d50671285d3b495c0f836324ea3471868",
         "bytes": 2091,
         "rows": 12
       },
       "MAT-PEWTER-BROAD": {
         "file": "material-object-details/2a808a32f8d270047ba7.json.gz",
-        "sha256": "8ff5c7ee4c8972748ce897458309e4b1f2e8d55a43729ca1f6f07d6874ab284e",
+        "sha256": "e0c7af3aa758171a5360407dff3d92e848ed29c6d6ab781fd1c8eb13cef09968",
         "bytes": 741,
         "rows": 1
       },
       "MAT-APPROX-CONCRETE": {
         "file": "material-object-details/ee2736dc3451d89a1a8c.json.gz",
-        "sha256": "df79317f08d0f05c47d0527f4a15aaf0195ebbf091de33f0315e904138f9038d",
+        "sha256": "e8926713879739940c97c98d28a524be3032ff66ddfe3ec01a57d37bd7e8c785",
         "bytes": 4479,
         "rows": 50
       },
       "MAT-APPROX-FOOD-TISSUE": {
         "file": "material-object-details/36f4954246ec47ba955c.json.gz",
-        "sha256": "0e4a6de90ae7184643f0784a811bb7ca4ae120c5a0859d6fb9aca6663caa87a6",
+        "sha256": "8f65a85a3f76fd11420537b1e7d29561e44a8efff77c1f69375919f43b92d7da",
         "bytes": 7714,
         "rows": 100
       },
       "MAT-APPROX-STEEL": {
         "file": "material-object-details/1650ca76e88d80d485df.json.gz",
-        "sha256": "491df5d81e0266cebea33b3677f8f5730d2085678a740522dc77e558a0ab1b6d",
+        "sha256": "c4261a932a59b9c97255a892e189f7d56b845e2e546ea44e5de769b2fd7a1fc6",
         "bytes": 1815,
         "rows": 8
       },
       "MAT-APPROX-COPPER-ALLOY": {
         "file": "material-object-details/f499e3ddad7c8ede5a64.json.gz",
-        "sha256": "c81eab0310eca15b1f617ec79addaf5aedc9b5dee35489d05dc2d3920a3831af",
+        "sha256": "5ff82736a210b18df9ba9a9022fbf2d3540dadb6af09b0b1d0b1010f3bc3bd6c",
         "bytes": 3596,
         "rows": 30
       },
       "MAT-APPROX-ALUMINUM": {
         "file": "material-object-details/0299f9a2f4b99b580c2d.json.gz",
-        "sha256": "1e04835ee9b08acc8ae52f5c8b11e82b0abf07a27d32d4f3b6030c7b8f7b8d2e",
+        "sha256": "3c6e27e77814679ad5b63e516b8134b56696bdf181fd942b6acc711fbf943cef",
         "bytes": 1964,
         "rows": 13
       },
       "MAT-APPROX-SAND": {
         "file": "material-object-details/682634734e5ba93dbd5c.json.gz",
-        "sha256": "bf3a9dd4366ef301219eb9e8389f0a5282ba66d5c1906631f9eb39ea19e6cfef",
+        "sha256": "978aa9aa6ab9fef4ef15ce99a69f8c861faabd789df99682d354341e6c3a8e32",
         "bytes": 5888,
         "rows": 66
       },
       "MAT-APPROX-PLANT-TISSUE": {
         "file": "material-object-details/b3950fabfc40c2f38201.json.gz",
-        "sha256": "8720b690085195286178f209a915bbaabfb13d3baa6abb8765387ed239b654ab",
+        "sha256": "ad922fd8a3bf2e8b0dbe6adb76f1a5dacb54f804615a8c334ca291b8e35cd393",
         "bytes": 133876,
         "rows": 2281
       },
       "MAT-APPROX-ENGINEERED-WOOD": {
         "file": "material-object-details/9897f99d3c259eba6081.json.gz",
-        "sha256": "2a186d69f55516a8bffe2cf83d06a045649b9fc39444a804cc67876a68376327",
+        "sha256": "cc197cf8ea5a64a39ddaefd7fae00bde0868f51dd3b1cf236639303996d81b93",
         "bytes": 818,
         "rows": 1
       },
       "MAT-APPROX-SNOW-ICE": {
         "file": "material-object-details/ab7da38307fcace44f21.json.gz",
-        "sha256": "07e5c762905bf31fcb8bd647e7ca3bdd6432b716fdf026c3d6670e42ac1b16b2",
+        "sha256": "2b6c969884957ce63d3a0cb18f0c74f7db1cfc3ab4aea52c5a2ac74e16d525e6",
         "bytes": 6306,
         "rows": 64
       },
       "MAT-APPROX-SOIL-MUD": {
         "file": "material-object-details/79a8e0c06d8d7642e1a3.json.gz",
-        "sha256": "bf838887b7c3381a2f95b5724874cddde089b30bf6cac70eaabf33aa0d40d4cf",
+        "sha256": "886ad3867cedd1d4ca4166d0368a2253eea404e49d331c0322491fb302f8b102",
         "bytes": 6341,
         "rows": 64
       },
       "MAT-APPROX-MINERAL": {
         "file": "material-object-details/837f2e1fc5da64928d16.json.gz",
-        "sha256": "45ee79dcf0b7aa50ff4e4980303af7f997a91491b0aff164f6fe1a218bac7bac",
+        "sha256": "0968669374d140d6da3da21bcf377129d3e307692ad72e66a62be48082a7be39",
         "bytes": 3188,
         "rows": 39
       },
       "MAT-APPROX-CORK": {
         "file": "material-object-details/163a64ed1ebdf5b546f8.json.gz",
-        "sha256": "c4c9e27fc937e5bf6f973edcb0b0e420ab0984fb0e36aa66e54e1f453ddb210f",
+        "sha256": "fe2644f8c7ae48c8fc2f5127dbf6faba93baa291e11d738ea63b1793aaadf6f9",
         "bytes": 760,
         "rows": 2
       },
       "MAT-APPROX-SILICONE": {
         "file": "material-object-details/f0860da3e970215f795b.json.gz",
-        "sha256": "d1311b7ee7bd20bd62b327957d64de518f1c0be1cfdcd4d55fc31b6c34fc36f8",
+        "sha256": "77ff367e351ecdc899987d77d80f74d6f5ca21e14546a92c17078924ce273d2d",
         "bytes": 888,
         "rows": 4
       },
       "MAT-ELASTOMER-SILICONE-BROAD": {
         "file": "material-object-details/3992d9a9deeecaf1b5d9.json.gz",
-        "sha256": "2e8a6dd38512f1a1afd22c9a68c532ae52d85465229d4bfafb9d28f119699081",
+        "sha256": "c4b96bc611ad808bfe74187b4255bb649ea91665fa185d646c5af6b16d4bb0cb",
         "bytes": 35029,
         "rows": 1515
       },
       "MAT-PLASTIC-ABS-BROAD": {
         "file": "material-object-details/ad715479b9b010c6f489.json.gz",
-        "sha256": "a3d59aa11b9a52b2eed71968b8e77e2ba1edd5cd6b404f0ba983e57892222259",
+        "sha256": "84a3725095df42892d3805aff1c55ee4f25a3dd78bbd6e7c9d323cd897226782",
         "bytes": 91296,
         "rows": 3809
       },
       "MAT-GLASS-TEMPERED-BROAD": {
         "file": "material-object-details/0ff2881414a40036be60.json.gz",
-        "sha256": "ee45e2d98631ffcad2406739e32901310428e3ac16f27ce366dc2d86f1fa4353",
+        "sha256": "2c3c72d37756dc9134c9310a49db4edb8cd92a5be5922b3a8b030bd6398b637b",
         "bytes": 6035,
         "rows": 125
       },
       "MAT-STAINLESS-STEEL-BROAD": {
         "file": "material-object-details/4c0b673ba75a90f03d8e.json.gz",
-        "sha256": "a1ab9fbcf95996826d9e4c98cda9b51fe832e05b492e567b429a18c29573e98a",
+        "sha256": "f4387a6fa34e86b8a0a91e035a240746709575f951be106bf12625a1fd36972e",
         "bytes": 28714,
         "rows": 834
       },
       "MAT-PLASTIC-PHENOLIC-BAKELITE-BROAD": {
         "file": "material-object-details/168c2b06b233fdf81828.json.gz",
-        "sha256": "9cd8960866ec878b39651c22af8f435058e9b20661b30215acf9787be21fe3c7",
+        "sha256": "2d23f4cc6db39bca900bd622df441029b50196bb7343954d1b40e617816d3dcf",
         "bytes": 1075,
         "rows": 11
       },
       "MAT-RUBBER-BROAD": {
         "file": "material-object-details/35a544d2484ad3473bfc.json.gz",
-        "sha256": "be9f90a7083aa41ad7373276b75f265dc8b03d9c4f039a1adbfe76259a0d4a99",
+        "sha256": "81cb04ba00535a5b7c8a819842e7e540f7dd96f360aa716c70dbe195da047dd3",
         "bytes": 79757,
         "rows": 1575
       },
       "MAT-CARDBOARD-BROAD": {
         "file": "material-object-details/be6439486f72feded9af.json.gz",
-        "sha256": "613253632790af8befac31731c89d1704096fa7b91ef84c8e8b72d0d1d306e19",
+        "sha256": "37ae87c714a4ff14816329a7553612952f3a8284a5a8e5cd7220a73e8406bd46",
         "bytes": 34314,
         "rows": 796
       },
       "MAT-PLASTIC-POLYCARBONATE-BROAD": {
         "file": "material-object-details/98c05ff79c926f07d542.json.gz",
-        "sha256": "1179f805ab352000806e92a69d5d1d3f71293af2936552d1be038649c5b4c2d0",
+        "sha256": "2ad853de6893285f8c1845922c970ddca6529157fb3868b4dba543435d5d9b30",
         "bytes": 6020,
         "rows": 159
       },
       "MAT-PLASTIC-CELLULOSE-ACETATE-BROAD": {
         "file": "material-object-details/9819ea04019ec63c1937.json.gz",
-        "sha256": "170844948d8c7380cc881505a215169009459c546caede8cb1c681b9adf44811",
+        "sha256": "f7bd7af7bfac8e6c18b9913bf63744fc185cb4f56b50be9279da333e6ae5643b",
         "bytes": 2451,
         "rows": 63
       },
       "MAT-STEEL-POWDER-COATED-BROAD": {
         "file": "material-object-details/2ebf3951553885d34b97.json.gz",
-        "sha256": "563291d47c87501264ff7c21c15eea36df8fa97512b85fc03509842db2706988",
+        "sha256": "2a04b7b166655d762c47d38e967f419f3bfa813ec6408e019fee254746b18ebf",
         "bytes": 810,
         "rows": 3
       },
       "MAT-PLASTIC-UREA-FORMALDEHYDE-BROAD": {
         "file": "material-object-details/cba4f15a5779e2558b58.json.gz",
-        "sha256": "4f7b02253046ddbc63b72cc314b90230227f569f4db18d2a3e93fe13c45723b6",
+        "sha256": "af772fea798e830a00181d9e465036e5c5d505275d6291c03d08c26e76bb4df9",
         "bytes": 756,
         "rows": 3
       },
       "MAT-CERAMIC-VITREOUS-CHINA-BROAD": {
         "file": "material-object-details/3c7082b9ca29842283d3.json.gz",
-        "sha256": "7c917e0ab4c3cc61aa9513122e6ebd52d96f63a0f14f9afa8d4f67270b57ef8d",
+        "sha256": "0d024f0c22892d6ecbb53e6468a38c7d4e2f501df2d6991d0610ef31155cebe7",
         "bytes": 987,
         "rows": 8
       },
       "MAT-MAGNESIUM-ALLOY-BROAD": {
         "file": "material-object-details/76b1da32bd12e44effb2.json.gz",
-        "sha256": "2cfb0da229254bb489825f1bc8ca4d93f56e616ebe1a5cf8826ff4a8c9d029fe",
+        "sha256": "b67d559cf1a09621d3b1f6eb140bfa90d79592ee11f2b32e7527b2d118e4c7f7",
         "bytes": 895,
         "rows": 6
       },
       "MAT-FOOD-BREAD-BROAD": {
         "file": "material-object-details/e37d93586fa04b9d5d3e.json.gz",
-        "sha256": "53782b2656e1b522253d336263237ea37d88406f0b473cb63b09056c1811d4ef",
+        "sha256": "bdf3badca2ca482cdf7b5a0aad2b247d326c835e917527738c374337387eca50",
         "bytes": 1080,
         "rows": 13
       },
       "MAT-PLASTIC-PBT-BROAD": {
         "file": "material-object-details/a93cc6b3448cc0f58d69.json.gz",
-        "sha256": "62ba0f883fc6779d4d0c23f4ac3263fff5c074b259a0ba4884477568b5a08aca",
+        "sha256": "4e3ed2528cbfeaf2ff122f6e8e4c2bbf946ce6c9a8d1dbf6b6d1612edc39b758",
         "bytes": 5549,
         "rows": 216
       },
       "MAT-WOOD-SOLID-BROAD": {
         "file": "material-object-details/76a5e9dca0f0f3c82550.json.gz",
-        "sha256": "0ea70fd39bde6af15dc8fe36cd58e1504fee0b33e5162025f33d59dbc2967407",
+        "sha256": "70385f846b84dd31d61f5c085bce612e1cb486e09507d3e85a05749273aa6fbb",
         "bytes": 9323,
         "rows": 273
       },
       "MAT-POLYETHYLENE-BROAD": {
         "file": "material-object-details/769d1c9d09c8a6376eae.json.gz",
-        "sha256": "00959ef184c9f4fd955683f8ca2433e83e3e335d25cdf97a753233020d8ce3ce",
+        "sha256": "58b16352e1d29e55a806554d1840433a10ddc1e51765b7aa1a3f89a0104f6102",
         "bytes": 1272,
         "rows": 15
       },
       "MAT-COPPER-BROAD": {
         "file": "material-object-details/8867fc670546b568c009.json.gz",
-        "sha256": "f3a700d21e3f93b8baf76ff40f93dd9529d5fbd1938789a16264072dc4ab1a1d",
+        "sha256": "7350369f53edc6e649480711e6289ef0c97ab35553a20f1066c755955411565c",
         "bytes": 1442,
         "rows": 15
       },
       "MAT-PLASTIC-PET-BROAD": {
         "file": "material-object-details/ae95ced42ca88a5222d2.json.gz",
-        "sha256": "2ff84d64eba8142430fe45ab23b3e7cbb60529afdbe978debc8be5dd5f7a53cb",
+        "sha256": "4b0b367836477a40171bafccd420917f4baca1a2ed877460de066baa45e40cc4",
         "bytes": 1965,
         "rows": 27
       },
       "BUCKET-HDPE-GRADE-UNSPEC": {
         "file": "material-object-details/59dcea07a3c7777a4cfb.json.gz",
-        "sha256": "16c4523eae7f7475602374dbfe646a2430b781c16aada81b2072f5a1a3e67145",
+        "sha256": "890f120b5ee032400541cc805a3c99eb2ee3e30caaa991a8420ed1d592eef665",
         "bytes": 2224,
         "rows": 39
       },
       "MAT-PLASTIC-NYLON-BROAD": {
         "file": "material-object-details/9b4af6592e4cc32a6dbf.json.gz",
-        "sha256": "762281086270ce63bd4d7adc76b225443dbdb4c1a4a167f5f40c9c853cfbd4c2",
+        "sha256": "a39aaaa6fe32e521fe5490a43727bd1bfb24eb571b7450df7e2ff9b3f9bca5be",
         "bytes": 7749,
         "rows": 112
       },
       "MAT-PLASTIC-PVC-BROAD": {
         "file": "material-object-details/b7cf00f88eb315f41661.json.gz",
-        "sha256": "3c63972f7a6c82707ea4d3822a81a270e002b32ec06dbffbf9ca985a6b7577ec",
+        "sha256": "da44f35040b0580f097e4a3a67054f32c86976fc7c4c97bdf22524f6abda5227",
         "bytes": 2356,
         "rows": 17
       },
       "MAT-SILICON-BROAD": {
         "file": "material-object-details/2a9844dfbf0410c1f88f.json.gz",
-        "sha256": "5c3fccadc32e3c494ab4617672a8b647b3afc7725882ed31ada47426454f3164",
+        "sha256": "9d02300171f3170b8a09b8587e86c28a1c3129226415bf0f285268057a408185",
         "bytes": 673,
         "rows": 1
       },
       "MAT-CORK-BROAD": {
         "file": "material-object-details/89fc89b923a7ea14fd4a.json.gz",
-        "sha256": "4c22954e091c8e8bf6fc6e214370dfd43072694be9b30c565f68276670886d2b",
+        "sha256": "d9779c8cc1e40b7934f4b81a691c6a3b0de46f4cafb93b36485f833b37ab4881",
         "bytes": 688,
         "rows": 2
       },
       "MAT-STEEL-ENAMELED-BROAD": {
         "file": "material-object-details/74439c27290fe7f596d8.json.gz",
-        "sha256": "3564592418d922d43b3c353c8c41d2fdae867c939ef98f2b03e605021aba68b7",
+        "sha256": "36d74131cb8cbd2bb40d19de4ff3161c3e06ccebbd762ef2c112dbd7eb379c38",
         "bytes": 711,
         "rows": 2
       },
       "MAT-COPPER-ALLOY-BROAD": {
         "file": "material-object-details/31a4e11d7bc24494f8da.json.gz",
-        "sha256": "4518815ac1901e6b6a10281fd9373113b5e0d7d9e3c78fa54634658ed6ae73de",
+        "sha256": "763c434a851537754aba873a4247d162c8425498f4b646dc0f588750c869d813",
         "bytes": 701,
         "rows": 2
       },
       "MAT-STEEL-GALVANIZED-BROAD": {
         "file": "material-object-details/ecc6600a29b48f2c52bb.json.gz",
-        "sha256": "deb58879c9807bc01e5d21d059d0a60bf2735d675ef46a3d10389d6b851d6d37",
+        "sha256": "eca85d90c5f2544ecd01b843ae4572c1c66e968d02698380cec9c701c47da14e",
         "bytes": 1065,
         "rows": 6
       },
       "MAT-ELASTOMER-TPR-BROAD": {
         "file": "material-object-details/3b779ef5c15a9ef37801.json.gz",
-        "sha256": "f5fdeaf2495618b8b91f4a3ce2d9431a5687634180a9c7af792f3f35de3fcfc8",
+        "sha256": "ba75da5826667acf222716c199dcb85144503e5af265299cd48a6942dd364b79",
         "bytes": 692,
         "rows": 1
       },
       "MAT-METAL-SHEET-BROAD": {
         "file": "material-object-details/6fad46edddf7eb61c6ce.json.gz",
-        "sha256": "f6e0d16c6b38cc12ff003683872faab1341c7cc5f9d47df306d08f5b176475b3",
+        "sha256": "2f922aa9acda55a64b76f6c32bd5c6850994d6c5de2676281d42f75edc6d2c1f",
         "bytes": 667,
         "rows": 1
       },
       "MAT-ACRYLIC-PMMA-BROAD": {
         "file": "material-object-details/ea37e6ba9eeab3898a00.json.gz",
-        "sha256": "8eaf1b2778347d3460a139b0954b17223418a62ea664f3039ffaece594a485e1",
+        "sha256": "df24fefe557d6cd30e06f0105d3e4ae95d8602ad9a75a0c6747d4e47efee33ec",
         "bytes": 1466,
         "rows": 7
       },
       "BUCKET-CARBON-STEEL-UNSPEC": {
         "file": "material-object-details/6d90a53b47e24fdf1936.json.gz",
-        "sha256": "039261e2cb470dada4f484600ab4d5756718daffeaa801c157f641ce0fc16fdf",
+        "sha256": "bd79edeb2a9a744dd1c414f39a5ebccd37c79a2eca2035e8a0f8b259ea41071b",
         "bytes": 1906,
         "rows": 17
       },
       "MAT-POLYSTYRENE-HIPS-BROAD": {
         "file": "material-object-details/7d1a7564ff69d3c79b1f.json.gz",
-        "sha256": "8d9d2a425ae00d2febfba6fe95ac23d30a8b00f6062541ae83365350c90dd67a",
+        "sha256": "d0dca7f0bebc86b5b69631b194bb3a2a6bc9dbd9226ac2a8277c9439840fc04a",
         "bytes": 692,
         "rows": 1
       },
       "MAT-GLASS-OPTICAL-BROAD": {
         "file": "material-object-details/39410da9a2a4d828670d.json.gz",
-        "sha256": "29a949a92f2041d4945def68c0a3973255857e322b1f037f005de7386300ed2c",
+        "sha256": "3c216821134195b5e14e659893dc176d914f1f0d275dc8106d2b2750347c9e28",
         "bytes": 670,
         "rows": 1
       },
       "MAT-SOIL-BROAD": {
         "file": "material-object-details/b3c33ab7847cfea1b15a.json.gz",
-        "sha256": "546d89b42fb15680e6278a5e066aab61d1235eae2f638395c3ced93d26d26e41",
+        "sha256": "dfab57856937729c9bb38dec72ad96d49aedb023975cd07a4e074c6be73fbb45",
         "bytes": 651,
         "rows": 1
       },
       "MAT-IRON-BROAD": {
         "file": "material-object-details/e452274ba3582f9ac6fd.json.gz",
-        "sha256": "271e7c33778347e031a05b4e3523511cc2a96fbf4e6e2f7bb03bd330893bfe71",
+        "sha256": "51337a018946fa3f73ef2b8406e5b4f9d31b8df9ee7cd36e3931da4bf91e2bf5",
         "bytes": 10233,
         "rows": 104
       },
       "MAT-STEEL-HARDENED-BROAD": {
         "file": "material-object-details/6715328a692a16b1ba5d.json.gz",
-        "sha256": "1170d49f30beaa3c51a0355fa4453b5759e0ce4306ad728a14d1ea710145145e",
+        "sha256": "3f2ba40bf62fc031c6b01c5826fb907cd264b76dca2738b26f7e1e5f95918c40",
         "bytes": 673,
         "rows": 1
       },
       "MAT-WOOD-PAINTED-BROAD": {
         "file": "material-object-details/b708d09b14f9d412b851.json.gz",
-        "sha256": "4e3af1e9f765bfb38b1925f392cfadc939cae7076a3a26c69366d8ccc210b358",
+        "sha256": "80b25328d33325f153d1f10cd9bd93db76a628efe846bd0466d435474410f96e",
         "bytes": 801,
         "rows": 3
       },
       "MAT-WOOD-LAMINATED-BROAD": {
         "file": "material-object-details/978cea33ac075c7c36cc.json.gz",
-        "sha256": "446a667941b4db6379c1ac5aa63a92844ab506fa5b05cc53599c9a6b3210495a",
+        "sha256": "95b03478eac9682856f5fcee65551686f26336a178fbcf7cad1fd092b5387132",
         "bytes": 809,
         "rows": 3
       },
       "MAT-WOOD-BIRCH-BROAD": {
         "file": "material-object-details/a6acbffef4de971576f4.json.gz",
-        "sha256": "6c8bd97cf9120f7bc1ad97993f6e009d683d79bf4604fc75b6e14272aad1e194",
+        "sha256": "6c536bc7e6de1c087ae8f7e507c03901279609701bf2d9f904bbfe916084cdd2",
         "bytes": 2250,
         "rows": 15
       },
       "MAT-LAMINATE-SURFACE-BROAD": {
         "file": "material-object-details/962f5dc4fe97ee60c9e1.json.gz",
-        "sha256": "b08b8a88e5e5d286159cb109ee718130093679febb70c0355daa5299a3f5a05d",
+        "sha256": "0f867c69be62fbf0c7982f80b00d5170e0938fadf49f785c28883c45e8b4ae40",
         "bytes": 880,
         "rows": 4
       },
       "MAT-WOOD-VENEER-BROAD": {
         "file": "material-object-details/c726ec0d212f72e1b6a7.json.gz",
-        "sha256": "0e84337dd70f82dfe87dbe0c634d10fc6ea8f63641429a568618c0003be5c38c",
+        "sha256": "07f338695c0930107ad7107215448ca99ae2cf4fb8c0708fde4905d59e1adb79",
         "bytes": 986,
         "rows": 2
       },
       "MAT-GLASS-CORNING7740": {
         "file": "material-object-details/e63f515eb26ce78670be.json.gz",
-        "sha256": "2a8e70ad9af9542f9c4bf47063502dc2d0e4cce694df33ea0c9c22b427a1ef18",
+        "sha256": "6b2767776bd18e214781149810b49686b29a4c63e4e1400b6bb4a0d7aaa047d0",
         "bytes": 3202,
         "rows": 49
       },
       "MAT-SS-304-STATE-UNSPEC": {
         "file": "material-object-details/856e695220dc2ec8cbf0.json.gz",
-        "sha256": "f91521c35425342031882aa4a1df6a6da9b1be620875f54ce1a76e45b5b853ab",
+        "sha256": "ae76aa57bd01364d3fdf61d7d51a9bfcefd0de29351dc1753445aa34798f366b",
         "bytes": 1344,
         "rows": 4
       },
       "MAT-AL-6061-T6": {
         "file": "material-object-details/fa3ec42189a4e0e10c11.json.gz",
-        "sha256": "2c9554b2ea8f5524b6d6054059cae43a2d12708057069181a336fa78ff3bccdf",
+        "sha256": "2c2f2afb4abc73ae0a3499bcf38c4e64d2eef4b5318b7d661820c913f1f1a751",
         "bytes": 977,
         "rows": 2
       },
       "MAT-COMPOSITE-CARBON-FIBER-BROAD": {
         "file": "material-object-details/a50b44dc5fdf6f494282.json.gz",
-        "sha256": "f0c7190b2cc6d6ddf9e24bfcf8e48b7f4a1c60e11b0f563203bd622b4f36390c",
+        "sha256": "21ee8aade73e141e51d622f926b08f548a7418e577d4111d6d09354c7ac99eed",
         "bytes": 1840,
         "rows": 8
       },
       "MAT-SOAP-BROAD": {
         "file": "material-object-details/dc1b4678fabb00eb4e9e.json.gz",
-        "sha256": "895fb3630276c451768ba5dd71f1af0c144e1d36558b761927089583ba0bf800",
+        "sha256": "ebc4a5318fc67cd4367f8358364afe1af18843a6e334d64997ac42184e4925b2",
         "bytes": 1009,
         "rows": 4
       },
       "MAT-CERAMIC-GLASS-SOURCE-BROAD": {
         "file": "material-object-details/93dedb6f76b4c259de37.json.gz",
-        "sha256": "dc2b5d8e7841f98ac753664a8170a01f1321aae5b3e27647a6e1d2948735a1a1",
+        "sha256": "56c73782da0b9b6d00b7f33d4b779ada2669e1d9f539b888f88c4a3e87473c83",
         "bytes": 4584,
         "rows": 56
       },
       "MAT-NATURAL-FUR-HAIR-BROAD": {
         "file": "material-object-details/1546c0652e63216067ff.json.gz",
-        "sha256": "a806107755885c8a7867588ce8890d6355fcf655f2e8e61093c0bdd6f706a5be",
+        "sha256": "41ca090b6ff4be53a2bcaf837cc740a65358dfc8f79f3bfa05c1caea9afe72a1",
         "bytes": 803,
         "rows": 2
       },
       "MAT-APPROX-WAX": {
         "file": "material-object-details/286b26e71956dfcf85a3.json.gz",
-        "sha256": "e457bd2c3e6bcd03fbf09e3257a596143b42b4344e4ab5650e5629eba33dce18",
+        "sha256": "673e15be07b28401f1124c055b1259bd2db944a9652fac44c47e963e73c2c204",
         "bytes": 1718,
         "rows": 14
       },
       "MAT-TIN-BROAD": {
         "file": "material-object-details/d5b3d0127c6a512f3027.json.gz",
-        "sha256": "1e0f2123c53ef650471acbfaffc4572cec8c87cb3025ea509184082865711c66",
+        "sha256": "0c1f8cb076726c37f2015703a85c8223eca5da59781a78bc5e0e04a020e21543",
         "bytes": 760,
         "rows": 2
       },
       "MAT-BRONZE-BROAD": {
         "file": "material-object-details/46517ab8de633b1c24c3.json.gz",
-        "sha256": "9dc64a56a21a415f4a87745dd35b101c762f46f7ac035a46f4ff807ea0c959e4",
+        "sha256": "ec8d2aa8e0a6db4a2c9a00c6083dd92aaadef24c28979ee5ff0fcf4e96324020",
         "bytes": 4123,
         "rows": 33
       },
       "MAT-FROSTED-GLASS-BROAD": {
         "file": "material-object-details/16035b8b3126496af43f.json.gz",
-        "sha256": "09628e423f1a4d4dc0ed4272f7652d8df702f0a784cd6fd586eff4aba33a0106",
+        "sha256": "d623b4cc049396bc6acfff2e496555055c4855df2d9e7aced1c2f46b45880f8a",
         "bytes": 3908,
         "rows": 41
       },
       "MAT-NATURAL-SKIN-BROAD": {
         "file": "material-object-details/bdc75acc372311c6ed89.json.gz",
-        "sha256": "465249cab27aff0d5e8897fda4abb46dca3bbeaa74c1d8eb4890041f114bbc79",
+        "sha256": "31077b56be645d07745012ed247fe8cd3237b22b027ab2df5e2703831e1d81b8",
         "bytes": 15427,
         "rows": 281
       },
       "MAT-MIRROR-BROAD": {
         "file": "material-object-details/93a82c1d5b128b7dc89f.json.gz",
-        "sha256": "4eee2267fe6bf335fc281a53bc1d37f283a051b0b3c6469f056485c19132df1f",
+        "sha256": "6c52a4e7ae9bb5e8007e91df850472a8a4ea9f86435be26e91f070d7bf4649d3",
         "bytes": 1954,
         "rows": 6
       },
       "MAT-SILVER-BROAD": {
         "file": "material-object-details/19645051fee895deeca9.json.gz",
-        "sha256": "bbf4f044ce5cbe382b446d436407af40dd2a67c5255bcd5864290bce7ed8dea0",
+        "sha256": "ee6d10c3c1cc36d6c473dd9ea2132fc32ccad0f0e08efe251d7df83c6e4ef72b",
         "bytes": 786,
         "rows": 2
       },
       "MAT-PLEXIGLASS-BROAD": {
         "file": "material-object-details/3e2fcea266f25cd04b79.json.gz",
-        "sha256": "b36ecec0d0e5e0be906e3b669817314ca3c1f3bbc9d46beed60ea6e40195c10d",
+        "sha256": "a111889a30d7653053e439ef9823a271b96b16c8de5751ffb88cdf11c0ef9207",
         "bytes": 1659,
         "rows": 5
       },
       "MAT-NATURAL-DEAD-LEAF-GRASS-BROAD": {
         "file": "material-object-details/a135514c3c95a2f5d5b0.json.gz",
-        "sha256": "322263b672aabb9d87e9cdfadd3d8eefc29f4fc29fb3d1a9b4fb6a523265949c",
+        "sha256": "b1a6fc249ce21dce43651df45a1ff145b71e72d1d347ddf3a135e5ebde82f04d",
         "bytes": 1719,
         "rows": 16
       },
       "MAT-MUD-BROAD": {
         "file": "material-object-details/4141ef26bf6be98cbceb.json.gz",
-        "sha256": "c6cf7e65a93bd51ddd8c06c8be7b39d5e41c2cf10d3cfd60f46be68e3cdee91a",
+        "sha256": "3cef70ab09257163f1aad384ecfe14bfcae157c374c46f07bc151219b3eb79f0",
         "bytes": 839,
         "rows": 2
       },
       "MAT-NATURAL-LEAF-GRASS-BROAD": {
         "file": "material-object-details/6f7d5e470bb07382e988.json.gz",
-        "sha256": "71405a5c6d03ce6b2ce9a34562951b931aa517aa1894fa09e8735a4d3964eeb0",
+        "sha256": "4430bcc214afcdb48773fc284b98205c6973726bf6ce8aea261dd09d1d66429d",
         "bytes": 839,
         "rows": 2
       },
       "MAT-TEXTILE-COTTON-LINEN-VISCOSE-POLYESTER-BLEND": {
         "file": "material-object-details/fa65a206fc201b78a841.json.gz",
-        "sha256": "4cabc6840190a300b50734050068155ec2588b00d7fd961c20056d721c63c69a",
+        "sha256": "904a44bc77cbbca3194d27945b99f0289d4364c597da414aebe37a4f523b4eb0",
         "bytes": 840,
         "rows": 1
       },
       "MAT-WOOD-HARDWOOD-BROAD": {
         "file": "material-object-details/2bac3f76f80d746ebfe5.json.gz",
-        "sha256": "9b6489b36656523e1ffb3274be46eaf1d211772275cc8a19b9bb34487871ea6e",
+        "sha256": "b30840d5798c14baa70d55e4ef76624b21e2725a078e2eb35de6ea74eaae1581",
         "bytes": 24998,
         "rows": 365
       },
       "MAT-TEXTILE-POLYESTER-NYLON-BLEND": {
         "file": "material-object-details/d34fa70c29e5e3911f3d.json.gz",
-        "sha256": "2ef6e47810823dd86722e5c0224e5ecae622b4e725bea9db5db5eb276fabcffd",
+        "sha256": "2cb63be40b03ebe712d085e06232679f2abf11e78cd0bdc2923746ef8d8685fe",
         "bytes": 4123,
         "rows": 51
       },
       "MAT-LEATHER-PU-SYNTHETIC": {
         "file": "material-object-details/3342a4a442631ebf1435.json.gz",
-        "sha256": "a71bf986005a171a81feed8ed1bd1b7886ecb87aa8e89af306bb76aeb9594156",
+        "sha256": "024e2cc8c279755edd5d5fedf0b6e25194f8f884f62225574a639a2d31232879",
         "bytes": 3728,
         "rows": 37
       },
       "MAT-TEXTILE-MESH-BROAD": {
         "file": "material-object-details/10656c44a86ba97848c8.json.gz",
-        "sha256": "01806f18d7fb981b3a9d8554fdb40b8519e8632bb89cbee2aab5831accaf1248",
+        "sha256": "33fd5193dd493b677929ef5f6ce42daca0867bd77527b3f220320cf2cc8772f9",
         "bytes": 1593,
         "rows": 6
       },
       "MAT-EARTHENWARE-BROAD": {
         "file": "material-object-details/52922684f00e1a766a41.json.gz",
-        "sha256": "1614c1fae0198219a05d1ae27002927dcd1702d97db26d5128a3b82bb6add80c",
+        "sha256": "4aa5777b757bc618dfaa145e8d394006bcc77f86e780db7bdce16055485e84e5",
         "bytes": 1307,
         "rows": 9
       },
       "MAT-TEXTILE-POLYESTER-ACRYLIC-BLEND": {
         "file": "material-object-details/119aed9f88656f8bb7b1.json.gz",
-        "sha256": "680aa04dc578934083cbd4a856e878b3bfb3ea1a7d83afe1025f15039299e07e",
+        "sha256": "4c96fddb51803e0ac3ef6d95f696bc1ca08b487f99d2df936003b60cf41c53fe",
         "bytes": 1568,
         "rows": 8
       },
       "MAT-TEXTILE-COTTON-LINEN-BLEND": {
         "file": "material-object-details/998e69d76882f6bc7884.json.gz",
-        "sha256": "2378fb24a9f029e6568e77f8bec6643b1189789fdc0986a4e9460a6700bfbeeb",
+        "sha256": "309d12b15281d578723b0b96488cac23b5df2c92f9cd0f25dbd57e3db40637d1",
         "bytes": 1265,
         "rows": 6
       },
       "MAT-TEXTILE-POLYESTER-LINEN-BLEND": {
         "file": "material-object-details/a32d53768b6af8367d02.json.gz",
-        "sha256": "2f57bdcca740c17a17b92c6b217e662474d0e1133fefad2d4e97435a774f2cd1",
+        "sha256": "63fb440bff9b763b883e2d5db4eaf7a01038a3e3337f932afd489de115561ff5",
         "bytes": 6901,
         "rows": 118
       },
       "MAT-RATTAN-BROAD": {
         "file": "material-object-details/8d09fd1f097f44e463ea.json.gz",
-        "sha256": "a325d9a985e61f7a458cd7c38454ce20eee8325f6f89d712bf20a233f424519c",
+        "sha256": "aea39ef1ce181f7df27d67f56a58732d274a5ea5a4da36fd16d0cf689b8bd1fd",
         "bytes": 2296,
         "rows": 11
       },
       "MAT-TEXTILE-DENIM-BROAD": {
         "file": "material-object-details/5785c47a670b33b8960e.json.gz",
-        "sha256": "8a25d35da7484e633db9a66e3863612044c1116619db34d8644f30c62a73a46d",
+        "sha256": "232da3939a78762b38d28d3bc5c483ddbfd68e6de2d2022e18ab52b828b8e13c",
         "bytes": 1346,
         "rows": 2
       },
       "MAT-WOOD-CEDAR-BROAD": {
         "file": "material-object-details/fae69ca2275e6a595282.json.gz",
-        "sha256": "ac2536b2dd20b90d6f78df75f6caa81438a20737e4e34dd964ed827375bd1beb",
+        "sha256": "7f0df2fc4c1e1f4c99d5cf4cedf750aa08fb8e267f11276d5be6b7aaa3f622b0",
         "bytes": 839,
         "rows": 2
       },
       "MAT-TEXTILE-COTTON-POLYESTER-BLEND": {
         "file": "material-object-details/eab02e31a5aa6d4a6169.json.gz",
-        "sha256": "a2faa0fd7149cc17a9028786e65f119037d54ed9e05ec5668b64c348260c93c2",
+        "sha256": "5352f9ebe5446c4d95b29f3f015cd99407f63af98653e1ba68d10bed53a9b39b",
         "bytes": 2659,
         "rows": 30
       },
       "MAT-TEXTILE-POLYPROPYLENE-BROAD": {
         "file": "material-object-details/b1843d36a587c3f1218a.json.gz",
-        "sha256": "1c4c5b1643cd84cb58739c7c676b651f2be75786cb39c700d8a6c63420269fc7",
+        "sha256": "a078177d375b070ea867ffd00a1c032edb70d3567d77a88c2b6204bb6902ca80",
         "bytes": 1660,
         "rows": 8
       },
       "MAT-TEXTILE-JUTE-BROAD": {
         "file": "material-object-details/bf4fbee3157f8bac5e79.json.gz",
-        "sha256": "cfbbf08bdee0a9528f24f21dc939acd9d08df6ad2d2a5458e01b061de167a093",
+        "sha256": "55dd9576618ce37838d7e14c6245b26d018fda8f3a7c2109405d90c8140781b6",
         "bytes": 2941,
         "rows": 26
       },
       "MAT-POLYSTYRENE-BROAD": {
         "file": "material-object-details/08b5d6969d9df5edac51.json.gz",
-        "sha256": "e652d96714d207fa1ac20e3c6e10a353aaca1403ee91c264853d8ff21664ba9f",
+        "sha256": "94e780150400b53b3386adaae728197ff590c43d08cd146a2c9f260a54c0c054",
         "bytes": 1566,
         "rows": 9
       },
       "MAT-METAL-CHROME-PLATED-BROAD": {
         "file": "material-object-details/ea41a5d7ad867afb658e.json.gz",
-        "sha256": "ce1b54bf4e3a275abf9528c51ad6f729c2db3e6f4a88ea74cbe5e7c40c5ec551",
+        "sha256": "e59e9b46c2066f245297aa15dcb549f254d1993d813abeebc5d17369ad6e1633",
         "bytes": 888,
         "rows": 3
       },
       "MAT-FOAM-MEMORY-BROAD": {
         "file": "material-object-details/c9a1b4bf8ed77f17cb84.json.gz",
-        "sha256": "fbf3ab5812addb6e6c821d40dd28d8a46dbc4efc0004b4d2de3449f7a3278312",
+        "sha256": "4e51c5db94fee97d82a979b6311b5668ad51626464a78bedc15f3ec5c4f6cabd",
         "bytes": 1927,
         "rows": 17
       },
       "MAT-TEXTILE-POLYESTER-COTTON-BLEND": {
         "file": "material-object-details/07aad58ec2a70e15eef7.json.gz",
-        "sha256": "63ad9bdc3e2045a69f0d793cc6f5cb654a36cbb35eff5a733b461e5cec17a48d",
+        "sha256": "3b3a7bfa9aad0d2a36c7e9c8a3d7cd61b48df5e4f2944d17d6ca6afd71c01993",
         "bytes": 1192,
         "rows": 7
       },
       "MAT-TEXTILE-POLYESTER-LINEN-RAYON-BLEND": {
         "file": "material-object-details/647619c5393576e97bf4.json.gz",
-        "sha256": "e83bb52943a56267bdb6be45357c79d78398971b06c3c3b99ec264aebeb5a31a",
+        "sha256": "9ef8194d47c8589570a2225b466a9cf4a8e40f6081de4d3e0707789f50f31906",
         "bytes": 1957,
         "rows": 12
       },
       "MAT-WOOD-RUBBERWOOD-BROAD": {
         "file": "material-object-details/8b918e444cb1b0dd1ea6.json.gz",
-        "sha256": "7806edb23b0090905950c2cf2bd3b26359d0c9dbcc151ed9668d534ce5a471ee",
+        "sha256": "0de2fdaacfda136553929e54331ecdb0f732defeb612993040ee03947325b388",
         "bytes": 3450,
         "rows": 31
       },
       "MAT-DOWN-FILLING-BROAD": {
         "file": "material-object-details/f91b6e508a96d7f7e93d.json.gz",
-        "sha256": "725e2adfa241bf00386a2615d9043084b90c745969227597f36245d3c5a78acb",
+        "sha256": "7fc75383f1aac8244c8b3add1f4e7ff8715340e723718e8f21a162c2e285f41b",
         "bytes": 798,
         "rows": 2
       },
       "MAT-PAPER-RATTAN-WEAVE-BROAD": {
         "file": "material-object-details/414537efee2aa6fe2924.json.gz",
-        "sha256": "3c030df821ecec9cfd9ffeef1a4902f13c2b87822dd854a175eb85180a0bca0c",
+        "sha256": "a01dc2cf905eaddeedf2bd147f995ee59b237a11161953d658a616623f7d5094",
         "bytes": 1076,
         "rows": 5
       },
       "MAT-FOAM-NBR-BROAD": {
         "file": "material-object-details/7131bc7030e49d07b549.json.gz",
-        "sha256": "3ab97f2e223e2212b2e5e84333ad4870368753d0855228535c07655ce75e457d",
+        "sha256": "4f4af53615640127f65992eeea7773ea958c85de40a2b31e81838e4bb30028ca",
         "bytes": 920,
         "rows": 2
       },
       "MAT-TEXTILE-POLYESTER-LINEN-COTTON-BLEND": {
         "file": "material-object-details/3e36581c0aeb57ee82f1.json.gz",
-        "sha256": "63421063b9d4fbb6fc18cdd5934fbd5d59cda06c95ea6a0f26e2f63b1690d7e0",
+        "sha256": "80869a2ce426a1fbe115a1138b77f9a4f6e3e3909fc03366ef771c1f5559de56",
         "bytes": 862,
         "rows": 2
       },
       "MAT-TEXTILE-NYLON-BROAD": {
         "file": "material-object-details/3722bb76d4aaf0af6dc9.json.gz",
-        "sha256": "6af4c90e96ec5091b20ac1c38885a2bf17343e39ec26223532bf34e1fac17ebf",
+        "sha256": "0d8f9f02108307ecce0271688c82d764f4629379656fde7c423d860ec0a460aa",
         "bytes": 1928,
         "rows": 11
       },
       "MAT-PAPER-COTTON-FIBER-BROAD": {
         "file": "material-object-details/5fa9bb5ea6803556dbb0.json.gz",
-        "sha256": "9856330c13277d4e4ba4a3f46e1398df76b8ba699e0ff19c8d7125ccdfdb0acc",
+        "sha256": "291c64d843bf4f23d4a837ba2f2660934711d4f55600a8b9c75708169bc3db9e",
         "bytes": 1277,
         "rows": 7
       },
       "MAT-WOOD-ELM-BROAD": {
         "file": "material-object-details/7e141b30144012747958.json.gz",
-        "sha256": "b253de150a81dd44e78326580ce31260765cff6915b9ceec39d21a0345a318eb",
+        "sha256": "280103951774bc743ac13a5ec16f6464e88bb0d0657d91566f4171aa773a1b29",
         "bytes": 1468,
         "rows": 7
       },
       "MAT-TEXTILE-MICROFIBER-BROAD": {
         "file": "material-object-details/ec359cf7323d14a68035.json.gz",
-        "sha256": "bd495d355512badc1e052a390eac827179f08d92925c5b8d35c3a235a042dc34",
+        "sha256": "f347f5529bf9c5a5c773344683562c6d95d129e40d6f3afb70755aa861ef90b9",
         "bytes": 2140,
         "rows": 20
       },
       "MAT-WOOD-FIBERBOARD-BROAD": {
         "file": "material-object-details/9825d1d57e967c2733b8.json.gz",
-        "sha256": "01bb67b78af065f39f35335e600a5b98598f049eddbde8aec3575ca1e6af7e43",
+        "sha256": "e33cb634e72ccd3d34983b1b8445b464b762a0030ccb8e0ae3882ec767b3620a",
         "bytes": 1981,
         "rows": 15
       },
       "MAT-TEXTILE-WOOL-BROAD": {
         "file": "material-object-details/cfa46c4caa980b7cc10e.json.gz",
-        "sha256": "945a268785a0d1b7b5aa74095fc9fbd69fc3f96c006e94439c9ccd4708e82982",
+        "sha256": "be643d7d45ed00dfb34814d6ea130b2c558d5778414afa8fe8ffe7db0040d65d",
         "bytes": 4696,
         "rows": 31
       },
       "MAT-PORCELAIN-BROAD": {
         "file": "material-object-details/3c878ad8e54e336d94f9.json.gz",
-        "sha256": "f076f67718f300f9adee1aa108d4ce047c22e9d51f1a30ebba4ddc943f72f139",
+        "sha256": "c416a22000e8f1f2661252d97a050e969b82df733b280c243266abb80196ce3f",
         "bytes": 2278,
         "rows": 16
       },
       "MAT-WOOD-ACACIA-BROAD": {
         "file": "material-object-details/517b187ae3a1fcd1de56.json.gz",
-        "sha256": "9d12c6378f981f678d6f1da35d5f61add50a3780f52d63889a17ff23fd4b4db1",
+        "sha256": "64a4d89c4215be5d4178431a1e58e567335cbe67f210bdb5f2ed272ab0b7f7f1",
         "bytes": 2391,
         "rows": 19
       },
       "MAT-LATEX-RUBBER-BROAD": {
         "file": "material-object-details/b1165537cd5bc6d2cc16.json.gz",
-        "sha256": "d209db9dc9241e0ea8e2d1c8ee82c75fd674b5793524bcdd1dc8683cc2779e4b",
+        "sha256": "bdca488a1714fd9f183a3d8f277fd50863bd757ffa963d56dc11eb54e48d0f48",
         "bytes": 4187,
         "rows": 49
       },
       "MAT-CEMENTITIOUS-BROAD": {
         "file": "material-object-details/460135a0882ece0ecac1.json.gz",
-        "sha256": "1558eb7e6396ba3caa93593a8e78a6a5aaccf198a35998d387fd01a182d495f4",
+        "sha256": "7590fdcdef7eff3809919d5eb7312aaf1db4bb87ba8dfa2c93e6e03ebf350b86",
         "bytes": 1843,
         "rows": 12
       },
       "MAT-PVC-BROAD": {
         "file": "material-object-details/a5a5e974cc0dad7dc007.json.gz",
-        "sha256": "0715c08ba34970e6fbcbaef696c92b7f450a6fdb1dbbf7c2757f6069a78aca75",
+        "sha256": "3940684c23f1d9d40d525f97821019476b45561d6dc794eee7e1a3b07ac9ce15",
         "bytes": 1428,
         "rows": 8
       },
       "MAT-NEOPRENE-BROAD": {
         "file": "material-object-details/9d43a27b8a274494675d.json.gz",
-        "sha256": "4060f9ba9c7ad53f3b152fcec28726df41e0caccf5e2881c2dc4803f25054352",
+        "sha256": "5721d7c9e1399e2011511d6f4c40a40814a4ef14146fae2b80dce027fa8ca79b",
         "bytes": 1790,
         "rows": 15
       },
       "MAT-TEXTILE-WOOL-COTTON-BLEND": {
         "file": "material-object-details/7bc0c2b7b15b10a61423.json.gz",
-        "sha256": "233def7bdbaa748db9c44dd78d170317437ac5fc131eddb8cf6982ac75eb18fd",
+        "sha256": "fb90e2ad1ba74cee629b707aee49da40af0a8a19a2d21396c1d2a55824cd1a28",
         "bytes": 2094,
         "rows": 18
       },
       "MAT-TEXTILE-WOOL-VISCOSE-BLEND": {
         "file": "material-object-details/bcb6ddd2f6d7de79c6b1.json.gz",
-        "sha256": "e9596e498b68be9179c7404359422ec76fc31427d8dc3bfc5c21643c2505bd3c",
+        "sha256": "e27958b5c7028edf819ae2165af0c022b97f65419d68dcd2352154c2086962a6",
         "bytes": 879,
         "rows": 3
       },
       "MAT-TEXTILE-CANVAS-BROAD": {
         "file": "material-object-details/b59034e80f17bed63967.json.gz",
-        "sha256": "21eec879e891e87cd61cac98f896b44e68e62a30daf3801cddd6306a56969f6d",
+        "sha256": "80fd300bdcd7d619bd5f0870478a395a89cf86e0cf24eac2326cea1263d25f34",
         "bytes": 4203,
         "rows": 28
       },
       "MAT-TEXTILE-POLYPROPYLENE-POLYESTER-BLEND": {
         "file": "material-object-details/ef8cf79607547cb080b0.json.gz",
-        "sha256": "67aa9c8fab201842f10889785758a95ebace995d35a7ab00eaf8c1f6bb5fa2ff",
+        "sha256": "e4e8fdd8ee44013338d83b27f995562db386703b8603f4167aaaefbd9a00d932",
         "bytes": 1322,
         "rows": 9
       },
       "MAT-TEXTILE-WOOL-COTTON-POLYESTER-BLEND": {
         "file": "material-object-details/114ebe9b60e64dd9733b.json.gz",
-        "sha256": "3b09cad525d3485d14778bf73bef172782ecad8c94f62306c0509cfb92185277",
+        "sha256": "6d81a8d220153022231bf73ed6841ad51ab8480ae13aa096a2855654de033dff",
         "bytes": 1532,
         "rows": 14
       },
       "MAT-POLYRESIN-BROAD": {
         "file": "material-object-details/9ad95cd56f604f8a0554.json.gz",
-        "sha256": "cc617062f9daa75da024a8e52e155055c1578309358d9cbe5b38c7a657178376",
+        "sha256": "acf993c652979f13a3059f2be843053191f19a6feb11308cf2ed242db3fddb67",
         "bytes": 784,
         "rows": 1
       },
       "MAT-TEXTILE-SILK-BROAD": {
         "file": "material-object-details/f56d26155eb7496406ce.json.gz",
-        "sha256": "476aaa16f87557e8563d5869adea25e950971ab5033aaa5f6395497c9d1ba417",
+        "sha256": "3c3cd0ebe6be7e10e4bad914b293345bda7d87c4c1a704b1016c6e0c9fa2cda6",
         "bytes": 2480,
         "rows": 8
       },
       "MAT-WOOD-FIR-BROAD": {
         "file": "material-object-details/18ac86cc019d30eddb2a.json.gz",
-        "sha256": "1b7a1d4b21e5e0ff0a3ff2e352aa81190c675803b4b69f373c40fd6a2057f6ea",
+        "sha256": "19f4010692c9498a445729bf4f1d6dcd60a10b6322ec4b1ef887061a338bd7b8",
         "bytes": 2654,
         "rows": 18
       },
       "MAT-WOOD-ASH-BROAD": {
         "file": "material-object-details/a68cc7c292a024f6acaf.json.gz",
-        "sha256": "327b66108200ea1e42a57937ff8bdf7fb44f1af75b4006b6c907143e9ad5a283",
+        "sha256": "0d864bce1b34d70f906fc1ad51cd52833b63ccdad91e8e8c2ce2a025a44905e7",
         "bytes": 1602,
         "rows": 10
       },
       "MAT-LEATHER-VINYL-SYNTHETIC-BROAD": {
         "file": "material-object-details/ff1d2c6572bb25726c82.json.gz",
-        "sha256": "b2a59615fe8df4e9f531fa8237483c7f9b78fa8ec752dd92513ac5ecd534b545",
+        "sha256": "5bfc8f3c7ef0b6954c811491cab517ca8df62dfd2c6e9ce24b14197ca7cb0313",
         "bytes": 999,
         "rows": 2
       },
       "MAT-TEXTILE-VISCOSE-BROAD": {
         "file": "material-object-details/1b05f58c466bd1c1572f.json.gz",
-        "sha256": "39076583318f8f1b5ee1158b31b8bd4e76db3e2da7a10cf9e6cef6f59b28bf53",
+        "sha256": "7fdb6f70a1e00db66d8af045884a5baad4d0b03a3b854bd50a134da508dbd223",
         "bytes": 1624,
         "rows": 11
       },
       "MAT-TEXTILE-RAYON-BROAD": {
         "file": "material-object-details/b9fdcef6660c1ef23aa8.json.gz",
-        "sha256": "5669c2a6947324b2e46a44919d3c304dc2641b0ea830e5031b203560e5858cee",
+        "sha256": "25be7c73c45449d9dbbb218635e400db11eab60806a0f94939eb2d75508d4275",
         "bytes": 1809,
         "rows": 11
       },
       "MAT-TEXTILE-ACRYLIC-BROAD": {
         "file": "material-object-details/db2a2536ec272526e153.json.gz",
-        "sha256": "38308f66faf267077bbda225cbf54d717cb17661760bdf19cb3f0a506e625a3e",
+        "sha256": "37263d1f0c5c34e62f46ccb8d0f4321c8f5271542431885bf946a82545c5f71a",
         "bytes": 1068,
         "rows": 3
       },
       "MAT-TEXTILE-PET-BROAD": {
         "file": "material-object-details/95fb3698f0748bdb2730.json.gz",
-        "sha256": "7ac2655397eecb55b25b9ab995a83fd35188c44439e0fa79ad9ee9281a8f1509",
+        "sha256": "15d51b189f075d42259f497b27294da75a84af240ec799763f12588ec3f703ae",
         "bytes": 1410,
         "rows": 11
       },
       "MAT-GOLD-BROAD": {
         "file": "material-object-details/c7b25993db59f01e6ab6.json.gz",
-        "sha256": "43669fc00db9fe8f7a9c17aefb4a57a8effe92835de7fff714f1f0774a62a159",
+        "sha256": "0c491c8f30817ec5336d6a2730f282a401ce99d08c8c239f36d228ddbbbabe92",
         "bytes": 1257,
         "rows": 4
       },
       "MAT-RUBBERIZED-MATERIAL-SOURCE-BROAD": {
         "file": "material-object-details/2ed3372a6288d0a3609e.json.gz",
-        "sha256": "60e1849ae9e8fc7d52a69ef798240a760793b2d751b6eaa0be26db93a525e8ce",
+        "sha256": "760021230b4f952b92b0f1e14443a8c2c0709c716fea1e4a7b634ae844f561ae",
         "bytes": 950,
         "rows": 4
       },
       "MAT-TEXTILE-POLY-COTTON-UNRESOLVED-BLEND": {
         "file": "material-object-details/98424851ad0ecd04dadd.json.gz",
-        "sha256": "52494e8b0311ec22cc10f8610403862c6429e4a161305590b457b0b28f6930fd",
+        "sha256": "559e7f68fd384f4736b529f9e96deaa03d6b1f921bcd7e329af5ddd375036a21",
         "bytes": 887,
         "rows": 3
       },
       "MAT-INK-SOURCE-BROAD": {
         "file": "material-object-details/37c4b13f43a8e974b91b.json.gz",
-        "sha256": "8ab810d7a76a4d8d531a15d81d875c4af9378c513ff037c2e256e0f581deb762",
+        "sha256": "9aa82b4b1a3873e378a302ca1e096a54d708fc5cc8fdb78febbfc1f8697a3204",
         "bytes": 929,
         "rows": 3
       },
       "MAT-NATURAL-DRIED-MOSS-SOURCE-BROAD": {
         "file": "material-object-details/4cf91d29fae16d93a238.json.gz",
-        "sha256": "708806f049a9001bc49911c5535b6e7c4d95c1f65e450c7b697fd0971fc79ddc",
+        "sha256": "c902dac62d785201cf69abd0fcb4702dc25411e465769adfbb919f1365bbb83b",
         "bytes": 724,
         "rows": 1
       },
       "MAT-PAINT-SOURCE-BROAD": {
         "file": "material-object-details/453415e986e70fc0344e.json.gz",
-        "sha256": "0d399b8f715ba00e92e1164f3788290cd5a25843587ceb46932e617880d980e2",
+        "sha256": "ab4db081619c411b9dce62793e1be031d3b02124cf4627503d2b8e5cbb3cbeac",
         "bytes": 821,
         "rows": 1
       },
       "MAT-TEXTILE-FELT-SOURCE-BROAD": {
         "file": "material-object-details/86ff2b2c4233a54777fc.json.gz",
-        "sha256": "6a92d79adb4528c5183a44b1cb2cc644fc4a5cc43723976b4ae4210ca2c6f50e",
+        "sha256": "8254c9b4b0161aa1a137bcbc1502364fa264a86aa336ab9d0a6861eaa4dda4aa",
         "bytes": 1467,
         "rows": 4
       },
       "MAT-TEXTILE-FLANNELETTE-SOURCE-BROAD": {
         "file": "material-object-details/efc61296c9e9dd077a4b.json.gz",
-        "sha256": "7794402c6831da1da75819ffd1b0b42e05c7c37b88cd665047758746f53cf81f",
+        "sha256": "27b147a7ff3d14f25f5779fd76ba4bcd748f364b2497f7940ea2d6543b6a124f",
         "bytes": 782,
         "rows": 1
       },
       "MAT-METAL-GALVANIZED-SOURCE-BROAD": {
         "file": "material-object-details/6427e2a43046ee1d8a6f.json.gz",
-        "sha256": "fed0f5e171a5387c50c80b4de61e4ac4225770c954d2a66958e6d5569421a7d6",
+        "sha256": "fc2532a44944ed120d5b5fd76d0b69ceffaf7af62630be5da16802c2d5454eee",
         "bytes": 1054,
         "rows": 4
       },
       "MAT-TEXTILE-HEMP-ROPE-SOURCE-BROAD": {
         "file": "material-object-details/086dbbafeecf33309b95.json.gz",
-        "sha256": "b76a0f5c602feefd92353af87b4bbc30a5708cfd4a12b81f181ff8f9291251c0",
+        "sha256": "fe92e87380a044b3b52616694d196b1e4ae4edbed7505976ffb8c61e8f11ea74",
         "bytes": 791,
         "rows": 1
       },
       "MAT-STONE-SOURCE-BROAD": {
         "file": "material-object-details/2ed9b0db276391ffb782.json.gz",
-        "sha256": "26747fe374c4303e01a99c88fd114b8a20e1ad29baffd818c2c5ce3f1521760c",
+        "sha256": "d04350e156192d64d9f4aa3af7bc3f969543bc7913f68d1cd90973a9d2cbd4e9",
         "bytes": 1537,
         "rows": 2
       },
       "MAT-TEXTILE-RECYCLED-COTTON-BROAD": {
         "file": "material-object-details/0e031ae985eb53b70997.json.gz",
-        "sha256": "eb84736e3384b5773d8457507a5bb6379f8705d680140e7a3f3292f48a0aa5f0",
+        "sha256": "ba333d6ecca3a2d9913c3f509c02a9dc39e373ef9e686ace9c5a4f92d308b11f",
         "bytes": 896,
         "rows": 2
       },
       "MAT-TEXTILE-OLEFIN-BROAD": {
         "file": "material-object-details/536c4e16bb0297efa6f8.json.gz",
-        "sha256": "b79dfd659d9782a46eb2c189585318afe8c7ec3e562746217c63d7eed23a0bc8",
+        "sha256": "2a851863b4c2cb9446f427df3c5ae507b1c5b59082cfcc4b322cea05380922e1",
         "bytes": 876,
         "rows": 2
       },
       "MAT-WOOD-WALNUT-BROAD": {
         "file": "material-object-details/3b324fb6783240dc9655.json.gz",
-        "sha256": "7901f5a165f540ecc4b3336437b74e9c4b31b05d447b10e5bde14a9d8ec3bc38",
+        "sha256": "2165230948045b6a9d2c612b5e532f2410af41278cefebfc53e69e181ee6fc53",
         "bytes": 727,
         "rows": 1
       },
       "MAT-WOOD-POPLAR-BROAD": {
         "file": "material-object-details/f053e145a68a2bdc917e.json.gz",
-        "sha256": "093df839b836b861557c635bff609814a8d166e17d05ad9f71674ab05afef160",
+        "sha256": "4247e553584294937c72ed56750e448b4dbb0e60a1294f61c57348c27d8d692f",
         "bytes": 724,
         "rows": 1
       },
       "MAT-WOOD-PAULOWNIA-BROAD": {
         "file": "material-object-details/0a3fdca58a20b4196c23.json.gz",
-        "sha256": "cd6209fa8e46aa3aec636288f5e33ce21576acf837c8c73a290a47c9a9b627e4",
+        "sha256": "03917ab4e0b23fdb35505b75a31cddb12a89a9ae6ea4a914bb8c2f5f91417799",
         "bytes": 1025,
         "rows": 3
       },
       "MAT-TEXTILE-CHENILLE-YARN-SOURCE-BROAD": {
         "file": "material-object-details/cac773d7526f815a26d5.json.gz",
-        "sha256": "fc961042b44210560488387d60756d7a55649b03b95f2ada7b8e9ce794295e38",
+        "sha256": "c9fd960bb7b3e1a3dbec9060eb85bd05d8e2788e12b7139a0f3dc9abf5ea1912",
         "bytes": 774,
         "rows": 1
       },
       "MAT-TEXTILE-FIBER-SOURCE-BROAD": {
         "file": "material-object-details/18a8fa0fd085d910f2cf.json.gz",
-        "sha256": "892c73626c279e48f56aae7fa53546aef0753285e9530df7c3c07358a99e8d21",
+        "sha256": "1d30baa696234b8b32f91a75393fd53322902c545e26c5353ff5645988759180",
         "bytes": 1326,
         "rows": 6
       },
       "MAT-TEXTILE-TETORON-SOURCE-BROAD": {
         "file": "material-object-details/f72588ded042f08e0eb0.json.gz",
-        "sha256": "1ac15074a4434af22ed97aaca09955229e8157fc4b82d947833882fb2952845f",
+        "sha256": "826d99cd1ec835e70305077f3e2275f7dac61c4fef7dd77b815dce9093e57f66",
         "bytes": 819,
         "rows": 1
       },
       "MAT-WOOD-NATURAL-SOURCE-BROAD": {
         "file": "material-object-details/bab9c30ab48ba3abf759.json.gz",
-        "sha256": "49dbe858bd64c26e4c9aeffe5281c8ada20081872cabfd4c3cbf066281e9701b",
+        "sha256": "347c76c9da63c303d9ac1a2deb068063ae5d920cc15ebb5918c1e8cc96cb8851",
         "bytes": 742,
         "rows": 1
       },
       "MAT-RATTAN-TWINE-SOURCE-BROAD": {
         "file": "material-object-details/c04fae06db37ca4a08f9.json.gz",
-        "sha256": "038b3a85ad8fe1161df7e819ae8c1bc4182c15a520b03cd93a5f828005e58ba7",
+        "sha256": "0420826979f178a9917c7fb8ebff395e459932d63df4315f2fe9691e6387c069",
         "bytes": 832,
         "rows": 1
       },
       "SOURCE-MAT-6A43880421CB826B4A9B": {
         "file": "material-object-details/2f4420420ec2e5055a01.json.gz",
-        "sha256": "26f82839ee716cfd19b750a8a96e5e828a7fc72ef975715e7f06a135d2af70c1",
+        "sha256": "e0ca3bd3f0a722f4a00fcf40f7927074c8386caa3b19d4371a5554164757d500",
         "bytes": 2152,
         "rows": 9
       },
       "SOURCE-MAT-7D9FDA3D773C9610A031": {
         "file": "material-object-details/4b541e20650187ac6fd9.json.gz",
-        "sha256": "89443413ba1759faeb9a6212db0f7f4eaca88e6973e8c6628185ec43f802d63d",
+        "sha256": "28a93d4f20fbcd6999470d9ae093f30572023001170ca6cd5980881d618a2563",
         "bytes": 2358,
         "rows": 19
       },
       "SOURCE-MAT-BD46CCABC4721F394E69": {
         "file": "material-object-details/0d1c60345c42d8ad690e.json.gz",
-        "sha256": "e8613893ab4c7ef3cec4bdd8823686fb5d14788948324d649d368dc377f4c05c",
+        "sha256": "d01e398ac62fb302e9d13e1413f1f06335ccb99ea3a52f6626fdebcaaee045a4",
         "bytes": 867,
         "rows": 2
       },
       "SOURCE-MAT-1AA2826E159EF0317DDA": {
         "file": "material-object-details/1313ef22d4a87cea540a.json.gz",
-        "sha256": "95c6413c088d57235a4947e247c2f851a8aa70899bf923e3f125b0d5decb4bd7",
+        "sha256": "d3ff66ffdf0a2d8af7819b0e923ba48d36f6de08cbb8bbe2f0e440b9527edd80",
         "bytes": 760,
         "rows": 1
       },
       "SOURCE-MAT-97839AB86E352442295F": {
         "file": "material-object-details/ea027854fbaadef18eb3.json.gz",
-        "sha256": "64b842e9d122ffd28eef4148b89ff4305a5a529ba50aa06a8a3d0c8d3e1d2b0e",
+        "sha256": "830dbfa40fec3272423185a104a622965bab076f54d37e8f60fe003f3ef45827",
         "bytes": 1158,
         "rows": 6
       },
       "SOURCE-MAT-66DD06D9FFA9BF4AFC73": {
         "file": "material-object-details/a06156504361ed2ffd40.json.gz",
-        "sha256": "2f2d61f62a3cc7704d1ee52aa1c5d895f1dbb831d4d6aaaa7a522ce35b59fff3",
+        "sha256": "2068ff105c9ff68d94f21c108ec778b9494afacea1088452bfc4be16f2a43cf3",
         "bytes": 2118,
         "rows": 14
       },
       "SOURCE-MAT-A32FA74402C5069047F6": {
         "file": "material-object-details/02a90eb91410b5947ea1.json.gz",
-        "sha256": "f157ba1dacd2d2dd87644723fa4a2a6c27d38483e39190314ff837c10753530b",
+        "sha256": "184da8884f25b443f728acc454f2c86ee5ee45c852a798491f7c934b2a28fbe6",
         "bytes": 842,
         "rows": 1
       },
       "SOURCE-MAT-154C9A0B0375CC4D8EE9": {
         "file": "material-object-details/a80f7b57ae93bbfffc72.json.gz",
-        "sha256": "b9d00ab4bdb933b5c132fef12020a648edd42e51c6e0576368e64755e4c0b695",
+        "sha256": "bba900a0b7e8972bca0482164ce88f72ec52f1104333f256e489844a86e9722f",
         "bytes": 721,
         "rows": 1
       },
       "SOURCE-MAT-D8A4EF9DB13DA86281BA": {
         "file": "material-object-details/a9f99eaeb23011dae579.json.gz",
-        "sha256": "3aeefec87a7155f8b40f03dfc8f163067c1226d8b420bb9bf3744767965a310e",
+        "sha256": "aa5ba546bf8bd037b772bf19d4dd61b907f0393b0414cf842bad0abde6eb3ec6",
         "bytes": 719,
         "rows": 1
       },
       "SOURCE-MAT-F634E6F2E8FA1662BFEA": {
         "file": "material-object-details/088cf016a64a7b30dabe.json.gz",
-        "sha256": "513116a829add4dd084ac5ed251e27885cbd73c45c073bf45a3b17cb7a5d430f",
+        "sha256": "455348ea7d81aacc0a17b1988d0d52e63d691f5c8c705bcd3e357d63585d24f3",
         "bytes": 697,
         "rows": 1
       },
       "SOURCE-MAT-02B15EF87562676A8A42": {
         "file": "material-object-details/a77387fda25e5e2f4300.json.gz",
-        "sha256": "bbf453933fe34690b61bfbac8705c7b8a869303881db4c8583671872d8a7ecad",
+        "sha256": "efce2616d3e33ce72add77fb98885fb056707473cde77571d977631be062ecbf",
         "bytes": 994,
         "rows": 4
       },
       "SOURCE-MAT-9D0A3AA2A4AC1BA88254": {
         "file": "material-object-details/4cf3e98afcfd5a089ba8.json.gz",
-        "sha256": "61fa6d0ae31457f7da2289aa0b65e1b982dea038a38fa4a71d641b95fa008950",
+        "sha256": "ceddfdf783597f46998ef40c3a1dabfd853d9ac5facd79be2925407855c5994d",
         "bytes": 717,
         "rows": 1
       },
       "SOURCE-MAT-F44B6EEC5034AF151549": {
         "file": "material-object-details/89c3d5e4fb335859a8f4.json.gz",
-        "sha256": "344ee8fd1508e28c24c53823d6bde89017c408271cc6a8449e044f5792435199",
+        "sha256": "52d0de0f371eb8cd4a3fe3ca06bb7b6f54f5745a979782d6afea8e3880f4c6b7",
         "bytes": 776,
         "rows": 1
       },
       "SOURCE-MAT-A99EEA820F3B6552019A": {
         "file": "material-object-details/28973afe9ddf3ef41445.json.gz",
-        "sha256": "8c5faccc657e2f744149deb73adef8f771b5dd9509c52ae2fd24b710ce405c28",
+        "sha256": "6d1fe891dbeed225b78e28992e6cb9d179f6ea7f1b104a90f700f7c218c42ada",
         "bytes": 830,
         "rows": 1
       },
       "SOURCE-MAT-ADD1743EAE5BBD8EA17B": {
         "file": "material-object-details/2affd64fb5a09da6a827.json.gz",
-        "sha256": "342455397ce0cc0f90721f9c13f36cb7af142d25cbe4bcf5c34920240fa13706",
+        "sha256": "36f5a577868c94a9ff7ac8887ed9713cecf88285c6e6d712bd2ce216313bc2d3",
         "bytes": 1437,
         "rows": 2
       },
       "SOURCE-MAT-05579D669DD1178BFA7B": {
         "file": "material-object-details/5589f7cc7b944e770bc1.json.gz",
-        "sha256": "a840c81641d35faa070554efe9b3d3530fe29d56b07a397b7194cf0e084a7888",
+        "sha256": "e6f7017d236fc54130d0917887a63a678b98b8cebdad9fb10c7c605e8db14f68",
         "bytes": 867,
         "rows": 2
       },
       "SOURCE-MAT-1FE70C971D491482EF79": {
         "file": "material-object-details/0694e84628943f56caa8.json.gz",
-        "sha256": "42410edf85df8cce98b8861655879c4452aced7c15041e8e7ceb88bcba927e06",
+        "sha256": "1f05c29b4d611e79f79b877d6220f95f9efee875823ae62fe23930f16ace8b9c",
         "bytes": 755,
         "rows": 1
       },
       "SOURCE-MAT-8A028E07CA77C88C6217": {
         "file": "material-object-details/e66c644903cd24f6b487.json.gz",
-        "sha256": "beaa1da2507a3a9387183f449463980edcbfb9fee976465f881954134a5da073",
+        "sha256": "b4e19b4465545bb38816641fff12e148846be33ed40edfe6d67ca4cac2661b55",
         "bytes": 779,
         "rows": 1
       },
       "SOURCE-MAT-2DDEB3646CFF4B123AA8": {
         "file": "material-object-details/f32ef89d4b414e772fde.json.gz",
-        "sha256": "e0da17be0f212fc58cbb7b8cc3ed88a15e8a72d7bf9dfe8b5eec3da978135aa9",
+        "sha256": "1f50fb02cd7831b98025dc89c8da2841c9cb6233437775e9b72589567268d567",
         "bytes": 746,
         "rows": 1
       },
       "SOURCE-MAT-939686697864E247B482": {
         "file": "material-object-details/5b0b3184b1eb943dd50c.json.gz",
-        "sha256": "c3566f9f256da8ef9345a3552ed4a7f97f9685d0dd07908e3e7895dd6495e0af",
+        "sha256": "948d6b58cd7be1f1a9727d20ec1e72b313e8bd2ea25996aab873462db3f222ee",
         "bytes": 762,
         "rows": 1
       },
       "SOURCE-MAT-4A827ED8F19132725B5D": {
         "file": "material-object-details/139f77a959f587a2ebba.json.gz",
-        "sha256": "5e6c2440d5d00f346ae7d5d771d537b9c985dec0375699ba22c01198ccb676b0",
+        "sha256": "466cf23f71ed38a4b69214974ee53fd405d5b541d8bcfd54923e3002742ec2ff",
         "bytes": 1089,
         "rows": 5
       },
       "SOURCE-MAT-60D9636AD9C377CDF07F": {
         "file": "material-object-details/591c9dabb19eb1a83b86.json.gz",
-        "sha256": "1752b964cad60bbb4b55fa48651be84ed174001ca5922677b885220a17da3eaa",
+        "sha256": "e521fd70fb5bb7df3bb830a3404946ea158e12ae403a228a302e39050049d374",
         "bytes": 704,
         "rows": 1
       },
       "SOURCE-MAT-AD6A28340DD32D3F688A": {
         "file": "material-object-details/72d186ea9522958b4fb4.json.gz",
-        "sha256": "a797de9e807d0df581ab9f5c3e4bf22dc25303c9cfe1bf75593673546b49da47",
+        "sha256": "a08ed55b07f1fbc4da75771c3df0d2f7013de82a9ec443eac11e2907c229c83b",
         "bytes": 862,
         "rows": 1
       },
       "MAT-SOURCE-GFRP-MATRIX-UNSPEC": {
         "file": "material-object-details/9d2eb558b447439f9619.json.gz",
-        "sha256": "5ffe3f9022ba68abcfffa401b98ec793fc02d9e449be30661cfaf627c887ed15",
+        "sha256": "4681447f34f6d95274fef6ba521f8445966d788700a7d096a07656d85419c542",
         "bytes": 1109,
         "rows": 2
       },
       "MAT-SOURCE-BITUMINOUS-ROOFING-BROAD": {
         "file": "material-object-details/cf2bb730e5d49107e139.json.gz",
-        "sha256": "e1cc671ccb0bcbf9e6064ddd9e3f86ce1a0af0822de3c6378b7a4bca1331bf6d",
+        "sha256": "041ab1e83facf34cbb2765fbde73c7ba60a6832e8323b50a4493eb401bf3f21e",
         "bytes": 1571,
         "rows": 7
       },
       "MAT-SOURCE-KNOTTED-WOOL-COTTON-TEXTILE": {
         "file": "material-object-details/5d4667fd9caa8ff70beb.json.gz",
-        "sha256": "6c73c559f404882142108211c855b492b430c07423269d8ad28c38abe10799d3",
+        "sha256": "95ad4c4872a4051ecc93fba549adaf944ba5cc8bc51d2b0760813ec6531bd83a",
         "bytes": 909,
         "rows": 1
       },
       "MAT-SOURCE-STRAW-WEAVING-BROAD": {
         "file": "material-object-details/c0a6c377f22c9fc37016.json.gz",
-        "sha256": "c0eb2cb5011200dbf574e7a6587e6141657a9ae5941501099b5d225cfe47c6b4",
+        "sha256": "1e02542285935185bf6d36c4bcf58350ea53e49d3891d60202eba1fa9c2d80b9",
         "bytes": 2321,
         "rows": 14
       },
       "MAT-SOURCE-RECYCLED-FIREHOSE-COMPOSITE": {
         "file": "material-object-details/9c11e56c38d4259b5c41.json.gz",
-        "sha256": "1f433ca7c646fd06993f91d96f6c24e8cbc6c7a39d39bf4ad50cc829b3c4c0aa",
+        "sha256": "13794bae421675017224f766c44e2c7f5c9a260a9941ab4a81f8a939fb779827",
         "bytes": 1305,
         "rows": 5
       },
       "MAT-SOURCE-PLANT-WEAVING-BROAD": {
         "file": "material-object-details/aa18bfb4cb311f5622b7.json.gz",
-        "sha256": "85b3eb38eedb171b317116f1d0fb389a4252b86b4cf74425d0cf1b0735e7f020",
+        "sha256": "dd35216d2ea7f01a20740817967a06bbecdffdce37c10063f6d3008faa53c96e",
         "bytes": 1389,
         "rows": 4
       },
       "MAT-SOURCE-BIRCH-BARK": {
         "file": "material-object-details/c19b9c1eb8302158e09a.json.gz",
-        "sha256": "7e6151120821f2712cf9da41d13cdf22f9827c9db20cbee2b4a54bd718d27c29",
+        "sha256": "9f0b383f2767ffc4bba274ba7bcdc4fdd7304d52d2535297fc2d550e5347c2cf",
         "bytes": 738,
         "rows": 1
       },
       "MAT-SOURCE-PATENT-LEATHER-BROAD": {
         "file": "material-object-details/ca6583252eaa28b4a295.json.gz",
-        "sha256": "bc5171bca86a9de6fac4ad126d3bb6af5f9d7469e25ef52dfc18d41df1bb8d33",
+        "sha256": "0713fb46689f54cc7b08cbcf215e0b704529f7a12351dd7e6e61d58e69a5ee70",
         "bytes": 867,
         "rows": 1
       },
       "MAT-SOURCE-POLYMER-COATED-FABRIC-BROAD": {
         "file": "material-object-details/c9887f8162acd6675fd6.json.gz",
-        "sha256": "559a92d3f2c58e903d940329d4ee5ead82d8581f761d359582e858423ecd9379",
+        "sha256": "1e476888eb912e13115d474d62e178d574ae7d54bd389a6c2f9743c73cb2166e",
         "bytes": 1155,
         "rows": 3
       },
       "MAT-SOURCE-LEATHERITE-SOURCE-BROAD": {
         "file": "material-object-details/fc1bfd2ee91c4f3f50b4.json.gz",
-        "sha256": "cf5a77df0a4fb4d7f88649a54b0628fa63a56c3db20808407db541e4704dd6e7",
+        "sha256": "41f50b0ce24e43cca29bb244e2cee82aacd50218d308bb76fe614fb682994af8",
         "bytes": 894,
+        "rows": 1
+      },
+      "MAT-SOURCE-CELLULOSE-CLEANING-SPONGE-BROAD": {
+        "file": "material-object-details/5a28d63e2e0225e2ecb7.json.gz",
+        "sha256": "afc8f16eef7fc807d9b0905e9a62ee13b944ce3e1626a319f3da2a86a51a6173",
+        "bytes": 945,
         "rows": 1
       }
     }
   },
   "view_payload_sha256": {
-    "scaling-data.js": "8a25f4ab5d9c53db286195edd6ca853854142d55ee75d3acb51670a5e479a5d3",
-    "scaling-data.js.gz": "6c73d8c169b45519da8662c40c7abba04cdbfa0ab81bd1d0f056f7250a904de7",
-    "research-data.js": "310486afd4ddfa34ad2b23e10662baca88b7cac730f3f0883db4d894e4d66d70",
-    "phase1-ranges-data.js": "8723419b5156079921a8acc6dcfa48b222dbd57e8622d152b1d331f51e792d21",
-    "data.js": "8c0e5dac3fe579b32686d115d1030f4fdcb15dfc0c35ffabd420aaa42a361bef",
-    "target-reference-data.js": "a2d76b8a02be739f546329fcf485759bab0f2ffae8524feccf72b8a576a09196",
-    "scaling-display-data.js": "2fb34ec22a2a046a3b1dfcea1d299b13f60bfa49a8cb7b6746fec66352a20178",
-    "scaling-display-data.js.gz": "997e306097e4d7474a78bb944466ff10733779504f6abc5c133c5b16f138eb48",
-    "material-object-index.json.gz": "22379ced080718d33b4371df378ea2df81d7e6dbb9c1ac5b9662fa9c33e2d007"
+    "scaling-data.js": "b10efa0edd1cc7c33335ae76d0b5e2346e6c4408f915e177b10ffea65858d141",
+    "scaling-data.js.gz": "4b703b8ec698675473ea6a0a9f6ef9b8468d83746283d7cec29d0e788bb6c3b4",
+    "research-data.js": "60df088cccab9095d7822d4cf8a26c04195a3e19eaf91368fab2c87ac54dad5d",
+    "phase1-ranges-data.js": "23721a30a7d879990e0978496b8400ebcce54877499f91330727bcea8fc3a31d",
+    "data.js": "941634e252be231c9520b9fc87107ca47c9e5859c53be5e3e4e5965ba030c79e",
+    "target-reference-data.js": "31fa5ecca2c1df8ec3c5b2c08ed1860de2068375353e7a940b7028e3497ee81c",
+    "scaling-display-data.js": "58634bd278f822738e5f3b2f9ef8c21afdd217b1211f5c43349b516426a2f5d5",
+    "scaling-display-data.js.gz": "6c257f2f42b5dc542995db7a0178162564ea2caf245b48dcbfe101a827ed948f",
+    "material-object-index.json.gz": "a8b029b166d6c3dae37798c57066e6b53de3fe2d761833f264c81907a4a37655"
   },
   "object_pages": {
     "scaling-assets/gso-001.json": {
@@ -1831,19 +1840,19 @@
   },
   "inline_payloads": {
     "scaling-bootstrap": {
-      "sha256": "5bf181be8b3b548abe9f3aff01707008459c82edbc92d327482094931990618a",
-      "release_id": "da5ac56dc5"
+      "sha256": "3c82036e3b805521169987ae3faa08f4ea9968cf0a3f68f86fc4c90db862ac67",
+      "release_id": "338e057260"
     }
   },
   "current_tables_downloads": {
     "manifest": "scaling-assets/current-tables/download-manifest.json",
-    "sha256": "e6ad4a7838adb853967067008c4085b306a37be1a5fd08888ba23132592a9e2b",
+    "sha256": "330a5e79d53c0a70ac799e0c2031e79c9b2c5d65238d1c1917c6377ed92fed72",
     "files": 24,
-    "source_delivery_summary_sha256": "cf8830590f703686d1da9ed2eaaeba990757ee572063f34bb0dd1262b02cf515"
+    "source_delivery_summary_sha256": "aac9f227643f053b98a0fae34f4f5d8489fcd44e7eb52878a6ac9ef2130e491f"
   },
   "scope_projection": {
     "version": 2,
-    "source_release": "f0c325f1cf",
+    "source_release": "8d2c036c53",
     "excluded_material_ids": [
       "MAT-APPROX-LIQUID-CHEMICAL",
       "MAT-SALT-WATER-BROAD",
@@ -1860,53 +1869,53 @@
     "encoding": "gzip",
     "uncompressed_sha256": "b42d7ee9da3810ce57990b255e4ad948855dd85e87e10991d517f205fd4397af",
     "uncompressed_bytes": 58120843,
-    "sha256": "65c54093fef7378bfe84c6b84a541de384e75fcc227630f8908c628aff4384e8",
+    "sha256": "ad88fa12267154ad9f73c76a9eb07bb631ab4c2731ef5050ac879089be358920",
     "bytes": 1579009,
     "scope": "SOURCE_AUTHORED_ENTITY_AND_BINDING_RECORDS_NO_NUMERICAL_PROPERTY_INHERITANCE"
   },
   "transport_export": {
-    "release_id": "da5ac56dc5",
+    "release_id": "338e057260",
     "payloads": {
       "scaling-data.js": {
-        "original_sha256": "8a25f4ab5d9c53db286195edd6ca853854142d55ee75d3acb51670a5e479a5d3",
-        "gzip_sha256": "6c73d8c169b45519da8662c40c7abba04cdbfa0ab81bd1d0f056f7250a904de7",
+        "original_sha256": "b10efa0edd1cc7c33335ae76d0b5e2346e6c4408f915e177b10ffea65858d141",
+        "gzip_sha256": "4b703b8ec698675473ea6a0a9f6ef9b8468d83746283d7cec29d0e788bb6c3b4",
         "original_bytes": 62777799,
-        "gzip_bytes": 2004630,
+        "gzip_bytes": 2004649,
         "variable": "SCALING_DATA"
       },
       "research-data.js": {
-        "original_sha256": "310486afd4ddfa34ad2b23e10662baca88b7cac730f3f0883db4d894e4d66d70",
-        "gzip_sha256": "b66f9f91967600e14fea033dd90b2679e9f8e82067dfeafbb81d265cba6df03a",
-        "original_bytes": 26982757,
-        "gzip_bytes": 3269114,
+        "original_sha256": "60df088cccab9095d7822d4cf8a26c04195a3e19eaf91368fab2c87ac54dad5d",
+        "gzip_sha256": "cb2bf18dba65004355f8cc44769bf6d197ba6f860500f1b8b855ecebb88fb90d",
+        "original_bytes": 27024856,
+        "gzip_bytes": 3275757,
         "variable": "SITE_DATA"
       },
       "phase1-ranges-data.js": {
-        "original_sha256": "8723419b5156079921a8acc6dcfa48b222dbd57e8622d152b1d331f51e792d21",
-        "gzip_sha256": "b7cba58661ab43ed0a4446aab0a66b95c151de1fe869292375573c374ab735bf",
-        "original_bytes": 31221105,
-        "gzip_bytes": 2199618,
+        "original_sha256": "23721a30a7d879990e0978496b8400ebcce54877499f91330727bcea8fc3a31d",
+        "gzip_sha256": "d5c12c039eb6a41b35e6847a8628f8d78362c80e80f455c070932427ddc50f9e",
+        "original_bytes": 31282099,
+        "gzip_bytes": 2207655,
         "variable": "PHASE1_RANGES"
       },
       "data.js": {
-        "original_sha256": "8c0e5dac3fe579b32686d115d1030f4fdcb15dfc0c35ffabd420aaa42a361bef",
-        "gzip_sha256": "5080230ae08dbc5059b942a2714764fa7388ecfa889a4e28f8bea75e0a503e4d",
+        "original_sha256": "941634e252be231c9520b9fc87107ca47c9e5859c53be5e3e4e5965ba030c79e",
+        "gzip_sha256": "3792679ae6ac7e455204a9a695a62ca8ac882f90fbd04b498277f4b9cdd99a22",
         "original_bytes": 39941642,
-        "gzip_bytes": 1634599,
+        "gzip_bytes": 1634600,
         "variable": "SITE_DATA"
       },
       "target-reference-data.js": {
-        "original_sha256": "a2d76b8a02be739f546329fcf485759bab0f2ffae8524feccf72b8a576a09196",
-        "gzip_sha256": "3f7b1308a6fbcb81693fc5db9c6c1e4886f219dd587466aed92ba86ad761e299",
-        "original_bytes": 10838767,
-        "gzip_bytes": 849612,
+        "original_sha256": "31fa5ecca2c1df8ec3c5b2c08ed1860de2068375353e7a940b7028e3497ee81c",
+        "gzip_sha256": "8620b1bc0f83ed1454db2d72fb3dbbd355425e31097fe9ef49dedabcfc0c5630",
+        "original_bytes": 10855571,
+        "gzip_bytes": 852126,
         "variable": "TARGET_REFERENCE_DATA"
       },
       "scaling-display-data.js": {
-        "original_sha256": "2fb34ec22a2a046a3b1dfcea1d299b13f60bfa49a8cb7b6746fec66352a20178",
-        "gzip_sha256": "997e306097e4d7474a78bb944466ff10733779504f6abc5c133c5b16f138eb48",
+        "original_sha256": "58634bd278f822738e5f3b2f9ef8c21afdd217b1211f5c43349b516426a2f5d5",
+        "gzip_sha256": "6c257f2f42b5dc542995db7a0178162564ea2caf245b48dcbfe101a827ed948f",
         "original_bytes": 14253646,
-        "gzip_bytes": 505521,
+        "gzip_bytes": 505524,
         "variable": "SCALING_DATA"
       }
     },
@@ -1916,19 +1925,19 @@
         "bytes": 50154
       },
       "data.js": {
-        "sha256": "cc77dbe051d267e8841f7f746d957b8fb00e26642defa3f28ceb296447f5e75d",
+        "sha256": "6e596a61d6af1500d50dcf1d23bf920536024258a11320e5a5e6e2be46bb845d",
         "bytes": 214
       },
       "material-object-index.json.gz": {
-        "sha256": "22379ced080718d33b4371df378ea2df81d7e6dbb9c1ac5b9662fa9c33e2d007",
-        "bytes": 10889840
+        "sha256": "a8b029b166d6c3dae37798c57066e6b53de3fe2d761833f264c81907a4a37655",
+        "bytes": 10897325
       },
       "payload-loader.js": {
         "sha256": "1a77424845845e0d6d2b4b943b36af6a3fa8fdef79b233e8407f66d6bbc2738d",
         "bytes": 3925
       },
       "phase1-ranges-data.js": {
-        "sha256": "aa0c458d7d0d83e16aaba9cb57cf0441138c41e98f83018fd016ceb4739f9293",
+        "sha256": "4c86a9d43c91a63c75255405f731b94120cbd89341964ac905154305d1e38a7f",
         "bytes": 232
       },
       "phase1-ranges.js": {
@@ -1936,24 +1945,24 @@
         "bytes": 23030
       },
       "research-data.js": {
-        "sha256": "1b8c6f888edab6fd55baa694ab6994a70ae38ba17f7fabb9aeb62146db85e614",
+        "sha256": "9aa9de09cf8c854d87b8e1cab612f10e110983155c196c63785927c55da07d37",
         "bytes": 223
       },
       "scaling-data.js": {
-        "sha256": "9eaa33e92461af9d434a6c6e514f021259aa3248af43313b5d2a6788bee9f9ed",
+        "sha256": "f1e2711342d450ffce8a799e4efea1d989950986d6fef5481861b51e5ad213a4",
         "bytes": 225
       },
       "scaling-data.js.gz": {
-        "sha256": "6c73d8c169b45519da8662c40c7abba04cdbfa0ab81bd1d0f056f7250a904de7",
-        "bytes": 2004630
+        "sha256": "4b703b8ec698675473ea6a0a9f6ef9b8468d83746283d7cec29d0e788bb6c3b4",
+        "bytes": 2004649
       },
       "scaling-display-data.js": {
-        "sha256": "f10c0f04f74ae6fa697387fd2cc39e143b0e5a71609ebafb323d2bb1d452b4a5",
+        "sha256": "baec978b61b63425959ef84ae90c013f32a02e653deda21402f54f2ded54c64f",
         "bytes": 233
       },
       "scaling-display-data.js.gz": {
-        "sha256": "997e306097e4d7474a78bb944466ff10733779504f6abc5c133c5b16f138eb48",
-        "bytes": 505521
+        "sha256": "6c257f2f42b5dc542995db7a0178162564ea2caf245b48dcbfe101a827ed948f",
+        "bytes": 505524
       },
       "scaling.js": {
         "sha256": "899ac6f1491f40b32cbf46f567a758a58c0260ce98e261012c84023644f9b1c6",
@@ -1968,7 +1977,7 @@
         "bytes": 10829
       },
       "target-reference-data.js": {
-        "sha256": "1ea8ca9acfb067072a03d3e9cc1b17556e123c27e4285294eb73832b5730fdcd",
+        "sha256": "6051fb48089ab02ea1595f74770b9257af46e0f78592e5f66acf1bbf62b32ffa",
         "bytes": 243
       }
     }
@@ -1976,28 +1985,28 @@
   "progressive_coverage": {
     "bootstrap": "phase1-bootstrap.js",
     "compressed_bootstrap": "phase1-bootstrap.js.gz",
-    "bootstrap_sha256": "08868508c5267c1d209b9c8bd112b28c837b46b07627a005ec2f53fcd0f31254",
-    "bootstrap_logical_sha256": "9d8fe7e6c55ba6c15ec42987f3780771d526d8d9cf2d0adc1b761ec785527f40",
-    "compressed_bootstrap_sha256": "2827119bfc354efaed928697a34e92de254a08ad76a4db7612507a83416ed4be",
-    "compressed_bytes": 417155,
+    "bootstrap_sha256": "e876403cd6d378e5c8179c90ecc7c55de4db04b5d8a16af0fdcab87e48ebc5b5",
+    "bootstrap_logical_sha256": "0114d5dc3fde2878a0fd5274a7af79de056b8dc852aae8bc332d00a8fc1a9511",
+    "compressed_bootstrap_sha256": "0f5c07b756aec87e99ae7b3aab043d750bdfdac0aea80031a827ac35bee00194",
+    "compressed_bytes": 417869,
     "detail_directory": "coverage-details/",
     "chunks": 43,
-    "records": 5464,
+    "records": 5472,
     "original_full_payload_retained": true,
     "original_fields_preserved": true,
-    "scientific_payload_sha256": "8723419b5156079921a8acc6dcfa48b222dbd57e8622d152b1d331f51e792d21",
-    "data_revision": "da5ac56dc5"
+    "scientific_payload_sha256": "23721a30a7d879990e0978496b8400ebcce54877499f91330727bcea8fc3a31d",
+    "data_revision": "338e057260"
   },
   "progressive_material_tree": {
     "bootstrap": "research-bootstrap.js",
     "compressed_bootstrap": "research-bootstrap.js.gz",
-    "bootstrap_sha256": "c8a75c026206905c09c60ec42ff5cc07e7abf3b902728020ed9540f675644355",
-    "compressed_bootstrap_sha256": "90587cf1dcde89d441b80b98a0f21cfb9e49dfdec928e13288c5dd49765474e1",
+    "bootstrap_sha256": "bccc6dfa492f51545cc8e23d1c8d4c282cd7f740a34d3ec317486c8a0051d58e",
+    "compressed_bootstrap_sha256": "328e9eed8dc24c52f5791d3fbdde4aff19370ee4d28f8f75e30ae8a3908941ae",
     "detail_directory": "research-details/",
-    "scientific_payload_sha256": "310486afd4ddfa34ad2b23e10662baca88b7cac730f3f0883db4d894e4d66d70",
+    "scientific_payload_sha256": "60df088cccab9095d7822d4cf8a26c04195a3e19eaf91368fab2c87ac54dad5d",
     "original_full_payload_retained": true,
     "evidence_loaded_on_demand": true,
-    "data_revision": "da5ac56dc5"
+    "data_revision": "338e057260"
   },
-  "ui_revision": "ce9bc4804466-c8a75c026206-1a7742484584-b19f91d71538-2827119bfc35"
+  "ui_revision": "ce9bc4804466-bccc6dfa492f-1a7742484584-b19f91d71538-0f5c07b756ae"
 }

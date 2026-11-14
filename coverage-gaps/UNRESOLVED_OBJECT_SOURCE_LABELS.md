@@ -1,10 +1,32 @@
 # 当前物体来源标签待对齐清单
 
-已接受但尚未完全对齐的来源关系 16 条，涉及 4 个不同来源标签。其中 3 条已有部分粗粒度关联，其余仍无已审关联。
+已接受但尚未完全对齐的来源关系 41 条，涉及 26 个不同来源标签。其中 28 条已有部分粗粒度关联，其余仍无已审关联。
 
 这些是当前物体的待办。已接受的粗粒度关联按规范ID计入分母；尚未对齐的剩余描述单列，不与规范ID重复计数。原文同名词、并列材料和多选描述不自动当作不同规范材料，先按来源/组件核对后再接入证据。不表示这些材料没有文献。物体/组件ID及来源见同名CSV。
 
 - Mixed synthetic and natural materials, composition unspecified：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
 - Velvet garment panels with gold embroidery thread：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
 - asphalt：2 条关系；2 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- cellulose：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- cole hardware dishtowel, blue：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- cole hardware dishtowel, blue/white：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- cole hardware dishtowel, multicolors：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- cole hardware dishtowel, red：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- cole hardware dishtowel, stripe：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
 - fiber：12 条关系；12 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- home fashions washcloth, linen：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- home fashions washcloth, olive green：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- international paper willamette #4 brown bag 500-count：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- leather：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- now designs dish towel, mojave, 18" x 28"：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- provence bath towel, royal blue：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- room essentials kitchen towels, 16" x 26" - 2 count：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- tag dishtowel, 18" x 26"：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- tag dishtowel, basket weave red, 18" x 26"：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- tag dishtowel, dobby stripe blue, 18' x 26"：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- tag dishtowel, green：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- tag dishtowel, waffle gray checks, 18" x 26"：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- threshold hand towel, blue medallion, 16" x 27"：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- threshold textured damask bath towel - pink：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- woodan railway：1 条关系；1 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。
+- wooden railway：4 条关系；4 个物体；尚未完全对齐；部分粗关联及剩余构造范围见CSV。

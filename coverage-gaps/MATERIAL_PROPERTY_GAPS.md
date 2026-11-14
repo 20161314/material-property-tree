@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3895；三项各有来源值1691。
+材料3899；三项各有来源值1691。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -23,7 +23,6 @@
 - RESEARCH-MAT-58775794ECD3390C365D 生物材料 · Chitosan-keratin composite film / Chitosan-keratin composite film：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-13D437864F919648F1B7 生物材料 · Compression-molded keratin film / Compression-molded keratin film：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-225D98E414A900E09276 生物材料 · Deacetylated Agaricus bisporus chitosan-beta-glucan sheet / Deacetylated Agaricus bisporus chitosan-beta-glucan sheet：缺 nu；已有完整组0、缺项组1。
-- MAT-NATURAL-DEAD-LEAF-GRASS-BROAD `dead_leaf_grass` 植物有机材料（NVIDIA 来源宽标签） / Dead leaf/grass plant material, NVIDIA source broad label：缺 E;nu；已有完整组0、缺项组6。
 - RESEARCH-MAT-1CAC8A9E6D6B23ACE70E 生物材料 · Dendropanax morbiferus air-dried leaf fragments / Dendropanax morbiferus air-dried leaf fragments：缺 E;nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-9E3828B67BF899365F0E 生物材料 · Deproteinized Agaricus bisporus chitin-beta-glucan paper yarn / Deproteinized Agaricus bisporus chitin-beta-glucan paper yarn：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-A81CF0897F398FF8CCA2 生物材料 · Deproteinized Agaricus bisporus chitin-beta-glucan sheet / Deproteinized Agaricus bisporus chitin-beta-glucan sheet：缺 nu；已有完整组0、缺项组1。
@@ -287,6 +286,7 @@
 - RESEARCH-MAT-0C74AB4E0E841163A37D 复合材料 · Tufnol PGM/2 polyester continuous-roving glass mat laminate / Tufnol PGM/2 polyester continuous-roving glass mat laminate：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-99F19542F14D2A250602 复合材料 · Tufnol PGM/3 polyester continuous-roving glass mat laminate / Tufnol PGM/3 polyester continuous-roving glass mat laminate：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-26C1767CA9311216C530 复合材料 · Tufnol Whale Brand medium-weave cotton phenolic laminate sheet / Tufnol Whale Brand medium-weave cotton phenolic laminate sheet：缺 nu;rho；已有完整组0、缺项组1。
+- MAT-SOURCE-CELLULOSE-CLEANING-SPONGE-BROAD 纤维素基清洁海绵（配方未详） / Cellulose-based cleaning sponge, formulation unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-40F14F564FEF5D84AFD6 泡沫 · AIREX C70 polymer foam C70.130 / AIREX C70 polymer foam C70.130：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-5748A48E68FA18E94766 泡沫 · AIREX C70 polymer foam C70.55 / AIREX C70 polymer foam C70.55：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-44A1C9E9D9049AD6E092 泡沫 · AIREX C70 polymer foam C70.75 / AIREX C70 polymer foam C70.75：缺 nu；已有完整组0、缺项组1。
@@ -606,6 +606,7 @@
 - RESEARCH-MAT-F63F4D62FE5DC7878BEE 皮革 · Cationic-dyeable modified-PET/polyurethane nonwoven synthetic suede / Cationic-dyeable modified-PET/polyurethane nonwoven synthetic suede：缺 E;nu；已有完整组0、缺项组5。
 - RESEARCH-MAT-3A220A79E289D2814A56 皮革 · Chrome-free synthetically tanned full-grain cattle leather with casein/polyurethane surface finish / Chrome-free synthetically tanned full-grain cattle leather with casein/polyurethane surface finish：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9569EDF665D8B231C089 皮革 · Chrome-free synthetically tanned full-grain cattle leather, uncoated / Chrome-free synthetically tanned full-grain cattle leather, uncoated：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-E42D07F127A5EE94F52A 皮革 · Chrome-tanned bovine wet-blue hide, dried leather / Chrome-tanned bovine wet-blue hide, dried leather：缺 E;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-647973332A319859707E 皮革 · Chrome-tanned cattle hide leather,pickling 2% pTsOH / Chrome-tanned cattle hide leather,pickling 2% pTsOH：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-1F8BA92B0E91804975CB 皮革 · Chrome-tanned cattle hide leather,pickling Control / Chrome-tanned cattle hide leather,pickling Control：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-04465CFA3F36665D4D4E 皮革 · Chromium-tanned full-grain cattle leather, uncoated / Chromium-tanned full-grain cattle leather, uncoated：缺 E;nu；已有完整组0、缺项组2。
@@ -633,7 +634,7 @@
 - SOURCE-MAT-F634E6F2E8FA1662BFEA 全粒面皮革（来源构造标签） / full-grain leather — source-labelled material, finer composition unspecified：缺 E;nu；已有完整组0、缺项组5。
 - SOURCE-MAT-8A028E07CA77C88C6217 磨砂皮革（来源构造标签） / nubuck leather — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - SOURCE-MAT-60D9636AD9C377CDF07F 羊皮（来源构造标签） / sheepskin — source-labelled material, finer composition unspecified：缺 nu；已有完整组0、缺项组6。
-- SOURCE-MAT-1FE70C971D491482EF79 合成绒面材料（来源构造标签） / synthetic suede — source-labelled material, finer composition unspecified：缺 E;nu；已有完整组0、缺项组5。
+- SOURCE-MAT-1FE70C971D491482EF79 合成绒面材料（来源构造标签） / synthetic suede — source-labelled material, finer composition unspecified：缺 E;nu；已有完整组0、缺项组6。
 - SOURCE-MAT-7D9FDA3D773C9610A031 意大利头层皮革（来源构造标签） / top-grain Italian leather — source-labelled material, finer composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-1E779E0A8E5D9B9A73BB 金属 · 18-8 stainless steel / 18-8 stainless steel：缺 E;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-18A771EFD069B32A53E8 金属 · AWM404GP stainless steel / AWM404GP stainless steel：缺 nu；已有完整组0、缺项组1。
@@ -703,6 +704,8 @@
 - RESEARCH-MAT-4852947A6D4AB6C3273B 天然植物材料 · Calamus nambariensis var. yingjiangensis / Calamus nambariensis var. yingjiangensis：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-80F800333CB84BEA7F3E 天然植物材料 · Calamus simplicifolius / Calamus simplicifolius：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-C1F39D7B056955990810 天然植物材料 · Calamus yunnanensis / Calamus yunnanensis：缺 nu；已有完整组0、缺项组1。
+- MAT-NATURAL-DEAD-LEAF-GRASS-BROAD `dead_leaf_grass` 植物有机材料（NVIDIA 来源宽标签） / Dead leaf/grass plant material, NVIDIA source broad label：缺 E;nu；已有完整组0、缺项组11。
+- RESEARCH-MAT-9CA97810C290138E365C 天然植物材料 · Dried mixed municipal leaves, loose-fill insulation / Dried mixed municipal leaves, loose-fill insulation：缺 E;nu；已有完整组0、缺项组5。
 - MAT-SOURCE-PLANT-WEAVING-BROAD 植物编织材料（种属与构造未详） / Plant weaving material, species and construction unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - MAT-SOURCE-STRAW-WEAVING-BROAD 草秆编织材料（植物种属未详） / Straw plant weaving material, species unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-DC1644A54F30CC721E0C 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE1 COMPARATIVE1 formulation / Aerated frame-cast soap;JP2006045437A TABLE1 COMPARATIVE1 formulation：缺 nu;rho；已有完整组0、缺项组1。
@@ -1798,6 +1801,7 @@
 - RESEARCH-MAT-7E94570B631441CCD06F 岩石与矿物 · Strathbogie granite / Strathbogie granite：缺 rho；已有完整组0、缺项组29。
 - RESEARCH-MAT-D69DE28AC212D7C4FA58 岩石与矿物 · Stripa granite / Stripa granite：缺 rho；已有完整组0、缺项组14。
 - RESEARCH-MAT-B080BAD23EDED2D32CB3 岩石与矿物 · Valdieri marble / Valdieri marble：缺 rho；已有完整组0、缺项组4。
+- RESEARCH-MAT-61DB4749DA680949ABA4 纺织材料 · 100% PET woven micro-suede commercial fabric, Sew Classic Micro-suede / 100% PET woven micro-suede commercial fabric, Sew Classic Micro-suede：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-D102448B63260DD5BA97 纺织材料 · 100% cotton plain-woven fabric; 24 warp x 24 weft yarns/cm; 149.94 g/m2; 0.48 mm / 100% cotton plain-woven fabric; 24 warp x 24 weft yarns/cm; 149.94 g/m2; 0.48 mm：缺 rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-906E5C272CAD4E5C56A7 纺织材料 · 100% polyester fleece acoustic sheet / 100% polyester fleece acoustic sheet：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7D1214D92DED90BD52CF 纺织材料 · 100% polyester nonwoven upholstery/mattress batting / 100% polyester nonwoven upholstery/mattress batting：缺 E;nu；已有完整组0、缺项组1。
