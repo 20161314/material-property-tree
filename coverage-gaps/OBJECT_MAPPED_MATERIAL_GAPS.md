@@ -1,6 +1,6 @@
 # 当前物体关联材料补缺清单
 
-物体关联材料 231；三项各有来源值 172；缺项 59；覆盖率 74.46%。
+物体关联材料 231；三项各有来源值 173；缺项 58；覆盖率 74.89%。
 
 覆盖范围含当前已接受的来源标签和合理近似材料选项；不代表每个组件材料身份均已核定，也不代表商品实测或可自动赋值。不同来源分别提供三项仍不拼成完整来源组。
 
@@ -8,7 +8,7 @@
 
 材料身份限制：[查看标签待纠正说明](MATERIAL_IDENTITY_NOTICES.md)。18条蜡烛/皂块标签已逐组件纠正；另2条范围待核。新标签不继承泥类物性。
 
-无关联物体但三项齐全材料 1525 保留；无关联物体且缺项 2159 单列研究候选。分组变化不算补齐证据。
+无关联物体但三项齐全材料 1525 保留；无关联物体且缺项 2160 单列研究候选。分组变化不算补齐证据。
 
 - `MAT-NATURAL-DRIED-MOSS-SOURCE-BROAD`：干燥苔藓（种类/处理未详） / Dried moss, species/treatment unspecified；缺 **E;nu**；关联物体1、组件1。
 - `SOURCE-MAT-4A827ED8F19132725B5D`：Twinface 双面羊皮（来源构造标签） / Twinface sheepskin — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体5、组件5。
@@ -37,7 +37,6 @@
 - `SOURCE-MAT-AD6A28340DD32D3F688A`：磨砂材料（源标签 nubuck，基材未进一步确认） / nubuck — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
 - `SOURCE-MAT-BD46CCABC4721F394E69`：Solyte 中底材料（源商品名）（来源构造标签） / Solyte branded material — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体2、组件2。
 - `SOURCE-MAT-D8A4EF9DB13DA86281BA`：防水皮革（来源构造标签） / waterproof leather — source-labelled material, finer composition unspecified；缺 **E;nu;rho**；关联物体1、组件1。
-- `MAT-PAPER-COTTON-FIBER-BROAD`：棉纤维纸（配方/定量未详） / Cotton-fibre paper, formulation/basis weight unspecified；缺 **nu**；关联物体7、组件7。
 - `MAT-PAPER-RATTAN-WEAVE-BROAD`：纸绳/仿藤编织物（结构未详） / Paper-rope/rattan weave, construction unspecified；缺 **E;nu;rho**；关联物体5、组件5。
 - `MAT-PLASTIC-UREA-FORMALDEHYDE-BROAD`：脲醛塑料（牌号/填料未详） / Urea-formaldehyde plastic, grade/filler unspecified；缺 **nu**；关联物体3、组件3。
 - `MAT-POLYRESIN-BROAD`：聚合物树脂复合材料（配方未详） / Polyresin, formulation unspecified；缺 **E;nu**；关联物体1、组件1。
