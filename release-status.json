@@ -1,25 +1,25 @@
 {
   "schema_version": 2,
-  "release_id": "fb24e7c2c1",
+  "release_id": "51c7bb68a3",
   "date": "2026-11-14",
   "timezone": "Asia/Shanghai",
   "local_validation": "BUILD_COUNTS_AND_LOSSLESS_DOWNLOADS_VERIFIED",
   "validation_scope": "Build consistency only; scientific/browser/publish reviews are separate.",
   "github_state": "PENDING_SEPARATE_DEPLOYMENT_VERIFICATION",
-  "complete": 6188,
-  "partial": 94872,
-  "total_records": 101060,
-  "main_complete": 2431,
-  "main_partial": 3021,
+  "complete": 6184,
+  "partial": 94885,
+  "total_records": 101069,
+  "main_complete": 2427,
+  "main_partial": 3034,
   "sciglass_complete": 3757,
   "sciglass_partial": 91851,
   "object_identities": 43675,
   "distinct_object_component_pairs": 71130,
   "component_status_rows": 71179,
-  "material_labels": 3875,
-  "materials_with_complete": 1666,
+  "material_labels": 3893,
+  "materials_with_complete": 1663,
   "materials_with_all_properties": 1691,
-  "materials_without_value": 25,
+  "materials_without_value": 32,
   "accepted_bound_relations": 13472,
   "accepted_bound_components": 7602,
   "quarantined_bound_relations": 186,
@@ -31,9 +31,9 @@
   "source_material_labels_are_not_measured_properties": true,
   "download_manifest": {
     "manifest": "scaling-assets/current-tables/download-manifest.json",
-    "sha256": "5dbe2dec7e86df0fc1ef04f4a04c59d70ec1bce5babe3778737ced7159dce085",
+    "sha256": "2702d45e7a68d632c3df6a10ac7fe1a42783db62f7075878f780b3d6495687b2",
     "files": 24,
-    "source_delivery_summary_sha256": "96212092b5d92748703f46c9ece2263f135f7b436e4c264291eaf5bcebdedc97"
+    "source_delivery_summary_sha256": "66b334cf1879a075640bac02c15b9cc055b2526af6e06b7abce9ffa679d072c9"
   },
-  "source_release_id": "d7a386878a"
+  "source_release_id": "9396ef5678"
 }

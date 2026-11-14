@@ -37,7 +37,7 @@
       $('linked-material-title').textContent = entry ? entry.nameCn : materialId;
       $('linked-material-note').textContent = rows.length ? new Set(rows.map(r=>r.object_id)).size.toLocaleString('en') + ' 个来源物体，' + rows.length.toLocaleString('en') + ' 条已有组件映射。保留原审核状态；物性证据不自动赋给这些商品。' : '此材料尚无以规范 ID 建立的物体映射；来源值仍可查看，不据名称猜测物体。';
       const navigationEvidence = (row) => (row.navigation_evidence || []).map(item => {
-        const mode = /ALTERNATIVE/i.test(item.relation_mode || '') ? '备选材料，非同时组成' : item.relation_mode === 'COEXISTING_SCOPES' ? '并存材料，仅限注明部位' : '来源材料关联';
+        const mode = /ALTERNATIVE/i.test(item.relation_mode || '') ? '备选材料，非同时组成' : item.relation_mode === 'COEXISTING_SCOPES' ? '并存材料，仅限注明部位' : item.relation_mode === 'WHOLE_CONSTRUCTION_WITH_COEXISTING_CONSTITUENTS' ? '整体构造，各组成材料并存' : item.relation_mode === 'CONSTITUENT_SCOPE_OF_KNOTTED_CONSTRUCTION' ? '结织构造的组成材料，仅限注明范围' : '来源材料关联';
         const partial = item.resolution === 'PARTIAL' ? '；原材料描述仍有未对齐部分' : '';
         return '<p><small>' + esc(mode + partial) + '</small><br>' + esc(item.status || '') + '<br>' + esc(item.basis || '') + '</p>';
       }).join('');

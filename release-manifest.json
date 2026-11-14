@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "id": "fb24e7c2c1",
+  "id": "51c7bb68a3",
   "date": "2026-11-14",
   "objects": {
     "total": 43675,
@@ -9,23 +9,23 @@
     "count_basis": "Source identities; whole-object fallbacks included; cross-source geometry deduplication incomplete."
   },
   "materials": {
-    "total": 3875,
-    "with_complete": 1666,
+    "total": 3893,
+    "with_complete": 1663,
     "with_all_properties": 1691,
-    "with_E": 3258,
-    "with_nu": 1811,
-    "with_rho": 3137,
-    "no_values": 25,
+    "with_E": 3262,
+    "with_nu": 1813,
+    "with_rho": 3146,
+    "no_values": 32,
     "scope": "Current active non-fluid material nodes, including reviewed narrower-material references. No automatic product parameter assignment.",
     "excluded_fluid_targets": 5
   },
   "records": {
-    "complete": 6188,
-    "partial": 94872,
-    "total": 101060,
+    "complete": 6184,
+    "partial": 94885,
+    "total": 101069,
     "main": {
-      "complete": 2431,
-      "incomplete": 3021
+      "complete": 2427,
+      "incomplete": 3034
     },
     "database": {
       "complete": 3757,
@@ -35,27 +35,29 @@
   },
   "inputs": {
     "data/scaling_release_v1/object_component_inventory.csv": "cf3c68c846ee67ce258e4fac403a1bb5b696ffa9a69011110281732cd074c284",
-    "audit/material_range_phase1_v1/phase1_complete_triplet_record_ledger.csv": "888188998b2eb01096b1d4c3249b1e75c7f0444a91625b6f5045172b2ffb8211",
-    "audit/material_range_phase1_v1/phase1_incomplete_triplet_record_ledger.csv": "ae5141f1e80a9342818f977ca001c32f1ed8fb4831b15a2ad670c1dd91cc2785",
+    "audit/material_range_phase1_v1/phase1_complete_triplet_record_ledger.csv": "1df84a8e12ddfe8ef2366e7512bf57f0bc572b80ca4e076c0d324da90fd7f0da",
+    "audit/material_range_phase1_v1/phase1_incomplete_triplet_record_ledger.csv": "6b845e070804eca4c314b7dcaf454c8c95bef39778d942c2f4d8d746d6bbf2b1",
     "data/material_scope_policy.json": "c0939ee6d349e24189ccd1e90b635a1a21d0ba74e0cfb0b699e02093e9ed5076",
     "site_v3/evidence-catalog/sciglass/manifest.json": "a34617f15dc72419d08dc4a531903b244b7cb4a58474a375b401cf588e38cd71",
-    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "8737cf2a2f8a4efa3867c6ebcc982bcb07d6640ea7e42833e8b00d88cd38654d",
-    "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "6a34674a1089a546b9ab626becc0685b3ef537a1179e329c782b7d1a4c44a459",
+    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "47a39e25380969ddd9b4cf3f9652963c4f4781f49d44e39680038054889d9c07",
+    "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "9ca5661ce0b73c6e85a742b3de7aaef47e11e313524ad3baf58fe9d7bc430e78",
+    "data/current_two_table_delivery_v1/current_material_options.csv": "c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49",
     "data/current_two_table_delivery_v1/source_reported_material_relations.csv": "f726c838d2937e5c643caebe203ac82efcfed14f7c8a255b3ad8d2c1b88ab612",
     "data/current_two_table_delivery_v1/official_bound_material_relations.csv": "c2010b943e33e9e566b85d500896c74eb16ba49cdb9da04bd993cf3f1307995b",
     "data/current_two_table_delivery_v1/approximate_component_material_relations.csv": "7d72338a3f90b8167ac8b75fb3acb4bc7dd587abd5f70823c205bad4e363949c",
     "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "942a03fe08a8fe3830c329663b6b6c3a1941675b6b33a5f0baaf6081328aa093",
-    "OBJECT_FIRST_SCOPE_STANDARD.md": "f4911bad420444c6e5e78a11fbde8be1193909cc6f2e6bedea9a55a3d584908f",
+    "OBJECT_FIRST_SCOPE_STANDARD.md": "fa9d446fd250060fbacf30d8e7f803a6abdfc7b462ca4c368df3a3a1974215ca",
     "audit/material_evidence_cycle26_2026-11-14/soap_independent_review_v2/FINAL_MANIFEST.json": "1b575fc3d170696980a9ad5719b753f6d7942211900572556e2443c481bbb444",
-    "audit/object_priority_coverage_v1.py": "eb2606b2366755236d3117a90f7b891e8229588c303a3fbcb457e0f40d9f5feb",
+    "audit/object_priority_coverage_v1.py": "512f8c0d41ac1bd395ce2f4208ace5a7c8549ab1e262c0229d7dba6b40250b48",
     "audit/current_material_object_index_v1.py": "268d08c8c632fdffc3d2b0f5436f9803a019d0aca787d1d7c8429f80f317d28c",
-    "data/current_two_table_delivery_v1/current_material_options.csv": "c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49",
-    "data/current_two_table_delivery_v1/summary.json": "96212092b5d92748703f46c9ece2263f135f7b436e4c264291eaf5bcebdedc97",
-    "audit/reviewed_source_material_links_c27.py": "f9f8dcea0d8af3cdeec0ba29f20e5706082bad36576d86025ac8c2bfe773173b",
-    "audit/material_evidence_cycle27_2026-11-14/LINK_REVIEW_PINS.json": "3a3c908c9b47c8369009fd25bb1a5d381472dc3970321deac72b7e8d5928ae55"
+    "data/current_two_table_delivery_v1/summary.json": "66b334cf1879a075640bac02c15b9cc055b2526af6e06b7abce9ffa679d072c9",
+    "audit/reviewed_source_material_links_c27.py": "404b64c5e3cfde973e0e2594ee86d559367d1d06da1fb591fe949ee13a0e8ab4",
+    "audit/material_evidence_cycle27_2026-11-14/LINK_REVIEW_PINS.json": "3a3c908c9b47c8369009fd25bb1a5d381472dc3970321deac72b7e8d5928ae55",
+    "audit/material_property_record_accounting_v1/cycle28_source_label_overlay.py": "a7cb85eb74952c9918bf3eb592639480da76b8fc277ae38f9f771c4f1b233b01",
+    "audit/material_property_record_accounting_v1/cycle28_reviewed_registration.py": "a6c66f8c14a525744e7e4f628021dea75ef8e6858f8f0befcb0d39f720ae06f6"
   },
   "source_keys": {
-    "document_or_database_citation_keys": 15908,
+    "document_or_database_citation_keys": 15911,
     "independent_source_count": null
   },
   "pages": {
@@ -70,79 +72,93 @@
     "policyVersion": "OBJECT_FIRST_2026_11_14",
     "scope": "Current object-associated material labels and options; three properties may come from different admitted groups. No new property values or automatic product assignments.",
     "objectMaterials": {
-      "targetCount": 213,
-      "materialsWithCompleteRecord": 140,
-      "materialsWithIncompleteRecord": 121,
-      "materialsWithE": 176,
-      "materialsWithNu": 160,
-      "materialsWithRho": 186,
-      "materialsWithAllThreeFromAnyGroup": 160,
-      "materialsWithoutAnyValue": 24,
-      "coveragePercent": 75.11737089201878,
-      "missingMaterials": 53
+      "targetCount": 223,
+      "materialsWithCompleteRecord": 139,
+      "materialsWithIncompleteRecord": 124,
+      "materialsWithE": 178,
+      "materialsWithNu": 162,
+      "materialsWithRho": 189,
+      "materialsWithAllThreeFromAnyGroup": 162,
+      "materialsWithoutAnyValue": 31,
+      "coveragePercent": 72.6457399103139,
+      "missingMaterials": 61
     },
     "unlinkedComplete": {
-      "targetCount": 1531,
-      "materialsWithCompleteRecord": 1526,
+      "targetCount": 1529,
+      "materialsWithCompleteRecord": 1524,
       "materialsWithIncompleteRecord": 30,
-      "materialsWithE": 1531,
-      "materialsWithNu": 1531,
-      "materialsWithRho": 1531,
-      "materialsWithAllThreeFromAnyGroup": 1531,
+      "materialsWithE": 1529,
+      "materialsWithNu": 1529,
+      "materialsWithRho": 1529,
+      "materialsWithAllThreeFromAnyGroup": 1529,
       "materialsWithoutAnyValue": 0
     },
     "researchCandidates": {
-      "targetCount": 2131,
+      "targetCount": 2141,
       "materialsWithCompleteRecord": 0,
-      "materialsWithIncompleteRecord": 2130,
-      "materialsWithE": 1551,
-      "materialsWithNu": 120,
-      "materialsWithRho": 1420,
+      "materialsWithIncompleteRecord": 2140,
+      "materialsWithE": 1555,
+      "materialsWithNu": 122,
+      "materialsWithRho": 1428,
       "materialsWithAllThreeFromAnyGroup": 0,
       "materialsWithoutAnyValue": 1
     },
     "allResearch": {
-      "targetCount": 3875,
-      "materialsWithCompleteRecord": 1666,
-      "materialsWithIncompleteRecord": 2281,
-      "materialsWithE": 3258,
-      "materialsWithNu": 1811,
-      "materialsWithRho": 3137,
+      "targetCount": 3893,
+      "materialsWithCompleteRecord": 1663,
+      "materialsWithIncompleteRecord": 2294,
+      "materialsWithE": 3262,
+      "materialsWithNu": 1813,
+      "materialsWithRho": 3146,
       "materialsWithAllThreeFromAnyGroup": 1691,
-      "materialsWithoutAnyValue": 25
+      "materialsWithoutAnyValue": 32
     },
     "input_sha256": {
-      "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "8737cf2a2f8a4efa3867c6ebcc982bcb07d6640ea7e42833e8b00d88cd38654d",
-      "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "6a34674a1089a546b9ab626becc0685b3ef537a1179e329c782b7d1a4c44a459",
+      "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "47a39e25380969ddd9b4cf3f9652963c4f4781f49d44e39680038054889d9c07",
+      "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "9ca5661ce0b73c6e85a742b3de7aaef47e11e313524ad3baf58fe9d7bc430e78",
+      "data/current_two_table_delivery_v1/current_material_options.csv": "c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49",
       "data/current_two_table_delivery_v1/source_reported_material_relations.csv": "f726c838d2937e5c643caebe203ac82efcfed14f7c8a255b3ad8d2c1b88ab612",
       "data/current_two_table_delivery_v1/official_bound_material_relations.csv": "c2010b943e33e9e566b85d500896c74eb16ba49cdb9da04bd993cf3f1307995b",
       "data/current_two_table_delivery_v1/approximate_component_material_relations.csv": "7d72338a3f90b8167ac8b75fb3acb4bc7dd587abd5f70823c205bad4e363949c",
-      "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "942a03fe08a8fe3830c329663b6b6c3a1941675b6b33a5f0baaf6081328aa093"
+      "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "942a03fe08a8fe3830c329663b6b6c3a1941675b6b33a5f0baaf6081328aa093",
+      "data/scaling_release_v1/object_component_inventory.csv": "cf3c68c846ee67ce258e4fac403a1bb5b696ffa9a69011110281732cd074c284"
     },
     "complete_record_count_unchanged_by_cohort": true,
     "incomplete_record_count_unchanged_by_cohort": true,
     "unresolvedSourceLabels": {
-      "labelCount": 17,
-      "relationRows": 53,
-      "objectCount": 52,
-      "componentCount": 53,
+      "labelCount": 4,
+      "relationRows": 16,
+      "objectCount": 16,
+      "componentCount": 16,
       "countedAsCanonicalMaterials": false,
       "propertyCoverage": "NOT_EVALUATED_WITHOUT_REVIEWED_IDENTITY_LINK",
       "completionRequired": true,
-      "partiallyLinkedRelationRows": 27,
-      "unlinkedRelationRows": 26,
+      "partiallyLinkedRelationRows": 3,
+      "unlinkedRelationRows": 13,
       "download": "coverage-gaps/UNRESOLVED_OBJECT_SOURCE_LABELS.csv",
       "report": "coverage-gaps/UNRESOLVED_OBJECT_SOURCE_LABELS.md"
     },
     "reviewedSourceMaterialLinks": {
-      "linkRows": 1041,
-      "completeRelations": 404,
-      "partiallyResolvedRelations": 27,
+      "linkRows": 1059,
+      "completeRelations": 441,
+      "partiallyResolvedRelations": 3,
       "sourceFieldsModified": false,
       "numericalAssignments": 0,
       "download": "scaling-assets/current-tables/reviewed_source_material_links.csv.gz"
     },
     "entireObjectMaterialTableComplete": false,
+    "recordedComponentsWithoutReviewedMaterial": {
+      "componentCount": 910,
+      "objectCount": 910,
+      "countedAsCanonicalMaterials": false,
+      "completionRequired": true,
+      "download": "coverage-gaps/OBJECT_COMPONENTS_WITHOUT_REVIEWED_MATERIAL.csv",
+      "scope": "Recorded inventory components lacking a reviewed nonfluid material identity; may overlap unresolved source-relation tasks, so do not add the two counts."
+    },
+    "specialOrLiquidUnlinkedComponents": {
+      "componentCount": 4,
+      "download": "coverage-gaps/EXCLUDED_LIQUID_OR_EMPTY_SPACE_COMPONENTS.csv"
+    },
     "downloads": {
       "gaps": "coverage-gaps/OBJECT_MAPPED_MATERIAL_GAPS.csv",
       "report": "coverage-gaps/OBJECT_MAPPED_MATERIAL_GAPS.md",
@@ -268,6 +284,16 @@
       "MAT-SILVER-BROAD",
       "MAT-SOAP-BROAD",
       "MAT-SOIL-BROAD",
+      "MAT-SOURCE-BIRCH-BARK",
+      "MAT-SOURCE-BITUMINOUS-ROOFING-BROAD",
+      "MAT-SOURCE-GFRP-MATRIX-UNSPEC",
+      "MAT-SOURCE-KNOTTED-WOOL-COTTON-TEXTILE",
+      "MAT-SOURCE-LEATHERITE-SOURCE-BROAD",
+      "MAT-SOURCE-PATENT-LEATHER-BROAD",
+      "MAT-SOURCE-PLANT-WEAVING-BROAD",
+      "MAT-SOURCE-POLYMER-COATED-FABRIC-BROAD",
+      "MAT-SOURCE-RECYCLED-FIREHOSE-COMPOSITE",
+      "MAT-SOURCE-STRAW-WEAVING-BROAD",
       "MAT-SS-304-STATE-UNSPEC",
       "MAT-STAINLESS-STEEL-BROAD",
       "MAT-STEEL-BROAD",
@@ -372,16 +398,16 @@
   },
   "object_material_index": {
     "file": "material-object-index.json.gz",
-    "sha256": "343e7061ec48c9c8281479b8529f40abc35010853b16c871bde67f87f1046316",
-    "material_nodes": 213,
-    "mapping_rows": 173963,
+    "sha256": "101165d07778f112245a3cf39b653daf7e79ad9acb6311eb3c86bc6254301cc5",
+    "material_nodes": 223,
+    "mapping_rows": 173981,
     "input_sha256": {
       "data/current_two_table_delivery_v1/current_material_options.csv": "c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49",
       "data/current_two_table_delivery_v1/source_reported_material_relations.csv": "f726c838d2937e5c643caebe203ac82efcfed14f7c8a255b3ad8d2c1b88ab612",
       "data/current_two_table_delivery_v1/official_bound_material_relations.csv": "c2010b943e33e9e566b85d500896c74eb16ba49cdb9da04bd993cf3f1307995b",
       "data/current_two_table_delivery_v1/approximate_component_material_relations.csv": "7d72338a3f90b8167ac8b75fb3acb4bc7dd587abd5f70823c205bad4e363949c",
       "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "942a03fe08a8fe3830c329663b6b6c3a1941675b6b33a5f0baaf6081328aa093",
-      "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "6a34674a1089a546b9ab626becc0685b3ef537a1179e329c782b7d1a4c44a459"
+      "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "9ca5661ce0b73c6e85a742b3de7aaef47e11e313524ad3baf58fe9d7bc430e78"
     },
     "builder_sha256": "268d08c8c632fdffc3d2b0f5436f9803a019d0aca787d1d7c8429f80f317d28c",
     "basis": "Current material options plus accepted source relations and reviewed source-scope links; alternatives and coexisting scopes retained; no numerical property assignment.",
@@ -448,8 +474,8 @@
       },
       "MAT-TEXTILE-FABRIC-BROAD": {
         "file": "material-object-details/97b7e4379008302eb453.json.gz",
-        "sha256": "f87352c160178c3b8f2c6ca2e7dc22f9dd4a916529a4db59983128d2051994fd",
-        "bytes": 193338,
+        "sha256": "c5c303ccfe80b330897c36a1636021774c2ff18ee7cbbd85f3bc4b5e4ae4b292",
+        "bytes": 192863,
         "rows": 2373
       },
       "MAT-WOOD-ENGINEERED-BROAD": {
@@ -586,9 +612,9 @@
       },
       "MAT-PLASTIC-BROAD": {
         "file": "material-object-details/73642b8e90e0304d6f84.json.gz",
-        "sha256": "99bf466f639685102326cbeae20dafc3c49f4fb57da642023536e921631c01e2",
-        "bytes": 288791,
-        "rows": 7144
+        "sha256": "3cf263777f2954d291665eafa879c15772a1b9fefd5d401669963a92d3dc9e72",
+        "bytes": 288310,
+        "rows": 7142
       },
       "MAT-STEEL-BROAD": {
         "file": "material-object-details/0c4ad0b17c4c49a12a59.json.gz",
@@ -616,8 +642,8 @@
       },
       "MAT-TEXTILE-VELVET-BROAD": {
         "file": "material-object-details/b1308245d50f773feb0d.json.gz",
-        "sha256": "d454873c3f45e194c750823d58eefaf26d297fe4ad5edf71da3a45841950ba96",
-        "bytes": 3314,
+        "sha256": "f6a62ca6d7fc24428224443336967fc10605c138f549d6de64609d19e0e74fd4",
+        "bytes": 3326,
         "rows": 14
       },
       "MAT-TEXTILE-LINEN-BROAD": {
@@ -646,8 +672,8 @@
       },
       "MAT-TEXTILE-COTTON-BROAD": {
         "file": "material-object-details/4872f1fba7eabd412df9.json.gz",
-        "sha256": "4db974637d9747841561a2132595d35589d890facbd78342944cdf50747904aa",
-        "bytes": 11068,
+        "sha256": "ef7f73e9906d8a2c60bb6e2b7927a3ac8fd02af5f60773d88e0e1e6cf06d60e6",
+        "bytes": 11012,
         "rows": 108
       },
       "MAT-TEXTILE-SISAL-BROAD": {
@@ -700,9 +726,9 @@
       },
       "MAT-APPROX-PLANT-TISSUE": {
         "file": "material-object-details/b3950fabfc40c2f38201.json.gz",
-        "sha256": "2c9472a7475201c4f7c94f0fdcdbdc8f6b974684ed637064716274f8192d8ed0",
-        "bytes": 137744,
-        "rows": 2300
+        "sha256": "8720b690085195286178f209a915bbaabfb13d3baa6abb8765387ed239b654ab",
+        "bytes": 133876,
+        "rows": 2281
       },
       "MAT-APPROX-ENGINEERED-WOOD": {
         "file": "material-object-details/9897f99d3c259eba6081.json.gz",
@@ -1276,8 +1302,8 @@
       },
       "MAT-TEXTILE-WOOL-BROAD": {
         "file": "material-object-details/cfa46c4caa980b7cc10e.json.gz",
-        "sha256": "bd07104d6198f3f69e2fcb5a2c7c8c8c44fff6d456d40db621a62afdc46353c7",
-        "bytes": 4775,
+        "sha256": "945a268785a0d1b7b5aa74095fc9fbd69fc3f96c006e94439c9ccd4708e82982",
+        "bytes": 4696,
         "rows": 31
       },
       "MAT-PORCELAIN-BROAD": {
@@ -1354,8 +1380,8 @@
       },
       "MAT-TEXTILE-SILK-BROAD": {
         "file": "material-object-details/f56d26155eb7496406ce.json.gz",
-        "sha256": "4c88c6a5f80162b3310c627abb4a1aa4d45b40b6b521617b305a37cb941221ac",
-        "bytes": 2577,
+        "sha256": "476aaa16f87557e8563d5869adea25e950971ab5033aaa5f6395497c9d1ba417",
+        "bytes": 2480,
         "rows": 8
       },
       "MAT-WOOD-FIR-BROAD": {
@@ -1663,19 +1689,79 @@
         "sha256": "a797de9e807d0df581ab9f5c3e4bf22dc25303c9cfe1bf75593673546b49da47",
         "bytes": 862,
         "rows": 1
+      },
+      "MAT-SOURCE-GFRP-MATRIX-UNSPEC": {
+        "file": "material-object-details/9d2eb558b447439f9619.json.gz",
+        "sha256": "5ffe3f9022ba68abcfffa401b98ec793fc02d9e449be30661cfaf627c887ed15",
+        "bytes": 1109,
+        "rows": 2
+      },
+      "MAT-SOURCE-BITUMINOUS-ROOFING-BROAD": {
+        "file": "material-object-details/cf2bb730e5d49107e139.json.gz",
+        "sha256": "e1cc671ccb0bcbf9e6064ddd9e3f86ce1a0af0822de3c6378b7a4bca1331bf6d",
+        "bytes": 1571,
+        "rows": 7
+      },
+      "MAT-SOURCE-KNOTTED-WOOL-COTTON-TEXTILE": {
+        "file": "material-object-details/5d4667fd9caa8ff70beb.json.gz",
+        "sha256": "6c73c559f404882142108211c855b492b430c07423269d8ad28c38abe10799d3",
+        "bytes": 909,
+        "rows": 1
+      },
+      "MAT-SOURCE-STRAW-WEAVING-BROAD": {
+        "file": "material-object-details/c0a6c377f22c9fc37016.json.gz",
+        "sha256": "c0eb2cb5011200dbf574e7a6587e6141657a9ae5941501099b5d225cfe47c6b4",
+        "bytes": 2321,
+        "rows": 14
+      },
+      "MAT-SOURCE-RECYCLED-FIREHOSE-COMPOSITE": {
+        "file": "material-object-details/9c11e56c38d4259b5c41.json.gz",
+        "sha256": "1f433ca7c646fd06993f91d96f6c24e8cbc6c7a39d39bf4ad50cc829b3c4c0aa",
+        "bytes": 1305,
+        "rows": 5
+      },
+      "MAT-SOURCE-PLANT-WEAVING-BROAD": {
+        "file": "material-object-details/aa18bfb4cb311f5622b7.json.gz",
+        "sha256": "85b3eb38eedb171b317116f1d0fb389a4252b86b4cf74425d0cf1b0735e7f020",
+        "bytes": 1389,
+        "rows": 4
+      },
+      "MAT-SOURCE-BIRCH-BARK": {
+        "file": "material-object-details/c19b9c1eb8302158e09a.json.gz",
+        "sha256": "7e6151120821f2712cf9da41d13cdf22f9827c9db20cbee2b4a54bd718d27c29",
+        "bytes": 738,
+        "rows": 1
+      },
+      "MAT-SOURCE-PATENT-LEATHER-BROAD": {
+        "file": "material-object-details/ca6583252eaa28b4a295.json.gz",
+        "sha256": "bc5171bca86a9de6fac4ad126d3bb6af5f9d7469e25ef52dfc18d41df1bb8d33",
+        "bytes": 867,
+        "rows": 1
+      },
+      "MAT-SOURCE-POLYMER-COATED-FABRIC-BROAD": {
+        "file": "material-object-details/c9887f8162acd6675fd6.json.gz",
+        "sha256": "559a92d3f2c58e903d940329d4ee5ead82d8581f761d359582e858423ecd9379",
+        "bytes": 1155,
+        "rows": 3
+      },
+      "MAT-SOURCE-LEATHERITE-SOURCE-BROAD": {
+        "file": "material-object-details/fc1bfd2ee91c4f3f50b4.json.gz",
+        "sha256": "cf5a77df0a4fb4d7f88649a54b0628fa63a56c3db20808407db541e4704dd6e7",
+        "bytes": 894,
+        "rows": 1
       }
     }
   },
   "view_payload_sha256": {
-    "scaling-data.js": "21fa845e91564870a0187dcb48bca6c9503a47e3fcad77bfdf0fde2f8d97397d",
-    "scaling-data.js.gz": "9ac015f02b2d06756219ad0b308e8216497b6e8be5475e8a767ec5814f1effe0",
-    "research-data.js": "eec715b048829c3977d3acb6d12be53f8f58565cf8ac0a61a8e1bfd0b6f8fadb",
-    "phase1-ranges-data.js": "dc0aa3217114186ca3e75312faefb783cb51e47a3a097f999750b4d139558311",
-    "data.js": "1fb3b4d4c15661cb2a08db84bf9105619e6f4d19b7dadf91eca3a57bbfe81d9d",
-    "target-reference-data.js": "8324f8e31e83f1870416f2f0317a23acc198847d0a99927d4d282613f71148a1",
-    "scaling-display-data.js": "8a44915eb852f578f6a98f87f1b7264841209f302f8c3118f23a6e5f09b7f16b",
-    "scaling-display-data.js.gz": "28715570aba190078e65eb82908cb12603dff709b60cd7076ea13c970d365503",
-    "material-object-index.json.gz": "343e7061ec48c9c8281479b8529f40abc35010853b16c871bde67f87f1046316"
+    "scaling-data.js": "c531096a228fe5b71b2c2d98d11b58fa9fbc7d12f919b547c758b91181cad6ad",
+    "scaling-data.js.gz": "cf9979f9134f3cd356c9ecfda63c174f23d0cd0ee6529564d59fdbd3908f47d3",
+    "research-data.js": "139021ba530deb7d61b57d7c3e255031eebd74ff258b218c8fa3f4619323f255",
+    "phase1-ranges-data.js": "c9265e6d5d963d15b327eaab3b28f20912746acbff19c7bb5b8026063805b064",
+    "data.js": "0a370c851a82ef966ad238bbc6147f7cc40b481b6cf5c1cf9f4ab0dad49f51a0",
+    "target-reference-data.js": "691fb2ec948ed39509463dd4e7be50820f0978a79970d0cdda1bec877547e552",
+    "scaling-display-data.js": "f734bad2f9a1cf73ab848c0b38663c4d8b78bdda1c54fb509479a0fab28d71da",
+    "scaling-display-data.js.gz": "2d191ce0615b542b01ed66d904ffb11e2a16cee3868403b6b283ddde245f869f",
+    "material-object-index.json.gz": "101165d07778f112245a3cf39b653daf7e79ad9acb6311eb3c86bc6254301cc5"
   },
   "object_pages": {
     "scaling-assets/gso-001.json": {
@@ -1735,28 +1821,28 @@
     }
   },
   "static_asset_sha256": {
-    "site-shell.js": "2cbe8a7ee68ccc43e058c443301187576b2cd35a047cb5ccbadac78392098552",
+    "site-shell.js": "cae8c34b3fc12c8d19ea6b9b1609b1a1d88fd285efb26aed4c300c884ae54c44",
     "site-shell.css": "3adf4f6c9c740a23add9dc32d452a1b1ff9a77dfc7005254fd37583da33a0542",
     "payload-loader.js": "1a77424845845e0d6d2b4b943b36af6a3fa8fdef79b233e8407f66d6bbc2738d",
     "app.js": "ce9bc4804466f52bc327821e556e18db5aeaa8a7ef1226f4408631817b2c202c",
-    "scaling.js": "c031952ebe96b359d4cd08d88b063236b9ae946fd62df75f03c0862cf85d582c",
+    "scaling.js": "899ac6f1491f40b32cbf46f567a758a58c0260ce98e261012c84023644f9b1c6",
     "phase1-ranges.js": "b19f91d71538cd3bfe418fbea86b219e88f8a6917c3b8693b5944a4e8d20d4fe"
   },
   "inline_payloads": {
     "scaling-bootstrap": {
-      "sha256": "4f79ed03e1035ff8c0fe6028a8622f2a2b061e51f07d349ae39b56ad0ac97c27",
-      "release_id": "fb24e7c2c1"
+      "sha256": "e4d2b97273b3dee66d224c06c1fe78285a463d2ea993ac04c748146a6f601ddb",
+      "release_id": "51c7bb68a3"
     }
   },
   "current_tables_downloads": {
     "manifest": "scaling-assets/current-tables/download-manifest.json",
-    "sha256": "5dbe2dec7e86df0fc1ef04f4a04c59d70ec1bce5babe3778737ced7159dce085",
+    "sha256": "2702d45e7a68d632c3df6a10ac7fe1a42783db62f7075878f780b3d6495687b2",
     "files": 24,
-    "source_delivery_summary_sha256": "96212092b5d92748703f46c9ece2263f135f7b436e4c264291eaf5bcebdedc97"
+    "source_delivery_summary_sha256": "66b334cf1879a075640bac02c15b9cc055b2526af6e06b7abce9ffa679d072c9"
   },
   "scope_projection": {
     "version": 2,
-    "source_release": "d7a386878a",
+    "source_release": "9396ef5678",
     "excluded_material_ids": [
       "MAT-APPROX-LIQUID-CHEMICAL",
       "MAT-SALT-WATER-BROAD",
@@ -1778,48 +1864,48 @@
     "scope": "SOURCE_AUTHORED_ENTITY_AND_BINDING_RECORDS_NO_NUMERICAL_PROPERTY_INHERITANCE"
   },
   "transport_export": {
-    "release_id": "fb24e7c2c1",
+    "release_id": "51c7bb68a3",
     "payloads": {
       "scaling-data.js": {
-        "original_sha256": "21fa845e91564870a0187dcb48bca6c9503a47e3fcad77bfdf0fde2f8d97397d",
-        "gzip_sha256": "9ac015f02b2d06756219ad0b308e8216497b6e8be5475e8a767ec5814f1effe0",
+        "original_sha256": "c531096a228fe5b71b2c2d98d11b58fa9fbc7d12f919b547c758b91181cad6ad",
+        "gzip_sha256": "cf9979f9134f3cd356c9ecfda63c174f23d0cd0ee6529564d59fdbd3908f47d3",
         "original_bytes": 62777799,
-        "gzip_bytes": 2004651,
+        "gzip_bytes": 2004630,
         "variable": "SCALING_DATA"
       },
       "research-data.js": {
-        "original_sha256": "eec715b048829c3977d3acb6d12be53f8f58565cf8ac0a61a8e1bfd0b6f8fadb",
-        "gzip_sha256": "621c2404db5c164d33544ff066f1d4aada3bf90836c18a5f20105ba0d60d540b",
-        "original_bytes": 26879840,
-        "gzip_bytes": 3252120,
+        "original_sha256": "139021ba530deb7d61b57d7c3e255031eebd74ff258b218c8fa3f4619323f255",
+        "gzip_sha256": "ccffb94b1ff9caf7c407de0ffbb272983555bc6d161cdd3e0ef0580d2b60bd60",
+        "original_bytes": 26966523,
+        "gzip_bytes": 3266208,
         "variable": "SITE_DATA"
       },
       "phase1-ranges-data.js": {
-        "original_sha256": "dc0aa3217114186ca3e75312faefb783cb51e47a3a097f999750b4d139558311",
-        "gzip_sha256": "3ea05e4d28754b36e64d44385c44e0ad2d3dc0b203d74c336c78eb556889903d",
-        "original_bytes": 31080222,
-        "gzip_bytes": 2183968,
+        "original_sha256": "c9265e6d5d963d15b327eaab3b28f20912746acbff19c7bb5b8026063805b064",
+        "gzip_sha256": "ee7c84e60d494f5aef2234003aec8e6ed195c042d464828307af215ae8450754",
+        "original_bytes": 31196974,
+        "gzip_bytes": 2194984,
         "variable": "PHASE1_RANGES"
       },
       "data.js": {
-        "original_sha256": "1fb3b4d4c15661cb2a08db84bf9105619e6f4d19b7dadf91eca3a57bbfe81d9d",
-        "gzip_sha256": "c859e612360c5836d8179406101db0d3a005e57614e1577d150a4fbef85e5c2d",
+        "original_sha256": "0a370c851a82ef966ad238bbc6147f7cc40b481b6cf5c1cf9f4ab0dad49f51a0",
+        "gzip_sha256": "30358e2494c006fb2f96fe57bc3b7206f1c1c677a1af0ff87a0d322cfdd4d6fd",
         "original_bytes": 39941642,
-        "gzip_bytes": 1634590,
+        "gzip_bytes": 1634597,
         "variable": "SITE_DATA"
       },
       "target-reference-data.js": {
-        "original_sha256": "8324f8e31e83f1870416f2f0317a23acc198847d0a99927d4d282613f71148a1",
-        "gzip_sha256": "b4705506c1b767781d4d7f9d2163bf9578516650c4a24d3f444120321203175f",
-        "original_bytes": 10803671,
-        "gzip_bytes": 842966,
+        "original_sha256": "691fb2ec948ed39509463dd4e7be50820f0978a79970d0cdda1bec877547e552",
+        "gzip_sha256": "4b9e65541fe61c8a6906a0519c3921014f8858a85fd65b188aa978b9f2e4f771",
+        "original_bytes": 10832726,
+        "gzip_bytes": 847528,
         "variable": "TARGET_REFERENCE_DATA"
       },
       "scaling-display-data.js": {
-        "original_sha256": "8a44915eb852f578f6a98f87f1b7264841209f302f8c3118f23a6e5f09b7f16b",
-        "gzip_sha256": "28715570aba190078e65eb82908cb12603dff709b60cd7076ea13c970d365503",
+        "original_sha256": "f734bad2f9a1cf73ab848c0b38663c4d8b78bdda1c54fb509479a0fab28d71da",
+        "gzip_sha256": "2d191ce0615b542b01ed66d904ffb11e2a16cee3868403b6b283ddde245f869f",
         "original_bytes": 14253646,
-        "gzip_bytes": 505530,
+        "gzip_bytes": 505524,
         "variable": "SCALING_DATA"
       }
     },
@@ -1829,19 +1915,19 @@
         "bytes": 50154
       },
       "data.js": {
-        "sha256": "dee67e5d88dc6ba072078828a412bb230e4474c1332c839342f93d185659eb82",
+        "sha256": "297728a03c271229acb72fa2a615b3c0120d18ec78c1cc64f6b97b32ead33de9",
         "bytes": 214
       },
       "material-object-index.json.gz": {
-        "sha256": "343e7061ec48c9c8281479b8529f40abc35010853b16c871bde67f87f1046316",
-        "bytes": 10889425
+        "sha256": "101165d07778f112245a3cf39b653daf7e79ad9acb6311eb3c86bc6254301cc5",
+        "bytes": 10889840
       },
       "payload-loader.js": {
         "sha256": "1a77424845845e0d6d2b4b943b36af6a3fa8fdef79b233e8407f66d6bbc2738d",
         "bytes": 3925
       },
       "phase1-ranges-data.js": {
-        "sha256": "1b98aa7830b6a2f3533171a5a573382e4e4c1cfb41ee8e112e4a321ea0b0e7e5",
+        "sha256": "e1575318709a9c2221a1a94b422ef39721124544a2577ecbb74404de580f736b",
         "bytes": 232
       },
       "phase1-ranges.js": {
@@ -1849,39 +1935,39 @@
         "bytes": 23030
       },
       "research-data.js": {
-        "sha256": "37c40017ea2ff979a4f467b5c64d546012325f973a4d318892943fe0896c6dd8",
+        "sha256": "382d8206cd34e0491b277b3ff7d8a52a29b1aac6d7cf401cc5647bebc0c62c85",
         "bytes": 223
       },
       "scaling-data.js": {
-        "sha256": "75f95932285b95aa54d1da8211c8948661022c3aab7d47cb014d6057fecb0a69",
+        "sha256": "f2284af11f2dcf6c33c0b225fa6b147054ed337ed1273e0b9d16cbce2ceb1096",
         "bytes": 225
       },
       "scaling-data.js.gz": {
-        "sha256": "9ac015f02b2d06756219ad0b308e8216497b6e8be5475e8a767ec5814f1effe0",
-        "bytes": 2004651
+        "sha256": "cf9979f9134f3cd356c9ecfda63c174f23d0cd0ee6529564d59fdbd3908f47d3",
+        "bytes": 2004630
       },
       "scaling-display-data.js": {
-        "sha256": "892760b80fb89d74b0ba6bda0e81a4f67475d7d5e4e4cee4e99af760a9c56ca1",
+        "sha256": "6b558fce42fe1a5b24d644b0a9212fc5805fa5cf6ce2fa5d0a6619582e861689",
         "bytes": 233
       },
       "scaling-display-data.js.gz": {
-        "sha256": "28715570aba190078e65eb82908cb12603dff709b60cd7076ea13c970d365503",
-        "bytes": 505530
+        "sha256": "2d191ce0615b542b01ed66d904ffb11e2a16cee3868403b6b283ddde245f869f",
+        "bytes": 505524
       },
       "scaling.js": {
-        "sha256": "c031952ebe96b359d4cd08d88b063236b9ae946fd62df75f03c0862cf85d582c",
-        "bytes": 30746
+        "sha256": "899ac6f1491f40b32cbf46f567a758a58c0260ce98e261012c84023644f9b1c6",
+        "bytes": 30984
       },
       "site-shell.css": {
         "sha256": "3adf4f6c9c740a23add9dc32d452a1b1ff9a77dfc7005254fd37583da33a0542",
         "bytes": 21074
       },
       "site-shell.js": {
-        "sha256": "2cbe8a7ee68ccc43e058c443301187576b2cd35a047cb5ccbadac78392098552",
-        "bytes": 10288
+        "sha256": "cae8c34b3fc12c8d19ea6b9b1609b1a1d88fd285efb26aed4c300c884ae54c44",
+        "bytes": 10829
       },
       "target-reference-data.js": {
-        "sha256": "df246d79fe2a565f82505a3baa2d2514d62418b0ed26dd0164778b82a538325b",
+        "sha256": "40887bef3b4867fc37fbc3821541d71273faa284629751a1e187f3d86090aa89",
         "bytes": 243
       }
     }
@@ -1889,28 +1975,28 @@
   "progressive_coverage": {
     "bootstrap": "phase1-bootstrap.js",
     "compressed_bootstrap": "phase1-bootstrap.js.gz",
-    "bootstrap_sha256": "2e3ee5b0bf272f534a9e005dec0a4c049081e0979caa56d8a10f28682d78609f",
-    "bootstrap_logical_sha256": "fb11352d2cdf119fe8e60a10723db4cceba96d21bd1e4119fd8369f8b6828da8",
-    "compressed_bootstrap_sha256": "549a21c7be3c0b66e48221f97fdff3c6a2d84860f03eeeacfc0fa3337a1dbd3e",
-    "compressed_bytes": 414308,
+    "bootstrap_sha256": "b9014c26b605fb79fc7822dac9df2ac212b5de9ed2622d4f4cc02ff8f72f838c",
+    "bootstrap_logical_sha256": "d5999bd88953f88114ae3512f61838c4bfda1ce2862e983db5ec55d6528a819d",
+    "compressed_bootstrap_sha256": "52db824659ac1ce3d661fb7985ae3eb0708c25ea386321b71d5773bc5181ebf7",
+    "compressed_bytes": 416748,
     "detail_directory": "coverage-details/",
     "chunks": 43,
-    "records": 5452,
+    "records": 5461,
     "original_full_payload_retained": true,
     "original_fields_preserved": true,
-    "scientific_payload_sha256": "dc0aa3217114186ca3e75312faefb783cb51e47a3a097f999750b4d139558311",
-    "data_revision": "fb24e7c2c1"
+    "scientific_payload_sha256": "c9265e6d5d963d15b327eaab3b28f20912746acbff19c7bb5b8026063805b064",
+    "data_revision": "51c7bb68a3"
   },
   "progressive_material_tree": {
     "bootstrap": "research-bootstrap.js",
     "compressed_bootstrap": "research-bootstrap.js.gz",
-    "bootstrap_sha256": "ecd0fb2bf913a41b389594e267adcafea1578155d9983d27c98c562da12bf793",
-    "compressed_bootstrap_sha256": "b8e3c3a36c0452f1f1744273359bdbf06ef391d44dc6ed5d5b9aae6398fbf9f6",
+    "bootstrap_sha256": "ade7cda06f5124d544d93f796990b97ac501f5a59b4c92497e446177b05b308c",
+    "compressed_bootstrap_sha256": "2d2eddc94246d49bef9453d3cf7e3fd7f55505c3f4c66595266c0eea9c952b3d",
     "detail_directory": "research-details/",
-    "scientific_payload_sha256": "eec715b048829c3977d3acb6d12be53f8f58565cf8ac0a61a8e1bfd0b6f8fadb",
+    "scientific_payload_sha256": "139021ba530deb7d61b57d7c3e255031eebd74ff258b218c8fa3f4619323f255",
     "original_full_payload_retained": true,
     "evidence_loaded_on_demand": true,
-    "data_revision": "fb24e7c2c1"
+    "data_revision": "51c7bb68a3"
   },
-  "ui_revision": "ce9bc4804466-ecd0fb2bf913-1a7742484584-b19f91d71538-549a21c7be3c"
+  "ui_revision": "ce9bc4804466-ade7cda06f51-1a7742484584-b19f91d71538-52db824659ac"
 }

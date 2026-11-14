@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3875；三项各有来源值1691。
+材料3893；三项各有来源值1691。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -157,6 +157,8 @@
 - RESEARCH-MAT-BF17DE7F1DE6FAC4688A 复合材料 · AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.385 / AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.385：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-245668E109CDF33B0A9F 复合材料 · AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.420 / AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.420：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F934B893DE2E6EE8AD1C 复合材料 · AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.520 / AIREX PXw woven-glass-fiber reinforced polymer foam panel PXw.520：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-CFFFC84B4BA23FD8F29E 复合材料 · Asphalt roll roofing, composition unspecified (ASHRAE generic material) / Asphalt roll roofing, composition unspecified (ASHRAE generic material)：缺 E;nu；已有完整组0、缺项组1。
+- MAT-SOURCE-BITUMINOUS-ROOFING-BROAD 沥青类屋面材料（来源标为asphalt；构造未详） / Bituminous roofing material, source-labelled asphalt; construction unspecified：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F602F095B94D1829157E 复合材料 · CF/PEEK honeycomb skeleton H22-t0.6-T / CF/PEEK honeycomb skeleton H22-t0.6-T：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-E5A644ECF794F9426F1E 复合材料 · CF/PEEK honeycomb skeleton H26-t0.6-T / CF/PEEK honeycomb skeleton H26-t0.6-T：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-EB35A466CBFF4B8A479D 复合材料 · CF/PEEK honeycomb skeleton H26-t0.8-T / CF/PEEK honeycomb skeleton H26-t0.8-T：缺 nu;rho；已有完整组0、缺项组1。
@@ -199,6 +201,7 @@
 - RESEARCH-MAT-F0B811ED78D0FF35B7F0 复合材料 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 30 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 30 wt%：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-84E7D537B65732C593AB 复合材料 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 40 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 40 wt%：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-55CD720168D923122C32 复合材料 · Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 5 wt% / Lab-made eucalyptus paper, PAE wet-strength additive 0.5 wt%, CMC 5 wt%：缺 nu;rho；已有完整组0、缺项组1。
+- MAT-SOURCE-LEATHERITE-SOURCE-BROAD 来源标为Leatherite的软包表面（组成未详） / Leatherite-labelled upholstery, composition unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-73398C9F6A9716415462 复合材料 · Orthotic interface layer: neoprene sheet with retained cotton surface and residual adhesive / Orthotic interface layer: neoprene sheet with retained cotton surface and residual adhesive：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-CF728D311739ABA7A28C 复合材料 · PVAc-bonded coffee-filter-paper/date-palm-surface-fibre composite board, dried mass 23.2/69.4/7.4 wt% (paper/fibre/binder) / PVAc-bonded coffee-filter-paper/date-palm-surface-fibre composite board, dried mass 23.2/69.4/7.4 wt% (paper/fibre/binder)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-5DC5CB1F80E4D580149A 复合材料 · PVAc-bonded coffee-filter-paper/date-palm-surface-fibre composite board, dried mass 46/46/8.0 wt% (paper/fibre/binder) / PVAc-bonded coffee-filter-paper/date-palm-surface-fibre composite board, dried mass 46/46/8.0 wt% (paper/fibre/binder)：缺 nu；已有完整组0、缺项组1。
@@ -207,6 +210,7 @@
 - RESEARCH-MAT-AD7E742FFA88EF77AE32 复合材料 · PVAc-bonded polypropylene medical-isolation-gown/date-palm-surface-fibre composite board, dried mass 45.9/45.9/8.2 wt% (gown/fibre/binder) / PVAc-bonded polypropylene medical-isolation-gown/date-palm-surface-fibre composite board, dried mass 45.9/45.9/8.2 wt% (gown/fibre/binder)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-56BBAEE575CEFEEA335C 复合材料 · PVAc-bonded polypropylene medical-isolation-gown/date-palm-surface-fibre composite board, dried mass 58.3/19.4/22.3 wt% (gown/fibre/binder) / PVAc-bonded polypropylene medical-isolation-gown/date-palm-surface-fibre composite board, dried mass 58.3/19.4/22.3 wt% (gown/fibre/binder)：缺 nu；已有完整组0、缺项组1。
 - MAT-STEEL-POWDER-COATED-BROAD 粉末涂层钢（钢种/涂层未详） / Powder-coated steel, steel/coating unspecified：缺 nu;rho；已有完整组0、缺项组2。
+- MAT-SOURCE-RECYCLED-FIREHOSE-COMPOSITE 回收消防水带复合构造（组分层构未详） / Recycled fire-hose composite, construction unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-0EFCE2C8BF90309C225A 复合材料 · Recycled leather short-fibre/Araldite LY556–Aradur HY951 epoxy composite, nominal Vf≈0.30 / Recycled leather short-fibre/Araldite LY556–Aradur HY951 epoxy composite, nominal Vf≈0.30：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-0C1330924497A49B4F5A 复合材料 · Rigid-polyurethane-bonded agglomerated cork, 12wt% binder / Rigid-polyurethane-bonded agglomerated cork, 12wt% binder：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-9DFD57B4AE2B627DB3E3 复合材料 · Rigid-polyurethane-bonded agglomerated cork, 14wt% binder / Rigid-polyurethane-bonded agglomerated cork, 14wt% binder：缺 E;nu；已有完整组0、缺项组1。
@@ -612,6 +616,7 @@
 - RESEARCH-MAT-8B7AD4775B4BFA07C10F 皮革 · Full-grain vegetable-tanned sheep leather / Full-grain vegetable-tanned sheep leather：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-526AED933EC8C842A203 皮革 · Leather comparison specimen, tanning unspecified / Leather comparison specimen, tanning unspecified：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-D8FC5FB60DB0B7C191D6 皮革 · PVC synthetic roll leather, Duletai China, SL / PVC synthetic roll leather, Duletai China, SL：缺 E;nu；已有完整组0、缺项组1。
+- MAT-SOURCE-PATENT-LEATHER-BROAD 漆皮（涂层与基底未详） / Patent leather, coating and substrate unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-2512C34F980FE658623C 皮革 · Quebracho vegetable-tanned sheep leather / Quebracho vegetable-tanned sheep leather：缺 nu;rho；已有完整组0、缺项组4。
 - RESEARCH-MAT-2E2DD0FF2060EFFDB5DB 皮革 · Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1 catalyst only / polyurethane nonporous skins / Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1 catalyst only / polyurethane nonporous skins：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-41FEF515E383ADF91DA7 皮革 · Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1+SA102 catalysts / polyurethane nonporous skins / Seiren PU synthetic leather: polyester circular-knit substrate / polycarbonate-polyurethane porous layer with SA1+SA102 catalysts / polyurethane nonporous skins：缺 E;nu；已有完整组0、缺项组1。
@@ -691,6 +696,13 @@
 - RESEARCH-MAT-4415199B6AFBBDA3EAAC 金属 · UNS C71500 Copper-Nickel, 30% / UNS C71500 Copper-Nickel, 30%：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E54AA4D4F4664C91DAE4 金属 · UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes) / UNS C95400 Copper-Aluminum-Iron and Copper-Aluminum-Iron-Nickel Alloys (Aluminium Bronzes)：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-94BD971073843AE9567B 金属 · Vitranamel vitreous-enamelled steel panel / Vitranamel vitreous-enamelled steel panel：缺 E;nu；已有完整组0、缺项组1。
+- MAT-SOURCE-BIRCH-BARK 桦树皮 / Birch bark：缺 E;nu;rho；已有完整组0、缺项组0。
+- RESEARCH-MAT-7650354A7130D3CF989A 天然植物材料 · Calamus nambariensis var. xishuangbannaensis / Calamus nambariensis var. xishuangbannaensis：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-4852947A6D4AB6C3273B 天然植物材料 · Calamus nambariensis var. yingjiangensis / Calamus nambariensis var. yingjiangensis：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-80F800333CB84BEA7F3E 天然植物材料 · Calamus simplicifolius / Calamus simplicifolius：缺 nu；已有完整组0、缺项组2。
+- RESEARCH-MAT-C1F39D7B056955990810 天然植物材料 · Calamus yunnanensis / Calamus yunnanensis：缺 nu；已有完整组0、缺项组1。
+- MAT-SOURCE-PLANT-WEAVING-BROAD 植物编织材料（种属与构造未详） / Plant weaving material, species and construction unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
+- MAT-SOURCE-STRAW-WEAVING-BROAD 草秆编织材料（植物种属未详） / Straw plant weaving material, species unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-DC1644A54F30CC721E0C 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE1 COMPARATIVE1 formulation / Aerated frame-cast soap;JP2006045437A TABLE1 COMPARATIVE1 formulation：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-94428C648B50F82AA25F 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE1 EXAMPLE1 formulation / Aerated frame-cast soap;JP2006045437A TABLE1 EXAMPLE1 formulation：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-BEB0EF590DC1AA99B85F 其他材料 · Aerated frame-cast soap;JP2006045437A TABLE1 EXAMPLE2 formulation / Aerated frame-cast soap;JP2006045437A TABLE1 EXAMPLE2 formulation：缺 nu;rho；已有完整组0、缺项组1。
@@ -1789,8 +1801,10 @@
 - RESEARCH-MAT-7D1214D92DED90BD52CF 纺织材料 · 100% polyester nonwoven upholstery/mattress batting / 100% polyester nonwoven upholstery/mattress batting：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-FCEFAFC09196BCCDF3D5 纺织材料 · 100% rayon chamoix fabric / 100% rayon chamoix fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-7115B5BD4682DCF108B8 纺织材料 · 100% woven cotton laparotomy sponge fabric / 100% woven cotton laparotomy sponge fabric：缺 E;nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-F4FA1057881426EB5831 纺织材料 · 100%wool felt furnishing fabric / 100%wool felt furnishing fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-E934B42AFC353E18F236 纺织材料 · 20% nylon / 80% polyester composite microfiber towel / 20% nylon / 80% polyester composite microfiber towel：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-46002C64B0529EAD1B71 纺织材料 · 45% staple/30% hollow/25% bicomponent polyester thermally bonded nonwoven / 45% staple/30% hollow/25% bicomponent polyester thermally bonded nonwoven：缺 E;nu；已有完整组0、缺项组7。
+- RESEARCH-MAT-7A401256256A055C5DFC 纺织材料 · 50%cotton/50%flax plainweave warp-union-linen furnishing fabric / 50%cotton/50%flax plainweave warp-union-linen furnishing fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-8D4CA1F866068AA5407F 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Comp/MAC 1.0 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Comp/MAC 1.0：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-D9588D40BB80CBB2D3EC 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Comp/MAC 1.7 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Comp/MAC 1.7：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-B0B836C13478FEA15B68 纺织材料 · 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Conv/MAC 1.0 / 55% modacrylic / 15% polyacrylate / 30% lyocell yarn, Conv/MAC 1.0：缺 nu;rho；已有完整组0、缺项组1。
@@ -1838,12 +1852,13 @@
 - RESEARCH-MAT-F4A632739F2E9FA9EBD0 纺织材料 · Cotton fibre / Cotton fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-61F23246C8BAC94B7883 纺织材料 · Cotton lignocellulosic fibre / Cotton lignocellulosic fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-EE81778A4CCF4FFD2AD1 纺织材料 · Cotton natural fibre / Cotton natural fibre：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-631ACAD392960BE09A24 纺织材料 · Cotton plainweave calico furnishing fabric / Cotton plainweave calico furnishing fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-C816AD2C540A3E9849C6 纺织材料 · Cotton rope / Cotton rope：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-31193E3A98FC80AF144B 纺织材料 · Cotton single-jersey knitted fabric / Cotton single-jersey knitted fabric：缺 E;nu；已有完整组0、缺项组3。
 - RESEARCH-MAT-737E34517FE5AD3912BB 纺织材料 · Cotton textile comparison specimen / Cotton textile comparison specimen：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-5909717B6048FC2D018C 纺织材料 · Cotton twill 1/3 woven fabric / Cotton twill 1/3 woven fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-AA6DA697DF824E949BAC 纺织材料 · Cotton/glass fiber Knit/backcoated barrier fabric / Cotton/glass fiber Knit/backcoated barrier fabric：缺 E;nu；已有完整组0、缺项组1。
-- MAT-TEXTILE-COTTON-LINEN-BLEND 棉/亚麻混纺（比例/结构未详） / Cotton/linen textile blend, ratio/construction unspecified：缺 E;nu；已有完整组0、缺项组4。
+- MAT-TEXTILE-COTTON-LINEN-BLEND 棉/亚麻混纺（比例/结构未详） / Cotton/linen textile blend, ratio/construction unspecified：缺 E;nu；已有完整组0、缺项组5。
 - MAT-TEXTILE-COTTON-LINEN-VISCOSE-POLYESTER-BLEND 棉/亚麻/粘胶/聚酯混纺（比例/结构未详） / Cotton/linen/viscose/polyester blend, ratio/construction unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-2DF2E6B2B441014C4DE4 纺织材料 · Cotton/polyester plain woven fabric / Cotton/polyester plain woven fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-16043AECEDCA4C39D822 纺织材料 · Cottonpile/cotton-Lycra ground weft-knitted loop-pile fabric / Cottonpile/cotton-Lycra ground weft-knitted loop-pile fabric：缺 E;nu；已有完整组0、缺项组1。
@@ -1863,6 +1878,7 @@
 - RESEARCH-MAT-D0CA65006F4CC9DA3DC3 纺织材料 · FR-cotton knit / PET structured needle-bonded nonwoven / FR-cotton-PET warp-knit glove laminate with PES microporous membrane / FR-cotton knit / PET structured needle-bonded nonwoven / FR-cotton-PET warp-knit glove laminate with PES microporous membrane：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-656A68029B3812C1039E 纺织材料 · FR-cotton knit / PET/viscose/wool needle-bonded nonwoven / FR-cotton-PET warp-knit glove laminate / FR-cotton knit / PET/viscose/wool needle-bonded nonwoven / FR-cotton-PET warp-knit glove laminate：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-43EC441A86201AF52834 纺织材料 · FR-cotton knit / PET/viscose/wool needle-bonded nonwoven / FR-cotton-PET warp-knit glove laminate with PES microporous membrane / FR-cotton knit / PET/viscose/wool needle-bonded nonwoven / FR-cotton-PET warp-knit glove laminate with PES microporous membrane：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-9019B4DE24B60C1CE76E 纺织材料 · Ferrari TX30-III grade P5 PVC-coated polyester woven fabric / Ferrari TX30-III grade P5 PVC-coated polyester woven fabric：缺 E;rho；已有完整组0、缺项组2。
 - MAT-TEXTILE-FIBER-SOURCE-BROAD 填充纤维（化学组成未详） / Filling fibre, chemistry unspecified：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-3B8CD205799DFF4A694F 纺织材料 · Five-layer waterproof breathable textile laminate with coated cotton/polyester knit, polyester layers and acrylic-ester/polyester-PU membrane / Five-layer waterproof breathable textile laminate with coated cotton/polyester knit, polyester layers and acrylic-ester/polyester-PU membrane：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-6A4D2CDB16DE97A38DD2 纺织材料 · Flame-retardant rayon/polyester highloft barrier fabric / Flame-retardant rayon/polyester highloft barrier fabric：缺 E;nu；已有完整组0、缺项组2。
@@ -1894,6 +1910,7 @@
 - RESEARCH-MAT-0BBE035E2E0DC9B41B96 纺织材料 · Hemp natural fibre / Hemp natural fibre：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-3C30605680B21108410F 纺织材料 · Hemp rope / Hemp rope：缺 nu；已有完整组0、缺项组1。
 - MAT-TEXTILE-HEMP-ROPE-SOURCE-BROAD 麻绳（纤维种/结构未详） / Hemp rope, fibre species/construction unspecified：缺 nu；已有完整组0、缺项组1。
+- RESEARCH-MAT-FA74A39FB156357C2CE4 纺织材料 · Huifeng TB8K grade G7 PTFE-coated glass-fibre woven fabric / Huifeng TB8K grade G7 PTFE-coated glass-fibre woven fabric：缺 E;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-4A792ED927C35A63F70D 纺织材料 · Industrial acrylic textile-waste single fibre / Industrial acrylic textile-waste single fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-162CD87A277D6E5C1D9B 纺织材料 · Industrial yarn bundle composed of acrylic textile-waste fibres / Industrial yarn bundle composed of acrylic textile-waste fibres：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-3A2BC7B88FD721ACC75A 纺织材料 · Ioncell fibre / Ioncell fibre：缺 nu;rho；已有完整组0、缺项组1。
@@ -1902,6 +1919,7 @@
 - RESEARCH-MAT-04B24D49A63D73D0FCE1 纺织材料 · Jute rope / Jute rope：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-97358C01690480A4F4FB 纺织材料 · Kenaf natural fibre / Kenaf natural fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-6F81EAF51C160D108C3F 纺织材料 · Kevlar 49 fibre / Kevlar 49 fibre：缺 nu;rho；已有完整组0、缺项组1。
+- MAT-SOURCE-KNOTTED-WOOL-COTTON-TEXTILE 羊毛纱与棉结接织物构造（比例未详） / Knotted wool-yarn and cotton textile construction, ratio unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-9DA36259E79264EB1CFB 纺织材料 · Liquid crystal aromatic polyester (LCP) fiber / Liquid crystal aromatic polyester (LCP) fiber：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-4E5D96E1E882AE71FF9B 纺织材料 · Lyocell fibre / Lyocell fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-287A6BA6A6FA42A860B3 纺织材料 · Lyocell fibre CLY / Lyocell fibre CLY：缺 nu;rho；已有完整组0、缺项组1。
@@ -2134,7 +2152,7 @@
 - RESEARCH-MAT-A4DCCAEE17D1E1AE62E1 木材 · Post oak / Post oak：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-3C6B397F76FA4E424504 木材 · Quaking aspen / Quaking aspen：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-B74A8D648ADE0FB7417E 木材 · Rattan cane / Rattan cane：缺 nu;rho；已有完整组0、缺项组4。
-- MAT-RATTAN-BROAD 藤材/藤编（种类/结构未详） / Rattan, species/construction unspecified：缺 nu；已有完整组0、缺项组10。
+- MAT-RATTAN-BROAD 藤材/藤编（种类/结构未详） / Rattan, species/construction unspecified：缺 nu；已有完整组0、缺项组15。
 - MAT-RATTAN-TWINE-SOURCE-BROAD 藤/绳复合编织（绳纤维未详） / Rattan/twine composite weave, twine fibre unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-B05CDDA4EAA7BAFEA5F5 木材 · Red maple / Red maple：缺 nu;rho；已有完整组0、缺项组2。
 - RESEARCH-MAT-FEBCC9A0AB25BAC74762 木材 · Red oak group / Red oak group：缺 E；已有完整组0、缺项组2。

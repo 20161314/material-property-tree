@@ -33,6 +33,12 @@
       note.innerHTML='另有 '+fmt(unresolved.relationRows)+' 条已接受来源关系（'+fmt(unresolved.labelCount)+' 个来源标签）待规范对齐，尚未计入上方分母。全物体材料覆盖仍未完成。 <a href="'+unresolved.report+'">查看逐标签名单</a>';
       panel.append(note);
     }
+    const unnamed=priority.recordedComponentsWithoutReviewedMaterial;
+    if(unnamed?.componentCount){
+      const note=document.createElement('details');note.className='priority-tree-scope-note';
+      note.innerHTML='<summary>另有 '+fmt(unnamed.componentCount)+' 个已有组件尚缺规范材料标签</summary><p>这些组件尚不能进入材料去重分母，仍是物体表待办；与上方来源关系待办可能重叠，不相加。 <a href="'+unnamed.download+'">下载逐组件名单</a></p>';
+      panel.append(note);
+    }
     const header=document.querySelector('.app-header');
     if (header) header.after(panel);
     if (page==='materials') {
