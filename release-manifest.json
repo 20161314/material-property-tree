@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "id": "d92ec3caf0",
+  "id": "f61495694c",
   "date": "2026-11-14",
   "objects": {
-    "total": 43681,
-    "components": 71136,
-    "rows": 71185,
+    "total": 54071,
+    "components": 118536,
+    "rows": 170512,
     "count_basis": "Source identities; whole-object fallbacks included; cross-source geometry deduplication incomplete."
   },
   "materials": {
@@ -34,24 +34,25 @@
     }
   },
   "inputs": {
-    "data/scaling_release_v1/object_component_inventory.csv": "fa144d7795aa2ef392ddacedbe6ce44ca7864b13a595f17a4ceb2eccde5b202c",
+    "data/scaling_release_v1/object_component_inventory.csv": "73f82365e93c3e0fbf5cd0bc3afcf7b11b9b89ec6f5ec5b66370e847045f8169",
     "audit/material_range_phase1_v1/phase1_complete_triplet_record_ledger.csv": "d6a8dd44d7a159934094a3520909a442b990d140717c05d1094395ec56154c82",
     "audit/material_range_phase1_v1/phase1_incomplete_triplet_record_ledger.csv": "9b8041d9ad356b2c217bdf6986f2e0bc8d4cbdf9cb698b890e140c3c9e529971",
     "data/material_scope_policy.json": "c0939ee6d349e24189ccd1e90b635a1a21d0ba74e0cfb0b699e02093e9ed5076",
     "site_v3/evidence-catalog/sciglass/manifest.json": "69761ade60e1a6944e14f8515deafdb546baa14e55a658ac4359a5a2def95da4",
-    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "5f2339feb53dc9e5f5ee95d322da7c69e1eb3cf176eb357f382928884e37ceba",
-    "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "861eb489106c63d73a1324221cea951cc08f810f35c672d1fc7fdee4cfbeb29d",
+    "audit/accepted_source_relation_policy.py": "5cd9bb63664eb3c3c4d727d23ce43fc6aabef2b25473e23d8c388d3c9e8b7544",
+    "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "d66e36bdc058cee63e52e94b00121014b162a6b0cb9f23944d83ee289cd08fde",
+    "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "c6999a840beac60138fede178993b0f4933fbfdc4cc23676ef267733828c5dea",
     "data/current_two_table_delivery_v1/current_material_options.csv": "c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49",
     "data/current_two_table_delivery_v1/source_reported_material_relations.csv": "f726c838d2937e5c643caebe203ac82efcfed14f7c8a255b3ad8d2c1b88ab612",
     "data/current_two_table_delivery_v1/official_bound_material_relations.csv": "c2010b943e33e9e566b85d500896c74eb16ba49cdb9da04bd993cf3f1307995b",
     "data/current_two_table_delivery_v1/approximate_component_material_relations.csv": "7d72338a3f90b8167ac8b75fb3acb4bc7dd587abd5f70823c205bad4e363949c",
-    "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "add0a6cb11bd814b07095ddef293409eea83e721d6fe89fdbbfda69d20801af4",
+    "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "47321543db69e0b0bd2c5e050c9dc9b0e32361aa2c7d16ab5e5a034c41a89266",
     "OBJECT_FIRST_SCOPE_STANDARD.md": "fa9d446fd250060fbacf30d8e7f803a6abdfc7b462ca4c368df3a3a1974215ca",
     "audit/material_evidence_cycle26_2026-11-14/soap_independent_review_v2/FINAL_MANIFEST.json": "1b575fc3d170696980a9ad5719b753f6d7942211900572556e2443c481bbb444",
-    "audit/object_priority_coverage_v1.py": "512f8c0d41ac1bd395ce2f4208ace5a7c8549ab1e262c0229d7dba6b40250b48",
-    "audit/current_material_object_index_v1.py": "268d08c8c632fdffc3d2b0f5436f9803a019d0aca787d1d7c8429f80f317d28c",
-    "data/current_two_table_delivery_v1/summary.json": "05cbf11bd9e1c54192653c04b9795b413bad1fda6c874210e8870236ccdecbad",
-    "audit/reviewed_source_material_links_c27.py": "d5e7b87afdb12e1ce141bf97b82a7c098ed071f4444e575d026e07ce25674e7f",
+    "audit/object_priority_coverage_v1.py": "985c61e1a5f89d67ad01f4a5051c791c43126119f96c499647b176f428719e6d",
+    "audit/current_material_object_index_v1.py": "5904681f54b06df5f363f05f64fb7fc2c649f9d03e12d038469ed44966aca42d",
+    "data/current_two_table_delivery_v1/summary.json": "2e04fcd59e041962df14048eaa3173226f2fc269c6f7b9c9218b86301bc3a6a0",
+    "audit/reviewed_source_material_links_c27.py": "6bff1da19ba81183130c3d784bb93da13e216c1f6c1534ad0b6ada0b89fbdcba",
     "audit/material_evidence_cycle27_2026-11-14/LINK_REVIEW_PINS.json": "3a3c908c9b47c8369009fd25bb1a5d381472dc3970321deac72b7e8d5928ae55",
     "audit/material_property_record_accounting_v1/cycle28_source_label_overlay.py": "a7cb85eb74952c9918bf3eb592639480da76b8fc277ae38f9f771c4f1b233b01",
     "audit/material_property_record_accounting_v1/cycle28_reviewed_registration.py": "a6c66f8c14a525744e7e4f628021dea75ef8e6858f8f0befcb0d39f720ae06f6",
@@ -62,7 +63,243 @@
     "audit/material_property_record_accounting_v1/cycle31_reviewed_registration.py": "7b7f161843a491eff601fe6daf4e5fb01c370116ec3583978eabfbe13082f4d8",
     "audit/material_property_record_accounting_v1/cycle33_source_identity_overlay.py": "39ebe1008935f9921de3cdf03eb10cee146c43da23bdf53f06e101cea6939760",
     "OBJECT_SCALE_TARGET.md": "594dd7aab36a02149973f2052cebcfd4edfff0ecdf181670c19a3716d89480b2",
-    "audit/material_to_object_reverse_cycle33_2026-11-14/INVENTORY_APPLY.json": "9ce257efd40cea1c8f28ad02c27875b6913207520c0ef1084c921626799abb8b"
+    "audit/material_to_object_reverse_cycle33_2026-11-14/INVENTORY_APPLY.json": "9ce257efd40cea1c8f28ad02c27875b6913207520c0ef1084c921626799abb8b",
+    "audit/object_material_scale_cycle34_2026-11-14/site_integration_preparation/C34_SITE_UNION_CONFIG.json": "48e4f64cd730770ad04a7922f76032a3f2aff0cdf6f37e6b01ae4320dc9e24a1",
+    "audit/object_material_scale_cycle34_2026-11-14/site_integration_preparation/cycle34_site_overlay.py": "04c44b0bfa06eeb6b5cc86a503f3b1ebfc4eaefb35b7931db756da56fdc63ced",
+    "audit/object_material_scale_cycle34_2026-11-14/integration/reviewed_union_v2/FINAL_MANIFEST.json": "f088b2c39e794e15e96cf1a84bcf1eb71d4c1461872c620c2ae62ef6111b45da",
+    "audit/object_material_scale_cycle34_2026-11-14/integration/reviewed_union_v2/normalized_reviewed_links.csv": "2d0f4e357d4e64ba577711cce4b55bc65d845259e277ac44ced247310bc8b0e6",
+    "audit/object_material_scale_cycle34_2026-11-14/integration/reviewed_union_v2/normalized_source_relations.csv": "49c29f1b99810cf1200799bf14ef51cb41186351f99959c872cc4a8d3ddf22c0",
+    "audit/object_material_scale_cycle34_2026-11-14/integration/reviewed_union_v2/normalized_inventory.csv": "e74cc04c7dd64ad24f63437f7e40f3d24d0f26af66a4cd28b1a20a27593ef4a4",
+    "audit/object_material_scale_cycle34_2026-11-14/integration/reviewed_union_v2/dryrun_object_component_inventory.csv": "73f82365e93c3e0fbf5cd0bc3afcf7b11b9b89ec6f5ec5b66370e847045f8169",
+    "audit/object_material_scale_cycle34_2026-11-14/integration/reviewed_union_v2/SOURCE_EVIDENCE_PINS.json": "561804eeba9792e309d2a6c5bc9f0dcdeb70d3102366e7f805931e92d0b2c12d",
+    "audit/object_material_scale_cycle34_2026-11-14/integration/reviewed_union_v2/IMPORT_CONFIG.json": "b48b87bb315e1d35438a71c50e520e9a26fd6f7fef7adbfe613e304dfd5fa65b",
+    "audit/object_material_scale_cycle34_2026-11-14/integration/reviewed_union_v2/DRYRUN_VALIDATION.json": "da2ae994003909095d58d5ae7cec85690123b193b34145daa13db8809cec4912",
+    "audit/object_material_scale_cycle34_2026-11-14/union_independent_review/FINAL_MANIFEST.json": "61fbc7d5a475eaf06b54f83e5574372c20b7e6dd6880ef0e46ea5682cb730f53",
+    "audit/object_material_scale_cycle34_2026-11-14/union_independent_review/SUMMARY.json": "3dcc4ea020da0f14dc1ece75155d1105bd67f5701be2eecff17b07039479fd6e",
+    "audit/object_material_scale_cycle34_2026-11-14/union_independent_review/REPORT.md": "3c6efd9b72e98c64838f0bf9ee4c79b7f375a93be2e3c72dc092eecb461071bb",
+    "audit/object_material_scale_cycle34_2026-11-14/union_independent_review/verify_union.py": "e88d1f42f5222c368284babf99ab330f74d38f5f31997aa9254f4b3f046dd854",
+    "audit/object_material_scale_cycle34_2026-11-14/union_independent_review/CHECKS.json": "5c95c12a127b7c58a6a225dd63878d6e0a38e59dfa5ccf626667847e63a3bd1e",
+    "audit/object_material_scale_cycle34_2026-11-14/union_independent_review/INPUT_PINS.json": "d3c3438e0a7ae98e5f7296c3d65152aad57bc038eaa43abb49bf0f98305da216",
+    "audit/object_material_scale_cycle34_2026-11-14/soft_independent_review/FINAL_MANIFEST.json": "21e092de67f04a93d616e8467be384f61830f83b8a0160fce31facf5bcc695ca",
+    "audit/object_material_scale_cycle34_2026-11-14/compat_independent_review/FINAL_MANIFEST.json": "91aea9e49005453e557d0199fca4d17552b720aa1ec6ab1dacc5b2f4d1bd160f",
+    "audit/object_material_scale_cycle34_2026-11-14/objaverse_bulk_independent_review/FINAL_MANIFEST.json": "81c4966d38acb21862c31fcce4a723ef8008bfd36e18c4bd8b162f43310bf090",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-003.json.gz": "a81c8aea7da13ffb156cfe2bea5d3b24f6c71454b1aa0f10c14e439978f91a4e",
+    "evidence_manifests/pixieverse/objaverse_object-paths.json.gz": "db88ff78942613f10566ec4723fb8b8f558c37ffe8e78a8fc5428a20b93886a0",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-150.json.gz": "e586b545bcf481a0a605d5e756dab492e223beb3465bb59248dd48153f9526d6",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-147.json.gz": "837ed6eae1ebd28736a3187f0c0e158ae676117233813ea92845f169d137dfe9",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-112.json.gz": "77a7aa5f75c479a087b3a9aa7d470085097eacea659802c3ecd90530903e03bb",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-005.json.gz": "ab46e859e11272010fbcff35eadb696ce9623ddfb61c44bcc208ba94ae5fa320",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-148.json.gz": "550a717ab88d4a6210e3914e7dd89c4b435815a7e877cc40c58d356323f9278a",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-020.json.gz": "34f6af294984c84a204f02083d013c431e35ea57e5cca31acc81336f80c7f06d",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-048.json.gz": "bc4a69cdf663aca28fcbec6747aa58576d1ee8891525e31df343d741a9b6667c",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-049.json.gz": "985b026d6d3dd4de616024c5c0b74a67d2647a141e7817b24d3a78d63d715665",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-011.json.gz": "4ccfefd99e8348263643fa9ccbd9cc228b1bdcf4ee94b4ed7a9005d07ec7aea9",
+    "audit/flexible_geometry_intake_cycle8_2026-11-13/sources/metadata_000-000.json.gz": "299a60db6dad62e8aba63abb41c8ed41da10bbd77618632b1b5962e77f0a5318",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/pm_map_fine.json": "891666f1dd5a1f5964fb6ddedc558c20f64c42dd24c1c367cf8da0de4fd59c9d",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_airplane_models.json": "438f47d59e9fce1a039a00d69cd382500acfdbb18738a165b2a0ab80ff15af89",
+    "audit/object_material_scale_cycle34_2026-11-14/compat_independent_review/INDEPENDENT_SEMANTIC_SCOPE_POLICY.json": "4c9f1b9da78ca2b493e57586e71ed747c8a4cacaebbd20bc0c59a12ba3c6ae53",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_bag_models.json": "8befa74eb262ff7fc4ef92ea20c76c4be24c826d5abcc0bd428bf630e612e279",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_basket_models.json": "3bf3d06c5427f9dad9e0c5e29881c9704ebd23d0f5e6bd8e72e7062b5a3095a5",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_bbq_grill_models.json": "d1201348ccaf7ca4c339d9dc52888d9ff1d5f8fabf3699c2d79eabdea7a8257a",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_bed_models.json": "48411696cc4b56e5e6c4850df9d6bad4658081812d7edecd9ef9fcb1494d18cc",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_bench_models.json": "c029d770b14edf37dd76f4b44f28345e191c64aaf064914a813ce616281dd16c",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_bicycle_models.json": "3c8c4b7407ed27e9a7b9ef8f823d90a3d4463f7aa22a901a98e2ba5ec17bf780",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_bird_house_models.json": "9483b89bc54f719aa1c7128981c7fd26329521152e7e9a4295bfcdee12741d11",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_boat_models.json": "25d540434eb0659c5d4d98a82b39cc0dffc563f5de1e4719439a63bfe2d5edd8",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_cabinet_models.json": "2cc1d29e4a720c54e5d604a5f05df09d3496aa08f3dfda8029dd48f59ba8f19a",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_candle_holder_models.json": "da82a16c85d3147804fd59acb3f71a60f5a148df5c9db365d13e99b8931f9d40",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_car_models.json": "c3b5f2356100a0989d343f06cf305bbdb1799d74200c6362545b3ca6b6fac552",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_chair_models.json": "ac55d2aa5bd17362e9d94fd09b739e8ec0bf9adf82cbfb6d7f254029849814ff",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_clock_models.json": "57d4e0bf84d4788d313535e44a7345aff08cbb9305e86b24e53022db87bafd82",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_coat_rack_models.json": "2816f11a08652efd968a9e6e8cbf64f26facdd011033ff97f3e64f1f8a67326a",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_curtain_models.json": "e82410de8d8a6a462af26e082607356ca5d2747b93a093eeba7b0068a7f39643",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_dishwasher_models.json": "6ea06bced7f72dd5214f308e078e05b280c72941796e97ff81ec812612be3602",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_dresser_models.json": "a5b765c29a72e563b7c0c6c9ace121262b15a916cc70b8f8f61c831fdf850e20",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_fan_models.json": "d1af699a1d9cfeb0a717ba375062f6bbc4010cb6854582f48c58c962942b370b",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_faucet_models.json": "128ba62963c0370ff0d76693d75e03270cb01d223bdb3568bbe7d8f14023ee63",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_garbage_bin_models.json": "ca4e4f0858e3b128736861b934351923f0a84c63361e79eca506b344a9ec91ff",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_gazebo_models.json": "359cbb8551aaf948f69a0d19b2c377b75a97f1f0cb1b58a5b3b5eccf1519b615",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_jug_models.json": "1bce6c94e185a671eb08b47894dd319496d49cf2dd1da3c1cf0cf3cf0fbf38c0",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_ladder_models.json": "e53cfd3f7e8c38216e0c01fbb88e808d8eaebade447d86e3b9f96680a6f59832",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_lamp_models.json": "f07f2f1282db8a60ed33132a25bab5287a792c2c32fb8e64526fcc65a7f9334b",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_love_seat_models.json": "66f67d4756cc2bfbb85d73aedba55015374dd2d4ee0c026ffabdc1ba1278df51",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_ottoman_models.json": "8571734621b2ec8a47e57946a25ecd627a69ac73fd86d5751d8274c56debf6b6",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_parasol_models.json": "316e388fe39623fec1b28ca072ae3a6fecc3f0a4385db39a79d4b5a2a9f201d4",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_planter_models.json": "abaed13d63b8c22c051b0c96398d3c7ec79826fd551a3345c9e2b263e7cd1bf2",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_shelf_models.json": "766a2d840560aebc620ae7a8fde318c225f0f0515b5000741fb1eaed12936993",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_shower_models.json": "ab94f0816f80d24f14e6a62fd195eb5afd6a2067e87530a1cbbdbcc31c454488",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_sinks_models.json": "b828fc8e6a9c8af8cf3acfc7ae22413e23ad641defbe1ddf4d70feb9e43c3d24",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_skateboard_models.json": "0a2963e490611680eed1605f9f56e0fafab17ce9259ae779fb073f2ea0a31cc9",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_sofa_models.json": "6b5fbe44fad904ad1e79fe96d307d06d6d0804fa303a1b63056c3c211db1ec51",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_sports_table_models.json": "d80767ec7f308dca654241042d44d220dad2863620d2eedba0903c08396e4bef",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_stool_models.json": "6dfb331c2aa8f39f138e79a372cd8cbf805b65463482ccb8a7e16ddce8e3669b",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_sun_lounger_models.json": "7b37903b8ab47159c891f6c267d8c714f041ab36991617503b3e7fe645c89765",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_table_models.json": "d6bfa47a5500d25dc431f7029e2328d293623d1200fcd897072de32739842ee9",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_toilet_models.json": "6a7860a9cfa5876f75b442baa1ed9b4919f8187dd28e6e3e5457434b152cbe68",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_tray_models.json": "cfc5d661d2582672ca14d89668ac1210ab2305380bec80ddac0e140692500369",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_trolley_models.json": "b40e5a19fbe51303cf68aa1f3d335982809c68ad341979379c9c8b815200df76",
+    "audit/material_to_object_reverse_cycle33_2026-11-14/scale_hard_sources/sources/browser_vase_models.json": "b7af7cbd6b561a0a6866e9888626b9fc2661155d2a0a057310f7c947c21dbdee",
+    "audit/flexible_geometry_intake_cycle9_2026-11-13/sources/metadata_000-157.json.gz": "3de40df8e0ff60006efc36a86597723d3a46267bf510b5dcb9814cbee2c49964",
+    "audit/object_material_scale_cycle34_2026-11-14/objaverse_bulk_independent_review/INDEPENDENT_RULES.json": "eec26d849c3f0a4fe38b47cc546368078da6ba19cd2a673a89db33111fa16531",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-043.json.gz": "752b681222db8fc4e8f8fc9d12c99bcfe776f87a7cca2d893a2513a53181f20c",
+    "audit/flexible_geometry_intake_cycle8_2026-11-13/sources/lvis-annotations.json.gz": "20e51323d82caf2e8bca9f3b33322cfdf58d3a63c45d0c70ebb8683887aefdc5",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-060.json.gz": "12462ac3cb3274e3e6b98ea1ed3cc1f39e0d965a1afbe04ff145963f0e2bc88c",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-053.json.gz": "356193c43af67e6ca8b6ac95c4907f08a591ddfc9f0cb9c66022d0ab5a0098d6",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-057.json.gz": "0390de435d36e6cee9c01a362fa107b5422432b73eaf895a08c96df4e1f8a394",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-046.json.gz": "c63cd7da5eb59030df74691dfdd3cdc022e0481b02be32e3de3962a874fbd467",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-096.json.gz": "3a1558f94d8b3653478065a94bebef63c01168cca91a3c16a95fbca29c9727f1",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-156.json.gz": "2d2fcfc79c6c04bb4180a4dcc6e5aeff849ec1fa4fecc641201df602614311a9",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-107.json.gz": "49c379c54abb98ece075279eaa0676e22a5babfeb774ad0e8db1f09e0f773a86",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-116.json.gz": "a52414161230a7c921a3f6a318151469d76cf0b9ee20658d70a0c7ede1cb3557",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-105.json.gz": "91f27e84e6b108e824acec764304f4e2fd04c84a88b5dbe84d2c44549038b181",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-082.json.gz": "88ad3639db469dd65927897b611d91348a753750a1f0b50907375904beefbc91",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-158.json.gz": "db49f754a12c507d1a1b1db7207a127937f2766cd21ab72fa08797bf430616eb",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-029.json.gz": "c64b5971a3d46e4436280d41abe19bbb6d9acf8cdd893f99fcb0b0a1572edc88",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-076.json.gz": "075a758cea81f522e1d5a1e031a7d8dab0eeefd96889629d8d16d2b1bc97e5cd",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-121.json.gz": "6166e9139c333ac10009bf9a11f6498eaf2fadf22a26f2290dcbf85e5d9797b1",
+    "audit/flexible_geometry_intake_cycle9_2026-11-13/sources/metadata_000-146.json.gz": "432c9381e84603b81be91bcc6e3ca6ab73a715cebbf9a0a3586d8eebe1fb52ea",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-088.json.gz": "ba9d9532e774f93e1b4edd5f942bc2e4cc4c20a0f27db2762eda60804d1f85ab",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-142.json.gz": "65ce47bebe6d1a450e835d20e3281d3b0a5beb1d33d8a832b9869e8ee622343e",
+    "audit/flexible_geometry_intake_cycle8_2026-11-13/sources/metadata_000-072.json.gz": "b64fc310e466334c536521755aec6b040977de41edb985813bfba521b1035db2",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-050.json.gz": "9193d6c7739deb10e332f3e9d97f8b1357d604f65b0c450a2642304622f6594d",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-016.json.gz": "a40e37f4c521f96bf29b0c8a2b5e181a71621c6833aec23da68c2bace6790d14",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-140.json.gz": "37cd6ac2c0429b109479c5c5d5807f2c6fde4028d456e4cd3415e02741b4072a",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-086.json.gz": "af7aedf1738e7415dd4cc130ca6a8a3efca2490616831dc37abe626dee2a4e73",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-024.json.gz": "f7a12395bc396b8e8fb0162f0fe60ee43b42b7cfb3a215bde9866074ae41a566",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-100.json.gz": "d7c68c115828d1a5f38e722faa3c52c0d394ad74f24b42be5eac1e00e69b45a0",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-078.json.gz": "bd31f5adfdca47376db4d99dfe39b51b3e5105cd563eee278f7ca500efff1ca0",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-099.json.gz": "92f4151aa93830a98b8130829cf8008f480b5b12118c4da4b2c93c30c3270359",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-039.json.gz": "48fba0bb67d790c900dceab75cd29437427b45a9febd51a1f2611a1e5b5f2fbd",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-103.json.gz": "66f5da91408cf2e854995110dc2e3014e8387c805f0070c683ebb964143447c2",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-026.json.gz": "fe156a2eed7c14eaf06d6af3c8bd0a8e869aa66fa10728fa986c499d80611527",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-008.json.gz": "d02734b9318322d248c366193e25187897dfb94091e3034c86c5b43a4d641764",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-023.json.gz": "91721b846a533e23737d2bd2c0a476abf68fde7a9d997589569b9b4bf4f1e5c1",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-032.json.gz": "4d82335a9adb53075ada1fd2d3ace30a83785cbab18e0cd4f0158112d0d67f44",
+    "audit/flexible_geometry_intake_cycle9_2026-11-13/sources/metadata_000-041.json.gz": "6f460a2aa5c92d9d78843ffe9029d9c00d649a47e2f814067199033d6f3d33ba",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-126.json.gz": "f635041d28886470816033610b75d09424e4e9dd5b316ce7ce01da10f8f0b42b",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-058.json.gz": "985db2ae647bf34fe8a6c6ff9bb559e11729fbe8b99eb726c14f0990d10164c6",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-122.json.gz": "357a75a2195242ab583a60fc9f94142eceb75417907dc407ba28955199f2ec00",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-092.json.gz": "4deb18bc0acbe9e6949edf411584a0eed85f3d0c142ef34ed416ce23647460b2",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-138.json.gz": "99da98c27d4648bb75563726760189506cd9b59cc4bc42b9b1dfde9abd7eea00",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-136.json.gz": "3d1d0d0a9cd4db3ec97186011f55c990d9167de0b50d8212dbfc09bbcf4408a3",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-120.json.gz": "28c857706bc91bcad0941e8b3fb8077f484354c2e7f3e3be35eaebb922bec494",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-019.json.gz": "e810d299af9e54d05161106fa27aa1d86006174d3e09d3cd52ea453732a694ae",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-101.json.gz": "c2741e72e6d77895148d037ccba1badaa2daef51a9278363586c84c048392901",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-085.json.gz": "e56ddb789cf281dfa213b8a5067bd5e39ca6395a074bf0f1bcb46b6cd72098e9",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-123.json.gz": "4c6e6af804d650d8205eb02633496eb5b2eb95f32ef92d4fff6b42ff5939d06e",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-089.json.gz": "124530701e5c248d83de1b914bf68832c4fdf878dfadc0175ed5c58cd521eb5b",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-045.json.gz": "ba2ad269d30571356fc8ebcd4fb8c2b3a995c8812a37de3a4f6e23d10478663a",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-054.json.gz": "0ee2e200f962a018398812b139a1cda11633a31ee9ac681d185199863ccd8c33",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-002.json.gz": "960454d09f0ba9ea6d46a4016bf5bacb9e2f01713e305718266c019943c38abc",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-129.json.gz": "ed86d23a1dc80b2df5735de4ebf0ca19181663fab1746269f1b1a8bf803f034b",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-079.json.gz": "b9f212d7e834d7c5f9fb08eea32e81c9820896fcabeb85d080926de64fa171d8",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-047.json.gz": "7ab21f43ad948724d396ea763472407e421876e53fca5439b8463c8bc3497740",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-070.json.gz": "4d3712651b26d85189a849345622ccbb9bb2821210f47f8255945b95b7116f14",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-141.json.gz": "1fda906da222df7d1ca4b50628d7974e470401fc0a54eeac2c5770f5360c3e92",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-094.json.gz": "e447ffdf5355385703fd0d730c607f4debd12ad8ffc19911441aa56c0c5ed2ef",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-007.json.gz": "5309e4d0ca7047efdfdfad8ba68b3e210470a84b17e4c4fa5d1fc125fc6f4c84",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-115.json.gz": "3ee735ee531f998094ca18e720f6fd5039bfe871e7b73c30128f23f6d3d1e8f9",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-036.json.gz": "ac3e2c099e7f645606cfd97a99c589cf36eccaa54037cf822d86559ed7ab0957",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-097.json.gz": "f962516e9bf6ce467328c238087b4767092f5d30763bfe5309ee3d32df9b24dd",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-081.json.gz": "204677ec2b9b8600e77caacd4452e6286e19d03c04d18b2e85e207201d7e1662",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-154.json.gz": "0231f8eb504b99446bf4e93f321fde62c944b981bdcd8b124785caf2a3f31a1b",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-084.json.gz": "3884cd5b74379023235e38c2f4d18edfa1deaa41161f585fd27bf0d130d1d819",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-130.json.gz": "ea62d573ba065e3ab3b4d78677005552d9199fa1f85902a3ed9597c67da3ab43",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-030.json.gz": "e8f422180c32e35e70f0ec8bb069da6629e056cebad3d913d903929feeb62c12",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-109.json.gz": "a52701c271a307fdd3899177f25322229bff6cf2f1281a1d4f35b875385bf7e3",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-151.json.gz": "ac33f688891f11c6965811e951a18b23a42a4dadb6366b690f63ba49823869a4",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-014.json.gz": "5ea360089dd712ded220ca941043617b5d568d422e30c94bcb32c55172f12744",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-074.json.gz": "9b50ef2b7ecb6aa90524f5351e2e258f9be9e3f30796db5ed266a9fccb83712e",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-012.json.gz": "f9ce7f0ce767c30fbf8d1c0e3a5542d520587ca97b4328db0347cc43f1d4681a",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-064.json.gz": "e666ecf77b50b116d3b96149872a8b86fc2d75218d23983a01968ce37395e83d",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-134.json.gz": "c437a3da74de49a7393d03a5dcdcbec1f4ae0da1f2152793f2b1ccaf6a5bd652",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-015.json.gz": "60ff99f4196cb0d1346f427479f23c5264893e81674fae1f15231f8e50d449ac",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-119.json.gz": "3e79c2c191db1e2f84b488d5b0bf78a6346a9e7995b071ba7aaa356ab9801022",
+    "audit/flexible_geometry_intake_cycle8_2026-11-13/sources/metadata_000-028.json.gz": "59aa21bab8f5083e9bd163def90442388bc210e3c9487a6b190190f01e134bcc",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-102.json.gz": "3f2bc12864c4c95d56349d319f00c429379760809968008a957cad7cf5942913",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-006.json.gz": "57fcd7b1b053e59a5c55e4adcac22b93fef5d65c57c8955502867b625ed66ffd",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-073.json.gz": "a25976005a3a38ddbd6cc00935722efd118af0bb27bb781b8ef41c18da6ac87e",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-077.json.gz": "ab70b1fa4d00ee7c9ccadf20b686f646e9b67a048d44ea792ad602880ff3a64c",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-135.json.gz": "4600a2aa558855cfaf6431a70974570f4f3fce1f0b0a524c238d572ef584b27d",
+    "audit/flexible_geometry_intake_cycle9_2026-11-13/sources/metadata_000-127.json.gz": "4150815f120e312a4c137846e79e97501550c389b367bb9e7ced640034f7a1ac",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-133.json.gz": "a8f3a915a07672d6cdc11aeec315a2f7360c7872d2dc850e5e07a5cae753c703",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-131.json.gz": "f3fec9d26f76ae4e079807fc5ae79b1695e7040b57e5a81ebb48bee8fe15f6e4",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-110.json.gz": "d93aee8e0316a794dae1aeff7acd2c1cb84cecd2c12862c6fa782f6b96dc9b19",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-071.json.gz": "029b96a7e3b7805ffc8011ebf22eb165ac5e530540e486565641eac50521de3b",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-062.json.gz": "40d1efb36b59a414550f906a4f714b6f9cca0f43f653658c6455507fe6fd1c6f",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-025.json.gz": "b5c0cbefa5a9e7376d87cf2ec830940e5ec589a803a0509b5c94fa0e4f5df729",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-095.json.gz": "486c277a1ba0fe07b34ea91d74241ed63dd99abd868cdfa70fd178af89d7eedb",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-104.json.gz": "c4d1e66e9f7290d606d5c42298cdeb777da84dc2625c91cd3cd5dd985e9b12cf",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-021.json.gz": "c10972c26e7ba827cf0e941dec6337342d458f269bf2a65c345d5241388a4ec0",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-059.json.gz": "1e1c51cd6596a46e6cee7dfe9928b58ca64e951f4c56c9c29fb2fa216ccb7264",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-065.json.gz": "625bcfcbd08d80db0efade77928d9ea1d08763e44e37fcd5adef9a7ddeed2713",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-155.json.gz": "5daa36c171be86be9d8ea631d3196e165c3d35404402d1cc5c7e1f277627791f",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-018.json.gz": "0339a843a0093663249e8c026c9f565bfdfde895cc7e6e1d337ce7865130b04e",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-004.json.gz": "14aff8e4390cd2ee271888f49c83f3745a2d00b02f7b44e569d68f88a9f0bebf",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-051.json.gz": "b89bf615f401a220d2ae0e5d2f038639e3721bd04d7df59d202bdaccc0426f68",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-091.json.gz": "b9fb8713b87da27eb7eacd2a705580b5dcef62ff1c5ce4d266cc88cbbceb8576",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-153.json.gz": "6e3a49a5b798383b76a1e5afada18c3d2253e64c809ccd19b6c05bae327e0ad9",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-090.json.gz": "44acea88cfa57cb0bcec7e074a5dbcfc52e2c53887927432de7d0051ece7957a",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-075.json.gz": "637cc99362c6bb8162b0354d23504aff5be2e1cb4628078570dc3b5030322e82",
+    "audit/flexible_geometry_intake_cycle8_2026-11-13/sources/metadata_000-063.json.gz": "55255e4fba3f6e7cfd5c331f0bc2a151491994a26acb9cd474de14ced1530102",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-055.json.gz": "015347bf15350b8017a7a70c091a1907ff2f65d3fe5c4d5b78c16401f4ac5548",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-093.json.gz": "842241450c360911f49dee119b22593233336622715c78aa35efe41e6c7918de",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-061.json.gz": "513a702b8cb40fc10c2cd2edcd33d3a111a52eb4bc9d4a0008ec8d26b87eaaa1",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-143.json.gz": "3e3848e8a3b66fcdf5e1497585779fd750db3559012064476211102539ca6faf",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-001.json.gz": "93863e59e2298e5478a1a849269b5289970e2d0ca55c3dc4eb438fe2d034ac8a",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-052.json.gz": "61fc47088963a0f51e1322bcf6cbceda534bea4be5af9e98f64b90d49179b82a",
+    "audit/flexible_geometry_intake_cycle9_2026-11-13/sources/metadata_000-042.json.gz": "15e51a8658aa4851c25fd792f6df43e69e62c8361fb538748616bc906dcd9bc8",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-137.json.gz": "fbebd3d2a2e196b0af14c9a39987672939f7cffadf66cd237612b1b9f93fb5a5",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-114.json.gz": "e05e741fa08183db9b8b69b28d0839dfd477f0b084cee78d6a3f9137c3dbacea",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-027.json.gz": "725ac07b8156ba07fa814ae954e7dfbf30e8a19bdf77ae34ffb4a759c42f0023",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-087.json.gz": "5809ab619c710a57d4de017b30c90b3108f62e45503b567efc03105c657b26f9",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-013.json.gz": "499ddded05772356942ec99377090bbf3d68aa6cc20e89b5e63aa02f7389a0e2",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-056.json.gz": "2bcc33665558ca3b99d96ea4b120b19ada15607793e2d4578eb7c98ca5ef74b5",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-033.json.gz": "66f44bc2bb3a3dbb40db3ee67c90627babdc443c19947ad9342caa07f825f734",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-083.json.gz": "a316f61532b32fb8c4ffb50e643641f972e8891f8e40c3256f237f6992339a7e",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-035.json.gz": "404c9b1d574966c00df81c2b9cc477a71ab3908289beefae9a79601a4e49c8d5",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-113.json.gz": "8ad62ed53003012fc99c1fb7833b29fd9555c6aef3025d21a39d7f0184bf00d2",
+    "audit/flexible_geometry_intake_cycle9_2026-11-13/sources/metadata_000-098.json.gz": "cca4598d482658e56eecf3ca167af7b0568a8818e09dd440cc52b9e9aecdad62",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-128.json.gz": "1b12e1b294c7aad517fd73cc6a5eafdbc4184afeb325b5c32b325bc7fdd5e0cb",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-022.json.gz": "7f427265050b1644d9a83ead7fa7eb303c9fc5cd818b03bbb53e5d5967d5e0ff",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-066.json.gz": "988048a4beb272ce89ce7679776afd561f45e3f6add45f459eee9f1108c8de78",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-034.json.gz": "1abf2f65357b72efe7f8c5430d54dfea572a60a73773d7ce3a3d6b8b26c04b33",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-111.json.gz": "ff1a44b4a57b41aef99991b15fc92b5184bea783ca4ac871451159ae85fae3d8",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-118.json.gz": "aaae316f3f829831503ed7c319f159b828f35a172d6de3302c01155e3d5e4abd",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-125.json.gz": "27cabc2fdde84b891259916235b2f5e7540afef17b60bbb0f3488e0cd10636fe",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-139.json.gz": "55e1d193e69fe81c540cf6097ec751cffc2ca4db9e1809cd5cf1de534ca6c34f",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-044.json.gz": "d1a920b3d6e60c919a1e2ef114cd1584bc4a47372e33f34188f882ab0355e9a3",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-145.json.gz": "df296fe523db8f1a215dad584a45f598857d06d4f5fc171097e7bb347999d48e",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-037.json.gz": "de26eb6c7cc63d924baf9bd54f7a569a927ddaf7a3222d81eecde1b6e78e50df",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-117.json.gz": "488eb25b771923642d0d78d11f6b167aaba46e1e9b9723fe0c777d8006e7d92d",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-108.json.gz": "279c216902aa2d886c281455309931522668576c7ea55826e406e4832cc0e1d4",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-017.json.gz": "b0101f1a44140cf8863366960473e4f242947d174f0afaf54efd00636d5a742f",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-068.json.gz": "fe5e7cf15ed59993c4aa673c2e49b98b0d229048253c0597794b41281354ce77",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-040.json.gz": "05a0d7378fe70ba4681afb5fb10d1b32d22134301b94b7483177b64ba0421eae",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-106.json.gz": "791eefe3cb82c9258dbdc2da890bae1155490a176e7a30914e2bdd7a5207ee16",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-038.json.gz": "97a63d6ee11dc9fc9211bb656f02e2939726a46b3f6efda96f6529625af75b28",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-080.json.gz": "b5c81dfa5a360aeac5e330c7754c18607e3b32b96182f7369d60c737245e9152",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-132.json.gz": "688aceaebedf57e9bb98c960981333ea4069fe97c3e6083005ffcc72ec4eb98f",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-149.json.gz": "8f5cd4952ecd5141539addd92b1d3c4332498ebff38a3a03e31b989f958efdd7",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-009.json.gz": "cee62d98212f33da2f5c3f299c5d0784609d1c3861f39d396348df54d17dda1c",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-069.json.gz": "c2934f17e53537c26e37e7d1ce20895ab404b350fa7deb1c55dc72f671c43a3a",
+    "audit/flexible_geometry_intake_cycle10_2026-11-13/sources/metadata_000-031.json.gz": "8d867a5ab0f47609c99248ecc7522765386389612c2c37e39a266ac4dab300bd",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-067.json.gz": "c14d4e855ed8cef6084c5154c37b0bd8df76fe8af70604f3c91fe2cd28d9a094",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-159.json.gz": "f32c359612f640343302334334491f66c5a1b2901aae3733c1dec0f97cf83706",
+    "audit/flexible_geometry_intake_cycle11_2026-11-13/sources/metadata_000-152.json.gz": "0ed0a12440febb7076afd92a148e8b977a63ec2937de4210ab7f389747ace75d",
+    "audit/flexible_geometry_intake_cycle12_2026-11-13/sources/metadata_000-124.json.gz": "382d3854cfbfecfc86122931bf81756ef8bf523668537f2b84b4efc1a098e0eb",
+    "audit/object_material_scale_cycle34_2026-11-14/site_integration_preparation/cycle34_component_renderer.py": "83e330a112f257a73772cdc93f3e331c8b3171005c8318b6eb53571ba651851c",
+    "audit/object_material_scale_cycle34_2026-11-14/site_integration_preparation/cycle34_object_cards.py": "d03c2fcc699eceeaf58c3ac86c7fb0ab1a4c4e60ab862323e88dcdc8fd737731",
+    "audit/object_material_scale_cycle34_2026-11-14/site_integration_preparation/c34-object-details.js": "d8aa60482313c21ba883a5af124ef75d57271c64aa6305a69d42f070983b6ebf",
+    "site_v3/dataset-views.css": "1763c8da51bc4fc12c687f35a181ed7f51878ae894753563bdf800ad0c97c38b",
+    "site_v3/evidence-catalog.css": "cc7e90fbf9b480e3a0adf95c7f0c415cd27795f6fabe1d43fc66fc1143b9a396",
+    "site_v3/phase1-ranges.css": "40be0d5a193bdffd5cf878ac273525433234bab5640aa787434001670b39c2df",
+    "site_v3/scaling.css": "6ce7646e740c5ff1dd8e9f94a7c496eadec3fe5a4dc0e5128df141de6d3ac844",
+    "site_v3/site-shell.css": "3adf4f6c9c740a23add9dc32d452a1b1ff9a77dfc7005254fd37583da33a0542",
+    "site_v3/styles.css": "238c8dc7d668171dd602a3517565e63ccec8e3e719f260d63e4c99aefe2fe0d7",
+    "site_v3/target-reference.css": "7d68cf391a7ebbae4ec6ed90bc8cfb553abf4361907e6df8d0ae40e81e111daa",
+    "audit/site_unified_release_2026-11-13/build_release.py": "efc50463161510638f741c91cf260a4f382c4a8233dcaf741f1a1b34c2283769",
+    "audit/site_performance_2026-11-13/finalize_fast_export.py": "9bb92e6fb868c1832fedb8b9ee06ff43d66a09100b78402e6b76737ecd611295"
   },
   "source_keys": {
     "document_or_database_citation_keys": 15920,
@@ -80,25 +317,25 @@
     "policyVersion": "OBJECT_FIRST_2026_11_14",
     "scope": "Current object-associated material labels and options; three properties may come from different admitted groups. No new property values or automatic product assignments.",
     "objectMaterials": {
-      "targetCount": 230,
-      "materialsWithCompleteRecord": 147,
+      "targetCount": 231,
+      "materialsWithCompleteRecord": 148,
       "materialsWithIncompleteRecord": 125,
-      "materialsWithE": 184,
-      "materialsWithNu": 170,
-      "materialsWithRho": 196,
-      "materialsWithAllThreeFromAnyGroup": 170,
+      "materialsWithE": 185,
+      "materialsWithNu": 171,
+      "materialsWithRho": 197,
+      "materialsWithAllThreeFromAnyGroup": 171,
       "materialsWithoutAnyValue": 31,
-      "coveragePercent": 73.91304347826087,
+      "coveragePercent": 74.02597402597402,
       "missingMaterials": 60
     },
     "unlinkedComplete": {
-      "targetCount": 1525,
-      "materialsWithCompleteRecord": 1520,
+      "targetCount": 1524,
+      "materialsWithCompleteRecord": 1519,
       "materialsWithIncompleteRecord": 30,
-      "materialsWithE": 1525,
-      "materialsWithNu": 1525,
-      "materialsWithRho": 1525,
-      "materialsWithAllThreeFromAnyGroup": 1525,
+      "materialsWithE": 1524,
+      "materialsWithNu": 1524,
+      "materialsWithRho": 1524,
+      "materialsWithAllThreeFromAnyGroup": 1524,
       "materialsWithoutAnyValue": 0
     },
     "researchCandidates": {
@@ -122,42 +359,42 @@
       "materialsWithoutAnyValue": 32
     },
     "input_sha256": {
-      "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "5f2339feb53dc9e5f5ee95d322da7c69e1eb3cf176eb357f382928884e37ceba",
-      "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "861eb489106c63d73a1324221cea951cc08f810f35c672d1fc7fdee4cfbeb29d",
+      "data/current_two_table_delivery_v1/material_reverse_index_and_property_ranges.csv": "d66e36bdc058cee63e52e94b00121014b162a6b0cb9f23944d83ee289cd08fde",
+      "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "c6999a840beac60138fede178993b0f4933fbfdc4cc23676ef267733828c5dea",
       "data/current_two_table_delivery_v1/current_material_options.csv": "c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49",
       "data/current_two_table_delivery_v1/source_reported_material_relations.csv": "f726c838d2937e5c643caebe203ac82efcfed14f7c8a255b3ad8d2c1b88ab612",
       "data/current_two_table_delivery_v1/official_bound_material_relations.csv": "c2010b943e33e9e566b85d500896c74eb16ba49cdb9da04bd993cf3f1307995b",
       "data/current_two_table_delivery_v1/approximate_component_material_relations.csv": "7d72338a3f90b8167ac8b75fb3acb4bc7dd587abd5f70823c205bad4e363949c",
-      "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "add0a6cb11bd814b07095ddef293409eea83e721d6fe89fdbbfda69d20801af4",
-      "data/scaling_release_v1/object_component_inventory.csv": "fa144d7795aa2ef392ddacedbe6ce44ca7864b13a595f17a4ceb2eccde5b202c"
+      "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "47321543db69e0b0bd2c5e050c9dc9b0e32361aa2c7d16ab5e5a034c41a89266",
+      "data/scaling_release_v1/object_component_inventory.csv": "73f82365e93c3e0fbf5cd0bc3afcf7b11b9b89ec6f5ec5b66370e847045f8169"
     },
     "complete_record_count_unchanged_by_cohort": true,
     "incomplete_record_count_unchanged_by_cohort": true,
     "unresolvedSourceLabels": {
-      "labelCount": 28,
-      "relationRows": 43,
-      "objectCount": 43,
-      "componentCount": 43,
+      "labelCount": 60,
+      "relationRows": 5139,
+      "objectCount": 3007,
+      "componentCount": 4010,
       "countedAsCanonicalMaterials": false,
       "propertyCoverage": "NOT_EVALUATED_WITHOUT_REVIEWED_IDENTITY_LINK",
       "completionRequired": true,
-      "partiallyLinkedRelationRows": 30,
-      "unlinkedRelationRows": 13,
+      "partiallyLinkedRelationRows": 5125,
+      "unlinkedRelationRows": 14,
       "download": "coverage-gaps/UNRESOLVED_OBJECT_SOURCE_LABELS.csv",
       "report": "coverage-gaps/UNRESOLVED_OBJECT_SOURCE_LABELS.md"
     },
     "reviewedSourceMaterialLinks": {
-      "linkRows": 1091,
-      "completeRelations": 446,
-      "partiallyResolvedRelations": 30,
+      "linkRows": 100383,
+      "completeRelations": 94643,
+      "partiallyResolvedRelations": 5125,
       "sourceFieldsModified": false,
       "numericalAssignments": 0,
       "download": "scaling-assets/current-tables/reviewed_source_material_links.csv.gz"
     },
     "entireObjectMaterialTableComplete": false,
     "recordedComponentsWithoutReviewedMaterial": {
-      "componentCount": 884,
-      "objectCount": 884,
+      "componentCount": 919,
+      "objectCount": 919,
       "countedAsCanonicalMaterials": false,
       "completionRequired": true,
       "download": "coverage-gaps/OBJECT_COMPONENTS_WITHOUT_REVIEWED_MATERIAL.csv",
@@ -382,6 +619,7 @@
       "MAT-WOOD-WALNUT-BROAD",
       "RESEARCH-MAT-535C4F87AD6BF591A1E6",
       "RESEARCH-MAT-9EBF13CE839AD1E2DF43",
+      "RESEARCH-MAT-B8209696928C67A8BBD5",
       "RESEARCH-MAT-C501F9293E4FF3D96EC0",
       "RESEARCH-MAT-EBDE613B70AA97AC45D3",
       "RESEARCH-MAT-F44201FBF85DB979DA15",
@@ -413,31 +651,31 @@
   },
   "object_material_index": {
     "file": "material-object-index.json.gz",
-    "sha256": "01ec225322a86eb08a5dc28f60e97fdfb43cc9875a61605d5856067426983333",
-    "material_nodes": 230,
-    "mapping_rows": 174013,
+    "sha256": "f7c2c2ebe053ec4eadb095737ef1d7bdfe17fde07ade8495e596be958d015ae5",
+    "material_nodes": 231,
+    "mapping_rows": 273304,
     "input_sha256": {
       "data/current_two_table_delivery_v1/current_material_options.csv": "c06dec4216f875e55ba23cee41a734efadcfaabb94c5367cf5da164545898c49",
       "data/current_two_table_delivery_v1/source_reported_material_relations.csv": "f726c838d2937e5c643caebe203ac82efcfed14f7c8a255b3ad8d2c1b88ab612",
       "data/current_two_table_delivery_v1/official_bound_material_relations.csv": "c2010b943e33e9e566b85d500896c74eb16ba49cdb9da04bd993cf3f1307995b",
       "data/current_two_table_delivery_v1/approximate_component_material_relations.csv": "7d72338a3f90b8167ac8b75fb3acb4bc7dd587abd5f70823c205bad4e363949c",
-      "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "add0a6cb11bd814b07095ddef293409eea83e721d6fe89fdbbfda69d20801af4",
-      "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "861eb489106c63d73a1324221cea951cc08f810f35c672d1fc7fdee4cfbeb29d"
+      "data/current_two_table_delivery_v1/intake_source_material_relations.csv": "47321543db69e0b0bd2c5e050c9dc9b0e32361aa2c7d16ab5e5a034c41a89266",
+      "data/current_two_table_delivery_v1/reviewed_source_material_links.csv": "c6999a840beac60138fede178993b0f4933fbfdc4cc23676ef267733828c5dea"
     },
-    "builder_sha256": "268d08c8c632fdffc3d2b0f5436f9803a019d0aca787d1d7c8429f80f317d28c",
+    "builder_sha256": "5904681f54b06df5f363f05f64fb7fc2c649f9d03e12d038469ed44966aca42d",
     "basis": "Current material options plus accepted source relations and reviewed source-scope links; alternatives and coexisting scopes retained; no numerical property assignment.",
     "material_files": {
       "BUCKET-GLASS-GENERIC": {
         "file": "material-object-details/643d107e8e82f38f8516.json.gz",
-        "sha256": "5ee30ba5dac484d8bb69b5f4c18a757faaad77787b539bae703a3f5f65d447e9",
-        "bytes": 69932,
-        "rows": 1082
+        "sha256": "2137aedf446565b011a0bc0e4722cf3c0fd7c7dbcc8ffb520dce97f5c4ede9aa",
+        "bytes": 133470,
+        "rows": 2586
       },
       "BUCKET-AL-GRADE-UNSPEC": {
         "file": "material-object-details/21a21df78ffbbf1721d1.json.gz",
-        "sha256": "175f2868dc1ed023fcf95bdb1626fd1ab180f9dbe9c4eeab8df8704de7b73b94",
-        "bytes": 131408,
-        "rows": 3363
+        "sha256": "943f69721c9651e09aa7d3ddccc9539b50a75a0eb9aea53e078489201c55185b",
+        "bytes": 131743,
+        "rows": 3364
       },
       "BUCKET-BRASS-GENERIC": {
         "file": "material-object-details/e3694d98353790bd5c4e.json.gz",
@@ -447,9 +685,9 @@
       },
       "MAT-WOOD-OAK-BROAD": {
         "file": "material-object-details/e9dc062907c747ae068a.json.gz",
-        "sha256": "8a3fb7668baa8ad464098af5b1d4a192efd274096380125f1f3621cd07f074f8",
-        "bytes": 10888,
-        "rows": 115
+        "sha256": "57488108673e3e5761f26a2536a2830b601c1e1851dc3d4bf3ca6d1b778c070f",
+        "bytes": 11254,
+        "rows": 116
       },
       "MAT-WOOD-PINE-BROAD": {
         "file": "material-object-details/21ebf981c5e8ec672d30.json.gz",
@@ -471,9 +709,9 @@
       },
       "MAT-WOOD-BROAD": {
         "file": "material-object-details/ad625f7e44ff9bb5bf57.json.gz",
-        "sha256": "7c540eaa6d4df4b5f43dbd9324a92dc7e422aadc501ba645c006328804129060",
-        "bytes": 262735,
-        "rows": 4471
+        "sha256": "982257f44cedcff849a26659be04208bc9e7eac858794e1308aedbc129ebe0d3",
+        "bytes": 1285558,
+        "rows": 30840
       },
       "MAT-POLYURETHANE-BROAD": {
         "file": "material-object-details/a81bef1717558b7b6ee9.json.gz",
@@ -489,9 +727,9 @@
       },
       "MAT-TEXTILE-FABRIC-BROAD": {
         "file": "material-object-details/97b7e4379008302eb453.json.gz",
-        "sha256": "dbaf5db25e5221f35441b7e9a299bf3f82f2a051fdf6343355ba722f71f21a2e",
-        "bytes": 194905,
-        "rows": 2390
+        "sha256": "0ef270b28bf65186d3e56fe176ba131a044cf9b97b3e2c3055dd07469fc7935e",
+        "bytes": 558525,
+        "rows": 11544
       },
       "MAT-WOOD-ENGINEERED-BROAD": {
         "file": "material-object-details/71bb37c4579b89d612c8.json.gz",
@@ -501,9 +739,9 @@
       },
       "MAT-STONE-MARBLE-BROAD": {
         "file": "material-object-details/a41ec9f4ce35de3b51a4.json.gz",
-        "sha256": "0ca2e353a0107a60be4e13a7793d3bc83b813c7d53f6b59c3b321ac5e6f3bfca",
-        "bytes": 2308,
-        "rows": 8
+        "sha256": "7e1f230ad08ecdec397198c3f24d88e62c0331a9c91a89caed2fd36f0a46921c",
+        "bytes": 20964,
+        "rows": 468
       },
       "MAT-APPROX-STONE": {
         "file": "material-object-details/ad3846cf79a3bdac3c49.json.gz",
@@ -543,15 +781,15 @@
       },
       "MAT-METAL-WIDE": {
         "file": "material-object-details/7188cadfd1594fff83c6.json.gz",
-        "sha256": "c91a6c08a7d68bd0c879c3c3e80b0b5a60eee9ce39c538ae3416fcccb30d4362",
-        "bytes": 92993,
-        "rows": 1166
+        "sha256": "cf28137d0226daf511ab8ff1f6bbfd2268da5e526b5ce785b4e4664f32a001e1",
+        "bytes": 1417880,
+        "rows": 34919
       },
       "MAT-LEATHER-BROAD": {
         "file": "material-object-details/ae5d1fe57fcc6baaa2ff.json.gz",
-        "sha256": "fccb36b2139bc2771d75eaf8d8b85fd206e0db955dc994c2785cc1598e20ffd0",
-        "bytes": 65967,
-        "rows": 700
+        "sha256": "48efb4cf24609b66b5b459bd92c60ff56276242d189bab1557cc7458fd0da0c8",
+        "bytes": 371616,
+        "rows": 8295
       },
       "MAT-LEATHER-BONDED-BROAD": {
         "file": "material-object-details/c41233a2ed4ed6fa3a2d.json.gz",
@@ -561,9 +799,9 @@
       },
       "MAT-LEATHER-SYNTHETIC-BROAD": {
         "file": "material-object-details/701a4bf3dbf08820ee8c.json.gz",
-        "sha256": "5be0da017890c7f1ea01b1cd03e8b3e0099b7e7a79903c3765c95a3764afad1f",
-        "bytes": 28240,
-        "rows": 251
+        "sha256": "04c1f903b499a259e3ca774dd105c5212bb58c51942c6d4735aa87f818077b6e",
+        "bytes": 28794,
+        "rows": 254
       },
       "MAT-APPROX-PLASTIC": {
         "file": "material-object-details/163854e4bcdba431f7c7.json.gz",
@@ -591,9 +829,9 @@
       },
       "MAT-CERAMIC-BROAD": {
         "file": "material-object-details/7fed49842bdd1af48d74.json.gz",
-        "sha256": "d5467b11128cb48dc894647f7d4a99d0a5179bd26bb41d3c3b7a7cd3d74a5fa4",
-        "bytes": 15630,
-        "rows": 256
+        "sha256": "162a4ca25d8f9ab00c6d86a278037f6cf6352bb39e8b5682126d327458b9ff8b",
+        "bytes": 99596,
+        "rows": 2347
       },
       "MAT-APPROX-CERAMIC": {
         "file": "material-object-details/baf42359955467a855ad.json.gz",
@@ -609,9 +847,9 @@
       },
       "MAT-TEXTILE-POLYESTER-BROAD": {
         "file": "material-object-details/55b2ac37ef3fa27064c3.json.gz",
-        "sha256": "f75cc8953733510e19c3596c71e0e09cc42ce97ecf2b6079ee57e8966abd59aa",
-        "bytes": 48111,
-        "rows": 704
+        "sha256": "1cd2547cf06922f46b065e2f5d9752315d3bb000e56ba7121757fdffbc9a1cdc",
+        "bytes": 48523,
+        "rows": 706
       },
       "MAT-WOOD-BEECH-BROAD": {
         "file": "material-object-details/43dca94c57e5f61500be.json.gz",
@@ -627,15 +865,15 @@
       },
       "MAT-PLASTIC-BROAD": {
         "file": "material-object-details/73642b8e90e0304d6f84.json.gz",
-        "sha256": "5388faa3e938a19482f879b94c342c9bf70ebfcf43a6dc7b9ec9cd5ac69950ce",
-        "bytes": 288310,
-        "rows": 7142
+        "sha256": "d6d79781bc971fc526758720efe4a30f56b72eebdfe262efa6c4e9400638dca5",
+        "bytes": 931656,
+        "rows": 23395
       },
       "MAT-STEEL-BROAD": {
         "file": "material-object-details/0c4ad0b17c4c49a12a59.json.gz",
-        "sha256": "c2d2d6232f26aee2463742afb65dbd5a5cb74aa7cb7d11ff15c5c0279daf3ccc",
-        "bytes": 234022,
-        "rows": 5354
+        "sha256": "86cf9e97267765aee45271064641a409dc768ebdd193f44ae8a9aa6e79fac44b",
+        "bytes": 234266,
+        "rows": 5355
       },
       "MAT-APPROX-PAPER": {
         "file": "material-object-details/2c5736b517d032afc667.json.gz",
@@ -651,15 +889,15 @@
       },
       "MAT-FOAM-BROAD": {
         "file": "material-object-details/2a2c0e7f2eabdab8b01b.json.gz",
-        "sha256": "ef6392adbd599b0569dc25d8a58eb0e0404652c4a066879bba0c67810452f9dd",
-        "bytes": 18919,
-        "rows": 216
+        "sha256": "b7e5f5d08e5c711aa5217bd87c4aff4204c3eed9ed5664c275a21122e9478731",
+        "bytes": 20633,
+        "rows": 228
       },
       "MAT-TEXTILE-VELVET-BROAD": {
         "file": "material-object-details/b1308245d50f773feb0d.json.gz",
-        "sha256": "3676982899559506a2f5ddad679221df6c7731480c6bb3a8938a4bd5fe260c04",
-        "bytes": 3326,
-        "rows": 14
+        "sha256": "f0af39d81222475d6c0382c538229dfc7988d987231be21c7aae19e836b5e615",
+        "bytes": 4537,
+        "rows": 27
       },
       "MAT-TEXTILE-LINEN-BROAD": {
         "file": "material-object-details/5924f93cb129222ad0f8.json.gz",
@@ -681,15 +919,15 @@
       },
       "MAT-PAPER-BROAD": {
         "file": "material-object-details/a2c6b648acc6e2bc42a9.json.gz",
-        "sha256": "0a47bbaa9b7093ace56b0eb4222cb24e0be3c76efb0b51c93b32eed52e181853",
-        "bytes": 36300,
-        "rows": 455
+        "sha256": "aae5266d9afc96af6132720eaf95413ac08543741b574928e9a92318dabe4f37",
+        "bytes": 38276,
+        "rows": 481
       },
       "MAT-TEXTILE-COTTON-BROAD": {
         "file": "material-object-details/4872f1fba7eabd412df9.json.gz",
-        "sha256": "4ed4c2bcf64a5f3e1aa824c1e2de3b71d4e088f2a98718e80e2edde45c0260ce",
-        "bytes": 11012,
-        "rows": 108
+        "sha256": "19b061957b6c04ca60dc2f792c1031da903124f96e70ad8d19aa584dcdb08b38",
+        "bytes": 12549,
+        "rows": 122
       },
       "MAT-TEXTILE-SISAL-BROAD": {
         "file": "material-object-details/1fe9564acb7fcf31fa73.json.gz",
@@ -741,9 +979,9 @@
       },
       "MAT-APPROX-PLANT-TISSUE": {
         "file": "material-object-details/b3950fabfc40c2f38201.json.gz",
-        "sha256": "ad922fd8a3bf2e8b0dbe6adb76f1a5dacb54f804615a8c334ca291b8e35cd393",
-        "bytes": 133876,
-        "rows": 2281
+        "sha256": "cad057d2a50d8a28fb6d9f43597bfc8dbb48bf0b0e6661186b2462bf15d25017",
+        "bytes": 154346,
+        "rows": 2750
       },
       "MAT-APPROX-ENGINEERED-WOOD": {
         "file": "material-object-details/9897f99d3c259eba6081.json.gz",
@@ -783,9 +1021,9 @@
       },
       "MAT-ELASTOMER-SILICONE-BROAD": {
         "file": "material-object-details/3992d9a9deeecaf1b5d9.json.gz",
-        "sha256": "c4b96bc611ad808bfe74187b4255bb649ea91665fa185d646c5af6b16d4bb0cb",
-        "bytes": 35029,
-        "rows": 1515
+        "sha256": "df5de236660a340247c9f24c1fe411772ae3c649fe60d371747a78d80062d57b",
+        "bytes": 35670,
+        "rows": 1517
       },
       "MAT-PLASTIC-ABS-BROAD": {
         "file": "material-object-details/ad715479b9b010c6f489.json.gz",
@@ -813,9 +1051,9 @@
       },
       "MAT-RUBBER-BROAD": {
         "file": "material-object-details/35a544d2484ad3473bfc.json.gz",
-        "sha256": "81cb04ba00535a5b7c8a819842e7e540f7dd96f360aa716c70dbe195da047dd3",
-        "bytes": 79757,
-        "rows": 1575
+        "sha256": "430e8d6bf506456cebdfcc4ad102046dcb475008e281de1baa792f9444f39082",
+        "bytes": 94123,
+        "rows": 1866
       },
       "MAT-CARDBOARD-BROAD": {
         "file": "material-object-details/be6439486f72feded9af.json.gz",
@@ -921,9 +1159,9 @@
       },
       "MAT-CORK-BROAD": {
         "file": "material-object-details/89fc89b923a7ea14fd4a.json.gz",
-        "sha256": "d9779c8cc1e40b7934f4b81a691c6a3b0de46f4cafb93b36485f833b37ab4881",
-        "bytes": 688,
-        "rows": 2
+        "sha256": "aec3ad8debc178f7fec49272731197ae6ac3dd3c9f2fd943278edc19331404c3",
+        "bytes": 1064,
+        "rows": 3
       },
       "MAT-STEEL-ENAMELED-BROAD": {
         "file": "material-object-details/74439c27290fe7f596d8.json.gz",
@@ -981,9 +1219,9 @@
       },
       "MAT-SOIL-BROAD": {
         "file": "material-object-details/b3c33ab7847cfea1b15a.json.gz",
-        "sha256": "dfab57856937729c9bb38dec72ad96d49aedb023975cd07a4e074c6be73fbb45",
-        "bytes": 651,
-        "rows": 1
+        "sha256": "ac9acefcdc5ff174c9d9b050ec5c3cd8d6b5bca07f09820531522482a639c0db",
+        "bytes": 21070,
+        "rows": 468
       },
       "MAT-IRON-BROAD": {
         "file": "material-object-details/e452274ba3582f9ac6fd.json.gz",
@@ -1071,9 +1309,9 @@
       },
       "MAT-APPROX-WAX": {
         "file": "material-object-details/286b26e71956dfcf85a3.json.gz",
-        "sha256": "673e15be07b28401f1124c055b1259bd2db944a9652fac44c47e963e73c2c204",
-        "bytes": 1718,
-        "rows": 14
+        "sha256": "04728c7e7666ed81cca9d1821b10d533d24869be0f36a7d99a68f4ecd437cc1c",
+        "bytes": 16886,
+        "rows": 338
       },
       "MAT-TIN-BROAD": {
         "file": "material-object-details/d5b3d0127c6a512f3027.json.gz",
@@ -1155,9 +1393,9 @@
       },
       "MAT-LEATHER-PU-SYNTHETIC": {
         "file": "material-object-details/3342a4a442631ebf1435.json.gz",
-        "sha256": "024e2cc8c279755edd5d5fedf0b6e25194f8f884f62225574a639a2d31232879",
-        "bytes": 3728,
-        "rows": 37
+        "sha256": "502085b9cf5e30606dde10bf100f04856c998e2aaab9e3d52a203397d3108d5b",
+        "bytes": 4121,
+        "rows": 38
       },
       "MAT-TEXTILE-MESH-BROAD": {
         "file": "material-object-details/10656c44a86ba97848c8.json.gz",
@@ -1197,9 +1435,9 @@
       },
       "MAT-TEXTILE-DENIM-BROAD": {
         "file": "material-object-details/5785c47a670b33b8960e.json.gz",
-        "sha256": "232da3939a78762b38d28d3bc5c483ddbfd68e6de2d2022e18ab52b828b8e13c",
-        "bytes": 1346,
-        "rows": 2
+        "sha256": "1e18b6db732c6a922ffa043f4481fb76550e0546d04c50370ca290b550415202",
+        "bytes": 2340,
+        "rows": 12
       },
       "MAT-WOOD-CEDAR-BROAD": {
         "file": "material-object-details/fae69ca2275e6a595282.json.gz",
@@ -1239,9 +1477,9 @@
       },
       "MAT-FOAM-MEMORY-BROAD": {
         "file": "material-object-details/c9a1b4bf8ed77f17cb84.json.gz",
-        "sha256": "4e51c5db94fee97d82a979b6311b5668ad51626464a78bedc15f3ec5c4f6cabd",
-        "bytes": 1927,
-        "rows": 17
+        "sha256": "1c16b2ad4d7b841cbead40bd8fcef3feef52551c8e67d79dc5cde1db3c466300",
+        "bytes": 2312,
+        "rows": 18
       },
       "MAT-TEXTILE-POLYESTER-COTTON-BLEND": {
         "file": "material-object-details/07aad58ec2a70e15eef7.json.gz",
@@ -1287,9 +1525,9 @@
       },
       "MAT-TEXTILE-NYLON-BROAD": {
         "file": "material-object-details/3722bb76d4aaf0af6dc9.json.gz",
-        "sha256": "0d8f9f02108307ecce0271688c82d764f4629379656fde7c423d860ec0a460aa",
-        "bytes": 1928,
-        "rows": 11
+        "sha256": "10d83ea8c3ee50faf7a8b8116cc92c57d6b0fcbaddb9852e60d536f8e52a7775",
+        "bytes": 2586,
+        "rows": 15
       },
       "MAT-PAPER-COTTON-FIBER-BROAD": {
         "file": "material-object-details/5fa9bb5ea6803556dbb0.json.gz",
@@ -1317,9 +1555,9 @@
       },
       "MAT-TEXTILE-WOOL-BROAD": {
         "file": "material-object-details/cfa46c4caa980b7cc10e.json.gz",
-        "sha256": "be643d7d45ed00dfb34814d6ea130b2c558d5778414afa8fe8ffe7db0040d65d",
-        "bytes": 4696,
-        "rows": 31
+        "sha256": "54decc6aeaade23bd4f8d8778cb211704eb589ca2ca6fef9a68de9e1e311cec7",
+        "bytes": 5614,
+        "rows": 36
       },
       "MAT-PORCELAIN-BROAD": {
         "file": "material-object-details/3c878ad8e54e336d94f9.json.gz",
@@ -1395,9 +1633,9 @@
       },
       "MAT-TEXTILE-SILK-BROAD": {
         "file": "material-object-details/f56d26155eb7496406ce.json.gz",
-        "sha256": "3c3cd0ebe6be7e10e4bad914b293345bda7d87c4c1a704b1016c6e0c9fa2cda6",
-        "bytes": 2480,
-        "rows": 8
+        "sha256": "caf2a81391fb895d0e521814fa62fe557eb425d990bc90d489f2e7f26ceac700",
+        "bytes": 3322,
+        "rows": 13
       },
       "MAT-WOOD-FIR-BROAD": {
         "file": "material-object-details/18ac86cc019d30eddb2a.json.gz",
@@ -1503,9 +1741,9 @@
       },
       "MAT-STONE-SOURCE-BROAD": {
         "file": "material-object-details/2ed9b0db276391ffb782.json.gz",
-        "sha256": "d04350e156192d64d9f4aa3af7bc3f969543bc7913f68d1cd90973a9d2cbd4e9",
-        "bytes": 1537,
-        "rows": 2
+        "sha256": "da780f2febb139b3f416adedb1b05a0428149d71371d96acdecf1612ff514efa",
+        "bytes": 746,
+        "rows": 1
       },
       "MAT-TEXTILE-RECYCLED-COTTON-BROAD": {
         "file": "material-object-details/0e031ae985eb53b70997.json.gz",
@@ -1806,19 +2044,25 @@
         "sha256": "41e38ac087d6079d8e109066a6a808da1f8851d793522bc47c2046f59e0632ad",
         "bytes": 758,
         "rows": 1
+      },
+      "RESEARCH-MAT-B8209696928C67A8BBD5": {
+        "file": "material-object-details/391a672adcdd0cf58753.json.gz",
+        "sha256": "f4256981a5ac5f88782374aa2d4f65ae71a309735ce31eabda3fd7b67cf36f91",
+        "bytes": 18762,
+        "rows": 460
       }
     }
   },
   "view_payload_sha256": {
-    "scaling-data.js": "3949b94cdc980e0219b37680cfb4265d31e41697b7362364e417c8f67e9f4a79",
-    "scaling-data.js.gz": "8871c8546a3415cc43a4620759b9983e16e460d15d5c856b269e7a5d71d3140f",
-    "research-data.js": "41414279f6630cae72c0a0744e16b7b5a80099fb5570240bedf73b3d9ac2bfe1",
-    "phase1-ranges-data.js": "8119df401977cd8b5f830ec327f00be0b72c05eca667cf227a6e7e073c1610ea",
-    "data.js": "0a9a5779e1701eb874e7621144e7b6e7836bbdb60618a0a88f647cce401e4bb6",
-    "target-reference-data.js": "ed1ce5bf31205f2489cd29d230344d8a7be79ae37a3d7948aecdaca55cefaa76",
-    "scaling-display-data.js": "b2b614bd6f148aba6bd85465c9cb7a8250eccc7a5666a0dbeefd05baeb8b6fb1",
-    "scaling-display-data.js.gz": "9f1eee65a270e9b7776ded97b39c76e08f7e200ff2ced3eeecb5075e8d65f73c",
-    "material-object-index.json.gz": "01ec225322a86eb08a5dc28f60e97fdfb43cc9875a61605d5856067426983333"
+    "scaling-data.js": "8aa38ea26c4295caca4d8ba4ce2378ba42c4a2b6f33819c96144979a76e7b6cf",
+    "scaling-data.js.gz": "2e9525090dbf3b90b943e90d68c16d3779b0cd70d7477f6d63fe918cbb9d5ac6",
+    "research-data.js": "a1298985c8b1fa47792497367d9cdd9e2e3a3a6b6c25f91030b06987916ed1e6",
+    "phase1-ranges-data.js": "f76a10a6bc6b4b6dc305b390b5656ce57bc027af149f60c5903c253e128399dd",
+    "data.js": "a34d0b4e6cbd204c67d18d72d0d0c6b112889697582d4dcdc0209d6f768a97cc",
+    "target-reference-data.js": "108615a8566c893cb2d67bafa616ee7cf76c05a8a9dba6e931b603006ad5591a",
+    "scaling-display-data.js": "5347f98ac049fcbaad4354ea7b435fe43ba510b93bfb71e03edd1225d6f5b522",
+    "scaling-display-data.js.gz": "d8dce7f8f27d93130de0b1f249cb36ded65dffa845dcc2d4ea5e81aa0ddac0ed",
+    "material-object-index.json.gz": "f7c2c2ebe053ec4eadb095737ef1d7bdfe17fde07ade8495e596be958d015ae5"
   },
   "object_pages": {
     "scaling-assets/gso-001.json": {
@@ -1878,28 +2122,35 @@
     }
   },
   "static_asset_sha256": {
-    "site-shell.js": "cae8c34b3fc12c8d19ea6b9b1609b1a1d88fd285efb26aed4c300c884ae54c44",
-    "site-shell.css": "3adf4f6c9c740a23add9dc32d452a1b1ff9a77dfc7005254fd37583da33a0542",
-    "payload-loader.js": "1a77424845845e0d6d2b4b943b36af6a3fa8fdef79b233e8407f66d6bbc2738d",
     "app.js": "ce9bc4804466f52bc327821e556e18db5aeaa8a7ef1226f4408631817b2c202c",
-    "scaling.js": "19ee577f5258f63baa9aab6c71ad3356bf635652e3f0a7aee046276f9098e1e8",
-    "phase1-ranges.js": "b19f91d71538cd3bfe418fbea86b219e88f8a6917c3b8693b5944a4e8d20d4fe"
+    "c34-object-details.js": "7900ea57f8df1472284f88e0efeefcd4cecab0ee6ba17e4afad56679c50b6671",
+    "dataset-views.css": "1763c8da51bc4fc12c687f35a181ed7f51878ae894753563bdf800ad0c97c38b",
+    "evidence-catalog.css": "cc7e90fbf9b480e3a0adf95c7f0c415cd27795f6fabe1d43fc66fc1143b9a396",
+    "payload-loader.js": "1a77424845845e0d6d2b4b943b36af6a3fa8fdef79b233e8407f66d6bbc2738d",
+    "phase1-ranges.css": "40be0d5a193bdffd5cf878ac273525433234bab5640aa787434001670b39c2df",
+    "phase1-ranges.js": "b19f91d71538cd3bfe418fbea86b219e88f8a6917c3b8693b5944a4e8d20d4fe",
+    "scaling.css": "6ce7646e740c5ff1dd8e9f94a7c496eadec3fe5a4dc0e5128df141de6d3ac844",
+    "scaling.js": "87e2cea42ec3fb060fde58b729593614798860defe1de33f4d7dc5eb9cb84a5a",
+    "site-shell.css": "3adf4f6c9c740a23add9dc32d452a1b1ff9a77dfc7005254fd37583da33a0542",
+    "site-shell.js": "cae8c34b3fc12c8d19ea6b9b1609b1a1d88fd285efb26aed4c300c884ae54c44",
+    "styles.css": "238c8dc7d668171dd602a3517565e63ccec8e3e719f260d63e4c99aefe2fe0d7",
+    "target-reference.css": "7d68cf391a7ebbae4ec6ed90bc8cfb553abf4361907e6df8d0ae40e81e111daa"
   },
   "inline_payloads": {
     "scaling-bootstrap": {
-      "sha256": "4d1b9a75569acba0d5119df1519a8e43dff03d63ca559fc64fd8bd9e96a640b1",
-      "release_id": "d92ec3caf0"
+      "sha256": "099091a783d3a198357c072e0c407d3c25d6d754c3a20eca305bcb2f3cdeb71b",
+      "release_id": "f61495694c"
     }
   },
   "current_tables_downloads": {
     "manifest": "scaling-assets/current-tables/download-manifest.json",
-    "sha256": "0a3031fd507263e299431f3f1d5c80795bd77f028b9e33404ed266bdffc95e0a",
-    "files": 24,
-    "source_delivery_summary_sha256": "05cbf11bd9e1c54192653c04b9795b413bad1fda6c874210e8870236ccdecbad"
+    "sha256": "854b5ecb7657a4981814c0e1130d1e42adb9cc41f9bc8bd1b301472bc40415f3",
+    "files": 25,
+    "source_delivery_summary_sha256": "2e04fcd59e041962df14048eaa3173226f2fc269c6f7b9c9218b86301bc3a6a0"
   },
   "scope_projection": {
     "version": 2,
-    "source_release": "ef12fb01f7",
+    "source_release": "3ee1266bfe",
     "excluded_material_ids": [
       "MAT-APPROX-LIQUID-CHEMICAL",
       "MAT-SALT-WATER-BROAD",
@@ -1921,48 +2172,48 @@
     "scope": "SOURCE_AUTHORED_ENTITY_AND_BINDING_RECORDS_NO_NUMERICAL_PROPERTY_INHERITANCE"
   },
   "transport_export": {
-    "release_id": "d92ec3caf0",
+    "release_id": "f61495694c",
     "payloads": {
       "scaling-data.js": {
-        "original_sha256": "3949b94cdc980e0219b37680cfb4265d31e41697b7362364e417c8f67e9f4a79",
-        "gzip_sha256": "8871c8546a3415cc43a4620759b9983e16e460d15d5c856b269e7a5d71d3140f",
-        "original_bytes": 62790159,
-        "gzip_bytes": 2007452,
+        "original_sha256": "8aa38ea26c4295caca4d8ba4ce2378ba42c4a2b6f33819c96144979a76e7b6cf",
+        "gzip_sha256": "2e9525090dbf3b90b943e90d68c16d3779b0cd70d7477f6d63fe918cbb9d5ac6",
+        "original_bytes": 82038180,
+        "gzip_bytes": 3024060,
         "variable": "SCALING_DATA"
       },
       "research-data.js": {
-        "original_sha256": "41414279f6630cae72c0a0744e16b7b5a80099fb5570240bedf73b3d9ac2bfe1",
-        "gzip_sha256": "4bd4ba1e527a4d7600e48e00cbc6a7cf176766db90c82b1838c9dbfdb72abd68",
+        "original_sha256": "a1298985c8b1fa47792497367d9cdd9e2e3a3a6b6c25f91030b06987916ed1e6",
+        "gzip_sha256": "7c65ba6a9c278d125f2d2e248b708abe8f8d93a84c66fe6961bffd5cbbdb56b6",
         "original_bytes": 27047063,
-        "gzip_bytes": 3281300,
+        "gzip_bytes": 3281302,
         "variable": "SITE_DATA"
       },
       "phase1-ranges-data.js": {
-        "original_sha256": "8119df401977cd8b5f830ec327f00be0b72c05eca667cf227a6e7e073c1610ea",
-        "gzip_sha256": "c1796ba2c3eace6a4b9b9a312ec5557dfce57116a97c0aae8bf780ea5cd2631b",
+        "original_sha256": "f76a10a6bc6b4b6dc305b390b5656ce57bc027af149f60c5903c253e128399dd",
+        "gzip_sha256": "7f6c0818cb89d32f18bbb45eb7abb2234283cbc40df7e393236b96dbe9e4d710",
         "original_bytes": 31319512,
-        "gzip_bytes": 2215841,
+        "gzip_bytes": 2215840,
         "variable": "PHASE1_RANGES"
       },
       "data.js": {
-        "original_sha256": "0a9a5779e1701eb874e7621144e7b6e7836bbdb60618a0a88f647cce401e4bb6",
-        "gzip_sha256": "3c22eb122d7970f4adce286f5896bd91a7d76ba365c9e5208a92f10aef90305c",
-        "original_bytes": 39941697,
-        "gzip_bytes": 1634578,
+        "original_sha256": "a34d0b4e6cbd204c67d18d72d0d0c6b112889697582d4dcdc0209d6f768a97cc",
+        "gzip_sha256": "103e881b0ffbb19f729a94d7b088a3b69ccae0c3e225b5bf723de7780086b7a6",
+        "original_bytes": 39941863,
+        "gzip_bytes": 1634668,
         "variable": "SITE_DATA"
       },
       "target-reference-data.js": {
-        "original_sha256": "ed1ce5bf31205f2489cd29d230344d8a7be79ae37a3d7948aecdaca55cefaa76",
-        "gzip_sha256": "750ed2bb056cb3791fe47f2dd33b1308a524626d623fe97dacf46e051aebcdc7",
+        "original_sha256": "108615a8566c893cb2d67bafa616ee7cf76c05a8a9dba6e931b603006ad5591a",
+        "gzip_sha256": "20463c92ce2cfe7287b729e6254226f229ac5f01b1f5d219cd4b0444eff2a62f",
         "original_bytes": 10862983,
         "gzip_bytes": 854238,
         "variable": "TARGET_REFERENCE_DATA"
       },
       "scaling-display-data.js": {
-        "original_sha256": "b2b614bd6f148aba6bd85465c9cb7a8250eccc7a5666a0dbeefd05baeb8b6fb1",
-        "gzip_sha256": "9f1eee65a270e9b7776ded97b39c76e08f7e200ff2ced3eeecb5075e8d65f73c",
-        "original_bytes": 14266006,
-        "gzip_bytes": 508086,
+        "original_sha256": "5347f98ac049fcbaad4354ea7b435fe43ba510b93bfb71e03edd1225d6f5b522",
+        "gzip_sha256": "d8dce7f8f27d93130de0b1f249cb36ded65dffa845dcc2d4ea5e81aa0ddac0ed",
+        "original_bytes": 33514027,
+        "gzip_bytes": 1524507,
         "variable": "SCALING_DATA"
       }
     },
@@ -1971,49 +2222,69 @@
         "sha256": "ce9bc4804466f52bc327821e556e18db5aeaa8a7ef1226f4408631817b2c202c",
         "bytes": 50154
       },
+      "c34-object-details.js": {
+        "sha256": "7900ea57f8df1472284f88e0efeefcd4cecab0ee6ba17e4afad56679c50b6671",
+        "bytes": 4502
+      },
       "data.js": {
-        "sha256": "616757b25bf81b809b964193c18156aaee33c0fdc01d8c69bc78b7fcfe227df6",
+        "sha256": "f1dc81d0841bad7a2bdfba27313f2b339d41d7d35a63b8381c217b84ecdb3015",
         "bytes": 214
       },
+      "dataset-views.css": {
+        "sha256": "1763c8da51bc4fc12c687f35a181ed7f51878ae894753563bdf800ad0c97c38b",
+        "bytes": 1126
+      },
+      "evidence-catalog.css": {
+        "sha256": "cc7e90fbf9b480e3a0adf95c7f0c415cd27795f6fabe1d43fc66fc1143b9a396",
+        "bytes": 9085
+      },
       "material-object-index.json.gz": {
-        "sha256": "01ec225322a86eb08a5dc28f60e97fdfb43cc9875a61605d5856067426983333",
-        "bytes": 10899141
+        "sha256": "f7c2c2ebe053ec4eadb095737ef1d7bdfe17fde07ade8495e596be958d015ae5",
+        "bytes": 14833168
       },
       "payload-loader.js": {
         "sha256": "1a77424845845e0d6d2b4b943b36af6a3fa8fdef79b233e8407f66d6bbc2738d",
         "bytes": 3925
       },
       "phase1-ranges-data.js": {
-        "sha256": "b0c29a49418c20af97d76a614ebc0b8dd82a392692ec3ba5772e771ba7b72314",
+        "sha256": "8fef5a6c09b82cb3644e2eecb4b9f626427b633446964e691be9dde1db6cd915",
         "bytes": 232
+      },
+      "phase1-ranges.css": {
+        "sha256": "40be0d5a193bdffd5cf878ac273525433234bab5640aa787434001670b39c2df",
+        "bytes": 8201
       },
       "phase1-ranges.js": {
         "sha256": "b19f91d71538cd3bfe418fbea86b219e88f8a6917c3b8693b5944a4e8d20d4fe",
         "bytes": 23030
       },
       "research-data.js": {
-        "sha256": "7d438c60e3aefcba2cb987bf5fbca365a70a7708363eb7f0093ae0ad7f387754",
+        "sha256": "22e512d4e2ec85faf3faeeab07db61ad23bc0deeb677cfd98f94e4a3db5308e2",
         "bytes": 223
       },
       "scaling-data.js": {
-        "sha256": "f0ca169f94d2ad74bc0254b9a7e67f961427cb81d61b0da78606fe32c1548b68",
+        "sha256": "11749e7d18d6424fc94c29460d2774b172e55a27bda28ea42846bfebdf1a5345",
         "bytes": 225
       },
       "scaling-data.js.gz": {
-        "sha256": "8871c8546a3415cc43a4620759b9983e16e460d15d5c856b269e7a5d71d3140f",
-        "bytes": 2007452
+        "sha256": "2e9525090dbf3b90b943e90d68c16d3779b0cd70d7477f6d63fe918cbb9d5ac6",
+        "bytes": 3024060
       },
       "scaling-display-data.js": {
-        "sha256": "4c1dcd53547c8f0014147a6a7f3ca8bd9cfadef4ca7efb8bba79d4cb0c861586",
+        "sha256": "c486d16619d5f3c9b9ba2fec899ae3a7425652ddd0d62bcb4f99a0e95be5123e",
         "bytes": 233
       },
       "scaling-display-data.js.gz": {
-        "sha256": "9f1eee65a270e9b7776ded97b39c76e08f7e200ff2ced3eeecb5075e8d65f73c",
-        "bytes": 508086
+        "sha256": "d8dce7f8f27d93130de0b1f249cb36ded65dffa845dcc2d4ea5e81aa0ddac0ed",
+        "bytes": 1524507
+      },
+      "scaling.css": {
+        "sha256": "6ce7646e740c5ff1dd8e9f94a7c496eadec3fe5a4dc0e5128df141de6d3ac844",
+        "bytes": 10968
       },
       "scaling.js": {
-        "sha256": "19ee577f5258f63baa9aab6c71ad3356bf635652e3f0a7aee046276f9098e1e8",
-        "bytes": 31201
+        "sha256": "87e2cea42ec3fb060fde58b729593614798860defe1de33f4d7dc5eb9cb84a5a",
+        "bytes": 32587
       },
       "site-shell.css": {
         "sha256": "3adf4f6c9c740a23add9dc32d452a1b1ff9a77dfc7005254fd37583da33a0542",
@@ -2023,37 +2294,45 @@
         "sha256": "cae8c34b3fc12c8d19ea6b9b1609b1a1d88fd285efb26aed4c300c884ae54c44",
         "bytes": 10829
       },
+      "styles.css": {
+        "sha256": "238c8dc7d668171dd602a3517565e63ccec8e3e719f260d63e4c99aefe2fe0d7",
+        "bytes": 24227
+      },
       "target-reference-data.js": {
-        "sha256": "65a81c1acf1b7b8c13b3df4053a5a7dcdabb1da1b396b55635d4e2ff6b97fda5",
+        "sha256": "f824d536cca316490d803f3714f5e88aefb34ed16c57e2c278aab3f82ed2bbed",
         "bytes": 243
+      },
+      "target-reference.css": {
+        "sha256": "7d68cf391a7ebbae4ec6ed90bc8cfb553abf4361907e6df8d0ae40e81e111daa",
+        "bytes": 3090
       }
     }
   },
   "progressive_coverage": {
     "bootstrap": "phase1-bootstrap.js",
     "compressed_bootstrap": "phase1-bootstrap.js.gz",
-    "bootstrap_sha256": "0497757d94f887e0f7727b1bd7774389a08179e6d2589cdbb22d5111915ef134",
-    "bootstrap_logical_sha256": "29d21a9ee2dbf3fddcf0506cd19bd7835c204cdd90b276ba7df6db517c11d855",
-    "compressed_bootstrap_sha256": "7c93e2d825457c7b09001dd1bfa59f96ed61b9e002e4b76c698bd296d7964dae",
-    "compressed_bytes": 418390,
+    "bootstrap_sha256": "1a4f8404a3170ccce18178b65099de7c07534d934a68307d3b0dd587da14bf6e",
+    "bootstrap_logical_sha256": "9f893aac954d564385ee703cc366019c1ca1859f78a942d551ed64b480613d76",
+    "compressed_bootstrap_sha256": "eb3e4beeaf21c6fd2f45507cae04fe36bbab9acb47e0ab2f920c04c4f02a63dc",
+    "compressed_bytes": 418383,
     "detail_directory": "coverage-details/",
     "chunks": 43,
     "records": 5475,
     "original_full_payload_retained": true,
     "original_fields_preserved": true,
-    "scientific_payload_sha256": "8119df401977cd8b5f830ec327f00be0b72c05eca667cf227a6e7e073c1610ea",
-    "data_revision": "d92ec3caf0"
+    "scientific_payload_sha256": "f76a10a6bc6b4b6dc305b390b5656ce57bc027af149f60c5903c253e128399dd",
+    "data_revision": "f61495694c"
   },
   "progressive_material_tree": {
     "bootstrap": "research-bootstrap.js",
     "compressed_bootstrap": "research-bootstrap.js.gz",
-    "bootstrap_sha256": "00509641cb3eab246d287d4b2b6a8767198e39d80b3b067591c4a7941b9b09c7",
-    "compressed_bootstrap_sha256": "b08ca0b9a5683dbe5394e97eb1602993f504aecec8ef47d628660794f0032a8a",
+    "bootstrap_sha256": "ef349035937b04680f871ccfab00b0c992558fe05c737e7516f390de0d9f34c7",
+    "compressed_bootstrap_sha256": "597a6e5c95ff174e7c504a2ce3f27e992d2f7db1ca86e7e8858befe7d9f83344",
     "detail_directory": "research-details/",
-    "scientific_payload_sha256": "41414279f6630cae72c0a0744e16b7b5a80099fb5570240bedf73b3d9ac2bfe1",
+    "scientific_payload_sha256": "a1298985c8b1fa47792497367d9cdd9e2e3a3a6b6c25f91030b06987916ed1e6",
     "original_full_payload_retained": true,
     "evidence_loaded_on_demand": true,
-    "data_revision": "d92ec3caf0"
+    "data_revision": "f61495694c"
   },
-  "ui_revision": "ce9bc4804466-00509641cb3e-1a7742484584-b19f91d71538-7c93e2d82545"
+  "ui_revision": "ce9bc4804466-7900ea57f8df-1763c8da51bc-cc7e90fbf9b4-1a7742484584-eb3e4beeaf21-40be0d5a193b-b19f91d71538-ef349035937b-6ce7646e740c-87e2cea42ec3-3adf4f6c9c74-cae8c34b3fc1-238c8dc7d668-7d68cf391a7e"
 }

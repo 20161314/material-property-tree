@@ -40,8 +40,8 @@
 .scaling-queue strong { font-variant-numeric: tabular-nums; font-weight: 650; }
 .scaling-priority { font-size: .78rem; line-height: 1.6; padding: 10px 12px; background: var(--green-soft); color: var(--green); }
 .scaling-asset-controls { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; }
-.scaling-asset-controls label { display: grid; gap: 5px; font-size: .72rem; color: var(--muted); }
-.scaling-asset-controls input, .scaling-asset-controls select { min-height: 44px; padding: 0 10px; border: 1px solid var(--border-strong); border-radius: 5px; background: var(--surface); color: var(--text); font: inherit; font-size: .8rem; }
+.scaling-asset-controls label { display: grid; gap: 5px; font-size: .72rem; color: var(--muted); min-width: 0; max-width: 100%; }
+.scaling-asset-controls input, .scaling-asset-controls select { min-width: 0; max-width: 100%; min-height: 44px; padding: 0 10px; border: 1px solid var(--border-strong); border-radius: 5px; background: var(--surface); color: var(--text); font: inherit; font-size: .8rem; }
 .scaling-asset-controls input { width: 280px; }
 .scaling-pagination { margin-left: auto; display: flex; gap: 8px; }
 .scaling-pagination button { min-width: 84px; font-size: .78rem; }
@@ -54,6 +54,9 @@
 .scaling-asset-table small, .scaling-asset-table strong { display: block; overflow-wrap: anywhere; }
 .scaling-asset-table small { color: var(--muted); margin-top: 3px; font-size: .7rem; }
 .scaling-asset-table p { margin: 4px 0; }
+[data-c34-detail-body] { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
+[data-c34-detail-body] input { width: 100%; max-width: 100%; min-width: 0; }
+[data-c34-detail-body] table { table-layout: fixed; }
 .scaling-asset-links { display: flex; flex-wrap: wrap; gap: 8px 14px; }
 .scaling-asset-links a { display: inline-flex; min-height: 32px; align-items: center; text-decoration: none; font-weight: 650; font-size: .75rem; }
 .scaling-asset-links a:hover { text-decoration: underline; }

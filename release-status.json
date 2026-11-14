@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_id": "d92ec3caf0",
+  "release_id": "f61495694c",
   "date": "2026-11-14",
   "timezone": "Asia/Shanghai",
   "local_validation": "BUILD_COUNTS_AND_LOSSLESS_DOWNLOADS_VERIFIED",
@@ -13,9 +13,9 @@
   "main_partial": 3046,
   "sciglass_complete": 3757,
   "sciglass_partial": 91851,
-  "object_identities": 43681,
-  "distinct_object_component_pairs": 71136,
-  "component_status_rows": 71185,
+  "object_identities": 54071,
+  "distinct_object_component_pairs": 118536,
+  "component_status_rows": 170512,
   "material_labels": 3902,
   "materials_with_complete": 1667,
   "materials_with_all_properties": 1695,
@@ -31,9 +31,9 @@
   "source_material_labels_are_not_measured_properties": true,
   "download_manifest": {
     "manifest": "scaling-assets/current-tables/download-manifest.json",
-    "sha256": "0a3031fd507263e299431f3f1d5c80795bd77f028b9e33404ed266bdffc95e0a",
-    "files": 24,
-    "source_delivery_summary_sha256": "05cbf11bd9e1c54192653c04b9795b413bad1fda6c874210e8870236ccdecbad"
+    "sha256": "854b5ecb7657a4981814c0e1130d1e42adb9cc41f9bc8bd1b301472bc40415f3",
+    "files": 25,
+    "source_delivery_summary_sha256": "2e04fcd59e041962df14048eaa3173226f2fc269c6f7b9c9218b86301bc3a6a0"
   },
-  "source_release_id": "ef12fb01f7"
+  "source_release_id": "3ee1266bfe"
 }
