@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3902；三项各有来源值1695。
+材料3903；三项各有来源值1697。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -286,6 +286,7 @@
 - RESEARCH-MAT-0C74AB4E0E841163A37D 复合材料 · Tufnol PGM/2 polyester continuous-roving glass mat laminate / Tufnol PGM/2 polyester continuous-roving glass mat laminate：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-99F19542F14D2A250602 复合材料 · Tufnol PGM/3 polyester continuous-roving glass mat laminate / Tufnol PGM/3 polyester continuous-roving glass mat laminate：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-26C1767CA9311216C530 复合材料 · Tufnol Whale Brand medium-weave cotton phenolic laminate sheet / Tufnol Whale Brand medium-weave cotton phenolic laminate sheet：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-1A15A561941F30AC8C78 复合材料 · Zeolite type3A/unsaturated-polyester-coated sisal-fibre back-sheet composite / Zeolite type3A/unsaturated-polyester-coated sisal-fibre back-sheet composite：缺 nu;rho；已有完整组0、缺项组1。
 - MAT-SOURCE-CELLULOSE-CLEANING-SPONGE-BROAD 纤维素基清洁海绵（配方未详） / Cellulose-based cleaning sponge, formulation unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-40F14F564FEF5D84AFD6 泡沫 · AIREX C70 polymer foam C70.130 / AIREX C70 polymer foam C70.130：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-5748A48E68FA18E94766 泡沫 · AIREX C70 polymer foam C70.55 / AIREX C70 polymer foam C70.55：缺 nu；已有完整组0、缺项组1。
@@ -2028,8 +2029,6 @@
 - RESEARCH-MAT-5CEB1F8A4451AFF3C1C3 纺织材料 · Silk/polyester 50/50 plain-woven fabric / Silk/polyester 50/50 plain-woven fabric：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-D6E15FF639E44A2EEB10 纺织材料 · Silk/polyester 80/20 plain-woven fabric / Silk/polyester 80/20 plain-woven fabric：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-EEB9CE18599A9E293961 纺织材料 · Sisal fibre (source compilation DOI10.3390/polym14102024) / Sisal fibre (source compilation DOI10.3390/polym14102024)：缺 nu；已有完整组0、缺项组1。
-- MAT-TEXTILE-SISAL-BROAD 剑麻纤维/织物（结构未详） / Sisal fibre/textile, construction unspecified：缺 nu；已有完整组0、缺项组4。
-- RESEARCH-MAT-CF923D04F6615FE966FA 纺织材料 · Sisal natural fibre / Sisal natural fibre：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-3BA10CA3F121AE1E9189 纺织材料 · Spider silk natural fibre / Spider silk natural fibre：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-9B109911859F5624658C 纺织材料 · Sprich Baft polyester hexagonal mesh spacer fabric / Sprich Baft polyester hexagonal mesh spacer fabric：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-F5A64FB0314B3A0FAA9A 纺织材料 · Suede acoustic fibre sheet, chemistry unspecified / Suede acoustic fibre sheet, chemistry unspecified：缺 E;nu；已有完整组0、缺项组1。
