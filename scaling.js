@@ -81,11 +81,11 @@
     "count-complete": summary.complete_records, "count-partial": summary.partial_records,
   };
   Object.entries(counts).forEach(([id, value]) => { $(id).textContent = fmt(value); });
-  $("delta-objects").textContent = ["cycle8", "cycle9", "cycle10", "cycle11", "cycle12", "cycle13"].includes(summary.current_cycle) ? `+${fmt(summary.current_cycle_new_geometry_identities)}` : `+${fmt(Boolean(summary.current_cycle) ? 0 : summary.new_source_object_identities)}`;
+  $("delta-objects").textContent = ["cycle8", "cycle9", "cycle10", "cycle11", "cycle12", "cycle13", "cycle33"].includes(summary.current_cycle) ? `+${fmt(summary.current_cycle_new_geometry_identities)}` : `+${fmt(Boolean(summary.current_cycle) ? 0 : summary.new_source_object_identities)}`;
   const cycle2 = Number.isFinite(summary.cycle2_real_components_added);
   const cycle3 = Boolean(summary.current_cycle);
   $("delta-components").textContent = `+${fmt(cycle3 ? summary.current_cycle_net_component_increment : cycle2 ? summary.cycle2_net_component_increment : summary.net_real_component_increment)}`;
-  $("delta-components-note").textContent = ["cycle8", "cycle9", "cycle10", "cycle11", "cycle12", "cycle13"].includes(summary.current_cycle)
+  $("delta-components-note").textContent = ["cycle8", "cycle9", "cycle10", "cycle11", "cycle12", "cycle13", "cycle33"].includes(summary.current_cycle)
     ? `本轮新增 ${fmt(summary.current_cycle_new_whole_object_fallbacks)} 个 WHOLE 整件占位；新增真实分件 ${fmt(summary.current_cycle_real_components_added)}，累计展示 ${fmt(summary.featured_physical_component_count)} 张实体组件卡；其中上轮既有 ${fmt(summary.current_cycle_legacy_physical_cards || 3513)} 张原样保留。`
     : cycle3
     ? `本轮 ${fmt(summary.current_cycle_real_components_added)} 个实体替换 ${fmt(summary.current_cycle_fallbacks_replaced)} 个整件占位，净增 ${fmt(summary.current_cycle_net_component_increment)}；另补 ${fmt(summary.current_cycle_existing_component_material_updates)} 条既有组件材料回链`
@@ -193,7 +193,7 @@
   $("component-search").addEventListener("input", () => renderComponents(true));
   $("component-material").addEventListener("change", () => renderComponents(true));
   renderComponents();
-  const propertyNote = summary.current_cycle === "cycle13" ? "本轮新采集 " + fmt(summary.current_cycle_collection_complete_groups) + " 完整组、" + fmt(summary.current_cycle_collection_partial_groups) + " 缺项组；另复核35条旧完整组，修正7条，撤回或重分28条，并恢复25条缺项记录。来源纠错净完整组−27、缺项组+25；合计净完整组−26、缺项组+55。缺项不补值，来源预设及项目混合律不作实测证据。" : cycle3 ? `本轮新增 ${fmt(summary.current_cycle_complete_property_groups)} 完整组、${fmt(summary.current_cycle_incomplete_property_groups)} 缺项组（${fmt(summary.current_cycle_property_value_cells)} 个属性槽位），包含实测、实验推导及来源参考汇编；方向、统计量、密度与模量定义逐条保留，不等于商品实测。` : cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
+  const propertyNote = summary.current_cycle === "cycle33" ? "本轮增加6个已核来源资产，物性完整组与缺项组均未新增，旧来源数值保持；材料文献仅作研究范围导航，不赋成商品实测。" : summary.current_cycle === "cycle13" ? "本轮新采集 " + fmt(summary.current_cycle_collection_complete_groups) + " 完整组、" + fmt(summary.current_cycle_collection_partial_groups) + " 缺项组；另复核35条旧完整组，修正7条，撤回或重分28条，并恢复25条缺项记录。来源纠错净完整组−27、缺项组+25；合计净完整组−26、缺项组+55。缺项不补值，来源预设及项目混合律不作实测证据。" : cycle3 ? `本轮新增 ${fmt(summary.current_cycle_complete_property_groups)} 完整组、${fmt(summary.current_cycle_incomplete_property_groups)} 缺项组（${fmt(summary.current_cycle_property_value_cells)} 个属性槽位），包含实测、实验推导及来源参考汇编；方向、统计量、密度与模量定义逐条保留，不等于商品实测。` : cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
   $("release-boundary").textContent = `研究完整与缺项共 ${fmt(summary.total_records)} 组，包含独立标记的数据库转录层。${propertyNote}正式材料映射 ${fmt(summary.formal_material_mapping_rows_unchanged)} 行未因本轮标签或组件新增而自动晋级。全库几何内容去重未完成。`;
   const hashes = { expanded_inventory_sha256: "扩充对象组件清单 SHA-256", feedback_queue_sha256: "待办队列 SHA-256", baseline_sha256: "原始对象表 SHA-256" };
   $("release-hashes").innerHTML = Object.entries(hashes).filter(([key]) => summary[key]).map(([key, label]) => `<dt>${label}</dt><dd>${esc(summary[key])}</dd>`).join("");
@@ -224,7 +224,7 @@
   $("new-source-filter").innerHTML += [...new Set(newItems.map(({item})=>item.sourceFamily))].map(f=>`<option value="${esc(f)}">${esc(sourceLabels[f]?.[0] || f)}</option>`).join("");
   $("new-source-filter").addEventListener("change",()=>renderNew(true));
   renderNew();
-  if ($("cycle13-payload-note")) $("cycle13-payload-note").textContent = "本轮新增 " + fmt(summary.current_cycle_new_geometry_identities) + " 个来源对象；" + fmt(summary.current_cycle_real_components_added) + " 个作者实体替换 " + fmt(summary.current_cycle_fallbacks_replaced) + " 个WHOLE。新增1个实际GLB及2个USDC主几何，外部依赖未全冻结。旧完整组纠错与新采集分别列示，不把净变化当新增。";
+  if ($("cycle13-payload-note")) $("cycle13-payload-note").textContent = summary.current_cycle === "cycle33" ? "本轮新增6个来源资产：1个柔性传感器、5个官方光学CAD。均为WHOLE整件回退，0新增机械分件；原件已下载核验，网站只提供原链接。目标10万以上；当前是来源身份数，跨源几何去重未完成。" : "Cycle13历史批次：原始下载和审核范围见批次记录。";
   if ($("cycle12-payload-note")) $("cycle12-payload-note").textContent = "Cycle12：304个新增来源对象，260个来源实体替63个WHOLE；未新增GLB。此条为已发布历史记录。";
   if ($("cycle11-payload-note")) $("cycle11-payload-note").textContent = "Cycle11 已核161个柔性/混合优先来源对象、185个来源实体替换44个WHOLE；该轮来源卡累计484，未新增GLB下载。";
   if ($("cycle10-payload-note")) $("cycle10-payload-note").textContent = "Cycle10 已收111个来源对象、164个源定义实体，替换97个WHOLE；该轮来源卡累计323。本行仅记录历史批次。";

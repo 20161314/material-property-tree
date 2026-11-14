@@ -1,1 +1,1 @@
-document.write('<script src="payload-loader.js?v=1a7742484584" data-src="research-data.js.gz?v=10b80b0b7fad" data-key="SITE_DATA" data-sha256="8d45cc0615b7fccb1874d87579cd5a882f68b90eb545a6672c8cb2bb305ec65f"><\/script>');
+document.write('<script src="payload-loader.js?v=1a7742484584" data-src="research-data.js.gz?v=4bd4ba1e527a" data-key="SITE_DATA" data-sha256="41414279f6630cae72c0a0744e16b7b5a80099fb5570240bedf73b3d9ac2bfe1"><\/script>');

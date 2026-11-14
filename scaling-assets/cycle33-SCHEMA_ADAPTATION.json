@@ -1,0 +1,21 @@
+{
+  "inventory_changes": "Only two blank required_source provenance fields filled in six new records; every other new-row field retained",
+  "source_relation_canonical_material_id": "EMPTY; canonical material navigation is a separate reviewed link",
+  "reviewed_links_complete_definition": "COMPLETE means only the one source-declared bulk label has been mapped; never full composition, product property completeness, or assigned numbers",
+  "optics_resolution_original": "SOURCE_REPORTED_BULK_MATERIAL_ONLY",
+  "optics_resolution_adapted": "COMPLETE",
+  "optics_rows": 5,
+  "soft_resolution": "PARTIAL",
+  "soft_relation_mode": "NONEXCLUSIVE_PARTIAL_MATERIAL_SCOPE",
+  "relation_mode_changed": false,
+  "full_component_material_completion_claim": "NO",
+  "whole_object_material_completion_authorized": "NO",
+  "property_assignment": "NONE",
+  "scope_fields": {
+    "source_label_cn": "target_label_cn",
+    "semantic_part_key": "semantic_scope_key",
+    "component_scope": "material_scope"
+  },
+  "all_author_original_files": "PRESERVED; originals referenced by frozen manifests",
+  "property_evidence_ids": "Existing target research evidence navigation only; not product measurements or assignment"
+}

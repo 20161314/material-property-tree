@@ -1,5 +1,5 @@
 (() => {
-  const tag = {dataset:{"src": "research-bootstrap.js.gz?v=8f0aa75f9620", "key": "SITE_DATA", "sha256": "12d3d6bab7bd4a9e299dee100cbb335170517dada80d3c5cf9e82dc33e8500ee"}};
+  const tag = {dataset:{"src": "research-bootstrap.js.gz?v=b08ca0b9a568", "key": "SITE_DATA", "sha256": "3076945d5b00b374739b29c09022b13ce0a26a9b45903721bdc6851631e73222"}};
   const setStatus = (message, failed = false) => {
     let box = document.getElementById('payload-status');
     if (!box) {
