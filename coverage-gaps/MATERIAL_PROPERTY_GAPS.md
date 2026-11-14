@@ -1,6 +1,6 @@
 # 当前非液体材料缺项清单
 
-材料3899；三项各有来源值1691。
+材料3900；三项各有来源值1691。
 
 这是当前已核实证据的缺口，不表示这些材料永远找不到。按材料家族广泛搜集，不按只缺一项优先。
 
@@ -1849,6 +1849,7 @@
 - MAT-TEXTILE-CHENILLE-YARN-SOURCE-BROAD 雪尼尔纱（纤维化学未详） / Chenille yarn, fibre chemistry unspecified：缺 E;nu;rho；已有完整组0、缺项组0。
 - RESEARCH-MAT-94ECF4E01D6A8372A14A 纺织材料 · Clean washed sheep wool fibers (SWF), density basis unspecified / Clean washed sheep wool fibers (SWF), density basis unspecified：缺 E;nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-62BD15B74F7618D0F60B 纺织材料 · Clean washed sheep wool single fibers (SWF) / Clean washed sheep wool single fibers (SWF)：缺 nu;rho；已有完整组0、缺项组1。
+- RESEARCH-MAT-717C8AE9BBE6ED168981 纺织材料 · Cleaned mechanically extracted Agave sisalana technical-fibre bundles / Cleaned mechanically extracted Agave sisalana technical-fibre bundles：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-FDC028CDE152FA95C1DD 纺织材料 · Coconut lignocellulosic fibre / Coconut lignocellulosic fibre：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-10D32B7CE33A343A675D 纺织材料 · Coir natural fibre / Coir natural fibre：缺 nu；已有完整组0、缺项组1。
 - RESEARCH-MAT-4E1831657FD762EE963D 纺织材料 · Cotton 12.4wt%/TEOS-isoBTES silica aerogel composite — matrix precursor ratio 82-18 TEOS-isoBTES / Cotton 12.4wt%/TEOS-isoBTES silica aerogel composite — matrix precursor ratio 82-18 TEOS-isoBTES：缺 nu；已有完整组0、缺项组1。
@@ -2029,7 +2030,7 @@
 - RESEARCH-MAT-5CEB1F8A4451AFF3C1C3 纺织材料 · Silk/polyester 50/50 plain-woven fabric / Silk/polyester 50/50 plain-woven fabric：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-D6E15FF639E44A2EEB10 纺织材料 · Silk/polyester 80/20 plain-woven fabric / Silk/polyester 80/20 plain-woven fabric：缺 nu;rho；已有完整组0、缺项组1。
 - RESEARCH-MAT-EEB9CE18599A9E293961 纺织材料 · Sisal fibre (source compilation DOI10.3390/polym14102024) / Sisal fibre (source compilation DOI10.3390/polym14102024)：缺 nu；已有完整组0、缺项组1。
-- MAT-TEXTILE-SISAL-BROAD 剑麻纤维/织物（结构未详） / Sisal fibre/textile, construction unspecified：缺 nu；已有完整组0、缺项组3。
+- MAT-TEXTILE-SISAL-BROAD 剑麻纤维/织物（结构未详） / Sisal fibre/textile, construction unspecified：缺 nu；已有完整组0、缺项组4。
 - RESEARCH-MAT-CF923D04F6615FE966FA 纺织材料 · Sisal natural fibre / Sisal natural fibre：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-3BA10CA3F121AE1E9189 纺织材料 · Spider silk natural fibre / Spider silk natural fibre：缺 nu；已有完整组0、缺项组2。
 - RESEARCH-MAT-9B109911859F5624658C 纺织材料 · Sprich Baft polyester hexagonal mesh spacer fabric / Sprich Baft polyester hexagonal mesh spacer fabric：缺 E;nu；已有完整组0、缺项组1。
