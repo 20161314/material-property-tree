@@ -1,0 +1,49 @@
+﻿material_name_cn,material_name_en,missing_properties,direct_object_identities,E_document_keys,nu_document_keys,rho_document_keys
+羽绒/羽毛填充物（比例未详）,"Down/feather filling, ratio unspecified",E;nu,2,0,0,2
+稻壳/谷物纤维成型复合材料（配方未详）,"Rice-hull / grain-fibre formed composite, formulation unspecified",E;nu;rho,39,0,0,0
+再生/复合皮革（组成未详）,"Bonded leather, composition unspecified",nu,4,1,0,1
+干燥苔藓（种类/处理未详）,"Dried moss, species/treatment unspecified",E;nu,1,0,0,1
+纸绳及纸绳编织用材料,Paper cord and materials used for paper-cord weaving,nu,5,1,0,1
+藤材/藤编（种类/结构未详）,"Rattan, species/construction unspecified",nu,18,2,0,4
+藤/绳复合编织（绳纤维未详）,"Rattan/twine composite weave, twine fibre unspecified",E;nu;rho,1,0,0,0
+固体皂/清洁块（配方未详）,"Solid bar soap / cleansing bar, formulation unspecified",nu,27,1,0,1
+桦树皮,Birch bark,nu,1,1,0,2
+沥青类屋面材料（来源标为asphalt；构造未详）,"Bituminous roofing material, source-labelled asphalt; construction unspecified",nu,7,1,0,1
+羊毛纱与棉结接织物构造（比例未详）,"Knotted wool-yarn and cotton textile construction, ratio unspecified",E;nu;rho,1,0,0,0
+来源标为Leatherite的软包表面（组成未详）,"Leatherite-labelled upholstery, composition unspecified",E;nu;rho,1,0,0,0
+漆皮（涂层与基底未详）,"Patent leather, coating and substrate unspecified",E;nu,1,0,0,1
+植物编织材料（种属与构造未详）,"Plant weaving material, species and construction unspecified",nu,15,1,0,1
+回收消防水带复合构造（组分层构未详）,"Recycled fire-hose composite, construction unspecified",E;nu;rho,5,0,0,0
+雪尼尔纱（纤维化学未详）,"Chenille yarn, fibre chemistry unspecified",E;nu;rho,1,0,0,0
+棉/亚麻混纺（比例/结构未详）,"Cotton/linen textile blend, ratio/construction unspecified",nu,6,1,0,2
+棉/亚麻/粘胶/聚酯混纺（比例/结构未详）,"Cotton/linen/viscose/polyester blend, ratio/construction unspecified",E;nu;rho,1,0,0,0
+填充纤维（化学组成未详）,"Filling fibre, chemistry unspecified",E;nu,6,0,0,1
+起绒/法兰绒类织物（纤维未详）,"Napped/flannel-like textile, fibre unspecified",E;nu,1,0,0,1
+麻绳（纤维种/结构未详）,"Hemp rope, fibre species/construction unspecified",nu,1,1,0,1
+聚酯/腈纶混纺（比例/结构未详）,"Polyester/acrylic textile blend, ratio/construction unspecified",E;nu;rho,8,0,0,0
+聚酯/亚麻混纺（比例/结构未详）,"Polyester/linen textile blend, ratio/construction unspecified",E;nu;rho,118,0,0,0
+聚酯/亚麻/棉混纺（比例/结构未详）,"Polyester/linen/cotton textile blend, ratio/construction unspecified",E;nu;rho,2,0,0,0
+聚酯/亚麻/人造丝混纺（比例/结构未详）,"Polyester/linen/rayon textile blend, ratio/construction unspecified",E;nu;rho,12,0,0,0
+聚酯/尼龙混纺（比例/结构未详）,"Polyester/nylon textile blend, ratio/construction unspecified",nu,51,1,0,1
+聚丙烯/聚酯混纺（比例/结构见原文）,"Polypropylene/polyester textile blend, ratio/construction source-conditioned",nu;rho,9,1,0,0
+再生棉纤维/织物（工艺/结构未详）,"Recycled cotton fibre/textile, process/construction unspecified",nu,2,1,0,1
+Tetoron源标签纤维（化学组成未独立确认）,"Tetoron source-label fibre, chemistry not independently confirmed",nu,1,1,0,1
+天鹅绒/丝绒（纤维组成未详）,"Velvet, fibre composition unspecified",E;nu;rho,27,0,0,0
+羊毛/棉混纺（比例/结构见原文）,"Wool/cotton textile blend, ratio/construction source-conditioned",E;nu;rho,18,0,0,0
+羊毛/棉/聚酯混纺（比例/结构见原文）,"Wool/cotton/polyester textile blend, ratio/construction source-conditioned",E;nu;rho,14,0,0,0
+羊毛/粘胶混纺（比例/结构见原文）,"Wool/viscose textile blend, ratio/construction source-conditioned",E;nu,3,0,0,1
+涂装木材（木种/涂层未详）,"Painted wood, species/coating unspecified",nu,2,2,0,4
+合成绒面材料（来源构造标签）,"synthetic suede — source-labelled material, finer composition unspecified",E;nu,1,0,0,3
+防泼水绒面材料（来源构造标签）,"water-resistant suede — source-labelled material, finer composition unspecified",E;nu;rho,1,0,0,0
+Twinface 双面羊皮（来源构造标签）,"Twinface sheepskin — source-labelled material, finer composition unspecified",E;nu;rho,5,0,0,0
+羊皮（来源构造标签）,"sheepskin — source-labelled material, finer composition unspecified",nu,1,2,0,2
+PlanWood（源商品材料名）（来源构造标签）,"PlanWood — source-labelled material, finer composition unspecified",E;nu;rho,6,0,0,0
+搪瓷/珐琅涂层铝（来源构造标签）,"enamelled aluminum — source-labelled material, finer composition unspecified",E;nu;rho,1,0,0,0
+磨砂材料（源标签 nubuck，基材未进一步确认）,"nubuck — source-labelled material, finer composition unspecified",nu;rho,1,1,0,0
+Solyte 中底材料（源商品名）（来源构造标签）,"Solyte branded material — source-labelled material, finer composition unspecified",E;nu,2,0,0,1
+防水皮革（来源构造标签）,"waterproof leather — source-labelled material, finer composition unspecified",E;nu,1,0,0,1
+粉末涂层钢（钢种/涂层未详）,"Powder-coated steel, steel/coating unspecified",nu;rho,3,1,0,0
+再生塑料帆布（来源构造标签）,"recycled-plastic canvas — source-labelled material, finer composition unspecified",E;nu;rho,2,0,0,0
+意大利头层皮革（来源构造标签）,"top-grain Italian leather — source-labelled material, finer composition unspecified",E;nu;rho,19,0,0,0
+磨砂皮革（来源构造标签）,"nubuck leather — source-labelled material, finer composition unspecified",nu;rho,1,1,0,0
+全粒面皮革（来源构造标签）,"full-grain leather — source-labelled material, finer composition unspecified",nu,2,1,0,2

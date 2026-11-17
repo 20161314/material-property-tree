@@ -15,12 +15,22 @@
   <script src="release-data.js?v=058c473ffe0b"></script>
   <script src="site-shell.js?v=cae8c34b3fc1"></script>
 <link rel="preload" href="research-bootstrap.js.gz?v=928170c647b7" as="fetch" crossorigin="anonymous">
+<link rel="stylesheet" href="progress-notice.css?v=ed9986bbdcf4">
 </head>
 <body data-view="materials">
   <a class="skip-link" href="#tree-canvas">跳到材料树</a>
+<!-- BEGIN VERIFIED PROGRESS NOTICE -->
+<aside class="progress-notice" aria-labelledby="progress-notice-title" data-progress-checkpoint="O72">
+  <div class="progress-notice-heading"><div><p>阶段验收 · O72 · 2026-11-17</p><h2 id="progress-notice-title">最新已核工作进度</h2></div><span class="progress-notice-status">工作快照 · 尚未正式发布</span></div>
+  <p class="progress-notice-boundary">本栏为最新工作进度；下方树、表格及原下载仍为正式版本 C41（2026-11-14）。</p>
+  <dl class="progress-notice-metrics"><div><dt>来源对象身份</dt><dd>101,269</dd></div><div><dt>对象—组件键（含整件）</dt><dd>165,734</dd></div><div><dt>材料与配方节点</dt><dd>4,219</dd></div><div><dt>主账完整来源组</dt><dd>2,443</dd></div><div><dt>主账缺项来源组</dt><dd>3,614</dd></div><div><dt>关联材料三项覆盖</dt><dd>218 / 266</dd></div></dl>
+  <div class="progress-notice-footer"><p>关联材料 E、ν、ρ 各有来源值：<strong>81.95%</strong>；仍缺 48 种。</p><div><a href="progress/STAGE_ACCEPTANCE.md">验收报告</a><a href="progress/MATERIAL_PROPERTY_GAPS.csv" download>缺项材料名单</a><a href="progress/working-progress.json">统计与校验信息</a></div></div>
+  <details><summary>本轮变化与统计说明</summary><p>新增 1,169 条有界近似材料关系、8 组缺项物性记录、9 个材料/配方节点；本轮未新增几何或机械部件。来源对象身份尚未完成全局几何去重；组件键含整件占位。材料节点包含粗类、细类与配方，不等于独立化学材料种数。</p><p>完整组在同一来源组同时报告 E、ν、ρ；缺项组报告其中一项或两项。逐属性覆盖可来自不同文献，不拼接成完整组。以上为最新工作快照；下方树、表格及其下载仍为正式版本 C41（2026-11-14）。正式发布尚待未完成项审核。</p></details>
+</aside>
+<!-- END VERIFIED PROGRESS NOTICE -->
   <header class="app-header">
     <div class="title-block">
-      <p class="edition" id="edition">研究证据库 · 2026-11-14 · 完整与缺项组</p>
+      <p class="edition" id="edition">正式发布 C41 · 2026-11-14 · 完整与缺项组</p>
       <h1>材料物性来源树</h1>
       <p class="subtitle">按材料分类查找 E、ν、ρ 来源值，追溯每组数据与关联物体。</p>
     </div>

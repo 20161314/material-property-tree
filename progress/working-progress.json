@@ -1,0 +1,54 @@
+{
+  "kind": "VERIFIED_PROGRESS_NOTICE_ONLY",
+  "checkpoint": "O72",
+  "date": "2026-11-17",
+  "working_status": "INDEPENDENTLY_VERIFIED_NOT_PUBLISHED",
+  "formal_release_id": "aea6ba0c7f",
+  "formal_release_commit": "2056815a0fc618e7853d940c7d706bb9d7960cd0",
+  "formal_publication_gate": "BLOCKED",
+  "working_counts": {
+    "source_object_identities": 101269,
+    "raw_source_object_identities": 101270,
+    "object_component_keys": 165734,
+    "active_material_nodes": 4219,
+    "main_complete_groups": 2443,
+    "main_partial_groups": 3614,
+    "main_source_groups": 6057,
+    "object_materials_with_three_properties": 218,
+    "object_linked_materials": 266,
+    "missing_object_linked_materials": 48,
+    "state_counts": {
+      "4": 2446,
+      "1": 218,
+      "3": 48,
+      "2": 1507
+    },
+    "reviewed_source_material_links": 166336,
+    "raw_unresolved_mapping_obligations": 38516
+  },
+  "round_delta": {
+    "material_relations": 1169,
+    "partial_groups": 8,
+    "material_nodes": 9,
+    "geometry": 0,
+    "mechanical_components": 0
+  },
+  "verification": {
+    "independent_postreview_sha256": "b2fd9323512c52a2aa1b4a2abba3dabee421aafb37af74cf9d13dbd840be53f9",
+    "working_summary_sha256": "4f401c7607dfd9c86bb1814cffb53f0b570bd7e26952eea5c7a172e4d820bf76",
+    "four_state_summary_sha256": "43eb03cf73401152f84fb67f657949cd0b3a1f074ff59c2202f6375185f3049b",
+    "four_state_rows_sha256": "3280e1776812c184a89262f80dfbe1c5a4ebe435f7b2f2f31831c62a439e4543",
+    "production_gate_sha256": "6f50bffd6c674938739b15457c66cb7ac11b9e9ed303faa90b6d21752858f401"
+  },
+  "downloads": {
+    "report": "progress/STAGE_ACCEPTANCE.md",
+    "material_gaps": "progress/MATERIAL_PROPERTY_GAPS.csv"
+  },
+  "limits": [
+    "Source identities are not globally content-deduplicated geometry.",
+    "Component keys include WHOLE fallbacks, not a complete physical BOM.",
+    "Material nodes include broad labels and source-defined formulations.",
+    "Per-property coverage may use different papers; it is not a complete same-source group.",
+    "This notice does not replace C41 data, downloads or release pointers."
+  ]
+}
