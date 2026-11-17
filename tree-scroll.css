@@ -1,0 +1,5 @@
+/* Keep the material workspace reachable when the header exceeds the viewport. */
+@media (min-width: 901px) {
+  body[data-view="materials"] { overflow-y: auto; }
+  body[data-view="materials"] .workspace { min-height: 560px; }
+}
