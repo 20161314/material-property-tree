@@ -129,7 +129,7 @@
   function renderSummary() {
     const cohort = !priority || scopeFilter.value==='canonical' ? data.canonicalSummary : scopeFilter.value==='object' ? priority.objectMaterials : scopeFilter.value==='retained' ? priority.unlinkedComplete : priority.researchCandidates;
     const current = { ...data.summary, ...cohort };
-    const coverage = (value) => value === undefined ? "待汇总" : value + "/" + current.targetCount + " 已整理材料";
+    const coverage = (value) => value === undefined ? "待汇总" : value + "/" + current.targetCount + " 种";
     const values = {
       "stat-records": Number(window.DATASET_RELEASE.records.complete).toLocaleString("en"),
       "stat-incomplete-records": Number(window.DATASET_RELEASE.records.partial).toLocaleString("en"),
@@ -210,11 +210,11 @@
       const source = record.url ? `<a href="${esc(record.url)}" target="_blank" rel="noopener noreferrer">打开来源</a>` : "来源链接缺失";
       return `<article class="evidence-row">
         <strong>${esc(record.material_identity)} <span class="evidence-status">${incomplete ? "缺项数据" : esc(relationshipNames[entry.relationship] || entry.relationship)}</span></strong>
-        <small>${esc(record.record_id)} · ${esc(record.source_id)} · ${esc(record.publisher_subject_name)} · ${esc(record.document_key)}</small>
+        
         <div class="evidence-values-inline">${values}</div>
         ${incomplete ? `<p>同组仅有 ${esc(record.property_count)} 项可计入属性；不与其他来源拼接。</p>` : ""}
         <p>${esc(record.locator || "未提供定位")} · ${source}</p>
-        <p>${esc(record.conditions || "未报告条件")}</p>
+        <details class="evidence-context"><summary>条件、方法与记录详情</summary><small>${esc(record.record_id)} · ${esc(record.source_id)} · ${esc(record.publisher_subject_name)} · ${esc(record.document_key)}</small><p>${esc(record.conditions || "未报告条件")}</p>
         ${record.evidence_role ? `<p>${esc(record.evidence_role)}</p>` : ""}
         ${directional}
         ${record.property_model ? `<p>数据性质：${esc(record.property_model)}</p>` : ""}
@@ -226,7 +226,7 @@
         ${record.limitations ? `<p>限制：${esc(record.limitations)}</p>` : ""}
         ${record.local_file ? `<details><summary>冻结文件与校验</summary><p>${esc(record.local_file)}</p><p>SHA-256：${esc(record.sha256)}</p></details>` : ""}
         ${record.property_citations_json ? `<details><summary>各属性原引用</summary><pre>${esc(record.property_citations_json)}</pre></details>` : ""}
-      </article>`;
+      </details></article>`;
     }).join("");
   }
 
@@ -264,13 +264,13 @@
       const extCount = (target.externalCompleteRecordCount || 0) + (target.externalIncompleteRecordCount || 0);
       const definitionNote = target.sourceDefinitionRanges ? `<details><summary>按来源定义分别报告（不合并定义）</summary><pre>${esc(target.sourceDefinitionRanges)}</pre></details>` : "";
       const detailSummary = target.recordCount ? `<details class="material-expand" data-target="${esc(target.id)}"><summary><strong>${esc(target.nameCn)}</strong><small>${esc(target.nameEn)} · ${esc(target.id)}</small><span>查看 ${target.recordCount} 条关联记录</span></summary><div class="evidence-list"></div></details>` : `<strong>${esc(target.nameCn)}</strong><small>${esc(target.nameEn)} · ${esc(target.id)}</small>`;
-      const stage2 = "完整与缺项记录同步收集";
+      const stage2 = "";
       return `<tr>
         <td>${detailSummary}${definitionNote}<small class="family-label">${esc(familyNames[target.family] || target.family)}</small><div class="material-view-links"><a href="research.html?material=${encodeURIComponent(target.id)}">材料树</a><a href="scaling.html?material=${encodeURIComponent(target.id)}">关联物体</a></div></td>
         <td><strong>${relationCount}</strong><small>论文与厂商资料 ${target.recordCount.toLocaleString("en")} 组</small>${extCount ? `<small>另有数据库完整 ${target.externalCompleteRecordCount.toLocaleString("en")} · 缺项 ${target.externalIncompleteRecordCount.toLocaleString("en")}</small><a href="${esc(target.externalCollectionUrl)}">分页查看数据库原始数据组</a>` : ""}</td>
-        <td>${target.documentKeyCount.toLocaleString("en")}<small>论文与厂商资料的来源条目（数据库另列）</small></td>
-        <td class="range-cell">${fmtRange(target.E)}<small>报告跨度</small></td>
-        <td class="range-cell">${fmtRange(target.nu)}<small>报告跨度</small></td>
+        <td>${target.documentKeyCount.toLocaleString("en")}<small>来源条目，非独立文献数</small></td>
+        <td class="range-cell">${fmtRange(target.E)}</td>
+        <td class="range-cell">${fmtRange(target.nu)}</td>
         <td class="range-cell">${fmtRange(target.rho)}<small>${esc(target.densityScopeNote ? '密度定义与条件见原始记录' : '报告跨度')}</small></td>
         <td><span class="status-badge ${badge}">${label}</span><small>${stage2}</small></td>
       </tr>`;
@@ -280,9 +280,16 @@
     $("material-table-body").querySelectorAll('tr').forEach(row => [...row.cells].forEach((cell,index)=>cell.dataset.label=cellLabels[index]));
     $("material-table-body").querySelectorAll("details[data-target]").forEach((details) => {
       details.addEventListener("toggle", () => {
+        if (!details.evidenceRow && details.open) {
+          const row=document.createElement('tr'),cell=document.createElement('td');
+          row.className='evidence-expansion';cell.colSpan=7;row.append(cell);
+          details.closest('tr').after(row);cell.append(details.querySelector('.evidence-list'));
+          details.evidenceRow=row;
+        }
+        if(details.evidenceRow)details.evidenceRow.hidden=!details.open;
         if (!details.open || details.dataset.loaded || details.dataset.loading) return;
         const target = targets().find((item) => item.id === details.dataset.target);
-        const list = details.querySelector(".evidence-list");
+        const list = details.evidenceRow.querySelector(".evidence-list");
         if (target) appendEvidenceBatch(target, list, 0);
       });
     });
@@ -290,7 +297,8 @@
 
   async function appendEvidenceBatch(target, list, offset) {
     if (list.dataset.loading) return;
-    const details = list.closest('details');
+    const details = [...document.querySelectorAll('details[data-target]')].find(el=>el.dataset.target===target.id);
+    if(!details)return;
     list.dataset.loading = "true"; details.dataset.loading = "true";
     list.querySelector(".load-more-evidence")?.remove();
     const pageSize = 25;
