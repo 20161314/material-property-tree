@@ -9,53 +9,44 @@
   <meta name="theme-color" content="#f3f5f6">
   <title>材料物性来源树</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css?v=238c8dc7d668">
-  <link rel="stylesheet" href="dataset-views.css?v=1763c8da51bc">
-  <link rel="stylesheet" href="site-shell.css?v=3adf4f6c9c74">
-  <script src="release-data.js?v=058c473ffe0b"></script>
-  <script src="site-shell.js?v=958045500e11"></script>
-<link rel="preload" href="research-bootstrap.js.gz?v=928170c647b7" as="fetch" crossorigin="anonymous">
-<link rel="stylesheet" href="progress-notice.css?v=ed9986bbdcf4">
-<link rel="stylesheet" href="tree-scroll.css?v=b6b75567615c">
-  <link rel="stylesheet" href="site-refinement.css?v=87b89a481c9a">
-  <script defer src="site-refinement.js?v=c5af7bec602b"></script>
-</head>
+  <link rel="stylesheet" href="styles.css?v=238c8dc7d668171d">
+  <link rel="stylesheet" href="dataset-views.css?v=1763c8da51bc4fc1">
+
+  <link rel="stylesheet" href="site-shell.css?v=3adf4f6c9c740a23">
+  
+  
+<link rel="stylesheet" href="tree-scroll.css?v=b6b75567615c4e99">
+  <link rel="stylesheet" href="site-refinement.css?v=165b2c1dddb77c97">
+  
+<link rel="stylesheet" href="snapshot.css?v=16e8f7e086d15cc8"><script src="bootstrap.js?v=51d40f5e63ccc22d"></script></head>
 <body data-view="materials">
   <a class="skip-link" href="#tree-canvas">跳到材料树</a>
-<!-- BEGIN VERIFIED PROGRESS NOTICE -->
-<aside class="progress-notice" aria-labelledby="progress-notice-title" data-progress-checkpoint="O76" data-working-objects="101278">
-  <div class="progress-notice-heading"><div><p>阶段验收 · O76 · 2026-11-18</p><h2 id="progress-notice-title">最新已核工作进度</h2></div><span class="progress-notice-status">工作快照 · 尚未正式发布</span></div>
-  <p class="progress-notice-boundary">本栏为最新工作进度；下方树、表格及原下载仍为正式版本 C41（2026-11-14）。</p>
-  <dl class="progress-notice-metrics"><div><dt>收录物体数量</dt><dd>101,278</dd></div><div><dt>部件记录数量（含未拆分整件）</dt><dd>165,743</dd></div><div><dt>材料种类</dt><dd>4,308</dd></div><div><dt>论文与厂商资料三项齐全的数据</dt><dd>2,443</dd></div><div><dt>论文与厂商资料缺项数据组</dt><dd>3,730</dd></div><div><dt>关联材料三项覆盖</dt><dd>218 / 266</dd></div></dl>
-  <div class="progress-notice-footer"><p>关联材料 E、ν、ρ 各有来源值：<strong>81.95%</strong>；仍缺 48 种。</p><div><a href="progress/STAGE_ACCEPTANCE.md">验收报告</a><a href="progress/MATERIAL_PROPERTY_GAPS.csv" download>缺项材料名单</a><a href="progress/working-progress.json">统计与校验信息</a></div></div>
-  <details><summary>统计说明</summary><p>物体按各数据集编号统计，跨数据集可能有重复模型。部件记录包含尚未拆分的整件；材料种类包含大类、具体牌号和配方。</p><p>三项齐全的数据：同一组资料同时报告 E、ν、ρ。缺项数据：只有一项或两项。不同资料可分别补齐一种材料的三项属性，但不拼成一组三项齐全的数据。</p><p>这里是尚未全部上线的工作表进度。下方材料树、物体列表及正式数据下载仍使用网站当前版本。</p></details>
-</aside>
-<!-- END VERIFIED PROGRESS NOTICE -->
+
   <header class="app-header">
     <div class="title-block">
-      <p class="edition" id="edition">正式发布 C41 · 2026-11-14 · 完整与缺项组</p>
+      <p class="edition" id="edition">已审核研究工作快照 · 2026-11-20</p>
       <h1>材料物性来源树</h1>
       <p class="subtitle">按材料分类查找 E、ν、ρ 来源值，追溯每组数据与关联物体。</p>
     </div>
     <div class="header-data">
       <span class="audit-pill" id="audit-pill">结构审计载入中</span>
       <dl class="dataset-stats" aria-label="核心数据统计">
-        <div><dt>完整数据组</dt><dd id="stat-complete-records">6,186</dd></div>
-        <div><dt>不完整数据组</dt><dd id="stat-partial-records">94,913</dd></div>
-        <div><dt>材料种类</dt><dd id="stat-canonical-materials">3,916</dd></div>
-        <div><dt>论文与厂商资料材料身份</dt><dd id="stat-source-identities">3,866</dd></div>
-        <div><dt>有三项齐全数据的材料</dt><dd id="stat-complete-materials">1,667/3,916 已整理材料</dd></div>
-        <div><dt>有缺项数据的材料</dt><dd id="stat-partial-materials">2,318/3,916 已整理材料</dd></div>
-        <div><dt>有 E 来源值</dt><dd id="stat-e-materials">3,276/3,916 已整理材料</dd></div>
-        <div><dt>有 ν 来源值</dt><dd id="stat-nu-materials">1,823/3,916 已整理材料</dd></div>
-        <div><dt>有 ρ 来源值</dt><dd id="stat-rho-materials">3,161/3,916 已整理材料</dd></div>
-        <div><dt>三项有来源值</dt><dd id="stat-all-properties">1,698/3,916 已整理材料</dd></div>
-        <div><dt>尚无任何来源值</dt><dd id="stat-no-values">30/3,916 已整理材料</dd></div>
-        <div><dt>来源条目数</dt><dd id="stat-source-documents">15,929</dd></div>
-        <div><dt>隔离仿真预设</dt><dd id="stat-simulation-presets">3,518</dd></div>
+        <div><dt>完整数据组</dt><dd id="stat-complete-records">载入中</dd></div>
+        <div><dt>不完整数据组</dt><dd id="stat-partial-records">载入中</dd></div>
+        <div><dt>材料种类</dt><dd id="stat-canonical-materials">载入中</dd></div>
+        <div><dt>论文与厂商资料材料身份</dt><dd id="stat-source-identities">载入中</dd></div>
+        <div><dt>有三项齐全数据的材料</dt><dd id="stat-complete-materials">载入中</dd></div>
+        <div><dt>有缺项数据的材料</dt><dd id="stat-partial-materials">载入中</dd></div>
+        <div><dt>有 E 来源值</dt><dd id="stat-e-materials">载入中</dd></div>
+        <div><dt>有 ν 来源值</dt><dd id="stat-nu-materials">载入中</dd></div>
+        <div><dt>有 ρ 来源值</dt><dd id="stat-rho-materials">载入中</dd></div>
+        <div><dt>三项有来源值</dt><dd id="stat-all-properties">载入中</dd></div>
+        <div><dt>尚无任何来源值</dt><dd id="stat-no-values">载入中</dd></div>
+        <div><dt>来源条目数</dt><dd id="stat-source-documents">载入中</dd></div>
+        <div><dt>隔离仿真预设</dt><dd id="stat-simulation-presets">载入中</dd></div>
       </dl>
     </div>
-  </header><section class="coverage-progress" aria-label="当前三项覆盖率"><p><strong>三项有来源值 1,698 / 3,916（43.4%）</strong><span class="coverage-track" role="img" aria-label="三项覆盖率 43.4%"><i style="width:43.36057201225741%"></i></span></p><p>覆盖含已审细分材料参考；不代表商品实测。<a href="coverage-gaps/ACTIVE_NONFLUID_MISSING_PROPERTIES.csv" download>下载缺项名单</a></p></section>
+  </header>
   <p class="node-note" id="material-coverage-scope">全库覆盖统计载入中；外部数据库组成身份另列。</p>
   <section class="scope-note collapsed" id="scope-note" aria-label="数据解释边界">
     <div class="scope-note-bar">
@@ -64,25 +55,7 @@
     </div>
     <p id="scope-note-content" hidden>每条记录对应一个来源材料定义和一个样品/条件组。完整组同组含 E、ν、ρ；不完整组同组含 1 或 2 项，跨来源不拼接。材料属性覆盖数分别统计完整组与已审不完整组。文档键不等于独立来源数。仿真预设单独隔离，不计入研究记录。牌号、方向、方法及来源条件保留，不自动赋给对象。</p>
   </section>
-  <details class="release-details" id="release-details" hidden>
-    <summary><span><i data-lucide="clipboard-check" aria-hidden="true"></i><strong>材料标签覆盖、三元组排程与来源对账</strong></span><span class="summary-hint">展开查看</span></summary>
-    <div class="release-content">
-      <dl class="gap-stats" aria-label="材料标签覆盖">
-        <div><dt>已覆盖组件行</dt><dd id="stat-covered-rows">-</dd></div>
-        <div><dt>未覆盖</dt><dd id="stat-uncovered-rows">-</dd></div>
-        <div><dt>展开后材料选项</dt><dd id="stat-assignment-rows">-</dd></div>
-        <div><dt>近似规范名</dt><dd id="stat-approx-names">-</dd></div>
-        <div><dt>特殊非材料域</dt><dd id="stat-special-domains">-</dd></div>
-      </dl>
-      <div class="coverage-callout"><span><i data-lucide="badge-check" aria-hidden="true"></i><strong>65,000 / 65,000 已有材料检索标签</strong></span><p>多种都合理时保留互斥候选；近似标签不计为正式成分证据。</p></div>
-      <section class="priority-section" aria-labelledby="priority-heading">
-        <div class="priority-heading-row"><div><h2 id="priority-heading">物性搜集优先级</h2><p>按材料标签覆盖的组件数排序</p></div><span class="priority-rule">完整与缺项同步收集；保留材料与条件</span></div>
-        <div id="triplet-priorities" class="priority-grid"></div>
-      </section>
-      <h2 class="coverage-heading">强制来源对账</h2>
-      <div id="source-coverage" class="coverage-table-wrap"></div>
-    </div>
-  </details>
+  <details id="release-details" hidden><summary>结构门禁</summary></details>
   <nav class="toolbar" aria-label="材料树工具栏">
     
     
@@ -134,9 +107,9 @@
     </aside>
   </main>
   <noscript>此页面需要启用 JavaScript 才能显示交互式材料树。</noscript>
-  <script defer src="vendor/d3.min.js?v=f2094bbf6141"></script>
-  <script async onload="document.dispatchEvent(new Event('material-icons-ready'))" src="vendor/lucide.min.js?v=3411692820cb"></script>
-  <script src="research-bootstrap.js?v=0315d792469d"></script>
-  <script defer src="app.js?v=9c0d7a07c123"></script>
-</body>
+  <script defer src="vendor/d3.min.js?v=f2094bbf6141b359"></script>
+  <script async onload="document.dispatchEvent(new Event('material-icons-ready'))" src="vendor/lucide.min.js?v=3411692820cb8d47"></script>
+  
+  <script defer src="app.js?v=d1c117f37a799d94"></script>
+<script defer src="snapshot.js?v=af0faf33f906efd9"></script></body>
 </html>

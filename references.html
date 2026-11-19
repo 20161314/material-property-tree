@@ -7,50 +7,41 @@
   <meta name="theme-color" content="#f3f5f6">
   <title>材料与物性来源对照</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css?v=238c8dc7d668">
-  <link rel="stylesheet" href="phase1-ranges.css?v=40be0d5a193b">
-  <link rel="stylesheet" href="site-shell.css?v=3adf4f6c9c74">
-  <script src="release-data.js?v=058c473ffe0b"></script>
-  <script src="site-shell.js?v=958045500e11"></script>
-<link rel="stylesheet" href="progress-notice.css?v=ed9986bbdcf4">
-  <link rel="stylesheet" href="site-refinement.css?v=87b89a481c9a">
-  <script defer src="site-refinement.js?v=c5af7bec602b"></script>
-</head>
+  <link rel="stylesheet" href="styles.css?v=238c8dc7d668171d">
+  <link rel="stylesheet" href="phase1-ranges.css?v=40be0d5a193bdffd">
+  <link rel="stylesheet" href="site-shell.css?v=3adf4f6c9c740a23">
+  
+  
+  <link rel="stylesheet" href="site-refinement.css?v=165b2c1dddb77c97">
+  
+<link rel="stylesheet" href="snapshot.css?v=16e8f7e086d15cc8"><script src="bootstrap.js?v=51d40f5e63ccc22d"></script></head>
 <body class="phase1-page" data-view="coverage">
   <a class="skip-link" href="#material-table">跳到材料覆盖表</a>
-<!-- BEGIN VERIFIED PROGRESS NOTICE -->
-<aside class="progress-notice" aria-labelledby="progress-notice-title" data-progress-checkpoint="O76" data-working-objects="101278">
-  <div class="progress-notice-heading"><div><p>阶段验收 · O76 · 2026-11-18</p><h2 id="progress-notice-title">最新已核工作进度</h2></div><span class="progress-notice-status">工作快照 · 尚未正式发布</span></div>
-  <p class="progress-notice-boundary">本栏为最新工作进度；下方树、表格及原下载仍为正式版本 C41（2026-11-14）。</p>
-  <dl class="progress-notice-metrics"><div><dt>收录物体数量</dt><dd>101,278</dd></div><div><dt>部件记录数量（含未拆分整件）</dt><dd>165,743</dd></div><div><dt>材料种类</dt><dd>4,308</dd></div><div><dt>论文与厂商资料三项齐全的数据</dt><dd>2,443</dd></div><div><dt>论文与厂商资料缺项数据组</dt><dd>3,730</dd></div><div><dt>关联材料三项覆盖</dt><dd>218 / 266</dd></div></dl>
-  <div class="progress-notice-footer"><p>关联材料 E、ν、ρ 各有来源值：<strong>81.95%</strong>；仍缺 48 种。</p><div><a href="progress/STAGE_ACCEPTANCE.md">验收报告</a><a href="progress/MATERIAL_PROPERTY_GAPS.csv" download>缺项材料名单</a><a href="progress/working-progress.json">统计与校验信息</a></div></div>
-  <details><summary>统计说明</summary><p>物体按各数据集编号统计，跨数据集可能有重复模型。部件记录包含尚未拆分的整件；材料种类包含大类、具体牌号和配方。</p><p>三项齐全的数据：同一组资料同时报告 E、ν、ρ。缺项数据：只有一项或两项。不同资料可分别补齐一种材料的三项属性，但不拼成一组三项齐全的数据。</p><p>这里是尚未全部上线的工作表进度。下方材料树、物体列表及正式数据下载仍使用网站当前版本。</p></details>
-</aside>
-<!-- END VERIFIED PROGRESS NOTICE -->
+
   <header class="app-header phase1-header">
     <div class="title-block">
-      <p class="edition">研究范围账 · 2026-11-13 · 与正式赋值表分开</p>
+      <p class="edition" id="edition">已审核研究工作快照 · 2026-11-20</p>
       <h1>材料与物性来源对照</h1>
       <p class="subtitle">按当前材料标签查看 E、ν、ρ 来源值、完整组与缺项组；逐条追溯文献及材料范围。</p>
     </div>
     <div class="phase1-header-stats" aria-label="阶段一统计">
-      <div><span>三项齐全的数据</span><strong id="stat-records">6,186</strong></div>
-      <div><span>缺项数据</span><strong id="stat-incomplete-records">94,913</strong></div>
-      <div><span>研究记录总量</span><strong id="stat-reviewed">101,099</strong></div>
+      <div><span>三项齐全的数据</span><strong id="stat-records">载入中</strong></div>
+      <div><span>缺项数据</span><strong id="stat-incomplete-records">载入中</strong></div>
+      <div><span>研究记录总量</span><strong id="stat-reviewed">载入中</strong></div>
     </div>
   </header>
   
   <main class="phase1-content">
     <p id="coverage-scope-note">覆盖分母载入中。外部数据库组成身份单列分页，不与规范树节点直接相加。</p>
     <section class="phase1-metrics" aria-label="材料覆盖统计">
-      <div><span>有三项齐全数据的材料</span><strong id="stat-covered">1,667/3,916 已整理材料</strong><small id="coverage-denominator-note">当前分母：非液体已整理材料全库</small></div>
-      <div><span>有缺项数据的材料</span><strong id="stat-partial-materials">2,318/3,916 已整理材料</strong><small>可能与有三项齐全数据的材料重叠，不能相加</small></div>
-      <div><span>有 E 来源值</span><strong id="stat-e-coverage">3,276/3,916 已整理材料</strong><small>值可来自完整组或不完整组</small></div>
-      <div><span>有 ν 来源值</span><strong id="stat-nu-coverage">1,823/3,916 已整理材料</strong><small>值可来自完整组或不完整组</small></div>
-      <div><span>有 ρ 来源值</span><strong id="stat-rho-coverage">3,161/3,916 已整理材料</strong><small>值可来自完整组或不完整组</small></div>
-      <div><span>E、ν、ρ 均有来源值</span><strong id="stat-all-properties">1,698/3,916 已整理材料</strong><small>不要求来自同一数据组</small></div>
-      <div><span>尚无任何来源值</span><strong id="stat-no-values">30/3,916 已整理材料</strong><small>仅指当前已入账来源，不代表全网不存在</small></div>
-      <div><span>全库来源条目数</span><strong id="stat-doc-keys">15,929</strong><small>不是独立来源数</small></div>
+      <div><span>有三项齐全数据的材料</span><strong id="stat-covered">载入中</strong><small id="coverage-denominator-note">当前分母：非液体已整理材料全库</small></div>
+      <div><span>有缺项数据的材料</span><strong id="stat-partial-materials">载入中</strong><small>可能与有三项齐全数据的材料重叠，不能相加</small></div>
+      <div><span>有 E 来源值</span><strong id="stat-e-coverage">载入中</strong><small>值可来自完整组或不完整组</small></div>
+      <div><span>有 ν 来源值</span><strong id="stat-nu-coverage">载入中</strong><small>值可来自完整组或不完整组</small></div>
+      <div><span>有 ρ 来源值</span><strong id="stat-rho-coverage">载入中</strong><small>值可来自完整组或不完整组</small></div>
+      <div><span>E、ν、ρ 均有来源值</span><strong id="stat-all-properties">载入中</strong><small>不要求来自同一数据组</small></div>
+      <div><span>尚无任何来源值</span><strong id="stat-no-values">载入中</strong><small>仅指当前已入账来源，不代表全网不存在</small></div>
+      <div><span>全库来源条目数</span><strong id="stat-doc-keys">载入中</strong><small>不是独立来源数</small></div>
     </section>
     <section class="phase1-policy" aria-label="阶段定义">
       <div class="policy-heading"><span>计数规则</span><strong>一份可辨认的材料样品/条件组计一条</strong></div>
@@ -89,7 +80,7 @@
     </section>
     <nav class="phase1-filters" aria-label="材料列表分页"><button type="button" id="materials-prev">上一页</button><span id="materials-page"></span><button type="button" id="materials-next">下一页</button></nav>
     <details class="unmapped-section" id="unmapped-section">
-      <summary><strong><span id="unmapped-summary-count">0</span> 条记录尚未关联到当前已整理材料种类</strong><span>展开查看原文中的材料名称与来源</span></summary>
+      <summary><strong><span id="unmapped-summary-count">77</span> 条记录尚未关联到当前已整理材料种类</strong><span>展开查看原文中的材料名称与来源</span></summary>
       <p id="unmapped-note">这些三项齐全的数据仍计入研究总账，但当前没有纳入任一目标的精确、细分或家族关系，因此不影响目标覆盖统计。</p>
       <div class="unmapped-table-wrap"><table><thead><tr><th>记录 ID</th><th>来源材料定义</th><th>家族</th><th>E / ν / ρ</th><th>来源</th><th>定位</th></tr></thead><tbody id="unmapped-table-body"></tbody></table></div>
     </details>
@@ -98,7 +89,7 @@
       <p>阶段账本与复核报告由项目中的 <code>audit/material_range_phase1_v1/</code> 维护。</p>
     </footer>
   </main>
-  <script src="phase1-bootstrap.js?v=1a74ece4f89a"></script>
-  <script src="phase1-ranges.js?v=d23e712a0192"></script>
-</body>
+  
+  <script src="phase1-ranges.js?v=34c2da8b69111efd"></script>
+<script defer src="snapshot.js?v=af0faf33f906efd9"></script></body>
 </html>

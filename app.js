@@ -13,7 +13,7 @@
   const d3 = window.d3;
   const fmt = (value) => value === null || value === undefined ? "待汇总" : Number(value).toLocaleString("zh-CN");
   const nodesById = new Map(data.nodes.map((node) => [node.id, { ...node, childIds: [], level: 0 }]));
-  const detailRequests = new Map();
+  const detailRequests = new Map(); document.addEventListener("click",event=>{if(event.target.id==="snapshot-more-evidence"){const node=nodesById.get(selectedId);node.evidenceVisible=(node.evidenceVisible||30)+30;renderDetail(node);}});
   const loadedDetailChunks = new Set();
   const detailErrors = new Map();
   async function ensureNodeDetails(node) {
@@ -22,7 +22,7 @@
     if (!detailRequests.has(key)) {
       const request = (async () => {
         const chunk = data.detailChunks[key];
-        const url = new URL(chunk.url, location.href);
+        const url = new URL(chunk.url, location.href); url.searchParams.set("v",chunk.sha256);
         if (url.origin !== location.origin) throw new Error('证据地址与当前站点不一致');
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), 30000);
@@ -383,6 +383,7 @@
   }
 
   function centerNode(id) {
+    if (treeMode !== "graph" || !canvas.clientWidth || !canvas.clientHeight) return;
     const item = visibleLayout.get(id);
     if (!item) return;
     const width = canvas.clientWidth;
@@ -463,14 +464,14 @@
     if (!records.length) {
       return '<p class="empty-inline">直接证据记录为 0：该叶节点的 E、ν、ρ 仍待补；未填入任何占位数值。</p>';
     }
-    const pageSize = data.meta.researchMode ? 30 : records.length;
+    const pageSize = data.meta.researchMode ? (node.evidenceVisible || 30) : records.length;
     const visible = records.slice(0, pageSize);
     return `<div class="evidence-list">${visible.map((item, index) => {
       const url = safeUrl(item.url);
       const isIncomplete = item.recordType === "INCOMPLETE";
       const recordLabel = isIncomplete ? `缺项数据 · ${[item.E, item.nu, item.rho].filter(values => values.length > 0).length} 项属性` : "三项齐全的数据";
       return `<details class="evidence-item" ${index === 0 ? "open" : ""}><summary><span class="evidence-summary"><span><strong>${escapeHtml(item.title || item.id)}</strong><small>${recordLabel} · ${escapeHtml(item.sourceType)} · ${escapeHtml(item.sourceId)} · ${escapeHtml(item.id)}</small></span><i class="summary-chevron" data-lucide="chevron-down" aria-hidden="true"></i></span></summary><div class="evidence-content"><div class="evidence-values"><div><span>杨氏模量 E${isIncomplete ? "（来源原值）" : ""}</span><strong>${formatRange(item.E, isIncomplete ? "" : "GPa")}</strong></div><div><span>泊松比 ν${isIncomplete ? "（来源原值）" : ""}</span><strong>${formatRange(item.nu, "")}</strong></div><div><span>密度 ρ${isIncomplete ? "（来源原值）" : ""}</span><strong>${formatRange(item.rho, isIncomplete ? "" : "kg/m³")}</strong></div></div><dl class="evidence-meta">${detailPair("发布主体", item.publisher)}${detailPair("来源核验层", item.sourceVerificationLayer)}${detailPair("数值来源形式", item.propertyModel)}${detailPair("数值来源性质", item.propertyValueOrigin)}${detailPair("同一试样", item.sameSpecimen)}${detailPair("赋值材料范围", item.materialScope)}${detailPair("原文定位", item.locator)}${detailPair("冻结文件 SHA-256", item.sha256)}${detailPair("文档去重键", item.documentKey)}${detailPair("材料/牌号", item.grade)}${detailPair("温度与环境", item.environment)}${detailPair("方向/原值分组", item.orientation)}${detailPair("来源原值摘录", item.sourceValueExcerpt)}${detailPair("来源不确定度说明", item.sourceUncertaintyNotes)}${detailPair("单位换算说明", item.unitConversionNotes)}${detailPair("来源谱系键", item.sourceLineageKey)}${detailPair("统计量", item.sourceStatistic)}${detailPair("应变区间", item.sourceDeformationRange)}${detailPair("E 标准差（原单位）", item.EStandardDeviationOriginal)}${detailPair("E 下IQR（原文）", item.ELowerIQR)}${detailPair("E 上IQR（原文）", item.EUpperIQR)}${detailPair("密度标准差（原单位）", item.rhoStandardDeviationOriginal)}${detailPair("密度原文定义", item.densitySourceDefinition)}${detailPair("辅助原值（不替代三项）", item.ancillaryValues)}${detailPair("密度定义", item.densityType)}${detailPair("密度分项原值", item.densityTypeValues)}${detailPair("方法", item.method)}${detailPair("局限", item.limitations)}</dl>${propertyCitationsHtml(item.propertyCitations)}${url ? `<a class="source-link" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">打开原始来源 <i data-lucide="external-link" aria-hidden="true"></i></a>` : ""}</div></details>`;
-    }).join("")}</div>${records.length > pageSize ? `<p class="node-note">本页显示前 ${fmt(pageSize)} 条；全部记录保留在来源总表中。</p>` : ""}`;
+    }).join("")}</div>${records.length > pageSize ? `<p class="node-note">已显示 ${fmt(pageSize)} / ${fmt(records.length)} 条。<button type="button" id="snapshot-more-evidence">继续浏览来源</button></p>` : ""}`;
   }
 
   function propertyCitationsHtml(citations) {
@@ -493,8 +494,8 @@
     const nodeGroupCount = aggregate ? (node.classifiedEvidenceCount ?? node.subtreeEvidenceCount) : node.directEvidenceCount;
     const outsideActiveTree = isRoot ? data.meta.reviewedRecordGroupCount - nodeGroupCount : 0;
     const scopeCopy = isRoot
-      ? `当前材料树 ${fmt(nodeGroupCount)} 组；全部已收录数据 ${fmt(data.meta.reviewedRecordGroupCount)} 组${outsideActiveTree > 0 ? `，其中 ${fmt(outsideActiveTree)} 组历史数据未显示在当前材料树中` : ''}。这里统计材料树中的数据；页头还包含保留的历史数据。`
-      : `这里只统计这一类材料及其下级材料，不是全库总数。${node.notes || ''}`;
+      ? `当前分类树提供 ${fmt(data.meta.mainCompleteRecordCount + data.meta.mainIncompleteRecordCount)} 组逐项整理数据；另有 ${fmt(data.meta.externalCompleteRecordCount + data.meta.externalIncompleteRecordCount)} 组数据库转录数据，可在玻璃分类的来源目录查看。它们同属当前研究工作快照，不自动给物体赋值。`
+      : `这里只统计这一类材料及其下级材料，不是全库总数。${(node.notes || '').replace('保留材料分类身份；对象计数在此研究证据视图为零，不复制对象表的赋值。','材料分类与物性证据分别保留；关联物体见下方入口，不自动赋值。')}`;
     content.innerHTML = `<div class="detail-header"><div class="detail-path">${path.map((item) => `<button type="button" class="crumb-button" data-node-id="${escapeHtml(item.id)}">${escapeHtml(item.nameCn)}</button>`).join("")}</div><h2 id="detail-heading">${escapeHtml(node.nameCn)}</h2><p class="detail-en">${escapeHtml(node.nameEn)}</p></div><div class="detail-body"><section class="detail-section"><h3>这一类材料的数据情况</h3><div class="metric-grid"><div class="metric"><span>当前范围的来源条目</span><strong>${fmt(node.classifiedSourceDocumentCount ?? node.sourceDocumentCount)}</strong></div><div class="metric"><span>资料发布方</span><strong>${fmt(node.classifiedPublisherSubjectCount ?? node.publisherSubjectCount)}</strong></div><div class="metric"><span>${aggregate ? "本类及其下级材料" : "本材料直接"}数据组</span><strong>${fmt(aggregate ? (node.classifiedEvidenceCount ?? node.subtreeEvidenceCount) : node.directEvidenceCount)}</strong></div></div><p class="boundary-note">${escapeHtml(scopeCopy)}</p></section><section class="detail-section"><div class="section-heading-row"><h3>${title}</h3><p>${aggregate ? "分类汇总，不给物体自动赋值" : "保留每份资料的原始条件"}</p></div>${evidenceHtml(node)}</section><section class="detail-section"><h3>关联视图</h3><div class="object-links"><a href="references.html?material=${encodeURIComponent(node.id)}">查看此材料数值与覆盖</a><a href="scaling.html?material=${encodeURIComponent(node.id)}#material-linked-objects">查看对应物体</a></div></section>${children.length ? `<section class="detail-section"><h3>查看下级材料</h3><div class="research-branch-list">${children.slice(0, 40).map((child) => `<button type="button" class="research-branch" data-node-id="${escapeHtml(child.id)}"><span>${escapeHtml(child.nameCn)}</span><small>${fmt(child.sourceDocumentCount)} 个来源条目 · ${fmt(child.subtreeEvidenceCount)} 条数据组</small></button>`).join("")}</div>${children.length > 40 ? '<p class="node-note">分支较多，可用顶部搜索框定位完整材料名或牌号。</p>' : ""}</section>` : ""}</div>`;
     const relatedParents = (node.secondaryParentIds || []).map(id => nodesById.get(id)).filter(Boolean);
     const relatedChildren = (node.secondaryChildIds || []).map(id => nodesById.get(id)).filter(Boolean);

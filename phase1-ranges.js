@@ -73,7 +73,7 @@
     const task = (async () => {
       const spec = data.recordDetailChunks?.[index];
       if (!spec) throw new Error("证据分块索引缺失");
-      const url = new URL(spec.url, location.href);
+      const url = new URL(spec.url, location.href); url.searchParams.set("v",spec.sha256);
       if (url.origin !== location.origin || !url.pathname.includes('/coverage-details/')) throw new Error("证据路径无效");
       const controller = new AbortController();
       let idleTimer;
@@ -262,10 +262,11 @@
       const [label, badge] = statusLabel(target);
       const relationCount = `完整 ${target.completeRecordCount} · 不完整 ${target.incompleteRecordCount}`;
       const extCount = (target.externalCompleteRecordCount || 0) + (target.externalIncompleteRecordCount || 0);
+      const definitionNote = target.sourceDefinitionRanges ? `<details><summary>按来源定义分别报告（不合并定义）</summary><pre>${esc(target.sourceDefinitionRanges)}</pre></details>` : "";
       const detailSummary = target.recordCount ? `<details class="material-expand" data-target="${esc(target.id)}"><summary><strong>${esc(target.nameCn)}</strong><small>${esc(target.nameEn)} · ${esc(target.id)}</small><span>查看 ${target.recordCount} 条关联记录</span></summary><div class="evidence-list"></div></details>` : `<strong>${esc(target.nameCn)}</strong><small>${esc(target.nameEn)} · ${esc(target.id)}</small>`;
       const stage2 = "完整与缺项记录同步收集";
       return `<tr>
-        <td>${detailSummary}<small class="family-label">${esc(familyNames[target.family] || target.family)}</small><div class="material-view-links"><a href="research.html?material=${encodeURIComponent(target.id)}">材料树</a><a href="scaling.html?material=${encodeURIComponent(target.id)}">关联物体</a></div></td>
+        <td>${detailSummary}${definitionNote}<small class="family-label">${esc(familyNames[target.family] || target.family)}</small><div class="material-view-links"><a href="research.html?material=${encodeURIComponent(target.id)}">材料树</a><a href="scaling.html?material=${encodeURIComponent(target.id)}">关联物体</a></div></td>
         <td><strong>${relationCount}</strong><small>论文与厂商资料 ${target.recordCount.toLocaleString("en")} 组</small>${extCount ? `<small>另有数据库完整 ${target.externalCompleteRecordCount.toLocaleString("en")} · 缺项 ${target.externalIncompleteRecordCount.toLocaleString("en")}</small><a href="${esc(target.externalCollectionUrl)}">分页查看数据库原始数据组</a>` : ""}</td>
         <td>${target.documentKeyCount.toLocaleString("en")}<small>论文与厂商资料的来源条目（数据库另列）</small></td>
         <td class="range-cell">${fmtRange(target.E)}<small>报告跨度</small></td>
