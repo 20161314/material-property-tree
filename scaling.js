@@ -35,7 +35,7 @@
       const entry = detailPin ? index.entry : index.materials[materialId];
       const rows = entry?.rows || [];
       $('linked-material-title').textContent = entry ? entry.nameCn : materialId;
-      $('linked-material-note').textContent = rows.length ? new Set(rows.map(r=>r.object_id)).size.toLocaleString('en') + ' 个来源物体，' + rows.length.toLocaleString('en') + ' 条已有组件映射。保留原审核状态；物性证据不自动赋给这些商品。' : '此材料尚无以规范 ID 建立的物体映射；来源值仍可查看，不据名称猜测物体。';
+      $('linked-material-note').textContent = rows.length ? new Set(rows.map(r=>r.object_id)).size.toLocaleString('en') + ' 个来源物体，' + rows.length.toLocaleString('en') + ' 条已有部件映射。保留原审核状态；物性证据不自动赋给这些商品。' : '此材料尚无以规范 ID 建立的物体映射；来源值仍可查看，不据名称猜测物体。';
       const navigationEvidence = (row) => (row.navigation_evidence || []).map(item => {
         const mode = /ALTERNATIVE/i.test(item.relation_mode || '') ? '备选材料，非同时组成' : item.relation_mode === 'COEXISTING_SCOPES' ? '并存材料，仅限注明部位' : item.relation_mode === 'WHOLE_CONSTRUCTION_WITH_COEXISTING_CONSTITUENTS' ? '整体构造，各组成材料并存' : item.relation_mode === 'CONSTITUENT_SCOPE_OF_KNOTTED_CONSTRUCTION' ? '结织构造的组成材料，仅限注明范围' : '来源材料关联';
         const partial = item.resolution === 'PARTIAL' ? '；原材料描述仍有未对齐部分' : '';
@@ -106,7 +106,7 @@
   $("source-total").textContent = Object.keys(objectCounts).length ? `${fmt(sourceTotal)} 对象` : "对象分来源汇总待载入";
   if (Object.keys(objectCounts).length && sourceTotal !== summary.object_identities) {
     $("load-error").hidden = false;
-    $("load-error").textContent = "主来源对象计数与发布总量不一致，待核对发布快照。";
+    $("load-error").textContent = "主物体计数与发布总量不一致，待核对发布快照。";
   }
   $("queue-count").textContent = `${fmt(summary.queue_count)} 项`;
   $("queue-types").innerHTML = Object.entries(summary.queue_types || {}).map(([key, value]) => `<li><span>${esc(queueNames[key] || key)}</span><strong>${fmt(value)}</strong></li>`).join("");
@@ -153,7 +153,7 @@
     const sourceStatementsOnly = item.bindingCountScope === "SOURCE_STATEMENTS_NOT_VERIFIED_NONEMPTY_FACE_REGIONS";
     const regionCount = item.authoredBindingStatementCount ?? item.officialBoundRegionCount ?? item.official_bound_material_regions?.length;
     const regionNote = regionCount ? (sourceStatementsOnly
-      ? `<small>${fmt(regionCount)} 条源定义绑定语句（不是非空面区数量）；最终几何面区有效覆盖尚未核验，不新增组件数。</small>`
+      ? `<small>${fmt(regionCount)} 条原资料定义的绑定语句（不是非空面区数量）；最终几何面区有效覆盖尚未核验，不新增组件数。</small>`
       : `<small>${fmt(regionCount)} 条来源材料绑定；几何面区有效覆盖尚未核验，不新增组件数。</small>`) : "";
     return `<article data-component-id="${esc(item.component_id)}">
     <h3>${esc(item.component_name_cn || item.component_scope || item.component_id)}</h3><p>${esc(item.object_name_cn || item.object_name_en)} · ${esc(item.object_name_en)}</p>
@@ -193,7 +193,7 @@
   $("component-search").addEventListener("input", () => renderComponents(true));
   $("component-material").addEventListener("change", () => renderComponents(true));
   renderComponents();
-  const propertyNote = summary.current_cycle === "cycle34" ? "本轮只扩来源对象及语义材料范围；完整／缺项物性组均未新增，不自动给对象赋值。" : summary.current_cycle === "cycle33" ? "本轮增加6个已核来源资产，物性完整组与缺项组均未新增，旧来源数值保持；材料文献仅作研究范围导航，不赋成商品实测。" : summary.current_cycle === "cycle13" ? "本轮新采集 " + fmt(summary.current_cycle_collection_complete_groups) + " 完整组、" + fmt(summary.current_cycle_collection_partial_groups) + " 缺项组；另复核35条旧完整组，修正7条，撤回或重分28条，并恢复25条缺项记录。来源纠错净完整组−27、缺项组+25；合计净完整组−26、缺项组+55。缺项不补值，来源预设及项目混合律不作实测证据。" : cycle3 ? `本轮新增 ${fmt(summary.current_cycle_complete_property_groups)} 完整组、${fmt(summary.current_cycle_incomplete_property_groups)} 缺项组（${fmt(summary.current_cycle_property_value_cells)} 个属性槽位），包含实测、实验推导及来源参考汇编；方向、统计量、密度与模量定义逐条保留，不等于商品实测。` : cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
+  const propertyNote = summary.current_cycle === "cycle34" ? "本轮只扩物体及语义材料范围；完整／缺项物性组均未新增，不自动给对象赋值。" : summary.current_cycle === "cycle33" ? "本轮增加6个已核来源资产，物性完整组与缺项组均未新增，旧来源数值保持；材料文献仅作研究范围导航，不赋成商品实测。" : summary.current_cycle === "cycle13" ? "本轮新采集 " + fmt(summary.current_cycle_collection_complete_groups) + " 完整组、" + fmt(summary.current_cycle_collection_partial_groups) + " 缺项组；另复核35条旧完整组，修正7条，撤回或重分28条，并恢复25条缺项记录。来源纠错净完整组−27、缺项组+25；合计净完整组−26、缺项组+55。缺项不补值，来源预设及项目混合律不作实测证据。" : cycle3 ? `本轮新增 ${fmt(summary.current_cycle_complete_property_groups)} 完整组、${fmt(summary.current_cycle_incomplete_property_groups)} 缺项组（${fmt(summary.current_cycle_property_value_cells)} 个属性槽位），包含实测、实验推导及来源参考汇编；方向、统计量、密度与模量定义逐条保留，不等于商品实测。` : cycle2 ? `本轮另增加 ${fmt(summary.cycle2_incomplete_property_groups)} 条缺项组（${fmt(summary.cycle2_property_value_cells)} 个属性值格），不计入完整组或组件数。` : "";
   $("release-boundary").textContent = `研究完整与缺项共 ${fmt(summary.total_records)} 组，包含独立标记的数据库转录层。${propertyNote}正式材料映射 ${fmt(summary.formal_material_mapping_rows_unchanged)} 行未因本轮标签或组件新增而自动晋级。全库几何内容去重未完成。`;
   const hashes = { expanded_inventory_sha256: "扩充对象组件清单 SHA-256", feedback_queue_sha256: "待办队列 SHA-256", baseline_sha256: "原始对象表 SHA-256" };
   $("release-hashes").innerHTML = Object.entries(hashes).filter(([key]) => summary[key]).map(([key, label]) => `<dt>${label}</dt><dd>${esc(summary[key])}</dd>`).join("");
@@ -211,11 +211,11 @@
     newSelect.innerHTML=pages?Array.from({length:pages},(_,i)=>`<option value="${i}">第 ${i+1}/${pages} 页</option>`).join(""):'<option value="0">无匹配页</option>';
     newSelect.value=String(newPage);newSelect.disabled=!pages;
     $("new-source-prev").disabled=!pages || newPage===0;$("new-source-next").disabled=!pages || newPage===pages-1;
-    $("new-source-status").textContent=`累计新增来源对象 ${fmt(newItems.length)} 个 · 命中 ${fmt(hits.length)} 个 · 第 ${pages?newPage+1:0}/${pages} 页 · 每页最多 ${newSize} 个`;
+    $("new-source-status").textContent=`累计新增物体 ${fmt(newItems.length)} 个 · 命中 ${fmt(hits.length)} 个 · 第 ${pages?newPage+1:0}/${pages} 页 · 每页最多 ${newSize} 个`;
     $("new-source-rows").innerHTML=hits.slice(newPage*newSize,(newPage+1)*newSize).map(({item})=>`<tr>
-      <td data-label="物体与来源身份"><strong>${esc(item.nameCn || item.nameEn)}</strong><small>${esc(item.nameEn)}</small><small>${esc(item.objectId)}</small><small>${esc(item.sourceId)} · ${esc(item.sourceFamilyLabel || item.sourceFamily)}</small><small>${esc(item.category)}</small></td>
-      <td data-label="组件 / 材料状态"><p>${esc(item.componentScope)}</p><span class="scaling-badge pending">${esc(item.materialStatusLabel)}</span><p>${esc(item.materialLabel)}</p><small>${esc(item.materialNote)}</small><small>${esc(item.componentSummaryNote || "WHOLE整件回退；未枚举内部机械部件；本批无E/ν/ρ赋值。")}</small>${item.componentDetail ? `<div><button type="button" data-c34-object-detail="${esc(item.componentDetail.file)}" data-sha256="${esc(item.componentDetail.sha256)}" data-object-id="${esc(item.objectId)}">查看全部 ${fmt(item.componentCount)} 个组件范围</button></div>` : ""}<small>${item.flexiblePriority?"柔性 / 混合候选优先，仅检索分类，不证明材料或软硬。":"来源身份与材料证据分层记录。"}</small></td>
-      <td data-label="来源与 3D 资产"><div class="scaling-asset-links">${link(item.sourceUrl,"来源清单")}${link(item.mappingSourceUrl,"材料说明 / 候选依据")}${link(item.assetUrl,"下载 3D 资产包")}</div><span class="scaling-badge ${isDownloadedGlb(item) ? "verified" : "pending"}">${esc(item.assetStatusLabel)}</span><small>${esc(item.license)}</small><small>包内路径：${esc(item.archivePath)}</small><small>${esc(item.downloadStatus)}</small>${item.geometrySha256 ? `<small>资产负载 SHA-256：${esc(item.geometrySha256)}</small><small>负载顶点 / 三角形：${(Number.isFinite(item.geometryVertices) ? fmt(item.geometryVertices) : "未报告")} / ${(Number.isFinite(item.geometryFaces) ? fmt(item.geometryFaces) : "未报告")}；mesh / 材质槽 / 纹理：${(Number.isFinite(item.geometryMeshes) ? fmt(item.geometryMeshes) : "未报告")} / ${(Number.isFinite(item.materialSlots) ? fmt(item.materialSlots) : "未报告")} / ${(Number.isFinite(item.textures) ? fmt(item.textures) : "未报告")}</small>` : ""}<small>${esc(item.limitations)}</small></td></tr>`).join("") || '<tr><td colspan="3">没有匹配的新增对象。</td></tr>';
+      <td data-label="物体名称与所属数据集"><strong>${esc(item.nameCn || item.nameEn)}</strong>${item.nameEn && item.nameEn!==item.nameCn ? `<small class="object-english">${esc(item.nameEn)}</small>` : ""}<span class="source-label">${esc(item.sourceFamilyLabel || sourceLabels[item.sourceFamily]?.[0] || item.sourceFamily)}</span><details class="row-provenance"><summary>物体编号与类别</summary><small>物体编号：${esc(item.objectId)}</small><small>数据集编号：${esc(item.sourceId)}</small><small>类别：${esc(item.category)}</small></details></td>
+      <td data-label="部件与材料"><p class="component-scope">${esc(item.componentScope)}</p><p class="material-label">${esc(item.materialLabel)}</p><span class="scaling-badge pending">${esc(item.materialStatusLabel)}</span>${item.componentDetail ? `<div><button type="button" data-c34-object-detail="${esc(item.componentDetail.file)}" data-sha256="${esc(item.componentDetail.sha256)}" data-object-id="${esc(item.objectId)}">查看 ${fmt(item.componentCount)} 条部件记录</button></div>` : ""}<details class="row-provenance"><summary>材料说明与依据</summary><p>${esc(item.materialNote)}</p><p>${esc(item.componentSummaryNote || "WHOLE 表示物体尚未拆分，暂按整件记录；没有给该物体设置 E、ν、ρ。")}</p><p>${item.flexiblePriority?"柔性 / 混合候选仅为检索分类，不证明材料或软硬。":"物体信息和材料依据分别记录。"}</p></details></td>
+      <td data-label="来源与 3D 资产"><div class="scaling-asset-links">${link(item.assetUrl,"3D 资产")}${link(item.sourceUrl,"来源清单")}${link(item.mappingSourceUrl,"材料依据")}</div><span class="scaling-badge ${isDownloadedGlb(item) ? "verified" : "pending"}">${esc(item.assetStatusLabel)}</span><details class="row-provenance"><summary>下载、许可与校验</summary><small>许可：${esc(item.license)}</small><small>包内路径：${esc(item.archivePath)}</small><small>${esc(item.downloadStatus)}</small>${item.geometrySha256 ? `<small>SHA-256：${esc(item.geometrySha256)}</small><small>顶点 / 三角形：${Number.isFinite(item.geometryVertices) ? fmt(item.geometryVertices) : "未报告"} / ${Number.isFinite(item.geometryFaces) ? fmt(item.geometryFaces) : "未报告"}；mesh / 材质槽 / 纹理：${Number.isFinite(item.geometryMeshes) ? fmt(item.geometryMeshes) : "未报告"} / ${Number.isFinite(item.materialSlots) ? fmt(item.materialSlots) : "未报告"} / ${Number.isFinite(item.textures) ? fmt(item.textures) : "未报告"}</small>` : ""}<small>${esc(item.limitations)}</small></details></td></tr>`).join("") || '<tr><td colspan="3" class="empty-results">没有匹配物体。请清空搜索或选择其他来源。</td></tr>';
   }
   newSelect.addEventListener("change",()=>{newPage=Number(newSelect.value);renderNew();});
   $("new-source-prev").addEventListener("click",()=>{newPage--;renderNew();});
@@ -224,16 +224,16 @@
   $("new-source-filter").innerHTML += [...new Set(newItems.map(({item})=>item.sourceFamily))].map(f=>`<option value="${esc(f)}">${esc(sourceLabels[f]?.[0] || f)}</option>`).join("");
   $("new-source-filter").addEventListener("change",()=>renderNew(true));
   renderNew();
-  if ($("cycle13-payload-note")) $("cycle13-payload-note").textContent = summary.current_cycle === "cycle34" ? `本轮新增${fmt(summary.cycle34_new_source_identities)}个来源身份、${fmt(summary.cycle34_new_semantic_component_keys)}个作者语义组件和${fmt(summary.cycle34_new_whole_fallback_keys)}个WHOLE回退。语义组件不是机械零件；选项不是共存BOM；无新增物性组或数值赋值。` : summary.current_cycle === "cycle33" ? "本轮新增6个来源资产：1个柔性传感器、5个官方光学CAD。均为WHOLE整件回退，0新增机械分件；原件已下载核验，网站只提供原链接。目标10万以上；当前是来源身份数，跨源几何去重未完成。" : "Cycle13历史批次：原始下载和审核范围见批次记录。";
-  if ($("cycle12-payload-note")) $("cycle12-payload-note").textContent = "Cycle12：304个新增来源对象，260个来源实体替63个WHOLE；未新增GLB。此条为已发布历史记录。";
-  if ($("cycle11-payload-note")) $("cycle11-payload-note").textContent = "Cycle11 已核161个柔性/混合优先来源对象、185个来源实体替换44个WHOLE；该轮来源卡累计484，未新增GLB下载。";
-  if ($("cycle10-payload-note")) $("cycle10-payload-note").textContent = "Cycle10 已收111个来源对象、164个源定义实体，替换97个WHOLE；该轮来源卡累计323。本行仅记录历史批次。";
+  if ($("cycle13-payload-note")) $("cycle13-payload-note").textContent = summary.current_cycle === "cycle34" ? `本轮新增${fmt(summary.cycle34_new_source_identities)}个物体编号、${fmt(summary.cycle34_new_semantic_component_keys)}个作者语义组件和${fmt(summary.cycle34_new_whole_fallback_keys)}个WHOLE回退。语义组件不是机械零件；选项不是共存BOM；无新增物性组或数值赋值。` : summary.current_cycle === "cycle33" ? "本轮新增6个来源资产：1个柔性传感器、5个官方光学CAD。均为WHOLE整件回退，0新增机械分件；原件已下载核验，网站只提供原链接。目标10万以上；当前是物体编号数，跨源几何去重未完成。" : "Cycle13历史批次：原始下载和审核范围见批次记录。";
+  if ($("cycle12-payload-note")) $("cycle12-payload-note").textContent = "Cycle12：304个新增物体，260个原资料中的部件替63个WHOLE；未新增GLB。此条为已发布历史记录。";
+  if ($("cycle11-payload-note")) $("cycle11-payload-note").textContent = "Cycle11 已核161个柔性/混合优先物体、185个原资料中的部件替换44个WHOLE；该轮来源卡累计484，未新增GLB下载。";
+  if ($("cycle10-payload-note")) $("cycle10-payload-note").textContent = "Cycle10 已收111个物体、164个原资料定义的实体，替换97个WHOLE；该轮来源卡累计323。本行仅记录历史批次。";
   if ($("cycle9-payload-note")) $("cycle9-payload-note").textContent = `Cycle9 已核既有 ${fmt(summary.cycle9_verified_glb_payloads)} 个 GLB，共 ${fmt(summary.cycle9_verified_glb_bytes)} 字节；Cycle10、Cycle11 没有新增 GLB 下载事实。`;
 
   const pages = data.gsoPages || [];
   const pageSelect = $("gso-page");
   pageSelect.innerHTML = pages.map((page, index) => `<option value="${index}">第 ${index + 1} / ${pages.length} 页（${page.count} 项）</option>`).join("");
-  $("gso-count-note").textContent = `${fmt(summary.new_source_object_identities)} 个官方来源身份，按 100 项分页。材料未核不当作正式赋值；已下载校验 ${fmt(summary.new_GSO_geometry_files_downloaded_and_hashed)} 个样本。`;
+  $("gso-count-note").textContent = `${fmt(pages.reduce((sum,page)=>sum+page.count,0))} 个 GSO 官方物体编号，按 100 项分页。材料未核不当作正式赋值；已下载校验 ${fmt(summary.new_GSO_geometry_files_downloaded_and_hashed)} 个样本。`;
   let activePage = 0;
   let currentRows = [];
   let requestVersion = 0;
@@ -255,8 +255,8 @@
     $("gso-page-status").textContent = `第 ${activePage + 1}/${pages.length} 页 · 当前页 ${currentRows.length} 项 · 筛选命中 ${rows.length} 项`;
     $("gso-rows").innerHTML = rows.length ? rows.map((item) => {
       const downloaded = /^DOWNLOADED_OFFICIAL/.test(item.assetStatus || "");
-      return `<tr><td data-label="物体与来源身份"><strong>${esc(item.nameCn || item.nameEn)}</strong><small>${esc(item.nameEn)}</small><small>${esc(item.id)}</small><small>${esc(item.category)} · ${esc(item.source)}</small></td>
-      <td data-label="组件 / 材料状态"><p>${esc(item.componentScope)}</p><span class="scaling-badge pending">${item.sourceMaterialBacklinks?.length ? "有官方文本回链 · 模型绑定待核" : (item.materialReviewNote ? "元数据已筛查 · 尚无可接受材料回链" : "来源未报告材料 · 待核")}</span>${backlinksHtml(item.sourceMaterialBacklinks)}<small>无 E/ν/ρ 正式材料赋值</small></td>
+      return `<tr><td data-label="物体名称与所属数据集"><strong>${esc(item.nameCn || item.nameEn)}</strong><small>${esc(item.nameEn)}</small><small>${esc(item.id)}</small><small>${esc(item.category)} · ${esc(item.source)}</small></td>
+      <td data-label="部件与材料"><p>${esc(item.componentScope)}</p><span class="scaling-badge pending">${item.sourceMaterialBacklinks?.length ? "有官方文本回链 · 模型绑定待核" : (item.materialReviewNote ? "元数据已筛查 · 尚无可接受材料回链" : "来源未报告材料 · 待核")}</span>${backlinksHtml(item.sourceMaterialBacklinks)}<small>无 E/ν/ρ 正式材料赋值</small></td>
       <td data-label="来源与 3D 资产"><div class="scaling-asset-links">${link(item.sourceUrl, "来源清单")}${link(item.assetUrl, "下载资产 ZIP")}</div><span class="scaling-badge ${downloaded ? "verified" : "pending"}">${downloaded ? "已下载并校验的样本" : "官方模式链接 · 待逐项验证"}</span><small>${esc(item.license)}</small>${item.geometrySha256 ? `<small>OBJ SHA-256：${esc(item.geometrySha256)}</small><small>包内路径：${esc(item.geometryArchiveEntryPath)}</small>` : ""}</td></tr>`;
     }).join("") : '<tr><td colspan="3">当前页无匹配；可清空筛选或切换资产页。</td></tr>';
   }

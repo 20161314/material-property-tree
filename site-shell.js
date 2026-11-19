@@ -25,34 +25,34 @@
   if (priority && ['objects','materials','coverage'].includes(page)) {
     const c=priority.objectMaterials;
     const panel=document.createElement('section'); panel.className='object-priority-coverage';
-    panel.setAttribute('aria-label','物体关联材料覆盖');
-    panel.innerHTML='<div><span>当前优先 · 已规范的物体材料标签</span><strong>'+fmt(c.materialsWithAllThreeFromAnyGroup)+' / '+fmt(c.targetCount)+' 三项研究来源覆盖 · '+c.coveragePercent.toFixed(2)+'%</strong><small>仍缺项 '+fmt(c.missingMaterials)+' 种；统计当前标签的研究值，实际材质仍须核验，非商品实测。</small></div><div><a href="references.html?scope=object">查看物体材料</a><a href="'+priority.downloads.report+'">缺项名单</a><details><summary>研究材料范围</summary><p>无物体且三项齐全 '+fmt(priority.unlinkedComplete.targetCount)+' 种保留；无物体且缺项 '+fmt(priority.researchCandidates.targetCount)+' 种单列候选。全部研究材料 '+fmt(priority.allResearch.targetCount)+' 种。分组不算新增证据。</p><a href="references.html?scope=canonical">全部研究材料</a> · <a href="references.html?scope=candidate">研究候选</a></details><details><summary>材料身份审查</summary><p>14 条蜡烛已改为宽类蜡，4 条皂块已改为宽类固体皂；原 mud 标签留档。另 2 条壶/番茄酱包装组件范围仍待核。新标签不继承泥类数值，宽标签不代表精确配方。</p><a href="coverage-gaps/MATERIAL_IDENTITY_NOTICES.md">查看限制与处理原则</a> · <a href="coverage-gaps/METHOD_DEFINED_SOAP_MODULUS.md">皂块实测模量旁表</a></details></div>';
+    panel.setAttribute('aria-label','物体使用的材料覆盖');
+    panel.innerHTML='<div><span>优先补齐物体使用的材料</span><strong>'+fmt(c.materialsWithAllThreeFromAnyGroup)+' / '+fmt(c.targetCount)+' 三项属性有来源数值 · '+c.coveragePercent.toFixed(2)+'%</strong><small>仍缺项 '+fmt(c.missingMaterials)+' 种；统计资料中的材料数值，不是每个商品的实测值；商品材质仍需核查。</small></div><div><a href="references.html?scope=object">查看物体材料</a><a href="'+priority.downloads.report+'">缺项名单</a><details><summary>研究材料范围</summary><p>三项齐全、尚无物体 '+fmt(priority.unlinkedComplete.targetCount)+' 种保留；无物体且缺项 '+fmt(priority.researchCandidates.targetCount)+' 种单列候选。全部材料 '+fmt(priority.allResearch.targetCount)+' 种。分组不算新增证据。</p><a href="references.html?scope=canonical">全部材料</a> · <a href="references.html?scope=candidate">待补充材料</a></details><details><summary>材料名称核查</summary><p>14 条蜡烛已改为宽类蜡，4 条皂块已改为宽类固体皂；原 mud 标签留档。另 2 条壶/番茄酱包装部件仍待核。新标签不继承泥类数值，宽标签不代表精确配方。</p><a href="coverage-gaps/MATERIAL_IDENTITY_NOTICES.md">查看限制与处理原则</a> · <a href="coverage-gaps/METHOD_DEFINED_SOAP_MODULUS.md">皂块实测模量旁表</a></details></div>';
     const unresolved=priority.unresolvedSourceLabels;
     if(unresolved?.labelCount){
       const note=document.createElement('p');note.className='priority-tree-scope-note';
-      note.innerHTML='另有 '+fmt(unresolved.relationRows)+' 条已接受来源关系（'+fmt(unresolved.labelCount)+' 个来源标签）待规范对齐，尚未计入上方分母。全物体材料覆盖仍未完成。 <a href="'+unresolved.report+'">查看逐标签名单</a>';
+      note.innerHTML='另有 '+fmt(unresolved.relationRows)+' 条已接受来源关系（'+fmt(unresolved.labelCount)+' 个来源标签）还需统一材料名称，尚未计入上述材料种类数。仍有物体的材料资料尚未补齐。 <a href="'+unresolved.report+'">查看逐标签名单</a>';
       panel.append(note);
     }
     const unnamed=priority.recordedComponentsWithoutReviewedMaterial;
     if(unnamed?.componentCount){
       const note=document.createElement('details');note.className='priority-tree-scope-note';
-      note.innerHTML='<summary>另有 '+fmt(unnamed.componentCount)+' 个已有组件尚缺规范材料标签</summary><p>这些组件尚不能进入材料去重分母，仍是物体表待办；与上方来源关系待办可能重叠，不相加。 <a href="'+unnamed.download+'">下载逐组件名单</a></p>';
+      note.innerHTML='<summary>另有 '+fmt(unnamed.componentCount)+' 个已有部件还未确定材料名称</summary><p>这些组件尚不能进入材料去重分母，仍是物体表待办；与上方来源关系待办可能重叠，不相加。 <a href="'+unnamed.download+'">下载逐组件名单</a></p>';
       panel.append(note);
     }
     const header=document.querySelector('.app-header');
     if (header) header.after(panel);
     if (page==='materials') {
       const note=document.createElement('p');note.className='priority-tree-scope-note';
-      note.textContent='下方材料树包含全部研究材料；上方进度仅统计当前物体关联材料。无物体缺项节点单列研究候选，不计入优先补齐分母。';
+      note.textContent='下方材料树包含全部材料；上方进度仅统计当前物体使用的材料。无物体缺项节点单列待补充材料，不计入优先补齐分母。';
       panel.after(note);
     }
     const prior=document.querySelector('.coverage-progress');
     if (prior) prior.hidden=true;
   }
   const current = {objects:'scaling.html',materials:'research.html',coverage:'references.html'};
-  const title = {objects:'物体与材料总览',materials:'材料物性来源树',coverage:'材料标签与三元组来源对照',archive:'历史映射',references:'历史对照',catalog:'玻璃数据'};
+  const title = {objects:'物体与材料总览',materials:'材料物性来源树',coverage:'材料与物性来源对照',archive:'历史映射',references:'历史对照',catalog:'玻璃数据'};
   const shell = document.createElement('nav'); shell.className='site-navigation'; shell.setAttribute('aria-label','数据库导航');
-  shell.innerHTML='<a class="site-brand" href="scaling.html">物体与材料库</a><div class="site-main-links">'+Object.entries(current).map(([key,url])=>'<a href="'+url+'"'+(page===key?' aria-current="page"':'')+'>'+title[key]+'</a>').join('')+'</div><details class="site-more"><summary>数据与说明</summary><div><a href="evidence-catalog.html?collection=sciglass">玻璃数据</a><a href="scaling-assets/current-tables/README.md">下载数据</a><a href="release-manifest.json">发布清单</a></div></details><span class="site-version" title="各视图共享此发布快照">'+release.date+' · '+release.id+'</span>';
+  shell.innerHTML='<a class="site-brand" href="scaling.html">物体与材料库</a><div class="site-main-links">'+Object.entries(current).map(([key,url])=>'<a href="'+url+'"'+(page===key?' aria-current="page"':'')+'>'+title[key]+'</a>').join('')+'</div><details class="site-more"><summary>数据与说明</summary><div><a href="evidence-catalog.html?collection=sciglass">玻璃数据</a><a href="scaling-assets/current-tables/README.md">下载数据</a><a href="release-manifest.json">发布清单</a></div></details><span class="site-version" title="各页面使用同一版本数据">更新于 '+release.date+'</span>';
   const skip = document.querySelector('.skip-link');
   if (skip) skip.after(shell); else document.body.prepend(shell);
   document.querySelectorAll('.dataset-views,.scaling-nav,.phase1-nav,.catalog-nav,.target-nav,.research-view-link').forEach(element=>element.remove());
@@ -85,7 +85,7 @@
     const policy = document.querySelector('.phase1-policy');
     if (policy && !document.querySelector('.coverage-reading')) {
       const disclosure = document.createElement('details'); disclosure.className='scaling-history coverage-reading';
-      disclosure.innerHTML='<summary>数据口径与来源层级</summary>';
+      disclosure.innerHTML='<summary>统计方法与资料类型</summary>';
       policy.before(disclosure); disclosure.append(policy);
       const origins=document.querySelector('.phase1-coverage-line'); if(origins)disclosure.append(origins);
     }
@@ -113,7 +113,7 @@
   const stats = document.querySelector('body[data-view="materials"] .dataset-stats');
   if (stats && !document.querySelector('.site-auxiliary')) {
     const extra = document.createElement('details'); extra.className = 'site-auxiliary';
-    extra.innerHTML = '<summary>更多统计与阅读说明</summary><dl></dl><p>完整组同一来源组含 E、ν、ρ；缺项组有 1 或 2 项。三项覆盖允许分别来自不同组，不拼接为完整三元组。已审细分材料可计入上级覆盖，不自动赋给商品。</p>';
+    extra.innerHTML = '<summary>更多统计与阅读说明</summary><dl></dl><p>完整组同一数据组含 E、ν、ρ；缺项组有 1 或 2 项。三项覆盖允许分别来自不同组，不拼接为完整三元组。已审细分材料可计入上级覆盖，不自动赋给商品。</p>';
     const items = [...stats.children]; items.slice(4).forEach(item => extra.querySelector('dl').append(item));
     const boundary = document.getElementById('scope-note-content');
     if (boundary) extra.querySelector('p').textContent = boundary.textContent;

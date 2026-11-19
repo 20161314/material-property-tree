@@ -11,22 +11,22 @@
     rubber: "橡胶与弹性体", stone: "石材与矿物", textile: "纤维与纺织材料", wood: "木材与工程木",
   };
   const relationshipNames = {
-    DIRECT_CANONICAL_MATERIAL: "直接规范材料记录",
+    DIRECT_CANONICAL_MATERIAL: "直接已整理材料记录",
     REVIEWED_TARGET_SUBTYPE_REFERENCE: "已审细分材料参考",
     REVIEWED_TARGET_EXACT_REFERENCE: "已审目标材料参考",
     EXACT_IDENTITY: "精确材料身份",
     SOURCE_LABEL_MATCH: "原文标签匹配",
     CONDITIONAL_SUBTYPE_REFERENCE: "细分材料参考",
-    SOURCE_DEFINED_SUBTYPE: "来源定义的细分材料",
+    SOURCE_DEFINED_SUBTYPE: "原资料定义的细分材料",
     FAMILY_COVERAGE_ONLY: "材料家族参考",
   };
   const originNames = {
     FORMAL_EVIDENCE: "正式证据",
     REVIEWED_CANDIDATE: "审核候选",
-    SUPPLEMENTAL_RESEARCH_CANDIDATE: "补充研究候选",
+    SUPPLEMENTAL_RESEARCH_CANDIDATE: "待补充材料",
     HISTORICAL_OFFICIAL_COMPILATION_REVIEW: "回源官方材料汇编",
     REVIEWED_PARTIAL_CANDIDATE: "已审缺项候选",
-    HISTORICAL_SOURCE_GROUP_REVIEW: "历史来源组回核",
+    HISTORICAL_SOURCE_GROUP_REVIEW: "历史数据组回核",
     LEGACY_NEWLY_SOURCE_CHECKED: "旧版证据回核",
     WOOD_PARTIAL_SOURCE_REVIEW_2026_11_12: "木材缺项回核",
     "partial_gap_recovery_textile_2026-11-12": "纺织皮革缺项回核",
@@ -52,7 +52,7 @@
   const priority = window.DATASET_RELEASE.object_priority_coverage;
   const objectIds = new Set(priority?.objectMaterialIds || []);
   if (priority) {
-    scopeFilter.innerHTML='<option value="object">物体关联材料（优先）</option><option value="canonical">全部研究材料</option><option value="retained">无物体且三项齐全</option><option value="candidate">无物体缺项候选</option>';
+    scopeFilter.innerHTML='<option value="object">物体使用的材料</option><option value="canonical">全部材料</option><option value="retained">三项齐全、尚无物体</option><option value="candidate">缺数值、尚无物体</option>';
   }
   scopeFilter.value = "canonical"; // Current scope always follows the dynamic material union.
   if (!hasCanonical) throw new Error("当前材料覆盖数据缺失");
@@ -129,11 +129,11 @@
   function renderSummary() {
     const cohort = !priority || scopeFilter.value==='canonical' ? data.canonicalSummary : scopeFilter.value==='object' ? priority.objectMaterials : scopeFilter.value==='retained' ? priority.unlinkedComplete : priority.researchCandidates;
     const current = { ...data.summary, ...cohort };
-    const coverage = (value) => value === undefined ? "待汇总" : value + "/" + current.targetCount + " 规范材料";
+    const coverage = (value) => value === undefined ? "待汇总" : value + "/" + current.targetCount + " 已整理材料";
     const values = {
-      "stat-records": fmt(current.tripletRecords),
-      "stat-incomplete-records": fmt(current.incompleteRecords),
-      "stat-reviewed": Number(current.reviewedRecords).toLocaleString("en"),
+      "stat-records": Number(window.DATASET_RELEASE.records.complete).toLocaleString("en"),
+      "stat-incomplete-records": Number(window.DATASET_RELEASE.records.partial).toLocaleString("en"),
+      "stat-reviewed": Number(window.DATASET_RELEASE.records.total).toLocaleString("en"),
       "stat-covered": coverage(current.materialsWithCompleteRecord),
       "stat-partial-materials": coverage(current.materialsWithIncompleteRecord),
       "stat-no-values": coverage(current.materialsWithoutAnyValue),
@@ -144,25 +144,25 @@
       "stat-doc-keys": fmt(window.DATASET_RELEASE.source_keys.document_or_database_citation_keys),
     };
     Object.entries(values).forEach(([id, value]) => { $(id).textContent = value; });
-    $("unmapped-note").textContent = `这 ${fmt(data.summary.unmappedRecords)} 条主账完整记录尚未关联当前规范材料节点；仍保留在研究账中。`; 
+    $("unmapped-note").textContent = `这 ${fmt(data.summary.unmappedRecords)} 条论文与厂商资料三项齐全的数据尚未关联当前已整理材料种类；仍保留在研究账中。`; 
     $("stage-progress-copy").textContent = `${Number(current.reviewedRecords).toLocaleString("en")} 条；持续扩充，不设数量上限`;
     $("unmapped-summary-count").textContent = fmt(data.summary.unmappedRecords);
-    $("coverage-copy").textContent = "规范材料及已审细分参考覆盖；关联行不重复计为新来源组。";
+    $("coverage-copy").textContent = "已整理材料及已审细分参考覆盖；关联行不重复计为新数据组。";
     $("origin-copy").textContent = Object.entries(current.origins || {}).map(([key, count]) => `${originNames[key] || key} ${fmt(count)}`).join("；");
-    $("coverage-scope-note").textContent = "覆盖分母：当前非液体规范材料并集。外库组成身份另列，不重复计入。";
-    $("table-title").textContent = "当前规范材料全库";
-    $("coverage-denominator-note").textContent = "分母随当前材料库更新；证据叶可以暂无对应物体";
+    $("coverage-scope-note").textContent = "覆盖分母：当前非液体已整理材料并集。外库组成身份另列，不重复计入。";
+    $("table-title").textContent = "全部已整理材料";
+    $("coverage-denominator-note").textContent = "材料种类随资料更新；部分材料暂未关联物体";
     if (priority) {
       const label=scopeFilter.selectedOptions[0].textContent;
       $("table-title").textContent=label;
-      $("coverage-scope-note").textContent='当前范围：'+label+'，共 '+current.targetCount+' 种。优先补齐物体关联材料；无物体且缺项仅列研究候选。';
-      $("coverage-denominator-note").textContent='分母为当前选中范围；完整/缺项组总数仍是全库来源组数';
+      $("coverage-scope-note").textContent='当前查看：'+label+'，共 '+current.targetCount+' 种。优先补齐物体使用的材料；无物体且缺项仅列待补充材料。';
+      $("coverage-denominator-note").textContent='分母是当前筛选的材料数；页头数据组数统计全库';
     }
   }
 
   if (summary.externalCatalogUrl) {
     const note = document.createElement("p");
-    note.textContent = "主账完整 " + summary.mainCompleteRecords.toLocaleString("en") + "、缺项 " + summary.mainIncompleteRecords.toLocaleString("en") + "；另含玻璃数据库转录完整 " + summary.externalCompleteRecords.toLocaleString("en") + "、缺项 " + summary.externalIncompleteRecords.toLocaleString("en") + "。数据库未逐篇重读；引用不清的三项齐组另隔离。";
+    note.textContent = "论文与厂商资料完整 " + summary.mainCompleteRecords.toLocaleString("en") + "、缺项 " + summary.mainIncompleteRecords.toLocaleString("en") + "；另含玻璃数据库资料完整 " + summary.externalCompleteRecords.toLocaleString("en") + "、缺项 " + summary.externalIncompleteRecords.toLocaleString("en") + "。数据库未逐篇重读；引用不清的三项齐组另隔离。";
     document.querySelector(".phase1-policy").append(note);
   }
   const familyFilter = $("family-filter");
@@ -174,9 +174,9 @@
   });
 
   function statusLabel(target) {
-    if (target.completeRecordCount > 0) return ["有完整组", ""];
-    if (target.incompleteRecordCount > 0) return ["仅有不完整组", "partial"];
-    return ["暂无来源组", "missing"];
+    if (target.completeRecordCount > 0) return ["三项齐全", ""];
+    if (target.incompleteRecordCount > 0) return ["只有部分数值", "partial"];
+    return ["暂无数值资料", "missing"];
   }
 
   function evidenceHtml(entries) {
@@ -209,7 +209,7 @@
       }
       const source = record.url ? `<a href="${esc(record.url)}" target="_blank" rel="noopener noreferrer">打开来源</a>` : "来源链接缺失";
       return `<article class="evidence-row">
-        <strong>${esc(record.material_identity)} <span class="evidence-status">${incomplete ? "不完整来源组" : esc(relationshipNames[entry.relationship] || entry.relationship)}</span></strong>
+        <strong>${esc(record.material_identity)} <span class="evidence-status">${incomplete ? "缺项数据" : esc(relationshipNames[entry.relationship] || entry.relationship)}</span></strong>
         <small>${esc(record.record_id)} · ${esc(record.source_id)} · ${esc(record.publisher_subject_name)} · ${esc(record.document_key)}</small>
         <div class="evidence-values-inline">${values}</div>
         ${incomplete ? `<p>同组仅有 ${esc(record.property_count)} 项可计入属性；不与其他来源拼接。</p>` : ""}
@@ -266,8 +266,8 @@
       const stage2 = "完整与缺项记录同步收集";
       return `<tr>
         <td>${detailSummary}<small class="family-label">${esc(familyNames[target.family] || target.family)}</small><div class="material-view-links"><a href="research.html?material=${encodeURIComponent(target.id)}">材料树</a><a href="scaling.html?material=${encodeURIComponent(target.id)}">关联物体</a></div></td>
-        <td><strong>${relationCount}</strong><small>主账 ${target.recordCount.toLocaleString("en")} 组</small>${extCount ? `<small>另有数据库完整 ${target.externalCompleteRecordCount.toLocaleString("en")} · 缺项 ${target.externalIncompleteRecordCount.toLocaleString("en")}</small><a href="${esc(target.externalCollectionUrl)}">分页查看数据库原始来源组</a>` : ""}</td>
-        <td>${target.documentKeyCount.toLocaleString("en")}<small>主账文档键（外库另列）</small></td>
+        <td><strong>${relationCount}</strong><small>论文与厂商资料 ${target.recordCount.toLocaleString("en")} 组</small>${extCount ? `<small>另有数据库完整 ${target.externalCompleteRecordCount.toLocaleString("en")} · 缺项 ${target.externalIncompleteRecordCount.toLocaleString("en")}</small><a href="${esc(target.externalCollectionUrl)}">分页查看数据库原始数据组</a>` : ""}</td>
+        <td>${target.documentKeyCount.toLocaleString("en")}<small>论文与厂商资料的来源条目（数据库另列）</small></td>
         <td class="range-cell">${fmtRange(target.E)}<small>报告跨度</small></td>
         <td class="range-cell">${fmtRange(target.nu)}<small>报告跨度</small></td>
         <td class="range-cell">${fmtRange(target.rho)}<small>${esc(target.densityScopeNote ? '密度定义与条件见原始记录' : '报告跨度')}</small></td>
@@ -275,7 +275,7 @@
       </tr>`;
     }).join("");
 
-    const cellLabels=['材料与来源','数据组','文档键','E（GPa）','ν','ρ（kg/m³）','覆盖状态'];
+    const cellLabels=['材料与来源','数据组','来源编号','E（GPa）','ν','ρ（kg/m³）','覆盖状态'];
     $("material-table-body").querySelectorAll('tr').forEach(row => [...row.cells].forEach((cell,index)=>cell.dataset.label=cellLabels[index]));
     $("material-table-body").querySelectorAll("details[data-target]").forEach((details) => {
       details.addEventListener("toggle", () => {

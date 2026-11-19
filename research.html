@@ -13,20 +13,22 @@
   <link rel="stylesheet" href="dataset-views.css?v=1763c8da51bc">
   <link rel="stylesheet" href="site-shell.css?v=3adf4f6c9c74">
   <script src="release-data.js?v=058c473ffe0b"></script>
-  <script src="site-shell.js?v=cae8c34b3fc1"></script>
+  <script src="site-shell.js?v=958045500e11"></script>
 <link rel="preload" href="research-bootstrap.js.gz?v=928170c647b7" as="fetch" crossorigin="anonymous">
 <link rel="stylesheet" href="progress-notice.css?v=ed9986bbdcf4">
 <link rel="stylesheet" href="tree-scroll.css?v=b6b75567615c">
+  <link rel="stylesheet" href="site-refinement.css?v=87b89a481c9a">
+  <script defer src="site-refinement.js?v=c5af7bec602b"></script>
 </head>
 <body data-view="materials">
   <a class="skip-link" href="#tree-canvas">跳到材料树</a>
 <!-- BEGIN VERIFIED PROGRESS NOTICE -->
-<aside class="progress-notice" aria-labelledby="progress-notice-title" data-progress-checkpoint="O72">
-  <div class="progress-notice-heading"><div><p>阶段验收 · O72 · 2026-11-17</p><h2 id="progress-notice-title">最新已核工作进度</h2></div><span class="progress-notice-status">工作快照 · 尚未正式发布</span></div>
+<aside class="progress-notice" aria-labelledby="progress-notice-title" data-progress-checkpoint="O76" data-working-objects="101278">
+  <div class="progress-notice-heading"><div><p>阶段验收 · O76 · 2026-11-18</p><h2 id="progress-notice-title">最新已核工作进度</h2></div><span class="progress-notice-status">工作快照 · 尚未正式发布</span></div>
   <p class="progress-notice-boundary">本栏为最新工作进度；下方树、表格及原下载仍为正式版本 C41（2026-11-14）。</p>
-  <dl class="progress-notice-metrics"><div><dt>来源对象身份</dt><dd>101,269</dd></div><div><dt>对象—组件键（含整件）</dt><dd>165,734</dd></div><div><dt>材料与配方节点</dt><dd>4,219</dd></div><div><dt>主账完整来源组</dt><dd>2,443</dd></div><div><dt>主账缺项来源组</dt><dd>3,614</dd></div><div><dt>关联材料三项覆盖</dt><dd>218 / 266</dd></div></dl>
+  <dl class="progress-notice-metrics"><div><dt>收录物体数量</dt><dd>101,278</dd></div><div><dt>部件记录数量（含未拆分整件）</dt><dd>165,743</dd></div><div><dt>材料种类</dt><dd>4,308</dd></div><div><dt>论文与厂商资料三项齐全的数据</dt><dd>2,443</dd></div><div><dt>论文与厂商资料缺项数据组</dt><dd>3,730</dd></div><div><dt>关联材料三项覆盖</dt><dd>218 / 266</dd></div></dl>
   <div class="progress-notice-footer"><p>关联材料 E、ν、ρ 各有来源值：<strong>81.95%</strong>；仍缺 48 种。</p><div><a href="progress/STAGE_ACCEPTANCE.md">验收报告</a><a href="progress/MATERIAL_PROPERTY_GAPS.csv" download>缺项材料名单</a><a href="progress/working-progress.json">统计与校验信息</a></div></div>
-  <details><summary>本轮变化与统计说明</summary><p>新增 1,169 条有界近似材料关系、8 组缺项物性记录、9 个材料/配方节点；本轮未新增几何或机械部件。来源对象身份尚未完成全局几何去重；组件键含整件占位。材料节点包含粗类、细类与配方，不等于独立化学材料种数。</p><p>完整组在同一来源组同时报告 E、ν、ρ；缺项组报告其中一项或两项。逐属性覆盖可来自不同文献，不拼接成完整组。以上为最新工作快照；下方树、表格及其下载仍为正式版本 C41（2026-11-14）。正式发布尚待未完成项审核。</p></details>
+  <details><summary>统计说明</summary><p>物体按各数据集编号统计，跨数据集可能有重复模型。部件记录包含尚未拆分的整件；材料种类包含大类、具体牌号和配方。</p><p>三项齐全的数据：同一组资料同时报告 E、ν、ρ。缺项数据：只有一项或两项。不同资料可分别补齐一种材料的三项属性，但不拼成一组三项齐全的数据。</p><p>这里是尚未全部上线的工作表进度。下方材料树、物体列表及正式数据下载仍使用网站当前版本。</p></details>
 </aside>
 <!-- END VERIFIED PROGRESS NOTICE -->
   <header class="app-header">
@@ -40,16 +42,16 @@
       <dl class="dataset-stats" aria-label="核心数据统计">
         <div><dt>完整数据组</dt><dd id="stat-complete-records">6,186</dd></div>
         <div><dt>不完整数据组</dt><dd id="stat-partial-records">94,913</dd></div>
-        <div><dt>材料节点</dt><dd id="stat-canonical-materials">3,916</dd></div>
-        <div><dt>主账材料身份</dt><dd id="stat-source-identities">3,866</dd></div>
-        <div><dt>有完整组材料</dt><dd id="stat-complete-materials">1,667/3,916 规范材料</dd></div>
-        <div><dt>有缺项组材料</dt><dd id="stat-partial-materials">2,318/3,916 规范材料</dd></div>
-        <div><dt>有 E 来源值</dt><dd id="stat-e-materials">3,276/3,916 规范材料</dd></div>
-        <div><dt>有 ν 来源值</dt><dd id="stat-nu-materials">1,823/3,916 规范材料</dd></div>
-        <div><dt>有 ρ 来源值</dt><dd id="stat-rho-materials">3,161/3,916 规范材料</dd></div>
-        <div><dt>三项有来源值</dt><dd id="stat-all-properties">1,698/3,916 规范材料</dd></div>
-        <div><dt>尚无任何来源值</dt><dd id="stat-no-values">30/3,916 规范材料</dd></div>
-        <div><dt>文档/数据库引文键</dt><dd id="stat-source-documents">15,929</dd></div>
+        <div><dt>材料种类</dt><dd id="stat-canonical-materials">3,916</dd></div>
+        <div><dt>论文与厂商资料材料身份</dt><dd id="stat-source-identities">3,866</dd></div>
+        <div><dt>有三项齐全数据的材料</dt><dd id="stat-complete-materials">1,667/3,916 已整理材料</dd></div>
+        <div><dt>有缺项数据的材料</dt><dd id="stat-partial-materials">2,318/3,916 已整理材料</dd></div>
+        <div><dt>有 E 来源值</dt><dd id="stat-e-materials">3,276/3,916 已整理材料</dd></div>
+        <div><dt>有 ν 来源值</dt><dd id="stat-nu-materials">1,823/3,916 已整理材料</dd></div>
+        <div><dt>有 ρ 来源值</dt><dd id="stat-rho-materials">3,161/3,916 已整理材料</dd></div>
+        <div><dt>三项有来源值</dt><dd id="stat-all-properties">1,698/3,916 已整理材料</dd></div>
+        <div><dt>尚无任何来源值</dt><dd id="stat-no-values">30/3,916 已整理材料</dd></div>
+        <div><dt>来源条目数</dt><dd id="stat-source-documents">15,929</dd></div>
         <div><dt>隔离仿真预设</dt><dd id="stat-simulation-presets">3,518</dd></div>
       </dl>
     </div>
@@ -90,14 +92,14 @@
     
     <div class="search-wrap">
       <i data-lucide="search" aria-hidden="true"></i>
-      <input id="tree-search" type="search" autocomplete="off" placeholder="搜索中文、英文或节点 ID" aria-label="搜索材料节点" aria-controls="search-results">
+      <input id="tree-search" type="search" autocomplete="off" placeholder="搜索中文、英文或节点 ID" aria-label="搜索材料种类" aria-controls="search-results">
       <button class="icon-button clear-search" id="clear-search" type="button" title="清除搜索" aria-label="清除搜索"><i data-lucide="x" aria-hidden="true"></i></button>
       <div class="search-results" id="search-results" role="listbox" aria-label="搜索结果" hidden></div>
     </div>
     <div class="toolbar-actions">
       <button type="button" id="expand-all" title="展开或收起当前分支，保持可读缩放"><i data-lucide="unfold-vertical" aria-hidden="true"></i><span>展开分支</span></button>
       <button type="button" id="focus-branch" title="仅显示当前节点所在分支"><i data-lucide="focus" aria-hidden="true"></i><span>聚焦分支</span></button>
-      <button type="button" id="global-view" title="展开全部材料节点并适应画布"><i data-lucide="network" aria-hidden="true"></i><span>全树总览</span></button>
+      <button type="button" id="global-view" title="展开全部材料种类并适应画布"><i data-lucide="network" aria-hidden="true"></i><span>全树总览</span></button>
       <button type="button" id="fit-tree" title="将当前已展开的树完整装入画布"><i data-lucide="maximize" aria-hidden="true"></i><span>适应全树</span></button>
       <button type="button" id="toggle-header" aria-pressed="false" title="收起页头和说明"><i data-lucide="panel-top-close" aria-hidden="true"></i><span>收起页头</span></button>
       <button type="button" id="toggle-details" aria-pressed="false" title="隐藏节点详情"><i data-lucide="panel-right-close" aria-hidden="true"></i><span>隐藏详情</span></button>
@@ -135,6 +137,6 @@
   <script defer src="vendor/d3.min.js?v=f2094bbf6141"></script>
   <script async onload="document.dispatchEvent(new Event('material-icons-ready'))" src="vendor/lucide.min.js?v=3411692820cb"></script>
   <script src="research-bootstrap.js?v=0315d792469d"></script>
-  <script defer src="app.js?v=ce9bc4804466"></script>
+  <script defer src="app.js?v=9c0d7a07c123"></script>
 </body>
 </html>
