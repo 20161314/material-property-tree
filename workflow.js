@@ -354,10 +354,16 @@
   }
 
   async function init() {
-    await window.MATERIAL_PAYLOAD_READY;
-    const response = await fetch("workflow-data.json", { cache: "no-cache" });
-    if (!response.ok) throw new Error("工作流载入失败 HTTP " + response.status);
-    data = await response.json();
+    // The workflow has its own approved configuration; the 1 MB asset index
+    // is unrelated to drawing the canvas and may finish in the background.
+    const embedded = document.getElementById("workflow-embedded-data");
+    if (embedded) {
+      data = JSON.parse(embedded.textContent);
+    } else {
+      const response = await fetch("workflow-data.json");
+      if (!response.ok) throw new Error("工作流载入失败 HTTP " + response.status);
+      data = await response.json();
+    }
     if (!Array.isArray(data.phases) || !Array.isArray(data.steps) || !Array.isArray(data.modelRoutes)) throw new Error("工作流数据结构不完整");
     $("workflow-phase-count").textContent = data.phases.length.toLocaleString("zh-CN");
     $("workflow-step-count").textContent = data.steps.length.toLocaleString("zh-CN");

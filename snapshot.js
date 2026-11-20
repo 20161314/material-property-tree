@@ -2,7 +2,7 @@
  await window.MATERIAL_PAYLOAD_READY;const P=window.PresentationFields;const s=window.DATASET_RELEASE,$=id=>document.getElementById(id),fmt=n=>Number(n).toLocaleString('en'),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const link=(url,label)=>P.link(url,label);
  const cache=new Map();async function block(spec){const key=typeof spec==='string'?spec:spec.url;if(cache.has(key))return cache.get(key);const task=(async()=>{const requestUrl=new URL(key,location.href);if(spec.sha256)requestUrl.searchParams.set("v",spec.sha256);const r=await fetch(requestUrl);if(!r.ok)throw Error('分块载入失败 HTTP '+r.status);let bytes=new Uint8Array(await r.arrayBuffer());if(bytes[0]===31&&bytes[1]===139)bytes=new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer());if(spec.sha256){const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))).map(v=>v.toString(16).padStart(2,'0')).join('');if(hash!==spec.sha256)throw Error('数据分块校验失败')}return JSON.parse(new TextDecoder().decode(bytes))})();cache.set(key,task);try{return await task}catch(e){cache.delete(key);throw e}}
- const nav=document.createElement('nav');nav.className='site-navigation';nav.setAttribute('aria-label','数据库导航');nav.innerHTML=`<a class="site-brand" href="scaling.html">物体与材料库</a><div class="site-main-links"><a href="scaling.html">物体与材料总览</a><a href="research.html">材料物性来源树</a><a href="references.html">材料与物性来源对照</a><a href="workflow.html">工作流</a></div>`;document.body.prepend(nav);nav.querySelectorAll('.site-main-links a').forEach(a=>{if(new URL(a.href).pathname===location.pathname)a.setAttribute('aria-current','page')});
+ const nav=document.createElement('nav');nav.className='site-navigation';nav.setAttribute('aria-label','数据库导航');nav.innerHTML=`<a class="site-brand" href="scaling.html">物体与材料库</a><div class="site-main-links"><a href="scaling.html">物体与材料总览</a><a href="research.html">材料物性来源树</a><a href="references.html">材料与物性来源对照</a><a href="workflow.html">工作流</a></div>`;const initialNav=document.querySelector('nav[data-workflow-shell]');if(initialNav)initialNav.replaceWith(nav);else document.body.prepend(nav);nav.querySelectorAll('.site-main-links a').forEach(a=>{if(new URL(a.href).pathname===location.pathname)a.setAttribute('aria-current','page')});
  const status=document.createElement('aside');status.className='snapshot-status';status.innerHTML=`<div class="snapshot-headline"><strong>研究数据 · ${esc(s.date)}</strong><details><summary>统计说明</summary><p>资料截止 ${esc(s.data_cutoff_date||'2026-11-19')}。</p><dl class="statistics-grid" aria-label="研究数据统计">
  <div class="statistics-card"><dt>物体</dt><dd>${fmt(s.objects.total)}</dd><dd class="statistics-context">按来源编号</dd></div>
  <div class="statistics-card"><dt>部件记录</dt><dd>${fmt(s.objects.rows)}</dd><dd class="statistics-context">含整件占位</dd></div>
@@ -16,7 +16,7 @@
  <li>数据库转录尚未逐篇核验原论文；条目数不等于独立论文数。</li>
  <li>关联数按来源清单统计；标签保留依据与适用范围，缺项写“未提供”，不自动赋物性。</li>
  <li>全局几何去重与全部机械零件枚举尚未完成。</li>
- </ul></details></div>`;nav.after(status);
+ </ul></details></div>`;const initialStatus=document.querySelector('aside[data-workflow-shell]');if(initialStatus)initialStatus.replaceWith(status);else nav.after(status);
  // Remove stale static assertions from inherited templates; values now come from this snapshot.
  document.querySelectorAll('.dataset-views,.phase1-nav,.phase1-downloads,.phase1-note,.research-view-link').forEach(n=>n.remove());
  if(document.body.dataset.view==='materials'){

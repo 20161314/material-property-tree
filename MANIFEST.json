@@ -1,317 +1,4 @@
 {
-  "data_correction_contract": {
-    "adapter_sha256": "cd15641b5d3aa08bd018db92deb7b94a5091191f3873017c5825643447c2f60b",
-    "approval_path": "/Users/hezekai/Documents/博士/上交CS博/项目1：静态场景物理化与实时交互仿真/建表/50_物体优先反向材料库_2026-11-08/audit/rsi_bulk_mapping_review_2026-11-19/review_round2_20261120/native_approval/APPROVAL.json",
-    "approval_sha256": "4d1ccd00b1f33f0db89085ff955e5a28fba99657c1c84e802945a025c0de7c20",
-    "parent": {
-      "manifest_sha256": "3d573e21341f72b6ebd47aa77c2327e3a6e734bb3ce3962854180c74a120f6e8",
-      "snapshot_id": "RSI-REVIEWED-06ed8c3ed9c6d9a9",
-      "source_site": "/Users/hezekai/Documents/博士/上交CS博/项目1：静态场景物理化与实时交互仿真/建表/50_物体优先反向材料库_2026-11-08/audit/rsi_bulk_mapping_review_2026-11-19/review_round2_20261120/statistics_candidate_3"
-    },
-    "proposal_path": "/Users/hezekai/Documents/博士/上交CS博/项目1：静态场景物理化与实时交互仿真/建表/50_物体优先反向材料库_2026-11-08/audit/rsi_bulk_mapping_review_2026-11-19/review_round2_20261120/CORRECTION_OPERATIONS_PROPOSED.json",
-    "proposal_sha256": "21f1116543a82644bc9f0238ee684b76c5bd1cbdc06860d111884f5d3f6923d8",
-    "reconciliation": {
-      "approved_public_relation_withdrawals": 8,
-      "global_four_state_recalculation_performed": false,
-      "global_geometry_deduplication_performed": false,
-      "modified_source_link_rows": 16,
-      "new_components": 0,
-      "new_objects": 0,
-      "numerical_values_changed": 0,
-      "original_papers_individually_rechecked": false,
-      "proposed_public_relation_withdrawals": 8,
-      "public_projection_after": [
-        {
-          "object_id": "OBJ-OBJAVERSE-3535f5f33cd64bc19a67ebff580c782f",
-          "projection": {
-            "components": [
-              {
-                "component_id": "COMP-OBJAVERSE-3535f5f33cd64bc19a67ebff580c782f-WHOLE",
-                "name": "整件（未拆分）",
-                "relation_ids": []
-              }
-            ],
-            "materials": [],
-            "relation_ids": []
-          }
-        },
-        {
-          "object_id": "OBJ-OBJAVERSE-353ffd3f3ab3479ea18bd9ed689d2358",
-          "projection": {
-            "components": [
-              {
-                "component_id": "COMP-OBJAVERSE-353ffd3f3ab3479ea18bd9ed689d2358-WHOLE",
-                "name": "整件（未拆分）",
-                "relation_ids": []
-              }
-            ],
-            "materials": [],
-            "relation_ids": []
-          }
-        },
-        {
-          "object_id": "OBJ-OBJAVERSE-354087e8323642e2a4e78405fa271545",
-          "projection": {
-            "components": [
-              {
-                "component_id": "COMP-OBJAVERSE-354087e8323642e2a4e78405fa271545-WHOLE",
-                "name": "整件（未拆分）",
-                "relation_ids": []
-              }
-            ],
-            "materials": [],
-            "relation_ids": []
-          }
-        },
-        {
-          "object_id": "OBJ-OBJAVERSE-35408acb34b74ca1a4fd23d2e6df2f47",
-          "projection": {
-            "components": [
-              {
-                "component_id": "COMP-OBJAVERSE-35408acb34b74ca1a4fd23d2e6df2f47-WHOLE",
-                "name": "整件（未拆分）",
-                "relation_ids": []
-              }
-            ],
-            "materials": [],
-            "relation_ids": []
-          }
-        },
-        {
-          "object_id": "OBJ-OBJAVERSE-354b6549e6f74c18bf8665f4990faf8e",
-          "projection": {
-            "components": [
-              {
-                "component_id": "COMP-OBJAVERSE-354b6549e6f74c18bf8665f4990faf8e-WHOLE",
-                "name": "整件（未拆分）",
-                "relation_ids": []
-              }
-            ],
-            "materials": [],
-            "relation_ids": []
-          }
-        },
-        {
-          "object_id": "OBJ-OBJAVERSE-3559c2cdc0a84c938847250201d8ee0f",
-          "projection": {
-            "components": [
-              {
-                "component_id": "COMP-OBJAVERSE-3559c2cdc0a84c938847250201d8ee0f-WHOLE",
-                "name": "整件（未拆分）",
-                "relation_ids": []
-              }
-            ],
-            "materials": [],
-            "relation_ids": []
-          }
-        }
-      ],
-      "public_projection_before": [
-        {
-          "object_id": "OBJ-OBJAVERSE-3535f5f33cd64bc19a67ebff580c782f",
-          "projection": {
-            "components": [
-              {
-                "component_id": "COMP-OBJAVERSE-3535f5f33cd64bc19a67ebff580c782f-WHOLE",
-                "name": "整件（未拆分）",
-                "relation_ids": [
-                  "R3-NORULE-3535f5f33cd64bc19a67ebff580c782f-01"
-                ]
-              }
-            ],
-            "materials": [
-              [
-                "MAT-APPROX-FOOD-TISSUE",
-                "食品组织/食品复合材料"
-              ]
-            ],
-            "relation_ids": [
-              "R3-NORULE-3535f5f33cd64bc19a67ebff580c782f-01"
-            ]
-          }
-        },
-        {
-          "object_id": "OBJ-OBJAVERSE-353ffd3f3ab3479ea18bd9ed689d2358",
-          "projection": {
-            "components": [
-              {
-                "component_id": "COMP-OBJAVERSE-353ffd3f3ab3479ea18bd9ed689d2358-WHOLE",
-                "name": "整件（未拆分）",
-                "relation_ids": [
-                  "R3-NORULE-353ffd3f3ab3479ea18bd9ed689d2358-01"
-                ]
-              }
-            ],
-            "materials": [
-              [
-                "MAT-APPROX-ANIMAL-BIOLOGICAL-TISSUE",
-                "动物生物组织（组织类型未细分）"
-              ]
-            ],
-            "relation_ids": [
-              "R3-NORULE-353ffd3f3ab3479ea18bd9ed689d2358-01"
-            ]
-          }
-        },
-        {
-          "object_id": "OBJ-OBJAVERSE-354087e8323642e2a4e78405fa271545",
-          "projection": {
-            "components": [
-              {
-                "component_id": "COMP-OBJAVERSE-354087e8323642e2a4e78405fa271545-WHOLE",
-                "name": "整件（未拆分）",
-                "relation_ids": [
-                  "R3-NORULE-354087e8323642e2a4e78405fa271545-01",
-                  "R3-NORULE-354087e8323642e2a4e78405fa271545-02"
-                ]
-              }
-            ],
-            "materials": [
-              [
-                "MAT-METAL-WIDE",
-                "金属（未区分牌号，宽类目）"
-              ],
-              [
-                "MAT-PLASTIC-BROAD",
-                "塑料（聚合物种类未详）"
-              ]
-            ],
-            "relation_ids": [
-              "R3-NORULE-354087e8323642e2a4e78405fa271545-01",
-              "R3-NORULE-354087e8323642e2a4e78405fa271545-02"
-            ]
-          }
-        },
-        {
-          "object_id": "OBJ-OBJAVERSE-35408acb34b74ca1a4fd23d2e6df2f47",
-          "projection": {
-            "components": [
-              {
-                "component_id": "COMP-OBJAVERSE-35408acb34b74ca1a4fd23d2e6df2f47-WHOLE",
-                "name": "整件（未拆分）",
-                "relation_ids": [
-                  "R3-NORULE-35408acb34b74ca1a4fd23d2e6df2f47-01"
-                ]
-              }
-            ],
-            "materials": [
-              [
-                "MAT-APPROX-ANIMAL-BIOLOGICAL-TISSUE",
-                "动物生物组织（组织类型未细分）"
-              ]
-            ],
-            "relation_ids": [
-              "R3-NORULE-35408acb34b74ca1a4fd23d2e6df2f47-01"
-            ]
-          }
-        },
-        {
-          "object_id": "OBJ-OBJAVERSE-354b6549e6f74c18bf8665f4990faf8e",
-          "projection": {
-            "components": [
-              {
-                "component_id": "COMP-OBJAVERSE-354b6549e6f74c18bf8665f4990faf8e-WHOLE",
-                "name": "整件（未拆分）",
-                "relation_ids": [
-                  "R3-NORULE-354b6549e6f74c18bf8665f4990faf8e-01"
-                ]
-              }
-            ],
-            "materials": [
-              [
-                "MAT-APPROX-ANIMAL-BIOLOGICAL-TISSUE",
-                "动物生物组织（组织类型未细分）"
-              ]
-            ],
-            "relation_ids": [
-              "R3-NORULE-354b6549e6f74c18bf8665f4990faf8e-01"
-            ]
-          }
-        },
-        {
-          "object_id": "OBJ-OBJAVERSE-3559c2cdc0a84c938847250201d8ee0f",
-          "projection": {
-            "components": [
-              {
-                "component_id": "COMP-OBJAVERSE-3559c2cdc0a84c938847250201d8ee0f-WHOLE",
-                "name": "整件（未拆分）",
-                "relation_ids": [
-                  "LVIS2-3559c2cdc0a84c938847250201d8ee0f-01",
-                  "LVIS2-3559c2cdc0a84c938847250201d8ee0f-02"
-                ]
-              }
-            ],
-            "materials": [
-              [
-                "MAT-PLASTIC-BROAD",
-                "塑料（聚合物种类未详）"
-              ],
-              [
-                "MAT-METAL-WIDE",
-                "金属（未区分牌号，宽类目）"
-              ]
-            ],
-            "relation_ids": [
-              "LVIS2-3559c2cdc0a84c938847250201d8ee0f-01",
-              "LVIS2-3559c2cdc0a84c938847250201d8ee0f-02"
-            ]
-          }
-        }
-      ],
-      "source_association_statistics": "PRESERVED_PARENT_DEFINITION_NOT_ACCEPTED_RELATION_COUNTS",
-      "withdrawn_relation_keys": [
-        [
-          "OBJ-OBJAVERSE-3535f5f33cd64bc19a67ebff580c782f",
-          "R3-NORULE-3535f5f33cd64bc19a67ebff580c782f-01",
-          "COMP-OBJAVERSE-3535f5f33cd64bc19a67ebff580c782f-WHOLE",
-          "MAT-APPROX-FOOD-TISSUE"
-        ],
-        [
-          "OBJ-OBJAVERSE-353ffd3f3ab3479ea18bd9ed689d2358",
-          "R3-NORULE-353ffd3f3ab3479ea18bd9ed689d2358-01",
-          "COMP-OBJAVERSE-353ffd3f3ab3479ea18bd9ed689d2358-WHOLE",
-          "MAT-APPROX-ANIMAL-BIOLOGICAL-TISSUE"
-        ],
-        [
-          "OBJ-OBJAVERSE-354087e8323642e2a4e78405fa271545",
-          "R3-NORULE-354087e8323642e2a4e78405fa271545-01",
-          "COMP-OBJAVERSE-354087e8323642e2a4e78405fa271545-WHOLE",
-          "MAT-METAL-WIDE"
-        ],
-        [
-          "OBJ-OBJAVERSE-354087e8323642e2a4e78405fa271545",
-          "R3-NORULE-354087e8323642e2a4e78405fa271545-02",
-          "COMP-OBJAVERSE-354087e8323642e2a4e78405fa271545-WHOLE",
-          "MAT-PLASTIC-BROAD"
-        ],
-        [
-          "OBJ-OBJAVERSE-35408acb34b74ca1a4fd23d2e6df2f47",
-          "R3-NORULE-35408acb34b74ca1a4fd23d2e6df2f47-01",
-          "COMP-OBJAVERSE-35408acb34b74ca1a4fd23d2e6df2f47-WHOLE",
-          "MAT-APPROX-ANIMAL-BIOLOGICAL-TISSUE"
-        ],
-        [
-          "OBJ-OBJAVERSE-354b6549e6f74c18bf8665f4990faf8e",
-          "R3-NORULE-354b6549e6f74c18bf8665f4990faf8e-01",
-          "COMP-OBJAVERSE-354b6549e6f74c18bf8665f4990faf8e-WHOLE",
-          "MAT-APPROX-ANIMAL-BIOLOGICAL-TISSUE"
-        ],
-        [
-          "OBJ-OBJAVERSE-3559c2cdc0a84c938847250201d8ee0f",
-          "LVIS2-3559c2cdc0a84c938847250201d8ee0f-01",
-          "COMP-OBJAVERSE-3559c2cdc0a84c938847250201d8ee0f-WHOLE",
-          "MAT-PLASTIC-BROAD"
-        ],
-        [
-          "OBJ-OBJAVERSE-3559c2cdc0a84c938847250201d8ee0f",
-          "LVIS2-3559c2cdc0a84c938847250201d8ee0f-02",
-          "COMP-OBJAVERSE-3559c2cdc0a84c938847250201d8ee0f-WHOLE",
-          "MAT-METAL-WIDE"
-        ]
-      ]
-    },
-    "schema": "rsi-native-data-correction-v1"
-  },
   "files": {
     "COMPACT_PRESENTATION_PATCH.json": "8388cc51a5084b284d68882e6913982963cedf571d0ee64cc9ef8d4f01dbf6f5",
     "DISPLAY_PATCH.json": "b5c46e5264ed2e21a445a19a8c1df7ba1b3c417662df39966317d3cb17bd9e87",
@@ -738,7 +425,7 @@
     "coverage-details/030.json.gz": "220589ec657a4946352c5a2cd767296c9ed6c9eb126779fd67ac2c66bf52ebb5",
     "coverage.json": "887f749f81e92066e2812c0c43502762cb9e392aa7108881b05e85c33fd6d525",
     "dataset-views.css": "1763c8da51bc4fc12c687f35a181ed7f51878ae894753563bdf800ad0c97c38b",
-    "evidence-catalog.html": "4553b325318ad00a7b790a68fa1031bebc012f53622766352cd38bb2058ec94b",
+    "evidence-catalog.html": "099007e8313a2cfd1665d8fd2dc6a2056be98b45b146d5f5cb68296561b6805d",
     "index.html": "664d93bd6952adc83f69872f37cd5f9e5bb70870854de10c072c1292de6969a0",
     "mapping-archive.html": "1e07ecd96e2d82f444ce5b0187d178af007eca778cc48a3ffc72ee7b98fe36af",
     "material-objects/000.json.gz": "2ea83c40aa357b34eed5df860cb5eacc6d6b356f2d8475a18a0a2c077c0518a1",
@@ -1593,7 +1280,7 @@
     "phase1-ranges.html": "58fcba8869aa485be351c63181060cbc6438af56224668174f6e5fe2b4967f35",
     "phase1-ranges.js": "ae0920fda83dd8594c7f956761bfd5a272e1803253e915e59b2e497498a14051",
     "presentation-fields.js": "c4533949f0c52075c5c13dddafc2b868bcbf4d129ae1d75499709a55bb08caf2",
-    "references.html": "de6d9728f57d0c0369ba2db09a9732cb37cb0749c00258f6e7b59ff2c1b6cffe",
+    "references.html": "75d60944cb2bb469d9c885478c1f138a9e3094fecea1dbc12faee240f0fab0b3",
     "release-data.js": "d5bcc1b3420b07f2f52725f03ab32d6fe3d52f683fa66b2221478e50f50c6929",
     "release-manifest.json": "26cefe30f18be214ede477ec5c2b7af0c5886b92acbaf3e43906d0949574eb7f",
     "release-status.json": "59251f3fefd023df04fc251e23e85ad365a718d08a9acf14f5fef034a0155374",
@@ -1665,14 +1352,14 @@
     "research-details/7.json.gz": "1edd2dbdf93a7693c6c95bff61fdb9e4cc7de3289a3b84f7d657ae683f96d17e",
     "research-details/8.json.gz": "a16775740d0bf74d4f691b2992c7efdc418b2cc1592f85058020376844c0c953",
     "research-details/9.json.gz": "162da6fa1bc43175060c1357abd6f1c583a286c67383ffd887abd5c27e6b0ff9",
-    "research.html": "8c1be71fdf2652b6a12b44f47c2a85006536a9cb7baf57a59b31bb244c789dde",
+    "research.html": "f66c978cc3a5432329b53fe1b0abd5afef05d73c577ed9b56927d76fa55f0336",
     "research.json": "807b9e7486bfe48fd2a2144229a15f76d20c568d1690899a0dfded264fee9d9c",
     "scaling.css": "6ce7646e740c5ff1dd8e9f94a7c496eadec3fe5a4dc0e5128df141de6d3ac844",
-    "scaling.html": "9abfa904bcad0aa5d42ecf1bfc2bd3047acef3256d0f2869b8ec02bd5f4dd1a2",
+    "scaling.html": "7ab29e16a730a2db0fb2b51fe3c22bd6fb817d7672428bf54c218e9a4c58e624",
     "site-refinement.css": "efbc726dc938348bf70b62dd3f6f9b52f0b9fef915001093c79fbe637087a5fa",
     "site-shell.css": "f751ae93065556a337728ec16e669ec6d825f1aceaf72bbdb073314d03782816",
     "snapshot.css": "16e8f7e086d15cc8b080aaeef2acfb6d76316e92ee82054be19f7045b6edd4d7",
-    "snapshot.js": "e7a597e33d6cc116c0254ed120e3763dc12b5603730e75283db20bca78de1b24",
+    "snapshot.js": "2fd0bd8f01f242f4bb64287b9298d1ffaa355e6423f3b9b2b1627d16dcd94ce2",
     "snapshot.json": "a36d7cdc09652fd576086fe6ef4bb6de49743d5e5075565a487b09454a876be5",
     "statistics-panel.css": "edcf3add4572a154bacafbb1177683e81c7634ce39369348118dd539a1f42cd1",
     "styles.css": "238c8dc7d668171dd602a3517565e63ccec8e3e719f260d63e4c99aefe2fe0d7",
@@ -1770,14 +1457,30 @@
     "workflow-config/f47eebd24a80c33ba37e8b793893a67b5bd55a352b1a904588bc398a45ef9f3b.json": "f47eebd24a80c33ba37e8b793893a67b5bd55a352b1a904588bc398a45ef9f3b",
     "workflow-data.json": "83a1d1d41c2451400a772f4917b5b3afa5ff600ee0d0031ea8d1d24b08e598f2",
     "workflow.css": "906cb06b9e9c65caf36b51658d0d29ec4db149b0a1b041b99fe0a88da322923b",
-    "workflow.html": "142620cc89d45fa90479c9a49da46b077f9965cbce3eb3bccce1da3d1da4574e",
-    "workflow.js": "d0acf5b24e6d51dfe1925561b22933bbae86cdbd22cfc8ef868c320f446611bd"
+    "workflow.html": "b4185801228b3d2a26965780f2cccf80b3cc77812e86cb59440861d6a2ecb019",
+    "workflow.js": "ec4fa451d34c2a919dcecb01bffac3b24096d8a5154830a24d14292e0b1f9703"
   },
-  "native_correction_digest": "3b88489fef5f7b0abd0b5fc5634d5dc5da7473030437bb23b6474622e91c313b",
+  "inherited_native_correction": {
+    "native_correction_digest": "3b88489fef5f7b0abd0b5fc5634d5dc5da7473030437bb23b6474622e91c313b",
+    "parent_manifest_sha256": "f58c05d53064fe485619cf9f5b10fbdbaef539673edf8073f8c5b501301e5640"
+  },
   "presentation_version": "compact-2026-11-20-workflow-v1",
   "production_write": false,
   "publication_authorized": false,
   "publication_type": "REVIEWED_RESEARCH_SNAPSHOT",
   "snapshot_id": "RSI-CORRECTED-02d66743593774e4",
-  "workflow_config_sha256": "83a1d1d41c2451400a772f4917b5b3afa5ff600ee0d0031ea8d1d24b08e598f2"
+  "workflow_config_sha256": "83a1d1d41c2451400a772f4917b5b3afa5ff600ee0d0031ea8d1d24b08e598f2",
+  "workflow_parent": {
+    "manifest_sha256": "f58c05d53064fe485619cf9f5b10fbdbaef539673edf8073f8c5b501301e5640",
+    "source_site": "/Users/hezekai/Documents/博士/上交CS博/项目1：静态场景物理化与实时交互仿真/建表/50_物体优先反向材料库_2026-11-08/audit/rsi_bulk_mapping_review_2026-11-19/review_round2_20261120/native_corrected_candidate_1"
+  },
+  "workflow_presentation_overrides": {
+    "evidence-catalog.html": "099007e8313a2cfd1665d8fd2dc6a2056be98b45b146d5f5cb68296561b6805d",
+    "references.html": "75d60944cb2bb469d9c885478c1f138a9e3094fecea1dbc12faee240f0fab0b3",
+    "research.html": "f66c978cc3a5432329b53fe1b0abd5afef05d73c577ed9b56927d76fa55f0336",
+    "scaling.html": "7ab29e16a730a2db0fb2b51fe3c22bd6fb817d7672428bf54c218e9a4c58e624",
+    "snapshot.js": "2fd0bd8f01f242f4bb64287b9298d1ffaa355e6423f3b9b2b1627d16dcd94ce2",
+    "workflow.html": "b4185801228b3d2a26965780f2cccf80b3cc77812e86cb59440861d6a2ecb019",
+    "workflow.js": "ec4fa451d34c2a919dcecb01bffac3b24096d8a5154830a24d14292e0b1f9703"
+  }
 }
