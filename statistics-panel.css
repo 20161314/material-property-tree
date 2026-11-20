@@ -1,0 +1,78 @@
+/* Local presentation refinement; the snapshot remains the only source of counts. */
+.snapshot-status .snapshot-headline > strong,
+.snapshot-status .snapshot-headline > details > summary {
+  font-size: 14px;
+}
+.snapshot-status .snapshot-headline > details > summary {
+  width: fit-content;
+  min-height: 36px;
+  line-height: 1.6;
+}
+.snapshot-status .snapshot-headline > details > summary:hover {
+  color: #245b42;
+}
+.snapshot-status .snapshot-headline > details > summary:focus-visible {
+  outline: 2px solid #245b42;
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+.snapshot-status .snapshot-headline > details[open] {
+  padding: 16px;
+}
+.snapshot-status .statistics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 20px;
+}
+.snapshot-status .statistics-card {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #bfcdc3;
+  border-radius: 12px;
+  background: #f9fbfa;
+}
+.snapshot-status .statistics-card dt {
+  color: #425e4e;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.snapshot-status .statistics-card dd {
+  margin: 8px 0 0;
+  color: #245b42;
+  font-size: 24px;
+  font-weight: 650;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.snapshot-status .statistics-card .statistics-context {
+  color: #425e4e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.snapshot-status .snapshot-headline details p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+@media (max-width: 1100px) {
+  .snapshot-status .statistics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 620px) {
+  .snapshot-status .snapshot-headline > details[open] {
+    padding: 12px;
+  }
+  .snapshot-status .statistics-grid {
+    gap: 8px;
+    margin: 12px 0 16px;
+  }
+  .snapshot-status .statistics-card {
+    padding: 12px;
+  }
+  .snapshot-status .statistics-card dd {
+    font-size: 22px;
+  }
+}
