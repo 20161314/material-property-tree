@@ -117,3 +117,6 @@ body.header-collapsed>.release-context,body.header-collapsed>.release-overview,b
 body.header-collapsed>.sync-status{display:none!important}
 @media(max-width:900px){.sync-status{margin-inline:20px}}
 @media(max-width:620px){.sync-status{margin-inline:16px;gap:4px 12px;font-size:12px}}
+/* Primary navigation now has four equal views. */
+@media(max-width:900px){.site-main-links{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:620px){.site-main-links{grid-template-columns:1fr 1fr}.site-main-links a{white-space:normal;text-align:center}}

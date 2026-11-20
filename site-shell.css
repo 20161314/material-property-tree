@@ -34,6 +34,15 @@ body[data-view="materials"] .scope-note { display:none; }
 @media(max-width:1100px) { .site-navigation{gap:16px;} .site-version{display:none;} body[data-view="materials"] .app-header {flex-direction:column;} body[data-view="materials"] .header-data{width:100%;} }
 @media(max-width:620px) { .site-navigation{padding:12px 16px;gap:10px;flex-wrap:wrap;} .site-brand{flex:1;font-size:16px!important;} .site-main-links{order:3;width:100%;gap:4px;} .site-main-links a{flex:1;justify-content:center;padding:8px;} .site-more{margin-left:0;} body[data-view="materials"] .dataset-stats{grid-template-columns:repeat(2,1fr);} body[data-view="materials"] .app-header,body[data-view="materials"] .toolbar{padding:16px;} body[data-view="materials"] .coverage-progress{margin:8px 16px;} .site-auxiliary{margin:12px 16px;} .site-auxiliary dl{grid-template-columns:repeat(2,1fr);} }
 @media(prefers-reduced-motion:no-preference) { .site-main-links a{transition:background-color .15s,color .15s;} }
+
+/* Four equal primary views: objects, material tree, evidence table and workflow. */
+@media(max-width:900px) {
+  .site-main-links { grid-template-columns:repeat(4,minmax(0,1fr))!important; }
+}
+@media(max-width:620px) {
+  .site-main-links { grid-template-columns:1fr 1fr!important; }
+  .site-main-links a { white-space:normal; text-align:center; }
+}
 /* Shared application system: readable type, one quiet palette, clear controls. */
 :root { --page:#f6f8f7; --text:#20322b; --muted:#53665d; --border:#dbe5df; --green:#216b50; --radius:8px; font-family:ui-sans-serif,system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; }
 .site-navigation { padding-inline:28px; gap:24px; }

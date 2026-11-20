@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN" data-type="software">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f8f7">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <meta name="description" content="物体、部件、材料、物性证据与网站发布的 RSI 工作流。">
+  <title>工作流 · 物体与材料库</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css?v=238c8dc7d668171d">
+  <link rel="stylesheet" href="site-shell.css?v=f751ae93065556a3">
+  <link rel="stylesheet" href="site-refinement.css?v=efbc726dc938348b">
+  <link rel="stylesheet" href="snapshot.css?v=16e8f7e086d15cc8">
+  <link rel="stylesheet" href="compact.css?v=25d969fc61b9b770">
+  <link rel="stylesheet" href="workflow.css?v=906cb06b9e9c65ca">
+  <script src="bootstrap.js?v=cbf2ed1dd9b1a786"></script>
+  <script defer src="vendor/d3.min.js?v=f2094bbf6141b359"></script>
+  <script defer src="snapshot.js?v=694d331b246d289e"></script>
+  <script defer src="workflow.js?v=d0acf5b24e6d51df"></script>
+</head>
+<body class="workflow-page" data-view="workflow">
+  <a class="skip-link" href="#workflow-canvas">跳到工作流</a>
+  <header class="app-header workflow-header">
+    <div class="title-block">
+      <p class="edition">工作流框架 · V3</p>
+      <h1>物体与材料工作流</h1>
+      <p class="subtitle">从物体清单到材料证据，逐步查看处理方式、检查规则与发布流程。</p>
+    </div>
+    <dl class="workflow-summary" aria-label="工作流规模">
+      <div><dt>工作流阶段</dt><dd id="workflow-phase-count">—</dd></div>
+      <div><dt>工作步骤</dt><dd id="workflow-step-count">—</dd></div>
+      <div><dt>使用模型</dt><dd id="workflow-model-count">—</dd></div>
+    </dl>
+  </header>
+
+  <main class="workflow-main">
+    <section class="workflow-toolbar" aria-label="工作流筛选">
+      <label class="workflow-search">搜索步骤
+        <input id="workflow-query" type="search" placeholder="搜索步骤、输入、输出或检查项">
+      </label>
+      <label>阶段
+        <select id="workflow-phase-filter"><option value="all">全部阶段</option></select>
+      </label>
+      <label>状态
+        <select id="workflow-status-filter"><option value="all">全部状态</option></select>
+      </label>
+      <button id="workflow-reset" type="button">清除筛选</button>
+      <p id="workflow-result-note" role="status">正在载入工作流…</p>
+    </section>
+
+    <section class="workflow-board" aria-labelledby="workflow-canvas-title">
+      <div class="workflow-board-head">
+        <div>
+          <h2 id="workflow-canvas-title">工作流画布</h2>
+          <p>拖动浏览，滚轮缩放。点击阶段可快速定位，点击节点可查看审核规则。</p>
+        </div>
+        <div class="workflow-board-actions">
+          <div id="workflow-legend" class="workflow-legend" aria-label="状态图例"></div>
+          <button id="workflow-present" type="button" aria-pressed="false">专注画布</button>
+        </div>
+      </div>
+      <nav id="workflow-phase-index" class="workflow-phase-index" aria-label="工作流阶段"></nav>
+
+      <div class="workflow-workspace">
+        <div id="workflow-canvas" class="workflow-canvas" tabindex="0" aria-label="可缩放的工作流画布">
+          <div id="workflow-stage" class="workflow-stage">
+            <svg id="workflow-connectors" class="workflow-connectors" aria-hidden="true"></svg>
+            <div id="workflow-phase-labels" class="workflow-phase-labels"></div>
+            <div id="workflow-nodes"></div>
+          </div>
+          <div class="workflow-zoom" role="group" aria-label="画布缩放">
+            <button id="workflow-zoom-out" type="button" aria-label="缩小工作流" title="缩小"><span aria-hidden="true">−</span></button>
+            <output id="workflow-zoom-level" for="workflow-zoom-out workflow-zoom-in">100%</output>
+            <button id="workflow-zoom-in" type="button" aria-label="放大工作流" title="放大"><span aria-hidden="true">+</span></button>
+            <button id="workflow-fit" type="button">查看全图</button>
+            <button id="workflow-reset-view" type="button">回到起点</button>
+          </div>
+        </div>
+        <aside id="workflow-detail" class="workflow-detail" aria-labelledby="workflow-detail-title">
+          <button id="workflow-detail-close" class="workflow-detail-close" type="button" aria-label="关闭步骤详情" title="关闭详情">×</button>
+          <div id="workflow-detail-content"><p>选择一个步骤查看详情。</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <details class="workflow-notes">
+      <summary>执行规则、失败处理与模型分工</summary>
+      <p style="padding:0 18px"><a href="workflow-code/rsi_harness/WORKFLOW_EXECUTION_V3.md">阅读执行说明</a> · <a href="workflow-code.zip" download>下载工作流代码与测试</a></p><div class="workflow-notes-grid">
+        <section>
+          <h2>职责边界</h2>
+          <div id="workflow-principle-list"></div>
+        </section>
+        <section>
+          <h2>固定规则</h2>
+          <ul id="workflow-invariants"></ul>
+        </section>
+        <section>
+          <h2>模型分工</h2>
+          <p>这里只说明指定路线，不表示模型已经运行。</p>
+          <div id="workflow-route-list"></div>
+        </section>
+      </div>
+    </details>
+  </main>
+
+  <noscript><p class="release-mismatch">此页面需要 JavaScript 才能显示工作流。</p></noscript>
+</body>
+</html>

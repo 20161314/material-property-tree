@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "policy_id": "RSI_MODEL_ROUTING_2026-11-17_V1",
+  "user_instruction": "一般任务用 GPT-6.1 Sol high；大批量审核可用 Luna max subagent",
+  "default": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high"
+  },
+  "bulk_review": {
+    "model": "gpt-6-luna",
+    "reasoning_effort": "max"
+  },
+  "ordinary_tasks": [
+    "ordinary",
+    "source_research",
+    "taxonomy",
+    "component_scope",
+    "code",
+    "conflict_review",
+    "merge",
+    "publish"
+  ],
+  "subagent_fork_turns": "none",
+  "bulk_review_scope": "Pinned, bounded record batches; per-record decisions with source locators. Ambiguous source, unit, identity, relation or taxonomy decisions escalate to Sol.",
+  "subagent_write_scope": "Isolated candidate/review artifacts; shared facts are merged by one reviewer-approved transaction.",
+  "silent_model_fallback_allowed": false,
+  "runtime_note": "This policy selects future dispatch arguments. It does not change a running agent's model, app settings, evidence rules, or publication permission."
+}

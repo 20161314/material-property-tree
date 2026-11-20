@@ -1,0 +1,1176 @@
+{
+  "version": "3.1.0-2026-11-20",
+  "title": "RSI 物体优先反向材料库：详细工作流",
+  "description": "程序环节已实现；模型环节已接入固定批次交接。实现状态与实际执行结果分开记录。",
+  "phases": [
+    {
+      "id": "P0",
+      "name": "计划与合同",
+      "summary": "校验合同与模型路由，生成尚未执行的有界短任务。"
+    },
+    {
+      "id": "F0",
+      "name": "冻结输入",
+      "summary": "分别固定工作交付和已发布快照，计算不可变输入pin。"
+    },
+    {
+      "id": "F1",
+      "name": "来源枚举",
+      "summary": "从官方可访问清单枚举稳定UID，并单列受限来源缺口。"
+    },
+    {
+      "id": "F2",
+      "name": "几何去重",
+      "summary": "核验下载载荷，按别名与几何证据审查跨来源重复。"
+    },
+    {
+      "id": "F3",
+      "name": "部件范围",
+      "summary": "只展开来源真实部件；无部件结构时保留整件回退。"
+    },
+    {
+      "id": "F4",
+      "name": "材料标签审核",
+      "summary": "保留标签来源性质，独立审核材料粒度与局部/互斥关系。"
+    },
+    {
+      "id": "F5",
+      "name": "材料树与BFS",
+      "summary": "规范材料身份、独立审核IS_A并持久化BFS研究前沿。"
+    },
+    {
+      "id": "F6",
+      "name": "完整与缺项证据",
+      "summary": "同时采集同源完整组与缺项组，逐组回读原文与条件。"
+    },
+    {
+      "id": "F7",
+      "name": "事务与四状态",
+      "summary": "唯一写者幂等合并，代码重算四状态、覆盖和分层守恒。"
+    },
+    {
+      "id": "F8",
+      "name": "统一发布",
+      "summary": "生成同一 release 的四个页面，经结构、双门禁和浏览器验收后发布。"
+    },
+    {
+      "id": "F9",
+      "name": "下一轮",
+      "summary": "交接未解决义务、累计预算和游标，按有限重试续跑。"
+    }
+  ],
+  "steps": [
+    {
+      "id": "P0-plan",
+      "name": "合同校验与短任务计划",
+      "phase": "P0",
+      "summary": "验证工作流规则与模型分工，生成有界短任务；计划与执行分开。",
+      "actor": "核验员与推进代理",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "工作流JSON、模型路由JSON",
+        "AGENTS、用户覆盖、网站规则、完整Harness规范"
+      ],
+      "actions": [
+        "标准库校验字段、依赖、状态和固定路由。",
+        "每次计划1–8个短任务，批容量50–200，默认100。",
+        "只打印stdout；不分配记录、领取lease、执行command或调用模型。"
+      ],
+      "outputs": [
+        "计划JSON、config SHA、任务模板"
+      ],
+      "checks": [
+        "非法步骤/批量/路由必须失败。",
+        "容量不等于已审核数，dispatch_executed=false。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "合同失败先修配置再计划。",
+        "模型不可用保持待调度，不静默替换。"
+      ],
+      "website": [
+        "流程摘要和实现状态；内部ID/路径/hash不展示。"
+      ],
+      "command": "python3 rsi_harness/workflow_plan_v3.py --validate",
+      "dependsOn": [],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F0-freeze",
+      "name": "冻结工作与发布输入",
+      "phase": "F0",
+      "summary": "工作交付与已发布网站分别读取，建立不可变pin。",
+      "actor": "来源枚举员；代码执行",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "data/current_site_snapshot.json、CURRENT_WEBSITE.md（只读）",
+        "工作交付摘要、父release manifest、来源和许可"
+      ],
+      "actions": [
+        "分别解析工作版本和已发布版本，不从旧HTML猜数量。",
+        "固定标准化六表数据包、来源清单、模型路由与用户规则；数据包包含对象、部件、材料、关系、分类和证据。旧五核心输入仍由原发布门禁独立核验。",
+        "写隔离input_manifest，保留parent_release_id、epoch、版本、URL与访问状态。"
+      ],
+      "outputs": [
+        "不可变输入清单、隔离运行数据库、冻结来源登记",
+        "工作/已发布版本对照"
+      ],
+      "checks": [
+        "pin可重算；相对定位不逃逸release root。",
+        "保留冻结父包、审核包、导出和历史current_release_pointer.md。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "INPUT_FREEZE_FAILED阻断依赖。",
+        "父版本变化使旧lease失效，重新冻结。"
+      ],
+      "website": [
+        "数据版本、来源、链接与公开访问限制。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py freeze --run {RUN_DIR} --bundle {BUNDLE_JSON} --run-id {RUN_ID} --parent-release-id {PARENT_RELEASE}",
+      "dependsOn": [
+        "P0-plan"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F1-enumerate",
+      "name": "枚举稳定对象身份",
+      "phase": "F1",
+      "summary": "仅从真实可访问清单枚举来源资产，受限清单留下gap。",
+      "actor": "来源枚举员；代码执行",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "冻结UID/ASIN/USD/包目录",
+        "VoMP/GVM、PIXIEVerse/SLAT-Phys、PhysX、PhysX-Mobility、ABO、NVIDIA/钟老师SimReady来源并集"
+      ],
+      "actions": [
+        "按namespace+source_uid流式解析，固定排序分片。",
+        "保留原文、concept/synset/definition、source version和下载入口。",
+        "论文headline、场景/视图/体素/高斯和预测不变对象行。"
+      ],
+      "outputs": [
+        "source identities候选分片",
+        "enumeration_gap、来源覆盖、游标"
+      ],
+      "checks": [
+        "稳定UID非空且唯一。",
+        "类别依据可回读；gap不形成占位对象。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "ENUMERATION_GAP保留前沿并换允许路线。",
+        "瞬时错误最多2次重试，耗尽进入冷却。"
+      ],
+      "website": [
+        "物体名称、数据集、来源及资产/整包下载地址。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py enumerate --run {RUN_DIR} --records {SOURCE_MANIFEST} --out {REPORT_DIR}/source_identities.json",
+      "dependsOn": [
+        "F0-freeze"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F2-dedup",
+      "name": "下载核验与几何去重",
+      "phase": "F2",
+      "summary": "下载载荷、来源身份、唯一几何分别计数。",
+      "actor": "几何审核员；代码执行",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "source identities、alias crosswalk",
+        "下载载荷、hash、geometry fingerprint"
+      ],
+      "actions": [
+        "按冻结SHA核验已有载荷；需要下载时使用有大小限制的HTTPS下载器，拒绝HTML/XML错误页。",
+        "来源内/跨来源比较alias、hash、fingerprint，生成merge/split候选。",
+        "名称或近似形状冲突转独立Sol裁决；材料选项不膨胀几何。"
+      ],
+      "outputs": [
+        "geometry identities、source-to-geometry映射",
+        "重复/别名决策与冲突包"
+      ],
+      "checks": [
+        "下载失败不删除来源身份。",
+        "合并拆分有定位和before/after身份映射。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "DEDUP_REVIEW保留来源身份待独立审核。",
+        "载荷失败只改可用状态，不伪造几何。"
+      ],
+      "website": [
+        "物体名称、来源和下载入口；安装状态/hash不公开。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py dedup --run {RUN_DIR} --records {SOURCE_MANIFEST} --aliases {REVIEWED_ALIASES} --out {REPORT_DIR}/geometry_audit.json",
+      "dependsOn": [
+        "F1-enumerate"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F3-components",
+      "name": "确定部件和作用域",
+      "phase": "F3",
+      "summary": "只采用官方part/prim/mesh group，否则整件回退。",
+      "actor": "部件映射员（采集角色）",
+      "model": "gpt-6.1-sol/high",
+      "route": "ordinary",
+      "status": "requires_model",
+      "inputs": [
+        "几何候选、官方部件、作者描述/图像",
+        "类别、定义、来源版本"
+      ],
+      "actions": [
+        "Sol区分实物、生物/食品、复制品、玩具、虚构角色和视觉效果。",
+        "保存真实component_id、object归属、范围与locator。",
+        "没有来源部件结构写WHOLE_OBJECT_FALLBACK，不编造机械零件。"
+      ],
+      "outputs": [
+        "object-component候选delta",
+        "角色/作用域冲突队列"
+      ],
+      "checks": [
+        "每部件有有效object外键，部件不当新物体。",
+        "具体描述与类别冲突保留原文和当前解释。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "COMPONENT_SCOPE_HOLD隔离具体冲突。",
+        "缺部件结构允许整件（未拆分）。"
+      ],
+      "website": [
+        "物体名称、部件名称；回退写“整件（未拆分）”。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py batch --run {RUN_DIR} --step F3-components --route ordinary --records {PINNED_RECORDS_JSON} --collector {COLLECTOR_ID}\npython3 rsi_harness/workflow_run_v3.py claim --run {RUN_DIR} --owner {WORKER_ID} --out {HANDOFF_JSON}\n宿主按交接文件调用指定模型；记录真实调用回执后执行 dispatch / submit。",
+      "dependsOn": [
+        "F2-dedup"
+      ],
+      "implementation": "implemented_host_handoff",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F4-labels",
+      "name": "生成材料关系候选",
+      "phase": "F4",
+      "summary": "保留来源方法性质，允许说明充分的合理宽类推定。",
+      "actor": "材料标签采集员",
+      "model": "gpt-6.1-sol/high",
+      "route": "ordinary",
+      "status": "requires_model",
+      "inputs": [
+        "对象/部件候选、原始材料词与来源方法",
+        "用户覆盖规则、USD绑定、locator"
+      ],
+      "actions": [
+        "区分作者声明、数据集规则、模型/VLM输出、用户授权合理推定。",
+        "区分单一标签、局部共存、互斥选项和数据集风格选项，不做组合笛卡尔积。",
+        "合理推定写source_uid、角色、依据、scope和reviewer；不把metal升级合金、wood升级树种。",
+        "SimReady逐文件逐行核对binding/semantic引句，仿真参数保留配置身份。"
+      ],
+      "outputs": [
+        "标签/选项候选delta和逐条依据",
+        "具体冲突HOLD；对象可暂缺材料"
+      ],
+      "checks": [
+        "缺专门材料论文不自动HOLD。",
+        "模型标签不冒充实测；局部共存不改整物互斥。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "MATERIAL_MAPPING_HOLD仅用于身份、角色、跨物体或过度细化等具体冲突。",
+        "SimReady locator错或未知格式失败关闭，不猜行号。"
+      ],
+      "website": [
+        "标签、依据、来源；区分来源标注/合理推定/可选/局部/数据集材质选项。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py batch --run {RUN_DIR} --step F4-labels --route ordinary --records {PINNED_RECORDS_JSON} --collector {COLLECTOR_ID}\npython3 rsi_harness/workflow_run_v3.py claim --run {RUN_DIR} --owner {WORKER_ID} --out {HANDOFF_JSON}\n宿主按交接文件调用指定模型；记录真实调用回执后执行 dispatch / submit。",
+      "dependsOn": [
+        "F3-components"
+      ],
+      "implementation": "implemented_host_handoff",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F4-review",
+      "name": "批量独立审核标签",
+      "phase": "F4",
+      "summary": "固定输入逐条回读，批量审核指定Luna/max。",
+      "actor": "独立标签审核员（非采集者）",
+      "model": "gpt-6-luna/max",
+      "route": "bulk_review",
+      "status": "requires_model",
+      "inputs": [
+        "50–200条标签固定包及SHA",
+        "原始locator和scope政策"
+      ],
+      "actions": [
+        "Luna逐条检查UID、部件归属、粒度、关系和来源方法。",
+        "输出逐条decision、reason、reviewer、locator，禁止只有批次总评。",
+        "歧义逐条转Sol，文件交接，不传整个历史上下文。"
+      ],
+      "outputs": [
+        "review.json与PASS/HOLD/REJECT清单",
+        "歧义包"
+      ],
+      "checks": [
+        "collector不等于reviewer，所审SHA相同。",
+        "HOLD/REJECT不混入接受关系。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "Luna不可用保持requires_model，禁止静默fallback。",
+        "身份/单位/关系/分类不清转F4-conflicts。"
+      ],
+      "website": [
+        "仅公开批准标签与依据；审核流水和HOLD不公开。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py batch --run {RUN_DIR} --step F4-review --route bulk_review --records {PINNED_RECORDS_JSON} --collector {COLLECTOR_ID}\npython3 rsi_harness/workflow_run_v3.py claim --run {RUN_DIR} --owner {WORKER_ID} --out {HANDOFF_JSON}\n宿主按交接文件调用指定模型；记录真实调用回执后执行 dispatch / submit。",
+      "dependsOn": [
+        "F4-labels"
+      ],
+      "implementation": "implemented_host_handoff",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F4-conflicts",
+      "name": "独立裁决标签歧义",
+      "phase": "F4",
+      "summary": "一般任务指定Sol，具体冲突逐项裁决。",
+      "actor": "独立冲突裁决员（非采集者）",
+      "model": "gpt-6.1-sol/high",
+      "route": "ordinary",
+      "status": "requires_model",
+      "inputs": [
+        "歧义包、原文和独立审核回执",
+        "身份、角色、关系与前像"
+      ],
+      "actions": [
+        "Sol判断具体问题，不用缺少专门论文替代实体合理性。",
+        "修改解释只输出exact-preimage sidecar，保留原文/locator/hash。",
+        "空队列登记跳过，无调用不得虚报模型已运行。"
+      ],
+      "outputs": [
+        "裁决sidecar候选",
+        "未解决HOLD及下一路线"
+      ],
+      "checks": [
+        "不窄化到无证据牌号/树种。",
+        "不放宽数值来源规则，前像必须吻合。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "无法裁决保留HOLD及具体原因。",
+        "前像失配拒绝sidecar，回F0冻结。"
+      ],
+      "website": [
+        "接受标签的简明依据；缺材料直接说明缺项。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py batch --run {RUN_DIR} --step F4-conflicts --route ordinary --records {PINNED_RECORDS_JSON} --collector {COLLECTOR_ID}\npython3 rsi_harness/workflow_run_v3.py claim --run {RUN_DIR} --owner {WORKER_ID} --out {HANDOFF_JSON}\n宿主按交接文件调用指定模型；记录真实调用回执后执行 dispatch / submit。",
+      "dependsOn": [
+        "F4-review"
+      ],
+      "implementation": "implemented_host_handoff",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F5-normalize",
+      "name": "规范材料身份",
+      "phase": "F5",
+      "summary": "反向去重标签身份，保留真实证据支持的无对象节点。",
+      "actor": "材料规范化员（采集角色）",
+      "model": "gpt-6.1-sol/high",
+      "route": "ordinary",
+      "status": "requires_model",
+      "inputs": [
+        "经审核标签原词和crosswalk",
+        "冻结taxonomy、新证据材料身份"
+      ],
+      "actions": [
+        "Sol建立原词到canonical material_id映射，保持来源粒度。",
+        "提出IS_A边和依据；别名/组成/用途不能冒充IS_A。",
+        "允许无对象细分研究节点，不因物性数据而反造资产。"
+      ],
+      "outputs": [
+        "material nodes/edges候选",
+        "名称crosswalk、同名异义冲突"
+      ],
+      "checks": [
+        "原词和规范名均保留，别名不虚增节点。",
+        "每条父边可解释，不无依据宽转窄。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "TAXONOMY_REVIEW：未定身份不连正式父边。",
+        "牌号/混合物/方向疑问交独立Sol。"
+      ],
+      "website": [
+        "材料名称、父类、来源说明；内部ID不直接展示。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py batch --run {RUN_DIR} --step F5-normalize --route ordinary --records {PINNED_RECORDS_JSON} --collector {COLLECTOR_ID}\npython3 rsi_harness/workflow_run_v3.py claim --run {RUN_DIR} --owner {WORKER_ID} --out {HANDOFF_JSON}\n宿主按交接文件调用指定模型；记录真实调用回执后执行 dispatch / submit。",
+      "dependsOn": [
+        "F4-conflicts"
+      ],
+      "implementation": "implemented_host_handoff",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F5-review",
+      "name": "独立审核树边",
+      "phase": "F5",
+      "summary": "树语义由独立Sol审核，结构由代码检查。",
+      "actor": "独立分类审核员（非提议者）",
+      "model": "gpt-6.1-sol/high",
+      "route": "ordinary",
+      "status": "requires_model",
+      "inputs": [
+        "材料节点/边候选及SHA",
+        "原词、taxonomy pins、逐边locator"
+      ],
+      "actions": [
+        "Sol独立回读父子语义、身份和粒度。",
+        "逐边PASS/HOLD/REJECT，别名、组成和用途另存。",
+        "仅批准真实IS_A交单写者合并。"
+      ],
+      "outputs": [
+        "树边审核回执",
+        "语义冲突包"
+      ],
+      "checks": [
+        "审核者不是提出边者，输入SHA相同。",
+        "上溯聚合不授权向子类复制数值。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "不确定边保留HOLD和线索，不公开为既定分类。",
+        "环/孤儿父键转代码结构失败。"
+      ],
+      "website": [
+        "只展示接受树与名称，暂缓边不公开。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py batch --run {RUN_DIR} --step F5-review --route ordinary --records {PINNED_RECORDS_JSON} --collector {COLLECTOR_ID}\npython3 rsi_harness/workflow_run_v3.py claim --run {RUN_DIR} --owner {WORKER_ID} --out {HANDOFF_JSON}\n宿主按交接文件调用指定模型；记录真实调用回执后执行 dispatch / submit。",
+      "dependsOn": [
+        "F5-normalize"
+      ],
+      "implementation": "implemented_host_handoff",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F5-bfs",
+      "name": "代码维护材料BFS前沿",
+      "phase": "F5",
+      "summary": "分层去重、持久化前沿并领取有限任务。",
+      "actor": "材料前沿维护员；代码执行",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "批准IS_A、对象关系和证据覆盖",
+        "frontier、visited、depth、route cooldown和累计attempts"
+      ],
+      "actions": [
+        "代码检查树无环、父键有效，以material_id去重固定排序BFS。",
+        "按树层逐层排序；同层先补S3，再查S2，再增强S1及探索S4；物体扩展仅领取S1/S2。",
+        "每批50–200条；按材料状态修订号保存前沿与完成位置，重复领取不清零进度。",
+        "沿批准IS_A向上汇总并去重record_id，绝不父向子继承数值。"
+      ],
+      "outputs": [
+        "有界BFS任务、checkpoint",
+        "树结构报告与未解决前沿"
+      ],
+      "checks": [
+        "中断恢复不重置预算或frontier。",
+        "材料、边、对象和来源组分别计数。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "环/孤儿边阻断树合并。",
+        "NO_PROGRESS进入冷却或下一允许route，不无限递归。"
+      ],
+      "website": [
+        "材料层级、缺项概览；队列/lease/预算不公开。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py bfs --run {RUN_DIR} --kind material --limit 100 --out {REPORT_DIR}/material_frontier.json",
+      "dependsOn": [
+        "F5-review"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F6-search",
+      "name": "寻找数值正式资料",
+      "phase": "F6",
+      "summary": "完整组和缺项组同时检索，保留正式来源与访问gap。",
+      "actor": "文献来源采集员",
+      "model": "gpt-6.1-sol/high",
+      "route": "ordinary",
+      "status": "requires_model",
+      "inputs": [
+        "BFS材料批和逐属性缺项",
+        "冻结路线、论文/标准/认证/正式厂商/机构资料"
+      ],
+      "actions": [
+        "Sol找可访问全文、表格或正式数据表，按材料身份检索。",
+        "保留文献ID、报告角色、lineage、许可、页表段和SHA。",
+        "论文自身报告值可保留；引用链未解要说明，不冒充独立实测。",
+        "搜索摘要/PBR/AI输出/仿真默认/VoMP MTD范围不作E/ν/ρ来源。"
+      ],
+      "outputs": [
+        "冻结文献包和registry",
+        "完整/缺项采集任务、访问gap"
+      ],
+      "checks": [
+        "来源类别不自行升级。",
+        "一/二项证据立即保留，不等待三元组。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "访问失败保留线索，最多2次重试或换路线。",
+        "仅仿真参数/模型输出则拒作数值证据。"
+      ],
+      "website": [
+        "来源标题、正式链接、材料和公开访问说明。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py batch --run {RUN_DIR} --step F6-search --route ordinary --records {PINNED_RECORDS_JSON} --collector {COLLECTOR_ID}\npython3 rsi_harness/workflow_run_v3.py claim --run {RUN_DIR} --owner {WORKER_ID} --out {HANDOFF_JSON}\n宿主按交接文件调用指定模型；记录真实调用回执后执行 dispatch / submit。",
+      "dependsOn": [
+        "F5-bfs"
+      ],
+      "implementation": "implemented_host_handoff",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F6-extract",
+      "name": "提取完整与缺项来源组",
+      "phase": "F6",
+      "summary": "同一identified material/result group内保存原值和条件。",
+      "actor": "物性证据采集员",
+      "model": "gpt-6.1-sol/high",
+      "route": "ordinary",
+      "status": "requires_model",
+      "inputs": [
+        "冻结正式来源和locator",
+        "50–200条来源组任务、材料身份"
+      ],
+      "actions": [
+        "Sol逐组转录E/ν/ρ原值、单位、方向、方法、样品、配方、温湿度、统计量和不确定度。",
+        "同组同时有三项才完整；一/二项为缺项。多个子结果只有来源建独立组才拆行。",
+        "保留未知条件；原文有值但未标准化单列partial_without_numeric_normalization。",
+        "不跨文献或不兼容样本拼完整组，不用父类数值补缺项。"
+      ],
+      "outputs": [
+        "complete/partial candidate ledgers",
+        "原文摘录、单位换算依据、报告角色和lineage"
+      ],
+      "checks": [
+        "全空组拒绝；缺项null/未提供，不写0。",
+        "未标准化摘录不贡献可计算范围或数值覆盖。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "EVIDENCE_HOLD：身份/单位/原值/locator不清。",
+        "无法规范化保留真实原文摘录，不计可计算覆盖。"
+      ],
+      "website": [
+        "材料、E/ν/ρ、单位、来源和原文位置；条件与方法可展开。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py batch --run {RUN_DIR} --step F6-extract --route ordinary --records {PINNED_RECORDS_JSON} --collector {COLLECTOR_ID}\npython3 rsi_harness/workflow_run_v3.py claim --run {RUN_DIR} --owner {WORKER_ID} --out {HANDOFF_JSON}\n宿主按交接文件调用指定模型；记录真实调用回执后执行 dispatch / submit。",
+      "dependsOn": [
+        "F6-search"
+      ],
+      "implementation": "implemented_host_handoff",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F6-review",
+      "name": "批量独立审核数值证据",
+      "phase": "F6",
+      "summary": "Luna逐组回读定位、数值和来源污染。",
+      "actor": "独立数值审核员（非采集者）",
+      "model": "gpt-6-luna/max",
+      "route": "bulk_review",
+      "status": "requires_model",
+      "inputs": [
+        "50–200组固定候选与SHA",
+        "冻结文献、完整/缺项定义、原始单位"
+      ],
+      "actions": [
+        "Luna逐组核对原文值、身份、单位、组边界、locator和条件。",
+        "E/ρ须正、范围可解析且不倒置；非典型ν在信息不足时保留warning，不武断删除。",
+        "生成值、模型/求解器/仿真输入拒绝；汇编值保留其报告角色。",
+        "每条PASS/HOLD/REJECT；歧义逐组转Sol。"
+      ],
+      "outputs": [
+        "逐组review、数值保真报告",
+        "污染排除清单、歧义包"
+      ],
+      "checks": [
+        "采集者不自审，输入SHA相同。",
+        "完整组、缺项组、覆盖材料、文献、独立lineage分开计数。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "Luna不可用不静默替换。",
+        "无法回读或来源污染疑问HOLD，不以结构绿灯代回读。"
+      ],
+      "website": [
+        "批准数值、来源、必要条件；完整/缺项组分开。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py batch --run {RUN_DIR} --step F6-review --route bulk_review --records {PINNED_RECORDS_JSON} --collector {COLLECTOR_ID}\npython3 rsi_harness/workflow_run_v3.py claim --run {RUN_DIR} --owner {WORKER_ID} --out {HANDOFF_JSON}\n宿主按交接文件调用指定模型；记录真实调用回执后执行 dispatch / submit。",
+      "dependsOn": [
+        "F6-extract"
+      ],
+      "implementation": "implemented_host_handoff",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F6-conflicts",
+      "name": "独立裁决证据歧义",
+      "phase": "F6",
+      "summary": "Sol裁决单位、身份、组边界和lineage疑问。",
+      "actor": "独立证据裁决员（非采集者）",
+      "model": "gpt-6.1-sol/high",
+      "route": "ordinary",
+      "status": "requires_model",
+      "inputs": [
+        "数值歧义包及冻结文献",
+        "原始单位、方向、密度定义和报告角色"
+      ],
+      "actions": [
+        "Sol核对争议定位，必要时提重新采集短任务。",
+        "记录接受范围、未知条件、未解lineage和不可合并组。",
+        "修正只写精确前像sidecar；空队列登记跳过，不虚报调用。"
+      ],
+      "outputs": [
+        "裁决、修正sidecar或EVIDENCE_HOLD",
+        "下一路线与停止原因"
+      ],
+      "checks": [
+        "不得跨论文补齐本组，不从宽类继承数值。",
+        "每项修正有定位、SHA和独立审核者。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "身份/边界仍不清则HOLD且不计正式数值覆盖。",
+        "预算耗尽冷却，保留已取得证据。"
+      ],
+      "website": [
+        "接受证据、必要条件；一次说明实际未逐篇回读的范围。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py batch --run {RUN_DIR} --step F6-conflicts --route ordinary --records {PINNED_RECORDS_JSON} --collector {COLLECTOR_ID}\npython3 rsi_harness/workflow_run_v3.py claim --run {RUN_DIR} --owner {WORKER_ID} --out {HANDOFF_JSON}\n宿主按交接文件调用指定模型；记录真实调用回执后执行 dispatch / submit。",
+      "dependsOn": [
+        "F6-review"
+      ],
+      "implementation": "implemented_host_handoff",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F7-merge",
+      "name": "单写者幂等事务合并",
+      "phase": "F7",
+      "summary": "独立批准delta由唯一Release Merger合并到新候选版本。",
+      "actor": "发布合并员（唯一写者）",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "PASS候选和独立review、父版本、前像pins",
+        "task/run/lease、输入/候选SHA、事件账"
+      ],
+      "actions": [
+        "领取单writer lock，核对父版本、有效lease、前像和审核身份。",
+        "parent+delta SHA为幂等键；已应用提交返回原回执，不重复插入。",
+        "隔离目录/数据库事务构建新版本，原子提交manifest；任何失败整体回滚。",
+        "HOLD/REJECT留内部队列；记录撤回与sidecar，不混入接受关系。"
+      ],
+      "outputs": [
+        "新候选数据版本、before/after SHA",
+        "事务回执、事件账和对账输入"
+      ],
+      "checks": [
+        "无双writer，无collector自审自合并。",
+        "独立PASS与所有pins齐全，重跑不重复计数。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "父版本/前像/lease失效拒绝事务并重新冻结。",
+        "写入失败回滚候选，保留父版本与原队列。"
+      ],
+      "website": [
+        "只消费合并后批准数据；内部事务和安装代码不公开。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py merge --run {RUN_DIR} --task {REVIEWED_TASK_ID} --actor {MERGER_ID} --expected-parent {PARENT_RELEASE}",
+      "dependsOn": [
+        "F6-conflicts"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F7-state",
+      "name": "代码重算四状态与覆盖",
+      "phase": "F7",
+      "summary": "三项各有来源值与是否有关联物体决定四类状态；完整组另计。",
+      "actor": "核验员；代码执行",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "对象/材料/选项/证据账、IS_A、scope policy",
+        "完整组/缺项组和活动固体定义"
+      ],
+      "actions": [
+        "按material_id分别汇总E、ν、ρ的批准来源值，三项可以来自不同文献。",
+        "S1三项有值且有物体；S2三项有值但无物体；S3缺项且有物体；S4缺项且无物体。",
+        "跨文献逐属性覆盖另计，不等于同源完整。",
+        "液体、空洞、组织节点、特殊域保留历史而退出活动固体分母。"
+      ],
+      "outputs": [
+        "material_state projection",
+        "完整/缺项/逐属性覆盖统计、新BFS输入"
+      ],
+      "checks": [
+        "状态只由新输入/审核/撤回重算，不手填。",
+        "上溯record_id去重，不父向子继承。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "STATE_RECOMPUTE_FAILED冻结候选，不发布部分状态。",
+        "不一致回来源组/关系重算，不补虚值。"
+      ],
+      "website": [
+        "材料状态、是否有物体、完整/缺项组和缺属性；缺值“未提供”。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py state --run {RUN_DIR} --out {REPORT_DIR}/material_states.json",
+      "dependsOn": [
+        "F7-merge"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F7-reconcile",
+      "name": "代码守恒对账",
+      "phase": "F7",
+      "summary": "分别记录新增、撤回、重复、无进展和未解决。",
+      "actor": "核验员；代码执行",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "父/候选manifest、事务回执和四状态",
+        "各层计数与未解决队列"
+      ],
+      "actions": [
+        "流式重算外键、重复locator、scope、批准关系与各层计数。",
+        "分别核对来源身份/载荷/几何/部件/选项/配置变体/材料/完整组/缺项组/文献/lineage。",
+        "所有未解决义务保留下一route、预算、frontier和可回放输入。"
+      ],
+      "outputs": [
+        "reconciliation.json、unresolved queues",
+        "候选范围与未完成摘要"
+      ],
+      "checks": [
+        "几何不因选项组合膨胀，部件不作对象。",
+        "审核通过、安装、网站发布、全面完成分开。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "守恒失败停止发布，定位delta回滚或修正。",
+        "缺完成标志保持blocked，不伪改true。"
+      ],
+      "website": [
+        "真实分层计数、公开排除项、仍缺内容；内部流水不展示。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py reconcile --run {RUN_DIR} --out {REPORT_DIR}/reconciliation.json",
+      "dependsOn": [
+        "F7-state"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F8-build",
+      "name": "生成同版本候选发布包",
+      "phase": "F8",
+      "summary": "只在新 release 目录生成四页，保留批准样式和研究信息。",
+      "actor": "发布合并员（唯一写者）",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "候选批准数据、对账、网站规则",
+        "现有批准样式、四页模板和候选 release ID"
+      ],
+      "actions": [
+        "在全新不可变候选 release 生成 summary、manifest 和四页视图。",
+        "中文简明投影隐藏审核/安装代码、队列ID、路径和hash。",
+        "保留标签性质、数值条件、原文标题/牌号/缩写和来源。",
+        "四页绑定同一 release 与输入 SHA，不改指针、不覆盖原站。"
+      ],
+      "outputs": [
+        "候选 release root、site manifest、四页导出",
+        "公开字段投影与排除清单"
+      ],
+      "checks": [
+        "HOLD/REJECT不作接受关系，合格对象可缺材料。",
+        "无材料不填候选，数值缺项不写0。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "无效关系或内部字段泄露停止构建，修正投影。",
+        "目标版本存在则验幂等回执，不覆盖不同内容。"
+      ],
+      "website": [
+        "物体/部件/标签/依据/来源/下载；E/ν/ρ、单位、定位及条件。"
+      ],
+      "command": "python3 rsi_harness/workflow_projection_v3.py --source-site {APPROVED_SITE} --out-site {NEW_SITE} --bundle {MERGED_EXPORT_JSON} --release-id {MERGED_RELEASE_ID} --workflow-config config/rsi_workflow_v3.json\n仅更新页面而不变更数据时，使用 workflow_publication_v3.py build-site。",
+      "dependsOn": [
+        "F7-reconcile"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F8-contracts",
+      "name": "执行结构与路线合同",
+      "phase": "F8",
+      "summary": "复用现有验证器检查候选根，不背书科学完成。",
+      "actor": "核验员；代码执行",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "候选五核心输入、summary、树和route policy",
+        "{CANDIDATE_RELEASE_ROOT}、隔离{REPORT_DIR}"
+      ],
+      "actions": [
+        "运行workflow_contract_v24.py验证结构、计数、来源族和外键。",
+        "运行evidence_route_contract_v24.py验证路线字段、locator和准入类别。",
+        "检查退出码和报告PASS；诊断只写隔离报告目录。"
+      ],
+      "outputs": [
+        "workflow_contract.json、evidence_route_contract.json"
+      ],
+      "checks": [
+        "两项PASS才继续双门禁。",
+        "结构绿灯不替代独立原文审核，不等于科学完整。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "失败RELEASE_BLOCKED，保留上一已验证release。",
+        "只修候选重跑，不伪改完成标志或父包。"
+      ],
+      "website": [
+        "真实执行的检查类别、公开排除项和未完成范围。"
+      ],
+      "command": "python3 rsi_harness/workflow_contract_v24.py --root {CANDIDATE_RELEASE_ROOT} --out {REPORT_DIR}/workflow_contract.json\npython3 rsi_harness/evidence_route_contract_v24.py --root {CANDIDATE_RELEASE_ROOT} --out {REPORT_DIR}/evidence_route_contract.json",
+      "dependsOn": [
+        "F8-build"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F8-preflight",
+      "name": "执行发布双门禁",
+      "phase": "F8",
+      "summary": "现有release gate与site consistency均通过才允许下一步。",
+      "actor": "核验员；代码执行",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "候选根、结构合同PASS回执",
+        "五核心pin、summary、site manifest和完成标志"
+      ],
+      "actions": [
+        "调用publication_preflight_v24.py执行release_gate与site_release_consistency。",
+        "批量核对全部对象编号、部件归属、材料外键、来源、scope、重复关系和数值保真。",
+        "检查全部输入SHA、release ID以及真实去重/部件/近似选项审核完成标志。",
+        "全面完成版运行原双门禁；研究快照走已有独立批准的快照合同，保留未完成标志，不伪造全面完成。"
+      ],
+      "outputs": [
+        "gate.json、site.json、release_queue.csv、preflight.json",
+        "可发布性结论，尚未实际发布"
+      ],
+      "checks": [
+        "gate/site都PASS，所有页面同release。",
+        "摘要pins与实际文件相符，完成标志真实。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "失败保留旧网站/指针/远端，不推送。",
+        "研究快照可保留未完成，但不因此放宽原门禁。"
+      ],
+      "website": [
+        "实际检查、公开排除与仍缺内容；不宣称全部实物成分逐一证实。"
+      ],
+      "command": "python3 rsi_harness/publication_preflight_v24.py --root {CANDIDATE_RELEASE_ROOT} --queue-out {REPORT_DIR}/release_queue.csv --gate-out {REPORT_DIR}/gate.json --site-out {REPORT_DIR}/site.json --result-out {REPORT_DIR}/preflight.json",
+      "dependsOn": [
+        "F8-contracts"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F8-browser",
+      "name": "浏览器验收候选四页",
+      "phase": "F8",
+      "summary": "真实浏览器自动检查四页、两种屏宽、导航、载入错误和横向溢出。",
+      "actor": "浏览器核验员；推进代理监督",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "四页候选站点、公开字段投影",
+        "门禁PASS报告和固定浏览器验收清单"
+      ],
+      "actions": [
+        "浏览器检查四页与详情、窄屏、树节点、工作流交互和条件展开。",
+        "核对中文标签、整件回退、材料关系性质、缺值和来源/下载入口。",
+        "查内部字段泄露，保留实际截图、定位和失败项。"
+      ],
+      "outputs": [
+        "浏览器验收回执、截图和问题清单"
+      ],
+      "checks": [
+        "所有页与详情指向同release。",
+        "未运行不能标browser_pass，不能只看HTML冒充验收。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "显示或交互失败继续blocked，修候选再验。",
+        "数值或语义错误回对应审核，不删文案掩盖。"
+      ],
+      "website": [
+        "保留批准样式、中文简明内容、必要数值条件。"
+      ],
+      "command": "python3.12 rsi_harness/workflow_publication_v3.py browser-check --site {NEW_SITE} --report-dir {NEW_BROWSER_REPORT_DIR}",
+      "dependsOn": [
+        "F8-preflight"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F8-publish",
+      "name": "版本发布与远端核验",
+      "phase": "F8",
+      "summary": "满足原授权与全部门禁后，唯一写者发布并由独立者回读。",
+      "actor": "发布合并员与独立核验员",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "不可变候选包、结构/双门禁/browser PASS",
+        "明确发布授权、当前活动快照和远端目标"
+      ],
+      "actions": [
+        "重新核对父指针和授权；未授权保留具体可审核候选。",
+        "版本化事务更新允许活动网站指针，发布同一release。",
+        "校验器回读远端 release ID、manifest 和四页；失败按已验证父版本回滚。",
+        "保留历史current_release_pointer.md和冻结父包，分开记本地/远端回执。"
+      ],
+      "outputs": [
+        "发布、指针变更与远端核验回执",
+        "失败时回滚记录"
+      ],
+      "checks": [
+        "本合同不授予发布权限，缺任一门禁或授权不能运行。",
+        "审核通过不等于安装/发布/全面完成，仅报实际远端核验。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "缺授权或门禁blocked：网站和指针不变。",
+        "远端失败恢复上一已验证版本，保留事件，不宣称完成。"
+      ],
+      "website": [
+        "已发布版本、实际范围、未完成项和来源；凭证/路径/内部状态码不公开。"
+      ],
+      "command": "python3.12 rsi_harness/workflow_publication_v3.py publish-site --site {NEW_SITE} --approval {APPROVAL_JSON} --approval-sha256 {APPROVAL_SHA} --browser-receipt {BROWSER_RECEIPT} --expected-remote-parent {REMOTE_PARENT} --publisher {NEW_PUBLICATION_DIR}/publish_reviewed_export.py --execute",
+      "dependsOn": [
+        "F8-browser"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    },
+    {
+      "id": "F9-frontier",
+      "name": "交接下一轮与有界重试",
+      "phase": "F9",
+      "summary": "文件前沿续跑真实未解决义务，不重做整表或清零预算。",
+      "actor": "推进代理；代码调度",
+      "model": "代码执行；监督 gpt-6.1-sol/high",
+      "route": "code",
+      "status": "executable",
+      "inputs": [
+        "本轮新增/撤回/重复/无进展/未解决回执",
+        "frontier、attempts、lease、冷却和预算",
+        "工作与网站分别的交付版本"
+      ],
+      "actions": [
+        "代码按BFS和route优先级写下一轮固定短任务文件。",
+        "每任务初次+最多2次重试，共3次attempts；每次900秒，耗尽冷却或下一允许route。",
+        "崩溃先诊断显式恢复；过期lease不可提交，不清零预算。",
+        "Agent监督目标/异常/已允许路线；重复处理交代码。"
+      ],
+      "outputs": [
+        "下一轮frontier、receipt和耗尽清单",
+        "可回放交接包；无执行仍NOT_EXECUTED"
+      ],
+      "checks": [
+        "50–200容量，尾批不足50须标明实际数。",
+        "幂等重跑不重复安装；工作数据和网站发布分开。",
+        "输入、输出与实际执行回执分别保存；实现完成不代表当前数据审核完成。"
+      ],
+      "onFailure": [
+        "NO_PROGRESS/耗尽停止并冷却，不无限唤醒Agent。",
+        "缺父版本或pin回F0，不沿用失效候选。"
+      ],
+      "website": [
+        "简短真实进展和仍缺内容；任务ID/调用流水/预算不公开。"
+      ],
+      "command": "python3 rsi_harness/workflow_run_v3.py checkpoint --run {RUN_DIR} --out {REPORT_DIR}/checkpoint.json",
+      "dependsOn": [
+        "F8-publish"
+      ],
+      "implementation": "implemented_code",
+      "executionStatus": "本轮尚未运行；以执行回执为准"
+    }
+  ],
+  "links": [
+    {
+      "label": "物体总览",
+      "href": "scaling.html"
+    },
+    {
+      "label": "材料树",
+      "href": "research.html"
+    },
+    {
+      "label": "物性来源对照",
+      "href": "references.html"
+    },
+    {
+      "label": "详细合同",
+      "href": "rsi_harness/RSI_WORKFLOW_DETAILED_2026_11_20.md"
+    }
+  ],
+  "modelRoutes": [
+    {
+      "id": "ordinary",
+      "name": "一般任务与歧义裁决",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "purpose": "来源研究、部件/标签/分类判断和监督。"
+    },
+    {
+      "id": "bulk_review",
+      "name": "有界批量独立审核",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "max",
+      "purpose": "固定50–200条逐条审核；歧义显式转Sol。"
+    }
+  ],
+  "statusLegend": [
+    {
+      "id": "executable",
+      "name": "程序已实现",
+      "description": "已有可运行入口和测试；是否在当前数据上完成，以本轮执行回执为准。"
+    },
+    {
+      "id": "planned",
+      "name": "尚未实现",
+      "description": "仅用于未来新增环节；当前工作流没有此类步骤。"
+    },
+    {
+      "id": "requires_model",
+      "name": "模型已接入",
+      "description": "分批、输入绑定、指定模型交接和回执校验已实现；实际调用由宿主执行。"
+    }
+  ],
+  "principles": [
+    {
+      "id": "code",
+      "name": "代码边界",
+      "description": "解析、去重、计数、逐层任务、事务和发布核验均由代码处理。"
+    },
+    {
+      "id": "agent",
+      "name": "Agent边界",
+      "description": "Agent只推进监督短任务；语义判断按指定模型请求，文件交接。"
+    },
+    {
+      "id": "reviewer",
+      "name": "独立审核边界",
+      "description": "采集者不自审；批量审核Luna/max，歧义Sol/high，不静默替换。"
+    },
+    {
+      "id": "publication",
+      "name": "发布边界",
+      "description": "只消费批准关系；HOLD 不公开；同一不可变 release 生成四页，原门禁有效。"
+    }
+  ],
+  "invariants": [
+    "批容量50–200，默认100；不足50的尾批明示实际数。",
+    "初次加最多2次重试，共最多3次attempts；每次900秒，不重置累计预算。",
+    "Release Merger唯一写者，采集/独立审核/合并分离。",
+    "父release+delta SHA幂等事务；前像或lease失效拒绝，失败回滚。",
+    "版本化文件交接包含父版本、epoch、SHA、route/scan/run/lease和locator。",
+    "HOLD、REJECT和候选不进入公开接受关系；合格对象允许缺材料。",
+    "只沿审核IS_A向上汇总并去重record_id；物性不向子类继承。",
+    "完整组和缺项组并行；跨资料逐属性覆盖不拼成同源完整组。",
+    "模型配置只请求未来路由，不证明当前代理模型或已调用。",
+    "三项分别有来源值即满足四态的属性条件；同一来源完整组另计，不跨文献拼组。"
+  ],
+  "executionPolicy": {
+    "batchSize": {
+      "min": 50,
+      "default": 100,
+      "max": 200
+    },
+    "partialTailAllowed": true,
+    "maxRetries": 2,
+    "maxAttempts": 3,
+    "timeoutSeconds": 900,
+    "maxTasksPerPlan": 8,
+    "singleWriter": "Release Merger",
+    "handoff": "versioned_files",
+    "dispatchExecuted": false,
+    "silentModelFallbackAllowed": false,
+    "publicationGate": "unchanged; existing gates and explicit authorization required",
+    "taskStatuses": [
+      "READY",
+      "LEASED",
+      "REVIEWED",
+      "MERGED",
+      "RETRY",
+      "COOLDOWN",
+      "STALE"
+    ],
+    "runtime": "rsi_harness/workflow_run_v3.py"
+  },
+  "implementationFiles": [
+    "workflow_run_v3.py",
+    "workflow_runtime_v3.py",
+    "workflow_data_v3.py",
+    "workflow_sources_v3.py",
+    "workflow_publication_v3.py",
+    "workflow_inventory_v3.py",
+    "workflow_projection_v3.py"
+  ]
+}
