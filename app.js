@@ -117,18 +117,18 @@
   }
 
   function compactText(value, limit) {
-    const text = String(value || "").trim();
+    const text = window.PresentationFields.text(value ?? "").trim();
     return text.length > limit ? `${text.slice(0, limit - 1)}…` : text;
   }
 
   function safeUrl(value) {
     const url = String(value || "").trim();
-    return /^https?:\/\//i.test(url) ? url : "";
+    return window.PresentationFields.safeUrl(url);
   }
 
   function formatRange(values, unit) {
     if (!Array.isArray(values) || !values.length) return "未提供";
-    const normalized = values.map((value) => String(value).trim()).filter(Boolean);
+    const normalized = values.filter(window.PresentationFields.present).map((value) => String(value).trim()).filter(Boolean);
     if (!normalized.length) return "未提供";
     const sameValue = normalized.every((value) => value === normalized[0] || (Number.isFinite(Number(value)) && Number(value) === Number(normalized[0])));
     const result = normalized.length === 1 || sameValue ? normalized[0] : `${normalized[0]}–${normalized[normalized.length - 1]}`;
@@ -439,7 +439,7 @@
   }
 
   function detailPair(label, value) {
-    const text = String(value || "").trim();
+    const text = window.PresentationFields.text(value ?? "").trim();
     return text ? `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(text)}</dd></div>` : "";
   }
 
@@ -447,7 +447,7 @@
     if (node.externalCollection) {
       const url = String(node.externalCatalogUrl || "");
       const href = /^evidence-catalog\.html(?:[?].*)?$/.test(url) ? url : "evidence-catalog.html";
-      return '<p class="boundary-note">数据库转录实验记录。已核结构、单位、引用连接与重复键；未逐篇人工回读原论文。完整组仅含唯一引文；多引文缺项组保留引用集合。</p><a class="source-link" href="' + escapeHtml(href) + '">打开完整与缺项物性分页目录</a>';
+      return '<p class="boundary-note">数据库转录记录的完整组与缺项组分开保留，可进入来源目录逐条查看。</p><a class="source-link" href="' + escapeHtml(href) + '">打开完整与缺项物性分页目录</a>';
     }
     if (data.progressiveDetails && node.directEvidenceCount && !loadedDetailChunks.has(node.detailChunk)) {
       const failure = detailErrors.get(node.detailChunk);
@@ -470,19 +470,11 @@
       const url = safeUrl(item.url);
       const isIncomplete = item.recordType === "INCOMPLETE";
       const recordLabel = isIncomplete ? `缺项数据 · ${[item.E, item.nu, item.rho].filter(values => values.length > 0).length} 项属性` : "三项齐全的数据";
-      return `<details class="evidence-item" ${index === 0 ? "open" : ""}><summary><span class="evidence-summary"><span><strong>${escapeHtml(item.title || item.id)}</strong><small>${recordLabel} · ${escapeHtml(item.sourceType)} · ${escapeHtml(item.sourceId)} · ${escapeHtml(item.id)}</small></span><i class="summary-chevron" data-lucide="chevron-down" aria-hidden="true"></i></span></summary><div class="evidence-content"><div class="evidence-values"><div><span>杨氏模量 E${isIncomplete ? "（来源原值）" : ""}</span><strong>${formatRange(item.E, isIncomplete ? "" : "GPa")}</strong></div><div><span>泊松比 ν${isIncomplete ? "（来源原值）" : ""}</span><strong>${formatRange(item.nu, "")}</strong></div><div><span>密度 ρ${isIncomplete ? "（来源原值）" : ""}</span><strong>${formatRange(item.rho, isIncomplete ? "" : "kg/m³")}</strong></div></div><dl class="evidence-meta">${detailPair("发布主体", item.publisher)}${detailPair("来源核验层", item.sourceVerificationLayer)}${detailPair("数值来源形式", item.propertyModel)}${detailPair("数值来源性质", item.propertyValueOrigin)}${detailPair("同一试样", item.sameSpecimen)}${detailPair("赋值材料范围", item.materialScope)}${detailPair("原文定位", item.locator)}${detailPair("冻结文件 SHA-256", item.sha256)}${detailPair("文档去重键", item.documentKey)}${detailPair("材料/牌号", item.grade)}${detailPair("温度与环境", item.environment)}${detailPair("方向/原值分组", item.orientation)}${detailPair("来源原值摘录", item.sourceValueExcerpt)}${detailPair("来源不确定度说明", item.sourceUncertaintyNotes)}${detailPair("单位换算说明", item.unitConversionNotes)}${detailPair("来源谱系键", item.sourceLineageKey)}${detailPair("统计量", item.sourceStatistic)}${detailPair("应变区间", item.sourceDeformationRange)}${detailPair("E 标准差（原单位）", item.EStandardDeviationOriginal)}${detailPair("E 下IQR（原文）", item.ELowerIQR)}${detailPair("E 上IQR（原文）", item.EUpperIQR)}${detailPair("密度标准差（原单位）", item.rhoStandardDeviationOriginal)}${detailPair("密度原文定义", item.densitySourceDefinition)}${detailPair("辅助原值（不替代三项）", item.ancillaryValues)}${detailPair("密度定义", item.densityType)}${detailPair("密度分项原值", item.densityTypeValues)}${detailPair("方法", item.method)}${detailPair("局限", item.limitations)}</dl>${propertyCitationsHtml(item.propertyCitations)}${url ? `<a class="source-link" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">打开原始来源 <i data-lucide="external-link" aria-hidden="true"></i></a>` : ""}</div></details>`;
+      return `<details class="evidence-item" ${index === 0 ? "open" : ""}><summary><span class="evidence-summary"><span><strong>${escapeHtml(item.title || item.id)}</strong><small>${recordLabel}</small></span><i class="summary-chevron" data-lucide="chevron-down" aria-hidden="true"></i></span></summary><div class="evidence-content"><div class="evidence-values"><div><span>杨氏模量 E${isIncomplete ? "（来源原值）" : ""}</span><strong>${formatRange(item.E, isIncomplete ? "" : "GPa")}</strong></div><div><span>泊松比 ν${isIncomplete ? "（来源原值）" : ""}</span><strong>${formatRange(item.nu, "")}</strong></div><div><span>密度 ρ${isIncomplete ? "（来源原值）" : ""}</span><strong>${formatRange(item.rho, isIncomplete ? "" : "kg/m³")}</strong></div></div><details class="evidence-context"><summary>条件与方法</summary><dl class="evidence-meta">${window.PresentationFields.evidenceMeta(item)}</dl>${propertyCitationsHtml(item.propertyCitations)}</details>${url ? `<a class="source-link" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">打开原始来源 <i data-lucide="external-link" aria-hidden="true"></i></a>` : ""}</div></details>`;
     }).join("")}</div>${records.length > pageSize ? `<p class="node-note">已显示 ${fmt(pageSize)} / ${fmt(records.length)} 条。<button type="button" id="snapshot-more-evidence">继续浏览来源</button></p>` : ""}`;
   }
 
-  function propertyCitationsHtml(citations) {
-    if (!citations) return "";
-    let values = citations;
-    if (typeof values === "string") {
-      try { values = JSON.parse(values); } catch { return '<details class="property-citations"><summary>各属性原引用</summary><pre>' + escapeHtml(values) + '</pre></details>'; }
-    }
-    if (!values || (typeof values === "object" && !Object.keys(values).length)) return "";
-    return '<details class="property-citations"><summary>各属性原引用</summary><pre>' + escapeHtml(JSON.stringify(values, null, 2)) + '</pre></details>';
-  }
+  function propertyCitationsHtml(citations) { return window.PresentationFields.citationsHtml(citations); }
 
   function renderResearchDetail(node) {
     const content = document.getElementById("detail-content");
@@ -495,7 +487,7 @@
     const outsideActiveTree = isRoot ? data.meta.reviewedRecordGroupCount - nodeGroupCount : 0;
     const scopeCopy = isRoot
       ? `当前分类树提供 ${fmt(data.meta.mainCompleteRecordCount + data.meta.mainIncompleteRecordCount)} 组逐项整理数据；另有 ${fmt(data.meta.externalCompleteRecordCount + data.meta.externalIncompleteRecordCount)} 组数据库转录数据，可在玻璃分类的来源目录查看。它们同属当前研究工作快照，不自动给物体赋值。`
-      : `这里只统计这一类材料及其下级材料，不是全库总数。${(node.notes || '').replace('保留材料分类身份；对象计数在此研究证据视图为零，不复制对象表的赋值。','材料分类与物性证据分别保留；关联物体见下方入口，不自动赋值。')}`;
+      : `当前范围为本材料及其下级材料；具体条件和数值以逐来源记录为准，关联物体见下方入口。`;
     content.innerHTML = `<div class="detail-header"><div class="detail-path">${path.map((item) => `<button type="button" class="crumb-button" data-node-id="${escapeHtml(item.id)}">${escapeHtml(item.nameCn)}</button>`).join("")}</div><h2 id="detail-heading">${escapeHtml(node.nameCn)}</h2><p class="detail-en">${escapeHtml(node.nameEn)}</p></div><div class="detail-body"><section class="detail-section"><h3>这一类材料的数据情况</h3><div class="metric-grid"><div class="metric"><span>当前范围的来源条目</span><strong>${fmt(node.classifiedSourceDocumentCount ?? node.sourceDocumentCount)}</strong></div><div class="metric"><span>资料发布方</span><strong>${fmt(node.classifiedPublisherSubjectCount ?? node.publisherSubjectCount)}</strong></div><div class="metric"><span>${aggregate ? "本类及其下级材料" : "本材料直接"}数据组</span><strong>${fmt(aggregate ? (node.classifiedEvidenceCount ?? node.subtreeEvidenceCount) : node.directEvidenceCount)}</strong></div></div><p class="boundary-note">${escapeHtml(scopeCopy)}</p></section><section class="detail-section"><div class="section-heading-row"><h3>${title}</h3><p>${aggregate ? "分类汇总，不给物体自动赋值" : "保留每份资料的原始条件"}</p></div>${evidenceHtml(node)}</section><section class="detail-section"><h3>关联视图</h3><div class="object-links"><a href="references.html?material=${encodeURIComponent(node.id)}">查看此材料数值与覆盖</a><a href="scaling.html?material=${encodeURIComponent(node.id)}#material-linked-objects">查看对应物体</a></div></section>${children.length ? `<section class="detail-section"><h3>查看下级材料</h3><div class="research-branch-list">${children.slice(0, 40).map((child) => `<button type="button" class="research-branch" data-node-id="${escapeHtml(child.id)}"><span>${escapeHtml(child.nameCn)}</span><small>${fmt(child.sourceDocumentCount)} 个来源条目 · ${fmt(child.subtreeEvidenceCount)} 条数据组</small></button>`).join("")}</div>${children.length > 40 ? '<p class="node-note">分支较多，可用顶部搜索框定位完整材料名或牌号。</p>' : ""}</section>` : ""}</div>`;
     const relatedParents = (node.secondaryParentIds || []).map(id => nodesById.get(id)).filter(Boolean);
     const relatedChildren = (node.secondaryChildIds || []).map(id => nodesById.get(id)).filter(Boolean);
@@ -515,7 +507,7 @@
   function objectHtml(item) {
     const assetUrl = safeUrl(item.assetUrl);
     const sourceUrl = safeUrl(item.sourceUrl);
-    return `<article class="object-item"><h4>${escapeHtml(item.nameCn || item.nameEn || item.id)}</h4><p class="object-en">${escapeHtml(item.nameEn)}</p><div class="object-tags"><span>${escapeHtml(item.id)}</span><span>${escapeHtml(item.componentId)}</span><span>${escapeHtml(item.scope || "整件/范围未写")}</span><span>${escapeHtml(item.sourceDataset)}</span>${assetUrl ? '<span class="asset-ok">有资产链接</span>' : ""}</div><div class="object-links">${assetUrl ? `<a href="${escapeHtml(assetUrl)}" target="_blank" rel="noopener noreferrer">打开 3D 资产</a>` : '<span class="empty-inline">无可点击资产链接</span>'}${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">打开材料/对象来源</a>` : ""}</div>${item.limitations ? `<p class="object-limitations">${escapeHtml(item.limitations)}</p>` : ""}</article>`;
+    return `<article class="object-item"><h4>${escapeHtml(item.nameCn || item.nameEn || item.id)}</h4><p class="object-en">${escapeHtml(item.nameEn)}</p><div class="object-tags"><span>${escapeHtml(window.PresentationFields.componentName({component_id:item.componentId,scope:item.scope}))}</span><span>${escapeHtml(item.sourceDataset)}</span>${assetUrl ? '<span class="asset-ok">有资产链接</span>' : ""}</div><div class="object-links">${assetUrl ? `<a href="${escapeHtml(assetUrl)}" target="_blank" rel="noopener noreferrer">打开 3D 资产</a>` : '<span class="empty-inline">无可点击资产链接</span>'}${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">打开材料/对象来源</a>` : ""}</div>${item.limitations ? `<p class="object-limitations">${escapeHtml(item.limitations)}</p>` : ""}</article>`;
   }
 
   function renderObjectList(node) {
@@ -547,7 +539,7 @@
     const content = document.getElementById("detail-content");
     const evidenceCount = aggregateOnly ? node.subtreeEvidenceCount : node.directEvidenceCount;
     const referenceLink = (data.meta.referenceTargetIds || []).includes(node.id) ? '<p class="node-note"><a href="references.html?material=' + encodeURIComponent(node.id) + '">查看此材料标签的研究来源与适用限制</a></p>' : "";
-    content.innerHTML = `<div class="detail-header"><div class="detail-path">${path.map((item) => `<button type="button" class="crumb-button" data-node-id="${escapeHtml(item.id)}">${escapeHtml(item.nameCn)}</button>`).join("")}</div><div class="detail-title-row"><div><h2 id="detail-heading">${escapeHtml(node.nameCn)}</h2><p class="detail-en">${escapeHtml(node.nameEn)} · ${escapeHtml(node.id)}</p></div><span class="type-label ${kind[1]}">${kind[0]}</span></div></div><div class="detail-body"><section class="detail-section"><h3>节点范围</h3><div class="metric-grid"><div class="metric"><span>直接映射对象</span><strong>${fmt(node.directObjectCount)}</strong></div><div class="metric"><span>直接关联的部件</span><strong>${fmt(node.directComponentCount)}</strong></div><div class="metric"><span>当前子树对象</span><strong>${fmt(node.subtreeObjectCount)}</strong></div><div class="metric"><span>${aggregateOnly ? "子树证据记录" : "直接证据记录"}</span><strong>${fmt(evidenceCount)}</strong></div></div>${node.childIds.length ? '<p class="boundary-note">子树数字只用于了解覆盖规模。子节点的材料和物性不会自动上推给此父节点。</p>' : ""}${node.notes ? `<p class="node-note">${escapeHtml(node.notes)}</p>` : ""}</section><section class="detail-section"><div class="section-heading-row"><h3>${aggregateOnly ? "子树证据边界" : "逐来源完整三元组证据"}</h3><p>${aggregateOnly ? "分类汇总，不给物体自动赋值" : "双源才达标，不平均"}</p></div>${evidenceHtml(node)}</section><section class="detail-section"><div class="section-heading-row"><h3>直接映射的对象与组件</h3><p id="object-count-note"></p></div><div class="object-tools"><input id="object-filter" type="search" placeholder="筛选当前节点的对象、组件或来源" aria-label="筛选当前节点对象"></div><div id="object-list" class="object-list"></div><button type="button" id="load-more" class="load-more">再显示 30 条</button>${directObjects.length > 200 ? '<p class="node-note">页面按需展示；三项齐全的数据保留在正式 CSV 中。</p>' : ""}</section></div>`;
+    content.innerHTML = `<div class="detail-header"><div class="detail-path">${path.map((item) => `<button type="button" class="crumb-button" data-node-id="${escapeHtml(item.id)}">${escapeHtml(item.nameCn)}</button>`).join("")}</div><div class="detail-title-row"><div><h2 id="detail-heading">${escapeHtml(node.nameCn)}</h2><p class="detail-en">${escapeHtml(node.nameEn)} · ${escapeHtml(node.id)}</p></div><span class="type-label ${kind[1]}">${kind[0]}</span></div></div><div class="detail-body"><section class="detail-section"><h3>节点范围</h3><div class="metric-grid"><div class="metric"><span>直接映射对象</span><strong>${fmt(node.directObjectCount)}</strong></div><div class="metric"><span>直接关联的部件</span><strong>${fmt(node.directComponentCount)}</strong></div><div class="metric"><span>当前子树对象</span><strong>${fmt(node.subtreeObjectCount)}</strong></div><div class="metric"><span>${aggregateOnly ? "子树证据记录" : "直接证据记录"}</span><strong>${fmt(evidenceCount)}</strong></div></div>${node.childIds.length ? '<p class="boundary-note">子树数字只用于了解覆盖规模。子节点的材料和物性不会自动上推给此父节点。</p>' : ""}</section><section class="detail-section"><div class="section-heading-row"><h3>${aggregateOnly ? "子树证据边界" : "逐来源完整三元组证据"}</h3><p>${aggregateOnly ? "分类汇总，不给物体自动赋值" : "双源才达标，不平均"}</p></div>${evidenceHtml(node)}</section><section class="detail-section"><div class="section-heading-row"><h3>直接映射的对象与组件</h3><p id="object-count-note"></p></div><div class="object-tools"><input id="object-filter" type="search" placeholder="筛选当前节点的对象、组件或来源" aria-label="筛选当前节点对象"></div><div id="object-list" class="object-list"></div><button type="button" id="load-more" class="load-more">再显示 30 条</button>${directObjects.length > 200 ? '<p class="node-note">页面按需展示；三项齐全的数据保留在正式 CSV 中。</p>' : ""}</section></div>`;
     content.querySelectorAll(".crumb-button").forEach((button) => button.addEventListener("click", () => revealNode(button.dataset.nodeId)));
     content.querySelector(".detail-body").insertAdjacentHTML("afterbegin", referenceLink);
     document.getElementById("object-filter").addEventListener("input", (event) => { objectFilter = event.target.value; objectPageSize = 30; renderObjectList(node); });

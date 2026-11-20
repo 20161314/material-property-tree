@@ -12,8 +12,8 @@
   };
   const relationshipNames = {
     DIRECT_CANONICAL_MATERIAL: "直接已整理材料记录",
-    REVIEWED_TARGET_SUBTYPE_REFERENCE: "已审细分材料参考",
-    REVIEWED_TARGET_EXACT_REFERENCE: "已审目标材料参考",
+    REVIEWED_TARGET_SUBTYPE_REFERENCE: "细分材料参考",
+    REVIEWED_TARGET_EXACT_REFERENCE: "目标材料参考",
     EXACT_IDENTITY: "精确材料身份",
     SOURCE_LABEL_MATCH: "原文标签匹配",
     CONDITIONAL_SUBTYPE_REFERENCE: "细分材料参考",
@@ -37,13 +37,13 @@
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
   })[char]);
   const fmt = (value) => {
-    if (value === "" || value === null || value === undefined || !Number.isFinite(Number(value))) return "—";
-    return Number(value).toLocaleString("en", { maximumSignificantDigits: 5 });
+    if (value === "" || value === null || value === undefined || !Number.isFinite(Number(value))) return "未提供";
+    return Number(value).toLocaleString("en", { maximumFractionDigits: 20 });
   };
   const fmtRange = (range) => {
-    if (!range || range[0] === "" || range[1] === "") return "—";
-    const low = fmt(range[0]);
-    const high = fmt(range[1]);
+    if (!range || !window.PresentationFields.present(range[0]) || !window.PresentationFields.present(range[1])) return "未提供";
+    const low = esc(range[0]);
+    const high = esc(range[1]);
     return low === high ? low : `${low}–${high}`;
   };
 
@@ -185,47 +185,16 @@
       if (!record) return "";
       const incomplete = record.record_type === "INCOMPLETE";
       const values = incomplete
-        ? esc(`E ${record.E_source_value || "—"} · ν ${record.nu_source_value || "—"} · ρ ${record.rho_source_value || "—"}`)
+        ? esc(`E ${(window.PresentationFields.present(record.E_source_value) ? record.E_source_value : "未提供")} · ν ${(window.PresentationFields.present(record.nu_source_value) ? record.nu_source_value : "未提供")} · ρ ${(window.PresentationFields.present(record.rho_source_value) ? record.rho_source_value : "未提供")}`)
         : `E ${fmtRange([record.E_low_GPa, record.E_high_GPa])} GPa · ν ${fmtRange([record.nu_low, record.nu_high])} · ρ ${fmtRange([record.rho_low_kg_m3, record.rho_high_kg_m3])} kg/m³`;
-      let directional = "";
-      if (record.directional_values_json) {
-        try {
-          const detail = JSON.parse(record.directional_values_json);
-          const labels = {
-            strain_percent: "应变 %", E_parallel_GPa: "轴向 E|| GPa",
-            E_parallel_uncertainty_GPa: "轴向 E 不确定度 GPa", E_perpendicular_GPa: "横向 E⊥ GPa",
-            E_perpendicular_uncertainty_GPa: "横向 E 不确定度 GPa", nu_31_32: "ν31/32",
-            nu_31_32_uncertainty: "ν31/32 不确定度", nu_12: "ν12",
-            nu_12_uncertainty: "ν12 不确定度", rho_assumed_kg_m3: "采用密度 kg/m³",
-          };
-          const detailText = Object.entries(detail)
-            .filter(([key]) => labels[key])
-            .map(([key, value]) => `${labels[key]} ${value}`)
-            .join("；");
-          if (detailText) directional = `<p>方向化原始记录：${esc(detailText)}</p>`;
-        } catch {
-          directional = `<p>方向化原始记录：${esc(record.directional_values_json)}</p>`;
-        }
-      }
-      const source = record.url ? `<a href="${esc(record.url)}" target="_blank" rel="noopener noreferrer">打开来源</a>` : "来源链接缺失";
+      const source = window.PresentationFields.link(record.url, '打开来源') || '来源链接未提供';
       return `<article class="evidence-row">
-        <strong>${esc(record.material_identity)} <span class="evidence-status">${incomplete ? "缺项数据" : esc(relationshipNames[entry.relationship] || entry.relationship)}</span></strong>
+        <strong>${esc(window.PresentationFields.text(record.material_identity))} <span class="evidence-status">${incomplete ? "缺项数据" : esc(relationshipNames[entry.relationship] || "来源记录")}</span></strong>
         
         <div class="evidence-values-inline">${values}</div>
         ${incomplete ? `<p>同组仅有 ${esc(record.property_count)} 项可计入属性；不与其他来源拼接。</p>` : ""}
-        <p>${esc(record.locator || "未提供定位")} · ${source}</p>
-        <details class="evidence-context"><summary>条件、方法与记录详情</summary><small>${esc(record.record_id)} · ${esc(record.source_id)} · ${esc(record.publisher_subject_name)} · ${esc(record.document_key)}</small><p>${esc(record.conditions || "未报告条件")}</p>
-        ${record.evidence_role ? `<p>${esc(record.evidence_role)}</p>` : ""}
-        ${directional}
-        ${record.property_model ? `<p>数据性质：${esc(record.property_model)}</p>` : ""}
-        ${record.method_or_basis ? `<p>数值依据：${esc(record.method_or_basis)}</p>` : ""}
-        ${record.density_type ? `<p>密度类型：${esc(record.density_type)}</p>` : ""}
-        ${record.density_type_values_json ? `<details><summary>密度按定义分别报告</summary><pre>${esc(record.density_type_values_json)}</pre></details>` : ""}
-        ${record.scope_notes ? `<p>形态范围：${esc(record.scope_notes)}</p>` : ""}
-        ${record.source_uncertainty_notes ? `<p>不确定度：${esc(record.source_uncertainty_notes)}</p>` : ""}
-        ${record.limitations ? `<p>限制：${esc(record.limitations)}</p>` : ""}
-        ${record.local_file ? `<details><summary>冻结文件与校验</summary><p>${esc(record.local_file)}</p><p>SHA-256：${esc(record.sha256)}</p></details>` : ""}
-        ${record.property_citations_json ? `<details><summary>各属性原引用</summary><pre>${esc(record.property_citations_json)}</pre></details>` : ""}
+        <p>${esc(window.PresentationFields.text(record.locator || "未提供定位"))} · ${source}</p>
+        <details class="evidence-context"><summary>条件与方法</summary><dl class="evidence-meta">${window.PresentationFields.evidenceMeta(record)}</dl>${window.PresentationFields.citationsHtml(record.property_citations_json)}
       </details></article>`;
     }).join("");
   }
@@ -262,8 +231,8 @@
       const [label, badge] = statusLabel(target);
       const relationCount = `完整 ${target.completeRecordCount} · 不完整 ${target.incompleteRecordCount}`;
       const extCount = (target.externalCompleteRecordCount || 0) + (target.externalIncompleteRecordCount || 0);
-      const definitionNote = target.sourceDefinitionRanges ? `<details><summary>按来源定义分别报告（不合并定义）</summary><pre>${esc(target.sourceDefinitionRanges)}</pre></details>` : "";
-      const detailSummary = target.recordCount ? `<details class="material-expand" data-target="${esc(target.id)}"><summary><strong>${esc(target.nameCn)}</strong><small>${esc(target.nameEn)} · ${esc(target.id)}</small><span>查看 ${target.recordCount} 条关联记录</span></summary><div class="evidence-list"></div></details>` : `<strong>${esc(target.nameCn)}</strong><small>${esc(target.nameEn)} · ${esc(target.id)}</small>`;
+      const definitionNote = target.sourceDefinitionRanges ? `<details><summary>按来源定义分别报告（不合并定义）</summary><pre>${window.PresentationFields.scientificValue(target.sourceDefinitionRanges)}</pre></details>` : "";
+      const detailSummary = target.recordCount ? `<details class="material-expand" data-target="${esc(target.id)}"><summary><strong>${esc(target.nameCn)}</strong><small>${esc(target.nameEn)}</small><span>查看 ${target.recordCount} 条关联记录</span></summary><div class="evidence-list"></div></details>` : `<strong>${esc(target.nameCn)}</strong><small>${esc(target.nameEn)}</small>`;
       const stage2 = "";
       return `<tr>
         <td>${detailSummary}${definitionNote}<small class="family-label">${esc(familyNames[target.family] || target.family)}</small><div class="material-view-links"><a href="research.html?material=${encodeURIComponent(target.id)}">材料树</a><a href="scaling.html?material=${encodeURIComponent(target.id)}">关联物体</a></div></td>
@@ -336,8 +305,8 @@
 
   $("unmapped-table-body").innerHTML = data.unmapped.map((record) => {
     const values = `E ${fmtRange([record.E_low_GPa, record.E_high_GPa])} GPa · ν ${fmtRange([record.nu_low, record.nu_high])} · ρ ${fmtRange([record.rho_low_kg_m3, record.rho_high_kg_m3])} kg/m³`;
-    const source = record.url ? `<a href="${esc(record.url)}" target="_blank" rel="noopener noreferrer">来源链接</a>` : "—";
-    return `<tr><td>${esc(record.record_id)}</td><td>${esc(record.material_identity)}</td><td>${esc(familyNames[record.family_id] || record.family_id)}</td><td>${values}</td><td>${esc(record.source_id)}<br>${source}</td><td>${esc(record.locator)}</td></tr>`;
+    const source = window.PresentationFields.link(record.url,"来源链接") || "未提供";
+    return `<tr><td>${esc(window.PresentationFields.text(record.material_identity))}</td><td>${esc(familyNames[record.family_id] || "未提供")}</td><td>${values}</td><td>${source}</td><td>${esc(window.PresentationFields.text(record.locator))}</td></tr>`;
   }).join("");
 
   ["material-search", "status-filter", "family-filter", "sort-order"].forEach((id) => $(id).addEventListener("input", () => { page = 0; render(); }));
